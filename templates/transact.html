@@ -1,0 +1,186 @@
+{% extends 'main.html' %}
+{% block body %}
+{% if user.is_authenticated %}
+{% else %}
+<script>location.href = "/"</script>
+{% endif %}
+<style>
+    .buy-sell {
+        z-index: 10;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+<div class="pcoded-wrapper">
+    <div class="pcoded-content">
+        <!-- =-=-=-=-=-=-=- Buy Model -=-=-=-=-=-=-=--=-=-=-=--=-=--=--->
+        <div class="modal-dialog modal-dialog-centered buy-sell collapse" role="document" id="buy">
+            <div class="modal-content">
+                <form action="/transact/{{symbol}}" method="post">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">{{symbol}}</h5>
+                        <a class="close" data-toggle="collapse" href="#buy" role="button" aria-expanded="true"
+                            aria-controls="collapseExample"><span aria-hidden="true">×</span></a>
+                    </div>
+                    <!-- Hidden Inputs -->
+                    {% csrf_token %}
+                    <input type="hidden" name="symbol" value="{{symbol}}">
+                    <input type="hidden" name="order_type" value="BUY">
+                    <!-- END Hidden Inputs -->
+                    <div class="modal-body">
+                        <div class="form-inline">
+                            <div class="form-group mb-2">
+                                <div>
+                                    <label>Quantity</label>
+                                    <input type="number" class="form-control" value="1" placeholder="0" name="quantity"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group mx-sm-3 mb-2">
+                                <div>
+                                    <label>Price</label>
+                                    <input type="number" class="form-control" placeholder="0.0" name="price"
+                                        value="{{data.ltp}}" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Product Type</label>
+                            <ul id="id_product">
+                                <li><label for="id_product_0"><input type="radio" name="product" value="Intraday"
+                                            required="" id="id_product_0">
+                                        Intraday</label>
+
+                                </li>
+                                <li><label for="id_product_1"><input type="radio" name="product" value="Margin"
+                                            required="" id="id_product_1">
+                                        Margin</label>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label>Type</label>
+                            <select class="form-control" name="type" required>
+                                <option value="Market">Market</option>
+                                <option value="Limit">Limit</option>
+                            </select>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn  btn-danger" data-toggle="collapse" href="#buy" role="button" aria-expanded="true"
+                            aria-controls="collapseExample">Cancel</a>
+                        <button type="submit" class="btn  btn-primary">BUY</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- =-=-=-=-=-=-=- END Buy Model -=-=-=-=-=-=-=--=-=-=-=--=-=--=--->
+        <div class="modal-dialog modal-dialog-centered buy-sell collapse" role="document" id="sell">
+            <div class="modal-content">
+                <form action="/transact/{{symbol}}" method="post">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">{{symbol}}</h5>
+                        <a class="close" data-toggle="collapse" href="#sell" role="button" aria-expanded="true"
+                            aria-controls="collapseExample"><span aria-hidden="true">×</span></a>
+                    </div>
+                    <!-- Hidden Inputs -->
+                    {% csrf_token %}
+                    <input type="hidden" name="symbol" value="{{symbol}}">
+                    <input type="hidden" name="order_type" value="SELL">
+                    <!-- END Hidden Inputs -->
+                    <div class="modal-body">
+                        <div class="form-inline">
+                            <div class="form-group mb-2">
+                                <div>
+                                    <label>Quantity</label>
+                                    <input type="number" class="form-control" value="1" placeholder="0" name="quantity"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group mx-sm-3 mb-2">
+                                <div>
+                                    <label>Price</label>
+                                    <input type="number" class="form-control" placeholder="0.0" name="price"
+                                        value="{{data.ltp}}" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Product Type</label>
+                            <ul id="id_product">
+                                <li><label for="id_product_0"><input type="radio" name="product" value="Intraday"
+                                            required="" id="id_product_0">
+                                        Intraday</label>
+
+                                </li>
+                                <li><label for="id_product_1"><input type="radio" name="product" value="Margin"
+                                            required="" id="id_product_1">
+                                        Margin</label>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label>Type</label>
+                            <select class="form-control" name="type" required>
+                                <option value="Market">Market</option>
+                                <option value="Limit">Limit</option>
+                            </select>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn  btn-danger" data-toggle="collapse" href="#sell" role="button"
+                            aria-expanded="true" aria-controls="collapseExample">Cancel</a>
+                        <button type="submit" class="btn  btn-primary">Sell</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>{{symbol}} | {{data.exchange}}</h5>
+                </div>
+                <div class="card-block">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-auto">
+                            <h3>{{data.ltp}}</h3>
+                            <span>
+                                <h5 id="change" class="text-c-green mb-0"></h5>
+                            </span>
+                        </div>
+                        <div class="col text-right">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-block border-bottom">
+                    <a class="btn btn-primary m-t-5" style="width: 40%;" data-toggle="collapse" href="#buy"
+                        role="button" aria-expanded="true" aria-controls="collapseExample">
+                        BUY
+                    </a>
+                    <a class="btn btn-danger m-t-5" style="width: 40%;" data-toggle="collapse" href="#sell"
+                        role="button" aria-expanded="true" aria-controls="collapseExample">
+                        SELL
+                    </a>
+                </div>
+                <div class="card-block border-bottom">
+                    <h6>Previous Close : <span class="text-info">{{data.close}}</span></h6>
+                    <h6>Day High : <span class="text-c-green">{{data.high}}</span></h6>
+                    <h6>Day Low : <span class="text-c-red">{{data.low}}</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/logic/javascript/data.js"></script>
+<script>
+    let element = document.getElementById("change")
+    let change = ('{{data.ltp|safe}}' - '{{data.close|safe}}').toFixed(2);
+    element.innerHTML = `(${change})`
+</script>
+{% endblock body %}

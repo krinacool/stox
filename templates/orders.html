@@ -1,0 +1,374 @@
+{% extends 'main.html' %}
+{% block body %}
+{% if user.is_authenticated %}
+{% else %}
+<script>location.href = "/"</script>
+{% endif %}
+{% load mathfilters %}
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#openorders" role="tab"
+            aria-controls="openorders" aria-selected="false">Open Orders</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" id="Completed-tab" data-toggle="pill" href="#Completed" role="tab"
+            aria-controls="Completed" aria-selected="true">Completed</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="Failed-tab" data-toggle="pill" href="#Failed" role="tab" aria-controls="Failed"
+            aria-selected="false">Failed</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="Tradebook-tab" data-toggle="pill" href="#Tradebook" role="tab" aria-controls="Tradebook"
+            aria-selected="false">Tradebook</a>
+    </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane" id="openorders" role="tabpanel" aria-labelledby="openorders-tab">
+        <div class="card">
+            {% if initiated %}
+            <div class="card-block px-2 py-3">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in initiated reversed %}
+                            <tr data-toggle="modal" data-target="#modify_order"
+                                onclick="modifyorder('{{x.order_id}}','{{x.symbol}}','{{x.quantity}}','{{x.order_type}}','{{x.price}}','{{x.product}}','{{x.type}}','{{x.stoploss}}','{{x.target}}')">
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    {% if x.quantity >= 0 %}
+                                    <span class="p-1" style="font-size: 11px;">{{x.quantity}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        {{x.product}}</span>
+                                    {% else %}
+                                    <span class="p-1">{{x.quantity|mul:-1}} <span style="font-size: 9px;">QTY</span> |
+                                        <span class="btn-glow-light">{{x.product}}</span></span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if x.status == 'completed' %}
+                                    <span class="p-1 btn text-c-green"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% elif x.status == 'failed' %}
+                                    <span class="p-1 text-c-red btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% elif x.status == 'initiated' %}
+                                    <span class="p-1 text-c-blue btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% else %}
+                                    <span class="p-1 text-c-purple btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% endif %}
+                                    <br>
+                                    {% if x.order_type == 'BUY' %}
+                                    <span class="text-success" style="font-size: 12px;">Buy Price. {{x.price}}</span>
+                                    {% else %}
+                                    <span class="text-danger" style="font-size: 12px;">Sell Price. {{x.price}}</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% else %}
+            <div class="card-block text-center" style="min-height: 80%;">
+                <h5 style="margin: 180px 0%;" class="text-muted">
+                    <i class="feather icon-layout" style="font-size: 30px;"></i><br><br>
+                    No orders placed yet
+                </h5>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="tab-pane active" id="Completed" role="tabpanel" aria-labelledby="Completed-tab">
+        <div class="card">
+            {% if completed %}
+            <div class="card-block px-2 py-3">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in completed %}
+                            <tr>
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    {% if x.quantity >= 0 %}
+                                    <span class="p-1" style="font-size: 11px;">{{x.quantity}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        {{x.product}}</span>
+                                    {% else %}
+                                    <span class="p-1">{{x.quantity|mul:-1}} <span style="font-size: 9px;">QTY</span> |
+                                        <span class="btn-glow-light">{{x.product}}</span></span>
+                                    {% endif %}
+                                    <br>
+                                    <span class="p-1" style="font-size: 9px;"><i class="feather icon-clock"></i>
+                                        {{x.datetime}}</span>
+                                </td>
+                                <td>
+                                    {% if x.status == 'completed' %}
+                                    <span class="p-1 btn text-c-green"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% elif x.status == 'failed' %}
+                                    <span class="p-1 text-c-red btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% elif x.status == 'initiated' %}
+                                    <span class="p-1 text-c-blue btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% else %}
+                                    <span class="p-1 text-c-purple btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% endif %}
+                                    <br>
+                                    {% if x.order_type == 'BUY' %}
+                                    <span class="text-success" style="font-size: 12px;">Buy Price. {{x.price}}</span>
+                                    {% else %}
+                                    <span class="text-danger" style="font-size: 12px;">Sell Price. {{x.price}}</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% else %}
+            <div class="card-block text-center" style="min-height: 80%;">
+                <h5 style="margin: 180px 0%;" class="text-muted">
+                    <i class="feather icon-layout" style="font-size: 30px;"></i><br><br>
+                    No orders placed yet
+                </h5>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="tab-pane" id="Failed" role="tabpanel" aria-labelledby="Failed-tab">
+        <div class="card">
+            {% if failed %}
+            <div class="card-block px-2 py-3">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in failed %}
+                            <tr>
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    {% if x.quantity >= 0 %}
+                                    <span class="p-1" style="font-size: 11px;">{{x.quantity}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        {{x.product}}</span>
+                                    {% else %}
+                                    <span class="p-1">{{x.quantity|mul:-1}} <span style="font-size: 9px;">QTY</span> |
+                                        <span class="btn-glow-light">{{x.product}}</span></span>
+                                    {% endif %}
+                                    <br>
+                                    <span class="p-1 text-dark btn">Message :</span><span class="p-0 text-c-red btn"
+                                        style="font-size: 13px;">{{x.message}}</span>
+                                </td>
+                                <td>
+                                    <span class="p-1 text-c-red btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    <br>
+                                    {% if x.order_type == 'BUY' %}
+                                    <span class="text-c-green" style="font-size: 12px;">Buy Price. {{x.price}}</span>
+                                    {% else %}
+                                    <span class="text-danger" style="font-size: 12px;">Sell Price. {{x.price}}</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% else %}
+            <div class="card-block text-center" style="min-height: 80%;">
+                <h5 style="margin: 180px 0%;" class="text-muted">
+                    <i class="feather icon-layout" style="font-size: 30px;"></i><br><br>
+                    No orders placed yet
+                </h5>
+            </div>
+            {% endif %}
+            <!-- <div class="card-block text-center">
+                <h3><span class="text-muted"><i class="feather icon-map"></i> <br><br> Oops !
+                        Nothing to display</span></h3>
+            </div> -->
+        </div>
+    </div>
+    <div class="tab-pane" id="Tradebook" role="tabpanel" aria-labelledby="Tradebook-tab">
+        <div class="card">
+            {% if tradebook %}
+            <div class="card-block px-2 py-3">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in tradebook reversed %}
+                            <tr>
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    {% if x.quantity >= 0 %}
+                                    <span class="p-1" style="font-size: 11px;">{{x.quantity}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        {{x.product}}</span>
+                                    {% else %}
+                                    <span class="p-1">{{x.quantity|mul:-1}} <span style="font-size: 9px;">QTY</span> |
+                                        <span class="btn-glow-light">{{x.product}}</span></span>
+                                    {% endif %}
+                                    <br>
+                                    <span class="p-1" style="font-size: 9px;"><i class="feather icon-clock"></i>
+                                        {{x.datetime}}</span>
+                                </td>
+                                <td>
+                                    {% if x.status == 'completed' %}
+                                    <span class="p-1 btn text-c-green"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% elif x.status == 'failed' %}
+                                    <span class="p-1 text-c-red btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% elif x.status == 'initiated' %}
+                                    <span class="p-1 text-c-blue btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% else %}
+                                    <span class="p-1 text-c-purple btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% endif %}
+                                    <br>
+                                    {% if x.order_type == 'BUY' %}
+                                    <span class="text-success" style="font-size: 12px;">Buy Price. {{x.price}}</span>
+                                    {% else %}
+                                    <span class="text-danger" style="font-size: 12px;">Sell Price. {{x.price}}</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% else %}
+            <div class="card-block text-center" style="min-height: 80%;">
+                <h5 style="margin: 180px 0%;" class="text-muted">
+                    <i class="feather icon-layout" style="font-size: 30px;"></i><br><br>
+                    No orders placed yet
+                </h5>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div id="modify_order" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form action="/transact" method="post">
+                    {% csrf_token %}
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Modify Order
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Hidden Inputs -->
+                        {% csrf_token %}
+                        <input type="hidden" id="order_tab_symbolinput" name="symbol" value="">
+                        <input type="hidden" id="order_tab_order_id" name="order_id" value="">
+                        <input type="hidden" id="order_tab_ordertypeinput" name="order_type" value="BUY">
+                        <input type="hidden" id="order_tab_product" value="INTRADAY" name="product">
+                        <input type="hidden" id="order_tab_type" value="MARKET" name="type">
+                        <!-- END Hidden Inputs -->
+                        <div style="height: 300px; width: 100%; overflow-y: scroll; overflow-x:hidden;">
+                            <div class="modal-body">
+                                <div style="width: 100%;">
+                                    <div class="order_label">Quantity</div>
+                                    <div class="order_label">Price</div>
+                                </div>
+                                <div>
+                                    <input type="number" id="order_tab_quantity" class="custom_input" value="1"
+                                        placeholder="0" name="quantity" required>
+                                    <input type="number" id="order_tab_priceinput" class="custom_input market_price"
+                                        placeholder="0.0" name="price" value="0" required="" readonly="True">
+                                </div>
+                                <label class="m-t-5">Product Type</label>
+                                <div>
+                                    <button type="button" class="custom_btn btn-dark"
+                                        id="order_tab_intraday">INTRADAY</button>
+                                    <button type="button" class="custom_btn btn-outline-dark"
+                                        id="order_tab_carryforward">CARRYFORWARD</button>
+                                </div>
+                                <label>Type</label>
+                                <div>
+                                    <button type="button" class="custom_btn btn-dark"
+                                        id="order_tab_market">MARKET</button>
+                                    <button type="button" class="custom_btn btn-outline-dark"
+                                        id="order_tab_limit">LIMIT</button>
+                                </div>
+                            </div>
+                            <!-- <div class="thin-line"></div> -->
+                            <label for="">Smart Order</label>
+                            <div class="thin-line"></div>
+                            <section id="smart_order" style="padding: 0px 10px;">
+                                <br>
+                                <div style="width: 100%;">
+                                    <div class="order_label">Stoploss</div>
+                                    <div class="order_label">Target</div>
+                                </div>
+                                <div>
+                                    <input type="number" id="order_tab_stoploss" class="custom_input"
+                                        value="{{x.stoploss}}" placeholder="0" name="stoploss" required>
+                                    <input type="number" id="order_tab_target" class="custom_input" value="{{x.target}}"
+                                        placeholder="0" name="target" required>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" style="width: 48%;" id="cancel_order">Cancel
+                            Order</button>
+                        <button type="submit" class="btn btn-success" style="width: 48%;">Modify Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function modifyorder(order_id,symbol, quantity, ordertype, price, product, type, stoploss, target) {
+        document.getElementById('order_tab_order_id').value = order_id
+        console.log(product)
+        console.log(symbol)
+        document.getElementById('order_tab_symbolinput').value = symbol
+        document.getElementById('order_tab_quantity').value = quantity
+        document.getElementById('order_tab_ordertypeinput').value = ordertype
+        document.getElementById('order_tab_priceinput').value = price
+        document.getElementById('order_tab_product').value = product
+        document.getElementById('order_tab_stoploss').value = stoploss
+        document.getElementById('order_tab_target').value = target
+        if (product == 'INTRADAY') {
+            document.getElementById('order_tab_intraday').click()
+        }
+        else {
+            document.getElementById('order_tab_carryforward').click()
+        }
+        if (product == 'type') {
+            document.getElementById('order_tab_market').click()
+        }
+        else {
+            document.getElementById('order_tab_limit').click()
+        }
+        document.getElementById('cancel_order').addEventListener('click', event => {
+            location.href = `/cancelorder/${order_id}`
+        })
+    }
+</script>
+{% endblock body %}

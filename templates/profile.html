@@ -1,0 +1,222 @@
+{% extends 'main.html' %}
+{% block body %}
+{% if user.is_authenticated %}
+{% else %}
+<script>location.href = "/"</script>
+{% endif %}
+<div class="card m-t-20">
+    <div class="card-block">
+        <div class="m-r-5 m-l-5">
+            <div>
+                Trading Balance
+                <br>
+                <span>₹ <b class="f-30">{{request.user.wallet}}</b></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-block">
+        <label class="align-items-center"><i class="feather icon-mail text-c-purple f-20 m-r-10"></i>Email :
+            {{request.user.email}}</label>
+    </div>
+    <div class="line"></div>
+    <div class="card-block">
+        <label class="align-items-center"><i class="feather icon-phone text-c-purple f-20 m-r-10"></i>Phone Number :
+            {{request.user.phone_number}}</label>
+    </div>
+    <div class="line"></div>
+    {% if request.user.bank_account_name == '' %}
+    <hr class="bg-c-blue">
+    <div class="card-block" data-toggle="modal" data-target="#edit">
+        <div class="row d-flex align-items-center">
+            <div class="col-9">
+                <p class="align-items-center"><i class="feather icon-link text-c-green f-30 m-r-10"></i>Bank Details
+                </p>
+                <span class="text-muted">Please Verify your details for <b>KYC</b>.</span>
+            </div>
+            <div class="col-3 text-right">
+                <i class="feather icon-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% else %}
+    <div class="card-block">
+        <label class="align-items-center"><i class="feather icon-server text-c-purple f-20 m-r-10"></i>Bank Account :
+            {{request.user.bank_account_name}}</label>
+    </div>
+    <div class="line"></div>
+    <div class="card-block">
+        <label class="align-items-center"><i class="feather icon-link text-c-purple f-20 m-r-10"></i>Account Number :
+            {{request.user.bank_account_number}}</label>
+    </div>
+    <div class="line"></div>
+    <div class="card-block">
+        <label class="align-items-center"><i class="feather icon-link-2 text-c-purple f-20 m-r-10"></i>Ifsc Code :
+            {{request.user.ifsc_code}}</label>
+    </div>
+    <div class="line"></div>
+    <div class="card-block">
+        <label class="align-items-center"><i class="feather icon-credit-card text-c-purple f-20 m-r-10"></i>UPI ID :
+            {{request.user.upi_id}}</label>
+    </div>
+    {% endif %}
+    <div class="line"></div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-xl-3">
+        <div class="card daily-sales">
+            <div class="card-block">
+                <a href="/transactions">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-9">
+                            <p class="align-items-center"><i
+                                    class="feather icon-file-text text-c-purple f-30 m-r-10"></i>Transactions</p>
+                            <span class="text-muted">Withdraw amount from wallet.</span>
+                        </div>
+                        <div class="col-3 text-right">
+                            <i class="feather icon-chevron-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card daily-sales">
+            <div class="card-block">
+                <a href="/trade_charges">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-9">
+                            <p class="align-items-center"><i
+                                    class="feather icon-percent text-c-purple f-30 m-r-10"></i>Trades & Charges</p>
+                            <span class="text-muted">All your charges in one place</span>
+                        </div>
+                        <div class="col-3 text-right">
+                            <i class="feather icon-chevron-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card Monthly-sales">
+            <div class="card-block">
+                <a href="/pnl">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-9">
+                            <p class="align-items-center"><i
+                                    class="feather icon-bar-chart-2 text-c-purple f-30 m-r-10"></i>Profit & Loss</p>
+                            <span class="text-muted">Analyse profit and loss for your trades</span>
+                        </div>
+                        <div class="col-3 text-right">
+                            <i class="feather icon-chevron-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3">
+        <div class="card Monthly-sales">
+            <div class="card-block">
+                <a href="/contact">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-9">
+                            <p class="align-items-center"><i
+                                    class="feather icon-headphones text-c-purple f-30 m-r-10"></i>Contact Us</p>
+                            <span class="text-muted">Change your Account Details</span>
+                        </div>
+                        <div class="col-3 text-right">
+                            <i class="feather icon-chevron-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="/logout">
+    <div class="card">
+        <div class="card Monthly-sales">
+            <div class="card-block">
+                <div class="row d-flex align-items-center">
+                    <div class="col-9">
+                        <label><i class="feather icon-log-out text-c-purple f-20 m-r-10"></i>Log out</label>
+                    </div>
+                    <div class="col-3 text-right">
+                        <i class="feather icon-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+{% if request.user.bank_account_name == '' %}
+<div class="card">
+    <div id="edit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form action="/profile" method="post">
+                    {% csrf_token %}
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">KYC Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="form-group">
+                                <label class="floating-label">Bank Name</label>
+                                <input type="text" name="bank_account_name" placeholder="Eg :- State Bank Of India"
+                                    class="form-control" required>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label class="floating-label">Bank Account Number</label>
+                                <input type="text" name="bank_account_number" placeholder="1234567890"
+                                    class="form-control" required>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label class="floating-label">IFSC code</label>
+                                <input type="text" name="ifsc_code" placeholder="00000000000" class="form-control"
+                                    required>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label class="floating-label">UPI Id</label>
+                                <input type="text" name="upi_id" placeholder="yourname@bankname" class="form-control"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Later</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+<script>
+    function copyToClipboard(c) {
+        var textToCopy = document.getElementById(c.id).textContent;
+        var tempInput = document.createElement('input');
+        tempInput.value = textToCopy;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+    }
+</script>
+{% endblock body %}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Stocks | User Registration</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Datta Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords"
+        content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template" />
+    <meta name="author" content="CodedThemes" />
+
+    <link rel="icon" href="/static/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/assets/plugins/animation/css/animate.min.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+
+</head>
+
+<body>
+    {% if user.is_authenticated %}
+    <script>location.href = "/market"</script>
+    {% else %}
+    {% endif %}
+    <div class="auth-wrapper">
+        <div class="auth-content">
+            <div class="auth-bg">
+                <span class="r"></span>
+                <span class="r s"></span>
+                <span class="r s"></span>
+                <span class="r"></span>
+            </div>
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-{{message.tags}}" role="alert">{{ message }}</div>
+            {% endfor %}
+            {% endif %}
+            <form method="post">
+                {% csrf_token %}
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="mb-4">
+                            <i class="feather icon-user-plus auth-icon"></i>
+                        </div>
+                        <h3 class="mb-4">Sign Up</h3>
+                        {% if form.errors %}
+                        <div class="input-group">
+                            {% for field in form %}
+                            {% for error in field.errors %}
+                            <p class="text-danger">
+                                {{ field.label }}: {{ error }}
+                            </p>
+                            {% endfor %}
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                        <div class="input-group">
+                            <label class="required" for="id_username">First Name:</label>
+                        </div>
+                        <div class="input-group mb-3">
+                            {{ form.first_name }}
+                        </div>
+                        <div class="input-group">
+                            <label class="required" for="id_username">Last Name:</label>
+                        </div>
+                        <div class="input-group mb-3">
+                            {{ form.last_name }}
+                        </div>
+                        <div class="input-group">
+                            <label class="required" for="id_username">Email:</label>
+                        </div>
+                        <div class="input-group mb-4">
+                            {{ form.email }}
+                        </div>
+                        <div class="input-group">
+                            <label class="required" for="id_username">Phone Number:</label>
+                        </div>
+                        <div class="input-group mb-4">
+                            {{ form.phone_number }}
+                        </div>
+                        <div class="input-group">
+                            <label class="required" for="id_username">Select Password:</label>
+                        </div>
+                        <div class="input-group mb-4">
+                            {{ form.password1 }}
+                        </div>
+                        <div class="input-group">
+                            <label class="required" for="id_username">Confirm Password:</label>
+                        </div>
+                        <div class="input-group mb-4">
+                            {{ form.password2 }}
+                        </div>
+                        <button type="submit" class="btn btn-primary shadow-2 mb-4">Sign Up</button>
+                        <p class="mb-0 text-muted">Allready have an account? <a href="/login/"> Log in</a></p>
+                    </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="/static/assets/js/vendor-all.min.js"></script>
+    <script src="/static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

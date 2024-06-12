@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search symbollist</title>
+<style>
+  #m-search {
+    width: 300px;
+    padding: 10px;
+  }
+  #symbollist {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 5px;
+  }
+  .suggestion {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .suggestion:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+<link rel="icon" href="/static/assets/images/favicon.ico" type="image/x-icon">
+<!-- fontawesome icon -->
+<link rel="stylesheet" href="/static/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+<!-- animation css -->
+<link rel="stylesheet" href="/static/assets/plugins/animation/css/animate.min.css">
+<!-- vendor css -->
+<link rel="stylesheet" href="/static/assets/css/style.css">
+</head>
+<body>
+  <h1>Search symbollist Example</h1>
+  <input type="text" id="m-search" placeholder="Type your search...">
+  <div style="width: 100%;padding: 2% 4%; display: flex;">
+    hello
+      <i class="feather icon-plus btn btn-outline-success"></i>
+  </div>
+  <div id="symbollist"></div>
+
+  <script>
+    const searchInput = document.getElementById('m-search');
+    const symbollistDiv = document.getElementById('symbollist');
+
+    const symbollist = [
+      'Apple',
+      'Banana',
+      'Cherry',
+      'Date',
+      'Grapes',
+      'Kiwi',
+      'Lemon',
+      'Mango',
+      'Orange',
+      'Pineapple',
+      'Strawberry',
+      'Watermelon'
+    ];
+
+    searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      const filteredsymbollist = symbollist.filter(suggestion =>
+        suggestion.toLowerCase().includes(searchTerm)
+      );
+
+      symbollistDiv.innerHTML = '';
+
+      filteredsymbollist.forEach(suggestion => {
+        // Add to portfolio
+        const addiconDiv = document.createElement('div');
+        addiconDiv.classList.add('text-right')
+        const addicon = document.createElement('i');
+        addicon.classList.add('feather','icon-plus-square','text-c-green')
+        addiconDiv.append(addicon)
+        // END ADD
+        const suggestionDiv = document.createElement('div');
+        suggestionDiv.classList.add('suggestion');
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.append(addiconDiv)
+        suggestionDiv.addEventListener('click', () => {
+          searchInput.value = suggestion;
+          symbollistDiv.innerHTML = '';
+        });
+
+        symbollistDiv.appendChild(suggestionDiv);
+      });
+    });
+
+    // Close symbollist when clicking outside the input and symbollist box
+    document.addEventListener('click', event => {
+      if (!searchInput.contains(event.target) && !symbollistDiv.contains(event.target)) {
+        symbollistDiv.innerHTML = '';
+      }
+    });
+  </script>
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Suggestions</title>
+<style>
+  /* Your CSS styles here */
+</style>
+</head>
+<body>
+  <h1>Search Suggestions Example</h1>
+  <input type="text" id="search-input" placeholder="Type your search...">
+  <div id="suggestions"></div>
+
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const suggestionsDiv = document.getElementById('suggestions');
+    const suggestions = JSON.parse('{{ suggestions|safe }}');
+
+    searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      const filteredSuggestions = suggestions.filter(suggestion =>
+        suggestion.toLowerCase().includes(searchTerm)
+      );
+
+      suggestionsDiv.innerHTML = '';
+
+      filteredSuggestions.forEach(suggestion => {
+        const suggestionDiv = document.createElement('div');
+        suggestionDiv.classList.add('suggestion');
+        suggestionDiv.textContent = suggestion;
+
+        suggestionDiv.addEventListener('click', () => {
+          searchInput.value = suggestion;
+          suggestionsDiv.innerHTML = '';
+        });
+
+        suggestionsDiv.appendChild(suggestionDiv);
+      });
+    });
+
+    // Close suggestions when clicking outside the input and suggestions box
+    document.addEventListener('click', event => {
+      if (!searchInput.contains(event.target) && !suggestionsDiv.contains(event.target)) {
+        suggestionsDiv.innerHTML = '';
+      }
+    });
+  </script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Suggestions</title>
+<style>
+  /* Your CSS styles here */
+</style>
+</head>
+<body>
+  <h1>Search Suggestions Example</h1>
+  <input type="text" id="search-input" placeholder="Type your search...">
+  <div id="suggestions"></div>
+
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const suggestionsDiv = document.getElementById('suggestions');
+    const suggestions = JSON.parse('{{ symbollist|safe }}');
+
+    searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      const filteredSuggestions = suggestions.filter(suggestion =>
+        suggestion.toLowerCase().includes(searchTerm)
+      );
+
+      suggestionsDiv.innerHTML = '';
+
+      filteredSuggestions.forEach(suggestion => {
+        const suggestionDiv = document.createElement('div');
+        suggestionDiv.classList.add('suggestion');
+        suggestionDiv.textContent = suggestion;
+
+        suggestionDiv.addEventListener('click', () => {
+          searchInput.value = suggestion;
+          suggestionsDiv.innerHTML = '';
+        });
+
+        suggestionsDiv.appendChild(suggestionDiv);
+      });
+    });
+
+    // Close suggestions when clicking outside the input and suggestions box
+    document.addEventListener('click', event => {
+      if (!searchInput.contains(event.target) && !suggestionsDiv.contains(event.target)) {
+        suggestionsDiv.innerHTML = '';
+      }
+    });
+  </script>
+</body>
+</html> -->

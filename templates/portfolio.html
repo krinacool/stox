@@ -1,0 +1,705 @@
+{% extends 'main.html' %}
+{% block body %}
+{% if user.is_authenticated %}
+{% else %}
+<script>location.href = "/"</script>
+{% endif %}
+{% load mathfilters %}
+<style>
+    #hpnl {
+        position: fixed;
+        bottom: 50px;
+        width: 100%;
+        background-color: white;
+        padding: 1%;
+    }
+
+    @media (min-width: 991px) {
+        #hpnl {
+            bottom: 1px;
+            width: 83%;
+        }
+    }
+</style>
+
+<div id="symbollist" data-symbollist="{{portfolio_symbollist}}"></div>
+
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="Positions-tab" data-toggle="pill" href="#Positions" role="tab"
+            aria-controls="Positions" aria-selected="true">Positions</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="Holdings-tab" data-toggle="pill" href="#Holdings" role="tab" aria-controls="Holdings"
+            aria-selected="true">Holdings</a>
+    </li>
+</ul>
+<div id="loader" class="outer-container">
+    <div class="inner-container">
+        <p id="loader_text" class="text-danger"></p>
+        <div class="loader"></div>
+    </div>
+</div>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane show active" id="Positions" role="tabpanel" aria-labelledby="Positions-tab">
+        <div class="card">
+            {% if positions %}
+            <div class="card-block px-2 py-3">
+                <div class="card-social">
+                    <div>
+                        <div class="text-center">
+                            Total P&L
+                            <br>
+                            {% if ppnl >= 0 %}
+                            <span class="text-c-green">₹ {{ppnl}}</span>
+                            {% else %}
+                            <span class="text-c-red">₹ {{ppnl}}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="m-t-20 m-b-20">
+                        <div class="row align-items-center justify-content-center card-active">
+                            <div class="col-6 text-center">
+                                Relised P&L
+                                <br>
+                                {% if ppnl >= 0 %}
+                                <span class="text-c-green">₹ {{ppnl}}</span>
+                                {% else %}
+                                <span class="text-c-red">₹ {{ppnl}}</span>
+                                {% endif %}
+                            </div>
+                            <div class="col-6 text-center">
+                                Unrelised P&L
+                                <br>
+                                <div id="day_pnl">₹ 0.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <div class="card-header">
+                        <h5>Open Positions</h5>
+                    </div>
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in positions reversed %}
+                            {% if x.quantity == 0 %}
+                            {% else %}
+                            <tr data-instrument="{{x.instrument_key}}" data-symbol="{{x.symbol}}"
+                                data-quantity="{{x.quantity}}" data-product="{{x.product}}" data-token="{{x.token}}"
+                                data-token="{{x.token}}" onclick="place_order(this)" id="POSITION{{x.instrument_key}}">
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    <span class="p-1" style="font-size: 11px;">{{x.quantity}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        {{x.product}}</span>
+                                    <br>
+                                    <p class="text-dark" style="font-size: 13px;">Buy Price {{x.buy_price}}</p>
+                                </td>
+                                <td>
+                                    <span class="p-1 text-c-green" style="font-size: 13px;" id="{{x.instrument_key}}"
+                                        data-buy_price="{{x.buy_price}}"
+                                        data-last_traded_quantity="{{x.last_traded_quantity}}"
+                                        data-sell_price="{{x.sell_price}}" data-unrealised_pnl="{{x.unrealised_pnl}}"
+                                        data-quantity="{{x.quantity}}"
+                                        data-product="{{x.product}}">{{x.unrealised_pnl}}</span>
+                                    <br>
+                                    <span class="text-dark" style="font-size: 13px;">LTP <span
+                                            id="{{x.instrument_key}}ltp"></span></span>
+                                    <p class="text-dark" style="font-size: 13px;">Sell Price {{x.sell_price}}</p>
+                                </td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="card-header">
+                        <h5>Closed Positions</h5>
+                    </div>
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in positions %}
+                            {% if x.quantity == 0 %}
+                            <tr data-instrument="{{x.instrument_key}}" data-symbol="{{x.symbol}}"
+                                data-quantity="{{x.quantity}}" data-product="{{x.product}}" data-token="{{x.token}}"
+                                onclick="place_order(this)" id="POSITION{{x.instrument_key}}">
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    {% if x.quantity >= 0 %}
+                                    <span class="p-1" style="font-size: 11px;">{{x.last_traded_quantity}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        {{x.product}}</span>
+                                    {% else %}
+                                    <span class="p-1">{{x.last_traded_quantity|mul:-1}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        <span class="btn-glow-light">{{x.product}}</span></span>
+                                    {% endif %}
+                                    <br>
+                                    <p class="text-dark" style="font-size: 13px;">Buy Price {{x.buy_price}}</p>
+                                </td>
+                                <td>
+                                    <span class="p-1 text-c-green" style="font-size: 13px;" id="{{x.instrument_key}}"
+                                        data-buy_price="{{x.buy_price}}"
+                                        data-last_traded_quantity="{{x.last_traded_quantity}}"
+                                        data-sell_price="{{x.sell_price}}" data-unrealised_pnl="{{x.unrealised_pnl}}"
+                                        data-quantity="{{x.quantity}}"><strong style="font-weight: 800;">
+                                            {% if x.realised_pnl > 0 %}
+                                            <span class="text-c-green">
+                                                {{x.realised_pnl}}
+                                            </span>
+                                            {% else %}
+                                            <span class="text-c-red">
+                                                {{x.realised_pnl}}
+                                            </span>
+                                            {% endif %}
+                                        </strong></span>
+                                    <br>
+                                    <span class="text-dark" style="font-size: 13px;">LTP <span
+                                            id="{{x.instrument_key}}ltp"></span></span>
+                                    <p class="text-dark" style="font-size: 13px;">Sell Price {{x.sell_price}}</p>
+                                </td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% else %}
+            <div class="card-block text-center" style="min-height: 80%;">
+                <h5 style="margin: 180px 0%;" class="text-muted">
+                    <i class="feather icon-layout" style="font-size: 30px;"></i><br><br>
+                    No orders placed yet
+                </h5>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="tab-pane show" id="Holdings" role="tabpanel" aria-labelledby="Holdings-tab">
+        <div class="card">
+            {% if holdings %}
+            <div class="card-block px-2 py-3">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in holdings %}
+                            <tr data-instrument="{{x.instrument_key}}" data-symbol="{{x.symbol}}"
+                                data-quantity="{{x.quantity}}" data-product="{{x.product}}" data-token="{{x.token}}"
+                                onclick="place_order(this)" id="POSITION{{x.instrument_key}}">
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    {% if x.quantity >= 0 %}
+                                    <span class="p-1" style="font-size: 11px;">{{x.quantity}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        {{x.product}}</span>
+                                    {% else %}
+                                    <span class="p-1">{{x.quantity|mul:-1}} <span style="font-size: 9px;">QTY</span> |
+                                        <span class="btn-glow-light">{{x.product}}</span></span>
+                                    {% endif %}
+                                    <br>
+                                    <p class="text-dark" style="font-size: 13px;">Buy Price {{x.buy_price}}</p>
+                                </td>
+                                <td>
+                                    <span class="p-1 text-c-green" style="font-size: 13px;" id="{{x.symbol}}"
+                                        data-buy_price="{{x.buy_price}}"
+                                        data-last_traded_quantity="{{x.last_traded_quantity}}"
+                                        data-sell_price="{{x.sell_price}}" data-unrealised_pnl="{{x.unrealised_pnl}}"
+                                        data-quantity="{{x.quantity}}">{{x.unrealised_pnl}}</span>
+                                    <br>
+                                    <span class="text-dark" style="font-size: 13px;">LTP <span
+                                            id="{{x.symbol}}ltp"></span></span>
+                                    <p class="text-dark" style="font-size: 13px;">Sell Price {{x.sell_price}}</p>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="hpnl">
+                Holdings P&L
+                {% if hpnl >= 0 %}
+                <span style="float: right;" class="m-r-30 text-right text-c-green">{{hpnl}}</span>
+                {% else %}
+                <span style="float: right;" class="m-r-30 text-right text-c-red">{{hpnl}}</span>
+                {% endif %}
+            </div>
+            {% else %}
+            <div class="card-block text-center" style="min-height: 80%;">
+                <h5 style="margin: 180px 0%;" class="text-muted">
+                    <i class="feather icon-layout" style="font-size: 30px;"></i><br><br>
+                    No orders placed yet
+                </h5>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-dialog modal-dialog-centered buy-sell collapse" role="document" id="order_tab">
+    <div class="modal-content">
+        <form id="order_tab_form" method="post">
+            <div class="modal-header">
+                <h5 class="modal-title" id="order_tab_symbol"></h5>
+                <a class="close" id="ordertab_close" data-toggle="collapse" href="#order_tab" role="button"
+                    aria-expanded="true" aria-controls="collapseExample"><span aria-hidden="true">×</span></a>
+            </div>
+            <!-- Hidden Inputs -->
+            {% csrf_token %}
+            <input type="hidden" id="order_tab_symbolinput" name="symbol" value="" required>
+            <input type="hidden" id="order_tab_instrumentinput" name="instrument" value="" required>
+            <input type="hidden" id="order_tab_tokeninput" name="token" value="" required>
+            <input type="hidden" id="order_tab_ordertypeinput" name="order_type" value="BUY" required>
+            <input type="hidden" id="order_tab_product" value="INTRADAY" name="product" required>
+            <input type="hidden" id="order_tab_type" value="MARKET" name="type" required>
+            <!-- END Hidden Inputs -->
+            <div style="height: 300px; width: 100%; overflow-y: scroll; overflow-x:hidden;">
+                <div class="modal-body">
+                    <div style="width: 100%;">
+                        <div class="order_label" id="quantity_label">Quantity</div>
+                        <div class="order_label">Price</div>
+                    </div>
+                    <div>
+                        <input type="number" id="order_tab_quantity" class="custom_input" value="1" placeholder="0"
+                            name="quantity" onkeyup="calculate_margin()" required>
+                        <input type="number" id="order_tab_priceinput" class="custom_input market_price"
+                            placeholder="0.0" name="price" value="0.0" required="" onkeyup="calculate_margin()"
+                            readonly="True">
+                    </div>
+                    <label class="m-t-5">Product Type</label>
+                    <div>
+                        <button type="button" class="custom_btn btn-dark" id="order_tab_intraday">INTRADAY</button>
+                        <button type="button" class="custom_btn btn-outline-dark"
+                            id="order_tab_carryforward">CARRYFORWARD</button>
+                    </div>
+                    <label>Type</label>
+                    <div>
+                        <button type="button" class="custom_btn btn-dark" id="order_tab_market">MARKET</button>
+                        <button type="button" class="custom_btn btn-outline-dark" id="order_tab_limit">LIMIT</button>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <div id="smart_order_button" class="text-c-purple p-l-10 p-r-10" onclick="smart_order()">
+                            Smart Order <i class="feather icon-target float-right"></i>
+                        </div>
+                        <div class="thin-line"></div>
+                        <section id="smart_order" class="display-none" style="padding: 0px 10px;">
+                            <br>
+                            <div style="width: 100%;">
+                                <div class="order_label">Stoploss</div>
+                                <div class="order_label">Target</div>
+                            </div>
+                            <div>
+                                <input type="number" id="order_tab_stoploss" class="custom_input" value="0"
+                                    placeholder="0" name="stoploss" required>
+                                <input type="number" id="order_tab_target" class="custom_input" value="0"
+                                    placeholder="0" name="target" required>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <hr>
+                <!-- <div class="card" id="convert">
+                    <div class="card-body">
+                        <b class="text-c-blue"><i class="feather icon-chevrons-right"></i> Convert Position</b>
+                    </div>
+                </div> -->
+                <div class="row align-items-center justify-content-center card-active" id="order_tab_info">
+                </div>
+                <hr>
+            </div>
+            <div class="card-block">
+                <footer>
+                    <table class="table table-hover m-0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Margin Required(Approx)
+                                    <br>
+                                    <span id="margin_required">0 + Charges</span>
+                                </td>
+                                <td class="float-right">
+                                    Available Margin
+                                    <br>
+                                    <span class="text-dark" id="wallet" data-tax="{{tax}}" data-wallet="{{wallet}}"
+                                        data-margin="{{margin}}" data-charges="{{charges}}"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </footer>
+                <div class="modal-footer" id="modal_footer"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    let option_chain = document.getElementById('option_chain')
+    option_chain = option_chain.getAttribute('data-chain')
+    option_chain = JSON.parse(option_chain.replace(/'/g, '"'));
+
+
+    function getSymbol(symbol) {
+        if (symbol.includes('SENSEX')) {
+            return 'SENSEX';
+        }
+        var match = symbol.match(/(.*?)(\d{2}[A-Z]{3}\d+)/);
+        if (match) {
+            var result = match[1];
+            return result;
+        } else {
+            return symbol;
+        }
+    }
+
+    function position_transact() {
+        // PLACING ORDER
+        console.log('YHI HAI')
+        let csrf = $("input[name=csrfmiddlewaretoken]").val()
+        let instrument = $("input[name=instrument]").val()
+        let token = $("input[name=token]").val()
+        console.log('DEBUG')
+        console.log(instrument)
+        console.log(token)
+        let symbol = $("input[name=symbol]").val()
+        let price = $("input[name=price]").val()
+        let quantity = $("input[name=quantity]").val()
+        let order_type = $("input[name=order_type]").val()
+        let product = $("input[name=product]").val()
+        let type = $("input[name=type]").val()
+        let stoploss = $("input[name=stoploss]").val()
+        let target = $("input[name=target]").val()
+        if (symbol.trim() == '' || price.trim() == '' || quantity.trim() == '' || order_type.trim() == '' || product.trim() == '' || type.trim() == '') {
+            document.getElementById('alert').classList.remove('display-none');
+            document.getElementById('alert').classList.add('alert-danger');
+            document.getElementById('alert').classList.remove('alert-success');
+            document.getElementById('alert').innerHTML = "Invalid Order Details"
+            return false
+        }
+        document.getElementById('alert').classList.remove('display-none');
+        document.getElementById('alert').classList.remove('alert-danger');
+        document.getElementById('alert').classList.add('alert-success');
+        document.getElementById('alert').innerHTML = "Order executed Successfully !";
+        mydata = { symbol: symbol, price: price, quantity: quantity, order_type: order_type, product: product, type: type, stoploss: stoploss, target: target, instrument: instrument, token: token, csrfmiddlewaretoken: csrf }
+        $.ajax({
+            url: "/async_transact",
+            method: "POST",
+            data: mydata,
+            success: function (data) {
+                if (data['success']) {
+                    document.getElementById('alert').classList.remove('alert-danger');
+                    document.getElementById('alert').classList.add('alert-success');
+                }
+                else {
+                    document.getElementById('alert').classList.add('alert-danger');
+                    document.getElementById('alert').classList.remove('alert-success');
+                }
+                document.getElementById('alert').classList.remove('display-none');
+                document.getElementById('alert').innerHTML = data['message'];
+                location.href = "/portfolio"
+            },
+        });
+    }
+
+    function option_lot(symbol) {
+        option_chain = document.getElementById('option_chain').getAttribute('data-chain')
+        option_chain = JSON.parse(option_chain)
+        gets = getSymbol(symbol)
+        if (gets in option_chain) {
+            document.getElementById('quantity_label').innerHTML = `<span>Lot</span><span class="quantity_lot">Quantity : <span id='lot_quantity' class="lotsize" style="min-width: 60px;"> ${option_chain[gets]}</span></span>`
+        }
+        else {
+            document.getElementById('quantity_label').innerHTML = `Quantity`
+        }
+    }
+
+    function place_order(ele) {
+        console.log('place_order')
+        let symbol = ele.getAttribute('data-symbol')
+        let token = ele.getAttribute('data-token')
+        let instrument = ele.getAttribute('data-instrument')
+        let quantity = ele.getAttribute('data-quantity')
+        let product = ele.getAttribute('data-product')
+        console.log(symbol)
+        option_lot(symbol)
+        document.getElementById('order_tab').classList.add('show')
+        document.getElementById('order_tab').classList.remove('collapse')
+        let modal_footer = document.getElementById('modal_footer')
+        if (quantity > 0) {
+            modal_footer.innerHTML = `<button type="button" id="order_tab_buy" class="btn btn-primary" style="width: 48%;" onclick="buy_order_button()">Buy more</button>
+                    <button type="button" id="order_tab_sell" class="btn btn-danger" style="width: 48%;" onclick="sell_exit_button('${symbol}','${quantity}','${product}')">Exit Position</button>`
+        }
+        else if (quantity < 0) {
+            modal_footer.innerHTML = `<button type="button" id="order_tab_buy" class="btn btn-primary" style="width: 48%;" onclick="buy_exit_button('${symbol}','${quantity}','${product}')">Exit Position</button>
+                    <button type="button" id="order_tab_sell" class="btn btn-danger" style="width: 48%;" onclick="sell_order_button()">Sell more</button>`
+        }
+        else {
+            modal_footer.innerHTML = `<button type="button" id="order_tab_buy" class="btn btn-primary" style="width: 48%;" onclick="buy_order_button()">Buy more</button>
+                    <button type="button" id="order_tab_sell" class="btn btn-danger" style="width: 48%;" onclick="sell_order_button()">Sell more</button>`
+        }
+        let info = document.getElementById(`${instrument}price`)
+        let open = info.getAttribute('data-open')
+        let high = info.getAttribute('data-high')
+        let low = info.getAttribute('data-low')
+        let close = info.getAttribute('data-close')
+        let price = info.getAttribute('data-price')
+        document.getElementById('order_tab').classList.toggle('show')
+        document.getElementById('order_tab_form').action = `/transact`
+        document.getElementById('order_tab_symbol').innerHTML = symbol
+        document.getElementById('order_tab_symbolinput').value = symbol
+        // document.getElementById('order_tab_priceinput').innerHTML = price
+        document.getElementById('order_tab_priceinput').value = price
+        document.getElementById('order_tab_tokeninput').value = token
+        document.getElementById('order_tab_instrumentinput').value = instrument
+        calculate_margin()
+        document.getElementById('order_tab_info').innerHTML = `<div class="col-3">
+            <p class="text-center text-muted m-b-10">Open</p>
+            <p class="text-center m-b-10"><b>${open}</b></p>
+            </div>
+            <div class="col-3">
+                <p class="text-center text-muted m-b-10">High</p>
+                <p class="text-center m-b-10"><b>${high}</b></p>
+                </div>
+                <div class="col-3">
+                    <p class="text-center text-muted m-b-10">Low</p>
+                    <p class="text-center m-b-10"><b>${low}</b></p>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-center text-muted m-b-10">Close</p>
+                        <p class="text-center m-b-10"><b>${close}</b></p>
+                        </div>`
+    }
+
+
+    document.getElementById('order_tab_intraday').addEventListener('click', event => {
+        document.getElementById('order_tab_product').value = 'INTRADAY'
+        document.getElementById('order_tab_carryforward').classList.remove('btn-dark')
+        document.getElementById('order_tab_carryforward').classList.add('btn-outline-dark')
+        document.getElementById('order_tab_intraday').classList.add('btn-dark')
+        document.getElementById('order_tab_intraday').classList.remove('btn-outline-dark')
+        calculate_margin()
+    })
+
+    document.getElementById('order_tab_carryforward').addEventListener('click', event => {
+        document.getElementById('order_tab_product').value = 'CARRYFORWARD'
+        document.getElementById('order_tab_carryforward').classList.add('btn-dark')
+        document.getElementById('order_tab_carryforward').classList.remove('btn-outline-dark')
+        document.getElementById('order_tab_intraday').classList.remove('btn-dark')
+        document.getElementById('order_tab_intraday').classList.add('btn-outline-dark')
+        calculate_margin()
+    })
+
+    document.getElementById('order_tab_market').addEventListener('click', event => {
+        document.getElementById('order_tab_type').value = 'MARKET'
+        document.getElementById('order_tab_priceinput').setAttribute("readonly", "True");
+        document.getElementById('order_tab_limit').classList.remove('btn-dark')
+        document.getElementById('order_tab_limit').classList.add('btn-outline-dark')
+        document.getElementById('order_tab_market').classList.add('btn-dark')
+        document.getElementById('order_tab_market').classList.remove('btn-outline-dark')
+    })
+
+    document.getElementById('order_tab_limit').addEventListener('click', event => {
+        document.getElementById('order_tab_type').value = 'LIMIT'
+        document.getElementById('order_tab_priceinput').removeAttribute("readonly", "True");
+        document.getElementById('order_tab_limit').classList.add('btn-dark')
+        document.getElementById('order_tab_limit').classList.remove('btn-outline-dark')
+        document.getElementById('order_tab_market').classList.remove('btn-dark')
+        document.getElementById('order_tab_market').classList.add('btn-outline-dark')
+    })
+
+
+    function calculate_margin() {
+        let symbol = document.getElementById('order_tab_symbolinput').value
+        let quantity = document.getElementById('order_tab_quantity').value
+        let product = document.getElementById('order_tab_product').value
+        let price = document.getElementById('order_tab_priceinput').value
+        let wallet = document.getElementById('wallet').getAttribute('data-wallet')
+        let margin = document.getElementById('wallet').getAttribute('data-margin')
+        let charges = document.getElementById('wallet').getAttribute('data-charges')
+        let tax = document.getElementById('wallet').getAttribute('data-tax')
+        gets = getSymbol(symbol)
+        if (gets in option_chain) {
+            quantity = quantity * option_chain[gets]
+            document.getElementById('lot_quantity').innerHTML = `${quantity}`
+        }
+        else {
+            document.getElementById('quantity_label').innerHTML = `Quantity`
+        }
+        let total = quantity * price
+        cls = ""
+        if (product == 'INTRADAY') {
+            if (total < wallet * margin) {
+                cls = 'text-success'
+            }
+            else {
+                cls = 'text-danger'
+            }
+            document.getElementById('wallet').innerHTML = wallet * margin
+        }
+        else {
+            if (total < wallet) {
+                cls = 'text-success'
+            }
+            else {
+                cls = 'text-danger'
+            }
+            document.getElementById('wallet').innerHTML = wallet
+        }
+        document.getElementById('margin_required').innerHTML = `
+    <details>
+    <summary>
+    <span class="${cls}">${(total).toFixed(2)}</span> +
+    <span class="text-info">Charges</span></summary>
+    Onstock Brokerage : ${charges}
+    <br>
+    Taxes : ${((tax / 100) * total).toFixed(2)}
+     </details>
+    `
+    }
+
+    function buy_order_button() {
+        document.getElementById('order_tab_ordertypeinput').value = 'BUY'
+        document.getElementById('ordertab_close').click()
+        position_transact()
+        // document.getElementById('order_tab_form').submit()
+    }
+
+    function sell_order_button() {
+        document.getElementById('order_tab_ordertypeinput').value = 'SELL'
+        document.getElementById('ordertab_close').click()
+        position_transact()
+        // document.getElementById('order_tab_form').submit()
+    }
+
+    function buy_exit_button(symbol, quantity, product) {
+        quantity = quantity * -1
+        gets = getSymbol(symbol)
+        if (gets in option_chain) {
+            quantity = quantity / option_chain[gets]
+        }
+        document.getElementById('order_tab_symbolinput').value = symbol
+        document.getElementById('order_tab_quantity').value = quantity
+        document.getElementById('order_tab_ordertypeinput').value = 'BUY'
+        document.getElementById('order_tab_product').value = product
+        document.getElementById('order_tab_type').value = 'MARKET'
+        document.getElementById('ordertab_close').click()
+        position_transact()
+        // document.getElementById('order_tab_form').submit()
+    }
+
+    function sell_exit_button(symbol, quantity, product) {
+        quantity = quantity
+        if (gets in option_chain) {
+            quantity = quantity / option_chain[gets]
+        }
+        document.getElementById('order_tab_symbolinput').value = symbol
+        document.getElementById('order_tab_quantity').value = quantity
+        document.getElementById('order_tab_ordertypeinput').value = 'SELL'
+        document.getElementById('order_tab_product').value = product
+        document.getElementById('order_tab_type').value = 'MARKET'
+        document.getElementById('ordertab_close').click()
+        position_transact()
+        // document.getElementById('order_tab_form').submit()
+    }
+
+    // UPDATING PRICE
+    const socket = new WebSocket('wss://onstock.in/ws/get_price/');
+
+    socket.onmessage = (event) => {
+        document.getElementById('loader').classList.add('display-none')
+        const data = JSON.parse(event.data);
+        let today_pnl = 0
+        let count = 0
+        for (let i in data) {
+            try {
+                buy_id = i + 'buy_price'
+                let buy_price = document.getElementById(i).getAttribute('data-buy_price')
+                let sell_price = document.getElementById(i).getAttribute('data-sell_price')
+                let quantity = document.getElementById(i).getAttribute('data-quantity')
+                let product = document.getElementById(i).getAttribute('data-product')
+                let last_traded_quantity = document.getElementById(i).getAttribute('data-last_traded_quantity')
+                let value = data[i];
+                let pnl = 0
+                let flag = true
+                if (sell_price == 0.0) {
+                    pnl = (value.ltp - buy_price).toFixed(2) * quantity;
+                }
+                else if (buy_price == 0.0) {
+                    pnl = (value.ltp - sell_price).toFixed(2) * quantity;
+                }
+                else {
+                    pnl = (sell_price - buy_price).toFixed(2) * last_traded_quantity;
+                    flag = false
+                }
+                pnl = Math.round(pnl * 100) / 100;
+                let cls = "";
+                let ltpcls = "";
+                if (pnl < 0) {
+                    cls = "text-c-red"
+                }
+                else {
+                    cls = "text-c-green"
+                }
+                if (value.ltp < buy_price) {
+                    ltpcls = "text-c-red"
+                }
+                else {
+                    ltpcls = "text-c-green"
+                }
+                if (flag) {
+                    document.getElementById(i).innerHTML = `<b class="${cls}">${pnl}</b>`
+                }
+                document.getElementById(`${i}ltp`).innerHTML = `<span class="${ltpcls}" id="${i}price" data-open="${value.open}" data-high="${value.high}" data-low="${value.low}" data-close="${value.close}" data-price="${value.ltp}">${value.ltp}</span>`
+                if (product == 'INTRADAY') {
+                    today_pnl = today_pnl + Number(pnl.toFixed(2))
+                    today_pnl = Number(today_pnl.toFixed(2))
+                }
+                count = count + 1
+            }
+            catch { }
+        }
+        count = 0
+        if (today_pnl >= 0) {
+            document.getElementById('day_pnl').innerHTML = `<span class='text-c-green'>₹ ${today_pnl}</span>`
+        }
+        else {
+            document.getElementById('day_pnl').innerHTML = `<span class='text-c-red'>₹ ${today_pnl}</span>`
+        }
+        today_pnl = 0
+    };
+
+    socket.onopen = (event) => {
+        sl = document.getElementById('symbollist').getAttribute('data-symbollist')
+        socket.send(JSON.stringify(
+            {
+                symbol_list: sl
+            }
+        ))
+    };
+
+    socket.onclose = (event) => {
+        document.getElementById('loader').classList.remove('display-none')
+        document.getElementById('loader_text').innerHTML = 'Oops Disconnected ! Please reload .'
+    };
+
+    socket.onerror = (error) => {
+        document.getElementById('loader').classList.remove('display-none')
+        document.getElementById('loader_text').innerHTML = 'Oops Disconnected ! Please reload .'
+    };
+    function smart_order() {
+        // document.getElementById('smart_order_button').classList.add('display-none');
+        document.getElementById('smart_order').classList.remove('display-none');
+        location.href = '#smart_order'
+    }
+</script>
+{% endblock body %}

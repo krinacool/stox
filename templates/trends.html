@@ -1,0 +1,147 @@
+{% extends 'main.html' %}
+{% block body %}
+{% if user.is_authenticated %}
+{% else %}
+<script>location.href = "/"</script>
+{% endif %}
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#news" role="tab" aria-controls="news"
+            aria-selected="false">News</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="CA-tab" data-toggle="pill" href="#CA" role="tab" aria-controls="CA"
+            aria-selected="true">CA</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="Movers-tab" data-toggle="pill" href="#Movers" role="tab" aria-controls="Movers"
+            aria-selected="false">Movers</a>
+    </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane active" id="news" role="tabpanel" aria-labelledby="news-tab">
+        <div class="card">
+            <div class="card-block px-2 py-3">
+                <div class="table-responsive">
+                    <table class=" table-hover">
+                        <tbody>
+                            {% for x in news reversed %}
+                            <tr>
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.title}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <span class="p-1 float-right" style="font-size: 9px;"><i
+                                            class="feather icon-clock"></i>
+                                        {{x.datetime}}</span>
+                                    <br>
+                                    <a href="{{x.link}}" class="text-muted">
+                                        <div style="height: 45px; overflow: hidden;">
+                                            <span style="font-size: 11px;">{{x.content}}</span>
+                                        </div>
+                                    </a>
+                                    <br>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="CA" role="tabpanel" aria-labelledby="CA-tab">
+        <div class="card">
+            <div class="card-block px-2 py-3">
+                <div class="table-responsive">
+                    <table class="table-hover">
+                        <tbody>
+                            {% for x in ca reversed %}
+                            <tr>
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.title}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <span class="p-1 float-right" style="font-size: 9px;"><i
+                                            class="feather icon-clock"></i>
+                                        {{x.datetime}}</span>
+                                    <br>
+                                    <a href="{{x.link}}" class="text-muted">
+                                        <div style="height: 45px; overflow: hidden;">
+                                            <span style="font-size: 11px;">{{x.content}}</span>
+                                        </div>
+                                    </a>
+                                    <br>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="Movers" role="tabpanel" aria-labelledby="Movers-tab">
+        <div class="card">
+        </div>
+    </div>
+    <div class="tab-pane" id="Tradebook" role="tabpanel" aria-labelledby="Tradebook-tab">
+        <div class="card">
+            {% if tradebook %}
+            <div class="card-block px-2 py-3">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in tradebook reversed %}
+                            <tr>
+                                <td>
+                                    <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    {% if x.quantity >= 0 %}
+                                    <span class="p-1" style="font-size: 11px;">{{x.quantity}} <span
+                                            style="font-size: 9px;">QTY</span> |
+                                        {{x.product}}</span>
+                                    {% else %}
+                                    <span class="p-1">{{x.quantity}} <span style="font-size: 9px;">QTY</span> |
+                                        <span class="btn-glow-light">{{x.product}}</span></span>
+                                    {% endif %}
+                                    <br>
+                                    <span class="p-1" style="font-size: 9px;"><i class="feather icon-clock"></i>
+                                        {{x.datetime}}</span>
+                                </td>
+                                <td>
+                                    {% if x.status == 'completed' %}
+                                    <span class="p-1 btn text-c-green"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% elif x.status == 'failed' %}
+                                    <span class="p-1 text-c-red btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% elif x.status == 'initiated' %}
+                                    <span class="p-1 text-c-blue btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% else %}
+                                    <span class="p-1 text-c-purple btn"
+                                        style="font-size: 13px; background-color: aliceblue;">{{x.status}}</span>
+                                    {% endif %}
+                                    <br>
+                                    {% if x.order_type == 'BUY' %}
+                                    <span class="text-success" style="font-size: 12px;">Buy Price. {{x.price}}</span>
+                                    {% else %}
+                                    <span class="text-danger" style="font-size: 12px;">Sell Price. {{x.price}}</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% else %}
+            <div class="card-block text-center">
+                <h3><span class="text-muted"><i class="feather icon-map"></i> <br><br> Oops !
+                        Nothing to display</span></h3>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock body %}

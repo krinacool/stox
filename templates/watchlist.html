@@ -1,0 +1,450 @@
+{% extends 'main.html' %}
+{% block search %}
+<style>
+    .table td,
+    .table th {
+        border-top: 1px solid #eaeaea;
+        white-space: nowrap;
+        padding: 2% 1% 1% 1%;
+    }
+
+    .delete_bin {
+        background-color: aliceblue;
+        width: 22%;
+        border-radius: 20px;
+    }
+</style>
+<div class="search-div">
+    <div for="m-search" class="form-control" style="border-radius: 10px;">
+        <i class="feather icon-search text-c-blue"></i>
+        <input type="text" id="search-input" style="border: none; width: 80%;background-color: rgba(255, 240, 240, 0);"
+            placeholder="Search & add">
+    </div>
+</div>
+{% endblock search %}
+{% block body %}
+{% if user.is_authenticated %}
+{% else %}
+<script>location.href = "/"</script>
+{% endif %}
+
+<div class="modal-dialog modal-dialog-centered buy-sell collapse" role="document" id="order_tab">
+    <div class="modal-content">
+        <form id="order_tab_form" method="post">
+            <div class="modal-header">
+                <h5 class="modal-title" id="order_tab_symbol"></h5>
+                <div id="delete_symbol" class="m-t-5"></div>
+                <a class="close" data-toggle="collapse" id="order_cancel" href="#order_tab" role="button"
+                    aria-expanded="true" aria-controls="collapseExample"><span aria-hidden="true">×</span></a>
+            </div>
+            <!-- Hidden Inputs -->
+            {% csrf_token %}
+            <input type="hidden" id="order_tab_symbolinput" name="symbol" value="" required>
+            <input type="hidden" id="order_tab_instrumentinput" name="instrument" value="" required>
+            <input type="hidden" id="order_tab_tokeninput" name="token" value="" required>
+            <input type="hidden" id="order_tab_ordertypeinput" name="order_type" value="BUY" required>
+            <input type="hidden" id="order_tab_product" value="INTRADAY" name="product" required>
+            <input type="hidden" id="order_tab_type" value="MARKET" name="type" required>
+            <!-- END Hidden Inputs -->
+            <div style="height: 300px; width: 100%; overflow-y: scroll; overflow-x:hidden;">
+                <div class="modal-body">
+                    <div style="width: 100%;">
+                        <div class="order_label" id="quantity_label">Quantity</div>
+                        <div class="order_label">Price</div>
+                    </div>
+                    <div>
+                        <input type="number" id="order_tab_quantity" class="custom_input" onkeyup="calculate_margin()"
+                            value="1" placeholder="0" name="quantity" required>
+                        <input type="text" id="order_tab_priceinput" onkeyup="calculate_margin()"
+                            class="custom_input market_price" placeholder="" name="price" value="0.0" required=""
+                            readonly="True">
+                    </div>
+                    <label class="m-t-5">Product Type</label>
+                    <div>
+                        <button type="button" class="custom_btn btn-dark" id="order_tab_intraday">INTRADAY</button>
+                        <button type="button" class="custom_btn btn-outline-dark"
+                            id="order_tab_carryforward">CARRYFORWARD</button>
+                    </div>
+                    <label>Type</label>
+                    <div>
+                        <button type="button" class="custom_btn btn-dark" id="order_tab_market">MARKET</button>
+                        <button type="button" class="custom_btn btn-outline-dark" id="order_tab_limit">LIMIT</button>
+                    </div>
+                </div>
+                <!-- <div class="thin-line"></div> -->
+                <div class="">
+                    <div class="">
+                        <div id="smart_order_button" class="text-c-purple p-l-10 p-r-10" onclick="smart_order()">
+                            Smart Order <i class="feather icon-target float-right"></i>
+                        </div>
+                        <div class="thin-line"></div>
+                        <section id="smart_order" class="display-none" style="padding: 0px 10px;">
+                            <br>
+                            <div style="width: 100%;">
+                                <div class="order_label">Stoploss</div>
+                                <div class="order_label">Target</div>
+                            </div>
+                            <div>
+                                <input type="number" id="order_tab_stoploss" class="custom_input" value="0"
+                                    placeholder="0" name="stoploss" required>
+                                <input type="number" id="order_tab_target" class="custom_input" value="0"
+                                    placeholder="0" name="target" required>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <hr>
+                <div class="row align-items-center justify-content-center card-active" id="order_tab_info">
+                </div>
+                <hr>
+            </div>
+
+            <div class="card-block">
+                <footer>
+                    <table class="table table-hover m-0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Margin Required(Approx)
+                                    <br>
+                                    <span id="margin_required">0 + Charges</span>
+                                </td>
+                                <td class="float-right">
+                                    Available Margin
+                                    <br>
+                                    <span class="text-dark" id="wallet" data-tax="{{tax}}" data-wallet="{{wallet}}"
+                                        data-margin="{{margin}}" data-charges="{{charges}}"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </footer>
+                <div class="modal-footer">
+                    <button type="button" id="order_tab_buy" class="btn btn-primary" style="width: 48%;">BUY</button>
+                    <button type="button" id="order_tab_sell" class="btn btn-danger" style="width: 48%;">SELL</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="symbollist" data-symbollist="{{watchlist_symbollist}}"></div>
+<div id="loader" class="outer-container">
+    <div class="inner-container">
+        <p id="loader_text" class="text-danger"></p>
+        <div class="loader"></div>
+    </div>
+</div>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+    {% for i in watchlist_list reversed %}
+    <li class="nav-item">
+        <a class="nav-link {% if forloop.counter == 1 %} active {% endif %}" id="pills-home-tab" data-toggle="pill"
+            href="#{{i}}" role="tab" aria-controls="{{i}}" aria-selected="true">{{i}}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class="tab-content" id="pills-tabContent">
+    {% for i in watchlist_list reversed %}
+    <div class="tab-pane show {% if forloop.counter == 1 %} active {% endif %}" id="{{i}}" role="tabpanel"
+        aria-labelledby="{{i}}-tab">
+        <div class="card-block px-0 py-3">
+            <div class="thin-line"></div>
+            {% for x in watch_list reversed %}
+            {% if x.tag == i %}
+            <div data-symbol="{{x.symbol}}" data-token="{{x.token}}" data-instrument="{{x.instrument_key}}"
+                ondragend="delete_cancel()" ondrag="delete_initiate(this,'{{x.instrument_key}}')" onclick="order(this)"
+                draggable="true" style="color: black;">
+                <div style="padding: 2%; margin-left: 15px; display: inline-block;">
+                    <div>{{x.symbol}}</div>
+                    <div style="font-size: 12px; color: rgb(48, 44, 44);">{{x.segment}}</div>
+                </div>
+                <div id="" style="display: inline; float: right; margin-right: 15px;margin-top: 2%;">
+                    <div id="{{x.instrument_key}}" style="padding: 2%; text-align: left; width: 80px;">
+                        <div id="{{x.instrument_key}}price" data-price="{{x.price}}" data-open="{{x.open}}"
+                            data-close="{{x.close}}" data-high="{{x.high}}" data-low="{{x.low}}"
+                            style="text-align: left;">{{x.price}}</div>
+                        <div class="text-c-green" style="font-size: 12px; text-align: left;">0.00</div>
+                    </div>
+                </div>
+                <div class="thin-line"></div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<div class="card-block display-none" id="watchlist_update_tag">
+    <div class="add_watchlist">
+        <div style="margin-top: 10px;">
+            <label style="padding: 1% 0% 0% 2%;">Selected stocks</label>
+            <label style="float: right;"
+                onclick="document.getElementById('watchlist_update_tag').classList.add('display-none')"><i
+                    class="feather icon-x" style="margin-right: 10px;font-weight: 900;"></i></label>
+        </div>
+        <div id="add_watchlist_symbols" class="add_watchlist_symbols">
+        </div>
+        <label style="padding: 0% 0% 0% 2%;">Add to</label>
+        <div class="add_watchlist_symbols">
+            {% for i in watchlist_list reversed %}
+            <div class="add_watchlist_symbols_list" onclick="add_watchlist('{{i}}')">{{i}} <i
+                    class="feather icon-plus-square"></i></div>
+            {% endfor %}
+            <div class="add_custom_tag" onclick="custom_tag_add()"><i class="feather icon-plus-square"></i></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card-block display-none" id="delete_bar" onclick="delete_watchlist()" ondragleave="delete_watchlist()">
+    <div class="delete_bar text-center">
+        <br>
+        <i class="feather icon-trash-2 text-c-red f-22"></i>
+    </div>
+</div>
+<!-- WATCHLIST SELECTION -->
+<div class="modal-dialog modal-dialog-centered buy-sell collapse" role="document" id="watchlist_tab">
+    <div class="modal-content">
+        <input type="hidden" id="getsymbol" value="">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Watchlist</h5>
+            <a class="close" data-toggle="collapse" href="#watchlist_tab" role="button" aria-expanded="true"
+                aria-controls="collapseExample"><span aria-hidden="true">×</span></a>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="watchlist_select">New Watchlist</label>
+                <input type="text" name="tag" id="new_tag" class="form-control">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-danger" data-toggle="collapse" href="#watchlist_tab" role="button" aria-expanded="true"
+                aria-controls="collapseExample">Cancel</a>
+            <button type="button" id="addbutton" class="btn btn-primary">ADD</button>
+        </div>
+    </div>
+</div>
+<script src="/static/logic/javascript/order.js"></script>
+
+<form action="/watchlist" method="post" id="save_watchlist_form">
+    {% csrf_token %}
+    <input type="hidden" id="symbollist_input" name="symbollist" required>
+    <input type="hidden" id="tag_input" name="tag" required>
+</form>
+<!-- WATCHLIST SELECTION -->
+<script>
+    let selected_symbols_list = [];
+    const symbol_socket = new WebSocket('wss://onstock.in/ws/symbols/');
+    symbol_socket.onopen = (event) => {
+    };
+
+    const searchInput = document.getElementById('search-input');
+    const suggestionsDiv = document.getElementById('suggestions');
+    let timeoutId;
+    let suggestions = [];
+    let symboldata = JSON.parse('{}');
+
+    symbol_socket.onmessage = (event) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+            data = JSON.parse(event.data);
+            symboldata = JSON.parse(event.data)
+            suggestions = []
+            for (let x in symboldata) {
+                suggestions.push(symboldata[x]['tradingsymbol'])
+            }
+            generateSuggestionsHTML(symboldata);
+        }, 300);
+    };
+
+    const debounce = (func, delay) => {
+        let timer;
+        return function () {
+            const context = this;
+            const args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                func.apply(context, args);
+            }, delay);
+        };
+    };
+
+    function generateSuggestionsHTML(symboldata) {
+        suggestionsDiv.innerHTML = '';
+        symboldata.forEach(suggestion => {
+            const addiconDiv = document.createElement('div');
+            const addicon = document.createElement('i');
+            addicon.classList.add('feather', 'icon-plus', 'btn', 'btn-outline-success');
+            addiconDiv.append(addicon);
+            addiconDiv.addEventListener("click", function () {
+                document.getElementById('watchlist_update_tag').classList.remove('display-none')
+                update_watchlist_step(suggestion);
+            });
+            const suggestionDiv = document.createElement('div');
+            suggestionDiv.classList.add('suggestion');
+            suggestionDiv.innerHTML = `<span data-symbol="{{suggestion.tradingsymbol}}" class='text-dark'>${suggestion.tradingsymbol}<span style='font-size:9px;margin-left:10px; padding:1% 2%;background-color:aliceblue; border:1px solid whitesmoke; border-radius:5px;'>${suggestion.segment}</span></span>`;
+            suggestionDiv.append(addiconDiv);
+            suggestionsDiv.appendChild(suggestionDiv);
+        });
+
+    };
+
+    const updateSuggestions = debounce(() => {
+        searchInput.value = searchInput.value.toUpperCase();
+        symbol_socket.send(searchInput.value.toUpperCase());
+
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredSuggestions = suggestions
+
+
+    }, 300);
+
+    searchInput.addEventListener('input', updateSuggestions);
+
+
+
+    document.addEventListener('click', event => {
+        delete_cancel()
+        if (!searchInput.contains(event.target) && !suggestionsDiv.contains(event.target)) {
+            suggestionsDiv.innerHTML = '';
+        }
+    });
+    function update_watchlist_step(suggestion) {
+        selected_symbols_list.push(suggestion)
+        let temp_id = `selected_${suggestion.exchange_token}`
+        document.getElementById('add_watchlist_symbols').innerHTML = `<div class="add_watchlist_symbols_list" id="${temp_id}">${suggestion.tradingsymbol} <i class="feather icon-x-circle" data-temp_id='${temp_id}' data-ele='${JSON.stringify(suggestion)}' onclick="remove_add_symbol(this)"
+                    style="padding-left: 20px;"></i></div>` + document.getElementById('add_watchlist_symbols').innerHTML
+    }
+    document.getElementById('addbutton').addEventListener('click', event => {
+        let tag = document.getElementById('new_tag').value
+        add_watchlist(tag)
+    })
+
+    function update_watchlist(suggestion, tag) {
+        let stock = suggestion;
+        let csrf = $("input[name=csrfmiddlewaretoken]").val()
+        mydata = { stock: stock, tag: tag, csrfmiddlewaretoken: csrf }
+        $.ajax({
+            url: "{% url 'add_to_watchlist' %}",
+            method: "POST",
+            data: mydata,
+            success: function (data) {
+                document.getElementById('alert').classList.remove('display-none');
+                document.getElementById('alert').innerHTML = "Watchlist updated Successfully !";
+            },
+        });
+    }
+
+    const socket = new WebSocket('wss://onstock.in/ws/get_price/');
+
+    socket.onmessage = (event) => {
+        document.getElementById('loader').classList.add('display-none')
+        try {
+            let data = JSON.parse(event.data);
+            for (let i in data) {
+                try {
+                    let lines = ""
+                    let value = data[i]
+                    let change = (value.high - value.low).toFixed(2);
+                    let cls = "";
+                    if (change > 0) {
+                        cls = "text-success"
+                    }
+                    else {
+                        cls = "text-c-red"
+                    }
+                    thisline = `<div id="${i}price" data-price="${value.ltp}" data-open="${value.open}" data-close="${value.close}"
+                    data-high="${value.high}" data-low="${value.low}" style="text-align: left;">${value.ltp}</div>
+                <div class="${cls}">${change}</div>`
+                    lines = lines + thisline
+                    document.getElementById(i).innerHTML = thisline
+                }
+                catch { }
+            }
+        }
+        catch (error) {
+        }
+    };
+
+    socket.onopen = (event) => {
+        sl = document.getElementById('symbollist').getAttribute('data-symbollist')
+        socket.send(JSON.stringify(
+            {
+                symbol_list: sl
+            }
+        ))
+    };
+
+    socket.onclose = (event) => {
+        document.getElementById('loader').classList.remove('display-none')
+        document.getElementById('loader_text').innerHTML = 'Oops Disconnected ! Please reload .'
+    };
+
+    socket.onerror = (error) => {
+        document.getElementById('loader').classList.remove('display-none')
+        document.getElementById('loader_text').innerHTML = 'Oops Disconnected ! Please reload .'
+    };
+
+    let temp_del_list = []
+    function delete_initiate(ele, stock) {
+        const selectedElements = document.querySelectorAll('.symbol_selected');
+        selectedElements.forEach(element => {
+            element.classList.remove('symbol_selected');
+        });
+
+        ele.classList.add('symbol_selected')
+        document.getElementById('delete_bar').classList.remove('display-none')
+        let temp = []
+        temp_del_list = temp
+        temp_del_list.push(stock)
+        setTimeout(delete_cancel, 10000)
+    }
+
+    function delete_cancel() {
+        const selectedElements = document.querySelectorAll('.symbol_selected');
+        selectedElements.forEach(element => {
+            element.classList.remove('symbol_selected');
+        });
+        temp_del_list = []
+        document.getElementById('delete_bar').classList.add('display-none')
+    }
+
+    function delete_watchlist() {
+        a = temp_del_list[0]
+        location.href = `/delete_symbol/${a}`
+    }
+
+    function add_watchlist(tag) {
+        let frm = document.getElementById('save_watchlist_form');
+        document.getElementById('symbollist_input').value = JSON.stringify(selected_symbols_list)
+        document.getElementById('tag_input').value = tag
+        frm.submit()
+    }
+    function remove_add_symbol(ele) {
+        let eledata = JSON.parse(ele.getAttribute('data-ele'))
+        selected_symbols_list = selected_symbols_list.filter(function (item) {
+            return !isEqual(item, eledata);
+        });
+        function isEqual(obj1, obj2) {
+            var keys1 = Object.keys(obj1);
+            var keys2 = Object.keys(obj2);
+            if (keys1.length !== keys2.length) {
+                return false;
+            }
+            for (var key of keys1) {
+                if (obj1[key] !== obj2[key]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        let wholeid = ele.getAttribute('data-temp_id')
+        document.getElementById(wholeid).remove()
+    }
+    function custom_tag_add() {
+        document.getElementById("watchlist_tab").classList.toggle('collapse')
+    }
+</script>
+{% endblock body %}

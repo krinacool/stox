@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>onstock | Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Trade stocks online with ease on YourStockTrade. Discover a user-friendly platform for buying and selling stocks. Access real-time stock prices, execute trades, and manage your portfolio efficiently." />
+    <meta name="keywords"
+        content="buy stocks, sell stocks, online trading, stock market platform, real-time stock prices, portfolio management" />
+    <meta name="author" content="atulg" />
+    <meta property="og:title" content="Buy and Sell Stocks Online | YourStockTrade" />
+    <meta property="og:description"
+        content="Trade stocks online with ease on YourStockTrade. Discover a user-friendly platform for buying and selling stocks. Access real-time stock prices, execute trades, and manage your portfolio efficiently." />
+    <meta property="og:image" content="https://www.onstock.in/images/share-image.jpg" />
+    <meta property="og:url" content="https://www.onstock.in/" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/static/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+
+    <style>
+        label {
+            color: black;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        .alert {
+            z-index: 10;
+        }
+
+        .table td,
+        .table th {
+            vertical-align: middle;
+        }
+
+        .line {
+            width: 100%;
+            background-color: whitesmoke;
+            height: 5px;
+        }
+
+        .thin-line {
+            width: 100%;
+            background-color: #d0d0d080;
+            height: 1px;
+        }
+
+        .search-div {
+            background-color: #3f4d67;
+            padding: 3% 1% 3% 1%;
+            width: 100%;
+        }
+
+        #suggestions {
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .suggestion {
+            background-color: white;
+            border: 1px solid #f5f1f1;
+            padding: 2% 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bottom-navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #3f4d67;
+            color: #ededed;
+            height: 60px;
+            /* Adjust height for better visibility */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .lower_nav_link {
+            color: #ccc;
+            /* Set a default color for icons */
+            font-size: 20px;
+            /* Adjust size for icons */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+
+        .lower_nav_link:hover {
+            color: #fff;
+            /* Change color on hover for better visibility */
+        }
+
+        /* Add an active state for the current page */
+        .lower_nav_link.active {
+            color: #fff;
+        }
+
+
+        .bottom-alert {
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+            bottom: 30px;
+        }
+
+        .buy-sell {
+            z-index: 1050;
+            position: fixed;
+            top: 50%;
+            min-width: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 1rem;
+            border-radius: 20%;
+            height: 50%;
+            background: black;
+            text-align: center;
+            opacity: .5;
+        }
+
+        .carousel-card {
+            border-radius: 7px;
+            padding: 3%;
+            color: white;
+        }
+
+        .first-slide {
+            background-image: linear-gradient(135deg, #F761A1 10%, #8C1BAB 100%);
+        }
+
+        .second-slide {
+            background-image: linear-gradient(-135deg, #43CBFF 10%, #9708CC 100%);
+        }
+
+        .third-slide {
+            background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);
+        }
+
+        .fourth-slide {
+            background-image: linear-gradient(135deg, #3B2667 10%, #BC78EC 100%);
+        }
+
+        .fifth-slide {
+            background-image: linear-gradient(135deg, #09203F 10%, #537895 100%);
+        }
+
+        .sixth-slide {
+            background-image: linear-gradient(135deg, #93A5CF 10%, #E4EfE9 100%);
+        }
+
+        @media (min-width: 991px) {
+            .bottom-navbar {
+                display: none;
+            }
+
+            .buy-sell {
+                min-width: 45%;
+            }
+        }
+
+        .custom_input {
+            display: inline-block;
+            width: 48%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid black;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+
+        .index_main {
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 140px;
+            width: 100%;
+            padding: 0% 1% 0% 4px;
+        }
+
+        .index_inner {
+            display: inline-block;
+            font-weight: 500;
+            background-color: white;
+            margin: 7px 3px 3px 1px;
+            padding: 19px 29px 16px 21px;
+            min-width: 190px;
+            border: 1px solid gainsboro;
+            border-radius: 6px;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .custom_btn {
+            padding: 7px 12px;
+            border-radius: 0.25rem;
+            border: 1px solid black;
+            font-size: 14px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .order_label {
+            display: inline-block;
+            width: 48%;
+            padding-left: 1%;
+            padding-bottom: 1%;
+            color: black;
+        }
+
+        .symbol_selected {
+            background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+        }
+
+        .market_price {
+            /* background: linear-gradient(to right, #434343 0%, black 100%); */
+            background: repeating-linear-gradient(-55deg,
+                    #222,
+                    #222 10px,
+                    #333 10px,
+                    #333 20px);
+        }
+
+        .quantity_lot {
+            max-width: 130px;
+            float: right;
+            overflow: auto;
+            display: inline-block;
+            text-align: right;
+            display: inline-block;
+        }
+
+        .add_watchlist {
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            color: #09203F;
+            border: 1px solid whitesmoke;
+            font-weight: 600;
+            z-index: 100;
+            bottom: 10px;
+            position: fixed;
+        }
+
+        .add_watchlist_symbols {
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 60px;
+            width: 100%;
+        }
+
+        .add_watchlist_symbols_list {
+            display: inline-block;
+            font-weight: 500;
+            background-color: whitesmoke;
+            letter-spacing: 1px;
+            margin: 0% 3px 0% 1px;
+            max-width: 400px;
+            padding: 10px 1%;
+            text-align: center;
+            background-size: contain;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .add_custom_tag {
+            position: fixed;
+            right: 1px;
+            background-color: #09203F;
+            color: white;
+            padding: 10px 4%;
+            font-weight: 900;
+            text-align: center;
+            background-size: contain;
+            border-radius: 5px;
+        }
+
+        .delete_bar {
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            color: #09203F;
+            border: 1px solid whitesmoke;
+            font-weight: 600;
+            z-index: 100;
+            bottom: 0px;
+            position: fixed;
+        }
+
+        .outer-container {
+            width: 100vw;
+            height: 70vh;
+            background-color: white;
+            position: fixed;
+            z-index: 500;
+        }
+
+        .inner-container {
+            width: 80%;
+            /* Adjust width as needed */
+            max-width: 800px;
+            /* Maximum width for larger screens */
+            margin: 0 auto;
+            /* Center the inner div */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            /* Text color */
+        }
+
+        .loader {
+            width: 120px;
+            height: 22px;
+            border-radius: 40px;
+            color: #514b82;
+            border: 2px solid;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loader::before {
+            content: "";
+            position: absolute;
+            margin: 2px;
+            width: 14px;
+            top: 0;
+            bottom: 0;
+            left: -20px;
+            border-radius: inherit;
+            background: currentColor;
+            box-shadow: -10px 0 12px 3px currentColor;
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%, -30px 50%);
+            animation: l14 1s infinite linear;
+        }
+
+        @keyframes l14 {
+            100% {
+                left: calc(100% + 20px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add this in your Django template -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
+
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar">
+        <div class="navbar-wrapper">
+            <div class="navbar-brand header-logo">
+                <a href="/market" class="b-brand">
+                    <div class="b-bg">
+                        <i class="feather icon-trending-up"></i>
+                    </div>
+                    <span class="b-title">Onstock</span>
+                </a>
+                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
+            </div>
+            <div class="navbar-content scroll-div">
+                <ul class="nav pcoded-inner-navbar">
+                    <li class="nav-item pcoded-menu-caption">
+                        <label style="color: white;">MARKET</label>
+                    </li>
+                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project"
+                        class="nav-item active">
+                        <a href="/market" class="nav-link "><span class="pcoded-micon"><i
+                                    class="feather icon-home"></i></span><span class="pcoded-mtext">Home</span></a>
+                    </li>
+
+
+
+                    <li class="nav-item pcoded-menu-caption">
+                        <label style="color: white;">STOCKS</label>
+                    </li>
+                    <li data-username="form elements advance componant validation masking wizard picker select"
+                        class="nav-item">
+                        <a href="/watchlist" class="nav-link "><span class="pcoded-micon"><i
+                                    class="feather icon-bookmark"></i></span><span
+                                class="pcoded-mtext">Watchlist</span></a>
+                    </li>
+                    <li data-username="Table bootstrap datatable footable" class="nav-item">
+                        <a href="/trends" class="nav-link "><span class="pcoded-micon"><i
+                                    class="feather icon-zap"></i></span><span class="pcoded-mtext">Trends</span></a>
+                    </li>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label style="color: white;">TRADING</label>
+                    </li>
+                    <li data-username="Maps Google" class="nav-item"><a href="/orders" class="nav-link "><span
+                                class="pcoded-micon"><i class="feather icon-book"></i></span><span
+                                class="pcoded-mtext">Orders</span></a></li>
+                    <li data-username="Charts Morris" class="nav-item"><a href="/portfolio" class="nav-link "><span
+                                class="pcoded-micon"><i class="feather icon-briefcase"></i></span><span
+                                class="pcoded-mtext">Portfolio</span></a></li>
+
+                    <li class="nav-item pcoded-menu-caption">
+                        <label style="color: white;">PROFILE</label>
+                    </li>
+                    <li data-username="Table bootstrap datatable footable" class="nav-item">
+                        <a href="/trade_charges" class="nav-link "><span class="pcoded-micon"><i
+                                    class="feather icon-percent"></i></span><span class="pcoded-mtext">Trades and
+                                Charges</span></a>
+                    </li>
+                    <li data-username="Table bootstrap datatable footable" class="nav-item">
+                        <a href="/pnl" class="nav-link "><span class="pcoded-micon"><i
+                                    class="feather icon-bar-chart-2"></i></span><span class="pcoded-mtext">Profit and
+                                Loss</span></a>
+                    </li>
+                    <li data-username="form elements advance componant validation masking wizard picker select"
+                        class="nav-item">
+                        <a href="/transactions" class="nav-link "><span class="pcoded-micon"><i
+                                    class="feather icon-file-text"></i></span><span
+                                class="pcoded-mtext">Transactions</span></a>
+                    </li>
+                    <li data-username="Table bootstrap datatable footable" class="nav-item">
+                        <a href="/profile" class="nav-link "><span class="pcoded-micon"><i
+                                    class="feather icon-user"></i></span><span class="pcoded-mtext">Profile
+                            </span></a>
+                    </li>
+                    <li class="nav-item pcoded-menu-caption">
+                        <label style="color: white;">SUPPORT</label>
+                    </li>
+                    <li data-username="Sample Page" class="nav-item"><a href="/contact" class="nav-link"><span
+                                class="pcoded-micon"><i class="feather icon-headphones"></i></span><span
+                                class="pcoded-mtext">Contact Us</span></a></li>
+
+                    <li data-username="Disabled Menu" class="nav-item disabled"><a href="/logout" class="nav-link"><span
+                                class="pcoded-micon"><i class="feather icon-log-out"></i></span><span
+                                class="pcoded-mtext">Log out</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light">
+        <div class="m-header">
+            <a class="mobile-menu" id="mobile-collapse1" href="javascript:"><span></span></a>
+            <a href="/market" class="b-brand">
+                <div class="b-bg">
+                    <i class="feather icon-trending-up"></i>
+                </div>
+                <span class="b-title">Onstock</span>
+            </a>
+        </div>
+
+        <a class="mobile-menu" id="mobile-header" href="javascript:">
+            <i class="feather icon-more-horizontal"></i>
+        </a>
+        {% block search %}
+        {% endblock search %}
+    </header>
+    <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container" id="main-content" style="overflow: hidden;">
+        <form id="watchlist-form" method="post">
+            {% csrf_token %}
+            <div class="card-block" id="suggestions"></div>
+        </form>
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-{{message.tags}}" role="alert">{{ message }}</div>
+        {% endfor %}
+        {% endif %}
+        <span id="option_chain" data-chain="{{option_chain}}"></span>
+        {% block body %}
+        {% endblock body %}
+
+        <div class="bottom-alert">
+            <div class="alert alert-info display-none" role="alert" id="alert"></div>
+        </div>
+        <!-- BOTTOM NAV -->
+        <div class="bottom-navbar">
+            <div class="row align-items-center justify-content-around">
+                <a href="/market" class="lower_nav_link nav-link"><i class="feather icon-home"></i></a>
+                <a href="/watchlist" class="lower_nav_link nav-link"><i class="feather icon-bookmark"></i></a>
+                <a href="/orders" class="lower_nav_link nav-link"><i class="feather icon-book"></i></a>
+                <a href="/portfolio" class="lower_nav_link nav-link"><i class="feather icon-briefcase"></i></a>
+                <a href="/profile" class="lower_nav_link nav-link"><i class="feather icon-user"></i></a>
+            </div>
+        </div>
+
+
+        <!-- BOTTOM NAV END -->
+    </div>
+    <!-- [ Main Content ] end -->
+    <script src="/static/assets/js/vendor-all.min.js"></script>
+    <script src="/static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/pcoded.min.js"></script>
+    <!-- SEARCH SYMBOLS  -->
+    <script>
+        // ALERTS TIMEOUT
+        const hideAlerts = () => {
+            const alertElements = document.querySelectorAll('.alert');
+            alertElements.forEach(element => {
+                element.classList.add('display-none');
+            });
+        };
+        setInterval(hideAlerts, 10000);
+
+
+    </script>
+    <!-- END SEARCH SYMBOLS -->
+
+</body>
+
+</html>

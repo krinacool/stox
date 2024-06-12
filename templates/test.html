@@ -1,0 +1,48 @@
+<!-- price.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Price Updates</title>
+</head>
+
+<body>
+    <h1>Real-Time Price Updates for Symbol: SYMBOL</h1>
+    <div id="price-display">Loading...</div>
+
+    <script>
+        const socket = new WebSocket('ws://127.0.0.1:8000/ws/get_price/');
+
+        socket.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            console.log(data.data)
+            document.getElementById('price-display').innerText = `Latest Price: ${JSON.stringify(data)}`;
+        };
+
+        socket.onopen = (event) => {
+            console.log(1)
+            document.getElementById('price-display').innerText = 'WebSocket connection opened.';
+            socket.send(JSON.stringify(
+                {
+                    symbol_list: ['SBIN','ADANIENT','ADANITRANS']
+                }
+            ))
+        };
+
+        socket.onclose = (event) => {
+            if (event.wasClean) {
+                document.getElementById('price-display').innerText = 'WebSocket connection closed cleanly.';
+            } else {
+                document.getElementById('price-display').innerText = 'WebSocket connection abruptly closed.';
+            }
+        };
+
+        socket.onerror = (error) => {
+            console.error('WebSocket error:', error);
+        };
+        console.log('Hello World')
+    </script>
+</body>
+
+</html>

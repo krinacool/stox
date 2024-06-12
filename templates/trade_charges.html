@@ -1,0 +1,87 @@
+{% extends 'main.html' %}
+{% block body %}
+{% if user.is_authenticated %}
+{% else %}
+<script>location.href = "/"</script>
+{% endif %}
+{% load mathfilters %}
+<style>
+    #day_pnl {
+        position: fixed;
+        bottom: 50px;
+        width: 100%;
+    }
+
+    @media (min-width: 991px) {
+        #day_pnl {
+            bottom: 1px;
+            width: 83%;
+        }
+    }
+</style>
+
+<div class="m-t-10 m-r-5 m-l-5">
+    <div class="carousel-card fifth-slide">
+        <div>
+            Total Trade charges
+            <!-- <span class="float-right">Overall Gain</span> -->
+            <br>
+            <span><b>₹ {{tcharge}}</b></span>
+            <!-- {% if gain >= 0 %}
+            <label class="float-right text-c-green"><b>₹ {{gain}}</b></label>
+            {% else %}
+            <label class="float-right text-c-red"><b>₹ {{gain}}</b></label>
+            {% endif %} -->
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    {% if odr %}
+    <div class="card-block px-2 py-3">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <tbody>
+                    {% for x in odr reversed %}
+                    <tr>
+                        <td>
+                            <span class="text-dark" style="font-size: 13px;">{{x.symbol}}
+                                <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                            <br>
+                            {% if x.quantity >= 0 %}
+                            <span class="p-1" style="font-size: 11px;">{{x.quantity}} <span
+                                    style="font-size: 9px;">QTY</span> |
+                                {{x.product}}</span>
+                            {% else %}
+                            <span class="p-1">{{x.quantity|mul:-1}} <span style="font-size: 9px;">QTY</span> |
+                                <span class="btn-glow-light">{{x.product}}</span></span>
+                            {% endif %}
+                            <br>
+                            <span class="p-1" style="font-size: 9px;"><i class="feather icon-clock"></i>
+                                {{x.datetime}}</span>
+                        </td>
+                        <td>
+                            <span class="text-dark">₹ {{x.charges}}</span>
+                            <br>
+                            {% if x.order_type == 'BUY' %}
+                            <span class="text-success" style="font-size: 12px;">Buy Price. {{x.price}}</span>
+                            {% else %}
+                            <span class="text-danger" style="font-size: 12px;">Sell Price. {{x.price}}</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% else %}
+    <div class="card-block text-center" style="min-height: 80%;">
+        <h5 style="margin: 180px 0%;" class="text-muted">
+            <i class="feather icon-layout" style="font-size: 30px;"></i><br><br>
+            No orders placed yet
+        </h5>
+    </div>
+    {% endif %}
+</div>
+{% endblock body %}

@@ -1,0 +1,147 @@
+{% extends 'main.html' %}
+{% block body %}
+{% if user.is_authenticated %}
+{% else %}
+<script>location.href = "/"</script>
+{% endif %}
+{% load mathfilters %}
+<style>
+    #hpnl {
+        position: fixed;
+        bottom: 50px;
+        width: 100%;
+        background-color: white;
+        padding: 1%;
+    }
+
+    @media (min-width: 991px) {
+        #hpnl {
+            bottom: 1px;
+            width: 83%;
+        }
+    }
+</style>
+
+
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane show active" id="history" role="tabpanel" aria-labelledby="history-tab">
+        <div class="card">
+            <div class="card-block px-2 py-3">
+                <div class="card-social">
+                    <div>
+                        <div class="text-center">
+                            Wallet Amount
+                            <br>
+                            <span class="text-dark">₹ {{request.user.wallet}}</span>
+                        </div>
+                    </div>
+                    <!-- <div class="m-t-20 m-b-20">
+                        <div class="row align-items-center justify-content-center card-active">
+                            <div class="col-6 text-center">
+                                Relised P&L
+                                <br>
+                                {% if ppnl >= 0 %}
+                                <span class="text-c-green">₹ {{ppnl}}</span>
+                                {% else %}
+                                <span class="text-c-red">₹ {{ppnl}}</span>
+                                {% endif %}
+                            </div>
+                            <div class="col-6 text-center">
+                                Unrelised P&L
+                                <br>
+                                <div id="day_pnl">₹ 0.0</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="modal" data-target="#withdrawn">Request Withdrawn</a>
+                    </li>
+                    </li>
+                </ul>
+                <div class="table-responsive">
+                    <div class="card-header">
+                        <h5>Transactions</h5>
+                    </div>
+                    {% if trans %}
+                    <table class="table table-hover">
+                        <tbody>
+                            {% for x in trans reversed %}
+                            <tr>
+                                <td>
+                                    <span class="text-dark">₹ {{x.amount}}
+                                        <span class="text-muted" style="font-size: 11px;">{{x.segment}}</span></span>
+                                    <br>
+                                    <span class="p-1"><span class="text-dark" style="font-size: 12px;">
+                                            <strong style="font-weight: 800;">
+                                                {% if x.transaction_type == 'DEPOSIT' %}
+                                                <span class="text-c-green">{{x.transaction_type}}</span>
+                                                {% else %}
+                                                <span class="text-c-red">{{x.transaction_type}}</span>
+                                                {% endif %}
+                                            </strong>
+
+                                        </span><br>{{x.remark}}</span>
+                                </td>
+                                <td style="float: right; margin-right: 2%; font-size: 12px;">
+                                    <span>{{x.datetime}}</span>
+                                    <br>
+                                    {% if x.status == 'COMPLETED' %}
+                                    <span class="text-c-green">{{x.status}}</span>
+                                    {% elif x.status == 'REQUESTED' %}
+                                    <span class="text-c-blue">{{x.status}}</span>
+                                    {% else %}
+                                    <span class="text-c-red">{{x.status}}</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% else %}
+                </div>
+            </div>
+            <div class="card-block text-center" style="min-height: 80%;">
+                <h5 style="margin: 180px 0%;" class="text-muted">
+                    <i class="feather icon-layout" style="font-size: 30px;"></i><br><br>
+                    No Transactions yet
+                </h5>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div id="withdrawn" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form action="/transactions" method="post">
+                    {% csrf_token %}
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Withdrawn</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="form-group">
+                                <label class="floating-label">Request Amount</label>
+                                <input type="number" name="amount" placeholder="0" class="form-control" value="0"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Request</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

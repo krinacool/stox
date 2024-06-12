@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* HTML: <div class="loader"></div> */
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
+    .outer-container {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(255 255 255 / 66%);
+        position: fixed;
+        z-index: 500;
+    }
+
+    .inner-container {
+        width: 80%;
+        /* Adjust width as needed */
+        max-width: 800px;
+        /* Maximum width for larger screens */
+        margin: 0 auto;
+        /* Center the inner div */
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        /* Text color */
+    }
+
+    .loader {
+        width: 120px;
+        height: 22px;
+        border-radius: 40px;
+        color: #514b82;
+        border: 2px solid;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .loader::before {
+        content: "";
+        position: absolute;
+        margin: 2px;
+        width: 14px;
+        top: 0;
+        bottom: 0;
+        left: -20px;
+        border-radius: inherit;
+        background: currentColor;
+        box-shadow: -10px 0 12px 3px currentColor;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%, -30px 50%);
+        animation: l14 1s infinite linear;
+    }
+
+    @keyframes l14 {
+        100% {
+            left: calc(100% + 20px)
+        }
+    }
+</style>
+
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="loader"></div>
+        </div>
+    </div>
+</body>
+
+</html>

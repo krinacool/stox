@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Hello World</h1>
+<body>
+    <script>
+        const socket = new WebSocket('ws://192.168.182.1:8000/ws/symbols/');
+        socket.onmessage = (event) => {
+            console.log('Received')
+            console.log(event.data)
+        };
+        
+        socket.onopen = (event) => {
+            console.log('Connected')
+            socket.send('BANKNIFTY')
+        };
+
+        socket.onclose = (event) => {
+            if (event.wasClean) {
+                document.getElementById('price-display').innerText = 'WebSocket connection closed cleanly.';
+            } else {
+                document.getElementById('price-display').innerText = 'WebSocket connection abruptly closed.';
+            }
+        };
+
+        socket.onerror = (error) => {
+        };
+    </script>
+</body>
+
+</html>
