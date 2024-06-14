@@ -4,6 +4,53 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 from app.watchlist.price_stream import update_data
 from stock.settings import SYMBOLS_FILE
 import csv
+from .models import symbols
+import time
+
+from channels.generic.websocket import WebsocketConsumer
+import json
+
+class StockConsumer(WebsocketConsumer):
+    def connect(self):
+        self.accept()
+
+    def disconnect(self, close_code):
+        pass
+
+    def receive(self, text_data):
+        instruments = json.loads(text_data)
+        response_data = []
+        while True:
+            for instrument in instruments:
+                try:
+                    # Assuming 'instrument' is something like 'NSE_EQ|INE062A01020'
+                    # Fetch data from database based on symbol and segment
+                    symbol_data = symbols.objects.get(instrument_key=instrument)
+                    # Prepare data to send back to the client
+                    response_data.append({
+                        'instrument': instrument,
+                        'data': {
+                            'instrument': symbol_data.instrument_key,
+                            'symbol': symbol_data.symbol,
+                            'segment': symbol_data.segment,
+                            'ltp': symbol_data.ltp,
+                            'open': symbol_data.open,
+                            'close': symbol_data.close,
+                            'high': symbol_data.high,
+                            'low': symbol_data.low,
+                        }
+                    })
+                except symbols.DoesNotExist:
+                    response_data.append({
+                        'instrument': instrument,
+                        'data': 'Symbol data not found'  # Handle error case
+                    })
+            # Send the response data back to the client
+            self.send(text_data=json.dumps(response_data))
+            time.sleep(1)
+
+
+
 
 
 def symbol_search(search_string):

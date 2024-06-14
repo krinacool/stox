@@ -1,0 +1,1503 @@
+2024-06-13 03:46:49,833 Watching for file changes with StatReloader
+2024-06-13 03:47:18,273 Watching for file changes with StatReloader
+2024-06-13 03:47:36,935 Not Found: /favicon.ico
+2024-06-13 03:51:11,240 Watching for file changes with StatReloader
+2024-06-13 03:58:17,481 D:\stox\app\views.py changed, reloading.
+2024-06-13 03:58:20,801 Watching for file changes with StatReloader
+2024-06-13 04:03:17,421 Not Found: /history
+2024-06-13 04:03:26,814 Not Found: /history
+2024-06-13 04:03:30,916 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 175, in watchlist
+    watchlist_symbollist.append(i.instrument_key)
+AttributeError: 'Watchlist' object has no attribute 'instrument_key'
+2024-06-13 04:05:01,125 D:\stox\app\views.py changed, reloading.
+2024-06-13 04:05:03,769 Watching for file changes with StatReloader
+2024-06-13 04:06:03,111 D:\stox\app\models.py changed, reloading.
+2024-06-13 04:06:04,547 Watching for file changes with StatReloader
+2024-06-13 04:06:54,316 D:\stox\app\models.py changed, reloading.
+2024-06-13 04:06:55,544 Watching for file changes with StatReloader
+2024-06-13 04:07:04,641 D:\stox\app\models.py changed, reloading.
+2024-06-13 04:07:05,764 Watching for file changes with StatReloader
+2024-06-13 04:07:56,985 D:\stox\app\admin.py changed, reloading.
+2024-06-13 04:07:58,222 Watching for file changes with StatReloader
+2024-06-13 04:08:29,464 Watching for file changes with StatReloader
+2024-06-13 04:08:58,439 Watching for file changes with StatReloader
+2024-06-13 04:11:15,847 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 194, in watchlist
+    return render(request,'watchlist.html',context)
+NameError: name 'context' is not defined
+2024-06-13 04:12:12,711 D:\stox\app\views.py changed, reloading.
+2024-06-13 04:12:15,151 Watching for file changes with StatReloader
+2024-06-13 04:12:15,589 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 201, in watchlist
+    return render(request,'watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: watchlist.html
+2024-06-13 04:12:28,027 D:\stox\app\views.py changed, reloading.
+2024-06-13 04:12:29,343 Watching for file changes with StatReloader
+2024-06-13 04:12:30,063 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 201, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-06-13 04:13:13,095 D:\stox\app\views.py changed, reloading.
+2024-06-13 04:13:14,433 Watching for file changes with StatReloader
+2024-06-13 04:13:30,462 D:\stox\app\views.py changed, reloading.
+2024-06-13 04:13:31,870 Watching for file changes with StatReloader
+2024-06-13 04:13:32,240 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 201, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2024-06-13 04:15:12,645 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-13 04:15:12,666 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:15:12,844 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-13 04:15:12,891 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-13 04:15:12,894 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-13 04:15:12,897 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-13 04:15:12,901 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-13 04:15:12,917 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-13 04:15:12,920 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-13 04:15:12,944 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-13 04:15:12,954 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-13 04:15:12,955 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-13 04:15:12,964 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-13 04:15:12,976 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-13 04:15:12,988 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:15:12,994 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-13 04:15:13,017 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-13 04:15:13,021 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-13 04:15:13,025 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-13 04:15:58,989 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:15:58,992 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-13 04:15:59,159 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-13 04:15:59,163 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-13 04:15:59,171 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-13 04:15:59,192 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-13 04:15:59,205 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-13 04:15:59,208 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-13 04:15:59,234 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-13 04:15:59,246 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-13 04:15:59,257 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-13 04:15:59,264 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:15:59,268 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-13 04:15:59,272 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-13 04:15:59,287 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-13 04:15:59,306 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-13 04:15:59,312 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-13 04:15:59,312 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-13 04:15:59,326 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-13 04:15:59,329 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-13 04:15:59,334 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-13 04:15:59,340 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-13 04:16:11,809 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-13 04:16:11,815 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:16:11,972 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-13 04:16:12,005 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-13 04:16:12,012 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-13 04:16:12,017 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-13 04:16:12,018 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-13 04:16:12,027 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-13 04:16:12,040 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-13 04:16:12,053 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-13 04:16:12,070 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-13 04:16:12,080 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-13 04:16:12,090 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-13 04:16:12,100 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-13 04:16:12,105 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-13 04:16:12,117 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-13 04:16:12,121 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-13 04:16:12,121 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:16:12,131 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-13 04:16:39,822 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-13 04:16:39,822 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:16:40,011 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-13 04:16:40,014 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-13 04:16:40,019 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-13 04:16:40,023 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-13 04:16:40,029 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-13 04:16:40,037 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-13 04:16:40,066 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:16:40,093 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-13 04:16:40,095 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-13 04:16:40,121 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-13 04:16:40,127 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-13 04:16:40,127 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-13 04:16:40,142 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-13 04:16:40,145 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-13 04:16:40,153 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-13 04:16:40,159 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-13 04:16:40,166 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-13 04:17:56,512 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-13 04:17:56,852 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-13 04:17:56,856 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:17:56,875 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-13 04:17:56,878 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-13 04:17:56,886 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-13 04:17:56,916 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-13 04:17:56,919 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-13 04:17:56,930 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-13 04:17:56,934 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-13 04:17:56,951 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-13 04:17:56,959 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-13 04:17:56,966 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-13 04:17:56,983 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-13 04:17:56,989 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-13 04:17:56,995 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-13 04:17:57,005 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-13 04:17:57,007 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-13 04:17:57,017 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 04:17:57,024 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-13 04:17:57,029 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-13 04:17:57,033 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-13 08:43:30,800 Watching for file changes with StatReloader
+2024-06-13 08:43:59,810 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\stox\app\views.py", line 74, in index
+    return render(request,'home.html')
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-13 08:44:02,530 Not Found: /favicon.ico
+2024-06-13 08:44:23,666 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-13 08:44:23,906 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-13 08:44:23,910 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-13 08:44:23,940 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-13 08:44:23,948 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-13 08:44:23,960 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-13 08:44:23,966 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-13 08:44:23,971 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-13 08:44:23,975 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-13 08:44:24,016 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-13 08:44:24,023 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-13 08:44:24,037 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-13 08:44:24,046 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-13 08:44:24,053 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-13 08:44:24,059 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-13 08:44:24,064 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-13 08:44:24,070 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-13 08:44:24,073 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-14 00:13:45,195 Watching for file changes with StatReloader
+2024-06-14 00:32:23,453 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:32:23,460 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-14 00:32:23,478 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-14 00:32:23,482 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-14 00:32:23,499 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-14 00:32:23,505 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-14 00:32:23,511 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-14 00:32:23,532 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-14 00:32:23,540 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-14 00:32:23,547 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-14 00:32:23,583 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-14 00:32:23,590 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-14 00:32:23,599 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-14 00:32:23,607 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:32:23,616 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:32:23,626 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-14 00:32:23,636 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:32:23,644 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-14 00:32:23,649 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:35:35,265 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-14 00:35:35,268 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:35:35,411 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-14 00:35:35,423 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-14 00:35:35,438 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-14 00:35:35,442 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-14 00:35:35,479 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-14 00:35:35,491 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:35:35,485 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-14 00:35:35,495 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-14 00:35:35,534 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:35:35,548 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:35:35,571 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:35:35,571 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-14 00:35:35,582 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-14 00:35:35,589 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-14 00:35:35,602 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-14 00:35:35,617 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-14 00:35:35,625 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-14 00:35:35,635 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:35:35,635 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:35:35,644 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:35:53,868 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-14 00:35:54,059 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:35:54,063 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-14 00:35:54,070 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-14 00:35:54,080 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-14 00:35:54,089 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-14 00:35:54,096 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-14 00:35:54,118 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:35:54,122 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:35:54,127 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:35:54,136 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-14 00:35:54,146 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-14 00:35:54,154 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-14 00:35:54,168 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-14 00:35:54,179 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-14 00:35:54,179 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-14 00:35:54,188 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-14 00:35:54,192 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-14 00:36:21,116 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-14 00:36:21,116 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:36:21,315 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-14 00:36:21,323 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-14 00:36:21,327 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-14 00:36:21,332 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-14 00:36:21,341 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-14 00:36:21,344 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-14 00:36:21,373 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:36:21,378 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:36:21,388 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:36:21,398 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-14 00:36:21,402 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-14 00:36:21,405 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:36:21,428 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-14 00:36:21,431 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-14 00:36:21,435 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-14 00:36:21,445 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-14 00:36:21,449 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-14 00:38:11,691 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-14 00:38:11,697 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:38:11,799 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-14 00:38:11,799 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-14 00:38:11,808 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:38:11,812 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-14 00:38:11,817 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-14 00:38:11,826 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-14 00:38:11,856 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-14 00:38:11,865 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:38:11,867 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-14 00:38:11,881 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-14 00:38:11,884 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:38:11,900 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-14 00:38:11,917 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-14 00:38:11,923 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-14 00:38:11,926 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-14 00:38:11,935 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-14 00:38:11,963 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:38:11,967 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:38:11,971 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:38:11,974 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:38:13,111 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-14 00:38:13,321 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:38:13,325 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-14 00:38:13,329 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-14 00:38:13,332 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-14 00:38:13,332 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-14 00:38:13,339 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-14 00:38:13,378 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:38:13,378 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-14 00:38:13,378 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-14 00:38:13,378 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-14 00:38:13,394 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-14 00:38:13,396 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-14 00:38:13,437 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:38:13,440 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:38:13,444 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-14 00:38:13,450 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-14 00:38:13,453 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-14 00:38:48,948 Not Found: /assets/images/svg/brand-logo-1.svg
+2024-06-14 00:38:48,952 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:38:49,154 Not Found: /assets/images/svg/brand-logo-2.svg
+2024-06-14 00:38:49,157 Not Found: /assets/images/avatar/avatar-2.jpg
+2024-06-14 00:38:49,163 Not Found: /assets/images/avatar/avatar-4.jpg
+2024-06-14 00:38:49,167 Not Found: /assets/images/avatar/avatar-5.jpg
+2024-06-14 00:38:49,174 Not Found: /assets/images/avatar/avatar-6.jpg
+2024-06-14 00:38:49,179 Not Found: /assets/images/svg/brand-logo-3.svg
+2024-06-14 00:38:49,208 Not Found: /assets/images/avatar/avatar-1.jpg
+2024-06-14 00:38:49,215 Not Found: /assets/images/svg/brand-logo-5.svg
+2024-06-14 00:38:49,221 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:38:49,235 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:38:49,235 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 00:38:49,242 Not Found: /assets/images/avatar/avatar-7.jpg
+2024-06-14 00:38:49,258 Not Found: /assets/images/avatar/avatar-8.jpg
+2024-06-14 00:38:49,260 Not Found: /assets/images/avatar/avatar-9.jpg
+2024-06-14 00:38:49,270 Not Found: /assets/images/avatar/avatar-10.jpg
+2024-06-14 00:38:49,289 Not Found: /assets/images/svg/brand-logo-4.svg
+2024-06-14 00:38:49,292 Not Found: /assets/images/svg/brand-logo-6.svg
+2024-06-14 00:38:49,299 Not Found: /assets/images/avatar/avatar-11.jpg
+2024-06-14 00:38:49,303 Not Found: /assets/images/avatar/avatar-12.jpg
+2024-06-14 00:38:49,303 Not Found: /assets/images/avatar/avatar-13.jpg
+2024-06-14 01:09:06,704 Watching for file changes with StatReloader
+2024-06-14 01:09:31,186 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 201, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 21: 'static'. Did you forget to register or load this tag?
+2024-06-14 01:09:32,038 Not Found: /favicon.ico
+2024-06-14 01:10:56,540 D:\stox\stock\urls.py changed, reloading.
+2024-06-14 01:10:59,159 Watching for file changes with StatReloader
+2024-06-14 01:11:01,495 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 201, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 21: 'static'. Did you forget to register or load this tag?
+2024-06-14 01:11:18,448 Watching for file changes with StatReloader
+2024-06-14 01:12:17,197 D:\stox\stock\settings.py changed, reloading.
+2024-06-14 01:12:18,488 Watching for file changes with StatReloader
+2024-06-14 01:12:22,523 D:\stox\stock\settings.py changed, reloading.
+2024-06-14 01:12:23,680 Watching for file changes with StatReloader
+2024-06-14 01:12:29,146 Watching for file changes with StatReloader
+2024-06-14 01:12:43,563 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 201, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 21: 'static'. Did you forget to register or load this tag?
+2024-06-14 01:16:29,380 D:\stox\stock\settings.py changed, reloading.
+2024-06-14 01:16:33,150 Watching for file changes with StatReloader
+2024-06-14 02:25:59,873 Watching for file changes with StatReloader
+2024-06-14 02:26:43,235 Watching for file changes with StatReloader
+2024-06-14 02:28:30,885 D:\stox\app\views.py changed, reloading.
+2024-06-14 02:28:32,140 Watching for file changes with StatReloader
+2024-06-14 02:28:58,048 D:\stox\app\views.py changed, reloading.
+2024-06-14 02:28:59,199 Watching for file changes with StatReloader
+2024-06-14 02:31:52,909 D:\stox\app\admin.py changed, reloading.
+2024-06-14 02:31:55,356 Watching for file changes with StatReloader
+2024-06-14 02:36:46,513 D:\stox\app\models.py changed, reloading.
+2024-06-14 02:36:49,078 Watching for file changes with StatReloader
+2024-06-14 02:38:59,781 D:\stox\app\views.py changed, reloading.
+2024-06-14 02:39:02,221 Watching for file changes with StatReloader
+2024-06-14 02:55:53,036 Watching for file changes with StatReloader
+2024-06-14 02:56:05,714 Not Found: /ws/stocks/
+2024-06-14 02:56:49,811 Not Found: /ws/stocks/
+2024-06-14 02:59:31,500 D:\stox\stock\settings.py changed, reloading.
+2024-06-14 02:59:35,432 Watching for file changes with StatReloader
+2024-06-14 03:00:08,141 D:\stox\stock\settings.py changed, reloading.
+2024-06-14 03:00:09,949 Watching for file changes with StatReloader
+2024-06-14 03:00:15,447 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:59885][0m
+2024-06-14 03:00:15,488 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:59885][0m
+2024-06-14 03:00:16,186 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:59886][0m
+2024-06-14 03:00:16,189 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:59885][0m
+2024-06-14 03:00:16,387 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:59892]
+2024-06-14 03:00:16,392 WebSocket CONNECT /ws/stocks/ [127.0.0.1:59892]
+2024-06-14 03:03:22,654 D:\stox\app\views.py changed, reloading.
+2024-06-14 03:03:25,914 Watching for file changes with StatReloader
+2024-06-14 03:06:30,912 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:60146][0m
+2024-06-14 03:06:30,976 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:60146][0m
+2024-06-14 03:06:32,033 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:60147][0m
+2024-06-14 03:06:32,036 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.05, 127.0.0.1:60146][0m
+2024-06-14 03:06:32,177 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60151]
+2024-06-14 03:06:32,177 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60151]
+2024-06-14 03:06:59,032 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 03:07:03,797 Watching for file changes with StatReloader
+2024-06-14 03:07:04,507 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:60198][0m
+2024-06-14 03:07:04,567 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.05, 127.0.0.1:60198][0m
+2024-06-14 03:07:04,663 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.09, 127.0.0.1:60199][0m
+2024-06-14 03:07:04,668 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.10, 127.0.0.1:60198][0m
+2024-06-14 03:07:04,698 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:60199][0m
+2024-06-14 03:07:04,702 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:60198][0m
+2024-06-14 03:07:04,722 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60198][0m
+2024-06-14 03:07:11,019 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:60203][0m
+2024-06-14 03:07:11,071 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60203][0m
+2024-06-14 03:07:11,722 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:60203][0m
+2024-06-14 03:07:11,734 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.00, 127.0.0.1:60203][0m
+2024-06-14 03:07:11,946 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60207]
+2024-06-14 03:07:11,949 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60207]
+2024-06-14 03:07:27,056 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 03:07:39,540 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 03:07:39,623 [35;1mHTTP GET /watchlist 500 [0.95, 127.0.0.1:60237][0m
+2024-06-14 03:07:40,376 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60207]
+2024-06-14 03:07:46,642 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 03:07:46,642 [35;1mHTTP GET /watchlist 500 [0.53, 127.0.0.1:60242][0m
+2024-06-14 03:10:11,614 Watching for file changes with StatReloader
+2024-06-14 03:32:28,358 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 03:32:31,881 Watching for file changes with StatReloader
+2024-06-14 03:32:42,264 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 03:32:44,369 Watching for file changes with StatReloader
+2024-06-14 03:33:05,016 [mHTTP GET /admin/app/symbols/ 200 [0.27, 127.0.0.1:60426][0m
+2024-06-14 03:33:05,086 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:60426][0m
+2024-06-14 03:33:07,794 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\stox\app\views.py", line 74, in index
+    return render(request,'home.html')
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-14 03:33:07,794 [35;1mHTTP GET / 500 [0.17, 127.0.0.1:60426][0m
+2024-06-14 03:33:12,497 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:60434][0m
+2024-06-14 03:33:12,549 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60434][0m
+2024-06-14 03:33:13,071 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60437]
+2024-06-14 03:33:13,076 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60437]
+2024-06-14 03:33:16,679 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60434][0m
+2024-06-14 03:33:17,813 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60435][0m
+2024-06-14 03:33:17,818 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60434][0m
+2024-06-14 03:33:30,410 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:60451][0m
+2024-06-14 03:33:30,420 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60437]
+2024-06-14 03:33:30,442 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60451][0m
+2024-06-14 03:33:31,033 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60454][0m
+2024-06-14 03:33:31,036 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60455][0m
+2024-06-14 03:33:31,242 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60457]
+2024-06-14 03:33:31,248 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60457]
+2024-06-14 03:35:21,943 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 03:35:25,649 Watching for file changes with StatReloader
+2024-06-14 03:35:26,837 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:60538][0m
+2024-06-14 03:35:26,863 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.14, 127.0.0.1:60537][0m
+2024-06-14 03:35:26,863 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.14, 127.0.0.1:60536][0m
+2024-06-14 03:35:26,889 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60536][0m
+2024-06-14 03:35:26,891 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60537][0m
+2024-06-14 03:35:26,911 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60536][0m
+2024-06-14 03:35:26,915 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60537][0m
+2024-06-14 03:35:27,356 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:60537][0m
+2024-06-14 03:35:27,390 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:60537][0m
+2024-06-14 03:35:28,015 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60537][0m
+2024-06-14 03:35:28,036 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60537][0m
+2024-06-14 03:35:28,206 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60540]
+2024-06-14 03:35:28,208 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60540]
+2024-06-14 03:37:11,620 D:\stox\app\views.py changed, reloading.
+2024-06-14 03:37:13,908 Watching for file changes with StatReloader
+2024-06-14 03:40:00,061 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:60701][0m
+2024-06-14 03:40:00,117 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:60701][0m
+2024-06-14 03:40:01,101 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60701][0m
+2024-06-14 03:40:01,250 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60710]
+2024-06-14 03:40:01,254 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60710]
+2024-06-14 03:40:01,758 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60711][0m
+2024-06-14 03:40:21,904 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:60726][0m
+2024-06-14 03:40:21,917 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60710]
+2024-06-14 03:40:21,949 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60726][0m
+2024-06-14 03:40:22,974 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:60726][0m
+2024-06-14 03:40:23,012 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60726][0m
+2024-06-14 03:40:23,110 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60730]
+2024-06-14 03:40:23,110 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60730]
+2024-06-14 03:40:56,954 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:60752][0m
+2024-06-14 03:40:56,967 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60730]
+2024-06-14 03:40:57,006 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60752][0m
+2024-06-14 03:40:57,897 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:60752][0m
+2024-06-14 03:40:57,919 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60752][0m
+2024-06-14 03:40:58,071 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60757]
+2024-06-14 03:40:58,076 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60757]
+2024-06-14 03:41:27,887 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:60776][0m
+2024-06-14 03:41:27,894 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60757]
+2024-06-14 03:41:27,936 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60776][0m
+2024-06-14 03:41:28,888 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.07, 127.0.0.1:60776][0m
+2024-06-14 03:41:28,905 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:60777][0m
+2024-06-14 03:41:28,960 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60780]
+2024-06-14 03:41:28,969 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60780]
+2024-06-14 03:42:05,113 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:60801][0m
+2024-06-14 03:42:05,122 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60780]
+2024-06-14 03:42:05,158 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60801][0m
+2024-06-14 03:42:06,047 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:60801][0m
+2024-06-14 03:42:06,064 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60801][0m
+2024-06-14 03:42:06,220 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60805]
+2024-06-14 03:42:06,222 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60805]
+2024-06-14 03:42:28,830 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:60821][0m
+2024-06-14 03:42:28,838 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60805]
+2024-06-14 03:42:28,867 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60821][0m
+2024-06-14 03:42:29,927 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.06, 127.0.0.1:60821][0m
+2024-06-14 03:42:30,009 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60822][0m
+2024-06-14 03:42:30,015 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60826]
+2024-06-14 03:42:30,020 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60826]
+2024-06-14 03:42:56,805 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:60844][0m
+2024-06-14 03:42:56,815 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60826]
+2024-06-14 03:42:56,848 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60844][0m
+2024-06-14 03:42:57,924 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:60844][0m
+2024-06-14 03:42:57,953 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60844][0m
+2024-06-14 03:42:58,087 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60848]
+2024-06-14 03:42:58,092 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60848]
+2024-06-14 03:43:35,385 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:60877][0m
+2024-06-14 03:43:35,397 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60848]
+2024-06-14 03:43:35,439 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60877][0m
+2024-06-14 03:43:36,569 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60877][0m
+2024-06-14 03:43:36,616 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60877][0m
+2024-06-14 03:43:36,624 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60883]
+2024-06-14 03:43:36,627 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60883]
+2024-06-14 03:43:46,404 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:60892][0m
+2024-06-14 03:43:46,412 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60883]
+2024-06-14 03:43:46,433 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60892][0m
+2024-06-14 03:43:47,342 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60892][0m
+2024-06-14 03:43:47,367 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60892][0m
+2024-06-14 03:43:47,545 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60895]
+2024-06-14 03:43:47,549 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60895]
+2024-06-14 03:45:01,345 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:60947][0m
+2024-06-14 03:45:01,352 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60895]
+2024-06-14 03:45:01,380 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60947][0m
+2024-06-14 03:45:01,953 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60947][0m
+2024-06-14 03:45:01,965 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60948][0m
+2024-06-14 03:45:02,151 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60950]
+2024-06-14 03:45:02,154 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60950]
+2024-06-14 03:45:36,852 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:60962][0m
+2024-06-14 03:45:36,862 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60950]
+2024-06-14 03:45:36,888 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60962][0m
+2024-06-14 03:45:37,925 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60965]
+2024-06-14 03:45:37,930 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60965]
+2024-06-14 03:45:53,449 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:60962][0m
+2024-06-14 03:45:53,461 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60965]
+2024-06-14 03:45:53,485 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60962][0m
+2024-06-14 03:45:53,919 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60968]
+2024-06-14 03:45:53,921 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60968]
+2024-06-14 03:46:23,336 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:60962][0m
+2024-06-14 03:46:23,357 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60968]
+2024-06-14 03:46:23,381 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:60962][0m
+2024-06-14 03:46:23,998 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60972]
+2024-06-14 03:46:24,004 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60972]
+2024-06-14 03:48:23,481 D:\stox\app\views.py changed, reloading.
+2024-06-14 03:48:27,972 Watching for file changes with StatReloader
+2024-06-14 03:48:28,854 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:60997][0m
+2024-06-14 03:48:28,930 [36mHTTP GET /static/css/tailwind.css 304 [0.05, 127.0.0.1:60997][0m
+2024-06-14 03:48:29,376 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61000]
+2024-06-14 03:48:29,380 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61000]
+2024-06-14 03:49:03,548 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61007][0m
+2024-06-14 03:49:03,556 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61000]
+2024-06-14 03:49:03,578 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61007][0m
+2024-06-14 03:49:04,118 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61010]
+2024-06-14 03:49:04,123 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61010]
+2024-06-14 03:51:14,767 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:61024][0m
+2024-06-14 03:51:14,780 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61010]
+2024-06-14 03:51:14,803 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61024][0m
+2024-06-14 03:51:15,434 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61028]
+2024-06-14 03:51:15,439 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61028]
+2024-06-14 03:51:15,670 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61024][0m
+2024-06-14 03:51:15,686 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61028]
+2024-06-14 03:51:15,775 [36mHTTP GET /static/css/tailwind.css 304 [0.02, 127.0.0.1:61024][0m
+2024-06-14 03:51:16,095 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61024][0m
+2024-06-14 03:51:16,157 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61024][0m
+2024-06-14 03:51:16,764 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61031]
+2024-06-14 03:51:16,764 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61031]
+2024-06-14 03:51:47,951 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:61039][0m
+2024-06-14 03:51:47,963 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61031]
+2024-06-14 03:51:47,992 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61039][0m
+2024-06-14 03:51:53,531 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61041][0m
+2024-06-14 03:51:53,564 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61041][0m
+2024-06-14 03:52:22,614 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61049][0m
+2024-06-14 03:52:22,640 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61049][0m
+2024-06-14 03:52:23,271 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61052]
+2024-06-14 03:52:23,275 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61052]
+2024-06-14 03:52:44,524 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:61057][0m
+2024-06-14 03:52:44,545 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61052]
+2024-06-14 03:52:44,567 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61057][0m
+2024-06-14 03:52:45,191 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61060]
+2024-06-14 03:52:45,191 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61060]
+2024-06-14 03:52:45,866 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61057][0m
+2024-06-14 03:52:45,879 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61060]
+2024-06-14 03:52:45,907 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61057][0m
+2024-06-14 03:52:46,471 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61062]
+2024-06-14 03:52:46,475 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61062]
+2024-06-14 03:53:43,417 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:61073][0m
+2024-06-14 03:53:43,428 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61062]
+2024-06-14 03:53:43,455 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61073][0m
+2024-06-14 03:53:50,753 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61073][0m
+2024-06-14 03:53:50,780 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61073][0m
+2024-06-14 03:54:04,234 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61080][0m
+2024-06-14 03:54:04,259 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61080][0m
+2024-06-14 03:54:06,404 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61080][0m
+2024-06-14 03:54:06,431 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61080][0m
+2024-06-14 03:54:07,278 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61080][0m
+2024-06-14 03:54:07,302 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61080][0m
+2024-06-14 03:54:11,735 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61080][0m
+2024-06-14 03:54:12,680 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:61080][0m
+2024-06-14 03:54:12,690 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:61081][0m
+2024-06-14 03:55:13,259 [mHTTP GET /watchlist 200 [0.13, 127.0.0.1:61131][0m
+2024-06-14 03:55:13,307 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61133][0m
+2024-06-14 03:55:14,337 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61133][0m
+2024-06-14 03:55:14,367 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61133][0m
+2024-06-14 03:55:14,478 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61136]
+2024-06-14 03:55:14,482 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61136]
+2024-06-14 03:55:24,778 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:61144][0m
+2024-06-14 03:55:24,789 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61136]
+2024-06-14 03:55:24,812 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61144][0m
+2024-06-14 03:55:25,860 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61144][0m
+2024-06-14 03:55:25,877 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61145][0m
+2024-06-14 03:55:25,973 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61148]
+2024-06-14 03:55:25,976 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61148]
+2024-06-14 03:56:02,591 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61173][0m
+2024-06-14 03:56:02,598 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61148]
+2024-06-14 03:56:02,635 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61173][0m
+2024-06-14 03:56:03,780 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:61178][0m
+2024-06-14 03:56:03,806 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61178][0m
+2024-06-14 03:56:03,892 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61179]
+2024-06-14 03:56:03,896 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61179]
+2024-06-14 03:57:53,868 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:61250][0m
+2024-06-14 03:57:53,880 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61179]
+2024-06-14 03:57:53,926 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:61250][0m
+2024-06-14 03:57:55,016 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.06, 127.0.0.1:61250][0m
+2024-06-14 03:57:55,029 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:61251][0m
+2024-06-14 03:57:55,105 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61254]
+2024-06-14 03:57:55,109 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61254]
+2024-06-14 03:58:16,805 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61269][0m
+2024-06-14 03:58:16,814 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61254]
+2024-06-14 03:58:16,844 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61269][0m
+2024-06-14 03:58:17,801 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61269][0m
+2024-06-14 03:58:17,815 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61270][0m
+2024-06-14 03:58:17,959 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61274]
+2024-06-14 03:58:17,965 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61274]
+2024-06-14 03:58:40,822 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61289][0m
+2024-06-14 03:58:40,832 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61274]
+2024-06-14 03:58:40,872 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61289][0m
+2024-06-14 03:58:41,869 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61290][0m
+2024-06-14 03:58:41,871 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:61289][0m
+2024-06-14 03:58:42,077 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61293]
+2024-06-14 03:58:42,080 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61293]
+2024-06-14 04:00:03,489 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61344][0m
+2024-06-14 04:00:03,511 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61293]
+2024-06-14 04:00:03,626 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61344][0m
+2024-06-14 04:00:04,643 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61347][0m
+2024-06-14 04:00:04,670 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61347][0m
+2024-06-14 04:00:04,693 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61348]
+2024-06-14 04:00:04,697 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61348]
+2024-06-14 04:00:27,498 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:61362][0m
+2024-06-14 04:00:27,510 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61348]
+2024-06-14 04:00:27,552 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61362][0m
+2024-06-14 04:00:28,654 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61362][0m
+2024-06-14 04:00:28,665 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61363][0m
+2024-06-14 04:00:28,824 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61366]
+2024-06-14 04:00:28,827 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61366]
+2024-06-14 04:00:47,506 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:61378][0m
+2024-06-14 04:00:47,531 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61366]
+2024-06-14 04:00:47,610 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:61378][0m
+2024-06-14 04:00:48,815 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:61378][0m
+2024-06-14 04:00:48,860 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61378][0m
+2024-06-14 04:00:48,985 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61383]
+2024-06-14 04:00:48,995 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61383]
+2024-06-14 04:01:00,201 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:61390][0m
+2024-06-14 04:01:00,228 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61383]
+2024-06-14 04:01:00,268 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61390][0m
+2024-06-14 04:01:01,338 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61390][0m
+2024-06-14 04:01:01,351 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61390][0m
+2024-06-14 04:01:01,500 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61394]
+2024-06-14 04:01:01,513 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61394]
+2024-06-14 04:01:06,543 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61397][0m
+2024-06-14 04:01:06,558 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61394]
+2024-06-14 04:01:06,590 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61397][0m
+2024-06-14 04:01:07,100 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61397][0m
+2024-06-14 04:01:07,102 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61398][0m
+2024-06-14 04:01:07,326 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61401]
+2024-06-14 04:01:07,328 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61401]
+2024-06-14 04:01:11,918 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61398][0m
+2024-06-14 04:01:11,925 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61401]
+2024-06-14 04:01:11,953 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61398][0m
+2024-06-14 04:01:12,499 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61397][0m
+2024-06-14 04:01:12,501 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61398][0m
+2024-06-14 04:01:12,713 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61405]
+2024-06-14 04:01:12,713 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61405]
+2024-06-14 04:02:02,764 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61434][0m
+2024-06-14 04:02:02,772 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61405]
+2024-06-14 04:02:02,807 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61434][0m
+2024-06-14 04:02:03,770 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61434][0m
+2024-06-14 04:02:03,852 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:61435][0m
+2024-06-14 04:02:03,909 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61438]
+2024-06-14 04:02:03,928 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61438]
+2024-06-14 04:04:26,763 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:61523][0m
+2024-06-14 04:04:26,772 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61438]
+2024-06-14 04:04:26,803 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61523][0m
+2024-06-14 04:04:27,981 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.15, 127.0.0.1:61523][0m
+2024-06-14 04:04:28,025 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.12, 127.0.0.1:61524][0m
+2024-06-14 04:04:28,071 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61528]
+2024-06-14 04:04:28,083 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61528]
+2024-06-14 04:10:42,185 [mHTTP GET /watchlist 200 [0.15, 127.0.0.1:61732][0m
+2024-06-14 04:10:42,201 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61528]
+2024-06-14 04:10:42,266 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61732][0m
+2024-06-14 04:10:43,370 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.11, 127.0.0.1:61732][0m
+2024-06-14 04:10:43,413 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.13, 127.0.0.1:61733][0m
+2024-06-14 04:10:43,461 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61738]
+2024-06-14 04:10:43,462 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61738]
+2024-06-14 04:11:49,569 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61782][0m
+2024-06-14 04:11:49,578 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61738]
+2024-06-14 04:11:49,629 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61782][0m
+2024-06-14 04:11:50,792 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:61782][0m
+2024-06-14 04:11:50,887 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61787]
+2024-06-14 04:11:50,909 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.07, 127.0.0.1:61783][0m
+2024-06-14 04:11:50,946 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61787]
+2024-06-14 04:12:20,536 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61806][0m
+2024-06-14 04:12:20,548 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61787]
+2024-06-14 04:12:20,682 [36mHTTP GET /static/css/tailwind.css 304 [0.10, 127.0.0.1:61806][0m
+2024-06-14 04:12:21,681 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:61806][0m
+2024-06-14 04:12:21,717 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61806][0m
+2024-06-14 04:12:21,869 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61809]
+2024-06-14 04:12:21,875 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61809]
+2024-06-14 04:13:02,488 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:61835][0m
+2024-06-14 04:13:02,502 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61809]
+2024-06-14 04:13:02,571 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61835][0m
+2024-06-14 04:13:03,480 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61835][0m
+2024-06-14 04:13:03,507 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61835][0m
+2024-06-14 04:13:03,647 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61839]
+2024-06-14 04:13:03,647 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61839]
+2024-06-14 04:13:26,749 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:61857][0m
+2024-06-14 04:13:26,758 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61839]
+2024-06-14 04:13:26,789 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61857][0m
+2024-06-14 04:13:27,875 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61857][0m
+2024-06-14 04:13:27,943 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61858][0m
+2024-06-14 04:13:28,040 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61862]
+2024-06-14 04:13:28,063 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61862]
+2024-06-14 04:14:27,287 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:61901][0m
+2024-06-14 04:14:27,298 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61862]
+2024-06-14 04:14:27,338 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61901][0m
+2024-06-14 04:14:28,450 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.05, 127.0.0.1:61901][0m
+2024-06-14 04:14:28,504 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:61900][0m
+2024-06-14 04:14:28,582 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61906]
+2024-06-14 04:14:28,608 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61906]
+2024-06-14 04:15:01,206 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61926][0m
+2024-06-14 04:15:01,229 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61906]
+2024-06-14 04:15:01,261 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61926][0m
+2024-06-14 04:15:02,319 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.05, 127.0.0.1:61926][0m
+2024-06-14 04:15:02,383 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.09, 127.0.0.1:61927][0m
+2024-06-14 04:15:02,444 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61930]
+2024-06-14 04:15:02,448 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61930]
+2024-06-14 04:15:11,545 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61938][0m
+2024-06-14 04:15:11,559 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61930]
+2024-06-14 04:15:11,592 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61938][0m
+2024-06-14 04:15:12,275 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.08, 127.0.0.1:61938][0m
+2024-06-14 04:15:12,287 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.07, 127.0.0.1:61939][0m
+2024-06-14 04:15:12,425 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61941]
+2024-06-14 04:15:12,429 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61941]
+2024-06-14 04:15:20,844 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61949][0m
+2024-06-14 04:15:20,855 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61941]
+2024-06-14 04:15:20,880 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61949][0m
+2024-06-14 04:15:21,388 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61949][0m
+2024-06-14 04:15:21,389 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61950][0m
+2024-06-14 04:15:21,615 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61952]
+2024-06-14 04:15:21,627 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61952]
+2024-06-14 04:15:30,120 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61959][0m
+2024-06-14 04:15:30,128 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61952]
+2024-06-14 04:15:30,172 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61959][0m
+2024-06-14 04:15:30,699 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61959][0m
+2024-06-14 04:15:30,703 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61960][0m
+2024-06-14 04:15:30,927 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61962]
+2024-06-14 04:15:30,938 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61962]
+2024-06-14 04:15:35,560 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61965][0m
+2024-06-14 04:15:35,568 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61962]
+2024-06-14 04:15:35,599 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:61965][0m
+2024-06-14 04:15:36,095 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61966][0m
+2024-06-14 04:15:36,291 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.20, 127.0.0.1:61965][0m
+2024-06-14 04:15:36,326 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61969]
+2024-06-14 04:15:36,353 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61969]
+2024-06-14 04:17:11,759 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:62075][0m
+2024-06-14 04:17:11,786 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61969]
+2024-06-14 04:17:11,823 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:62075][0m
+2024-06-14 04:17:13,142 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.09, 127.0.0.1:62075][0m
+2024-06-14 04:17:13,214 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.10, 127.0.0.1:62076][0m
+2024-06-14 04:17:13,219 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:62080]
+2024-06-14 04:17:13,235 WebSocket CONNECT /ws/stocks/ [127.0.0.1:62080]
+2024-06-14 04:17:25,440 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:62090][0m
+2024-06-14 04:17:25,448 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:62080]
+2024-06-14 04:17:25,472 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:62090][0m
+2024-06-14 04:17:25,996 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:62095][0m
+2024-06-14 04:17:25,999 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62094][0m
+2024-06-14 04:17:26,228 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:62099]
+2024-06-14 04:17:26,241 WebSocket CONNECT /ws/stocks/ [127.0.0.1:62099]
+2024-06-14 04:17:42,335 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:62111][0m
+2024-06-14 04:17:42,391 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:62099]
+2024-06-14 04:17:42,456 [36mHTTP GET /static/css/tailwind.css 304 [0.02, 127.0.0.1:62111][0m
+2024-06-14 04:17:43,299 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.15, 127.0.0.1:62111][0m
+2024-06-14 04:17:43,311 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.14, 127.0.0.1:62112][0m
+2024-06-14 04:17:43,351 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:62117]
+2024-06-14 04:17:43,376 WebSocket CONNECT /ws/stocks/ [127.0.0.1:62117]
+2024-06-14 04:18:11,265 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:62131][0m
+2024-06-14 04:18:11,276 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:62117]
+2024-06-14 04:18:11,305 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:62131][0m
+2024-06-14 04:18:11,904 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:62131][0m
+2024-06-14 04:18:11,912 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62132][0m
+2024-06-14 04:18:12,134 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:62135]
+2024-06-14 04:18:12,171 WebSocket CONNECT /ws/stocks/ [127.0.0.1:62135]
+2024-06-14 04:20:55,732 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:62135]
+2024-06-14 10:34:00,187 Watching for file changes with StatReloader
+2024-06-14 10:34:02,823 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:62986][0m
+2024-06-14 10:34:02,866 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:62986][0m
+2024-06-14 10:34:03,555 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:62990]
+2024-06-14 10:34:03,558 WebSocket CONNECT /ws/stocks/ [127.0.0.1:62990]
+2024-06-14 10:34:07,932 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:62994][0m
+2024-06-14 10:34:08,829 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.16, 127.0.0.1:62996][0m
+2024-06-14 10:34:08,830 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.16, 127.0.0.1:62994][0m
+2024-06-14 10:35:51,822 [mHTTP GET /watchlist 200 [0.19, 127.0.0.1:63062][0m
+2024-06-14 10:35:51,829 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:62990]
+2024-06-14 10:35:51,858 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63062][0m
+2024-06-14 10:35:52,563 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63062][0m
+2024-06-14 10:35:52,565 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:63063][0m
+2024-06-14 10:35:52,743 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63067]
+2024-06-14 10:35:52,745 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63067]
+2024-06-14 10:36:08,023 Watching for file changes with StatReloader
+2024-06-14 10:36:12,407 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:63095][0m
+2024-06-14 10:36:12,469 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:63095][0m
+2024-06-14 10:36:13,224 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63095][0m
+2024-06-14 10:36:13,229 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63096][0m
+2024-06-14 10:36:13,424 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63100]
+2024-06-14 10:36:13,427 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63100]
+2024-06-14 10:36:33,946 Watching for file changes with StatReloader
+2024-06-14 10:38:32,712 [mHTTP GET /watchlist 200 [0.18, 127.0.0.1:63229][0m
+2024-06-14 10:38:32,759 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:63229][0m
+2024-06-14 10:38:34,036 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.16, 127.0.0.1:63229][0m
+2024-06-14 10:38:34,039 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.15, 127.0.0.1:63230][0m
+2024-06-14 10:38:56,634 Watching for file changes with StatReloader
+2024-06-14 10:38:59,931 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:63261][0m
+2024-06-14 10:39:00,032 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:63261][0m
+2024-06-14 10:39:00,776 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63261][0m
+2024-06-14 10:39:00,780 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63262][0m
+2024-06-14 10:39:23,803 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:63280][0m
+2024-06-14 10:39:23,851 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63280][0m
+2024-06-14 10:39:24,817 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63280][0m
+2024-06-14 10:39:24,836 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63280][0m
+2024-06-14 10:39:24,991 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63286]
+2024-06-14 10:39:25,001 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63286]
+2024-06-14 10:39:43,793 Watching for file changes with StatReloader
+2024-06-14 10:39:45,054 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:63314][0m
+2024-06-14 10:39:45,155 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63314][0m
+2024-06-14 10:39:45,791 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63314][0m
+2024-06-14 10:39:45,805 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63313][0m
+2024-06-14 10:39:45,960 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63316]
+2024-06-14 10:39:45,964 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63316]
+2024-06-14 10:40:56,296 [mHTTP GET /watchlist 200 [0.18, 127.0.0.1:63378][0m
+2024-06-14 10:40:56,308 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63316]
+2024-06-14 10:40:56,354 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:63378][0m
+2024-06-14 10:40:57,265 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63378][0m
+2024-06-14 10:40:57,286 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63378][0m
+2024-06-14 10:40:57,462 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63382]
+2024-06-14 10:40:57,466 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63382]
+2024-06-14 10:41:06,563 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:63391][0m
+2024-06-14 10:41:06,571 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63382]
+2024-06-14 10:41:06,597 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63391][0m
+2024-06-14 10:41:07,123 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:63391][0m
+2024-06-14 10:41:07,139 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.00, 127.0.0.1:63391][0m
+2024-06-14 10:41:07,360 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63394]
+2024-06-14 10:41:07,363 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63394]
+2024-06-14 10:41:26,500 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:63406][0m
+2024-06-14 10:41:26,506 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63394]
+2024-06-14 10:41:26,527 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63406][0m
+2024-06-14 10:41:27,344 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63406][0m
+2024-06-14 10:41:27,368 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63406][0m
+2024-06-14 10:41:27,537 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63411]
+2024-06-14 10:41:27,540 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63411]
+2024-06-14 10:41:35,753 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:63418][0m
+2024-06-14 10:41:35,765 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63411]
+2024-06-14 10:41:35,810 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63418][0m
+2024-06-14 10:41:36,359 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63418][0m
+2024-06-14 10:41:36,388 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63418][0m
+2024-06-14 10:41:36,560 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63423]
+2024-06-14 10:41:36,563 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63423]
+2024-06-14 10:41:40,581 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:63418][0m
+2024-06-14 10:41:40,591 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63423]
+2024-06-14 10:41:40,618 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63418][0m
+2024-06-14 10:41:41,312 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63418][0m
+2024-06-14 10:41:41,317 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63419][0m
+2024-06-14 10:41:41,517 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63427]
+2024-06-14 10:41:41,522 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63427]
+2024-06-14 10:42:20,421 [mHTTP GET /watchlist 200 [0.16, 127.0.0.1:63453][0m
+2024-06-14 10:42:20,432 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63427]
+2024-06-14 10:42:20,505 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63453][0m
+2024-06-14 10:42:21,458 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63453][0m
+2024-06-14 10:42:21,476 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63453][0m
+2024-06-14 10:42:21,564 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63456]
+2024-06-14 10:42:21,565 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63456]
+2024-06-14 10:42:35,632 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:63469][0m
+2024-06-14 10:42:35,645 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63456]
+2024-06-14 10:42:35,693 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63469][0m
+2024-06-14 10:42:36,460 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63469][0m
+2024-06-14 10:42:36,480 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63470][0m
+2024-06-14 10:42:36,629 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63473]
+2024-06-14 10:42:36,635 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63473]
+2024-06-14 10:44:47,132 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:63569][0m
+2024-06-14 10:44:47,139 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63473]
+2024-06-14 10:44:47,259 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63569][0m
+2024-06-14 10:44:47,921 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63569][0m
+2024-06-14 10:44:47,947 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63570][0m
+2024-06-14 10:44:48,090 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63575]
+2024-06-14 10:44:48,093 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63575]
+2024-06-14 10:44:59,405 [mHTTP GET /admin/ 200 [0.42, 127.0.0.1:63582][0m
+2024-06-14 10:45:00,454 Not Found: /favicon.ico
+2024-06-14 10:45:00,454 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:63582][0m
+2024-06-14 10:45:08,212 [mHTTP GET /admin/app/symbols/ 200 [0.25, 127.0.0.1:63590][0m
+2024-06-14 10:45:08,268 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:63590][0m
+2024-06-14 10:45:10,931 [mHTTP GET /admin/app/symbols/6/change/ 200 [0.14, 127.0.0.1:63590][0m
+2024-06-14 10:45:10,977 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:63590][0m
+2024-06-14 10:45:14,625 [32mHTTP POST /admin/app/symbols/6/change/ 302 [0.04, 127.0.0.1:63590][0m
+2024-06-14 10:45:14,705 [mHTTP GET /admin/app/symbols/ 200 [0.07, 127.0.0.1:63590][0m
+2024-06-14 10:45:14,754 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:63590][0m
+2024-06-14 10:45:21,039 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:63601][0m
+2024-06-14 10:45:21,047 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63575]
+2024-06-14 10:45:21,074 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63601][0m
+2024-06-14 10:45:21,758 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63601][0m
+2024-06-14 10:45:21,761 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63602][0m
+2024-06-14 10:45:21,872 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63604]
+2024-06-14 10:45:21,876 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63604]
+2024-06-14 10:46:16,904 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 10:46:21,825 Watching for file changes with StatReloader
+2024-06-14 10:46:23,008 [mHTTP GET /watchlist 200 [0.13, 127.0.0.1:63663][0m
+2024-06-14 10:46:23,054 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63663][0m
+2024-06-14 10:46:23,905 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63663][0m
+2024-06-14 10:46:23,910 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63664][0m
+2024-06-14 10:46:24,067 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63670]
+2024-06-14 10:46:24,072 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63670]
+2024-06-14 10:46:34,165 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:63678][0m
+2024-06-14 10:46:34,173 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63670]
+2024-06-14 10:46:34,214 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:63678][0m
+2024-06-14 10:46:35,186 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.07, 127.0.0.1:63678][0m
+2024-06-14 10:46:35,209 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.06, 127.0.0.1:63677][0m
+2024-06-14 10:46:35,274 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63682]
+2024-06-14 10:46:40,017 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63682]
+2024-06-14 10:46:45,095 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:63689][0m
+2024-06-14 10:46:45,137 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63689][0m
+2024-06-14 10:46:46,090 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63691][0m
+2024-06-14 10:46:46,107 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63692][0m
+2024-06-14 10:46:46,239 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63693]
+2024-06-14 10:46:51,006 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63693]
+2024-06-14 10:46:56,081 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:63701][0m
+2024-06-14 10:46:56,115 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63701][0m
+2024-06-14 10:46:56,649 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63701][0m
+2024-06-14 10:46:56,658 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63704][0m
+2024-06-14 10:46:56,875 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63705]
+2024-06-14 10:47:01,011 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63705]
+2024-06-14 10:47:06,889 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:63720][0m
+2024-06-14 10:47:06,927 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63720][0m
+2024-06-14 10:47:07,455 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63720][0m
+2024-06-14 10:47:07,460 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63724][0m
+2024-06-14 10:47:07,668 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63726]
+2024-06-14 10:47:12,003 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63726]
+2024-06-14 10:47:17,902 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:63737][0m
+2024-06-14 10:47:17,943 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63737][0m
+2024-06-14 10:47:19,169 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63737][0m
+2024-06-14 10:47:19,204 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:63737][0m
+2024-06-14 10:47:19,341 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63740]
+2024-06-14 10:47:24,000 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63740]
+2024-06-14 10:47:29,923 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:63746][0m
+2024-06-14 10:47:29,976 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63746][0m
+2024-06-14 10:47:31,038 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63746][0m
+2024-06-14 10:47:31,090 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63746][0m
+2024-06-14 10:47:31,161 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63749]
+2024-06-14 10:47:36,008 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:63749]
+2024-06-14 10:47:40,039 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 10:47:42,013 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 10:47:42,184 [35;1mHTTP GET /watchlist 500 [0.29, 127.0.0.1:63758][0m
+2024-06-14 10:47:55,279 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 10:47:55,280 [35;1mHTTP GET /watchlist 500 [0.11, 127.0.0.1:63777][0m
+2024-06-14 10:48:35,714 Watching for file changes with StatReloader
+2024-06-14 10:48:45,095 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:63819][0m
+2024-06-14 10:48:45,176 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:63819][0m
+2024-06-14 10:48:45,843 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63819][0m
+2024-06-14 10:48:45,846 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63820][0m
+2024-06-14 10:48:46,028 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63824]
+2024-06-14 10:48:46,031 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63824]
+2024-06-14 10:51:10,159 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 10:51:15,051 Watching for file changes with StatReloader
+2024-06-14 10:51:15,969 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:63934][0m
+2024-06-14 10:51:16,009 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:63934][0m
+2024-06-14 10:51:17,001 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63935][0m
+2024-06-14 10:51:17,005 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63934][0m
+2024-06-14 10:51:17,205 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:63939]
+2024-06-14 10:51:17,209 WebSocket CONNECT /ws/stocks/ [127.0.0.1:63939]
+2024-06-14 10:52:54,957 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 10:52:57,521 Watching for file changes with StatReloader
+2024-06-14 10:53:00,903 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:64007][0m
+2024-06-14 10:53:01,020 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:64007][0m
+2024-06-14 10:53:02,043 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64010][0m
+2024-06-14 10:53:02,070 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64010][0m
+2024-06-14 10:53:02,209 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64011]
+2024-06-14 10:53:02,212 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64011]
+2024-06-14 10:53:06,738 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:64010][0m
+2024-06-14 10:53:06,766 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64011]
+2024-06-14 10:53:06,848 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:64010][0m
+2024-06-14 10:53:07,795 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:64010][0m
+2024-06-14 10:53:07,801 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:64018][0m
+2024-06-14 10:53:07,897 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64020]
+2024-06-14 10:53:12,003 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64020]
+2024-06-14 10:53:17,089 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:64026][0m
+2024-06-14 10:53:17,141 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:64026][0m
+2024-06-14 10:53:17,930 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64030]
+2024-06-14 10:53:17,989 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 10:53:17,995 [35;1mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 500 [0.30, 127.0.0.1:64026][0m
+2024-06-14 10:53:17,995 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 10:53:17,996 [35;1mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 500 [0.30, 127.0.0.1:64028][0m
+2024-06-14 10:53:17,998 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\sessions.py", line 261, in __call__
+    await wrapper.resolve_session()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\sessions.py", line 170, in resolve_session
+    self.scope["session"]._wrapped = await database_sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 10:53:18,043 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64030]
+2024-06-14 10:53:24,102 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 10:53:24,106 [35;1mHTTP GET /watchlist 500 [1.00, 127.0.0.1:64033][0m
+2024-06-14 10:54:24,674 Watching for file changes with StatReloader
+2024-06-14 10:54:25,566 [mHTTP GET /admin/app/symbols/?segment=NSE_EQ 200 [0.18, 127.0.0.1:64058][0m
+2024-06-14 10:54:25,630 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64058][0m
+2024-06-14 10:54:31,251 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:64061][0m
+2024-06-14 10:54:31,335 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:64061][0m
+2024-06-14 10:54:32,106 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64063]
+2024-06-14 10:54:32,110 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64063]
+2024-06-14 10:54:35,523 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:64061][0m
+2024-06-14 10:54:36,285 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64069][0m
+2024-06-14 10:54:36,286 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64070][0m
+2024-06-14 10:54:56,847 [mHTTP GET /admin/ 200 [0.04, 127.0.0.1:64085][0m
+2024-06-14 10:55:08,627 [mHTTP GET /admin/app/symbols/ 200 [0.03, 127.0.0.1:64093][0m
+2024-06-14 10:55:08,668 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64093][0m
+2024-06-14 10:55:10,580 [mHTTP GET /admin/app/symbols/5/change/ 200 [0.08, 127.0.0.1:64093][0m
+2024-06-14 10:55:10,613 [mHTTP GET /admin/jsi18n/ 200 [0.00, 127.0.0.1:64093][0m
+2024-06-14 10:55:15,143 [32mHTTP POST /admin/app/symbols/5/change/ 302 [0.03, 127.0.0.1:64093][0m
+2024-06-14 10:55:15,210 [mHTTP GET /admin/app/symbols/ 200 [0.05, 127.0.0.1:64093][0m
+2024-06-14 10:55:15,267 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64093][0m
+2024-06-14 10:55:35,345 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 10:55:38,785 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 10:55:38,788 [35;1mHTTP GET /watchlist 500 [0.77, 127.0.0.1:64120][0m
+2024-06-14 10:55:40,151 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64063]
+2024-06-14 10:56:11,895 Watching for file changes with StatReloader
+2024-06-14 10:56:13,564 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:64152][0m
+2024-06-14 10:56:13,672 [36mHTTP GET /static/css/tailwind.css 304 [0.01, 127.0.0.1:64152][0m
+2024-06-14 10:56:14,422 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:64152][0m
+2024-06-14 10:56:14,423 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64153][0m
+2024-06-14 10:56:14,603 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64157]
+2024-06-14 10:56:14,606 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64157]
+2024-06-14 10:56:38,606 [mHTTP GET /admin/app/symbols/3/change/ 200 [0.15, 127.0.0.1:64172][0m
+2024-06-14 10:56:38,665 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64172][0m
+2024-06-14 10:56:42,430 [32mHTTP POST /admin/app/symbols/3/change/ 302 [0.03, 127.0.0.1:64172][0m
+2024-06-14 10:56:42,540 [mHTTP GET /admin/app/symbols/ 200 [0.09, 127.0.0.1:64172][0m
+2024-06-14 10:56:42,589 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64172][0m
+2024-06-14 10:57:01,927 [mHTTP GET /admin/settings/upstox/ 200 [0.06, 127.0.0.1:64187][0m
+2024-06-14 10:57:01,962 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64187][0m
+2024-06-14 10:57:04,140 [mHTTP GET /admin/settings/upstox/1/change/ 200 [0.03, 127.0.0.1:64187][0m
+2024-06-14 10:57:04,179 [33mHTTP GET /static/admin/js/upstox_admin.js 404 [0.01, 127.0.0.1:64188][0m
+2024-06-14 10:57:04,185 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64187][0m
+2024-06-14 10:57:06,377 [32mHTTP POST /admin/settings/upstox/1/change/ 302 [0.03, 127.0.0.1:64187][0m
+2024-06-14 10:57:13,910 [mHTTP GET /admin/settings/upstox/1/change/ 200 [0.02, 127.0.0.1:64198][0m
+2024-06-14 10:59:53,369 [32mHTTP POST /admin/settings/upstox/1/change/ 302 [0.02, 127.0.0.1:64341][0m
+2024-06-14 11:00:01,329 [mHTTP GET /admin/settings/upstox/1/change/ 200 [0.03, 127.0.0.1:64341][0m
+2024-06-14 11:01:11,739 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64157]
+2024-06-14 11:02:18,971 Watching for file changes with StatReloader
+2024-06-14 11:02:19,893 [mHTTP GET /admin/app/symbols/ 200 [0.22, 127.0.0.1:64504][0m
+2024-06-14 11:02:19,955 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64504][0m
+2024-06-14 11:02:44,772 [mHTTP GET /admin/app/watchlist/ 200 [0.07, 127.0.0.1:64513][0m
+2024-06-14 11:02:44,800 [mHTTP GET /admin/jsi18n/ 200 [0.00, 127.0.0.1:64513][0m
+2024-06-14 11:02:47,800 [mHTTP GET /admin/app/watchlist/add/ 200 [0.11, 127.0.0.1:64515][0m
+2024-06-14 11:02:47,843 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64515][0m
+2024-06-14 11:03:20,266 [32mHTTP POST /admin/app/watchlist/add/ 302 [0.03, 127.0.0.1:64520][0m
+2024-06-14 11:03:20,327 [mHTTP GET /admin/app/watchlist/ 200 [0.05, 127.0.0.1:64520][0m
+2024-06-14 11:03:20,362 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64520][0m
+2024-06-14 11:03:27,585 [mHTTP GET /admin/app/watchlist/add/ 200 [0.06, 127.0.0.1:64524][0m
+2024-06-14 11:03:27,615 [mHTTP GET /admin/jsi18n/ 200 [0.00, 127.0.0.1:64524][0m
+2024-06-14 11:03:59,287 [32mHTTP POST /admin/app/watchlist/add/ 302 [0.05, 127.0.0.1:64528][0m
+2024-06-14 11:03:59,396 [mHTTP GET /admin/app/watchlist/ 200 [0.09, 127.0.0.1:64528][0m
+2024-06-14 11:03:59,463 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64528][0m
+2024-06-14 11:04:10,276 D:\stox\app\consumers.py changed, reloading.
+2024-06-14 11:04:26,256 Watching for file changes with StatReloader
+2024-06-14 11:04:27,529 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:64566][0m
+2024-06-14 11:04:27,651 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:64566][0m
+2024-06-14 11:04:28,405 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64570]
+2024-06-14 11:04:28,410 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64570]
+2024-06-14 11:05:52,048 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:64641][0m
+2024-06-14 11:05:52,485 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:64642][0m
+2024-06-14 11:05:52,486 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:64641][0m
+2024-06-14 11:06:17,853 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64570]
+2024-06-14 11:06:23,730 Exception inside application: cannot schedule new futures after interpreter shutdown
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 101, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\channels\routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 173, in handle
+    await sync_to_async(signals.request_started.send, thread_sensitive=True)(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 818, in run_in_executor
+    executor.submit(func, *args), loop=self)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+2024-06-14 11:06:23,741 [35;1mHTTP GET /watchlist 500 [0.82, 127.0.0.1:64690][0m

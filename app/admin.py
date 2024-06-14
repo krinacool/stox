@@ -47,8 +47,8 @@ class Symbols(admin.ModelAdmin):
 
 @admin.register(Watchlist)
 class Watchlist(admin.ModelAdmin):
-    list_display = ('user', 'symbol','ltp','high','low','open','close')
-    list_filter = ('user', 'symbol')
+    list_display = ('user', 'symbol','segment','tag')
+    list_filter = ('user', 'symbol','segment')
 
 
 @admin.register(Transaction)

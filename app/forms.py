@@ -19,7 +19,7 @@ class ContactForm(forms.ModelForm):
 class WatchlistForm(forms.ModelForm):
     class Meta:
         model = Watchlist
-        fields = ['token','tag']
+        fields = ['symbol','segment']
 
         
 # USER REGISTRATION AND LOGIN

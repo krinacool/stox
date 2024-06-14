@@ -7,6 +7,9 @@ import uuid
 from wallet.calculation import add_amount, deduct_amount, calc_carrage, add_wallet, deduct_wallet
 # from app.apiorder.Shoonyaapi.tests.test_place_order import shoonya_order
 from app.orders.market import stoploss_target
+from django.db import models, transaction
+from django.core.exceptions import ValidationError
+
 import threading
 import csv
 from stock.settings import DATA_FILE
@@ -116,29 +119,36 @@ class symbols(models.Model):
 
 
 class Watchlist(models.Model):
-    user = models.ForeignKey(CustomUser,on_delete=models.CASCADE,blank=True, null=True)
-    symbol=models.CharField(max_length=150,default="")
-    segment=models.CharField(max_length=150,default="")
-    token=models.CharField(max_length=150,default="")
-    ltp=models.FloatField(default=0)
-    open=models.FloatField(default=0)
-    close=models.FloatField(default=0)
-    high=models.FloatField(default=0)
-    low=models.FloatField(default=0)
-    tag = models.CharField(max_length=20,default="#@default")
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, blank=True, null=True)
+    symbol = models.CharField(max_length=150, default="")
+    segment = models.CharField(max_length=150, default="")
+    instrument_key = models.CharField(max_length=150, default="")
+    tag = models.CharField(max_length=20, default="#@default")
+    
     class Meta:
         verbose_name = "Watchlist"
         verbose_name_plural = "Watchlists"
-        unique_together = ['user', 'symbol']
+        unique_together = ['user', 'symbol', 'segment']
+    
     def save(self, *args, **kwargs):
-        # from app.symbols.instruments import get_exchange,get_symbol
-        # GETTING TOKEN
-        # self.symbol = get_symbol(self.token)
-        # # self.segment = get_exchange(self.token)
-        # self.tag = self.tag.replace(" ", "").upper()
-        super().save(*args, **kwargs)
+        with transaction.atomic():
+            # Ensure the symbol exists in the Symbols table
+            symbols_entry, created = symbols.objects.get_or_create(
+                symbol=self.symbol,
+                segment=self.segment,
+                defaults={'instrument_key': self.instrument_key}
+            )
+            # If the entry was not created, ensure the instrument_key is updated (if needed)
+            if not created and symbols_entry.instrument_key != self.instrument_key:
+                symbols_entry.instrument_key = self.instrument_key
+                symbols_entry.save()
+
+            # Now save the Watchlist entry
+            super().save(*args, **kwargs)
+
     def __str__(self):
         return str(self.symbol)
+
 
 
 

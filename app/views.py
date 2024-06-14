@@ -149,25 +149,51 @@ def market(request):
         'tax':tax,
         'option_chain':json.dumps(option_chain),
     }
-    return render(request,'market.html',context)
+    return render(request,'dashboard/market.html',context)
 
 
 @login_required
 def watchlist(request):
-    if request.method == 'POST':
-        try:
-            symbols = request.POST.get("symbollist")
-            tag = request.POST.get("tag")
-            symbols_data = eval(symbols)
-            for x in symbols_data:
-                try:
-                    Watchlist.objects.create(user=request.user,token=x['exchange_token'],tag=tag)
-                except:
-                    pass
-            messages.success(request,'Watchlist Updated !')
-        except:
-            messages.error(request,'Oops! Something went wrong.')
-    # form = WatchlistForm()
+    # if request.method == 'POST':
+    #     try:
+    #         symbols = request.POST.get("symbollist")
+    #         tag = request.POST.get("tag")
+    #         symbols_data = eval(symbols)
+    #         for x in symbols_data:
+    #             try:
+    #                 Watchlist.objects.create(user=request.user,token=x['exchange_token'],tag=tag)
+    #             except:
+    #                 pass
+    #         messages.success(request,'Watchlist Updated !')
+    #     except:
+    #         messages.error(request,'Oops! Something went wrong.')
+    # # form = WatchlistForm()
+    # watch_list = Watchlist.objects.filter(user=request.user)
+    # watchlist_list = []
+    # watchlist_symbollist = []
+    # for i in watch_list:
+    #     watchlist_symbollist.append(i.instrument_key)
+    #     if i.tag not in watchlist_list:
+    #         watchlist_list.append(i.tag)
+    # settings = charges.objects.first()
+    # charge = settings.intraday_buy_charge
+    # tax = settings.tax
+    # option_chain = {}
+    # lotob = Option_Lot_Size.objects.all()
+    # for x in lotob:
+    #     option_chain[x.symbol] = x.quantity
+    # # ---------------CONTEXT-----------
+    # context = {
+    #     "charges":charge,
+    #     "watchlist_list":watchlist_list,
+    #     "watch_list":watch_list,
+    #     "watchlist_symbollist":watchlist_symbollist,
+    #     "tax":tax,
+    #     "option_chain":json.dumps(option_chain),
+    # }
+
+
+
     watch_list = Watchlist.objects.filter(user=request.user)
     watchlist_list = []
     watchlist_symbollist = []
@@ -175,23 +201,13 @@ def watchlist(request):
         watchlist_symbollist.append(i.instrument_key)
         if i.tag not in watchlist_list:
             watchlist_list.append(i.tag)
-    settings = charges.objects.first()
-    charge = settings.intraday_buy_charge
-    tax = settings.tax
-    option_chain = {}
-    lotob = Option_Lot_Size.objects.all()
-    for x in lotob:
-        option_chain[x.symbol] = x.quantity
-    # ---------------CONTEXT-----------
+    print(watch_list)
     context = {
-        "charges":charge,
-        "watchlist_list":watchlist_list,
-        "watch_list":watch_list,
-        "watchlist_symbollist":watchlist_symbollist,
-        "tax":tax,
-        "option_chain":json.dumps(option_chain),
+        'watch_list':watch_list,
+        'watchlist_list':watchlist_list,
+        'watchlist_symbollist':watchlist_symbollist,
     }
-    return render(request,'watchlist.html',context)
+    return render(request,'dashboard/watchlist.html',context)
 
 
 

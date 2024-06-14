@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'daphne',
     'django.contrib.staticfiles',
     'app',
     'home',
@@ -105,6 +106,10 @@ STATICFILES_DIRS =[
     os.path.join(BASE_DIR, "static"),
 ]
 
+STATICFILES_DIRS = [
+  os.path.join(BASE_DIR, "static"),
+#   os.path.join(BASE_DIR, "node_modules"),
+]
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = 'static'

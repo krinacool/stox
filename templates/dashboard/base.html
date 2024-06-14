@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    {% block metatags %}
+    <meta name="description" content="Onstock your portfolio manager, Onstock stock market, | Portfolio manager" />
+    <meta name="keywords" content="Onstock your portfolio manager, Onstock stock market, | Portfolio manager">
+    <link rel="canonical" href="https://Onstock.in">
+    <meta name="author" content="Onstock">
+    {% endblock metatags %}
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/brand/logo/logo-primary.svg" />
+    
+    <!-- Libs CSS -->
+    
+    <!-- Theme CSS -->
+    <link href="/static/css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/theme.min.css">
+    <link rel="stylesheet" href="/static/libs/apexcharts/dist/apexcharts.css" />
+
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+    <main>
+        <!-- start the project -->
+        <!-- app layout -->
+        <div id="app-layout" class="overflow-x-hidden flex">
+            <!-- start navbar -->
+            <nav class="navbar-vertical navbar">
+                <div id="myScrollableElement" class="h-screen" data-simplebar>
+                    <!-- brand logo -->
+                    <a class="navbar-brand" href="/market">
+                        <h4 class="text-white">Onstock</h4>
+                        <!-- <img src="/static/images/brand/logo/logo.svg" width="50%" alt="" /> -->
+                    </a>
+
+                    <!-- navbar nav -->
+                    <ul class="navbar-nav flex-col" id="sideNavbar">
+                        <li class="nav-item">
+                            <a class="nav-link  active " href="/market">
+                                <i data-feather="home" class="w-4 h-4 mr-2"></i>
+                                Home
+                            </a>
+                        </li>
+                        <!-- nav item -->
+                        <li class="nav-item">
+                            <div class="navbar-heading">Watchlist</div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/watchlist">
+                                <i data-feather="bar-chart-2" class="w-4 h-4 mr-2"></i>
+                                Watchlist
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/portfolio">
+                                <i data-feather="database" class="w-4 h-4 mr-2"></i>
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/portfolio">
+                                <i data-feather="pie-chart" class="w-4 h-4 mr-2"></i>
+                                Monthly Performance
+                            </a>
+                        </li>
+                        <!-- nav heading -->
+                        <li class="nav-item">
+                            <div class="navbar-heading">Credentials</div>
+                        </li>
+                        <!-- nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="/api/angelone">
+                                <i data-feather="cloud" class="w-4 h-4 mr-2"></i>
+                                Angel ONE
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/api/dhanhq">
+                                <i data-feather="package" class="w-4 h-4 mr-2"></i>
+                                Dhan HQ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="navbar-heading">Profile</div>
+                        </li>
+
+                        <!-- nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="/profile">
+                                <i data-feather="user" class="w-4 h-4 mr-2"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/profile">
+                                <i data-feather="settings" class="w-4 h-4 mr-2"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <!-- nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="/contactus">
+                                <i data-feather="phone" class="w-4 h-4 mr-2"></i>
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--end of navbar-->
+
+            <!-- app layout content -->
+            <div id="app-layout-content"
+                class="min-h-screen w-full min-w-[100vw] md:min-w-0 ml-[15.625rem] [transition:margin_0.25s_ease-out]">
+                <!-- start navbar -->
+                <div class="header">
+                    <!-- navbar -->
+                    <nav class="bg-white px-6 py-[10px] flex items-center justify-between shadow-sm">
+                        <a id="nav-toggle" href="#" class="text-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </a>
+                        <div class="ml-3 hidden md:hidden lg:block">
+
+                        </div>
+                        <!-- navbar nav -->
+                        <ul class="flex ml-auto items-center">
+
+                            <!-- list -->
+                            <li class="dropdown ml-2">
+                                <a class="rounded-full" href="#" role="button" id="dropdownUser"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="w-10 h-10 relative">
+                                        <img alt="avatar" src="/static/images/avatar/avatar-1.jpg"
+                                            class="rounded-full" />
+                                        <div
+                                            class="absolute border-gray-200 border-2 rounded-full right-0 bottom-0 bg-green-600 h-3 w-3">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end p-2" aria-labelledby="dropdownUser">
+                                    <div class="px-4 pb-0 pt-2">
+                                        <div class="leading-4">
+                                            <h5 class="text-sm mb-1 uppercase">{{request.user}}</h5>
+                                            <a href="/profile">View my profile</a>
+                                        </div>
+                                        <div class="border-b mt-3 mb-2"></div>
+                                    </div>
+
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="dropdown-item" href="/profile">
+                                                <i class="w-4 h-4" data-feather="user"></i>
+                                                Edit Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/portfolio">
+                                                <i class="w-4 h-4" data-feather="activity"></i>
+                                                Activity Log
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="/contactus">
+                                                <i class="w-4 h-4" data-feather="star"></i>
+                                                Update Plan
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/profile">
+                                                <i class="w-4 h-4" data-feather="settings"></i>
+                                                Account Settings
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/logout">
+                                                <i class="w-4 h-4" data-feather="power"></i>
+                                                Sign Out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end of navbar -->
+                {% if messages %}
+                {% for message in messages %}
+                <br>
+                <div class="bg-yellow-600 mb-3 ml-2 mr-4 text-white rounded-lg p-4" role="alert">
+                    {{ message }}
+                </div>
+                <br>
+                {% endfor %}
+                {% endif %}
+                {% block body %}
+                {% endblock body %}
+
+                <div style="bottom: 1px;position: fixed;width: 100%;">
+                    <div class="px-6 border-t border-gray-300 py-3 flex justify-between items-center bg-white">
+                        <p class="m-0 leading-6">
+                            Buy Onstock Indicator
+                            <a href="/indicator" target="_blank" class="text-indigo-600">Indicator Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of project -->
+    </main>
+
+    <script src="/static/libs/apexcharts/dist/apexcharts.min.js"></script>
+
+    <!-- Libs JS -->
+    <script src="/static/libs/feather-icons/dist/feather.min.js"></script>
+    <script src="/static/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/libs/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="/static/js/theme.min.js"></script>
+
+</body>
+
+</html>

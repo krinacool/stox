@@ -11,3 +11,6 @@ db.sqlite3
 
 target_lists/
 order_datas/
+
+# Node.js #
+node_modules/
