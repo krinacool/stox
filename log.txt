@@ -1501,3 +1501,2160 @@ Traceback (most recent call last):
     raise RuntimeError('cannot schedule new futures after '
 RuntimeError: cannot schedule new futures after interpreter shutdown
 2024-06-14 11:06:23,741 [35;1mHTTP GET /watchlist 500 [0.82, 127.0.0.1:64690][0m
+2024-06-14 11:46:37,111 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-14 11:49:01,418 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-14 11:50:33,089 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-14 11:50:35,554 Not Found: /ws/stocks/
+2024-06-14 11:50:42,069 Not Found: /ws/stocks/
+2024-06-14 11:50:48,426 Not Found: /ws/stocks/
+2024-06-14 12:02:14,452 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-14 12:17:33,174 Not Found: /~onlineea/paypal.com/us.cgi-bin.webscr.cmd-login-submit-update/index.htm
+2024-06-14 12:25:22,586 Not Found: /ws/stocks/
+2024-06-14 12:25:29,462 Not Found: /ws/stocks/
+2024-06-15 01:01:53,340 Watching for file changes with StatReloader
+2024-06-15 01:09:57,556 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 01:12:57,387 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 01:13:03,643 Not Found: /ws/stocks/
+2024-06-15 01:13:09,782 Not Found: /ws/stocks/
+2024-06-15 01:13:16,163 Not Found: /ws/stocks/
+2024-06-15 01:13:20,693 Not Found: /index.html
+2024-06-15 01:14:34,199 Internal Server Error: /contact
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 36, in contact
+    return render(request,"contact.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: contact.html
+2024-06-15 01:14:34,530 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 01:16:26,099 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 01:16:29,810 Not Found: /ws/stocks/
+2024-06-15 01:16:36,321 Not Found: /ws/stocks/
+2024-06-15 01:16:42,684 Not Found: /ws/stocks/
+2024-06-15 01:16:49,572 Not Found: /ws/stocks/
+2024-06-15 01:16:55,996 Not Found: /ws/stocks/
+2024-06-15 01:17:02,319 Not Found: /ws/stocks/
+2024-06-15 01:17:09,993 Not Found: /ws/stocks/
+2024-06-15 01:17:16,339 Not Found: /ws/stocks/
+2024-06-15 01:17:23,412 Not Found: /ws/stocks/
+2024-06-15 01:17:29,128 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 01:17:30,859 Not Found: /ws/stocks/
+2024-06-15 01:17:37,772 Not Found: /ws/stocks/
+2024-06-15 01:17:44,474 Not Found: /ws/stocks/
+2024-06-15 01:17:52,517 Not Found: /ws/stocks/
+2024-06-15 01:18:00,617 Not Found: /ws/stocks/
+2024-06-15 01:18:08,864 Not Found: /ws/stocks/
+2024-06-15 01:18:18,117 Not Found: /ws/stocks/
+2024-06-15 01:18:27,454 Not Found: /ws/stocks/
+2024-06-15 01:18:34,601 Not Found: /ws/stocks/
+2024-06-15 01:18:41,844 Not Found: /ws/stocks/
+2024-06-15 01:18:49,354 Not Found: /ws/stocks/
+2024-06-15 01:18:56,630 Not Found: /ws/stocks/
+2024-06-15 01:19:03,474 Not Found: /ws/stocks/
+2024-06-15 01:19:11,054 Not Found: /ws/stocks/
+2024-06-15 01:19:18,021 Not Found: /ws/stocks/
+2024-06-15 01:19:24,587 Not Found: /ws/stocks/
+2024-06-15 01:19:32,061 Not Found: /ws/stocks/
+2024-06-15 01:19:39,030 Not Found: /ws/stocks/
+2024-06-15 01:19:46,193 Not Found: /ws/stocks/
+2024-06-15 01:19:54,569 Not Found: /ws/stocks/
+2024-06-15 01:20:02,560 Not Found: /ws/stocks/
+2024-06-15 01:20:06,457 Not Found: /index.html
+2024-06-15 01:20:10,547 Not Found: /ws/stocks/
+2024-06-15 01:20:16,174 Not Found: /ws/stocks/
+2024-06-15 01:20:19,155 Not Found: /ws/stocks/
+2024-06-15 01:20:27,750 Not Found: /ws/stocks/
+2024-06-15 01:20:35,607 Not Found: /ws/stocks/
+2024-06-15 01:20:43,522 Not Found: /ws/stocks/
+2024-06-15 01:20:50,871 Not Found: /ws/stocks/
+2024-06-15 01:20:58,363 Not Found: /ws/stocks/
+2024-06-15 01:21:05,928 Not Found: /ws/stocks/
+2024-06-15 01:21:13,321 Not Found: /ws/stocks/
+2024-06-15 01:21:21,310 Not Found: /ws/stocks/
+2024-06-15 01:21:28,802 Not Found: /ws/stocks/
+2024-06-15 01:21:36,256 Not Found: /ws/stocks/
+2024-06-15 01:21:44,353 Not Found: /ws/stocks/
+2024-06-15 01:21:52,436 Not Found: /ws/stocks/
+2024-06-15 01:21:59,893 Not Found: /ws/stocks/
+2024-06-15 01:22:07,302 Not Found: /ws/stocks/
+2024-06-15 01:22:08,286 Not Found: /ws/stocks/
+2024-06-15 01:22:16,194 Not Found: /ws/stocks/
+2024-06-15 01:22:17,318 Not Found: /ws/stocks/
+2024-06-15 01:22:25,718 Not Found: /ws/stocks/
+2024-06-15 01:22:34,940 Not Found: /ws/stocks/
+2024-06-15 01:22:45,176 Not Found: /ws/stocks/
+2024-06-15 01:22:57,290 Not Found: /ws/stocks/
+2024-06-15 01:23:09,583 Not Found: /ws/stocks/
+2024-06-15 01:23:22,042 Not Found: /ws/stocks/
+2024-06-15 01:23:32,024 Not Found: /ws/stocks/
+2024-06-15 01:23:41,608 Not Found: /ws/stocks/
+2024-06-15 01:23:52,042 Not Found: /ws/stocks/
+2024-06-15 01:24:02,099 Not Found: /ws/stocks/
+2024-06-15 01:24:14,590 Not Found: /ws/stocks/
+2024-06-15 01:24:24,072 Not Found: /ws/stocks/
+2024-06-15 01:24:33,214 Not Found: /ws/stocks/
+2024-06-15 01:24:41,502 Not Found: /ws/stocks/
+2024-06-15 01:24:49,586 Not Found: /ws/stocks/
+2024-06-15 01:24:57,423 Not Found: /ws/stocks/
+2024-06-15 01:25:05,442 Not Found: /ws/stocks/
+2024-06-15 01:25:13,542 Not Found: /ws/stocks/
+2024-06-15 01:25:21,767 Not Found: /ws/stocks/
+2024-06-15 01:25:29,219 Not Found: /ws/stocks/
+2024-06-15 01:25:37,541 Not Found: /ws/stocks/
+2024-06-15 01:25:45,503 Not Found: /ws/stocks/
+2024-06-15 01:25:53,497 Not Found: /ws/stocks/
+2024-06-15 01:26:01,173 Not Found: /ws/stocks/
+2024-06-15 01:26:09,662 Not Found: /ws/stocks/
+2024-06-15 01:26:18,166 Not Found: /ws/stocks/
+2024-06-15 01:26:27,591 Not Found: /ws/stocks/
+2024-06-15 01:26:36,295 Not Found: /ws/stocks/
+2024-06-15 01:26:44,610 Not Found: /ws/stocks/
+2024-06-15 01:26:52,442 Not Found: /ws/stocks/
+2024-06-15 01:27:00,571 Not Found: /ws/stocks/
+2024-06-15 01:27:00,907 Not Found: /+CSCOE+/logon.html
+2024-06-15 01:27:08,551 Not Found: /ws/stocks/
+2024-06-15 01:27:16,919 Not Found: /ws/stocks/
+2024-06-15 01:27:24,734 Not Found: /ws/stocks/
+2024-06-15 01:27:26,718 Not Found: /ws/stocks/
+2024-06-15 01:27:32,748 Not Found: /ws/stocks/
+2024-06-15 01:27:40,394 Not Found: /ws/stocks/
+2024-06-15 01:27:48,704 Not Found: /ws/stocks/
+2024-06-15 01:27:56,885 Not Found: /ws/stocks/
+2024-06-15 01:28:04,803 Not Found: /ws/stocks/
+2024-06-15 01:28:13,111 Not Found: /ws/stocks/
+2024-06-15 01:28:21,870 Not Found: /ws/stocks/
+2024-06-15 01:28:30,514 Not Found: /ws/stocks/
+2024-06-15 01:28:39,406 Not Found: /ws/stocks/
+2024-06-15 01:28:48,049 Not Found: /ws/stocks/
+2024-06-15 01:28:55,791 Not Found: /ws/stocks/
+2024-06-15 01:29:03,954 Not Found: /ws/stocks/
+2024-06-15 01:29:11,738 Not Found: /ws/stocks/
+2024-06-15 01:29:20,011 Not Found: /ws/stocks/
+2024-06-15 01:29:27,867 Not Found: /ws/stocks/
+2024-06-15 01:29:35,705 Not Found: /ws/stocks/
+2024-06-15 01:29:43,898 Not Found: /ws/stocks/
+2024-06-15 01:29:51,740 Not Found: /ws/stocks/
+2024-06-15 01:30:00,087 Not Found: /ws/stocks/
+2024-06-15 01:30:08,901 Not Found: /ws/stocks/
+2024-06-15 01:30:17,044 Not Found: /ws/stocks/
+2024-06-15 01:30:27,724 Not Found: /ws/stocks/
+2024-06-15 01:32:51,853 Not Found: /+CSCOE+/logon.html
+2024-06-15 01:38:06,415 Not Found: /ws/stocks/
+2024-06-15 01:38:31,536 Internal Server Error: /ws/ws/stocks/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+TypeError: StockConsumer() missing 2 required positional arguments: 'receive' and 'send'
+2024-06-15 01:39:12,492 Not Found: /cgi-bin/login.cgi
+2024-06-15 01:39:40,839 Not Found: /ws/ws/stocks/
+2024-06-15 01:40:05,172 Not Found: /ws/stocks/
+2024-06-15 01:44:48,207 Not Found: /cgi-bin/login.cgi
+2024-06-15 01:50:30,052 Not Found: /logon.htm
+2024-06-15 01:51:29,462 Not Found: /ws/stocks/
+2024-06-15 01:51:33,929 Not Found: /ws/stocks/
+2024-06-15 01:56:35,824 Not Found: /logon.htm
+2024-06-15 01:59:44,705 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 02:01:15,885 Not Found: /ws/stocks/
+2024-06-15 02:09:10,312 Not Found: /ws/stocks/
+2024-06-15 02:09:58,077 Not Found: /ws/stocks/
+2024-06-15 02:14:51,300 Not Found: /doc/index.html
+2024-06-15 02:16:04,437 Not Found: /.well-known/acme-challenge/P7T74GFPDLPZWCK4GWYKW_E_XGJCHVRS
+2024-06-15 02:16:05,731 Not Found: /.well-known/acme-challenge/29HFFADZXEXBG2KWY7FKLEKLE11TDHLB
+2024-06-15 02:20:58,671 Not Found: /doc/index.html
+2024-06-15 02:29:08,362 Not Found: /robots.txt
+2024-06-15 02:30:33,526 Not Found: /actuator/gateway/routes
+2024-06-15 02:34:43,193 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 02:58:07,400 Not Found: /.git/config
+2024-06-15 03:16:23,729 Not Found: /.git/config
+2024-06-15 03:25:10,752 Not Found: /ws/stocks/
+2024-06-15 03:26:38,913 Not Found: /ws/stocks/
+2024-06-15 03:30:49,639 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = await get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 03:31:03,037 Not Found: /.git/config
+2024-06-15 03:35:43,427 Not Found: /ws/stocks/
+2024-06-15 03:44:12,546 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 90, in handlelogin
+    return render(request, 'login.html', {'form': form})
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2024-06-15 03:45:24,116 Not Found: /robots.txt
+2024-06-15 03:45:24,592 Internal Server Error: /disclaimer
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 43, in disclaimer
+    return render(request,"disclaimer.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: disclaimer.html
+2024-06-15 03:50:31,685 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 03:50:31,697 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 03:50:31,712 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 03:50:33,704 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 04:07:22,963 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 04:16:11,783 Not Found: /.git/config
+2024-06-15 04:30:00,637 Not Found: /dns-query
+2024-06-15 04:33:45,239 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 04:34:08,469 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 04:50:00,819 Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:01,403 Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 04:50:01,987 Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:03,110 Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 04:50:03,822 Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+2024-06-15 04:50:05,418 Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:06,456 Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:08,810 Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 04:50:09,612 Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:10,415 Not Found: /phpunit/Util/PHP/eval-stdin.php
+2024-06-15 04:50:11,911 Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:12,523 Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 04:50:13,163 Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:14,255 Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 04:50:15,794 Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:17,766 Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:18,597 Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:20,434 Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:21,820 Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:23,458 Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:24,018 Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:24,594 Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:25,192 Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:26,556 Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:27,402 Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:28,233 Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:28,795 Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:30,276 Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:30,875 Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:32,361 Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:33,142 Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:33,932 Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:36,325 Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:37,102 Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 04:50:38,105 Not Found: /index.php
+2024-06-15 04:50:40,093 Not Found: /public/index.php
+2024-06-15 04:50:40,681 Not Found: /index.php
+2024-06-15 04:50:41,502 Not Found: /index.php
+2024-06-15 04:57:52,935 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 05:03:54,727 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 05:04:27,360 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 05:06:24,253 Not Found: /dns-query
+2024-06-15 05:06:25,516 Not Found: /dns-query
+2024-06-15 05:16:03,753 Not Found: /.well-known/acme-challenge/61HBDD3H6N6FH4GURPVOW36O73KTGHY_
+2024-06-15 05:16:04,642 Not Found: /.well-known/acme-challenge/6UGH7SAM1CAOXMRCMQ14C_FCDYOG3X_N
+2024-06-15 05:30:41,677 Not Found: /.git/config
+2024-06-15 05:31:44,771 Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:31:46,343 Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 05:31:46,688 Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:31:47,045 Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 05:31:48,403 Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+2024-06-15 05:31:50,987 Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:31:51,909 Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:31:52,553 Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 05:31:53,151 Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:31:55,981 Not Found: /phpunit/Util/PHP/eval-stdin.php
+2024-06-15 05:31:57,663 Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:31:58,272 Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 05:31:59,680 Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:00,542 Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 05:32:01,946 Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:03,636 Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:05,104 Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:07,544 Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:12,594 Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:15,308 Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:16,634 Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:18,195 Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:19,737 Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:22,421 Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:23,278 Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:24,081 Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:24,919 Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:25,898 Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:26,523 Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:27,887 Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:28,945 Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:29,769 Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:31,355 Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:33,137 Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 05:32:33,954 Not Found: /index.php
+2024-06-15 05:32:34,552 Not Found: /public/index.php
+2024-06-15 05:32:35,402 Not Found: /index.php
+2024-06-15 05:32:36,084 Not Found: /index.php
+2024-06-15 05:34:52,594 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 05:39:43,540 Not Found: /webui/
+2024-06-15 05:45:08,076 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 05:49:46,648 Not Found: /geoserver/web/
+2024-06-15 05:51:50,698 Not Found: /.git/config
+2024-06-15 06:09:03,956 Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:04,300 Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:09:04,595 Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:04,817 Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:09:05,271 Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+2024-06-15 06:09:06,517 Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:06,907 Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:07,483 Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:09:08,031 Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:09,065 Not Found: /phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:09:09,678 Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:10,242 Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:09:11,227 Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:12,320 Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:09:12,715 Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:13,112 Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:13,557 Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:14,464 Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:15,027 Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:16,381 Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:17,546 Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:18,449 Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:19,349 Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:19,885 Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:20,826 Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:21,769 Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:22,179 Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:22,959 Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:23,536 Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:23,939 Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:24,337 Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:24,791 Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:25,340 Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:25,952 Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:09:26,503 Not Found: /index.php
+2024-06-15 06:09:26,907 Not Found: /public/index.php
+2024-06-15 06:09:27,326 Not Found: /index.php
+2024-06-15 06:09:27,893 Not Found: /index.php
+2024-06-15 06:12:37,670 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 06:17:18,842 Not Found: /~onlineea/paypal.com/us.cgi-bin.webscr.cmd-login-submit-update/index.htm
+2024-06-15 06:28:07,338 Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:07,538 Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:28:07,704 Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:07,880 Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:28:08,106 Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+2024-06-15 06:28:08,333 Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:08,547 Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:08,788 Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:28:08,982 Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:09,197 Not Found: /phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:28:09,438 Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:09,644 Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:28:09,908 Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:10,092 Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 06:28:10,282 Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:10,462 Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:10,652 Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:10,998 Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:11,186 Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:11,563 Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:11,756 Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:11,949 Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:12,190 Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:12,412 Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:12,718 Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:13,004 Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:13,253 Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:13,665 Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:13,842 Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:14,000 Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:14,183 Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:14,501 Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:14,703 Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:14,875 Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 06:28:15,028 Not Found: /index.php
+2024-06-15 06:28:15,190 Not Found: /public/index.php
+2024-06-15 06:28:15,350 Not Found: /index.php
+2024-06-15 06:28:15,497 Not Found: /index.php
+2024-06-15 06:42:31,267 Not Found: /.aws/credentials
+2024-06-15 06:42:58,084 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 06:45:01,114 Not Found: /.git/config
+2024-06-15 06:49:38,157 Not Found: /robots.txt
+2024-06-15 06:49:46,268 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 07:00:15,947 Internal Server Error: /about
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 40, in about
+    return render(request,"about.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: about.html
+2024-06-15 07:06:49,040 Internal Server Error: /privacypolicy
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 47, in privacypolicy
+    return render(request,"privacypolicy.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: privacypolicy.html
+2024-06-15 07:08:50,478 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 07:09:04,989 Not Found: /wp-content/plugins/elementor/readme.txt
+2024-06-15 07:35:55,510 Internal Server Error: /privacypolicy
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 47, in privacypolicy
+    return render(request,"privacypolicy.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: privacypolicy.html
+2024-06-15 07:40:49,119 Not Found: /.git/config
+2024-06-15 07:48:28,634 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 90, in handlelogin
+    return render(request, 'login.html', {'form': form})
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2024-06-15 08:01:34,923 Not Found: /robots.txt
+2024-06-15 08:01:36,344 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 08:16:03,307 Not Found: /.well-known/acme-challenge/RHQVTMA8YWE0JKZLX5T8--W-NMDBYXKC
+2024-06-15 08:16:04,299 Not Found: /.well-known/acme-challenge/J0W7XADTXJ2FD0VRHK0OQP09-1_PGY1_
+2024-06-15 08:49:12,589 Not Found: /api/angelone
+2024-06-15 08:49:19,196 Not Found: /api/dhanhq
+2024-06-15 08:49:29,807 Internal Server Error: /profile
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/root/onstock/app/views.py", line 303, in profile
+    return render(request,'profile.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: profile.html
+2024-06-15 08:49:38,366 Internal Server Error: /portfolio
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/root/onstock/app/views.py", line 291, in portfolio
+    return render(request,'portfolio.html',context)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: portfolio.html
+2024-06-15 08:49:45,705 Internal Server Error: /portfolio
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/root/onstock/app/views.py", line 291, in portfolio
+    return render(request,'portfolio.html',context)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: portfolio.html
+2024-06-15 08:50:14,440 Not Found: /indicator
+2024-06-15 08:50:36,666 Not Found: /contactus
+2024-06-15 08:50:46,400 Internal Server Error: /profile
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/root/onstock/app/views.py", line 303, in profile
+    return render(request,'profile.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: profile.html
+2024-06-15 08:50:52,517 Internal Server Error: /profile
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/root/onstock/app/views.py", line 303, in profile
+    return render(request,'profile.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: profile.html
+2024-06-15 09:04:10,047 Not Found: /robots.txt
+2024-06-15 09:04:10,542 Internal Server Error: /about
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 40, in about
+    return render(request,"about.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: about.html
+2024-06-15 09:08:17,491 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 09:40:54,667 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 10:00:43,273 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 10:36:41,769 Internal Server Error: /privacypolicy
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 47, in privacypolicy
+    return render(request,"privacypolicy.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: privacypolicy.html
+2024-06-15 10:52:53,186 Not Found: /Temporary_Listen_Addresses
+2024-06-15 10:52:54,318 Not Found: /ews/exchanges/
+2024-06-15 10:52:55,362 Not Found: /ews/exchange /
+2024-06-15 10:52:56,616 Not Found: /ews/exchange/
+2024-06-15 10:52:58,003 Not Found: /ews/ /
+2024-06-15 10:52:59,481 Not Found: /ews/ews/
+2024-06-15 10:53:01,032 Not Found: /ews/autodiscovers/
+2024-06-15 10:53:03,516 Not Found: /autodiscover/autodiscovers/
+2024-06-15 10:53:04,983 Not Found: /autodiscover/autodiscover /
+2024-06-15 10:53:06,532 Not Found: /autodiscover/autodiscoverrs/
+2024-06-15 10:53:08,835 Not Found: /autodiscove/
+2024-06-15 11:16:03,494 Not Found: /.well-known/acme-challenge/X-DWUOSGL_Y0NK9RAS5XO7M99NO6NU76
+2024-06-15 11:16:04,509 Not Found: /.well-known/acme-challenge/NZXYP-9C5S19PTVXEKS02OLPTXT114IH
+2024-06-15 11:20:09,472 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 12:11:07,369 Not Found: /ab2g
+2024-06-15 12:11:08,139 Not Found: /ab2h
+2024-06-15 12:11:08,944 Not Found: /alive.php
+2024-06-15 12:11:13,398 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 12:11:14,755 Not Found: /t4
+2024-06-15 12:11:16,890 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 12:11:18,059 Not Found: /teorema505
+2024-06-15 12:17:17,891 Not Found: /~onlineea/paypal.com/us.cgi-bin.webscr.cmd-login-submit-update/index.htm
+2024-06-15 13:23:52,246 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 13:27:10,508 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 13:37:28,593 Internal Server Error: /contact
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 36, in contact
+    return render(request,"contact.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: contact.html
+2024-06-15 13:37:28,894 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 13:43:11,739 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 14:16:03,033 Not Found: /.well-known/acme-challenge/ZM25YCT0WGTXLA6X8PRUI1074FD_-CAO
+2024-06-15 14:16:04,118 Not Found: /.well-known/acme-challenge/NEGKCNBAEASZO8XAKXM5BVGDL_8ZR8CE
+2024-06-15 14:17:23,806 Not Found: /dashboard
+2024-06-15 14:17:24,824 Not Found: /dashboard
+2024-06-15 14:36:42,094 Not Found: /robots.txt
+2024-06-15 14:36:43,406 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 14:37:45,483 Not Found: /js/NewWindow_2_all.js
+2024-06-15 15:05:43,501 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 15:05:47,566 Forbidden (Referer checking failed - no Referer.): /
+2024-06-15 15:05:51,629 Forbidden (Referer checking failed - no Referer.): /
+2024-06-15 15:05:55,048 Not Found: /WuEL
+2024-06-15 15:06:02,971 Not Found: /a
+2024-06-15 15:06:05,060 Not Found: /robots.txt
+2024-06-15 15:06:06,585 Not Found: /download/file.ext
+2024-06-15 15:06:08,715 Not Found: /social-auth/login/google-oauth2/
+2024-06-15 15:06:10,150 Not Found: /SiteLoader
+2024-06-15 15:06:13,760 Not Found: /mPlayer
+2024-06-15 16:13:57,896 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 16:13:58,477 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 16:13:59,075 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 16:17:59,546 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 16:18:09,641 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 16:22:40,802 Not Found: /robots.txt
+2024-06-15 16:22:41,023 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 90, in handlelogin
+    return render(request, 'login.html', {'form': form})
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2024-06-15 16:24:20,910 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 16:24:25,117 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 16:24:25,812 Not Found: /server
+2024-06-15 16:24:26,327 Not Found: /.vscode/sftp.json
+2024-06-15 16:24:26,869 Internal Server Error: /about
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 40, in about
+    return render(request,"about.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: about.html
+2024-06-15 16:24:27,540 Not Found: /debug/default/view
+2024-06-15 16:24:28,048 Not Found: /v2/_catalog
+2024-06-15 16:24:28,583 Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+2024-06-15 16:24:29,081 Not Found: /server-status
+2024-06-15 16:24:29,609 Not Found: /login.action
+2024-06-15 16:24:30,104 Not Found: /_all_dbs
+2024-06-15 16:24:30,635 Not Found: /.DS_Store
+2024-06-15 16:24:31,122 Not Found: /.env
+2024-06-15 16:24:31,656 Not Found: /.git/config
+2024-06-15 16:24:32,194 Not Found: /s/037313e2331313e2032323e2835313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+2024-06-15 16:24:32,684 Not Found: /config.json
+2024-06-15 16:24:33,195 Not Found: /telescope/requests
+2024-06-15 16:24:33,698 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 16:37:44,545 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 17:09:41,335 Internal Server Error: /privacypolicy
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 47, in privacypolicy
+    return render(request,"privacypolicy.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: privacypolicy.html
+2024-06-15 17:16:04,113 Not Found: /.well-known/acme-challenge/CX7MGIR0NUUJZFVEEUTR347LWCNVPVYV
+2024-06-15 17:16:05,050 Not Found: /.well-known/acme-challenge/C5M-NOXCTYNJZMI9ZK9SF2-_ZDCPRJZG
+2024-06-15 17:17:09,005 Not Found: /actuator/health
+2024-06-15 17:54:41,933 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 17:54:45,925 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 17:55:13,868 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 17:58:03,305 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 18:20:58,930 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 18:20:59,416 Not Found: /~onlineea/paypal.com/us.cgi-bin.webscr.cmd-login-submit-update/index.htm
+2024-06-15 19:17:14,413 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 19:26:23,265 Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:23,777 Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 19:26:24,615 Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:25,297 Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 19:26:25,830 Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+2024-06-15 19:26:26,339 Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:27,925 Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:28,464 Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 19:26:29,298 Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:31,292 Not Found: /phpunit/Util/PHP/eval-stdin.php
+2024-06-15 19:26:32,634 Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:35,555 Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 19:26:37,047 Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:38,393 Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+2024-06-15 19:26:39,544 Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:40,588 Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:41,644 Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:43,631 Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:44,949 Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:46,608 Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:47,354 Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:48,387 Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:49,348 Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:51,229 Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:52,055 Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:53,182 Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:55,021 Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:57,384 Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:26:59,488 Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:27:00,876 Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:27:01,941 Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:27:02,972 Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:27:04,821 Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:27:06,274 Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-15 19:27:08,477 Not Found: /index.php
+2024-06-15 19:27:10,508 Not Found: /public/index.php
+2024-06-15 19:27:11,723 Not Found: /index.php
+2024-06-15 19:27:12,885 Not Found: /index.php
+2024-06-15 19:55:40,779 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 19:55:44,300 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 20:09:56,899 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 20:10:00,139 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 20:13:28,079 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 20:13:31,312 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 20:16:04,165 Not Found: /.well-known/acme-challenge/OLR1JH-5EASBC8PWHJ294LBI7_LRXPFJ
+2024-06-15 20:16:05,140 Not Found: /.well-known/acme-challenge/1USKY2TGUH2SP57-J_X1XQ-4-CLW0M1S
+2024-06-15 20:16:08,269 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 20:16:18,790 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 21:51:01,795 Not Found: /robots.txt
+2024-06-15 21:51:02,216 Internal Server Error: /privacypolicy
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 47, in privacypolicy
+    return render(request,"privacypolicy.html")
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: privacypolicy.html
+2024-06-15 21:51:49,233 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 22:04:26,113 Not Found: /robots.txt
+2024-06-15 22:04:26,149 Not Found: /robots.txt
+2024-06-15 22:04:26,970 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 22:04:27,073 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 22:04:43,677 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 22:12:15,141 Not Found: /robots.txt
+2024-06-15 22:12:15,575 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 90, in handlelogin
+    return render(request, 'login.html', {'form': form})
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2024-06-15 22:36:01,792 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 22:48:59,414 Not Found: /symbols
+2024-06-15 22:51:04,556 Not Found: /dashboard
+2024-06-15 22:51:09,408 Not Found: /dashboard
+2024-06-15 22:51:11,152 Not Found: /dashboard
+2024-06-15 22:51:19,241 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 22:51:34,694 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 22:52:01,149 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 90, in handlelogin
+    return render(request, 'login.html', {'form': form})
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2024-06-15 22:52:06,308 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 90, in handlelogin
+    return render(request, 'login.html', {'form': form})
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2024-06-15 22:52:48,620 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 90, in handlelogin
+    return render(request, 'login.html', {'form': form})
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2024-06-15 22:53:00,604 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 90, in handlelogin
+    return render(request, 'login.html', {'form': form})
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: login.html
+2024-06-15 22:53:08,437 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 22:53:19,989 Not Found: /tradestatus
+2024-06-15 22:53:40,798 Not Found: /tradestatus
+2024-06-15 22:57:12,630 Not Found: /tradestatus
+2024-06-15 22:57:26,201 Not Found: /tradestatus
+2024-06-15 22:57:28,200 Not Found: /tradestatus
+2024-06-15 22:57:30,174 Not Found: /symbols
+2024-06-15 22:59:12,075 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 23:16:03,285 Not Found: /.well-known/acme-challenge/GTRRGKZIEZ05W8A-3V72R21L8TW6CMZM
+2024-06-15 23:16:04,304 Not Found: /.well-known/acme-challenge/8NHI4W1NMT2TEX72R1G43K_CHTTVYHF4
+2024-06-15 23:58:09,294 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-15 23:58:15,913 Forbidden (Referer checking failed - no Referer.): /
+2024-06-15 23:58:19,937 Not Found: /.env
+2024-06-15 23:58:22,701 Not Found: /.env
+2024-06-15 23:58:34,878 Not Found: /onstock.in/.env
+2024-06-15 23:58:39,149 Not Found: /onstock.in/.env
+2024-06-15 23:58:46,130 Not Found: /.env.www
+2024-06-15 23:58:49,163 Not Found: /.env.www
+2024-06-15 23:58:57,131 Not Found: /onstock.in/.env
+2024-06-15 23:59:00,722 Not Found: /onstock.in/.env
+2024-06-15 23:59:07,490 Not Found: /.env_1
+2024-06-15 23:59:10,348 Not Found: /.env_1
+2024-06-15 23:59:18,065 Not Found: /onstock.in/.env
+2024-06-15 23:59:22,278 Not Found: /onstock.in/.env
+2024-06-15 23:59:30,402 Not Found: /.env_sample
+2024-06-15 23:59:38,859 Not Found: /onstock.in/.env
+2024-06-15 23:59:44,823 Not Found: /onstock.in/.env
+2024-06-15 23:59:49,058 Not Found: /.aws/credentials
+2024-06-15 23:59:53,675 Not Found: /.aws/credentials
+2024-06-16 00:00:05,834 Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 00:00:47,232 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-16 00:16:50,712 Not Found: /~onlineea/paypal.com/us.cgi-bin.webscr.cmd-login-submit-update/index.htm
+2024-06-16 00:38:50,922 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-16 01:02:03,513 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-16 01:02:12,122 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-16 01:37:01,704 Not Found: /owa/auth/logon.aspx
+2024-06-16 01:37:59,032 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-16 01:51:02,207 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-16 01:57:54,036 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 74, in index
+    return render(request,'home.html')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+2024-06-16 02:16:03,574 Not Found: /.well-known/acme-challenge/GHB8QGR-S-4GWEZXUR038YDN_H9M3V9T
+2024-06-16 02:47:37,116 Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:47:41,369 Not Found: /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-16 02:47:41,723 Not Found: /vendor/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:47:47,573 Not Found: /vendor/phpunit/Util/PHP/eval-stdin.php
+2024-06-16 02:47:48,583 Not Found: /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+2024-06-16 02:47:51,377 Not Found: /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:47:52,888 Not Found: /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:47:53,800 Not Found: /phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-16 02:47:54,162 Not Found: /phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:47:55,052 Not Found: /phpunit/Util/PHP/eval-stdin.php
+2024-06-16 02:47:56,482 Not Found: /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:47:56,849 Not Found: /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+2024-06-16 02:47:57,736 Not Found: /lib/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:00,223 Not Found: /lib/phpunit/Util/PHP/eval-stdin.php
+2024-06-16 02:48:00,579 Not Found: /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:02,024 Not Found: /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:02,952 Not Found: /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:05,898 Not Found: /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:06,237 Not Found: /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:10,087 Not Found: /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:12,529 Not Found: /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:12,880 Not Found: /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:13,226 Not Found: /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:13,565 Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:14,943 Not Found: /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:15,818 Not Found: /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:17,226 Not Found: /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:17,980 Not Found: /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:18,873 Not Found: /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:23,414 Not Found: /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:24,820 Not Found: /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:27,772 Not Found: /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:29,804 Not Found: /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:30,152 Not Found: /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+2024-06-16 02:48:30,483 Not Found: /index.php
+2024-06-16 02:48:31,359 Not Found: /public/index.php
+2024-06-16 02:48:32,737 Not Found: /index.php
+2024-06-16 02:48:34,649 Not Found: /index.php

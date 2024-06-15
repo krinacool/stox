@@ -21,19 +21,30 @@ AUTH_USER_MODEL = 'app.CustomUser'
 
 # Application definition
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'daphne',
-    'django.contrib.staticfiles',
+    'channels',
     'app',
     'home',
     'settings',
     'blog',
     'mathfilters',
+    'daphne',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 ]
+
+
+ASGI_APPLICATION = 'stock.asgi.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    },
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -63,7 +74,6 @@ TEMPLATES = [
     },
 ]
 
-ASGI_APPLICATION = 'stock.asgi.application'
 WSGI_APPLICATION = 'stock.wsgi.application'
 
 # Database
@@ -102,17 +112,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATICFILES_DIRS =[
-    os.path.join(BASE_DIR, "static"),
-]
+#STATICFILES_DIRS =[
+#    os.path.join(BASE_DIR, "static"),
+#]
 
-STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, "static"),
-#   os.path.join(BASE_DIR, "node_modules"),
-]
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = 'static'
+STATIC_ROOT = 'static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
@@ -136,8 +142,6 @@ EMAIL_HOST_PASSWORD = 'buknewxfyfchumlq'
 EMAIL_USE_TLS = True
 
 # Custom settings for ASH
-ASH_SITE_HEADER = getattr(settings, 'ASH_SITE_HEADER', 'onstock Admin')
-ASH_SITE_LOGO_ICON = getattr(settings, 'ASH_SITE_LOGO_ICON', 'icon-trending-up')
 
 # Message tags
 MESSAGE_TAGS = {
