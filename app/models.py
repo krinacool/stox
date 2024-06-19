@@ -9,7 +9,7 @@ from wallet.calculation import add_amount, deduct_amount, calc_carrage, add_wall
 from app.orders.market import stoploss_target
 from django.db import models, transaction
 from django.core.exceptions import ValidationError
-
+from app.symbols.getsymbols import get_instrument_key
 import threading
 import csv
 from stock.settings import DATA_FILE
@@ -33,13 +33,13 @@ order_type = [
     ]
 
 producttype = [
-        ('INTRADAY', 'INTRADAY'),
-        ('CARRYFORWARD', 'CARRYFORWARD'),
+        ('Intraday', 'Intraday'),
+        ('Carryforward', 'Carryforward'),
     ]
 
 types = [
-        ('MARKET', 'MARKET'),
-        ('LIMIT', 'LIMIT'),
+        ('Market', 'Market'),
+        ('Limit', 'Limit'),
     ]
 
 order_status = [
@@ -118,6 +118,25 @@ class symbols(models.Model):
         return str(self.symbol)
 
 
+class Instrument(models.Model):
+    instrument_key = models.CharField(max_length=100)
+    exchange_token = models.CharField(max_length=20, blank=True, null=True)
+    tradingsymbol = models.CharField(max_length=100, blank=True, null=True)
+    name = models.CharField(max_length=100)
+    last_price = models.FloatField(blank=True, null=True)
+    expiry = models.CharField(max_length=20, blank=True, null=True)
+    strike = models.FloatField(blank=True, null=True)
+    tick_size = models.FloatField(blank=True, null=True)
+    lot_size = models.IntegerField(blank=True, null=True)
+    instrument_type = models.CharField(max_length=20)
+    option_type = models.CharField(max_length=20, blank=True, null=True)
+    exchange = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+
+
 class Watchlist(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, blank=True, null=True)
     symbol = models.CharField(max_length=150, default="")
@@ -133,18 +152,21 @@ class Watchlist(models.Model):
     def save(self, *args, **kwargs):
         with transaction.atomic():
             # Ensure the symbol exists in the Symbols table
-            symbols_entry, created = symbols.objects.get_or_create(
-                symbol=self.symbol,
-                segment=self.segment,
-                defaults={'instrument_key': self.instrument_key}
-            )
-            # If the entry was not created, ensure the instrument_key is updated (if needed)
-            if not created and symbols_entry.instrument_key != self.instrument_key:
-                symbols_entry.instrument_key = self.instrument_key
-                symbols_entry.save()
-
-            # Now save the Watchlist entry
-            super().save(*args, **kwargs)
+            instrument_key = get_instrument_key(self.symbol, self.segment)
+            if instrument_key:
+                self.instrument_key = instrument_key
+                symbols_entry, created = symbols.objects.get_or_create(
+                    symbol=self.symbol,
+                    segment=self.segment,
+                    defaults={'instrument_key': self.instrument_key}
+                )
+                # If the entry was not created, ensure the instrument_key is updated (if needed)
+                if not created and symbols_entry.instrument_key != self.instrument_key:
+                    symbols_entry.instrument_key = self.instrument_key
+                    symbols_entry.save()
+    
+                # Now save the Watchlist entry
+                super().save(*args, **kwargs)
 
     def __str__(self):
         return str(self.symbol)
@@ -189,7 +211,7 @@ class Position(models.Model):
     instrument_key = models.CharField(max_length=150, default="")
     segment=models.CharField(max_length=150,default="")
     token = models.PositiveIntegerField(default=0)
-    product = models.CharField(choices=producttype,max_length=15,default = "INTRADAY")
+    product = models.CharField(choices=producttype,max_length=15,default = "Intraday")
     buy_price = models.FloatField(default=0.0)
     sell_price = models.FloatField(default=0.0)
     stoploss = models.FloatField(default=0.0)
@@ -202,11 +224,11 @@ class Position(models.Model):
     security_amount = models.FloatField(default=0.0)
     last_traded_datetime = models.DateTimeField(auto_now_add=True)
     def save(self, *args, **kwargs):
-        from app.symbols.instruments import get_exchange,get_token,get_symbol
         # GETTING TOKEN
-        self.symbol = get_symbol(self.instrument_key)
-        self.token = get_token(self.instrument_key)
-        self.segment = get_exchange(self.token)
+        og = Instrument.objects.filter(instrument_key=self.instrument_key).first()
+        self.symbol = og.tradingsymbol
+        self.token = og.exchange_token
+        self.segment = og.exchange
         # TOKEN SAVED
         if self.last_traded_quantity < 0:
             self.last_traded_quantity = self.last_traded_quantity * -1
@@ -220,7 +242,7 @@ class Position(models.Model):
             self.unrealised_pnl = ((self.sell_price) - (self.buy_price)) * self.last_traded_quantity
             self.realised_pnl = round((self.realised_pnl + self.unrealised_pnl),2)
             self.unrealised_pnl = 0.0
-            orders = Order.objects.filter(user=self.user,status='pending', type='LIMIT',position=self).iterator()
+            orders = Order.objects.filter(user=self.user,status='pending', type='Limit',position=self).iterator()
             for order in orders:
                 order.delete()
         else:
@@ -240,7 +262,7 @@ class Position(models.Model):
                 else:
                     initiate_limit_order(self.user,self.symbol,self.instrument_key,self.token,self.target,abs(self.quantity),'BUY',self.product,0,0,slt='t')
             self.is_closed = False
-        if self.product == 'CARRYFORWARD':
+        if self.product == 'Carryforward':
             self.is_holding = True
         super().save(*args, **kwargs)
     def __str__(self):
@@ -260,8 +282,8 @@ class Order(models.Model):
     stoploss = models.FloatField(default=0.0)
     target = models.FloatField(default=0.0)
     order_type = models.CharField(choices=order_type,max_length=5,default="")
-    product = models.CharField(choices=producttype,max_length=15,default = "INTRADAY")
-    type = models.CharField(choices=types,max_length=7,default = "MARKET")
+    product = models.CharField(choices=producttype,max_length=15,default = "Intraday")
+    type = models.CharField(choices=types,max_length=7,default = "Market")
     charges = models.FloatField(default=0.0)
     message = models.CharField(max_length=200,default = "",blank=True)
     position = models.ForeignKey(Position, on_delete=models.CASCADE,null = True,blank=True)
@@ -278,7 +300,7 @@ class Order(models.Model):
             deduct_amount(self.user,self.charges)
             self.status = 'pending'
         elif self.status == 'failed' or self.status == 'cancelled':
-            if self.type == 'MARKET':
+            if self.type == 'Market':
                 add_amount(self.user,self.charges)
             if self.user.api_orders:
                 try:

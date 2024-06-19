@@ -15,6 +15,7 @@
         {% endfor %}
     </ul>
 </div>
+
 <div id="mt-2">
     {% for x in watchlist_list %}
     <div class="hidden watchlist-tab-main p-4 rounded-lg bg-white dark:bg-gray-800" id="{{x}}-tab-main" role="tabpanel"
@@ -22,14 +23,146 @@
         <div role="status"
             class="w-full p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded dark:divide-gray-700 md:p-6 dark:border-gray-700">
             {% for stock in watch_list %}
-            <div class="flex items-center justify-between" id="{{stock.instrument_key}}">
-                
+            {% if stock.tag == x %}
+            <div class="flex items-center justify-between" id="{{stock.instrument_key}}"
+                ondragstart="delete_stock('{{stock.symbol}}','{{stock.instrument_key}}')"
+                onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
     {% endfor %}
 </div>
+
+
+<!-- <button id="openModal" class="bg-blue-500 text-white px-4 py-2 rounded">Place Order</button> -->
+
+<!-- Modal Structure -->
+<div class="grid lg:grid-cols-9 gap-4">
+    <div id="modal"
+        class="fixed hidden z-50 rounded-lg inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center"
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%); border: 1px solid rgb(90, 90, 90); min-width: 350px;">
+        <div class="bg-white rounded-lg shadow-lg w-full p-6">
+            <div class="flex justify-between items-center border-b">
+                <div>
+                    <label class="text-lg text-black font-semibold">Place Order </label><span id="stock_tab"></span>
+                </div>
+                <button id="closeModal" class="text-gray-400 hover:text-gray-600">&times;</button>
+            </div>
+            <form action="/place_order" method="POST" id="order_form">
+                {% csrf_token %}
+                <input type="hidden" name="instrument" id="instrument_input" required>
+                <input type="hidden" name="order_type" id="order_type" required>
+                <div style="overflow-y: auto;max-height: 500px;">
+                    <div class="grid grid-cols-1 gap-2">
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <div class="flex flex-col">
+                                <label for="quantity"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
+                                <input type="number" id="quantity" name="quantity"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" value="1" required />
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="price"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                                <input type="text" id="price" name="price"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2">
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <div class="flex flex-col">
+                                <label for="type"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Order Type</label>
+                                <select id="type" name="type"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                                    <option value="Market" selected>Market</option>
+                                    <option value="Limit">Limit</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="product"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Product</label>
+                                <select id="product" name="product_type"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                                    <option value="Intraday" selected>Intraday</option>
+                                    <option value="Carryforward">Carryforward</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-check form-check-inline mt-2 mb-2">
+                            <label class="form-check-label" style="margin: 2%;" for="smart_order">Smart
+                                Order</label>
+                            <input class="form-check-input rounded-lg" style="float: inline-end;" type="checkbox"
+                                name="smart_order" id="smart_order" value="true"
+                                onchange="document.getElementById('smartorder_section').classList.toggle('hidden')">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2 hidden" id="smartorder_section">
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <div class="flex flex-col">
+                                <label for="stoploss"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Stoploss</label>
+                                <input type="number" id="stoploss" name="stoploss"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" value="0">
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="target"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Target</label>
+                                <input type="text" id="target" name="target"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-2 mt-2">
+                    <div class="grid grid-cols-2 gap-2 mb-2">
+                        <div class="flex flex-col">
+                            <button class="bg-red-600 text-white px-4 py-2 rounded" onclick="execute_order('SELL')" type="button">SELL</button>
+                        </div>
+                        <div class="flex flex-col">
+                            <button class="bg-green-600 text-white px-4 py-2 rounded" onclick="execute_order('BUY')" type="button">BUY</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript to handle modal logic -->
+<script>
+    function place_order(stock, instrument) {
+        document.getElementById('stock_tab').innerText = `(${stock})`
+        document.getElementById('instrument_input').value = instrument
+        document.getElementById('modal').classList.remove('hidden');
+    }
+
+    document.getElementById('closeModal').addEventListener('click', function () {
+        document.getElementById('modal').classList.add('hidden');
+    });
+
+    document.getElementById('closeModalFooter').addEventListener('click', function () {
+        document.getElementById('modal').classList.add('hidden');
+    });
+
+    function execute_order(order_type) {
+        document.getElementById("order_type").value=order_type;
+        document.getElementById("order_form").submit();
+    }
+</script>
+
+
+
+
 
 <div class="mt-2" id="skeleton">
     <div role="status"
@@ -74,6 +207,9 @@
 </div>
 
 <script>
+    let delete_symbols_list = []
+    let delete_instruments_list = []
+
     function openWatchlist(elementId) {
         otherTabsButtons = document.querySelectorAll('.watchlist-tab');
         otherTabsButtons.forEach((element) => {
@@ -120,9 +256,10 @@
     socket.onmessage = function (event) {
         const data = JSON.parse(event.data);
         console.log('Received real-time data:', data);
-        for(let i of data) {
-            document.getElementById(i['instrument']).innerHTML = `
-            <div>
+        for (let i of data) {
+            if (i['data']['symbol']) {
+                document.getElementById(i['instrument']).innerHTML = `
+                <div>
                     <div class="h-2.5 dark:bg-gray-600 text-gray-950 w-24 mb-2.5 mt-2">${i['data']['symbol']}</div>
                     <div class="w-32 h-2 text-sm text-gray-950 dark:bg-gray-700">${i['data']['segment']}</div>
                 </div>
@@ -131,9 +268,9 @@
                     <div class="h-2.5 text-green-600 text-sm mt-2 dark:bg-gray-700 w-12">10%</div>
                 </div>
             `
-            console.log(i['data']['symbol'])
+                // console.log(i['data']['symbol'])
+            }
         }
-
         // Handle the real-time data update here
     };
 
@@ -162,6 +299,34 @@
         }, 5000);
 
     };
+
+
+    function delete_stock(symbol, instrument_key) {
+        delete_symbols_list.push(symbol)
+        delete_instruments_list.push(instrument_key)
+        let content = `
+        <span class="fixed right-0">
+            <form action="/delete_stock" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="data" id="delete_stock_input">
+                <button type="submit" class="inline-block px-8 py-3 text-white bg-red-600 rounded-lg active">Delete</button>
+            </form>
+        </span>
+        `
+        for (let i of delete_symbols_list.reverse()) {
+            content = content +
+                `
+                <li class="me-2 inline-block px-4 py-3 h-10 min-w-32 text-white bg-blue-600 rounded-lg active">
+                        ${i}
+                </li>
+                `
+            console.log(i);
+        }
+        console.log(content)
+        document.getElementById('delete_watchlist_tab').innerHTML = content
+        document.getElementById('delete_stock_input').value = JSON.stringify(delete_instruments_list)
+    }
+
 
 
 </script>

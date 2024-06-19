@@ -152,6 +152,62 @@ def market(request):
     return render(request,'dashboard/market.html',context)
 
 
+def search_instruments(request):
+    query = request.GET.get('q', '')
+    if query:
+        suggestions = Instrument.objects.filter(
+            models.Q(tradingsymbol__icontains=query) |
+            models.Q(name__icontains=query) |
+            models.Q(expiry__icontains=query) |
+            models.Q(strike__icontains=query) |
+            models.Q(exchange__icontains=query)
+        ) # Limit the results to 20
+    else:
+        suggestions = Instrument.objects.none()
+
+    # Filter out results where tradingsymbol is null
+    results = [
+        {'tradingsymbol': s.tradingsymbol, 'exchange': s.exchange}
+        for s in suggestions if s.tradingsymbol
+    ][:20] 
+    
+    return JsonResponse(results, safe=False)
+
+@login_required
+def add_watchlist(request):
+    if request.method == 'POST':
+        try:
+            tag = request.POST.get("tag_input")
+            data = request.POST.get("data")
+            data = eval(data)
+            for x in data:
+                try:
+                    Watchlist.objects.create(user=request.user,symbol=x['symbol'],segment=x['exchange'],tag=tag)
+                except:
+                    pass
+            messages.success(request,"Watchlist Updated Successfully")
+        except Exception as e:
+            messages.error(request,f"Some Error Occured")
+    return redirect('/watchlist')
+
+@login_required
+def delete_stock(request):
+    if request.method == 'POST':
+        try:
+            data = request.POST.get("data")
+            data = eval(data)
+            for x in data:
+                try:
+                    delob = Watchlist.objects.filter(instrument_key=x).filter(user=request.user)
+                    delob.delete()
+                except:
+                    pass
+            messages.success(request,"Watchlist Updated Successfully")
+        except Exception as e:
+            messages.error(request,f"Some Error Occured")
+    return redirect('/watchlist')
+
+
 @login_required
 def watchlist(request):
     # if request.method == 'POST':
@@ -202,6 +258,9 @@ def watchlist(request):
         if i.tag not in watchlist_list:
             watchlist_list.append(i.tag)
     print(watch_list)
+    print(watchlist_list)
+    print('watchlist_symbollist')
+    print(watchlist_symbollist)
     context = {
         'watch_list':watch_list,
         'watchlist_list':watchlist_list,
@@ -343,7 +402,7 @@ def async_transact(request):
             if ob is not None:
                quantity = quantity * ob.quantity
         status = "failed"
-        if type == 'MARKET':
+        if type == 'Market':
             status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target)
         else:
             status = initiate_limit_order(request.user,symbol,instrument_key,token,price, quantity,order_type,product,stoploss,target)
@@ -378,17 +437,52 @@ def cancelorder(request, order_id):
 
 @login_required
 def place_order(request):
+    from app.symbols.instruments import get_exchange
     if request.method == 'POST':
-        form = (request.POST)
-        if form.is_valid():
-            create_order = form.save(commit=False)
-            create_order.user = request.user
-            create_order.save()
-            return JsonResponse({'success': True, 'message': 'Added to watchlist successfully.'})
+        instrument_key = request.POST.get("instrument")
+        price = float(request.POST.get("price"))
+        quantity = int(request.POST.get("quantity"))
+        order_type = request.POST.get("order_type")
+        product = request.POST.get("product_type")
+        type = request.POST.get("type")
+        stoploss = request.POST.get("stoploss")
+        target = request.POST.get("target")
+        og = Instrument.objects.filter(instrument_key=instrument_key).first()
+        segment = og.exchange
+        symbol = og.tradingsymbol
+        token = og.exchange_token
+        if not market_open(segment):
+            return JsonResponse({'success': False, 'message': 'Market Closed !'})
+        quantity = quantity * og.lot_size
+        status = "failed"
+        print('quantity')
+        print(quantity)
+        if type == 'Market':
+            status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target)
         else:
-            return JsonResponse({'success': False, 'message': 'Form data is invalid.'})
+            status = initiate_limit_order(request.user,symbol,instrument_key,token,price, quantity,order_type,product,stoploss,target)
+        if status == "failed":
+            return JsonResponse({'success': False, 'message': 'Order executed but failed !'})
+        else:
+            # messages.success(request,'Order placed successfully.')
+            return JsonResponse({'success': True, 'message': 'Order Placed successfully'})
     else:
-        return JsonResponse({'status' : 'Invalid Request'})
+        return redirect('/orders')
+    
+
+    # if request.method == 'POST':
+    #     instrument = request.POST.get('instrument')
+    #     quantity = request.POST.get('quantity')
+    #     price = request.POST.get('price')
+    #     order_type = request.POST.get('order_type')
+    #     product_type = request.POST.get('product_type')
+    #     order = request.POST.get('order')
+    #     smart_order = request.POST.get('smart_order')
+    #     if smart_order:
+    #         stoploss = request.POST.get('stoploss')
+    #         target = request.POST.get('target')
+
+        
 
 @login_required
 def trade_charges(request):

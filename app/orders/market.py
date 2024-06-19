@@ -7,10 +7,11 @@ import time
 
 # Market ORDER FUNCTION
 def market_order(user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,type='MARKET'):
-    from app.models import Order
-    segment = get_exchange(token)
+    from app.models import Order,symbols
+    og = symbols.objects.filter(instrument_key=instrument_key).first()
+    segment = og.segment
     amount = 0
-    price = get_price(instrument_key)
+    price = og.ltp
     pos = get_position(user,instrument_key,product)
     pos_quantity = 0
     if pos is not None:
@@ -51,7 +52,10 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 close_full_position(user,instrument_key,product,price)
         # SCALP POSITION IS NOT OPEN
         else:
-            amount = quantity * price
+            print("price and quantity")
+            print(price)
+            print(quantity)
+            amount = float(quantity) * price
             if wallet_checked(user,amount,product):
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                 order.status = 'completed'

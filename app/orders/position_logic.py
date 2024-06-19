@@ -5,7 +5,7 @@ from django.utils import timezone
 def scalp_position_open(user,instrument_key,product):
     from app.models import Position
     today = timezone.now().date()
-    if product == 'INTRADAY':
+    if product == 'Intraday':
         pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product,created_at__date=today)
     else:
         pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product)
@@ -21,7 +21,7 @@ def scalp_position_open(user,instrument_key,product):
 def position_open(user,instrument_key,product):
     from app.models import Position
     today = timezone.now().date()
-    if product == 'INTRADAY':
+    if product == 'Intraday':
         pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product,created_at__date=today)
     else:
         pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product)
@@ -38,7 +38,7 @@ def get_position(user,instrument_key,product,new=False):
     from app.models import Position
     today = timezone.now().date()
     pos = ''
-    if product == 'CARRYFORWARD':
+    if product == 'Carryforward':
         if new:
             pos = None
         else:

@@ -18,7 +18,11 @@ urlpatterns = [
     # --USER DASHBOARD AND PROFILE--
     path("market",market,name='market'),
     path("watchlist",watchlist,name='watchlist'),
+    path('search/', search_instruments, name='search_instruments'),
+    path("add_watchlist",add_watchlist,name='add_watchlist'),
+    path("delete_stock",delete_stock,name='delete_stock'),
     path("delete_symbol/<str:symbol>",delete_symbol,name='delete_symbol'),
+    path("place_order",place_order,name='place_order'),
     path("orders",orders,name='orders'),
     path("portfolio",portfolio,name='portfolio'),
     path("profile",profile,name='profile'),
