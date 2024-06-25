@@ -51,4 +51,4 @@ def initiate_limit_order(user,symbol,instrument_key,token,price,quantity,order_t
     from app.symbols.instruments import get_exchange
     amount = float(price) * int(quantity)
     segment = symbols.objects.filter(instrument_key=instrument_key).first().segment
-    ord = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="pending",type='LIMIT',stoploss=stoploss,target=target)
+    ord = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="pending",type='Limit',stoploss=stoploss,target=target)

@@ -1,5 +1,6 @@
 # management/commands/load_instruments.py
 import csv
+import time
 from django.core.management.base import BaseCommand
 from settings.timing import market_open
 from app.orders.market import market_order
@@ -27,4 +28,5 @@ class Command(BaseCommand):
                     print("condition match")
                     market_order(i.user,i.symbol,i.instrument_key,00,i.quantity,i.order_type,i.product,i.stoploss,i.target,i.type)
                     i.delete()
+            time.sleep(2)
             self.stdout.write(self.style.SUCCESS('Executed Orders Successfully'))
