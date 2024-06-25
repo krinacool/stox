@@ -1,0 +1,459 @@
+{% extends 'dashboard/base.html' %}
+{% block body %}
+<div class="flex w-full rounded shadow mt-4 overflow-x-auto">
+    <a href="#" aria-current="false"
+        class="tab_buttons w-full flex items-center gap-x-2 justify-center font-medium rounded-lg px-5 py-2 border bg-white text-black border-gray-200"
+        id="pendingtab" onclick="ordersTab('pending')">
+        Pending
+    </a>
+    <a href="#" aria-current="false"
+        class="tab_buttons w-full flex justify-center font-medium rounded-lg px-5 py-2 border bg-white text-black border-gray-200"
+        id="completedtab" onclick="ordersTab('completed')">
+        Executed
+    </a>
+    <a href="#" aria-current="false"
+        class="tab_buttons w-full flex justify-center font-medium rounded-lg px-5 py-2 border bg-white text-black border-gray-200"
+        id="failedtab" onclick="ordersTab('failed')">
+        Rejected
+    </a>
+    <a href="#" aria-current="false"
+        class="tab_buttons w-full flex justify-center font-medium rounded-lg px-5 py-2 border bg-white text-black border-gray-200"
+        id="tradebooktab" onclick="ordersTab('tradebook')">
+        Tradebook
+    </a>
+</div>
+<div class="mt-2 tabs hidden" id="pending">
+    <div role="status"
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        {% if pending %}
+        {% for stock in pending %}
+        <div class="flex items-center justify-between">
+            <div>
+                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
+                <div class="h-2 rounded-full">
+                    <div class="justify-center my-2 select-none flex">
+                        {% if stock.order_type == "BUY" %}
+                        <button
+                            class="no-underline rounded-sm px-1 bg-green-100 text-green-500 text-xs mr-2">BUY</button>
+                        {% else %}
+                        <button class="no-underline rounded-sm px-1 bg-red-100 text-red-500 text-xs mr-2">SELL</button>
+                        {% endif %}
+                        <button
+                            class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.product|upper}}</button>
+                        <button
+                            class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
+                    {{stock.price}}
+                </div>
+                <div class="h-2 rounded-full">
+                    {% if stock.status == "pending" %}
+                    <button class="no-underline rounded-sm px-1 bg-blue-100 text-blue-800 text-xs mr-2">pending</button>
+                    {% elif stock.status == "completed" %}
+                    <button
+                        class="no-underline rounded-sm px-1 bg-green-100 text-green-800 text-xs mr-2">completed</button>
+                    {% else %}
+                    <button class="no-underline rounded-sm px-1 bg-red-100 text-red-800 text-xs mr-2">failed</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <section class="bg-white dark:bg-gray-900">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center">
+                    <img class="" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/404/404-computer.svg"
+                        alt="No orders yet">
+
+                    <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+                        no pending orders</p>
+                    <p class="text-lg font-light text-gray-500 dark:text-gray-400">place order</p>
+                    <a href="/watchlist"
+                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                        to watchlist</a>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    </div>
+</div>
+<div class="mt-2 tabs hidden" id="failed">
+    <div role="status"
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        {% if failed %}
+        {% for stock in failed %}
+        <div class="flex items-center justify-between">
+            <div>
+                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
+                <div class="h-2 rounded-full">
+                    <div class="justify-center my-2 select-none flex">
+                        {% if stock.order_type == "BUY" %}
+                        <button
+                            class="no-underline rounded-sm px-1 bg-green-100 text-green-500 text-xs mr-2">BUY</button>
+                        {% else %}
+                        <button class="no-underline rounded-sm px-1 bg-red-100 text-red-500 text-xs mr-2">SELL</button>
+                        {% endif %}
+                        <button
+                            class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.product|upper}}</button>
+                        <button
+                            class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
+                    {{stock.price}}
+                </div>
+                <div class="h-2 rounded-full">
+                    {% if stock.status == "pending" %}
+                    <button class="no-underline rounded-sm px-1 bg-blue-100 text-blue-800 text-xs mr-2">pending</button>
+                    {% elif stock.status == "completed" %}
+                    <button
+                        class="no-underline rounded-sm px-1 bg-green-100 text-green-800 text-xs mr-2">completed</button>
+                    {% else %}
+                    <button class="no-underline rounded-sm px-1 bg-red-100 text-red-800 text-xs mr-2">failed</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <section class="bg-white dark:bg-gray-900">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center">
+                    <img class="" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/404/404-computer.svg"
+                        alt="No orders yet">
+
+                    <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+                        no failed orders</p>
+                    <p class="text-lg font-light text-gray-500 dark:text-gray-400">place order</p>
+                    <a href="/watchlist"
+                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                        to watchlist</a>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    </div>
+</div>
+<div class="mt-2 tabs hidden" id="completed">
+    <div role="status"
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        {% if completed %}
+        {% for stock in completed %}
+        <div class="flex items-center justify-between">
+            <div>
+                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
+                <div class="h-2 rounded-full">
+                    <div class="justify-center my-2 select-none flex">
+                        {% if stock.order_type == "BUY" %}
+                        <button
+                            class="no-underline rounded-sm px-1 bg-green-100 text-green-500 text-xs mr-2">BUY</button>
+                        {% else %}
+                        <button class="no-underline rounded-sm px-1 bg-red-100 text-red-500 text-xs mr-2">SELL</button>
+                        {% endif %}
+                        <button
+                            class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.product|upper}}</button>
+                        <button
+                            class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
+                    {{stock.price}}
+                </div>
+                <div class="h-2 rounded-full">
+                    {% if stock.status == "pending" %}
+                    <button class="no-underline rounded-sm px-1 bg-blue-100 text-blue-800 text-xs mr-2">pending</button>
+                    {% elif stock.status == "completed" %}
+                    <button
+                        class="no-underline rounded-sm px-1 bg-green-100 text-green-800 text-xs mr-2">completed</button>
+                    {% else %}
+                    <button class="no-underline rounded-sm px-1 bg-red-100 text-red-800 text-xs mr-2">failed</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <section class="bg-white dark:bg-gray-900">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center">
+                    <img class="" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/404/404-computer.svg"
+                        alt="No orders yet">
+
+                    <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+                        no completed orders</p>
+                    <p class="text-lg font-light text-gray-500 dark:text-gray-400">place order</p>
+                    <a href="/watchlist"
+                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                        to watchlist</a>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    </div>
+</div>
+<div class="mt-2 tabs hidden" id="tradebook">
+    <div role="status"
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        {% if tradebook %}
+        {% for stock in tradebook %}
+        <div class="flex items-center justify-between">
+            <div>
+                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
+                <div class="h-2 rounded-full">
+                    <div class="justify-center my-2 select-none flex">
+                        {% if stock.order_type == "BUY" %}
+                        <button
+                            class="no-underline rounded-sm px-1 bg-green-100 text-green-500 text-xs mr-2">BUY</button>
+                        {% else %}
+                        <button class="no-underline rounded-sm px-1 bg-red-100 text-red-500 text-xs mr-2">SELL</button>
+                        {% endif %}
+                        <button
+                            class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.product|upper}}</button>
+                        <button
+                            class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
+                    {{stock.price}}
+                </div>
+                <div class="h-2 rounded-full">
+                    {% if stock.status == "pending" %}
+                    <button class="no-underline rounded-sm px-1 bg-blue-100 text-blue-800 text-xs mr-2">pending</button>
+                    {% elif stock.status == "completed" %}
+                    <button
+                        class="no-underline rounded-sm px-1 bg-green-100 text-green-800 text-xs mr-2">completed</button>
+                    {% else %}
+                    <button class="no-underline rounded-sm px-1 bg-red-100 text-red-800 text-xs mr-2">failed</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <section class="bg-white dark:bg-gray-900">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center">
+                    <img class="" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/404/404-computer.svg"
+                        alt="No orders yet">
+
+                    <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+                        no tradebook orders</p>
+                    <p class="text-lg font-light text-gray-500 dark:text-gray-400">place order</p>
+                    <a href="/watchlist"
+                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                        to watchlist</a>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    </div>
+</div>
+
+<div class="mt-2" id="skeleton">
+    <div role="status"
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        <div class="flex items-center justify-between">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+            </div>
+            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+        </div>
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div class="grid lg:grid-cols-9 gap-4">
+    <div id="modal" class="fixed hidden z-50 inset-0 flex items-center justify-center"
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px;">
+        <div class="bg-white rounded-lg shadow-lg w-full p-6">
+            <div class="flex justify-between items-center border-b">
+                <div>
+                    <label class="text-lg text-black font-semibold">Place Order </label><span id="stock_tab"></span>
+                </div>
+                <button id="closeModal" class="text-gray-400 hover:text-gray-600">&times;</button>
+            </div>
+            <form action="/place_order" method="POST" id="order_form">
+                {% csrf_token %}
+                <input type="hidden" name="instrument" id="instrument_input" required>
+                <input type="hidden" name="order_type" id="order_type" required>
+                <div style="overflow-y: auto;max-height: 500px;">
+                    <div class="grid grid-cols-1 gap-2">
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <div class="flex flex-col">
+                                <label for="quantity"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
+                                <input type="number" id="quantity" name="quantity"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" value="1" required />
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="price"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                                <input type="text" id="price" name="price"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" value="0" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2">
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <div class="flex flex-col">
+                                <label for="type" class="block text-sm font-medium text-gray-900 dark:text-white">Order
+                                    Type</label>
+                                <select id="type" name="type"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    required>
+                                    <option value="Market" selected>Market</option>
+                                    <option value="Limit">Limit</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="product"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Product</label>
+                                <select id="product" name="product_type"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    required>
+                                    <option value="Intraday" selected>Intraday</option>
+                                    <option value="Carryforward">Carryforward</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-check form-check-inline mt-2 mb-2">
+                            <label class="form-check-label" style="margin: 2%;" for="smart_order">Smart
+                                Order</label>
+                            <input class="form-check-input rounded-lg" style="float: inline-end;" type="checkbox"
+                                name="smart_order" id="smart_order" value="true"
+                                onchange="document.getElementById('smartorder_section').classList.toggle('hidden')">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2 hidden" id="smartorder_section">
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <div class="flex flex-col">
+                                <label for="stoploss"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Stoploss</label>
+                                <input type="number" id="stoploss" name="stoploss"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" value="0">
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="target"
+                                    class="block text-sm font-medium text-gray-900 dark:text-white">Target</label>
+                                <input type="text" id="target" name="target"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-2 mt-2">
+                    <div class="grid grid-cols-2 gap-2 mb-2">
+                        <div class="flex flex-col">
+                            <button class="bg-red-600 text-white px-4 py-2 rounded" onclick="execute_order('SELL')"
+                                type="button">SELL</button>
+                        </div>
+                        <div class="flex flex-col">
+                            <button class="bg-green-600 text-white px-4 py-2 rounded" onclick="execute_order('BUY')"
+                                type="button">BUY</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function ordersTab(id) {
+        // Add 'hidden' class to all elements with class 'tab'
+        document.querySelectorAll('.tabs').forEach(function (element) {
+            element.classList.add('hidden');
+        });
+        document.querySelectorAll('.tab_buttons').forEach(function (element) {
+            element.classList.remove('text-white');
+            element.classList.remove('bg-gray-700');
+            element.classList.add('bg-white');
+        });
+
+        document.getElementById(`${id}tab`).classList.remove('bg-white');
+        document.getElementById(`${id}tab`).classList.add('text-white');
+        document.getElementById(`${id}tab`).classList.add('bg-gray-700');
+        // Remove 'hidden' class from the element with the specified id
+        var targetElement = document.getElementById(id);
+        if (targetElement) {
+            targetElement.classList.remove('hidden');
+        }
+    }
+    document.getElementById('skeleton').classList.add('hidden');
+    ordersTab('completed')
+</script>
+<br><br><br><br>
+{% endblock body %}

@@ -8,12 +8,12 @@ def calc_carrage(amount,order_type,product):
     print(tax)
     carrage = carrage+tax
     if order_type == 'BUY':
-        if product == 'INTRADAY':
+        if product == 'Intraday':
             carrage = carrage + settings.intraday_buy_charge
         else:
             carrage = carrage + settings.carryforward_buy_charge
     else:
-        if product == 'INTRADAY':
+        if product == 'Intraday':
             carrage = carrage + settings.intraday_sell_charge
         else:
             carrage = carrage + settings.carryforward_sell_charge
@@ -28,7 +28,7 @@ def scalp_wallet_checked(user,amount,product):
 
 def wallet_checked(user,amount,product):
     max = 0
-    if product == 'INTRADAY':
+    if product == 'Intraday':
         max = (user.wallet * user.margin)
     else:
         max = user.wallet

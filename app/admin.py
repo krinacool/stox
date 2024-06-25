@@ -65,7 +65,7 @@ class Transaction(admin.ModelAdmin):
 
 @admin.register(Order)
 class Order(admin.ModelAdmin):
-    list_display = ('user', 'symbol','order_type_color','datetime','price','type', 'quantity','product','status_color','order_id')
+    list_display = ('user', 'symbol','order_type_color','price','charges','type', 'quantity','product','status_color','datetime','order_id')
     list_filter = ('datetime','status','user', 'symbol','order_type','type','product')
     def status_color(self, obj):
         if obj.status == 'completed':

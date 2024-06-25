@@ -28,7 +28,6 @@ def order_id_exists(order_id):
 
 def new_limit_order(order_id,slt=False):
     from app.models import Order
-    print('NEW LIMIT ORDER')
     ord = Order.objects.get(order_id=order_id)
     instrument = ord.instrument_key
     exchange = ord.segment
@@ -39,7 +38,6 @@ def new_limit_order(order_id,slt=False):
     if ltp is None:
         return ltp
     if order_id_exists(order_id):
-        print('Already Exists')
         return None
     data_to_append = [instrument, exchange, ltp, slt, limit_price,order_type,quantity,order_id]
     csv_file_path = LIMIT_ORDERS_FILE
@@ -49,14 +47,8 @@ def new_limit_order(order_id,slt=False):
     return True
 
 def initiate_limit_order(user,symbol,instrument_key,token,price,quantity,order_type,product,stoploss,target,slt=False):
-    from app.models import Order
+    from app.models import Order,symbols
     from app.symbols.instruments import get_exchange
-    print('AA GYE')
     amount = float(price) * int(quantity)
-    print(price)
-    print(quantity)
-    print('AMOUNT')
-    print(amount)
-    segment = get_exchange(token)
+    segment = symbols.objects.filter(instrument_key=instrument_key).first().segment
     ord = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="pending",type='LIMIT',stoploss=stoploss,target=target)
-    print(new_limit_order(ord.order_id,slt))

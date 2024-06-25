@@ -1,0 +1,87 @@
+{% extends 'dashboard/base.html' %}
+{% block body %}
+<div class="mt-2" id="skeleton">
+    <div role="status"
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        <div class="flex items-center justify-between">
+            <div>
+                <span class="">
+                    <span class="text-gray-500">Trading Balance</span>
+                    <br>
+                    ₹ <span class="text-black text-3xl font-bold">{{request.user.wallet}}</span>
+                </span>
+            </div>
+        </div>
+        <div class="justify-between pt-4">
+            <div>
+                <div class="text-black font-bold h-2.5 w-24 mb-2.5">
+                    {{request.user.first_name}}{{request.user.last_name}}</div>
+                <div class="h-8 text-gray-500 rounded-full"><span class="text-gray-800">Access Token:</span><br>
+                    {{request.user.access_token}}</div>
+            </div>
+        </div>
+        <div class="justify-between pt-4">
+            <div>
+                <div class="text-black font-bold h-2.5 mb-2.5">Phone Number</div>
+                <div class="h-4 text-gray-500 rounded-full"><span
+                        class="text-gray-800">{{request.user.phone_number}}</span></div>
+            </div>
+        </div>
+        <div class="justify-between pt-4">
+            <div>
+                <div class="text-black font-bold h-2.5 mb-2.5">Bank account name</div>
+                <div class="h-4 text-gray-500 rounded-full"><span
+                        class="text-gray-800">{{request.user.bank_account_name}}</span></div>
+            </div>
+        </div>
+        <div class="justify-between pt-4">
+            <div>
+                <div class="text-black font-bold h-2.5 mb-2.5">Account Number</div>
+                <div class="h-4 text-gray-500 rounded-full"><span
+                        class="text-gray-800">{{request.user.bank_account_number}}</span></div>
+            </div>
+        </div>
+        <div class="justify-between pt-4">
+            <div>
+                <div class="text-black font-bold h-2.5 mb-2.5">Ifsc code</div>
+                <div class="h-4 text-gray-500 rounded-full"><span
+                        class="text-gray-800">{{request.user.ifsc_code}}</span></div>
+            </div>
+        </div>
+        <div class="justify-between pt-4">
+            <div>
+                <div class="text-black font-bold h-2.5 mb-2.5">UPI Id</div>
+                <div class="h-4 text-gray-500 rounded-full"><span class="text-gray-800">{{request.user.upi_id}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <a href="/trade_charges">
+                    <p class="text-black font-bold h-2.5 mb-2.5">Trades and Charges</p>
+                    <div class="text-xs h-2">All your trades and charges in one place</div>
+                </a>
+            </div>
+            <div class="h-2.5 w-12">
+                <a href="/trade_charges">
+                    <i data-feather="chevron-right" class="w-4 h-4 font-bold text-4xl mr-2 text-right float-end"></i>
+                </a>
+            </div>
+        </div>
+        <div class="flex items-center justify-between pt-4">
+            <div>
+                <a href="/contact">
+                    <p class="text-black font-bold h-2.5 mb-2.5">Support</p>
+                    <div class="text-xs h-2"></div>
+                </a>
+            </div>
+            <div class="h-2.5 w-12">
+                <a href="/contact">
+                    <i data-feather="chevron-right" class="w-4 h-4 font-bold text-4xl mr-2 text-right float-end"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+{% endblock body %}

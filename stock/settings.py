@@ -144,11 +144,6 @@ EMAIL_USE_TLS = True
 
 # Custom settings for ASH
 
-# Message tags
-MESSAGE_TAGS = {
-    messages.ERROR: 'danger'
-}
-
 # File paths
 SYMBOLS_FILE = 'C:\\Users\\atulg\\Desktop\\stock\\data\\symbols.csv'
 DATA_FILE = 'C:\\Users\\atulg\\Desktop\\stock\\data\\data.csv'

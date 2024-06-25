@@ -52,9 +52,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 close_full_position(user,instrument_key,product,price)
         # SCALP POSITION IS NOT OPEN
         else:
-            print("price and quantity")
-            print(price)
-            print(quantity)
             amount = float(quantity) * price
             if wallet_checked(user,amount,product):
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)

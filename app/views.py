@@ -33,21 +33,21 @@ def contact(request):
     if form.is_valid():
         user = form.save()
         messages.success(request,'We will contact to you as soon as possible')
-    return render(request,"contact.html")
+    return render(request,"home/contact.html")
 
 # ABOUT
 def about(request):
-    return render(request,"about.html")
+    return render(request,"home/about.html")
 
 def disclaimer(request):
-    return render(request,"disclaimer.html")
+    return render(request,"home/disclaimer.html")
 
 # POLICY
 def privacypolicy(request):
-    return render(request,"privacypolicy.html")
+    return render(request,"home/privacypolicy.html")
 
 def refundpolicy(request):
-    return render(request,"refundpolicy.html")
+    return render(request,"home/refundpolicy.html")
 # END PAGES
 
 # USER CREATION LOGIN AND SIGNUP
@@ -71,7 +71,7 @@ def verify_user(request,code):
         return redirect('/')
 
 def index(request):
-    return render(request,'home.html')
+    return render(request,'home/home.html')
 
 def handlelogin(request):
     if request.method == 'POST':
@@ -109,7 +109,8 @@ def handlesignup(request):
             )
             email.attach_alternative(html_content,'text/html')
             email.send()
-            content = "An verification link has been sent to your email. Plese verify to continue."
+            content = "An verification link has been sent to your email. Please verify to continue."
+            messages.success(request,"An verification link has been sent to your email. Please verify to continue.")
             return render(request,'message.html',{'content':content})
     else:
         form = RegistrationForm()
@@ -124,32 +125,33 @@ def handlelogout(request):
 # ---------------DASHBOARD
 @login_required
 def market(request):
-    wl_list = Watchlist.objects.all().filter(tag='#@DEFAULT')
-    wl = []
-    print('wl_list')
-    for x in wl_list:
-        print(x)
-        wl.append(x.instrument_key)
-    wallet = request.user.wallet
-    margin = request.user.margin
-    settings = charges.objects.first()
-    charge = settings.intraday_buy_charge
-    tax = settings.tax
-    option_chain = {}
-    lotob = Option_Lot_Size.objects.all()
-    for x in lotob:
-        option_chain[x.symbol] = x.quantity
-    # ---------------CONTEXT-----------
-    context = {
-        'wl':wl,
-        'wl_list':wl_list,
-        'wallet':wallet,
-        'margin':margin,
-        'charges':charge,
-        'tax':tax,
-        'option_chain':json.dumps(option_chain),
-    }
-    return render(request,'dashboard/market.html',context)
+    return redirect('/watchlist')
+    # wl_list = Watchlist.objects.all().filter(tag='#@DEFAULT')
+    # wl = []
+    # print('wl_list')
+    # for x in wl_list:
+    #     print(x)
+    #     wl.append(x.instrument_key)
+    # wallet = request.user.wallet
+    # margin = request.user.margin
+    # settings = charges.objects.first()
+    # charge = settings.intraday_buy_charge
+    # tax = settings.tax
+    # option_chain = {}
+    # lotob = Option_Lot_Size.objects.all()
+    # for x in lotob:
+    #     option_chain[x.symbol] = x.quantity
+    # # ---------------CONTEXT-----------
+    # context = {
+    #     'wl':wl,
+    #     'wl_list':wl_list,
+    #     'wallet':wallet,
+    #     'margin':margin,
+    #     'charges':charge,
+    #     'tax':tax,
+    #     'option_chain':json.dumps(option_chain),
+    # }
+    # return render(request,'dashboard/market.html',context)
 
 
 def search_instruments(request):
@@ -307,7 +309,7 @@ def orders(request):
         "tax":tax,
         "charges":charge,
     }
-    return render(request,'orders.html',context)
+    return render(request,'dashboard/orders.html',context)
 
 @login_required
 def portfolio(request):
@@ -316,7 +318,11 @@ def portfolio(request):
     holdings = Position.objects.filter(user=request.user,is_holding=True,is_closed=False).exclude(created_at__date=today)
     for x in holdings:
         portfolio_symbollist.append(x.instrument_key)
-    positions = Position.objects.filter(user=request.user,created_at__date=today)
+    today = timezone.now().date()
+    # Filter positions for today
+    positions = Position.objects.filter(user=request.user, product="Intraday", created_at__date=today)
+    open_positions_available = positions.filter(quantity__gt=0).exists() or positions.filter(quantity__lt=0).exists()
+    close_positions_available = positions.filter(quantity=0).exists()
     for x in positions:
         portfolio_symbollist.append(x.instrument_key)
     ppnl = 0
@@ -335,6 +341,9 @@ def portfolio(request):
     for x in lotob:
         option_chain[x.symbol] = x.quantity
     # ---------------CONTEXT-----------
+    print(portfolio_symbollist)
+    print(positions)
+    print(holdings)
     context = {
         "positions":positions,
         "holdings":holdings,
@@ -345,9 +354,11 @@ def portfolio(request):
         'margin':margin,
         'charges':charge,
         'tax':tax,
+        'open_positions_available':open_positions_available,
+        'close_positions_available':close_positions_available,
         'option_chain':json.dumps(option_chain),
     }
-    return render(request,'portfolio.html',context)
+    return render(request,'dashboard/portfolio.html',context)
 
 
 @login_required
@@ -359,7 +370,7 @@ def profile(request):
             messages.success(request, 'KYC completed !')
         else:
             messages.error(request, 'Invalid Details')
-    return render(request,'profile.html')
+    return render(request,'dashboard/profile.html')
 
 # WATCHLIST
 @login_required
@@ -437,7 +448,6 @@ def cancelorder(request, order_id):
 
 @login_required
 def place_order(request):
-    from app.symbols.instruments import get_exchange
     if request.method == 'POST':
         instrument_key = request.POST.get("instrument")
         price = float(request.POST.get("price"))
@@ -452,20 +462,25 @@ def place_order(request):
         symbol = og.tradingsymbol
         token = og.exchange_token
         if not market_open(segment):
-            return JsonResponse({'success': False, 'message': 'Market Closed !'})
+            messages.error(request,'Market is closed.')
+            return redirect('/orders')
+            # return JsonResponse({'success': False, 'message': 'Market Closed !'})
         quantity = quantity * og.lot_size
         status = "failed"
         print('quantity')
         print(quantity)
         if type == 'Market':
-            status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target)
+            status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,'Market')
         else:
             status = initiate_limit_order(request.user,symbol,instrument_key,token,price, quantity,order_type,product,stoploss,target)
         if status == "failed":
-            return JsonResponse({'success': False, 'message': 'Order executed but failed !'})
+            messages.error(request,'Order Rejected.')
+            return redirect('/orders')
+            # return JsonResponse({'success': False, 'message': 'Order executed but failed !'})
         else:
-            # messages.success(request,'Order placed successfully.')
-            return JsonResponse({'success': True, 'message': 'Order Placed successfully'})
+            messages.success(request,'Order placed successfully.')
+            return redirect('/orders')
+            # return JsonResponse({'success': True, 'message': 'Order Placed successfully'})
     else:
         return redirect('/orders')
     
