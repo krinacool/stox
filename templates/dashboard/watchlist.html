@@ -1,32 +1,81 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
 
-<div class="mb-4 bg-white border-b border-gray-200 dark:border-gray-700 overflow-x-auto mt-2">
+<div class="mb-4 bg-white border-b border-gray-200 overflow-x-auto mt-2">
     <ul class="flex flex-nowrap -mb-px font-medium text-center" id="default" data-tabs-toggle="#default-content"
         data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
-        data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-indigo-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
+        data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:hover:text-gray-300"
         role="tablist">
         {% for x in watchlist_list %}
         <li class="me-2" role="presentation">
-            <button class="watchlist-tab inline-block p-4 border-b-2 rounded-t-lg text-indigo-600" id="{{x}}-tab"
+            <button class="watchlist-tab inline-block p-4 border-b-2 rounded-t-lg text-gray-600" id="{{x}}-tab"
                 data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
                 aria-selected="false">{{x}}</button>
         </li>
         {% endfor %}
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg text-gray-600" id="{{x}}-tab"
+                data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
+                aria-selected="false" onclick="document.getElementById('addTab').classList.remove('hidden')">
+                <i data-feather="plus-square" class="text-gray-400"></i>
+            </button>
+        </li>
     </ul>
 </div>
 
+
+<div class="grid lg:grid-cols-9 gap-4">
+    <div id="addTab" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px; max-width: 350px;">
+        <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
+            <div class="flex justify-between items-center border-b mb-2">
+                <div>
+                    <label class="text-lg text-black font-semibold">Create Watchlist </label></span>
+                </div>
+            </div>
+            <form action="/create_watchlist" method="POST">
+                {% csrf_token %}
+                <div style="overflow-y: auto;max-height: 500px;">
+                    <div class="grid grid-cols-1 gap-2">
+                            <div class="flex flex-col">
+                                <label for=""
+                                    class="block text-sm font-medium text-gray-900 dark:text-white mb-1">Watchlist name</label>
+                                <input type="text" name="name"
+                                    class="mb-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="favourite" value="" required />
+                            </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-2 mt-2">
+                    <div class="grid grid-cols-2 gap-2 mb-2">
+                        <div class="flex flex-col">
+                            <button class="bg-gray-100 text-black px-4 py-2 rounded" onclick="document.getElementById('addTab').classList.add('hidden')"
+                                type="button">Cancel</button>
+                        </div>
+                        <div class="flex flex-col">
+                            <button class="bg-gray-700 text-white px-4 py-2 rounded" onclick=""
+                                type="submit">Create</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 <div id="">
     {% for x in watchlist_list %}
-    <div class="hidden watchlist-tab-main p-4 rounded-lg bg-white dark:bg-gray-800" id="{{x}}-tab-main" role="tabpanel"
+    <div class="hidden watchlist-tab-main p-4 rounded-lg bg-white" id="{{x}}-tab-main" role="tabpanel"
         aria-labelledby="profile-tab">
         <div role="status"
-            class="w-full p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded dark:divide-gray-700 md:p-6 dark:border-gray-700">
+            class="w-full p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded md:p-6">
             {% for stock in watch_list %}
             {% if stock.tag == x %}
-            <div class="flex items-center justify-between" id="{{stock.instrument_key}}"
-                ondragstart="delete_stock('{{stock.symbol}}','{{stock.instrument_key}}')"
+            <div class="whiteBox">
+            <div class="stocks flex items-center justify-between" id="{{stock.instrument_key}}" draggable="true"
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">
+            </div>
             </div>
             {% endif %}
             {% endfor %}
@@ -42,7 +91,7 @@
 <div class="grid lg:grid-cols-9 gap-4">
     <div id="modal" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
         style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px;">
-        <div class="bg-white rounded-lg shadow-lg w-full p-6">
+        <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
             <div class="flex justify-between items-center border-b">
                 <div>
                     <label class="text-lg text-black font-semibold">Place Order </label><span id="stock_tab"></span>
@@ -157,11 +206,25 @@
         document.getElementById("order_type").value = order_type;
         document.getElementById("order_form").submit();
     }
+    document.getElementById('type').addEventListener('change', function() {
+        const priceInput = document.getElementById('price');
+        if (this.value === 'Market') {
+            priceInput.readOnly = true;
+            priceInput.value = 0;
+            priceInput.classList.add('bg-gray-200');
+        } else {
+            priceInput.readOnly = false;
+            priceInput.classList.remove('bg-gray-200');
+        }
+    });
+
+    // Trigger change event to set initial state
+    document.getElementById('type').dispatchEvent(new Event('change'));
 </script>
 
 <div class="mt-2" id="skeleton">
     <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse md:p-6">
         <div class="flex items-center justify-between">
             <div>
                 <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
@@ -229,6 +292,37 @@
     </div>
 </div>
 
+
+<div class="hidden fixed z-50 w-full h-16 -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-1 left-1/2 dark:bg-gray-700 dark:border-gray-600" id="deleteTab">
+    <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
+        <button data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        </button>
+        <div id="tooltip-home" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        </div>
+        <button data-tooltip-target="tooltip-wallet" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        </button>
+        <div id="tooltip-wallet" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        </div>
+        <div class="flex items-center justify-center">
+            <button data-tooltip-target="tooltip-new" type="button" class="inline-flex items-center justify-center w-10 h-10 font-medium bg-red-600 rounded-full hover:bg-red-700 group focus:ring-4 focus:ring-red-300 focus:outline-none m-auto">
+                <i data-feather="trash-2" class="text-white"></i>
+            </button>
+        </div>
+        <div id="tooltip-new" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <button data-tooltip-target="tooltip-settings" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        </button>
+        <div id="tooltip-settings" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        </div>
+        <button data-tooltip-target="tooltip-profile" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        </button>
+        <div id="tooltip-profile" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        </div>
+    </div>
+</div>
+
+
 <script>
     let delete_symbols_list = []
     let delete_instruments_list = []
@@ -236,10 +330,10 @@
     function openWatchlist(elementId) {
         otherTabsButtons = document.querySelectorAll('.watchlist-tab');
         otherTabsButtons.forEach((element) => {
-            element.classList.remove('text-indigo-600')
+            element.classList.remove('text-gray-600')
         });
 
-        document.getElementById(elementId).classList.add('text-indigo-600')
+        document.getElementById(elementId).classList.add('text-gray-600')
 
         const otherTabs = document.querySelectorAll('.watchlist-tab-main');
         otherTabs.forEach((element) => {
@@ -257,7 +351,7 @@
     });
 
 
-    const socket = new WebSocket('wss://onstock.in/ws/stocks/');
+    const socket = new WebSocket('ws://127.0.0.1:8000/ws/stocks/');
 
     socket.onopen = function () {
         console.log('WebSocket connection established.');
@@ -278,7 +372,6 @@
 
     socket.onmessage = function (event) {
         const data = JSON.parse(event.data);
-        console.log('Received real-time data:', data);
         for (let i of data) {
             if (i['data']['symbol']) {
                 let change_cls = ""
@@ -367,8 +460,75 @@
         document.getElementById('delete_stock_input').value = JSON.stringify(delete_instruments_list)
     }
 
+    const stocks = document.querySelectorAll('.stocks');
+    const whiteBoxes = document.querySelectorAll('.whiteBox');
+    stocks.forEach(stock => {
+        stock.addEventListener('dragstart', (e) => {
+            console.log('DragStart has been triggered');
+            e.target.classList.add('hold');
+            e.dataTransfer.setData('text/plain', e.target.id);
+            document.getElementById('deleteTab').classList.remove('hidden');
+            setTimeout(() => {
+                e.target.classList.add('hide');
+            }, 0);
+        });
+        stock.addEventListener('dragend', (e) => {
+            console.log('DragEnd has been triggered');
+            document.getElementById('deleteTab').classList.add('hidden');
+            e.target.classList.remove('hold', 'hide');
+        });
+    });
+    whiteBoxes.forEach(whiteBox => {
+        whiteBox.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            console.log('DragOver has been triggered');
+        });
+        whiteBox.addEventListener('dragenter', (e) => {
+            console.log('DragEnter has been triggered');
+        });
+        whiteBox.addEventListener('dragleave', (e) => {
+            console.log('DragLeave has been triggered');
+        });
+        whiteBox.addEventListener('drop', (e) => {
+            console.log('Drop has been triggered');
+            e.preventDefault();
+            const draggedId = e.dataTransfer.getData('text/plain');
+            const draggedElement = document.getElementById(draggedId);
+            const dropTarget = e.target.closest('.whiteBox');
+            if (dropTarget && dropTarget !== draggedElement.parentNode) {
+                const dropTargetContent = dropTarget.querySelector('.stocks');
+                const draggedParent = draggedElement.parentNode;
+                dropTarget.appendChild(draggedElement);
+                draggedParent.appendChild(dropTargetContent);
+            }
+        });
+    });
 
 
+    deleteTab.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            console.log('DragOver on deleteTab');
+        });
+
+        deleteTab.addEventListener('drop', (e) => {
+            e.preventDefault();
+            const draggedId = e.dataTransfer.getData('text/plain');
+            const draggedElement = document.getElementById(draggedId);
+            console.log('Dragged Element:', draggedElement.id);
+            if (draggedElement) {
+                draggedElement.remove();
+            }
+
+            // Make the GET request to delete the symbol
+            fetch(`/delete_symbol/${draggedId}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Delete response:', data);
+                })
+                .catch(error => {
+                    console.error('Error deleting symbol:', error);
+                });
+        });
 </script>
 <br><br><br><br>
 {% endblock body %}

@@ -13,10 +13,11 @@
     </a>
 </div>
 <div id="mt-2" class="z-50">
-    <div class="main-tab p-4 rounded-lg bg-white dark:bg-gray-800" id="{{x}}-tab-main" role="tabpanel"
+    <div class="main-tab p-4 rounded-lg bg-white " id="{{x}}-tab-main" role="tabpanel"
         aria-labelledby="profile-tab">
         <div role="status"
-            class="w-full px-4 py-4 border border-gray-200 divide-y divide-gray-200 rounded dark:divide-gray-700 dark:border-gray-700">
+            class="w-full px-4 py-4 border border-gray-200 divide-y divide-gray-200 rounded ">
+            {% if positions %}
             {% if open_positions_available %}
             Open Positions
             {% for stock in positions %}
@@ -25,12 +26,12 @@
                 ondragstart="delete_stock('{{stock.symbol}}','{{stock.instrument_key}}')"
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">
                 <div>
-                    <div class="h-2.5 dark:bg-gray-600 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
+                    <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
                     <small class="w-32 h-2 text-xs text-gray-600">Qty:{{stock.quantity}}</small>
                 </div>
                 <div>
-                    <div class="h-2.5 dark:bg-gray-700 max-w-12" id="{{stock.instrument_key}}pnl"></div>
-                    <div class="h-2.5 text-xs mt-2 dark:bg-gray-700">
+                    <div class="h-2.5  max-w-12" id="{{stock.instrument_key}}pnl"></div>
+                    <div class="h-2.5 text-xs mt-2 ">
                         Ltp: <span class="text-xs"
                         id="{{stock.instrument_key}}ltp" data-buy_price="{{stock.buy_price}}"
                         data-last_traded_quantity="{{stock.last_traded_quantity}}"
@@ -53,12 +54,12 @@
             ondragstart="delete_stock('{{stock.symbol}}','{{stock.instrument_key}}')"
             onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">
             <div>
-                    <div class="h-2.5 dark:bg-gray-600 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
+                    <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
                     <small class="w-32 h-2 text-xs text-gray-600">Qty:{{stock.last_traded_quantity}}</small>
                 </div>
                 <div>
-                    <div class="h-2.5 dark:bg-gray-700 max-w-12" id="{{stock.instrument_key}}pnl"></div>
-                    <div class="h-2.5 text-xs mt-2 dark:bg-gray-700">
+                    <div class="h-2.5  max-w-12" id="{{stock.instrument_key}}pnl"></div>
+                    <div class="h-2.5 text-xs mt-2 ">
                         Ltp: <span class="text-xs"
                         id="{{stock.instrument_key}}ltp" data-buy_price="{{stock.buy_price}}"
                         data-last_traded_quantity="{{stock.last_traded_quantity}}"
@@ -71,23 +72,41 @@
             {% endif %}
             {% endfor %}
             {% endif %}
+            {% else %}
+            <section class="bg-white ">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                    <div class="mx-auto max-w-screen-sm text-center">
+                        <img class="" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/404/404-computer.svg"
+                            alt="No orders yet">
+    
+                        <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl">
+                            no open positions</p>
+                        <p class="text-lg font-light text-gray-500 "></p>
+                        <a href="/watchlist"
+                            class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                            to watchlist</a>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
         </div>
     </div>
-    <div class="hidden main-tab p-4 rounded-lg bg-white dark:bg-gray-800" id="{{x}}-tab-main" role="tabpanel"
+    <div class="hidden main-tab p-4 rounded-lg bg-white " id="{{x}}-tab-main" role="tabpanel"
         aria-labelledby="profile-tab">
         <div role="status"
-            class="w-full p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded dark:divide-gray-700 md:p-6 dark:border-gray-700">
-            {% for stock in holdings %}
+            class="w-full p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded  md:p-6">
+            {% if holdings %}
+            {% for stock in holdings reversed %}
             <div class="flex items-center justify-between" id="{{stock.instrument_key}}"
                 ondragstart="delete_stock('{{stock.symbol}}','{{stock.instrument_key}}')"
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">
                 <div>
-                    <div class="h-2.5 dark:bg-gray-600 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
+                    <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
                     <small class="w-32 h-2 text-xs text-gray-600">Qty:{{stock.quantity}}</small>
                 </div>
                 <div>
-                    <div class="h-2.5 dark:bg-gray-700 max-w-12" id="{{stock.instrument_key}}pnl"></div>
-                    <div class="h-2.5 text-xs mt-2 dark:bg-gray-700">
+                    <div class="h-2.5  max-w-12" id="{{stock.instrument_key}}pnl"></div>
+                    <div class="h-2.5 text-xs mt-2 ">
                         Ltp: <span class="text-xs"
                         id="{{stock.instrument_key}}ltp" data-buy_price="{{stock.buy_price}}"
                         data-last_traded_quantity="{{stock.last_traded_quantity}}"
@@ -98,75 +117,92 @@
                 </div>
             </div>
             {% endfor %}
+            {% else %}
+            <section class="bg-white ">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                    <div class="mx-auto max-w-screen-sm text-center">
+                        <img class="" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/404/404-computer.svg"
+                            alt="No orders yet">
+    
+                        <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl">
+                            no holdings yet</p>
+                        <p class="text-lg font-light text-gray-500"></p>
+                        <a href="/watchlist"
+                            class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                            to watchlist</a>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
         </div>
     </div>
 </div>
 
 <div class="mt-2" id="skeleton">
     <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse  md:p-6">
         <div class="flex items-center justify-between">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <div class="flex items-center justify-between pt-4">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <div class="flex items-center justify-between pt-4">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <div class="flex items-center justify-between pt-4">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <div class="flex items-center justify-between pt-4">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <div class="flex items-center justify-between pt-4">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <div class="flex items-center justify-between pt-4">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <div class="flex items-center justify-between pt-4">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <div class="flex items-center justify-between pt-4">
             <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
+                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
             </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
         </div>
         <span class="sr-only">Loading...</span>
     </div>
@@ -192,16 +228,16 @@
                         <div class="grid grid-cols-2 gap-2 mb-2">
                             <div class="flex flex-col">
                                 <label for="quantity"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
+                                    class="block text-sm font-medium text-gray-900">Quantity</label>
                                 <input type="number" id="quantity" name="quantity"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="0" value="1" required />
                             </div>
                             <div class="flex flex-col">
                                 <label for="price"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                                    class="block text-sm font-medium text-gray-900">Price</label>
                                 <input type="text" id="price" name="price"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="0" value="0" required />
                             </div>
                         </div>
@@ -209,10 +245,10 @@
                     <div class="grid grid-cols-1 gap-2">
                         <div class="grid grid-cols-2 gap-2 mb-2">
                             <div class="flex flex-col">
-                                <label for="type" class="block text-sm font-medium text-gray-900 dark:text-white">Order
+                                <label for="type" class="block text-sm font-medium text-gray-900">Order
                                     Type</label>
                                 <select id="type" name="type"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     required>
                                     <option value="Market" selected>Market</option>
                                     <option value="Limit">Limit</option>
@@ -220,9 +256,9 @@
                             </div>
                             <div class="flex flex-col">
                                 <label for="product"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Product</label>
+                                    class="block text-sm font-medium text-gray-900">Product</label>
                                 <select id="product" name="product_type"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     required>
                                     <option value="Intraday" selected>Intraday</option>
                                     <option value="Carryforward">Carryforward</option>
@@ -243,16 +279,16 @@
                         <div class="grid grid-cols-2 gap-2 mb-2">
                             <div class="flex flex-col">
                                 <label for="stoploss"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Stoploss</label>
+                                    class="block text-sm font-medium text-gray-900">Stoploss</label>
                                 <input type="number" id="stoploss" name="stoploss"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="0" value="0">
                             </div>
                             <div class="flex flex-col">
                                 <label for="target"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Target</label>
+                                    class="block text-sm font-medium text-gray-900">Target</label>
                                 <input type="text" id="target" name="target"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="0" value="0">
                             </div>
                         </div>
@@ -260,11 +296,11 @@
                 </div>
                 <div class="grid grid-cols-1 gap-2 mt-2">
                     <div class="grid grid-cols-2 gap-2 mb-2">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col" id="sellButtonDiv">
                             <button class="bg-red-600 text-white px-4 py-2 rounded" onclick="execute_order('SELL')"
                                 type="button">SELL</button>
                         </div>
-                        <div class="flex flex-col">
+                        <div class="flex flex-col" id="buyButtonDiv">
                             <button class="bg-green-600 text-white px-4 py-2 rounded" onclick="execute_order('BUY')"
                                 type="button">BUY</button>
                         </div>
@@ -281,6 +317,24 @@
         document.getElementById('stock_tab').innerText = `(${stock})`
         document.getElementById('instrument_input').value = instrument
         document.getElementById('modal').classList.remove('hidden');
+        let quantity = document.getElementById(`${instrument}ltp`).getAttribute('data-quantity')
+        if(quantity > 0) {
+            document.getElementById('buyButtonDiv').innerHTML = 
+            `<button class="bg-green-600 text-white px-4 py-2 rounded" onclick="execute_order('BUYEXIT')"
+            type="button">Exit</button>`
+            document.getElementById('sellButtonDiv').innerHTML = 
+            `<button class="bg-red-600 text-white px-4 py-2 rounded" onclick="execute_order('SELL')"
+            type="button">SELL</button>
+            `
+        }
+        else {
+            document.getElementById('buyButtonDiv').innerHTML = 
+            `<button class="bg-green-600 text-white px-4 py-2 rounded" onclick="execute_order('BUY')"
+            type="button">BUY</button>`
+            document.getElementById('sellButtonDiv').innerHTML = 
+            `<button class="bg-red-600 text-white px-4 py-2 rounded" onclick="execute_order('SELLEXIT')"
+            type="button">Exit</button>`
+        }
     }
 
     document.getElementById('closeModal').addEventListener('click', function () {
@@ -289,11 +343,28 @@
 
 
     function execute_order(order_type) {
+        let instrument = document.getElementById(`instrument_input`).value;
+        let quantity = document.getElementById(`${instrument}ltp`).getAttribute('data-quantity');
+        let product = document.getElementById(`${instrument}ltp`).getAttribute('data-product');
+        if(order_type == "BUYEXIT") {
+            order_type = "SELL";
+            document.getElementById('quantity').value = quantity
+            document.getElementById('type').value = 'Market'
+            document.getElementById('product').value = product
+            document.getElementById('smart_order').value = false
+        }
+        if(order_type == "SELLEXIT") {
+            order_type = "BUY"
+            document.getElementById('quantity').value = quantity * -1
+            document.getElementById('type').value = 'Market'
+            document.getElementById('product').value = product
+            document.getElementById('smart_order').value = false
+        }
         document.getElementById("order_type").value = order_type;
         document.getElementById("order_form").submit();
     }
 
-    const socket = new WebSocket('wss://onstock.in/ws/stocks/');
+    const socket = new WebSocket('ws://127.0.0.1:8000/ws/stocks/');
 
     socket.onopen = function () {
         console.log('WebSocket connection established.');
@@ -345,12 +416,12 @@
                 document.getElementById(i['instrument'] + 'ltp').innerHTML = `<span class="text-green-600 ">${i['data']['ltp']}</span>`
                 //         document.getElementById(i['instrument']).innerHTML = `
                 //     <div>
-                //         <div class="h-2.5 dark:bg-gray-600 text-gray-950 w-24 mb-2.5 mt-2">${i['data']['symbol']}</div>
-                //         <div class="w-32 h-2 text-sm text-gray-950 dark:bg-gray-700">${i['data']['segment']}</div>
+                //         <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">${i['data']['symbol']}</div>
+                //         <div class="w-32 h-2 text-sm text-gray-950 ">${i['data']['segment']}</div>
                 //     </div>
                 //     <div>
-                //         <div class="h-2.5 dark:bg-gray-700 w-12">${i['data']['ltp']}</div>
-                //         <div class="h-2.5 text-green-600 text-sm mt-2 dark:bg-gray-700 w-12">${i['data']['ltp']}</div>
+                //         <div class="h-2.5  w-12">${i['data']['ltp']}</div>
+                //         <div class="h-2.5 text-green-600 text-sm mt-2  w-12">${i['data']['ltp']}</div>
                 //     </div>
                 // `
                 // console.log(i['data']['symbol'])

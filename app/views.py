@@ -189,7 +189,7 @@ def add_watchlist(request):
                     pass
             messages.success(request,"Watchlist Updated Successfully")
         except Exception as e:
-            messages.error(request,f"Some Error Occured")
+            messages.error(request,f"Some Error Occured {e}")
     return redirect('/watchlist')
 
 @login_required
@@ -204,6 +204,18 @@ def delete_stock(request):
                     delob.delete()
                 except:
                     pass
+            messages.success(request,"Watchlist Updated Successfully")
+        except Exception as e:
+            messages.error(request,f"Some Error Occured")
+    return redirect('/watchlist')
+
+
+@login_required
+def create_watchlist(request):
+    if request.method == 'POST':
+        try:
+            name = request.POST.get("name")
+            tags.objects.create(user=request.user,tag=name)
             messages.success(request,"Watchlist Updated Successfully")
         except Exception as e:
             messages.error(request,f"Some Error Occured")
@@ -255,16 +267,14 @@ def watchlist(request):
     watch_list = Watchlist.objects.filter(user=request.user)
     watchlist_list = []
     watchlist_symbollist = []
+    all_tags = tags.objects.all()
     for i in watch_list:
         watchlist_symbollist.append(i.instrument_key)
         if i.tag not in watchlist_list:
             watchlist_list.append(i.tag)
-    print(watch_list)
-    print(watchlist_list)
-    print('watchlist_symbollist')
-    print(watchlist_symbollist)
     context = {
         'watch_list':watch_list,
+        'all_tags':all_tags,
         'watchlist_list':watchlist_list,
         'watchlist_symbollist':watchlist_symbollist,
     }
@@ -280,8 +290,8 @@ def delete_symbol(request,symbol):
         de.delete()
     except:
         pass
-    messages.success(request,'Watchlist updated successfully !')
-    return redirect('/watchlist')
+    # messages.success(request,'Watchlist updated successfully !')
+    return JsonResponse({'success': True, 'message': 'Deleted successfully.'})
 
 
 # -----------------------ORDERS
@@ -509,7 +519,7 @@ def trade_charges(request):
         'odr':odr,
         'tcharge':round(tcharge,2)
     }
-    return render(request,'trade_charges.html',context)
+    return render(request,'dashboard/trade_charges.html',context)
 
 
 @login_required

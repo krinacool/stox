@@ -86,18 +86,18 @@ class CustomUser(AbstractUser):
         if not self.pk:
             first = True
         super().save(*args, **kwargs)
-        if first:
-            try:
-                dw = default_watchlist.objects.all()
-                for i in dw:
-                    try:
-                        data = symbollist.get(i.symbol)
-                        ob = Watchlist.objects.create(user=self,stock=i.symbol,segment=i.segment,token=data['token'],tag=i.segment)
-                        ob.save()
-                    except Exception as e:
-                        pass
-            except:
-                pass
+        # if first:
+        #     try:
+        #         dw = default_watchlist.objects.all()
+        #         for i in dw:
+        #             try:
+        #                 data = symbollist.get(i.symbol)
+        #                 ob = Watchlist.objects.create(user=self,stock=i.symbol,segment=i.segment,token=data['token'],tag=i.segment)
+        #                 ob.save()
+        #             except Exception as e:
+        #                 pass
+        #     except:
+        #         pass
 
 
 
@@ -135,6 +135,16 @@ class Instrument(models.Model):
     def __str__(self):
         return self.name
 
+
+class tags(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, blank=True, null=True)
+    tag=models.CharField(max_length=50,default="")
+    class Meta:
+        verbose_name = "Watchlist tag"
+        verbose_name_plural = "Watchlist tags"
+        unique_together = ['user','tag']
+    def __str__(self):
+        return str(self.tag)
 
 
 class Watchlist(models.Model):

@@ -24,7 +24,7 @@
 </div>
 <div class="mt-2 tabs hidden" id="pending">
     <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow md:p-6 ">
         {% if pending %}
         {% for stock in pending %}
         <div class="flex items-center justify-between">
@@ -44,6 +44,7 @@
                             class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
                     </div>
                 </div>
+                <div class="h-2.5 mt-4 text-xs text-gray-600 rounded-full">{{stock.datetime}}</div>
             </div>
             <div>
                 <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
@@ -59,6 +60,7 @@
                     <button class="no-underline rounded-sm px-1 bg-red-100 text-red-800 text-xs mr-2">failed</button>
                     {% endif %}
                 </div>
+                <div class="h-2.5 mt-4 text-xs text-gray-600 rounded-full w-24">Qty: {{stock.quantity}}</div>
             </div>
         </div>
         {% endfor %}
@@ -71,9 +73,9 @@
 
                     <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
                         no pending orders</p>
-                    <p class="text-lg font-light text-gray-500 dark:text-gray-400">place order</p>
+                    <p class="text-lg font-light text-gray-500 ">place order</p>
                     <a href="/watchlist"
-                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
                         to watchlist</a>
                 </div>
             </div>
@@ -83,7 +85,7 @@
 </div>
 <div class="mt-2 tabs hidden" id="failed">
     <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow md:p-6 ">
         {% if failed %}
         {% for stock in failed %}
         <div class="flex items-center justify-between">
@@ -103,6 +105,7 @@
                             class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
                     </div>
                 </div>
+                <div class="h-2.5 mt-4 text-xs text-gray-600 rounded-full">{{stock.datetime}}</div>
             </div>
             <div>
                 <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
@@ -118,6 +121,12 @@
                     <button class="no-underline rounded-sm px-1 bg-red-100 text-red-800 text-xs mr-2">failed</button>
                     {% endif %}
                 </div>
+                <div class="h-2.5 mt-4 text-xs text-gray-600 rounded-full w-24">Qty: {{stock.quantity}}</div>
+            </div>
+        </div>
+        <div class="flex items-center justify-between">
+            <div class="h-4.5 bg-red-100 text-red-800 text-xs text-center w-full">
+                {{stock.message}}
             </div>
         </div>
         {% endfor %}
@@ -130,9 +139,9 @@
 
                     <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
                         no failed orders</p>
-                    <p class="text-lg font-light text-gray-500 dark:text-gray-400">place order</p>
+                    <p class="text-lg font-light text-gray-500 ">place order</p>
                     <a href="/watchlist"
-                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
                         to watchlist</a>
                 </div>
             </div>
@@ -142,7 +151,7 @@
 </div>
 <div class="mt-2 tabs hidden" id="completed">
     <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow md:p-6 ">
         {% if completed %}
         {% for stock in completed %}
         <div class="flex items-center justify-between">
@@ -162,6 +171,7 @@
                             class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
                     </div>
                 </div>
+                <div class="h-2.5 mt-4 text-xs text-gray-600 rounded-full">{{stock.datetime}}</div>
             </div>
             <div>
                 <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
@@ -177,6 +187,7 @@
                     <button class="no-underline rounded-sm px-1 bg-red-100 text-red-800 text-xs mr-2">failed</button>
                     {% endif %}
                 </div>
+                <div class="h-2.5 mt-4 text-xs text-gray-600 rounded-full w-24">Qty: {{stock.quantity}}</div>
             </div>
         </div>
         {% endfor %}
@@ -189,9 +200,9 @@
 
                     <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
                         no completed orders</p>
-                    <p class="text-lg font-light text-gray-500 dark:text-gray-400">place order</p>
+                    <p class="text-lg font-light text-gray-500 ">place order</p>
                     <a href="/watchlist"
-                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
                         to watchlist</a>
                 </div>
             </div>
@@ -201,9 +212,9 @@
 </div>
 <div class="mt-2 tabs hidden" id="tradebook">
     <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow md:p-6 ">
         {% if tradebook %}
-        {% for stock in tradebook %}
+        {% for stock in tradebook reversed %}
         <div class="flex items-center justify-between">
             <div>
                 <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
@@ -221,6 +232,7 @@
                             class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
                     </div>
                 </div>
+                <div class="h-2.5 mt-4 text-xs text-gray-600 rounded-full">{{stock.datetime}}</div>
             </div>
             <div>
                 <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
@@ -236,6 +248,7 @@
                     <button class="no-underline rounded-sm px-1 bg-red-100 text-red-800 text-xs mr-2">failed</button>
                     {% endif %}
                 </div>
+                <div class="h-2.5 mt-4 text-xs text-gray-600 rounded-full w-24">Qty: {{stock.quantity}}</div>
             </div>
         </div>
         {% endfor %}
@@ -247,10 +260,10 @@
                         alt="No orders yet">
 
                     <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
-                        no tradebook orders</p>
-                    <p class="text-lg font-light text-gray-500 dark:text-gray-400">place order</p>
+                        no trade orders</p>
+                    <p class="text-lg font-light text-gray-500 ">place order</p>
                     <a href="/watchlist"
-                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Back
+                        class="inline-flex text-blue-600 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
                         to watchlist</a>
                 </div>
             </div>
@@ -261,7 +274,7 @@
 
 <div class="mt-2" id="skeleton">
     <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
+        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse md:p-6 ">
         <div class="flex items-center justify-between">
             <div>
                 <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
@@ -455,5 +468,27 @@
     document.getElementById('skeleton').classList.add('hidden');
     ordersTab('completed')
 </script>
+
+{% if messages %}
+    {% for message in messages %}
+    {% if message.tags == 'success' %}
+    <script>
+        setTimeout(
+            () => {
+                ordersTab('completed')
+                location.href = '/portfolio'
+            },3000
+        )
+    </script>
+    {% elif message.tags == 'error' %}
+    <script>
+        ordersTab('failed')
+    </script>
+    {% elif message.tags == 'warning' %}
+    {% elif message.tags == 'info' %}
+    {% else %}
+    {% endif %}
+    {% endfor %}
+{% endif %}
 <br><br><br><br>
 {% endblock body %}

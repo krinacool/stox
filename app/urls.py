@@ -20,6 +20,7 @@ urlpatterns = [
     path("watchlist",watchlist,name='watchlist'),
     path('search/', search_instruments, name='search_instruments'),
     path("add_watchlist",add_watchlist,name='add_watchlist'),
+    path("create_watchlist",create_watchlist,name='create_watchlist'),
     path("delete_stock",delete_stock,name='delete_stock'),
     path("delete_symbol/<str:symbol>",delete_symbol,name='delete_symbol'),
     path("place_order",place_order,name='place_order'),
