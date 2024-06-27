@@ -5,8 +5,6 @@ from app.orders.market import market_order
 
 
 def stoploss_target(position_id):
-    print('Stop Loss Check')
-    print('hello world')
     position = Position.objects.get(position_id=position_id)
     stoploss = position.stoploss
     target = position.target
@@ -14,12 +12,8 @@ def stoploss_target(position_id):
     current_price = get_price(position.symbol)
     # while time.time() - start_time < 50400:
     while True:
-        print(start_time)
-        print('Started')
         position = Position.objects.get(position_id=position_id)
         try:
-            print(f'Stoploss : {stoploss}')
-            print(f'Traget : {target}')
             if position.stoploss != stoploss or position.target != target:
                 return 'failed'
             if position.quantity == '0':
@@ -34,7 +28,6 @@ def stoploss_target(position_id):
                     return 'success'
             current_price = get_price(position.symbol)
         except Exception as e:
-            print(e)
             return 'failed'
 
                 
