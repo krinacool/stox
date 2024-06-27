@@ -86,18 +86,19 @@ class CustomUser(AbstractUser):
         if not self.pk:
             first = True
         super().save(*args, **kwargs)
-        # if first:
-        #     try:
-        #         dw = default_watchlist.objects.all()
-        #         for i in dw:
-        #             try:
-        #                 data = symbollist.get(i.symbol)
-        #                 ob = Watchlist.objects.create(user=self,stock=i.symbol,segment=i.segment,token=data['token'],tag=i.segment)
-        #                 ob.save()
-        #             except Exception as e:
-        #                 pass
-        #     except:
-        #         pass
+        if first:
+        # Create default watchlist entries for the new user
+            default_watchlists = Watchlist.objects.filter(is_default=True)
+            for watchlist in default_watchlists:
+                Watchlist.objects.create(
+                    user=self,
+                    symbol=watchlist.symbol,
+                    segment=watchlist.segment,
+                    instrument_key=watchlist.instrument_key,
+                    tag=watchlist.tag,
+                    is_default=False
+                )
+
 
 
 
@@ -152,7 +153,8 @@ class Watchlist(models.Model):
     symbol = models.CharField(max_length=150, default="")
     segment = models.CharField(max_length=150, default="")
     instrument_key = models.CharField(max_length=150, default="")
-    tag = models.CharField(max_length=20, default="#@default")
+    tag = models.CharField(max_length=20, default="Favourites")
+    is_default = models.BooleanField(default=False)
     
     class Meta:
         verbose_name = "Watchlist"

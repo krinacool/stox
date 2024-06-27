@@ -27,7 +27,7 @@
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">
                 <div>
                     <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
-                    <small class="w-32 h-2 text-xs text-gray-600">Qty:{{stock.quantity}}</small>
+                    <small class="w-32 h-2 text-xs text-gray-600">{{stock.quantity}} X AVG ₹{% if stock.sell_price == 0 %}{{stock.buy_price}}{% else %}{{stock.sell_price}}{% endif %}</small>
                 </div>
                 <div>
                     <div class="h-2.5  max-w-12" id="{{stock.instrument_key}}pnl"></div>
@@ -56,17 +56,19 @@
             <div>
                     <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
                     <small class="w-32 h-2 text-xs text-gray-600">Qty:{{stock.last_traded_quantity}}</small>
+                    <div class="w-32 h-2 text-xs text-gray-600">Buy Price ₹{{stock.buy_price}}</div>
                 </div>
                 <div>
-                    <div class="h-2.5  max-w-12" id="{{stock.instrument_key}}pnl"></div>
-                    <div class="h-2.5 text-xs mt-2 ">
+                    <div class="h-2.5 w-24 mb-2.5 mt-2" id="{{stock.instrument_key}}pnl"></div>
+                    <small class="w-32 h-2 text-xs text-gray-600">
                         Ltp: <span class="text-xs"
                         id="{{stock.instrument_key}}ltp" data-buy_price="{{stock.buy_price}}"
                         data-last_traded_quantity="{{stock.last_traded_quantity}}"
                         data-sell_price="{{stock.sell_price}}" data-unrealised_pnl="{{stock.unrealised_pnl}}"
                         data-quantity="{{stock.quantity}}"
                         data-product="{{stock.product}}"></span>
-                    </div>
+                    </small>
+                    <div class="w-32 h-2 text-xs text-gray-600">Sell Price ₹{{stock.sell_price}}</div>
                 </div>
             </div>
             {% endif %}
@@ -102,18 +104,18 @@
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">
                 <div>
                     <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
-                    <small class="w-32 h-2 text-xs text-gray-600">Qty:{{stock.quantity}}</small>
+                    <small class="w-32 h-2 text-xs text-gray-600">{{stock.quantity}} X AVG ₹{% if stock.sell_price == 0 %}{{stock.buy_price}}{% else %}{{stock.sell_price}}{% endif %}</small>
                 </div>
                 <div>
-                    <div class="h-2.5  max-w-12" id="{{stock.instrument_key}}pnl"></div>
-                    <div class="h-2.5 text-xs mt-2 ">
+                    <div class="h-2.5 w-24 mb-2.5 mt-2" id="{{stock.instrument_key}}pnl"></div>
+                    <small class="w-32 h-2 text-xs text-gray-600">
                         Ltp: <span class="text-xs"
                         id="{{stock.instrument_key}}ltp" data-buy_price="{{stock.buy_price}}"
                         data-last_traded_quantity="{{stock.last_traded_quantity}}"
                         data-sell_price="{{stock.sell_price}}" data-unrealised_pnl="{{stock.unrealised_pnl}}"
                         data-quantity="{{stock.quantity}}"
                         data-product="{{stock.product}}"></span>
-                    </div>
+                    </small>
                 </div>
             </div>
             {% endfor %}
@@ -138,75 +140,6 @@
     </div>
 </div>
 
-<div class="mt-2" id="skeleton">
-    <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse  md:p-6">
-        <div class="flex items-center justify-between">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full "></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full  w-12"></div>
-        </div>
-        <span class="sr-only">Loading...</span>
-    </div>
-</div>
 
 <!-- Modal Structure -->
 <div class="grid lg:grid-cols-9 gap-4">
@@ -327,7 +260,7 @@
             type="button">SELL</button>
             `
         }
-        else {
+        if(quantity < 0) {
             document.getElementById('buyButtonDiv').innerHTML = 
             `<button class="bg-green-600 text-white px-4 py-2 rounded" onclick="execute_order('BUY')"
             type="button">BUY</button>`
@@ -374,7 +307,6 @@
 
     // Send instruments list to the server
     socket.send(JSON.stringify(instruments));
-    document.getElementById('skeleton').classList.add('hidden');
     if (tabClickElements.length > 0) {
         // Click the first element
         tabClickElements[0].click();
@@ -435,7 +367,6 @@
         otherTabs.forEach((element) => {
             element.classList.add('hidden')
         });
-        document.getElementById('skeleton').classList.remove('hidden')
         console.log('WebSocket connection closed:', event);
         setTimeout(function () {
             location.reload();
@@ -448,7 +379,6 @@
         otherTabs.forEach((element) => {
             element.classList.add('hidden')
         });
-        document.getElementById('skeleton').classList.remove('hidden')
         console.error('WebSocket error:', error);
         setTimeout(function () {
             location.reload();

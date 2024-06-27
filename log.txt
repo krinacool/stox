@@ -1,0 +1,276 @@
+2024-06-27 07:13:05,969 Watching for file changes with StatReloader
+2024-06-27 07:13:38,643 Watching for file changes with StatReloader
+2024-06-27 07:34:05,395 [32mHTTP GET /portfolio 302 [0.12, 127.0.0.1:64237][0m
+2024-06-27 07:34:05,546 [mHTTP GET /login/?next=/portfolio 200 [0.12, 127.0.0.1:64237][0m
+2024-06-27 07:34:05,699 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.10, 127.0.0.1:64237][0m
+2024-06-27 07:34:05,706 [mHTTP GET /static/css/theme.min.css 200 [0.10, 127.0.0.1:64238][0m
+2024-06-27 07:34:05,755 [mHTTP GET /static/js/theme.min.js 200 [0.14, 127.0.0.1:64242][0m
+2024-06-27 07:34:05,770 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.js 200 [0.16, 127.0.0.1:64241][0m
+2024-06-27 07:34:05,780 [mHTTP GET /static/libs/feather-icons/dist/feather.min.js 200 [0.17, 127.0.0.1:64239][0m
+2024-06-27 07:34:05,789 [mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js 200 [0.18, 127.0.0.1:64240][0m
+2024-06-27 07:34:06,403 [mHTTP GET /static/images/brand/logo/logo-primary.svg 200 [0.01, 127.0.0.1:64240][0m
+2024-06-27 07:34:13,801 [32mHTTP POST /login/?next=/portfolio 302 [0.85, 127.0.0.1:64254][0m
+2024-06-27 07:34:13,839 [32mHTTP GET /market 302 [0.03, 127.0.0.1:64254][0m
+2024-06-27 07:34:13,915 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:64254][0m
+2024-06-27 07:34:13,973 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.css 200 [0.01, 127.0.0.1:64255][0m
+2024-06-27 07:34:13,975 [mHTTP GET /static/css/tailwind.css 200 [0.01, 127.0.0.1:64254][0m
+2024-06-27 07:34:14,019 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.min.js 200 [0.05, 127.0.0.1:64256][0m
+2024-06-27 07:34:18,961 [mHTTP GET /portfolio 200 [0.09, 127.0.0.1:64256][0m
+2024-06-27 07:34:26,294 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:64262][0m
+2024-06-27 07:35:03,612 [mHTTP GET /watchlist 200 [0.17, 127.0.0.1:64275][0m
+2024-06-27 07:35:04,189 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64277]
+2024-06-27 07:35:04,202 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64277]
+2024-06-27 07:35:25,736 [32mHTTP POST /place_order 302 [0.18, 127.0.0.1:64282][0m
+2024-06-27 07:35:25,865 [mHTTP GET /orders 200 [0.12, 127.0.0.1:64282][0m
+2024-06-27 07:35:26,228 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64277]
+2024-06-27 07:35:29,474 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:64282][0m
+2024-06-27 07:35:49,536 [mHTTP GET /portfolio 200 [0.09, 127.0.0.1:64293][0m
+2024-06-27 07:35:51,718 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:64299][0m
+2024-06-27 07:36:01,898 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:64310][0m
+2024-06-27 07:36:52,618 [mHTTP GET /portfolio 200 [0.09, 127.0.0.1:64325][0m
+2024-06-27 07:36:59,003 [32mHTTP POST /place_order 302 [0.10, 127.0.0.1:64330][0m
+2024-06-27 07:36:59,064 [mHTTP GET /orders 200 [0.05, 127.0.0.1:64330][0m
+2024-06-27 07:37:02,573 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:64330][0m
+2024-06-27 07:37:43,270 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:64345][0m
+2024-06-27 07:37:43,838 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64348]
+2024-06-27 07:37:43,847 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64348]
+2024-06-27 07:43:35,294 [mHTTP GET /portfolio 200 [0.13, 127.0.0.1:64372][0m
+2024-06-27 07:43:35,310 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64348]
+2024-06-27 07:43:36,488 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64377]
+2024-06-27 07:43:36,502 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64377]
+2024-06-27 07:44:05,271 [mHTTP GET /portfolio 200 [0.17, 127.0.0.1:64372][0m
+2024-06-27 07:44:05,291 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64377]
+2024-06-27 07:44:05,991 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64382]
+2024-06-27 07:44:06,002 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64382]
+2024-06-27 07:44:14,170 [mHTTP GET /portfolio 200 [0.11, 127.0.0.1:64372][0m
+2024-06-27 07:44:14,179 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64382]
+2024-06-27 07:44:14,436 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64384]
+2024-06-27 07:44:14,444 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64384]
+2024-06-27 07:44:42,933 [mHTTP GET /portfolio 200 [0.10, 127.0.0.1:64372][0m
+2024-06-27 07:44:42,947 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64384]
+2024-06-27 07:44:43,538 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64388]
+2024-06-27 07:44:43,548 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64388]
+2024-06-27 07:44:50,853 [mHTTP GET /portfolio 200 [0.11, 127.0.0.1:64372][0m
+2024-06-27 07:44:50,865 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64388]
+2024-06-27 07:44:51,412 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64389]
+2024-06-27 07:44:51,423 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64389]
+2024-06-27 07:45:06,670 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:64372][0m
+2024-06-27 07:45:06,683 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64389]
+2024-06-27 07:45:07,214 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64390]
+2024-06-27 07:45:07,228 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64390]
+2024-06-27 07:45:16,277 [mHTTP GET /portfolio 200 [0.09, 127.0.0.1:64372][0m
+2024-06-27 07:45:16,285 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64390]
+2024-06-27 07:45:16,544 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64392]
+2024-06-27 07:45:16,551 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64392]
+2024-06-27 07:45:30,233 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:64372][0m
+2024-06-27 07:45:30,243 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64392]
+2024-06-27 07:45:30,490 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64394]
+2024-06-27 07:45:30,496 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64394]
+2024-06-27 07:46:13,821 [mHTTP GET /portfolio 200 [0.07, 127.0.0.1:64372][0m
+2024-06-27 07:46:13,829 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64394]
+2024-06-27 07:46:14,356 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64400]
+2024-06-27 07:46:14,366 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64400]
+2024-06-27 07:47:14,918 [mHTTP GET /portfolio 200 [0.15, 127.0.0.1:64404][0m
+2024-06-27 07:47:14,927 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64400]
+2024-06-27 07:47:15,495 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64407]
+2024-06-27 07:47:15,505 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64407]
+2024-06-27 07:48:18,681 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:64408][0m
+2024-06-27 07:48:18,688 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64407]
+2024-06-27 07:48:19,257 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64411]
+2024-06-27 07:48:19,268 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64411]
+2024-06-27 07:51:27,575 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:64433][0m
+2024-06-27 07:51:28,044 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64411]
+2024-06-27 07:51:28,246 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64437]
+2024-06-27 07:51:28,255 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64437]
+2024-06-27 07:51:29,879 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:64433][0m
+2024-06-27 07:51:30,261 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64438]
+2024-06-27 07:51:30,265 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64437]
+2024-06-27 07:51:30,269 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64438]
+2024-06-27 07:51:32,034 [mHTTP GET /orders 200 [0.05, 127.0.0.1:64433][0m
+2024-06-27 07:51:32,469 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64438]
+2024-06-27 07:51:39,315 [mHTTP GET /profile 200 [0.04, 127.0.0.1:64433][0m
+2024-06-27 07:52:20,875 [mHTTP GET /profile 200 [0.03, 127.0.0.1:64433][0m
+2024-06-27 07:52:38,564 [mHTTP GET /profile 200 [0.04, 127.0.0.1:64433][0m
+2024-06-27 07:52:43,926 [32mHTTP GET /logout 301 [0.19, 127.0.0.1:64433][0m
+2024-06-27 07:52:43,957 [32mHTTP GET /logout/ 302 [0.02, 127.0.0.1:64433][0m
+2024-06-27 07:52:43,975 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:64433][0m
+2024-06-27 07:53:09,698 [mHTTP GET /login/ 200 [0.04, 127.0.0.1:64433][0m
+2024-06-27 07:53:28,139 [mHTTP GET /login/ 200 [0.03, 127.0.0.1:64433][0m
+2024-06-27 07:53:33,947 [mHTTP GET /login/ 200 [0.06, 127.0.0.1:64433][0m
+2024-06-27 07:53:54,835 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64453][0m
+2024-06-27 07:53:54,836 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64433][0m
+2024-06-27 07:53:58,471 [32mHTTP GET /signup 301 [0.02, 127.0.0.1:64433][0m
+2024-06-27 07:53:58,560 [mHTTP GET /signup/ 200 [0.08, 127.0.0.1:64433][0m
+2024-06-27 07:53:59,450 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64433][0m
+2024-06-27 07:53:59,453 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64453][0m
+2024-06-27 07:54:35,646 [mHTTP GET /signup/ 200 [0.09, 127.0.0.1:64453][0m
+2024-06-27 07:54:37,015 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64453][0m
+2024-06-27 07:54:37,043 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64453][0m
+2024-06-27 07:55:08,138 [mHTTP GET /signup/ 200 [0.04, 127.0.0.1:64453][0m
+2024-06-27 07:55:09,451 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64453][0m
+2024-06-27 07:55:09,456 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64491][0m
+2024-06-27 07:55:13,477 [mHTTP GET /signup/ 200 [0.04, 127.0.0.1:64491][0m
+2024-06-27 07:55:14,794 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64491][0m
+2024-06-27 07:55:14,799 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64453][0m
+2024-06-27 07:55:33,317 [mHTTP GET /signup/ 200 [0.04, 127.0.0.1:64453][0m
+2024-06-27 07:55:34,733 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64453][0m
+2024-06-27 07:55:34,806 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64453][0m
+2024-06-27 07:56:16,166 [mHTTP GET /signup/ 200 [0.04, 127.0.0.1:64453][0m
+2024-06-27 07:56:25,364 [mHTTP GET /signup/ 200 [0.03, 127.0.0.1:64453][0m
+2024-06-27 07:56:41,786 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64516][0m
+2024-06-27 07:56:41,787 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64453][0m
+2024-06-27 07:56:57,017 [mHTTP GET /signup/ 200 [0.02, 127.0.0.1:64453][0m
+2024-06-27 07:56:58,122 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64516][0m
+2024-06-27 07:56:58,123 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64453][0m
+2024-06-27 07:57:59,541 [mHTTP GET /signup/ 200 [0.02, 127.0.0.1:64560][0m
+2024-06-27 07:58:00,931 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64560][0m
+2024-06-27 07:58:00,957 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64560][0m
+2024-06-27 07:58:02,845 [32mHTTP GET /login 301 [0.02, 127.0.0.1:64560][0m
+2024-06-27 07:58:02,874 [mHTTP GET /login/ 200 [0.02, 127.0.0.1:64560][0m
+2024-06-27 07:58:04,267 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64560][0m
+2024-06-27 07:58:04,466 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64560][0m
+2024-06-27 07:58:11,821 [32mHTTP POST /login/ 302 [0.96, 127.0.0.1:64560][0m
+2024-06-27 07:58:11,844 [32mHTTP GET /market 302 [0.01, 127.0.0.1:64560][0m
+2024-06-27 07:58:11,879 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:64560][0m
+2024-06-27 07:58:12,717 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64570]
+2024-06-27 07:58:12,727 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64570]
+2024-06-27 07:58:13,067 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64560][0m
+2024-06-27 07:58:13,069 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64561][0m
+2024-06-27 07:58:18,235 [mHTTP GET /profile 200 [0.01, 127.0.0.1:64573][0m
+2024-06-27 07:58:18,824 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64570]
+2024-06-27 07:58:19,234 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64573][0m
+2024-06-27 07:58:19,235 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64574][0m
+2024-06-27 07:58:24,017 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:64574][0m
+2024-06-27 07:58:24,833 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64579]
+2024-06-27 07:58:24,842 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64579]
+2024-06-27 07:58:25,169 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64573][0m
+2024-06-27 07:58:25,172 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64574][0m
+2024-06-27 07:58:25,908 [32mHTTP GET /market 302 [0.01, 127.0.0.1:64574][0m
+2024-06-27 07:58:25,928 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:64574][0m
+2024-06-27 07:58:26,627 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64579]
+2024-06-27 07:58:26,885 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64581]
+2024-06-27 07:58:26,892 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64581]
+2024-06-27 07:58:27,082 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64574][0m
+2024-06-27 07:58:27,085 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64573][0m
+2024-06-27 08:01:25,621 D:\stox\app\models.py changed, reloading.
+2024-06-27 08:01:30,597 Watching for file changes with StatReloader
+2024-06-27 08:01:32,222 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_watchlist.is_default
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 271, in watchlist
+    for i in watch_list:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_watchlist.is_default
+2024-06-27 08:01:32,229 [35;1mHTTP GET /watchlist 500 [0.25, 127.0.0.1:64626][0m
+2024-06-27 08:01:33,684 Not Found: /favicon.ico
+2024-06-27 08:01:33,685 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:64630][0m
+2024-06-27 08:01:46,015 D:\stox\app\models.py changed, reloading.
+2024-06-27 08:01:48,193 Watching for file changes with StatReloader
+2024-06-27 08:06:06,288 D:\stox\app\models.py changed, reloading.
+2024-06-27 08:06:10,953 Watching for file changes with StatReloader
+2024-06-27 08:06:34,182 Watching for file changes with StatReloader
+2024-06-27 08:06:51,110 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:64721][0m
+2024-06-27 08:06:51,589 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:64725]
+2024-06-27 08:06:51,603 WebSocket CONNECT /ws/stocks/ [127.0.0.1:64725]
+2024-06-27 08:06:58,890 [32mHTTP GET /admin 301 [0.04, 127.0.0.1:64721][0m
+2024-06-27 08:06:59,151 [mHTTP GET /admin/ 200 [0.25, 127.0.0.1:64721][0m
+2024-06-27 08:06:59,287 [mHTTP GET /static/admin/css/dark_mode.css 200 [0.10, 127.0.0.1:64722][0m
+2024-06-27 08:06:59,292 [mHTTP GET /static/admin/css/base.css 200 [0.10, 127.0.0.1:64721][0m
+2024-06-27 08:06:59,296 [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.10, 127.0.0.1:64726][0m
+2024-06-27 08:06:59,298 [mHTTP GET /static/admin/css/dashboard.css 200 [0.10, 127.0.0.1:64727][0m
+2024-06-27 08:06:59,299 [mHTTP GET /static/admin/css/responsive.css 200 [0.10, 127.0.0.1:64728][0m
+2024-06-27 08:06:59,449 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:64725]
+2024-06-27 08:06:59,470 [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.02, 127.0.0.1:64726][0m
+2024-06-27 08:06:59,474 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.02, 127.0.0.1:64721][0m
+2024-06-27 08:06:59,476 [mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.02, 127.0.0.1:64722][0m
+2024-06-27 08:06:59,490 [mHTTP GET /static/admin/js/theme.js 200 [0.05, 127.0.0.1:64728][0m
+2024-06-27 08:06:59,494 [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.05, 127.0.0.1:64727][0m
+2024-06-27 08:07:02,519 [mHTTP GET /admin/app/watchlist/ 200 [0.31, 127.0.0.1:64727][0m
+2024-06-27 08:07:02,565 [mHTTP GET /static/admin/css/changelists.css 200 [0.01, 127.0.0.1:64727][0m
+2024-06-27 08:07:02,595 [mHTTP GET /static/admin/js/jquery.init.js 200 [0.03, 127.0.0.1:64721][0m
+2024-06-27 08:07:02,613 [mHTTP GET /static/admin/js/actions.js 200 [0.03, 127.0.0.1:64727][0m
+2024-06-27 08:07:02,616 [mHTTP GET /static/admin/js/core.js 200 [0.05, 127.0.0.1:64726][0m
+2024-06-27 08:07:02,620 [mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:64728][0m
+2024-06-27 08:07:02,622 [mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.05, 127.0.0.1:64729][0m
+2024-06-27 08:07:02,630 [mHTTP GET /static/admin/js/urlify.js 200 [0.03, 127.0.0.1:64721][0m
+2024-06-27 08:07:02,646 [mHTTP GET /static/admin/js/prepopulate.js 200 [0.03, 127.0.0.1:64727][0m
+2024-06-27 08:07:02,681 [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.12, 127.0.0.1:64722][0m
+2024-06-27 08:07:02,745 [mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.12, 127.0.0.1:64726][0m
+2024-06-27 08:07:02,846 [mHTTP GET /static/admin/js/filters.js 200 [0.01, 127.0.0.1:64726][0m
+2024-06-27 08:07:02,872 [mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:64726][0m
+2024-06-27 08:07:07,075 [mHTTP GET /admin/app/watchlist/62/change/ 200 [0.19, 127.0.0.1:64726][0m
+2024-06-27 08:07:07,118 [mHTTP GET /static/admin/css/forms.css 200 [0.01, 127.0.0.1:64726][0m
+2024-06-27 08:07:07,130 [mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.02, 127.0.0.1:64727][0m
+2024-06-27 08:07:07,133 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64722][0m
+2024-06-27 08:07:07,134 [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.02, 127.0.0.1:64721][0m
+2024-06-27 08:07:07,342 [mHTTP GET /static/admin/css/widgets.css 200 [0.00, 127.0.0.1:64721][0m
+2024-06-27 08:07:07,359 [mHTTP GET /static/admin/js/change_form.js 200 [0.01, 127.0.0.1:64722][0m
+2024-06-27 08:07:10,599 [32mHTTP POST /admin/app/watchlist/62/change/ 302 [0.09, 127.0.0.1:64731][0m
+2024-06-27 08:07:10,695 [mHTTP GET /admin/app/watchlist/ 200 [0.09, 127.0.0.1:64731][0m
+2024-06-27 08:07:10,741 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:07:10,870 [mHTTP GET /static/admin/img/icon-yes.svg 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:07:21,697 [mHTTP GET /admin/app/customuser/ 200 [0.06, 127.0.0.1:64731][0m
+2024-06-27 08:07:21,739 [mHTTP GET /static/admin/img/search.svg 200 [0.01, 127.0.0.1:64732][0m
+2024-06-27 08:07:21,741 [mHTTP GET /static/admin/img/icon-no.svg 200 [0.01, 127.0.0.1:64735][0m
+2024-06-27 08:07:21,744 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64731][0m
+2024-06-27 08:07:21,981 [mHTTP GET /static/admin/img/sorting-icons.svg 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:07:26,088 [mHTTP GET /admin/app/customuser/add/ 200 [0.11, 127.0.0.1:64731][0m
+2024-06-27 08:07:26,139 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:07:57,344 [32mHTTP POST /admin/app/customuser/add/ 302 [1.02, 127.0.0.1:64731][0m
+2024-06-27 08:07:57,433 [mHTTP GET /admin/app/customuser/7/change/ 200 [0.08, 127.0.0.1:64731][0m
+2024-06-27 08:07:57,480 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:08:05,892 [mHTTP POST /admin/app/customuser/7/change/ 200 [0.09, 127.0.0.1:64731][0m
+2024-06-27 08:08:05,937 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:08:14,171 [mHTTP POST /admin/app/customuser/7/change/ 200 [0.07, 127.0.0.1:64731][0m
+2024-06-27 08:08:14,217 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:08:28,295 [32mHTTP POST /admin/app/customuser/7/change/ 302 [0.02, 127.0.0.1:64731][0m
+2024-06-27 08:08:28,367 [mHTTP GET /admin/app/customuser/ 200 [0.06, 127.0.0.1:64731][0m
+2024-06-27 08:08:28,407 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:08:35,942 [mHTTP GET /admin/app/watchlist/ 200 [0.09, 127.0.0.1:64731][0m
+2024-06-27 08:08:35,989 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:08:40,014 [mHTTP GET /admin/app/watchlist/77/change/ 200 [0.07, 127.0.0.1:64731][0m
+2024-06-27 08:08:40,064 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
+2024-06-27 08:08:42,610 [mHTTP GET /admin/app/watchlist/ 200 [0.10, 127.0.0.1:64731][0m
