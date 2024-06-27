@@ -267,7 +267,7 @@ def watchlist(request):
     watch_list = Watchlist.objects.filter(user=request.user)
     watchlist_list = []
     watchlist_symbollist = []
-    all_tags = tags.objects.all()
+    all_tags = tags.objects.filter(user=request.user)
     for i in watch_list:
         watchlist_symbollist.append(i.instrument_key)
         if i.tag not in watchlist_list:
@@ -307,6 +307,7 @@ def orders(request):
     settings = charges.objects.first()
     tax = settings.tax
     charge = settings.intraday_buy_charge
+    all_tags = tags.objects.filter(user=request.user)
 
     # ---------------CONTEXT-----------
     context = {
@@ -316,6 +317,7 @@ def orders(request):
         "initiated":initiated,
         "failed":failed,
         "wallet":wallet,
+        "all_tags":all_tags,
         "tax":tax,
         "charges":charge,
     }
@@ -352,9 +354,11 @@ def portfolio(request):
         option_chain[x.symbol] = x.quantity
     # ---------------CONTEXT-----------
     print(portfolio_symbollist)
+    all_tags = tags.objects.filter(user=request.user)
     print(positions)
     print(holdings)
     context = {
+        "all_tags":all_tags,
         "positions":positions,
         "holdings":holdings,
         "ppnl":round(ppnl,2),
