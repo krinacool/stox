@@ -153,6 +153,7 @@ class Watchlist(models.Model):
     symbol = models.CharField(max_length=150, default="")
     segment = models.CharField(max_length=150, default="")
     instrument_key = models.CharField(max_length=150, default="")
+    lot_size = models.PositiveIntegerField(default=1)
     tag = models.CharField(max_length=20, default="Favourites")
     is_default = models.BooleanField(default=False)
     
@@ -178,6 +179,7 @@ class Watchlist(models.Model):
                     symbols_entry.save()
     
                 # Now save the Watchlist entry
+                self.lot_size = Instrument.objects.get(instrument_key=self.instrument_key).lot_size
                 super().save(*args, **kwargs)
 
     def __str__(self):
@@ -221,6 +223,7 @@ class Position(models.Model):
     last_traded_quantity = models.IntegerField(default=0)
     symbol = models.CharField(max_length=150, default="")
     instrument_key = models.CharField(max_length=150, default="")
+    lot_size = models.PositiveIntegerField(default=1)
     segment=models.CharField(max_length=150,default="")
     token = models.PositiveIntegerField(default=0)
     product = models.CharField(choices=producttype,max_length=15,default = "Intraday")
@@ -241,6 +244,7 @@ class Position(models.Model):
         self.symbol = og.tradingsymbol
         self.token = og.exchange_token
         self.segment = og.exchange
+        self.lot_size = Instrument.objects.get(instrument_key=self.instrument_key).lot_size
         # TOKEN SAVED
         if self.last_traded_quantity < 0:
             self.last_traded_quantity = self.last_traded_quantity * -1

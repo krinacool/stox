@@ -274,3 +274,417 @@ django.db.utils.OperationalError: no such column: app_watchlist.is_default
 2024-06-27 08:08:40,014 [mHTTP GET /admin/app/watchlist/77/change/ 200 [0.07, 127.0.0.1:64731][0m
 2024-06-27 08:08:40,064 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64731][0m
 2024-06-27 08:08:42,610 [mHTTP GET /admin/app/watchlist/ 200 [0.10, 127.0.0.1:64731][0m
+2024-06-27 10:18:08,513 Watching for file changes with StatReloader
+2024-06-27 10:18:17,142 [mHTTP GET / 200 [0.06, 127.0.0.1:49740][0m
+2024-06-27 10:18:17,295 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.13, 127.0.0.1:49740][0m
+2024-06-27 10:18:17,299 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.13, 127.0.0.1:49741][0m
+2024-06-27 10:18:17,310 [mHTTP GET /static/landingasset/css/style.css 200 [0.13, 127.0.0.1:49747][0m
+2024-06-27 10:18:17,318 [mHTTP GET /static/landingasset/css/animate.css 200 [0.15, 127.0.0.1:49745][0m
+2024-06-27 10:18:17,319 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.14, 127.0.0.1:49746][0m
+2024-06-27 10:18:17,320 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.15, 127.0.0.1:49744][0m
+2024-06-27 10:18:17,336 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.03, 127.0.0.1:49741][0m
+2024-06-27 10:18:17,341 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.02, 127.0.0.1:49747][0m
+2024-06-27 10:18:17,355 [mHTTP GET /static/landingasset/img/process-icons/2.png 200 [0.03, 127.0.0.1:49744][0m
+2024-06-27 10:18:17,358 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.03, 127.0.0.1:49746][0m
+2024-06-27 10:18:17,360 [mHTTP GET /static/landingasset/img/process-icons/3.png 200 [0.03, 127.0.0.1:49745][0m
+2024-06-27 10:18:17,400 [mHTTP GET /static/landingasset/js/main.js 200 [0.04, 127.0.0.1:49747][0m
+2024-06-27 10:18:17,403 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.02, 127.0.0.1:49745][0m
+2024-06-27 10:18:17,406 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.02, 127.0.0.1:49746][0m
+2024-06-27 10:18:17,408 [mHTTP GET /static/landingasset/js/owl.carousel.min.js 200 [0.06, 127.0.0.1:49741][0m
+2024-06-27 10:18:17,410 [mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 200 [0.10, 127.0.0.1:49740][0m
+2024-06-27 10:18:17,481 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.02, 127.0.0.1:49740][0m
+2024-06-27 10:18:17,488 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.02, 127.0.0.1:49741][0m
+2024-06-27 10:18:17,490 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.03, 127.0.0.1:49746][0m
+2024-06-27 10:18:17,677 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.11, 127.0.0.1:49741][0m
+2024-06-27 10:18:27,302 [mHTTP GET / 200 [0.00, 127.0.0.1:49752][0m
+2024-06-27 10:18:27,428 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.02, 127.0.0.1:49752][0m
+2024-06-27 10:18:27,430 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.02, 127.0.0.1:49753][0m
+2024-06-27 10:18:27,434 [mHTTP GET /static/landingasset/css/animate.css 200 [0.02, 127.0.0.1:49755][0m
+2024-06-27 10:18:27,435 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.02, 127.0.0.1:49754][0m
+2024-06-27 10:18:27,437 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.02, 127.0.0.1:49756][0m
+2024-06-27 10:18:27,441 [mHTTP GET /static/landingasset/css/style.css 200 [0.02, 127.0.0.1:49757][0m
+2024-06-27 10:18:27,447 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.01, 127.0.0.1:49752][0m
+2024-06-27 10:18:27,448 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.01, 127.0.0.1:49753][0m
+2024-06-27 10:18:27,657 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.01, 127.0.0.1:49753][0m
+2024-06-27 10:18:27,665 [mHTTP GET /static/landingasset/img/process-icons/2.png 200 [0.02, 127.0.0.1:49752][0m
+2024-06-27 10:18:27,666 [mHTTP GET /static/landingasset/img/process-icons/3.png 200 [0.02, 127.0.0.1:49757][0m
+2024-06-27 10:18:27,667 [mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 200 [0.02, 127.0.0.1:49756][0m
+2024-06-27 10:18:27,668 [mHTTP GET /static/landingasset/js/owl.carousel.min.js 200 [0.01, 127.0.0.1:49755][0m
+2024-06-27 10:18:27,668 [mHTTP GET /static/landingasset/js/main.js 200 [0.01, 127.0.0.1:49754][0m
+2024-06-27 10:18:27,814 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.00, 127.0.0.1:49756][0m
+2024-06-27 10:18:27,815 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.00, 127.0.0.1:49755][0m
+2024-06-27 10:18:27,886 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.01, 127.0.0.1:49755][0m
+2024-06-27 10:18:27,891 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.01, 127.0.0.1:49756][0m
+2024-06-27 10:18:27,896 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.01, 127.0.0.1:49754][0m
+2024-06-27 10:18:27,949 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.04, 127.0.0.1:49754][0m
+2024-06-27 10:18:28,188 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.01, 127.0.0.1:49754][0m
+2024-06-27 10:18:30,733 [mHTTP GET /login/ 200 [0.02, 127.0.0.1:49754][0m
+2024-06-27 10:18:42,911 [32mHTTP POST /login/ 302 [0.51, 127.0.0.1:49761][0m
+2024-06-27 10:18:42,929 [32mHTTP GET /market 302 [0.01, 127.0.0.1:49761][0m
+2024-06-27 10:18:42,990 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:49761][0m
+2024-06-27 10:18:43,437 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49764]
+2024-06-27 10:18:43,449 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49764]
+2024-06-27 10:20:32,025 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:49793][0m
+2024-06-27 10:20:32,037 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49764]
+2024-06-27 10:20:32,642 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49799]
+2024-06-27 10:20:32,653 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49799]
+2024-06-27 10:21:24,077 [32mHTTP POST /place_order 302 [0.17, 127.0.0.1:49806][0m
+2024-06-27 10:21:24,203 [mHTTP GET /orders 200 [0.12, 127.0.0.1:49806][0m
+2024-06-27 10:21:24,661 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49799]
+2024-06-27 10:21:28,022 [mHTTP GET /portfolio 200 [0.10, 127.0.0.1:49806][0m
+2024-06-27 10:21:28,405 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49812]
+2024-06-27 10:21:28,411 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49812]
+2024-06-27 10:21:43,568 [32mHTTP POST /place_order 302 [0.18, 127.0.0.1:49816][0m
+2024-06-27 10:21:43,626 [mHTTP GET /orders 200 [0.05, 127.0.0.1:49816][0m
+2024-06-27 10:21:43,940 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49812]
+2024-06-27 10:21:47,000 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:49816][0m
+2024-06-27 10:21:47,266 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49819]
+2024-06-27 10:21:47,272 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49819]
+2024-06-27 10:22:23,901 [mHTTP GET /admin/ 200 [0.17, 127.0.0.1:49831][0m
+2024-06-27 10:22:24,692 Not Found: /favicon.ico
+2024-06-27 10:22:24,694 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:49831][0m
+2024-06-27 10:22:29,955 [mHTTP GET /admin/app/customuser/ 200 [0.26, 127.0.0.1:49831][0m
+2024-06-27 10:22:30,002 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:49831][0m
+2024-06-27 10:24:31,988 [32mHTTP POST /place_order 302 [0.09, 127.0.0.1:49883][0m
+2024-06-27 10:24:32,055 [mHTTP GET /orders 200 [0.06, 127.0.0.1:49883][0m
+2024-06-27 10:24:32,495 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49819]
+2024-06-27 10:24:35,899 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:49883][0m
+2024-06-27 10:24:42,536 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:49889][0m
+2024-06-27 10:24:43,817 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49890]
+2024-06-27 10:24:43,825 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49890]
+2024-06-27 10:24:50,419 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:49891][0m
+2024-06-27 10:24:51,037 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49895]
+2024-06-27 10:24:51,042 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49895]
+2024-06-27 10:24:51,070 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49890]
+2024-06-27 10:25:32,396 [32mHTTP POST /place_order 302 [0.19, 127.0.0.1:49902][0m
+2024-06-27 10:25:32,455 [mHTTP GET /orders 200 [0.05, 127.0.0.1:49902][0m
+2024-06-27 10:25:32,911 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49895]
+2024-06-27 10:25:36,151 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:49902][0m
+2024-06-27 10:25:36,522 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49908]
+2024-06-27 10:25:36,531 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49908]
+2024-06-27 10:26:42,582 [mHTTP GET /portfolio 200 [0.15, 127.0.0.1:49918][0m
+2024-06-27 10:26:42,597 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49908]
+2024-06-27 10:26:43,137 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49921]
+2024-06-27 10:26:43,148 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49921]
+2024-06-27 10:26:59,383 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:49927][0m
+2024-06-27 10:26:59,394 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49921]
+2024-06-27 10:27:00,016 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49930]
+2024-06-27 10:27:00,028 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49930]
+2024-06-27 10:27:17,707 [mHTTP GET /portfolio 200 [0.10, 127.0.0.1:49934][0m
+2024-06-27 10:27:17,716 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49930]
+2024-06-27 10:27:18,307 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49937]
+2024-06-27 10:27:18,318 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49937]
+2024-06-27 10:28:32,808 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:49947][0m
+2024-06-27 10:28:32,816 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49937]
+2024-06-27 10:28:33,579 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49950]
+2024-06-27 10:28:33,590 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49950]
+2024-06-27 10:29:13,110 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:49959][0m
+2024-06-27 10:29:13,117 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49950]
+2024-06-27 10:29:13,719 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49962]
+2024-06-27 10:29:13,730 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49962]
+2024-06-27 10:29:28,617 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49968][0m
+2024-06-27 10:29:28,619 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49969][0m
+2024-06-27 10:30:18,605 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:50006][0m
+2024-06-27 10:30:18,612 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49962]
+2024-06-27 10:30:20,152 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50010]
+2024-06-27 10:30:20,159 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50010]
+2024-06-27 10:30:20,423 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50006][0m
+2024-06-27 10:30:20,535 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:50006][0m
+2024-06-27 10:33:00,067 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:50095][0m
+2024-06-27 10:33:00,079 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50010]
+2024-06-27 10:33:01,615 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50099]
+2024-06-27 10:33:01,629 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50099]
+2024-06-27 10:33:01,877 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50095][0m
+2024-06-27 10:33:01,941 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50095][0m
+2024-06-27 10:34:08,738 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:50138][0m
+2024-06-27 10:34:08,746 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50099]
+2024-06-27 10:34:10,263 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50141]
+2024-06-27 10:34:10,274 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50141]
+2024-06-27 10:34:10,441 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50138][0m
+2024-06-27 10:34:10,486 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50138][0m
+2024-06-27 10:35:17,186 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:50178][0m
+2024-06-27 10:35:17,193 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50141]
+2024-06-27 10:35:18,730 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50181]
+2024-06-27 10:35:18,740 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50181]
+2024-06-27 10:35:18,924 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50182][0m
+2024-06-27 10:35:18,996 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50182][0m
+2024-06-27 11:05:04,980 D:\stox\app\models.py changed, reloading.
+2024-06-27 11:05:10,010 Watching for file changes with StatReloader
+2024-06-27 11:05:11,934 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:56770][0m
+2024-06-27 11:05:12,936 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:56774]
+2024-06-27 11:05:12,943 WebSocket CONNECT /ws/stocks/ [127.0.0.1:56774]
+2024-06-27 11:05:13,050 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:56770][0m
+2024-06-27 11:05:13,074 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:56770][0m
+2024-06-27 11:07:13,945 D:\stox\app\models.py changed, reloading.
+2024-06-27 11:07:15,618 Watching for file changes with StatReloader
+2024-06-27 11:07:20,186 Internal Server Error: /portfolio
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_position.lot_size
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 329, in portfolio
+    for x in holdings:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_position.lot_size
+2024-06-27 11:07:20,194 [35;1mHTTP GET /portfolio 500 [0.34, 127.0.0.1:56849][0m
+2024-06-27 11:07:41,947 Watching for file changes with StatReloader
+2024-06-27 11:12:59,273 [mHTTP GET /admin/app/customuser/ 200 [0.24, 127.0.0.1:57348][0m
+2024-06-27 11:12:59,349 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:57348][0m
+2024-06-27 11:13:00,313 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:57348][0m
+2024-06-27 11:13:01,261 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57358]
+2024-06-27 11:13:01,271 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57358]
+2024-06-27 11:13:01,406 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:57359][0m
+2024-06-27 11:13:01,409 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:57360][0m
+2024-06-27 11:13:03,888 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:57360][0m
+2024-06-27 11:13:04,580 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57358]
+2024-06-27 11:13:04,628 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57365]
+2024-06-27 11:13:04,638 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57365]
+2024-06-27 11:13:04,778 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57360][0m
+2024-06-27 11:13:04,795 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57360][0m
+2024-06-27 11:15:32,416 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:57453][0m
+2024-06-27 11:15:32,424 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57365]
+2024-06-27 11:15:33,256 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57458]
+2024-06-27 11:15:33,264 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57458]
+2024-06-27 11:15:33,448 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57453][0m
+2024-06-27 11:15:33,466 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57453][0m
+2024-06-27 11:15:35,516 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:57453][0m
+2024-06-27 11:15:35,524 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57458]
+2024-06-27 11:15:36,184 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57460]
+2024-06-27 11:15:36,192 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57460]
+2024-06-27 11:15:36,322 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57461][0m
+2024-06-27 11:15:36,322 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57462][0m
+2024-06-27 11:16:06,270 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:57486][0m
+2024-06-27 11:16:06,280 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57460]
+2024-06-27 11:16:07,250 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57491]
+2024-06-27 11:16:07,259 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57491]
+2024-06-27 11:16:07,459 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57486][0m
+2024-06-27 11:16:07,472 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57486][0m
+2024-06-27 11:16:41,685 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:57486][0m
+2024-06-27 11:16:41,694 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57491]
+2024-06-27 11:16:42,520 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57514]
+2024-06-27 11:16:42,528 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57514]
+2024-06-27 11:16:42,739 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57486][0m
+2024-06-27 11:16:42,755 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57486][0m
+2024-06-27 11:16:55,569 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:57486][0m
+2024-06-27 11:16:55,577 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57514]
+2024-06-27 11:16:56,409 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57521]
+2024-06-27 11:16:56,417 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57521]
+2024-06-27 11:16:56,592 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57486][0m
+2024-06-27 11:16:56,607 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57486][0m
+2024-06-27 11:17:11,306 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:57486][0m
+2024-06-27 11:17:11,315 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57521]
+2024-06-27 11:17:12,072 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57531]
+2024-06-27 11:17:12,080 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57531]
+2024-06-27 11:17:12,198 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57486][0m
+2024-06-27 11:17:12,202 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57528][0m
+2024-06-27 11:17:20,888 Internal Server Error: /place_order
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 464, in place_order
+    quantity = int(request.POST.get("quantity"))
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2024-06-27 11:17:20,892 [35;1mHTTP POST /place_order 500 [0.05, 127.0.0.1:57528][0m
+2024-06-27 11:17:21,644 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57531]
+2024-06-27 11:17:27,626 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57540]
+2024-06-27 11:17:27,634 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57540]
+2024-06-27 11:17:27,747 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57528][0m
+2024-06-27 11:17:27,770 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57528][0m
+2024-06-27 11:17:57,996 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:57528][0m
+2024-06-27 11:17:58,006 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57540]
+2024-06-27 11:17:58,896 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57557]
+2024-06-27 11:17:58,903 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57557]
+2024-06-27 11:17:59,036 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57528][0m
+2024-06-27 11:17:59,051 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57528][0m
+2024-06-27 11:18:24,862 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:57528][0m
+2024-06-27 11:18:24,870 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57557]
+2024-06-27 11:18:25,689 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57575]
+2024-06-27 11:18:25,697 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57575]
+2024-06-27 11:18:25,847 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:57528][0m
+2024-06-27 11:18:25,851 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:57572][0m
+2024-06-27 11:20:43,152 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:57656][0m
+2024-06-27 11:20:43,162 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57575]
+2024-06-27 11:20:44,035 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57659]
+2024-06-27 11:20:44,044 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57659]
+2024-06-27 11:20:44,230 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57656][0m
+2024-06-27 11:20:44,245 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57656][0m
+2024-06-27 11:21:11,174 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:57656][0m
+2024-06-27 11:21:11,182 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57659]
+2024-06-27 11:21:12,024 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57673]
+2024-06-27 11:21:12,031 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57673]
+2024-06-27 11:21:12,239 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57656][0m
+2024-06-27 11:21:12,241 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:22:10,751 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:57657][0m
+2024-06-27 11:22:10,759 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57673]
+2024-06-27 11:22:11,625 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57706]
+2024-06-27 11:22:11,634 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57706]
+2024-06-27 11:22:11,836 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:22:11,850 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:22:25,128 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:57657][0m
+2024-06-27 11:22:25,137 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57706]
+2024-06-27 11:22:25,814 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57714]
+2024-06-27 11:22:25,821 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57714]
+2024-06-27 11:22:25,992 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57713][0m
+2024-06-27 11:22:25,992 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:22:37,848 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:57657][0m
+2024-06-27 11:22:37,857 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57714]
+2024-06-27 11:22:38,519 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57722]
+2024-06-27 11:22:38,528 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57722]
+2024-06-27 11:22:38,672 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:22:38,702 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:22:48,289 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:57657][0m
+2024-06-27 11:22:48,300 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57722]
+2024-06-27 11:22:48,926 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57727]
+2024-06-27 11:22:48,934 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57727]
+2024-06-27 11:22:49,081 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:22:49,106 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:23:10,929 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:57657][0m
+2024-06-27 11:23:10,939 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57727]
+2024-06-27 11:23:11,762 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57740]
+2024-06-27 11:23:11,769 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57740]
+2024-06-27 11:23:11,962 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:23:11,979 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57657][0m
+2024-06-27 11:29:30,536 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:57955][0m
+2024-06-27 11:29:30,545 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57740]
+2024-06-27 11:29:31,394 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57959]
+2024-06-27 11:29:31,403 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57959]
+2024-06-27 11:29:31,564 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:57955][0m
+2024-06-27 11:29:31,599 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57955][0m
+2024-06-27 11:31:32,259 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:58018][0m
+2024-06-27 11:31:32,266 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57959]
+2024-06-27 11:31:33,148 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58022]
+2024-06-27 11:31:33,156 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58022]
+2024-06-27 11:31:33,444 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58018][0m
+2024-06-27 11:31:33,461 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58018][0m
+2024-06-27 11:37:01,137 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:58185][0m
+2024-06-27 11:37:01,147 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58022]
+2024-06-27 11:37:02,023 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58190]
+2024-06-27 11:37:02,030 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58190]
+2024-06-27 11:37:02,267 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:58185][0m
+2024-06-27 11:37:02,273 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:58186][0m
+2024-06-27 11:37:20,808 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:58186][0m
+2024-06-27 11:37:20,815 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58190]
+2024-06-27 11:37:21,665 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58201]
+2024-06-27 11:37:21,673 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58201]
+2024-06-27 11:37:21,889 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58186][0m
+2024-06-27 11:37:21,904 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58186][0m
+2024-06-27 11:38:47,766 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:58244][0m
+2024-06-27 11:38:47,773 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58201]
+2024-06-27 11:38:48,804 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58248]
+2024-06-27 11:38:48,811 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58248]
+2024-06-27 11:38:48,978 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58244][0m
+2024-06-27 11:38:48,991 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58244][0m
+2024-06-27 11:39:01,995 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:58244][0m
+2024-06-27 11:39:02,004 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58248]
+2024-06-27 11:39:02,754 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58263]
+2024-06-27 11:39:02,761 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58263]
+2024-06-27 11:39:02,918 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:58244][0m
+2024-06-27 11:39:02,941 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:58245][0m
+2024-06-27 11:40:01,300 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:58245][0m
+2024-06-27 11:40:01,309 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58263]
+2024-06-27 11:40:02,175 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58293]
+2024-06-27 11:40:02,182 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58293]
+2024-06-27 11:40:02,424 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58245][0m
+2024-06-27 11:40:02,441 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58245][0m
+2024-06-27 11:40:40,333 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:58245][0m
+2024-06-27 11:40:40,341 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58293]
+2024-06-27 11:40:41,238 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58311]
+2024-06-27 11:40:41,244 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58311]
+2024-06-27 11:40:41,435 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58245][0m
+2024-06-27 11:40:41,451 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58245][0m
+2024-06-27 11:41:03,021 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:58245][0m
+2024-06-27 11:41:03,030 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58311]
+2024-06-27 11:41:03,869 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58323]
+2024-06-27 11:41:03,875 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58323]
+2024-06-27 11:41:04,085 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58245][0m
+2024-06-27 11:41:04,107 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58245][0m
+2024-06-27 11:41:13,772 [mHTTP GET /search/?q=ad 200 [0.12, 127.0.0.1:58245][0m
+2024-06-27 11:41:13,968 [mHTTP GET /search/?q=ada 200 [0.08, 127.0.0.1:58245][0m
+2024-06-27 11:41:21,841 [mHTTP GET /search/?q=adan 200 [0.10, 127.0.0.1:58245][0m
+2024-06-27 11:41:22,013 [mHTTP GET /search/?q=adani 200 [0.07, 127.0.0.1:58245][0m
+2024-06-27 11:41:38,607 [32mHTTP POST /add_watchlist 302 [0.21, 127.0.0.1:58245][0m
+2024-06-27 11:41:38,626 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:58245][0m
+2024-06-27 11:41:38,634 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58323]
+2024-06-27 11:41:39,472 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58340]
+2024-06-27 11:41:39,479 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58340]
+2024-06-27 11:41:39,685 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58245][0m
+2024-06-27 11:41:39,686 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58310][0m
+2024-06-27 11:48:29,294 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:58533][0m
+2024-06-27 11:48:29,301 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58340]
+2024-06-27 11:48:30,028 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58539]
+2024-06-27 11:48:30,036 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58539]
+2024-06-27 11:48:30,307 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:58533][0m
+2024-06-27 11:48:30,318 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58534][0m
+2024-06-27 11:48:42,615 [32mHTTP POST /place_order 302 [0.12, 127.0.0.1:58534][0m
+2024-06-27 11:48:42,701 [mHTTP GET /orders 200 [0.08, 127.0.0.1:58534][0m
+2024-06-27 11:48:43,533 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58539]
+2024-06-27 11:48:43,677 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58533][0m
+2024-06-27 11:48:43,682 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:58534][0m
+2024-06-27 11:48:46,809 [mHTTP GET /portfolio 200 [0.23, 127.0.0.1:58534][0m
+2024-06-27 11:48:47,524 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58549]
+2024-06-27 11:48:47,531 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58549]
+2024-06-27 11:48:47,655 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58533][0m
+2024-06-27 11:48:47,656 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58534][0m
+2024-06-27 11:48:55,244 [32mHTTP POST /place_order 302 [0.07, 127.0.0.1:58534][0m
+2024-06-27 11:48:55,279 [mHTTP GET /orders 200 [0.03, 127.0.0.1:58534][0m
+2024-06-27 11:48:56,062 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58549]
+2024-06-27 11:48:56,156 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58533][0m
+2024-06-27 11:48:56,157 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58534][0m
+2024-06-27 11:48:59,080 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:58534][0m
+2024-06-27 11:48:59,804 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58556]
+2024-06-27 11:48:59,810 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58556]
+2024-06-27 11:48:59,926 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58534][0m
+2024-06-27 11:48:59,927 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58533][0m
