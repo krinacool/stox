@@ -688,3 +688,261 @@ TypeError: int() argument must be a string, a bytes-like object or a real number
 2024-06-27 11:48:59,810 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58556]
 2024-06-27 11:48:59,926 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58534][0m
 2024-06-27 11:48:59,927 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58533][0m
+2024-06-28 18:57:09,675 Watching for file changes with StatReloader
+2024-06-28 18:57:14,538 [mHTTP GET / 200 [0.08, 127.0.0.1:64558][0m
+2024-06-28 18:57:14,696 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.10, 127.0.0.1:64558][0m
+2024-06-28 18:57:14,700 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.10, 127.0.0.1:64559][0m
+2024-06-28 18:57:14,711 [mHTTP GET /static/landingasset/css/animate.css 200 [0.11, 127.0.0.1:64562][0m
+2024-06-28 18:57:14,712 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.11, 127.0.0.1:64561][0m
+2024-06-28 18:57:14,715 [mHTTP GET /static/landingasset/css/style.css 200 [0.11, 127.0.0.1:64564][0m
+2024-06-28 18:57:14,716 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.11, 127.0.0.1:64563][0m
+2024-06-28 18:57:14,720 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.02, 127.0.0.1:64559][0m
+2024-06-28 18:57:14,722 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.02, 127.0.0.1:64558][0m
+2024-06-28 18:57:14,891 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.02, 127.0.0.1:64558][0m
+2024-06-28 18:57:14,896 [mHTTP GET /static/landingasset/img/process-icons/2.png 200 [0.02, 127.0.0.1:64559][0m
+2024-06-28 18:57:14,897 [mHTTP GET /static/landingasset/img/process-icons/3.png 200 [0.02, 127.0.0.1:64563][0m
+2024-06-28 18:57:14,920 [mHTTP GET /static/landingasset/js/main.js 200 [0.04, 127.0.0.1:64561][0m
+2024-06-28 18:57:14,944 [mHTTP GET /static/landingasset/js/owl.carousel.min.js 200 [0.07, 127.0.0.1:64562][0m
+2024-06-28 18:57:14,968 [mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 200 [0.09, 127.0.0.1:64564][0m
+2024-06-28 18:57:15,077 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.01, 127.0.0.1:64562][0m
+2024-06-28 18:57:15,078 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.01, 127.0.0.1:64564][0m
+2024-06-28 18:57:15,151 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.02, 127.0.0.1:64564][0m
+2024-06-28 18:57:15,154 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.02, 127.0.0.1:64562][0m
+2024-06-28 18:57:15,157 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.02, 127.0.0.1:64561][0m
+2024-06-28 18:57:15,325 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.16, 127.0.0.1:64561][0m
+2024-06-28 18:57:15,698 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.01, 127.0.0.1:64561][0m
+2024-06-28 18:57:18,523 [mHTTP GET /admin/ 200 [0.34, 127.0.0.1:64569][0m
+2024-06-28 18:57:19,499 Not Found: /favicon.ico
+2024-06-28 18:57:19,500 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:64569][0m
+2024-06-28 18:57:21,747 [mHTTP GET /admin/app/customuser/ 200 [0.24, 127.0.0.1:64569][0m
+2024-06-28 18:57:21,810 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64569][0m
+2024-06-28 18:57:23,673 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.23, 127.0.0.1:64569][0m
+2024-06-28 18:57:23,715 [mHTTP GET /static/admin/css/forms.css 200 [0.01, 127.0.0.1:64569][0m
+2024-06-28 18:57:23,728 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64571][0m
+2024-06-28 18:57:23,731 [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.02, 127.0.0.1:64570][0m
+2024-06-28 18:57:23,944 [mHTTP GET /static/admin/css/widgets.css 200 [0.00, 127.0.0.1:64570][0m
+2024-06-28 18:57:23,961 [mHTTP GET /static/admin/js/change_form.js 200 [0.02, 127.0.0.1:64571][0m
+2024-06-28 18:57:28,452 D:\stox\app\admin.py changed, reloading.
+2024-06-28 18:57:32,964 Watching for file changes with StatReloader
+2024-06-28 18:57:33,966 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.24, 127.0.0.1:64589][0m
+2024-06-28 18:57:34,029 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64589][0m
+2024-06-28 18:57:37,281 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.06, 127.0.0.1:64589][0m
+2024-06-28 18:57:37,314 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:64589][0m
+2024-06-28 18:57:53,081 D:\stox\app\admin.py changed, reloading.
+2024-06-28 18:57:55,395 Watching for file changes with StatReloader
+2024-06-28 18:57:56,157 Internal Server Error: /admin/app/customuser/1/change/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 809, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\models.py", line 642, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\models.py", line 321, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (username) specified for CustomUser
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1782, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 811, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (username) specified for CustomUser. Check fields/fieldsets/exclude attributes of class CustomUserAdmin.
+2024-06-28 18:57:56,165 [35;1mHTTP GET /admin/app/customuser/1/change/ 500 [0.24, 127.0.0.1:64605][0m
+2024-06-28 18:58:02,292 D:\stox\app\admin.py changed, reloading.
+2024-06-28 18:58:04,546 Watching for file changes with StatReloader
+2024-06-28 18:58:05,229 Internal Server Error: /admin/app/customuser/1/change/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 809, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\models.py", line 642, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\models.py", line 321, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (username) specified for CustomUser
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1782, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 811, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (username) specified for CustomUser. Check fields/fieldsets/exclude attributes of class CustomUserAdmin.
+2024-06-28 18:58:05,238 [35;1mHTTP GET /admin/app/customuser/1/change/ 500 [0.11, 127.0.0.1:64619][0m
+2024-06-28 18:59:17,559 D:\stox\app\admin.py changed, reloading.
+2024-06-28 18:59:21,680 Watching for file changes with StatReloader
+2024-06-28 18:59:25,771 Internal Server Error: /admin/app/customuser/1/change/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\forms.py", line 178, in __getitem__
+    field = self.fields[name]
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\helpers.py", line 156, in __iter__
+    yield AdminField(self.form, field, is_first=(i == 0))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\helpers.py", line 170, in __init__
+    self.field = form[field]  # A django.forms.BoundField instance
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\forms.py", line 180, in __getitem__
+    raise KeyError(
+KeyError: "Key 'username' not found in 'CustomUserForm'. Choices are: date_joined, email, first_name, groups, is_active, is_staff, is_superuser, last_login, last_name, password, user_permissions."
+2024-06-28 18:59:25,782 [35;1mHTTP GET /admin/app/customuser/1/change/ 500 [0.41, 127.0.0.1:64710][0m
+2024-06-28 19:00:30,372 D:\stox\app\admin.py changed, reloading.
+2024-06-28 19:00:33,471 Watching for file changes with StatReloader
+2024-06-28 19:02:48,027 D:\stox\app\admin.py changed, reloading.
+2024-06-28 19:02:52,553 Watching for file changes with StatReloader
+2024-06-28 19:02:53,928 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.20, 127.0.0.1:64788][0m
+2024-06-28 19:02:54,000 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:64788][0m
+2024-06-28 19:02:54,061 [mHTTP GET /static/admin/js/SelectFilter2.js 200 [0.08, 127.0.0.1:64790][0m
+2024-06-28 19:02:54,062 [mHTTP GET /static/admin/js/SelectBox.js 200 [0.08, 127.0.0.1:64789][0m
+2024-06-28 19:02:54,865 [mHTTP GET /static/admin/img/icon-unknown-alt.svg 200 [0.01, 127.0.0.1:64788][0m
+2024-06-28 19:02:54,869 [mHTTP GET /static/admin/img/icon-unknown.svg 200 [0.02, 127.0.0.1:64789][0m
+2024-06-28 19:02:54,871 [mHTTP GET /static/admin/img/selector-icons.svg 200 [0.02, 127.0.0.1:64790][0m

@@ -12,7 +12,7 @@ class CustomUserAdmin(UserAdmin):
         (None, {'fields': ('email', 'password')}),
         ('Personal Info', {'fields': ('first_name', 'last_name', 'phone_number')}),
         ('Payment Info', {'fields': ('wallet' ,'margin', 'margin_used', 'bank_account_name','bank_account_number' ,'ifsc_code','upi_id')}),
-        ('Permissions', {'fields': ('api_orders','is_staff', 'is_active','verification_code')}),
+        ('Permissions', {'fields': ('api_orders', 'is_staff', 'is_active', 'is_superuser', 'groups', 'user_permissions', 'verification_code')}),
     )
     add_fieldsets = (
         (None, {
