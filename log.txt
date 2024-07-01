@@ -946,3 +946,374 @@ KeyError: "Key 'username' not found in 'CustomUserForm'. Choices are: date_joine
 2024-06-28 19:02:54,865 [mHTTP GET /static/admin/img/icon-unknown-alt.svg 200 [0.01, 127.0.0.1:64788][0m
 2024-06-28 19:02:54,869 [mHTTP GET /static/admin/img/icon-unknown.svg 200 [0.02, 127.0.0.1:64789][0m
 2024-06-28 19:02:54,871 [mHTTP GET /static/admin/img/selector-icons.svg 200 [0.02, 127.0.0.1:64790][0m
+2024-07-01 02:59:40,645 Watching for file changes with StatReloader
+2024-07-01 03:01:17,480 [mHTTP GET / 200 [0.11, 127.0.0.1:59633][0m
+2024-07-01 03:01:17,684 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.14, 127.0.0.1:59633][0m
+2024-07-01 03:01:17,691 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.15, 127.0.0.1:59632][0m
+2024-07-01 03:01:17,694 [mHTTP GET /static/landingasset/css/style.css 200 [0.14, 127.0.0.1:59640][0m
+2024-07-01 03:01:17,696 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.15, 127.0.0.1:59637][0m
+2024-07-01 03:01:17,697 [mHTTP GET /static/landingasset/css/animate.css 200 [0.15, 127.0.0.1:59638][0m
+2024-07-01 03:01:17,706 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.15, 127.0.0.1:59639][0m
+2024-07-01 03:01:17,725 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.02, 127.0.0.1:59632][0m
+2024-07-01 03:01:17,727 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.03, 127.0.0.1:59633][0m
+2024-07-01 03:01:17,944 [mHTTP GET /static/landingasset/img/process-icons/2.png 200 [0.02, 127.0.0.1:59632][0m
+2024-07-01 03:01:17,945 [mHTTP GET /static/landingasset/img/process-icons/3.png 200 [0.02, 127.0.0.1:59639][0m
+2024-07-01 03:01:17,948 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.03, 127.0.0.1:59633][0m
+2024-07-01 03:01:17,959 [mHTTP GET /static/landingasset/js/main.js 200 [0.04, 127.0.0.1:59640][0m
+2024-07-01 03:01:17,977 [mHTTP GET /static/landingasset/js/owl.carousel.min.js 200 [0.05, 127.0.0.1:59637][0m
+2024-07-01 03:01:18,009 [mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 200 [0.09, 127.0.0.1:59638][0m
+2024-07-01 03:01:18,128 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.01, 127.0.0.1:59637][0m
+2024-07-01 03:01:18,128 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.02, 127.0.0.1:59638][0m
+2024-07-01 03:01:18,194 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.02, 127.0.0.1:59638][0m
+2024-07-01 03:01:18,199 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.02, 127.0.0.1:59640][0m
+2024-07-01 03:01:18,201 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.02, 127.0.0.1:59637][0m
+2024-07-01 03:01:18,366 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.16, 127.0.0.1:59640][0m
+2024-07-01 03:01:18,924 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.01, 127.0.0.1:59640][0m
+2024-07-01 03:01:21,400 [mHTTP GET /login/ 200 [0.05, 127.0.0.1:59646][0m
+2024-07-01 03:01:21,466 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.02, 127.0.0.1:59646][0m
+2024-07-01 03:01:21,468 [mHTTP GET /static/css/theme.min.css 200 [0.02, 127.0.0.1:59647][0m
+2024-07-01 03:01:21,504 [mHTTP GET /static/js/theme.min.js 200 [0.04, 127.0.0.1:59651][0m
+2024-07-01 03:01:21,523 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.js 200 [0.06, 127.0.0.1:59650][0m
+2024-07-01 03:01:21,537 [mHTTP GET /static/libs/feather-icons/dist/feather.min.js 200 [0.08, 127.0.0.1:59648][0m
+2024-07-01 03:01:21,542 [mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js 200 [0.08, 127.0.0.1:59649][0m
+2024-07-01 03:01:22,112 [mHTTP GET /static/images/brand/logo/logo-primary.svg 200 [0.01, 127.0.0.1:59649][0m
+2024-07-01 03:01:33,798 [32mHTTP POST /login/ 302 [0.96, 127.0.0.1:59660][0m
+2024-07-01 03:01:33,827 [32mHTTP GET /market 302 [0.02, 127.0.0.1:59660][0m
+2024-07-01 03:01:33,911 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:59660][0m
+2024-07-01 03:01:33,958 [mHTTP GET /static/css/tailwind.css 200 [0.01, 127.0.0.1:59660][0m
+2024-07-01 03:01:33,962 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.css 200 [0.01, 127.0.0.1:59661][0m
+2024-07-01 03:01:34,007 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.min.js 200 [0.05, 127.0.0.1:59664][0m
+2024-07-01 03:02:53,110 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:59686][0m
+2024-07-01 03:02:54,028 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:59689]
+2024-07-01 03:02:54,041 WebSocket CONNECT /ws/stocks/ [127.0.0.1:59689]
+2024-07-01 03:09:29,045 D:\stox\app\views.py changed, reloading.
+2024-07-01 03:09:33,762 Watching for file changes with StatReloader
+2024-07-01 03:09:34,683 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:61343][0m
+2024-07-01 03:09:35,475 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:61345]
+2024-07-01 03:09:35,482 WebSocket CONNECT /ws/stocks/ [127.0.0.1:61345]
+2024-07-01 03:24:44,561 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:61345]
+2024-07-01 12:04:13,953 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:56823][0m
+2024-07-01 12:04:19,842 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:56913]
+2024-07-01 12:04:19,856 WebSocket CONNECT /ws/stocks/ [127.0.0.1:56913]
+2024-07-01 12:20:44,712 [mHTTP GET /watchlist 200 [0.17, 127.0.0.1:57398][0m
+2024-07-01 12:20:44,728 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:56913]
+2024-07-01 12:20:45,369 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57402]
+2024-07-01 12:20:45,381 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57402]
+2024-07-01 12:21:11,076 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' * request.user.margin' from 'request.user.wallet * request.user.margin'
+2024-07-01 12:21:11,098 [35;1mHTTP GET /watchlist 500 [0.80, 127.0.0.1:57398][0m
+2024-07-01 12:21:11,111 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57402]
+2024-07-01 12:21:11,941 Not Found: /favicon.ico
+2024-07-01 12:21:11,942 [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:57398][0m
+2024-07-01 12:22:41,273 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'withratio'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'withratio', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2024-07-01 12:22:41,283 [35;1mHTTP GET /watchlist 500 [0.22, 127.0.0.1:57475][0m
+2024-07-01 12:22:58,323 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:57481][0m
+2024-07-01 12:22:58,905 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57483]
+2024-07-01 12:22:58,915 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57483]
+2024-07-01 12:23:05,815 [32mHTTP GET /admin 301 [0.03, 127.0.0.1:57484][0m
+2024-07-01 12:23:06,100 [mHTTP GET /admin/ 200 [0.28, 127.0.0.1:57484][0m
+2024-07-01 12:23:06,375 [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.09, 127.0.0.1:57486][0m
+2024-07-01 12:23:06,377 [mHTTP GET /static/admin/css/dark_mode.css 200 [0.09, 127.0.0.1:57485][0m
+2024-07-01 12:23:06,380 [mHTTP GET /static/admin/css/base.css 200 [0.10, 127.0.0.1:57484][0m
+2024-07-01 12:23:06,748 [mHTTP GET /static/admin/css/dashboard.css 200 [0.03, 127.0.0.1:57484][0m
+2024-07-01 12:23:06,753 [mHTTP GET /static/admin/css/responsive.css 200 [0.03, 127.0.0.1:57485][0m
+2024-07-01 12:23:06,762 [mHTTP GET /static/admin/js/theme.js 200 [0.04, 127.0.0.1:57486][0m
+2024-07-01 12:23:06,764 [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.04, 127.0.0.1:57487][0m
+2024-07-01 12:23:06,949 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.02, 127.0.0.1:57486][0m
+2024-07-01 12:23:06,952 [mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.02, 127.0.0.1:57485][0m
+2024-07-01 12:23:06,955 [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.03, 127.0.0.1:57487][0m
+2024-07-01 12:23:09,568 [mHTTP GET /admin/app/customuser/ 200 [0.28, 127.0.0.1:57485][0m
+2024-07-01 12:23:09,623 [mHTTP GET /static/admin/css/changelists.css 200 [0.02, 127.0.0.1:57485][0m
+2024-07-01 12:23:09,636 [mHTTP GET /static/admin/js/jquery.init.js 200 [0.02, 127.0.0.1:57484][0m
+2024-07-01 12:23:09,647 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:57487][0m
+2024-07-01 12:23:09,653 [mHTTP GET /static/admin/js/core.js 200 [0.04, 127.0.0.1:57489][0m
+2024-07-01 12:23:09,655 [mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.04, 127.0.0.1:57490][0m
+2024-07-01 12:23:09,660 [mHTTP GET /static/admin/js/actions.js 200 [0.03, 127.0.0.1:57485][0m
+2024-07-01 12:23:09,666 [mHTTP GET /static/admin/js/urlify.js 200 [0.03, 127.0.0.1:57484][0m
+2024-07-01 12:23:09,682 [mHTTP GET /static/admin/img/search.svg 200 [0.02, 127.0.0.1:57490][0m
+2024-07-01 12:23:09,684 [mHTTP GET /static/admin/js/prepopulate.js 200 [0.03, 127.0.0.1:57487][0m
+2024-07-01 12:23:09,685 [mHTTP GET /static/admin/img/icon-yes.svg 200 [0.02, 127.0.0.1:57485][0m
+2024-07-01 12:23:09,717 [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.11, 127.0.0.1:57486][0m
+2024-07-01 12:23:09,781 [mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.12, 127.0.0.1:57489][0m
+2024-07-01 12:23:09,899 [mHTTP GET /static/admin/img/icon-no.svg 200 [0.01, 127.0.0.1:57489][0m
+2024-07-01 12:23:09,929 [mHTTP GET /static/admin/js/filters.js 200 [0.02, 127.0.0.1:57489][0m
+2024-07-01 12:23:09,950 [mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.01, 127.0.0.1:57489][0m
+2024-07-01 12:23:09,953 [mHTTP GET /static/admin/img/sorting-icons.svg 200 [0.02, 127.0.0.1:57486][0m
+2024-07-01 12:25:14,587 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:57540][0m
+2024-07-01 12:25:14,632 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57483]
+2024-07-01 12:25:15,771 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57544]
+2024-07-01 12:25:15,780 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57544]
+2024-07-01 12:27:10,093 [mHTTP GET /watchlist 200 [0.19, 127.0.0.1:57603][0m
+2024-07-01 12:27:10,103 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57544]
+2024-07-01 12:27:10,681 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57607]
+2024-07-01 12:27:10,690 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57607]
+2024-07-01 12:27:30,906 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:57613][0m
+2024-07-01 12:27:30,916 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57607]
+2024-07-01 12:27:31,545 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57615]
+2024-07-01 12:27:31,551 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57615]
+2024-07-01 12:28:41,050 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:57631][0m
+2024-07-01 12:28:41,058 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57615]
+2024-07-01 12:28:41,687 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57633]
+2024-07-01 12:28:41,698 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57633]
+2024-07-01 12:31:12,555 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:57647][0m
+2024-07-01 12:31:12,564 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57633]
+2024-07-01 12:31:13,626 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57650]
+2024-07-01 12:31:13,633 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57650]
+2024-07-01 12:31:57,129 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:57647][0m
+2024-07-01 12:31:57,139 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57650]
+2024-07-01 12:31:57,777 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57657]
+2024-07-01 12:31:57,786 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57657]
+2024-07-01 12:32:54,107 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:57647][0m
+2024-07-01 12:32:54,118 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57657]
+2024-07-01 12:32:54,540 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57664]
+2024-07-01 12:32:54,549 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57664]
+2024-07-01 12:33:09,307 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:57647][0m
+2024-07-01 12:33:09,317 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57664]
+2024-07-01 12:33:09,622 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57667]
+2024-07-01 12:33:09,633 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57667]
+2024-07-01 12:39:29,043 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:57725][0m
+2024-07-01 12:39:29,053 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57667]
+2024-07-01 12:39:30,184 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57729]
+2024-07-01 12:39:30,195 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57729]
+2024-07-01 12:52:54,094 [mHTTP GET /watchlist 200 [0.13, 127.0.0.1:57763][0m
+2024-07-01 12:52:54,103 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57729]
+2024-07-01 12:53:13,839 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:57763][0m
+2024-07-01 12:53:13,840 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:57764][0m
+2024-07-01 12:55:23,746 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:57847][0m
+2024-07-01 12:55:25,352 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57850]
+2024-07-01 12:55:25,360 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57850]
+2024-07-01 12:55:25,613 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:57847][0m
+2024-07-01 12:55:25,627 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:57848][0m
+2024-07-01 12:56:57,062 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:57917][0m
+2024-07-01 12:56:57,079 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57850]
+2024-07-01 12:56:58,512 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57921]
+2024-07-01 12:56:58,518 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57921]
+2024-07-01 12:56:58,857 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:57917][0m
+2024-07-01 12:56:58,880 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:57918][0m
+2024-07-01 12:58:57,632 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:57988][0m
+2024-07-01 12:58:57,641 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57921]
+2024-07-01 12:58:59,143 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57992]
+2024-07-01 12:58:59,150 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57992]
+2024-07-01 12:58:59,453 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:57988][0m
+2024-07-01 12:58:59,475 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:57989][0m
+2024-07-01 12:59:49,514 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:58034][0m
+2024-07-01 12:59:49,524 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57992]
+2024-07-01 12:59:50,361 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58038]
+2024-07-01 12:59:50,374 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58038]
+2024-07-01 12:59:50,539 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58034][0m
+2024-07-01 12:59:50,553 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58035][0m
+2024-07-01 13:06:26,349 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:58297][0m
+2024-07-01 13:06:26,357 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58038]
+2024-07-01 13:06:27,259 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58301]
+2024-07-01 13:06:27,267 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58301]
+2024-07-01 13:06:27,404 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:58297][0m
+2024-07-01 13:06:27,412 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58298][0m
+2024-07-01 13:07:48,593 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:58347][0m
+2024-07-01 13:07:48,603 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58301]
+2024-07-01 13:07:49,472 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58350]
+2024-07-01 13:07:49,480 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58350]
+2024-07-01 13:07:49,656 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58347][0m
+2024-07-01 13:07:49,659 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:58348][0m
+2024-07-01 13:08:52,130 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:58387][0m
+2024-07-01 13:08:52,138 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58350]
+2024-07-01 13:08:53,043 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58392]
+2024-07-01 13:08:53,052 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58392]
+2024-07-01 13:08:53,194 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:58393][0m
+2024-07-01 13:08:53,206 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58394][0m
+2024-07-01 13:11:41,106 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:58436][0m
+2024-07-01 13:11:41,113 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58392]
+2024-07-01 13:11:41,884 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58440]
+2024-07-01 13:11:41,891 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58440]
+2024-07-01 13:14:28,373 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:58480][0m
+2024-07-01 13:14:28,381 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58440]
+2024-07-01 13:14:28,976 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58485]
+2024-07-01 13:14:28,983 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58485]
+2024-07-01 13:15:09,092 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:58500][0m
+2024-07-01 13:15:09,101 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58485]
+2024-07-01 13:15:09,472 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58503]
+2024-07-01 13:15:09,479 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58503]
+2024-07-01 13:15:37,483 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:58508][0m
+2024-07-01 13:15:37,816 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58503]
+2024-07-01 13:15:37,945 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58512]
+2024-07-01 13:15:37,950 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58512]
+2024-07-01 13:15:39,693 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:58508][0m
+2024-07-01 13:15:39,977 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58515]
+2024-07-01 13:15:39,984 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58512]
+2024-07-01 13:15:39,986 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58515]
+2024-07-01 13:15:43,377 [32mHTTP POST /place_order 302 [0.14, 127.0.0.1:58508][0m
+2024-07-01 13:15:43,469 [mHTTP GET /orders 200 [0.09, 127.0.0.1:58508][0m
+2024-07-01 13:15:43,877 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58515]
+2024-07-01 13:15:46,896 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:58516][0m
+2024-07-01 13:15:47,133 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58519]
+2024-07-01 13:15:47,139 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58519]
+2024-07-01 13:17:38,045 [mHTTP GET /portfolio 200 [0.12, 127.0.0.1:58536][0m
+2024-07-01 13:17:38,053 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58519]
+2024-07-01 13:17:38,418 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58540]
+2024-07-01 13:17:38,425 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58540]
+2024-07-01 13:17:54,865 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:58541][0m
+2024-07-01 13:17:55,137 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58540]
+2024-07-01 13:17:55,269 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58545]
+2024-07-01 13:17:55,278 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58545]
+2024-07-01 13:20:13,748 [mHTTP GET /admin/app/instrument/ 200 [0.57, 127.0.0.1:58576][0m
+2024-07-01 13:20:13,806 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58576][0m
+2024-07-01 13:20:25,472 [mHTTP GET /admin/app/instrument/?p=4 200 [0.13, 127.0.0.1:58579][0m
+2024-07-01 13:20:25,508 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58579][0m
+2024-07-01 13:20:37,965 [mHTTP GET /admin/app/instrument/?p=948 200 [0.12, 127.0.0.1:58582][0m
+2024-07-01 13:20:38,001 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58582][0m
+2024-07-01 13:20:43,039 [mHTTP GET /admin/app/instrument/?p=945 200 [0.14, 127.0.0.1:58582][0m
+2024-07-01 13:20:43,077 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58582][0m
+2024-07-01 13:20:47,695 [mHTTP GET /admin/app/instrument/?p=2 200 [0.13, 127.0.0.1:58587][0m
+2024-07-01 13:20:47,735 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58587][0m
+2024-07-01 13:20:51,731 [mHTTP GET /admin/app/instrument/?p=5 200 [0.14, 127.0.0.1:58587][0m
+2024-07-01 13:20:51,769 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58587][0m
+2024-07-01 13:20:56,263 [mHTTP GET /admin/app/instrument/?p=8 200 [0.13, 127.0.0.1:58589][0m
+2024-07-01 13:20:56,299 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58589][0m
+2024-07-01 13:21:00,425 [mHTTP GET /admin/app/instrument/?p=11 200 [0.13, 127.0.0.1:58589][0m
+2024-07-01 13:21:00,468 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58589][0m
+2024-07-01 13:21:06,157 [mHTTP GET /admin/app/instrument/?p=14 200 [0.12, 127.0.0.1:58593][0m
+2024-07-01 13:21:06,195 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58593][0m
+2024-07-01 13:21:10,053 [mHTTP GET /admin/app/instrument/?p=17 200 [0.13, 127.0.0.1:58593][0m
+2024-07-01 13:21:10,093 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58593][0m
+2024-07-01 13:21:13,302 [mHTTP GET /admin/app/instrument/?p=20 200 [0.16, 127.0.0.1:58593][0m
+2024-07-01 13:21:13,347 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:58593][0m
+2024-07-01 13:21:23,863 [mHTTP GET /admin/app/instrument/?p=23 200 [0.14, 127.0.0.1:58598][0m
+2024-07-01 13:21:23,902 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:58598][0m
+2024-07-01 13:47:50,624 D:\stox\app\orders\market.py changed, reloading.
+2024-07-01 13:47:57,867 Watching for file changes with StatReloader
+2024-07-01 13:47:58,728 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:60727][0m
+2024-07-01 13:47:59,499 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60731]
+2024-07-01 13:47:59,510 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60731]
+2024-07-01 13:48:12,454 [32mHTTP POST /place_order 302 [0.04, 127.0.0.1:60733][0m
+2024-07-01 13:48:12,502 [mHTTP GET /orders 200 [0.04, 127.0.0.1:60733][0m
+2024-07-01 13:48:12,913 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60731]
+2024-07-01 13:48:21,758 [mHTTP GET /orders 200 [0.03, 127.0.0.1:60737][0m

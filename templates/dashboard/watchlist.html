@@ -23,7 +23,6 @@
     </ul>
 </div>
 
-
 <div class="grid lg:grid-cols-9 gap-4">
     <div id="addTab" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
         style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px; max-width: 350px;">
@@ -39,9 +38,9 @@
                     <div class="grid grid-cols-1 gap-2">
                             <div class="flex flex-col">
                                 <label for=""
-                                    class="block text-sm font-medium text-gray-900 dark:text-white mb-1">Watchlist name</label>
+                                    class="block text-sm font-medium text-gray-900  mb-1">Watchlist name</label>
                                 <input type="text" name="name"
-                                    class="mb-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="mb-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="favourite" value="" required />
                             </div>
                     </div>
@@ -63,7 +62,6 @@
     </div>
 </div>
 
-
 <div id="">
     {% for x in watchlist_list %}
     <div class="hidden watchlist-tab-main p-4 rounded-lg bg-white" id="{{x}}-tab-main" role="tabpanel"
@@ -83,10 +81,6 @@
     </div>
     {% endfor %}
 </div>
-
-
-<!-- <button id="openModal" class="bg-blue-500 text-white px-4 py-2 rounded">Place Order</button> -->
-
 <!-- Modal Structure -->
 <div class="grid lg:grid-cols-9 gap-4">
     <div id="modal" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
@@ -107,32 +101,28 @@
                         <div class="grid grid-cols-2 gap-2 mb-2">
                             <div class="flex flex-col">
                                 <label for="quantity"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
+                                    class="block text-sm font-medium text-gray-900 ">Quantity</label>
                                     <div class="relative">
-                                        <input type="number" id="quantity" name="quantity" class="block w-full p-2.5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="0" value="1" required />
+                                        <input type="number" id="quantity" name="quantity" class="block w-full p-2.5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="0" value="1" oninput="calc()" required />
                                         <span class="text-gray-800 absolute end-2.5 bottom-2.5 font-medium rounded-lg text-xs px-1 z-30" id="order_lot_size"></span>
                                     </div>
-                                
-                                <!-- <input type="number" id="quantity" name="quantity"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="0" value="1" required /> -->
                             </div>
                             <div class="flex flex-col">
                                 <label for="price"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                                    class="block text-sm font-medium text-gray-900 ">Price</label>
                                 <input type="text" id="price" name="price"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="0" value="0" required />
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="0" value="0" oninput="calc()" required />
                             </div>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 gap-2">
                         <div class="grid grid-cols-2 gap-2 mb-2">
                             <div class="flex flex-col">
-                                <label for="type" class="block text-sm font-medium text-gray-900 dark:text-white">Order
+                                <label for="type" class="block text-sm font-medium text-gray-900 ">Order
                                     Type</label>
                                 <select id="type" name="type"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     required>
                                     <option value="Market" selected>Market</option>
                                     <option value="Limit">Limit</option>
@@ -140,9 +130,9 @@
                             </div>
                             <div class="flex flex-col">
                                 <label for="product"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Product</label>
+                                    class="block text-sm font-medium text-gray-900 ">Product</label>
                                 <select id="product" name="product_type"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     required>
                                     <option value="Intraday" selected>Intraday</option>
                                     <option value="Carryforward">Carryforward</option>
@@ -150,6 +140,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="grid grid-cols-1 gap-2">
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <div class="flex flex-col">
+                                <label for=""
+                                    class="block text-sm font-medium text-gray-500 ">Margin Required: 
+                                    <span id="margin_required"></span>
+                                </label>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for=""
+                                    class="block text-sm font-medium text-gray-400 ">Available: 
+                                    ₹
+                                    <span id="margin_available" class="text-gray-500">
+                                        {% widthratio request.user.wallet 1 request.user.margin %}
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
                     <div>
                         <div class="form-check form-check-inline mt-2 mb-2">
                             <label class="form-check-label" style="margin: 2%;" for="smart_order">Smart
@@ -163,16 +173,16 @@
                         <div class="grid grid-cols-2 gap-2 mb-2">
                             <div class="flex flex-col">
                                 <label for="stoploss"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Stoploss</label>
+                                    class="block text-sm font-medium text-gray-900 ">Stoploss</label>
                                 <input type="number" id="stoploss" name="stoploss"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="0" value="0">
                             </div>
                             <div class="flex flex-col">
                                 <label for="target"
-                                    class="block text-sm font-medium text-gray-900 dark:text-white">Target</label>
+                                    class="block text-sm font-medium text-gray-900 ">Target</label>
                                 <input type="text" id="target" name="target"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="0" value="0">
                             </div>
                         </div>
@@ -205,6 +215,7 @@
         }
         document.getElementById('instrument_input').value = instrument
         document.getElementById('modal').classList.remove('hidden');
+        calc();
     }
 
     document.getElementById('closeModal').addEventListener('click', function () {
@@ -229,6 +240,18 @@
 
     // Trigger change event to set initial state
     document.getElementById('type').dispatchEvent(new Event('change'));
+
+
+    document.getElementById('product').addEventListener('change', function() {
+        if (this.value === 'Intraday') {
+            document.getElementById('margin_available').innerHTML = {% widthratio request.user.wallet 1 request.user.margin %}
+        } else {
+            document.getElementById('margin_available').innerHTML = {{ request.user.wallet }}
+        }
+    });
+
+    // Trigger change event to set initial state
+    document.getElementById('product').dispatchEvent(new Event('change'));
 </script>
 
 <div class="mt-2" id="skeleton">
@@ -336,6 +359,14 @@
     let delete_symbols_list = []
     let delete_instruments_list = []
 
+    function calc() {
+        let instrument = document.getElementById('instrument_input').value;
+        let lot_size = document.getElementById(instrument).getAttribute('data-lot_size');
+        let qty = document.getElementById('quantity').value;
+        let price = document.getElementById('price').value;
+        document.getElementById('margin_required').innerHTML = qty * price;
+    }
+
     function openWatchlist(elementId) {
         otherTabsButtons = document.querySelectorAll('.watchlist-tab');
         otherTabsButtons.forEach((element) => {
@@ -410,6 +441,13 @@
                     </div>
                 </div>
             `
+            let instrument_input = document.getElementById('instrument_input').value;
+            if(instrument_input == i['instrument']) {
+                    if(document.getElementById('type').value == 'Market') {
+                        document.getElementById('price').value = i['data']['ltp'];
+                        calc()
+                    }
+                }
                 // console.log(i['data']['symbol'])
             }
         }

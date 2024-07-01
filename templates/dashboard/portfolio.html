@@ -165,7 +165,7 @@
                                 <label for="quantity"
                                     class="block text-sm font-medium text-gray-900">Quantity</label>
                                     <div class="relative">
-                                        <input type="number" id="quantity" name="quantity" class="block w-full p-2.5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="0" value="1" required />
+                                        <input type="number" id="quantity" name="quantity" class="block w-full p-2.5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="0" value="1" oninput="calc()" required />
                                         <span class="text-gray-800 absolute end-2.5 bottom-2.5 font-medium rounded-lg text-xs px-1 z-30" id="order_lot_size"></span>
                                     </div>
                             </div>
@@ -174,7 +174,7 @@
                                     class="block text-sm font-medium text-gray-900">Price</label>
                                 <input type="text" id="price" name="price"
                                     class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-200"
-                                    placeholder="0" value="0" required readonly/>
+                                    placeholder="0" value="0" oninput="calc()" required readonly/>
                             </div>
                         </div>
                     </div>
@@ -199,6 +199,25 @@
                                     <option value="Intraday" selected>Intraday</option>
                                     <option value="Carryforward">Carryforward</option>
                                 </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2">
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <div class="flex flex-col">
+                                <label for=""
+                                    class="block text-sm font-medium text-gray-500 ">Margin Required: 
+                                    <span id="margin_required"></span>
+                                </label>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for=""
+                                    class="block text-sm font-medium text-gray-400 ">Available: 
+                                    ₹
+                                    <span id="margin_available" class="text-gray-500">
+                                        {% widthratio request.user.wallet 1 request.user.margin %}
+                                    </span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -275,9 +294,16 @@
             `<button class="bg-red-600 text-white px-4 py-2 rounded" onclick="execute_order('BUYEXIT')"
             type="button">Exit</button>`
         }
+        calc();
     }
 
-
+    function calc() {
+        let instrument = document.getElementById('instrument_input').value;
+        let lot_size = document.getElementById(instrument).getAttribute('data-lot_size');
+        let qty = document.getElementById('quantity').value;
+        let price = document.getElementById('price').value;
+        document.getElementById('margin_required').innerHTML = qty * price;
+    }
 
     document.getElementById('closeModal').addEventListener('click', function () {
         document.getElementById('modal').classList.add('hidden');
@@ -350,6 +376,14 @@
                 }
                 document.getElementById(i['instrument'] + 'pnl').innerHTML = `<span class="${cls}">${pnl}</span>`
                 document.getElementById(i['instrument'] + 'ltp').innerHTML = `<span class="text-green-600 ">${i['data']['ltp']}</span>`
+
+                let instrument_input = document.getElementById('instrument_input').value;
+                if(instrument_input == i['instrument']) {
+                    if(document.getElementById('type').value == 'Market') {
+                        document.getElementById('price').value = i['data']['ltp'];
+                        calc()
+                    }
+                }
                 //         document.getElementById(i['instrument']).innerHTML = `
                 //     <div>
                 //         <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">${i['data']['symbol']}</div>
