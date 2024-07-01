@@ -27,6 +27,11 @@
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')" data-lot_size="{{stock.lot_size}}">
                 <div>
                     <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
+                    <button
+                        class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
+                    <button
+                    class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.product|upper}}</button>
+                    <br>
                     <small class="w-32 h-2 text-xs text-gray-600">{{stock.quantity}} X AVG ₹{% if stock.sell_price == 0 %}{{stock.buy_price}}{% else %}{{stock.sell_price}}{% endif %}</small>
                 </div>
                 <div>
@@ -55,6 +60,11 @@
             onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')" data-lot_size="{{stock.lot_size}}">
             <div>
                     <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
+                    <button
+                    class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
+                <button
+                class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.product|upper}}</button>
+                <br>
                     <small class="w-32 h-2 text-xs text-gray-600">Qty:{{stock.last_traded_quantity}}</small>
                     <br>
                     <small class="w-32 h-2 text-xs text-gray-600">Buy Price ₹{{stock.buy_price}}</small>
@@ -106,6 +116,11 @@
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')" data-lot_size="{{stock.lot_size}}">
                 <div>
                     <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
+                    <button
+                    class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
+                <button
+                class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.product|upper}}</button>
+                <br>
                     <small class="w-32 h-2 text-xs text-gray-600">{{stock.quantity}} X AVG ₹{% if stock.sell_price == 0 %}{{stock.buy_price}}{% else %}{{stock.sell_price}}{% endif %}</small>
                 </div>
                 <div>
@@ -302,7 +317,7 @@
         let lot_size = document.getElementById(instrument).getAttribute('data-lot_size');
         let qty = document.getElementById('quantity').value;
         let price = document.getElementById('price').value;
-        document.getElementById('margin_required').innerHTML = qty * price;
+        document.getElementById('margin_required').innerHTML = (qty * price).toFixed(2);
     }
 
     document.getElementById('closeModal').addEventListener('click', function () {

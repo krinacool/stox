@@ -332,7 +332,7 @@ def portfolio(request):
         portfolio_symbollist.append(x.instrument_key)
     today = timezone.now().date()
     # Filter positions for today
-    positions = Position.objects.filter(user=request.user, product="Intraday", created_at__date=today)
+    positions = Position.objects.filter(user=request.user, created_at__date=today)
     open_positions_available = positions.filter(quantity__gt=0).exists() or positions.filter(quantity__lt=0).exists()
     close_positions_available = positions.filter(quantity=0).exists()
     for x in positions:
@@ -353,10 +353,7 @@ def portfolio(request):
     for x in lotob:
         option_chain[x.symbol] = x.quantity
     # ---------------CONTEXT-----------
-    print(portfolio_symbollist)
     all_tags = tags.objects.filter(user=request.user)
-    print(positions)
-    print(holdings)
     context = {
         "all_tags":all_tags,
         "positions":positions,
