@@ -1337,3 +1337,1296 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'w
 2024-07-01 18:10:53,264 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:61661][0m
 2024-07-01 18:10:55,463 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61662][0m
 2024-07-01 18:10:55,464 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61661][0m
+2024-07-01 19:40:28,105 Watching for file changes with StatReloader
+2024-07-01 19:40:33,128 [mHTTP GET /admin/ 200 [0.32, 127.0.0.1:62155][0m
+2024-07-01 19:40:34,462 Not Found: /favicon.ico
+2024-07-01 19:40:34,464 [33mHTTP GET /favicon.ico 404 [0.05, 127.0.0.1:62155][0m
+2024-07-01 19:40:47,695 [mHTTP GET /admin/app/instrument/ 200 [0.44, 127.0.0.1:62159][0m
+2024-07-01 19:40:47,784 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:62159][0m
+2024-07-01 19:42:55,390 D:\stox\app\admin.py changed, reloading.
+2024-07-01 19:42:57,757 Watching for file changes with StatReloader
+2024-07-01 19:42:58,598 [mHTTP GET /admin/app/instrument/ 200 [0.25, 127.0.0.1:62187][0m
+2024-07-01 19:42:58,659 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62187][0m
+2024-07-01 19:44:03,586 [mHTTP GET /admin/app/instrument/?q=banknifty 200 [0.35, 127.0.0.1:62196][0m
+2024-07-01 19:44:03,691 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62196][0m
+2024-07-01 19:45:55,362 D:\stox\app\admin.py changed, reloading.
+2024-07-01 19:45:59,624 Watching for file changes with StatReloader
+2024-07-01 19:46:00,480 [mHTTP GET /admin/app/instrument/?q=banknifty 200 [0.21, 127.0.0.1:62245][0m
+2024-07-01 19:46:00,537 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62245][0m
+2024-07-01 19:46:09,497 [mHTTP GET /admin/app/instrument/?q=BANKNIFTY 200 [0.12, 127.0.0.1:62247][0m
+2024-07-01 19:46:09,557 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62247][0m
+2024-07-01 19:46:14,265 [mHTTP GET /admin/app/instrument/?q=BANK 200 [0.28, 127.0.0.1:62247][0m
+2024-07-01 19:46:14,308 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62247][0m
+2024-07-01 19:46:20,844 [mHTTP GET /admin/app/instrument/?q=nifty 200 [0.22, 127.0.0.1:62249][0m
+2024-07-01 19:46:20,899 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62249][0m
+2024-07-01 19:47:18,930 D:\stox\app\admin.py changed, reloading.
+2024-07-01 19:47:21,262 Watching for file changes with StatReloader
+2024-07-01 19:47:36,225 Watching for file changes with StatReloader
+2024-07-01 19:47:40,512 [mHTTP GET /admin/app/instrument/?q=nifty 200 [0.30, 127.0.0.1:62281][0m
+2024-07-01 19:47:40,569 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62281][0m
+2024-07-01 19:48:00,464 [mHTTP GET /admin/app/instrument/?exchange=NSE_FO&q=nifty 200 [0.24, 127.0.0.1:62287][0m
+2024-07-01 19:48:00,508 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62287][0m
+2024-07-01 19:48:05,779 [mHTTP GET /admin/app/instrument/ 200 [0.26, 127.0.0.1:62287][0m
+2024-07-01 19:48:05,814 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62287][0m
+2024-07-01 19:48:08,991 [mHTTP GET /admin/app/instrument/?exchange=NSE_FO 200 [0.36, 127.0.0.1:62291][0m
+2024-07-01 19:48:09,041 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62291][0m
+2024-07-01 19:48:37,592 D:\stox\app\admin.py changed, reloading.
+2024-07-01 19:48:40,076 Watching for file changes with StatReloader
+2024-07-01 19:48:40,928 [mHTTP GET /admin/app/instrument/?exchange=NSE_FO 200 [0.36, 127.0.0.1:62307][0m
+2024-07-01 19:48:40,988 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62307][0m
+2024-07-01 19:48:57,328 [mHTTP GET /admin/app/instrument/?q=bank&exchange=NSE_FO 200 [0.18, 127.0.0.1:62315][0m
+2024-07-01 19:48:57,379 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62315][0m
+2024-07-01 19:49:01,059 [mHTTP GET /admin/app/instrument/?exchange=NSE_FO&q=bank 200 [0.23, 127.0.0.1:62317][0m
+2024-07-01 19:49:01,097 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62317][0m
+2024-07-01 19:49:04,113 [mHTTP GET /admin/app/instrument/?q=bank&exchange=NSE_FO 200 [0.23, 127.0.0.1:62317][0m
+2024-07-01 19:49:04,155 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62317][0m
+2024-07-01 19:49:07,785 [mHTTP GET /admin/app/instrument/ 200 [0.32, 127.0.0.1:62317][0m
+2024-07-01 19:49:07,823 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62317][0m
+2024-07-01 19:49:11,848 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.33, 127.0.0.1:62319][0m
+2024-07-01 19:49:11,891 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62319][0m
+2024-07-01 19:49:34,544 [mHTTP GET /admin/app/instrument/?exchange=NSE_FO&q=bank 200 [0.23, 127.0.0.1:62323][0m
+2024-07-01 19:49:34,585 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62323][0m
+2024-07-01 19:49:37,111 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.45, 127.0.0.1:62323][0m
+2024-07-01 19:49:39,596 [mHTTP GET /admin/app/instrument/?exchange=NCD_FO&q=bank 200 [0.30, 127.0.0.1:62325][0m
+2024-07-01 19:49:39,648 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62325][0m
+2024-07-01 19:49:41,063 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.19, 127.0.0.1:62325][0m
+2024-07-01 19:49:44,514 [mHTTP GET /admin/app/instrument/?exchange=NSE_EQ&q=bank 200 [0.29, 127.0.0.1:62327][0m
+2024-07-01 19:49:44,566 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62327][0m
+2024-07-01 19:49:46,774 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.36, 127.0.0.1:62327][0m
+2024-07-01 19:49:50,571 [mHTTP GET /admin/app/instrument/?exchange=NCD_FO&q=bank 200 [0.21, 127.0.0.1:62330][0m
+2024-07-01 19:49:50,627 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62330][0m
+2024-07-01 19:49:52,652 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.46, 127.0.0.1:62330][0m
+2024-07-01 19:49:57,629 [mHTTP GET /admin/app/instrument/?exchange=NSE_INDEX&q=bank 200 [0.22, 127.0.0.1:62332][0m
+2024-07-01 19:49:57,672 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62332][0m
+2024-07-01 19:50:02,471 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.32, 127.0.0.1:62334][0m
+2024-07-01 19:50:04,347 [mHTTP GET /admin/app/instrument/?exchange=NSE_FO&q=bank 200 [0.24, 127.0.0.1:62337][0m
+2024-07-01 19:50:04,389 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62337][0m
+2024-07-01 19:50:06,947 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.36, 127.0.0.1:62337][0m
+2024-07-01 19:50:09,550 [mHTTP GET /admin/app/instrument/?exchange=NSE_EQ&q=bank 200 [0.30, 127.0.0.1:62339][0m
+2024-07-01 19:50:09,592 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62339][0m
+2024-07-01 19:50:15,799 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.40, 127.0.0.1:62342][0m
+2024-07-01 19:50:17,665 [mHTTP GET /admin/app/instrument/?exchange=NCD_FO&q=bank 200 [0.22, 127.0.0.1:62342][0m
+2024-07-01 19:50:17,709 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62342][0m
+2024-07-01 19:50:19,672 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.32, 127.0.0.1:62343][0m
+2024-07-01 19:50:21,585 [mHTTP GET /admin/app/instrument/?exchange=MCX_INDEX&q=bank 200 [0.28, 127.0.0.1:62343][0m
+2024-07-01 19:50:21,629 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62343][0m
+2024-07-01 19:50:23,011 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.22, 127.0.0.1:62343][0m
+2024-07-01 19:50:25,107 [mHTTP GET /admin/app/instrument/?exchange=MCX_FO&q=bank 200 [0.21, 127.0.0.1:62345][0m
+2024-07-01 19:50:25,153 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62345][0m
+2024-07-01 19:50:26,556 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.24, 127.0.0.1:62345][0m
+2024-07-01 19:50:36,767 [mHTTP GET /admin/app/instrument/?q=nifty 200 [0.37, 127.0.0.1:62348][0m
+2024-07-01 19:50:36,813 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62348][0m
+2024-07-01 19:51:22,522 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.28, 127.0.0.1:62357][0m
+2024-07-01 19:51:36,822 D:\stox\app\admin.py changed, reloading.
+2024-07-01 19:51:41,455 Watching for file changes with StatReloader
+2024-07-01 19:51:42,441 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.34, 127.0.0.1:62380][0m
+2024-07-01 19:51:42,497 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62380][0m
+2024-07-01 19:51:55,266 [mHTTP GET /admin/app/instrument/?q=banknifty 200 [0.38, 127.0.0.1:62383][0m
+2024-07-01 19:51:55,310 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62383][0m
+2024-07-01 19:53:08,484 D:\stox\app\admin.py changed, reloading.
+2024-07-01 19:53:10,808 Watching for file changes with StatReloader
+2024-07-01 19:53:11,677 [mHTTP GET /admin/app/instrument/?q=banknifty 200 [0.35, 127.0.0.1:62400][0m
+2024-07-01 19:53:11,737 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62400][0m
+2024-07-01 19:53:15,605 [mHTTP GET /admin/app/instrument/244326/change/?_changelist_filters=q%3Dbanknifty 200 [0.15, 127.0.0.1:62400][0m
+2024-07-01 19:53:15,654 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:62399][0m
+2024-07-01 19:53:15,694 [mHTTP GET /static/admin/css/forms.css 200 [0.06, 127.0.0.1:62400][0m
+2024-07-01 19:53:15,719 [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.08, 127.0.0.1:62402][0m
+2024-07-01 19:53:15,863 [mHTTP GET /static/admin/css/widgets.css 200 [0.00, 127.0.0.1:62402][0m
+2024-07-01 19:53:15,897 [mHTTP GET /static/admin/js/change_form.js 200 [0.04, 127.0.0.1:62400][0m
+2024-07-01 20:10:58,532 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'ro'
+2024-07-01 20:10:58,588 [35;1mHTTP GET /watchlist 500 [0.48, 127.0.0.1:62555][0m
+2024-07-01 20:10:59,072 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'ro'
+2024-07-01 20:10:59,082 [35;1mHTTP GET /watchlist 500 [0.09, 127.0.0.1:62555][0m
+2024-07-01 20:12:41,054 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'custom_function'
+2024-07-01 20:12:41,065 [35;1mHTTP GET /watchlist 500 [0.16, 127.0.0.1:62575][0m
+2024-07-01 20:12:53,816 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'custom_function'
+2024-07-01 20:12:53,830 [35;1mHTTP GET /watchlist 500 [0.15, 127.0.0.1:62575][0m
+2024-07-01 20:13:04,629 Watching for file changes with StatReloader
+2024-07-01 20:13:08,638 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'custom_function'
+2024-07-01 20:13:08,645 [35;1mHTTP GET /watchlist 500 [0.11, 127.0.0.1:62589][0m
+2024-07-01 20:13:10,167 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'custom_function'
+2024-07-01 20:13:10,171 [35;1mHTTP GET /watchlist 500 [0.08, 127.0.0.1:62589][0m
+2024-07-01 20:13:10,946 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'custom_function'
+2024-07-01 20:13:10,951 [35;1mHTTP GET /watchlist 500 [0.08, 127.0.0.1:62592][0m
+2024-07-01 20:15:41,555 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'custom_function'
+2024-07-01 20:15:41,564 [35;1mHTTP GET /watchlist 500 [0.16, 127.0.0.1:62649][0m
+2024-07-01 20:19:43,094 [mHTTP GET /admin/app/instrument/?q=banknifty 200 [0.57, 127.0.0.1:62726][0m
+2024-07-01 20:19:48,751 [mHTTP GET /admin/app/instrument/?exchange=MCX_FO&q=banknifty 200 [0.20, 127.0.0.1:62726][0m
+2024-07-01 20:19:48,798 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62726][0m
+2024-07-01 20:19:53,610 [mHTTP GET /admin/app/instrument/ 200 [0.34, 127.0.0.1:62728][0m
+2024-07-01 20:19:53,650 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62728][0m
+2024-07-01 20:19:56,422 [mHTTP GET /admin/app/instrument/?exchange=MCX_INDEX 200 [0.28, 127.0.0.1:62728][0m
+2024-07-01 20:19:56,473 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62728][0m
+2024-07-01 20:20:01,348 [mHTTP GET /admin/app/instrument/?exchange=MCX_FO 200 [0.35, 127.0.0.1:62728][0m
+2024-07-01 20:20:01,387 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62728][0m
+2024-07-01 20:22:15,563 [mHTTP GET /admin/app/instrument/?exchange=MCX_INDEX 200 [0.22, 127.0.0.1:62750][0m
+2024-07-01 20:22:15,618 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62750][0m
+2024-07-01 23:41:29,787 [mHTTP GET /admin/app/instrument/?exchange=MCX_INDEX 200 [0.38, 127.0.0.1:49808][0m
+2024-07-01 23:41:29,862 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:49808][0m
+2024-07-03 03:39:47,346 Watching for file changes with StatReloader
+2024-07-03 03:43:03,937 [32mHTTP GET /admin 301 [0.22, 127.0.0.1:50359][0m
+2024-07-03 03:43:04,209 [mHTTP GET /admin/ 200 [0.26, 127.0.0.1:50359][0m
+2024-07-03 03:43:04,375 [mHTTP GET /static/admin/css/dashboard.css 200 [0.03, 127.0.0.1:50359][0m
+2024-07-03 03:43:04,811 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.02, 127.0.0.1:50359][0m
+2024-07-03 03:43:04,812 [mHTTP GET /static/admin/img/icon-deletelink.svg 200 [0.01, 127.0.0.1:50361][0m
+2024-07-03 03:43:05,267 Not Found: /favicon.ico
+2024-07-03 03:43:05,268 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:50361][0m
+2024-07-03 03:43:08,437 [mHTTP GET /admin/app/instrument/ 200 [0.35, 127.0.0.1:50361][0m
+2024-07-03 03:43:08,723 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50361][0m
+2024-07-03 03:43:12,959 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.23, 127.0.0.1:50365][0m
+2024-07-03 03:43:13,007 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50365][0m
+2024-07-03 03:44:41,569 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.16, 127.0.0.1:50383][0m
+2024-07-03 03:44:41,624 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50383][0m
+2024-07-03 03:44:45,620 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.19, 127.0.0.1:50386][0m
+2024-07-03 03:44:45,658 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50386][0m
+2024-07-03 03:46:21,742 [mHTTP GET /admin/app/instrument/?q=bank 200 [0.16, 127.0.0.1:50422][0m
+2024-07-03 03:46:21,790 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50422][0m
+2024-07-03 03:46:27,278 [mHTTP GET /admin/app/instrument/?q=banknifty 200 [0.19, 127.0.0.1:50425][0m
+2024-07-03 03:46:27,334 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50425][0m
+2024-07-03 03:47:45,802 [mHTTP GET /admin/app/instrument/?q=adani 200 [0.19, 127.0.0.1:50437][0m
+2024-07-03 03:47:45,866 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:50437][0m
+2024-07-03 03:47:52,581 [mHTTP GET /admin/app/instrument/?p=2&q=adani 200 [0.20, 127.0.0.1:50437][0m
+2024-07-03 03:47:52,624 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50437][0m
+2024-07-03 03:47:58,179 [mHTTP GET /admin/app/instrument/?p=4&q=adani 200 [0.20, 127.0.0.1:50440][0m
+2024-07-03 03:47:58,218 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50440][0m
+2024-07-03 03:48:05,828 [mHTTP GET /admin/app/instrument/?p=5&q=adani 200 [0.20, 127.0.0.1:50442][0m
+2024-07-03 03:48:05,871 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:50442][0m
+2024-07-03 03:52:46,892 D:\stox\app\symbols\details.py changed, reloading.
+2024-07-03 03:52:50,418 Watching for file changes with StatReloader
+2024-07-03 03:53:56,099 D:\stox\app\symbols\details.py changed, reloading.
+2024-07-03 03:53:57,908 Watching for file changes with StatReloader
+2024-07-03 03:54:08,989 D:\stox\app\symbols\details.py changed, reloading.
+2024-07-03 03:54:10,621 Watching for file changes with StatReloader
+2024-07-03 03:54:24,599 Exception when calling MarketQuoteApi->get_full_market_quote with access token eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyOEFaNDUiLCJqdGkiOiI2NjZiZDUyNDBlZmJiMDFlMzE4Y2FjNjAiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzE4MzQyOTQ4LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3MTg0MDI0MDB9.hUNynDbxqaVa47AU7tRiCap-sVDv8UflIzaumlS-SpI: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 02 Jul 2024 22:24:21 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Pragma': 'no-cache', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'Cache-Control': 'must-revalidate,no-cache,no-store', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'CF-Cache-Status': 'DYNAMIC', 'Set-Cookie': '__cf_bm=KcojelJ18JmcU5hYEUF2BMkJg7I7uuprQ6VPSRUxyeM-1719959061-1.0.1.1-KAAuTyCPSb3bvGwOzQ.l0DGMZfAa_gqmVEn5q2cI2.n6aYvvYvopzoIF7h8UIX_3; path=/; expires=Tue, 02-Jul-24 22:54:21 GMT; domain=.upstox.com; HttpOnly; Secure; SameSite=None, _cfuvid=uQJyI47rreGt5slPspLryHb7DVxBPi92fC7KtOGCPEY-1719959061546-0.0.1.1-604800000; path=/; domain=.upstox.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare', 'CF-RAY': '89d20ba6193f5471-DEL'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI100050","message":"Invalid token used to access API","propertyPath":null,"invalidValue":null,"error_code":"UDAPI100050","property_path":null,"invalid_value":null}]}'
+
+2024-07-03 03:54:24,600 All access tokens failed.
+2024-07-03 03:54:24,608 Failed to fetch market data.
+2024-07-03 03:54:29,889 Exception when calling MarketQuoteApi->get_full_market_quote with access token eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyOEFaNDUiLCJqdGkiOiI2NjZiZDUyNDBlZmJiMDFlMzE4Y2FjNjAiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzE4MzQyOTQ4LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3MTg0MDI0MDB9.hUNynDbxqaVa47AU7tRiCap-sVDv8UflIzaumlS-SpI: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 02 Jul 2024 22:24:27 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Pragma': 'no-cache', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'Cache-Control': 'must-revalidate,no-cache,no-store', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'CF-Cache-Status': 'DYNAMIC', 'Set-Cookie': '__cf_bm=bVnJFgNnph6CUnacAuEQKZDmyfreBx6Sj8Dr_n1q.3Q-1719959067-1.0.1.1-qInrvky.MgJsUP8bga64LOPKYblnmiDCTMuJqU9AwmIz3FNgv_l9Ov7pZ43It8oe; path=/; expires=Tue, 02-Jul-24 22:54:27 GMT; domain=.upstox.com; HttpOnly; Secure; SameSite=None, _cfuvid=A1LSHAVhqBz9Y6nS6jpduOuY6PW6GL5uBGWfc_NfUM0-1719959067220-0.0.1.1-604800000; path=/; domain=.upstox.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare', 'CF-RAY': '89d20bc9dbe15525-DEL'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI100050","message":"Invalid token used to access API","propertyPath":null,"invalidValue":null,"error_code":"UDAPI100050","property_path":null,"invalid_value":null}]}'
+
+2024-07-03 03:54:29,889 All access tokens failed.
+2024-07-03 03:54:29,896 Failed to fetch market data.
+2024-07-03 03:54:35,357 Exception when calling MarketQuoteApi->get_full_market_quote with access token eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyOEFaNDUiLCJqdGkiOiI2NjZiZDUyNDBlZmJiMDFlMzE4Y2FjNjAiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzE4MzQyOTQ4LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3MTg0MDI0MDB9.hUNynDbxqaVa47AU7tRiCap-sVDv8UflIzaumlS-SpI: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 02 Jul 2024 22:24:32 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Pragma': 'no-cache', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'Cache-Control': 'must-revalidate,no-cache,no-store', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'CF-Cache-Status': 'DYNAMIC', 'Set-Cookie': '__cf_bm=oYnptdi2Hz7cGPpyWCgdQv82qOTVErY.n.0swTjTCrg-1719959072-1.0.1.1-eek4Uu.rf89XMtJM9rfxx7v9ovs9FDctrCkjDVCtsJOZXcVRo8O0qpvG5Xve3J53; path=/; expires=Tue, 02-Jul-24 22:54:32 GMT; domain=.upstox.com; HttpOnly; Secure; SameSite=None, _cfuvid=E0Xm87xMnFYSTlICMMjm6FFcjH2CQoBUhesLm_85yBw-1719959072507-0.0.1.1-604800000; path=/; domain=.upstox.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare', 'CF-RAY': '89d20beadc3891c4-DEL'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI100050","message":"Invalid token used to access API","propertyPath":null,"invalidValue":null,"error_code":"UDAPI100050","property_path":null,"invalid_value":null}]}'
+
+2024-07-03 03:54:35,357 All access tokens failed.
+2024-07-03 03:54:35,365 Failed to fetch market data.
+2024-07-03 03:54:40,132 Exception when calling MarketQuoteApi->get_full_market_quote with access token eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIyOEFaNDUiLCJqdGkiOiI2NjZiZDUyNDBlZmJiMDFlMzE4Y2FjNjAiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzE4MzQyOTQ4LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3MTg0MDI0MDB9.hUNynDbxqaVa47AU7tRiCap-sVDv8UflIzaumlS-SpI: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 02 Jul 2024 22:24:37 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Pragma': 'no-cache', 'Strict-Transport-Security': 'max-age=0; includeSubDomains', 'X-Frame-Options': 'DENY', 'Cache-Control': 'must-revalidate,no-cache,no-store', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'message': 'request failed', 'CF-Cache-Status': 'DYNAMIC', 'Set-Cookie': '__cf_bm=n2F2PITUez4KOglj7Gnm1.AlWibYidacBngMKTKluF4-1719959077-1.0.1.1-d6yUu.kqUE0M6gH9_l3bRM_TUmjZ7n_oq8szgNXgP.OTpuAum4VQSFB3WQuRBodG; path=/; expires=Tue, 02-Jul-24 22:54:37 GMT; domain=.upstox.com; HttpOnly; Secure; SameSite=None, _cfuvid=wdzIlQgUnE14PKxSv4gCH91b.A9WPdHZb1mhX17LrA0-1719959077994-0.0.1.1-604800000; path=/; domain=.upstox.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare', 'CF-RAY': '89d20c0d2bf054e9-DEL'})
+HTTP response body: b'{"status":"error","errors":[{"errorCode":"UDAPI100050","message":"Invalid token used to access API","propertyPath":null,"invalidValue":null,"error_code":"UDAPI100050","property_path":null,"invalid_value":null}]}'
+
+2024-07-03 03:54:40,133 All access tokens failed.
+2024-07-03 03:54:40,134 Failed to fetch market data.
+2024-07-03 03:55:34,666 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'custom_function'
+2024-07-03 03:55:34,689 [35;1mHTTP GET /watchlist 500 [0.36, 127.0.0.1:50683][0m
+2024-07-03 03:55:35,036 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 281, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'custom_function'
+2024-07-03 03:55:35,043 [35;1mHTTP GET /watchlist 500 [0.08, 127.0.0.1:50683][0m
+2024-07-03 03:56:27,520 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:50699][0m
+2024-07-03 03:56:27,567 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:50699][0m
+2024-07-03 03:57:34,493 D:\stox\settings\timing.py changed, reloading.
+2024-07-03 03:57:36,403 Watching for file changes with StatReloader
+2024-07-03 03:58:34,393 [mHTTP GET /watchlist 200 [0.21, 127.0.0.1:50745][0m
+2024-07-03 03:58:34,753 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50749]
+2024-07-03 03:58:34,765 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50749]
+2024-07-03 04:00:46,128 [mHTTP GET /watchlist 200 [0.15, 127.0.0.1:50845][0m
+2024-07-03 04:00:46,144 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50749]
+2024-07-03 04:00:46,555 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50852]
+2024-07-03 04:00:46,567 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50852]
+2024-07-03 04:01:11,976 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:50862][0m
+2024-07-03 04:01:11,985 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50852]
+2024-07-03 04:01:12,353 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50867]
+2024-07-03 04:01:12,362 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50867]
+2024-07-03 04:01:22,231 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:50870][0m
+2024-07-03 04:01:22,232 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:50871][0m
+2024-07-03 04:01:53,912 [mHTTP GET /watchlist 200 [0.16, 127.0.0.1:50889][0m
+2024-07-03 04:01:54,605 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:50890][0m
+2024-07-03 04:01:54,612 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50867]
+2024-07-03 04:01:55,546 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50895]
+2024-07-03 04:01:55,556 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50895]
+2024-07-03 04:01:56,009 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50893][0m
+2024-07-03 04:01:56,044 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.05, 127.0.0.1:50890][0m
+2024-07-03 04:02:44,259 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:50924][0m
+2024-07-03 04:02:44,270 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50895]
+2024-07-03 04:02:45,168 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50931]
+2024-07-03 04:02:45,174 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50931]
+2024-07-03 04:02:45,774 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50924][0m
+2024-07-03 04:02:45,784 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50925][0m
+2024-07-03 04:03:21,682 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:50957][0m
+2024-07-03 04:03:21,695 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50931]
+2024-07-03 04:03:22,728 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50962]
+2024-07-03 04:03:22,738 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50962]
+2024-07-03 04:03:23,126 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.05, 127.0.0.1:50958][0m
+2024-07-03 04:03:23,140 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.12, 127.0.0.1:50957][0m
+2024-07-03 04:03:47,559 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:50982][0m
+2024-07-03 04:03:47,570 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50962]
+2024-07-03 04:03:48,507 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50987]
+2024-07-03 04:03:48,515 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50987]
+2024-07-03 04:03:49,384 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50982][0m
+2024-07-03 04:03:49,553 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50982][0m
+2024-07-03 04:04:34,675 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51016][0m
+2024-07-03 04:04:34,937 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50987]
+2024-07-03 04:04:35,825 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51021]
+2024-07-03 04:04:35,835 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51021]
+2024-07-03 04:04:36,631 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51016][0m
+2024-07-03 04:04:36,633 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51022][0m
+2024-07-03 04:06:07,448 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:51076][0m
+2024-07-03 04:06:07,457 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51021]
+2024-07-03 04:06:08,546 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51081]
+2024-07-03 04:06:08,558 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51081]
+2024-07-03 04:06:09,638 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51076][0m
+2024-07-03 04:06:09,640 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51077][0m
+2024-07-03 04:06:26,450 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:51095][0m
+2024-07-03 04:06:27,093 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51081]
+2024-07-03 04:06:27,929 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51100]
+2024-07-03 04:06:27,937 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51100]
+2024-07-03 04:06:29,177 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51096][0m
+2024-07-03 04:06:29,179 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51095][0m
+2024-07-03 04:07:08,452 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51128][0m
+2024-07-03 04:07:08,464 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51100]
+2024-07-03 04:07:09,304 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51134]
+2024-07-03 04:07:09,312 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51134]
+2024-07-03 04:07:10,538 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:51135][0m
+2024-07-03 04:07:10,560 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.05, 127.0.0.1:51136][0m
+2024-07-03 04:07:20,424 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51143][0m
+2024-07-03 04:07:20,433 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51134]
+2024-07-03 04:07:21,144 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51148]
+2024-07-03 04:07:21,152 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51148]
+2024-07-03 04:07:21,337 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51144][0m
+2024-07-03 04:07:21,338 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51143][0m
+2024-07-03 04:07:50,123 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:51164][0m
+2024-07-03 04:07:50,134 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51148]
+2024-07-03 04:07:50,830 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51169]
+2024-07-03 04:07:50,839 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51169]
+2024-07-03 04:07:51,632 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.05, 127.0.0.1:51172][0m
+2024-07-03 04:07:51,644 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.07, 127.0.0.1:51171][0m
+2024-07-03 04:08:08,092 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51185][0m
+2024-07-03 04:08:08,101 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51169]
+2024-07-03 04:08:08,896 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51189]
+2024-07-03 04:08:08,905 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51189]
+2024-07-03 04:08:09,752 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51185][0m
+2024-07-03 04:08:09,754 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51186][0m
+2024-07-03 04:08:21,529 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51199][0m
+2024-07-03 04:08:21,894 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51189]
+2024-07-03 04:08:22,741 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51204]
+2024-07-03 04:08:22,750 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51204]
+2024-07-03 04:08:24,093 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51200][0m
+2024-07-03 04:08:24,094 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51199][0m
+2024-07-03 04:09:23,910 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51243][0m
+2024-07-03 04:09:24,022 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51204]
+2024-07-03 04:09:24,878 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51249]
+2024-07-03 04:09:24,888 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51249]
+2024-07-03 04:09:25,514 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51243][0m
+2024-07-03 04:09:25,861 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51243][0m
+2024-07-03 04:09:26,919 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:51243][0m
+2024-07-03 04:09:26,931 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51249]
+2024-07-03 04:09:27,916 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51251]
+2024-07-03 04:09:27,931 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51251]
+2024-07-03 04:09:28,434 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51243][0m
+2024-07-03 04:09:28,436 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51244][0m
+2024-07-03 04:09:56,955 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:51270][0m
+2024-07-03 04:09:56,965 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51251]
+2024-07-03 04:09:57,972 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51275]
+2024-07-03 04:09:57,991 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51275]
+2024-07-03 04:09:58,318 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51271][0m
+2024-07-03 04:09:58,323 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51270][0m
+2024-07-03 04:10:21,143 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51294][0m
+2024-07-03 04:10:21,152 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51275]
+2024-07-03 04:10:21,907 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51299]
+2024-07-03 04:10:21,917 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51299]
+2024-07-03 04:10:22,205 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51294][0m
+2024-07-03 04:10:22,339 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51294][0m
+2024-07-03 04:10:43,778 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51314][0m
+2024-07-03 04:10:44,056 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51299]
+2024-07-03 04:10:44,724 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51318]
+2024-07-03 04:10:44,734 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51318]
+2024-07-03 04:10:44,964 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51314][0m
+2024-07-03 04:10:44,981 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51314][0m
+2024-07-03 04:10:53,521 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51328][0m
+2024-07-03 04:10:53,764 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51318]
+2024-07-03 04:10:54,549 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51333]
+2024-07-03 04:10:54,559 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51333]
+2024-07-03 04:10:54,891 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51329][0m
+2024-07-03 04:10:54,894 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51328][0m
+2024-07-03 04:11:06,726 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51342][0m
+2024-07-03 04:11:06,738 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51333]
+2024-07-03 04:11:07,481 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51349]
+2024-07-03 04:11:07,487 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51349]
+2024-07-03 04:11:08,360 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51342][0m
+2024-07-03 04:11:08,363 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51343][0m
+2024-07-03 04:11:37,906 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51380][0m
+2024-07-03 04:11:37,914 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51349]
+2024-07-03 04:11:38,626 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51386]
+2024-07-03 04:11:38,640 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51386]
+2024-07-03 04:11:38,994 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51380][0m
+2024-07-03 04:11:39,280 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51380][0m
+2024-07-03 04:11:58,042 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51398][0m
+2024-07-03 04:11:58,051 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51386]
+2024-07-03 04:11:58,884 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51404]
+2024-07-03 04:11:58,891 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51404]
+2024-07-03 04:11:59,784 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51398][0m
+2024-07-03 04:11:59,789 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51399][0m
+2024-07-03 04:12:25,979 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51414][0m
+2024-07-03 04:12:25,991 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51404]
+2024-07-03 04:12:26,746 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51419]
+2024-07-03 04:12:26,754 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51419]
+2024-07-03 04:13:37,628 [mHTTP GET /admin/ 200 [0.29, 127.0.0.1:51439][0m
+2024-07-03 04:13:41,423 [mHTTP GET /admin/app/instrument/ 200 [0.27, 127.0.0.1:51439][0m
+2024-07-03 04:13:41,468 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:51439][0m
+2024-07-03 04:13:44,958 [mHTTP GET /admin/app/instrument/?exchange=NSE_INDEX 200 [0.17, 127.0.0.1:51439][0m
+2024-07-03 04:13:45,006 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:51439][0m
+2024-07-03 04:14:24,182 [mHTTP GET /admin/app/instrument/?exchange=MCX_INDEX 200 [0.10, 127.0.0.1:51439][0m
+2024-07-03 04:14:24,245 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:51439][0m
+2024-07-03 04:14:26,952 [mHTTP GET /admin/app/instrument/?exchange=NSE_INDEX 200 [0.17, 127.0.0.1:51439][0m
+2024-07-03 04:14:26,988 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:51439][0m
+2024-07-03 04:14:41,958 [mHTTP GET /admin/app/symbols/ 200 [0.06, 127.0.0.1:51439][0m
+2024-07-03 04:14:42,006 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:51439][0m
+2024-07-03 04:14:44,218 [mHTTP GET /admin/app/watchlist/ 200 [0.06, 127.0.0.1:51439][0m
+2024-07-03 04:14:44,262 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:51439][0m
+2024-07-03 04:14:59,239 [mHTTP GET /admin/app/watchlist/add/ 200 [0.54, 127.0.0.1:51439][0m
+2024-07-03 04:14:59,288 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51448][0m
+2024-07-03 04:14:59,350 [mHTTP GET /static/admin/css/forms.css 200 [0.08, 127.0.0.1:51439][0m
+2024-07-03 04:14:59,353 [mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.08, 127.0.0.1:51451][0m
+2024-07-03 04:14:59,505 [mHTTP GET /static/admin/css/widgets.css 200 [0.01, 127.0.0.1:51439][0m
+2024-07-03 04:14:59,516 [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.02, 127.0.0.1:51451][0m
+2024-07-03 04:14:59,531 [mHTTP GET /static/admin/js/change_form.js 200 [0.02, 127.0.0.1:51439][0m
+2024-07-03 04:16:12,560 Internal Server Error: /admin/app/watchlist/add/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: app_watchlist.lot_size
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "D:\stox\app\models.py", line 183, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: app_watchlist.lot_size
+2024-07-03 04:16:12,571 [35;1mHTTP POST /admin/app/watchlist/add/ 500 [0.31, 127.0.0.1:51460][0m
+2024-07-03 04:16:54,136 D:\stox\app\models.py changed, reloading.
+2024-07-03 04:17:01,250 Watching for file changes with StatReloader
+2024-07-03 04:17:01,855 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:51488][0m
+2024-07-03 04:17:02,740 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51490]
+2024-07-03 04:17:02,747 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51490]
+2024-07-03 04:17:19,886 [32mHTTP POST /admin/app/watchlist/add/ 302 [0.09, 127.0.0.1:51502][0m
+2024-07-03 04:17:20,025 [mHTTP GET /admin/app/watchlist/ 200 [0.13, 127.0.0.1:51502][0m
+2024-07-03 04:17:20,091 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:51502][0m
+2024-07-03 04:17:20,517 [mHTTP GET /static/admin/img/icon-yes.svg 200 [0.04, 127.0.0.1:51502][0m
+2024-07-03 04:17:25,724 [mHTTP GET /admin/app/watchlist/81/change/ 200 [0.08, 127.0.0.1:51502][0m
+2024-07-03 04:17:25,770 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:51502][0m
+2024-07-03 04:17:28,754 [mHTTP GET /admin/app/watchlist/ 200 [0.06, 127.0.0.1:51508][0m
+2024-07-03 04:17:32,121 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:51508][0m
+2024-07-03 04:17:32,130 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51490]
+2024-07-03 04:17:32,597 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51511]
+2024-07-03 04:17:32,609 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51511]
+2024-07-03 04:18:25,985 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51523][0m
+2024-07-03 04:18:25,993 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51511]
+2024-07-03 04:18:26,448 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51527]
+2024-07-03 04:18:26,457 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51527]
+2024-07-03 04:19:12,746 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51535][0m
+2024-07-03 04:19:12,756 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51527]
+2024-07-03 04:19:13,180 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51540]
+2024-07-03 04:19:13,189 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51540]
+2024-07-03 04:21:16,585 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51553][0m
+2024-07-03 04:21:16,594 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51540]
+2024-07-03 04:21:17,248 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51558]
+2024-07-03 04:21:17,259 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51558]
+2024-07-03 04:21:27,676 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:51562][0m
+2024-07-03 04:21:27,689 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51558]
+2024-07-03 04:21:28,046 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51567]
+2024-07-03 04:21:28,055 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51567]
+2024-07-03 04:22:26,838 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51575][0m
+2024-07-03 04:22:26,846 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51567]
+2024-07-03 04:22:27,209 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51579]
+2024-07-03 04:22:27,219 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51579]
+2024-07-03 04:22:34,846 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.08, 127.0.0.1:51575][0m
+2024-07-03 04:22:34,848 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.08, 127.0.0.1:51576][0m
+2024-07-03 04:23:00,349 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51599][0m
+2024-07-03 04:23:00,365 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51579]
+2024-07-03 04:23:01,803 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51602]
+2024-07-03 04:23:01,816 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51602]
+2024-07-03 04:23:01,848 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51598][0m
+2024-07-03 04:23:01,849 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51599][0m
+2024-07-03 04:23:08,890 [mHTTP GET /watchlist 200 [0.13, 127.0.0.1:51609][0m
+2024-07-03 04:23:09,657 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51602]
+2024-07-03 04:23:10,373 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51613]
+2024-07-03 04:23:10,382 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51613]
+2024-07-03 04:23:10,773 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51608][0m
+2024-07-03 04:23:10,775 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51609][0m
+2024-07-03 04:23:19,151 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51621][0m
+2024-07-03 04:23:19,159 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51613]
+2024-07-03 04:23:19,841 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51625]
+2024-07-03 04:23:19,850 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51625]
+2024-07-03 04:23:20,106 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51622][0m
+2024-07-03 04:23:20,108 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51621][0m
+2024-07-03 04:23:38,809 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51622][0m
+2024-07-03 04:23:38,818 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51625]
+2024-07-03 04:23:40,051 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51639]
+2024-07-03 04:23:40,058 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51639]
+2024-07-03 04:23:40,160 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51622][0m
+2024-07-03 04:23:40,384 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51622][0m
+2024-07-03 04:23:52,125 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51649][0m
+2024-07-03 04:23:52,133 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51639]
+2024-07-03 04:23:53,143 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51654]
+2024-07-03 04:23:53,151 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51654]
+2024-07-03 04:23:53,560 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51649][0m
+2024-07-03 04:23:53,561 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51650][0m
+2024-07-03 04:24:08,913 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51667][0m
+2024-07-03 04:24:08,923 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51654]
+2024-07-03 04:24:09,873 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51672]
+2024-07-03 04:24:09,880 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51672]
+2024-07-03 04:24:10,628 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51667][0m
+2024-07-03 04:24:10,629 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51668][0m
+2024-07-03 04:24:22,349 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51681][0m
+2024-07-03 04:24:23,203 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51672]
+2024-07-03 04:24:24,071 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51686]
+2024-07-03 04:24:24,081 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51686]
+2024-07-03 04:24:25,755 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51682][0m
+2024-07-03 04:24:25,756 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51681][0m
+2024-07-03 04:25:32,734 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51726][0m
+2024-07-03 04:25:32,744 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51686]
+2024-07-03 04:25:33,965 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51730]
+2024-07-03 04:25:33,977 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51730]
+2024-07-03 04:25:34,549 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51727][0m
+2024-07-03 04:25:34,550 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51726][0m
+2024-07-03 04:25:53,552 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51750][0m
+2024-07-03 04:25:53,559 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51730]
+2024-07-03 04:25:54,452 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51754]
+2024-07-03 04:25:54,459 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51754]
+2024-07-03 04:25:55,342 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51751][0m
+2024-07-03 04:25:55,343 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51750][0m
+2024-07-03 04:27:25,129 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51769][0m
+2024-07-03 04:27:25,137 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51754]
+2024-07-03 04:27:25,907 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51775]
+2024-07-03 04:27:25,917 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51775]
+2024-07-03 04:29:05,100 [mHTTP GET /admin/app/instrument/ 200 [0.24, 127.0.0.1:51792][0m
+2024-07-03 04:29:05,164 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51792][0m
+2024-07-03 04:31:08,787 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:51829][0m
+2024-07-03 04:31:08,800 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51775]
+2024-07-03 04:31:09,395 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51834]
+2024-07-03 04:31:09,403 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51834]
+2024-07-03 04:31:10,610 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:51829][0m
+2024-07-03 04:31:10,621 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51834]
+2024-07-03 04:31:10,998 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51835]
+2024-07-03 04:31:11,011 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51835]
+2024-07-03 04:31:45,183 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51836][0m
+2024-07-03 04:31:45,192 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51835]
+2024-07-03 04:31:45,543 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51840]
+2024-07-03 04:31:45,552 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51840]
+2024-07-03 04:31:49,524 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51836][0m
+2024-07-03 04:31:49,525 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51837][0m
+2024-07-03 04:32:14,595 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51869][0m
+2024-07-03 04:32:14,605 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51840]
+2024-07-03 04:32:15,640 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51875]
+2024-07-03 04:32:15,649 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51875]
+2024-07-03 04:32:15,784 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51869][0m
+2024-07-03 04:32:15,797 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51869][0m
+2024-07-03 04:32:56,436 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51904][0m
+2024-07-03 04:32:56,446 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51875]
+2024-07-03 04:32:57,507 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51911]
+2024-07-03 04:32:57,517 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51911]
+2024-07-03 04:32:57,669 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51904][0m
+2024-07-03 04:32:57,684 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51904][0m
+2024-07-03 04:33:17,375 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51925][0m
+2024-07-03 04:33:17,383 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51911]
+2024-07-03 04:33:18,358 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51930]
+2024-07-03 04:33:18,367 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51930]
+2024-07-03 04:33:18,517 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51925][0m
+2024-07-03 04:33:18,530 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51926][0m
+2024-07-03 04:33:34,766 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51940][0m
+2024-07-03 04:33:34,780 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51930]
+2024-07-03 04:33:35,711 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51946]
+2024-07-03 04:33:35,720 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51946]
+2024-07-03 04:33:35,944 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51940][0m
+2024-07-03 04:33:35,954 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51941][0m
+2024-07-03 04:33:50,535 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51941][0m
+2024-07-03 04:33:50,544 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51946]
+2024-07-03 04:33:51,480 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51953]
+2024-07-03 04:33:51,492 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51953]
+2024-07-03 04:33:51,689 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51941][0m
+2024-07-03 04:33:51,691 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51940][0m
+2024-07-03 04:33:56,216 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51940][0m
+2024-07-03 04:33:56,226 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51953]
+2024-07-03 04:33:57,118 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51956]
+2024-07-03 04:33:57,126 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51956]
+2024-07-03 04:33:57,325 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51940][0m
+2024-07-03 04:33:57,342 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51940][0m
+2024-07-03 04:34:08,574 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51940][0m
+2024-07-03 04:34:08,584 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51956]
+2024-07-03 04:34:09,452 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51965]
+2024-07-03 04:34:09,460 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51965]
+2024-07-03 04:34:09,700 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51940][0m
+2024-07-03 04:34:09,782 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51940][0m
+2024-07-03 04:34:23,480 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51940][0m
+2024-07-03 04:34:23,489 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51965]
+2024-07-03 04:34:24,365 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:51974]
+2024-07-03 04:34:24,374 WebSocket CONNECT /ws/stocks/ [127.0.0.1:51974]
+2024-07-03 04:34:24,558 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51940][0m
+2024-07-03 04:34:24,577 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51940][0m
+2024-07-03 04:35:39,741 [mHTTP GET /watchlist 200 [0.59, 127.0.0.1:52014][0m
+2024-07-03 04:35:39,754 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:51974]
+2024-07-03 04:35:40,643 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:52019]
+2024-07-03 04:35:40,652 WebSocket CONNECT /ws/stocks/ [127.0.0.1:52019]
+2024-07-03 04:35:40,837 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52014][0m
+2024-07-03 04:35:40,851 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52014][0m
+2024-07-03 04:36:27,174 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:52049][0m
+2024-07-03 04:36:27,185 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:52019]
+2024-07-03 04:36:28,164 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:52053]
+2024-07-03 04:36:28,172 WebSocket CONNECT /ws/stocks/ [127.0.0.1:52053]
+2024-07-03 04:36:28,417 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52049][0m
+2024-07-03 04:36:28,442 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52049][0m
+2024-07-03 04:37:03,454 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:52077][0m
+2024-07-03 04:37:03,462 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:52053]
+2024-07-03 04:37:04,355 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:52081]
+2024-07-03 04:37:04,364 WebSocket CONNECT /ws/stocks/ [127.0.0.1:52081]
+2024-07-03 04:37:04,548 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52082][0m
+2024-07-03 04:37:04,563 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52083][0m
+2024-07-03 04:37:29,043 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:52100][0m
+2024-07-03 04:37:29,052 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:52081]
+2024-07-03 04:37:29,726 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:52104]
+2024-07-03 04:37:29,735 WebSocket CONNECT /ws/stocks/ [127.0.0.1:52104]
+2024-07-03 04:37:29,878 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52100][0m
+2024-07-03 04:37:29,907 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52100][0m
+2024-07-03 04:37:46,945 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:52115][0m
+2024-07-03 04:37:46,953 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:52104]
+2024-07-03 04:37:47,634 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:52119]
+2024-07-03 04:37:47,643 WebSocket CONNECT /ws/stocks/ [127.0.0.1:52119]
+2024-07-03 04:37:47,788 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52115][0m
+2024-07-03 04:37:47,826 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52115][0m
+2024-07-03 04:37:59,796 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:52128][0m
+2024-07-03 04:37:59,806 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:52119]
+2024-07-03 04:38:00,455 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:52134]
+2024-07-03 04:38:00,467 WebSocket CONNECT /ws/stocks/ [127.0.0.1:52134]
+2024-07-03 04:38:00,694 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52128][0m
+2024-07-03 04:38:00,707 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52128][0m
+2024-07-03 04:40:40,947 D:\stox\app\symbols\details.py changed, reloading.
+2024-07-03 04:40:46,064 Watching for file changes with StatReloader

@@ -5,6 +5,35 @@ from app.symbols.instruments import get_symbol
 from settings.models import Upstox
 logging.basicConfig(filename='log.txt', level=logging.ERROR, format='%(asctime)s %(message)s')
 
+
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+def send_email(sender_email, sender_password, recipient_email, subject, message):
+    # Set up the MIME
+    msg = MIMEMultipart()
+    msg['From'] = sender_email
+    msg['To'] = recipient_email
+    msg['Subject'] = subject
+
+    # Attach the message to the email
+    msg.attach(MIMEText(message, 'plain'))
+
+    # Connect to the SMTP server
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+
+    # Login to the sender's email account
+    server.login(sender_email, sender_password)
+
+    # Send the email
+    server.sendmail(sender_email, recipient_email, msg.as_string())
+
+    # Close the connection
+    server.quit()
+
+
 def get_price(instrument_key):
     if str(instrument_key).strip() == '':
         return None
@@ -119,6 +148,12 @@ def get_market_data(upstox_symbol_list):
             api_response = api_instance.get_full_market_quote(upstox_symbol_list, api_version)
             return api_response.to_dict()
         except Exception as e:
+            sender_email = 'vediccomputer51@gmail.com'
+            sender_password = 'buknewxfyfchumlq'
+            recipient_email = 'onstocktrader@gmail.com'
+            subject = 'Important: Error'
+            message = "Exception when calling MarketQuoteApi->get_full_market_quote with access token %s: %s" % (access_token, e)
+            send_email(sender_email, sender_password, recipient_email, subject, message)
             logging.error("Exception when calling MarketQuoteApi->get_full_market_quote with access token %s: %s" % (access_token, e))
             # Continue to the next token
     

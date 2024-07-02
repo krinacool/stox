@@ -46,9 +46,9 @@ class Symbols(admin.ModelAdmin):
 
 @admin.register(Instrument)
 class Instrument(admin.ModelAdmin):
-    list_display = ('name','last_price','exchange','expiry','strike','tick_size','lot_size','instrument_type','option_type','exchange')
-    # list_filter = ('name','exchange')
-    list_search = ('name','tradingsymbol','exchange_token','exchange')
+    list_display = ('tradingsymbol','name','last_price','exchange','expiry','strike','tick_size','lot_size','instrument_type','option_type','exchange')
+    list_filter = ('exchange',)
+    search_fields = ('tradingsymbol',)
 
 
 @admin.register(Watchlist)

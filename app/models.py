@@ -153,7 +153,7 @@ class Watchlist(models.Model):
     symbol = models.CharField(max_length=150, default="")
     segment = models.CharField(max_length=150, default="")
     instrument_key = models.CharField(max_length=150, default="")
-    lot_size = models.PositiveIntegerField(default=1)
+    lot_size = models.PositiveIntegerField(default=1,null=True,blank=True)
     tag = models.CharField(max_length=20, default="Favourites")
     is_default = models.BooleanField(default=False)
     

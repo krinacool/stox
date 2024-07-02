@@ -5,7 +5,7 @@ import datetime
 
 def market_time(segment):
     market_setting = ''
-    if segment.upper() == 'MCX':
+    if segment.upper() == 'MCX_FO':
         market_setting = mcx_market_time.objects.first()
     else:
         print('1')
@@ -21,7 +21,7 @@ def market_time(segment):
 
 def market_open(segment):
     market_setting = ''
-    if segment.upper() == 'MCX':
+    if segment.upper() == 'MCX_FO':
         market_setting = mcx_market_time.objects.first()
     else:
         print('hello')
