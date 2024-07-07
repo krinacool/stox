@@ -73,6 +73,8 @@ def index(request):
     return render(request,'home/home.html')
 
 def handlelogin(request):
+    if request.user.is_authenticated:
+        return redirect('/market')
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -89,6 +91,9 @@ def handlelogin(request):
     return render(request, 'login.html', {'form': form})
 
 def handlesignup(request):
+    if request.user.is_authenticated:
+        return redirect('/market')
+
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():

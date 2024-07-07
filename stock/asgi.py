@@ -11,8 +11,6 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "stock.settings")
 
 django_asgi_app = get_asgi_application()
 
-print('ASGI SETUP-------------')
-
 application = ProtocolTypeRouter(
     {
         "http": django_asgi_app,
