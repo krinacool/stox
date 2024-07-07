@@ -148,12 +148,6 @@ def get_market_data(upstox_symbol_list):
             api_response = api_instance.get_full_market_quote(upstox_symbol_list, api_version)
             return api_response.to_dict()
         except Exception as e:
-            sender_email = 'vediccomputer51@gmail.com'
-            sender_password = 'buknewxfyfchumlq'
-            recipient_email = 'onstocktrader@gmail.com'
-            subject = 'Important: Error'
-            message = "Exception when calling MarketQuoteApi->get_full_market_quote with access token %s: %s" % (access_token, e)
-            send_email(sender_email, sender_password, recipient_email, subject, message)
             logging.error("Exception when calling MarketQuoteApi->get_full_market_quote with access token %s: %s" % (access_token, e))
             # Continue to the next token
     
