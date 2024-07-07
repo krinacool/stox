@@ -22,7 +22,6 @@ from wallet.calculation import *
 from app.orders.market import market_order
 from app.orders.limit import initiate_limit_order
 from app.symbols.getsymbols import get_symbol
-from settings.models import Option_Lot_Size
 
 User = get_user_model()
 
@@ -273,10 +272,6 @@ def portfolio(request):
     settings = charges.objects.first()
     charge = settings.intraday_buy_charge
     tax = settings.tax
-    option_chain = {}
-    lotob = Option_Lot_Size.objects.all()
-    for x in lotob:
-        option_chain[x.symbol] = x.quantity
     # ---------------CONTEXT-----------
     all_tags = tags.objects.filter(user=request.user)
     context = {
@@ -292,7 +287,6 @@ def portfolio(request):
         'tax':tax,
         'open_positions_available':open_positions_available,
         'close_positions_available':close_positions_available,
-        'option_chain':json.dumps(option_chain),
     }
     return render(request,'dashboard/portfolio.html',context)
 
@@ -345,9 +339,6 @@ def async_transact(request):
             return JsonResponse({'success': False, 'message': 'Market Closed !'})
         if segment == 'NSE_FO' or segment == 'BFO_FO' or segment == 'MCX_FO':
             tempsymbol = get_symbol(symbol)
-            ob = Option_Lot_Size.objects.filter(symbol=tempsymbol).first()
-            if ob is not None:
-               quantity = quantity * ob.quantity
         status = "failed"
         if type == 'Market':
             status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target)
@@ -493,7 +484,6 @@ def upstox_cred(request,secret):
             response = response.json()
             obj.access_token = response['access_token']
             obj.save()
-            UpstoxAccessTokens.objects.create(access_token=obj.access_token)
             return redirect('/admin/settings/upstox')
         except Exception as e:
             messages.error(request,f'Something went wrong ! {e}')
@@ -504,8 +494,7 @@ from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt
 def upstox_access_tokens(request):
     if request.method == 'POST':
-        ob = UpstoxAccessTokens.objects.all()
-        tokens = [x.access_token for x in ob]
+        tokens = []
         return JsonResponse({'tokens':tokens})
 
 

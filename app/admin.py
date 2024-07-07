@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import *
 from django.contrib.auth.admin import UserAdmin
-from django.contrib.auth.models import Group
 from django.utils.html import format_html
 
 class CustomUserAdmin(UserAdmin):
@@ -35,6 +34,7 @@ class CustomUserAdmin(UserAdmin):
 # Register the CustomUserAdmin
 admin.site.register(CustomUser, CustomUserAdmin)
 
+admin.site.register(Remarks)
 
 @admin.register(symbols)
 class Symbols(admin.ModelAdmin):
@@ -52,8 +52,8 @@ class Instrument(admin.ModelAdmin):
 
 @admin.register(Watchlist)
 class Watchlist(admin.ModelAdmin):
-    list_display = ('user', 'symbol','segment','tag')
-    list_filter = ('user', 'symbol','segment')
+    list_display = ('user', 'symbol','segment','tag','is_default')
+    list_filter = ('user', 'symbol','segment','is_default')
 
 
 @admin.register(Transaction)
@@ -111,4 +111,3 @@ admin.site.site_header="Onstock"
 admin.site.site_title="Trading on your way"
 # admin.site.index_template="home.html"
 admin.site.index_title="Onstock | Admin"
-admin.site.unregister(Group)

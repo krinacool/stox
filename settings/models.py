@@ -1,6 +1,4 @@
 from django.db import models
-# from smartapi import SmartConnect
-from app.symbols.getsymbols import get_symbol
 import pyotp
 from django.core.cache import cache
 from app.symbols.api_sessions import sessions
@@ -17,16 +15,6 @@ class charges(models.Model):
         verbose_name_plural = "Charges"
     def __str__(self):
       return "Updated"
-
-class Api(models.Model):
-    user_id = models.CharField(max_length=120,default="")
-    api_key = models.CharField(max_length=555,default="")
-    class Meta:
-        verbose_name = "Api Settings"
-        verbose_name_plural = "Api Settings"
-    def __str__(self):
-      return self.user_id
-
 
 class dates(models.Model):
     date = models.IntegerField()
@@ -55,41 +43,6 @@ class mcx_market_time(models.Model):
         return f"MCX Market ({self.open_time} - {self.close_time})"    
     
 
-
-class AngelApi(models.Model):
-    id=models.AutoField(primary_key=True)
-    api_key = models.CharField(max_length=100)
-    client_id = models.CharField(max_length=100)
-    password = models.CharField(max_length=100)
-    token = models.CharField(max_length=100)
-    # Add other fields as needed
-    class Meta:
-        verbose_name = "Angel One API"
-        verbose_name_plural = "Market API"
-
-    # Method to establish a session
-    def create_session(self):
-        smartApi = SmartConnect(self.api_key)
-        totp = pyotp.TOTP(self.token).now()
-        smartApi.generateSession(self.client_id, self.password, totp)
-        data=smartApi.ltpData('NSE','SBIN','3045')
-        if data['message'] == 'Invalid Token':
-            return False
-        return smartApi
-    
-    def save(self, *args, **kwargs):
-        try:
-            ses = self.create_session()
-            if ses is not False:
-                cache.set(f'smartapi{self.id}', ses,timeout=24*60*60)
-                sessions.append(ses)
-                super(AngelApi, self).save(*args, **kwargs)
-        except:
-            pass
-    def __str__(self):
-        return self.api_key
-    
-
 class ShoonyaApi(models.Model):
     user = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
@@ -116,26 +69,3 @@ class Upstox(models.Model):
         verbose_name_plural = "Upstox API"
     def __str__(self):
         return self.client_id
-
-
-class UpstoxAccessTokens(models.Model):
-    access_token = models.CharField(max_length=1000, default='access token')
-    class Meta:
-        verbose_name = "Upstox Access Token"
-        verbose_name_plural = "Upstox Access Tokens"
-
-    def __str__(self):
-        return self.access_token
-
-class Option_Lot_Size(models.Model):
-    symbol = models.CharField(max_length=50)
-    segment = models.CharField(max_length=50)
-    quantity = models.PositiveIntegerField(default=1)
-    class Meta:
-        verbose_name = "Options Lot Size"
-        verbose_name_plural = "Options Lot sizes"
-    def save(self, *args, **kwargs):
-        self.symbol = get_symbol(self.symbol)
-        super().save(*args, **kwargs)
-    def __str__(self):
-        return self.symbol

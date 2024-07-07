@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import *
 import urllib.parse
 from django.shortcuts import redirect
-from django.utils.html import format_html
+from django import forms
 
 # Register your models here.
 class BasicSettingAdmin(admin.ModelAdmin):
@@ -19,22 +19,6 @@ class BasicSettingAdmin(admin.ModelAdmin):
         return formfield
 # Register the basicAdmin
 admin.site.register(charges, BasicSettingAdmin)
-
-@admin.register(Api)
-class Api(admin.ModelAdmin):
-    list_display = ('user_id', 'api_key')
-
-@admin.register(AngelApi)
-class AngelApi(admin.ModelAdmin):
-    list_display = ('api_key', 'token')
-
-
-
-from django.contrib import admin
-from django.shortcuts import redirect
-from .models import Upstox
-import urllib.parse
-from django import forms
 
 class UpstoxForm(forms.ModelForm):
     class Meta:
@@ -55,8 +39,6 @@ class UpstoxAdmin(admin.ModelAdmin):
 
 admin.site.register(Upstox, UpstoxAdmin)
 
-
-
 @admin.register(nse_market_time)
 class nse_market(admin.ModelAdmin):
     list_display = ('open_time', 'close_time')
@@ -69,10 +51,3 @@ class mcx_market(admin.ModelAdmin):
 @admin.register(ShoonyaApi)
 class ShoonyaApi(admin.ModelAdmin):
     list_display = ('user', 'password', 'token', 'vendor_code', 'api_key')
-
-@admin.register(Option_Lot_Size)
-class Option_Lot_Size(admin.ModelAdmin):
-    search_fields = ('symbol', 'segment', 'quantity')
-    list_display = ('symbol', 'segment', 'quantity')
-
-admin.site.register(UpstoxAccessTokens)

@@ -5,16 +5,8 @@ import random
 import string
 import uuid
 from wallet.calculation import add_amount, deduct_amount, calc_carrage, add_wallet, deduct_wallet
-# from app.apiorder.Shoonyaapi.tests.test_place_order import shoonya_order
-from app.orders.market import stoploss_target
 from django.db import models, transaction
-from django.core.exceptions import ValidationError
 from app.symbols.getsymbols import get_instrument_key
-import threading
-import csv
-from stock.settings import DATA_FILE
-
-
 
 def generate_unique_id():
     characters = string.ascii_letters + string.digits
@@ -186,9 +178,6 @@ class Watchlist(models.Model):
         return str(self.symbol)
 
 
-
-
-
 class Transaction(models.Model):
     transaction_id = models.CharField(max_length=10, unique=True, default=generate_unique_id, editable=False)
     user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
@@ -202,14 +191,15 @@ class Transaction(models.Model):
         verbose_name_plural = "Transactions"
     def save(self, *args, **kwargs):
         if self.status == 'REQUESTED':
-            if self.transaction_type == 'WITHDRAW':
-                deduct_wallet(self.user,self.amount)
+            pass
         if self.status == 'CANCELLED':
             if self.transaction_type == 'WITHDRAW':
                 add_wallet(self.user,self.amount)
         if self.status == 'COMPLETED':
             if self.transaction_type == 'DEPOSIT':
                 add_wallet(self.user,self.amount)
+            if self.transaction_type == 'WITHDRAW':
+                deduct_wallet(self.user,self.amount)
         super().save(*args, **kwargs)
     def __str__(self):
       return self.transaction_id
@@ -327,10 +317,6 @@ class Order(models.Model):
         super().save(*args, **kwargs)
     def __str__(self):
       return self.symbol
-
-
-
-
 
 
 class Contact(models.Model):
