@@ -126,33 +126,6 @@ def handlelogout(request):
 @login_required
 def market(request):
     return redirect('/watchlist')
-    # wl_list = Watchlist.objects.all().filter(tag='#@DEFAULT')
-    # wl = []
-    # print('wl_list')
-    # for x in wl_list:
-    #     print(x)
-    #     wl.append(x.instrument_key)
-    # wallet = request.user.wallet
-    # margin = request.user.margin
-    # settings = charges.objects.first()
-    # charge = settings.intraday_buy_charge
-    # tax = settings.tax
-    # option_chain = {}
-    # lotob = Option_Lot_Size.objects.all()
-    # for x in lotob:
-    #     option_chain[x.symbol] = x.quantity
-    # # ---------------CONTEXT-----------
-    # context = {
-    #     'wl':wl,
-    #     'wl_list':wl_list,
-    #     'wallet':wallet,
-    #     'margin':margin,
-    #     'charges':charge,
-    #     'tax':tax,
-    #     'option_chain':json.dumps(option_chain),
-    # }
-    # return render(request,'dashboard/market.html',context)
-
 
 def search_instruments(request):
     query = request.GET.get('q', '')
@@ -166,8 +139,6 @@ def search_instruments(request):
         ) # Limit the results to 20
     else:
         suggestions = Instrument.objects.none()
-
-    # Filter out results where tradingsymbol is null
     results = [
         {'tradingsymbol': s.tradingsymbol, 'exchange': s.exchange}
         for s in suggestions if s.tradingsymbol
@@ -224,46 +195,6 @@ def create_watchlist(request):
 
 @login_required
 def watchlist(request):
-    # if request.method == 'POST':
-    #     try:
-    #         symbols = request.POST.get("symbollist")
-    #         tag = request.POST.get("tag")
-    #         symbols_data = eval(symbols)
-    #         for x in symbols_data:
-    #             try:
-    #                 Watchlist.objects.create(user=request.user,token=x['exchange_token'],tag=tag)
-    #             except:
-    #                 pass
-    #         messages.success(request,'Watchlist Updated !')
-    #     except:
-    #         messages.error(request,'Oops! Something went wrong.')
-    # # form = WatchlistForm()
-    # watch_list = Watchlist.objects.filter(user=request.user)
-    # watchlist_list = []
-    # watchlist_symbollist = []
-    # for i in watch_list:
-    #     watchlist_symbollist.append(i.instrument_key)
-    #     if i.tag not in watchlist_list:
-    #         watchlist_list.append(i.tag)
-    # settings = charges.objects.first()
-    # charge = settings.intraday_buy_charge
-    # tax = settings.tax
-    # option_chain = {}
-    # lotob = Option_Lot_Size.objects.all()
-    # for x in lotob:
-    #     option_chain[x.symbol] = x.quantity
-    # # ---------------CONTEXT-----------
-    # context = {
-    #     "charges":charge,
-    #     "watchlist_list":watchlist_list,
-    #     "watch_list":watch_list,
-    #     "watchlist_symbollist":watchlist_symbollist,
-    #     "tax":tax,
-    #     "option_chain":json.dumps(option_chain),
-    # }
-
-
-
     watch_list = Watchlist.objects.filter(user=request.user)
     watchlist_list = []
     watchlist_symbollist = []
@@ -280,9 +211,6 @@ def watchlist(request):
     }
     return render(request,'dashboard/watchlist.html',context)
 
-
-
-
 @login_required
 def delete_symbol(request,symbol):
     try:
@@ -290,11 +218,8 @@ def delete_symbol(request,symbol):
         de.delete()
     except:
         pass
-    # messages.success(request,'Watchlist updated successfully !')
     return JsonResponse({'success': True, 'message': 'Deleted successfully.'})
 
-
-# -----------------------ORDERS
 @login_required
 def orders(request):
     today = timezone.now().date()
@@ -495,20 +420,6 @@ def place_order(request):
     else:
         return redirect('/orders')
     
-
-    # if request.method == 'POST':
-    #     instrument = request.POST.get('instrument')
-    #     quantity = request.POST.get('quantity')
-    #     price = request.POST.get('price')
-    #     order_type = request.POST.get('order_type')
-    #     product_type = request.POST.get('product_type')
-    #     order = request.POST.get('order')
-    #     smart_order = request.POST.get('smart_order')
-    #     if smart_order:
-    #         stoploss = request.POST.get('stoploss')
-    #         target = request.POST.get('target')
-
-        
 
 @login_required
 def trade_charges(request):

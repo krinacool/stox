@@ -343,5 +343,5 @@ class Contact(models.Model):
     def __str__(self):
         return f"{self.first_name} {self.last_name}" if self.last_name else self.first_name
     class Meta:
-        verbose_name = "Contact"
-        verbose_name_plural = "Contacts"
+        verbose_name = "Contact Us Request"
+        verbose_name_plural = "Contact Requests"

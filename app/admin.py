@@ -35,7 +35,6 @@ class CustomUserAdmin(UserAdmin):
 # Register the CustomUserAdmin
 admin.site.register(CustomUser, CustomUserAdmin)
 
-admin.site.register(Remarks)
 
 @admin.register(symbols)
 class Symbols(admin.ModelAdmin):

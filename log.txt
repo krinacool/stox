@@ -1,0 +1,1280 @@
+2024-07-07 20:59:19,050 Watching for file changes with StatReloader
+2024-07-07 20:59:31,558 [32mHTTP GET /admin 301 [0.22, 127.0.0.1:52625][0m
+2024-07-07 20:59:31,610 [32mHTTP GET /admin/ 302 [0.05, 127.0.0.1:52625][0m
+2024-07-07 20:59:31,852 [mHTTP GET /admin/login/?next=/admin/ 200 [0.24, 127.0.0.1:52625][0m
+2024-07-07 20:59:32,000 [mHTTP GET /static/admin/css/base.css 200 [0.09, 127.0.0.1:52625][0m
+2024-07-07 20:59:32,011 [mHTTP GET /static/admin/css/dark_mode.css 200 [0.10, 127.0.0.1:52626][0m
+2024-07-07 20:59:32,016 [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.10, 127.0.0.1:52627][0m
+2024-07-07 20:59:32,020 [mHTTP GET /static/admin/css/login.css 200 [0.10, 127.0.0.1:52628][0m
+2024-07-07 20:59:32,021 [mHTTP GET /static/admin/css/responsive.css 200 [0.10, 127.0.0.1:52629][0m
+2024-07-07 20:59:32,268 [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.02, 127.0.0.1:52628][0m
+2024-07-07 20:59:32,270 [mHTTP GET /static/admin/js/theme.js 200 [0.02, 127.0.0.1:52629][0m
+2024-07-07 20:59:32,830 Not Found: /favicon.ico
+2024-07-07 20:59:32,831 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:52629][0m
+2024-07-07 21:00:10,325 D:\stox\stock\settings.py changed, reloading.
+2024-07-07 21:00:12,690 Watching for file changes with StatReloader
+2024-07-07 21:00:13,285 [mHTTP GET /admin/login/?next=/admin/ 200 [0.06, 127.0.0.1:52644][0m
+2024-07-07 21:00:13,331 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:52644][0m
+2024-07-07 21:00:13,332 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:52645][0m
+2024-07-07 21:00:13,336 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:52652][0m
+2024-07-07 21:00:13,340 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:52644][0m
+2024-07-07 21:00:13,493 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:52652][0m
+2024-07-07 21:00:13,495 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:52644][0m
+2024-07-07 21:00:13,569 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52644][0m
+2024-07-07 21:00:23,338 [32mHTTP POST /admin/login/?next=/admin/ 302 [0.96, 127.0.0.1:52644][0m
+2024-07-07 21:00:23,560 [mHTTP GET /admin/ 200 [0.21, 127.0.0.1:52644][0m
+2024-07-07 21:00:23,596 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:52644][0m
+2024-07-07 21:00:23,599 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:52652][0m
+2024-07-07 21:00:23,602 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:52645][0m
+2024-07-07 21:00:23,604 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:52650][0m
+2024-07-07 21:00:23,608 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:52655][0m
+2024-07-07 21:00:23,821 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:52655][0m
+2024-07-07 21:00:23,823 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:52650][0m
+2024-07-07 21:00:23,918 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:52650][0m
+2024-07-07 21:00:38,239 [mHTTP GET /admin/app/instrument/ 200 [0.47, 127.0.0.1:52650][0m
+2024-07-07 21:00:38,284 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.00, 127.0.0.1:52650][0m
+2024-07-07 21:00:38,294 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:52655][0m
+2024-07-07 21:00:38,301 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:52652][0m
+2024-07-07 21:00:38,302 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:52645][0m
+2024-07-07 21:00:38,304 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:52650][0m
+2024-07-07 21:00:38,309 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:52659][0m
+2024-07-07 21:00:38,320 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52644][0m
+2024-07-07 21:00:38,521 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:52644][0m
+2024-07-07 21:00:38,524 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:52659][0m
+2024-07-07 21:00:38,535 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:52659][0m
+2024-07-07 21:00:38,536 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52644][0m
+2024-07-07 21:00:45,110 [mHTTP GET /admin/app/instrument/?q=banknifty 200 [0.34, 127.0.0.1:52644][0m
+2024-07-07 21:00:45,156 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:52644][0m
+2024-07-07 21:00:45,157 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:52659][0m
+2024-07-07 21:00:45,160 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:52650][0m
+2024-07-07 21:00:45,161 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:52645][0m
+2024-07-07 21:00:45,163 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:52655][0m
+2024-07-07 21:00:45,176 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:52644][0m
+2024-07-07 21:00:45,186 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:52652][0m
+2024-07-07 21:00:45,401 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:52652][0m
+2024-07-07 21:00:45,402 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:52644][0m
+2024-07-07 21:00:45,413 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52644][0m
+2024-07-07 21:00:45,414 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:52652][0m
+2024-07-07 21:00:47,541 [mHTTP GET /admin/app/instrument/ 200 [0.28, 127.0.0.1:52652][0m
+2024-07-07 21:00:51,755 [mHTTP GET /admin/app/instrument/461404/change/ 200 [0.17, 127.0.0.1:52652][0m
+2024-07-07 21:00:51,814 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:52652][0m
+2024-07-07 21:00:51,821 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:52644][0m
+2024-07-07 21:00:51,823 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:52650][0m
+2024-07-07 21:00:51,824 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:52655][0m
+2024-07-07 21:00:51,825 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:52659][0m
+2024-07-07 21:00:51,842 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52645][0m
+2024-07-07 21:00:52,051 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:52645][0m
+2024-07-07 21:00:52,069 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:52645][0m
+2024-07-07 21:00:52,070 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:52655][0m
+2024-07-07 21:00:52,071 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:52659][0m
+2024-07-07 21:00:52,072 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:52650][0m
+2024-07-07 21:00:54,202 [mHTTP GET /admin/app/instrument/ 200 [0.27, 127.0.0.1:52655][0m
+2024-07-07 21:01:59,202 D:\stox\stock\settings.py changed, reloading.
+2024-07-07 21:02:01,987 Watching for file changes with StatReloader
+2024-07-07 21:02:02,913 Internal Server Error: /admin/app/instrument/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+2024-07-07 21:02:02,921 [35;1mHTTP GET /admin/app/instrument/ 500 [0.36, 127.0.0.1:52702][0m
+2024-07-07 21:02:43,839 D:\stox\stock\settings.py changed, reloading.
+2024-07-07 21:02:46,582 Watching for file changes with StatReloader
+2024-07-07 21:02:47,404 [mHTTP GET /admin/app/instrument/ 200 [0.23, 127.0.0.1:52722][0m
+2024-07-07 21:02:47,464 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:52722][0m
+2024-07-07 21:02:47,470 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:52717][0m
+2024-07-07 21:02:47,474 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:52716][0m
+2024-07-07 21:02:47,477 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:52725][0m
+2024-07-07 21:02:47,487 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:52722][0m
+2024-07-07 21:02:47,505 [33mHTTP GET /static/books/img/logo.png 404 [0.03, 127.0.0.1:52727][0m
+2024-07-07 21:02:47,510 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:52726][0m
+2024-07-07 21:02:47,641 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:52726][0m
+2024-07-07 21:02:47,691 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:52726][0m
+2024-07-07 21:02:47,692 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:52727][0m
+2024-07-07 21:02:47,724 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52727][0m
+2024-07-07 21:02:47,777 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52727][0m
+2024-07-07 21:02:47,780 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52726][0m
+2024-07-07 21:02:47,989 [33mHTTP GET /static/books/img/logo.png 404 [0.01, 127.0.0.1:52726][0m
+2024-07-07 21:02:48,050 [33mHTTP GET /static/books/img/logo.png 404 [0.01, 127.0.0.1:52726][0m
+2024-07-07 21:02:48,136 [33mHTTP GET /static/books/img/logo.png 404 [0.01, 127.0.0.1:52726][0m
+2024-07-07 21:03:33,811 D:\stox\stock\settings.py changed, reloading.
+2024-07-07 21:03:36,181 Watching for file changes with StatReloader
+2024-07-07 21:03:37,133 [mHTTP GET /admin/app/instrument/ 200 [0.22, 127.0.0.1:52754][0m
+2024-07-07 21:03:37,180 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:52754][0m
+2024-07-07 21:03:37,181 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:52755][0m
+2024-07-07 21:03:37,186 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:52756][0m
+2024-07-07 21:03:37,188 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:52757][0m
+2024-07-07 21:03:37,194 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:52755][0m
+2024-07-07 21:03:37,204 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52758][0m
+2024-07-07 21:03:37,485 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:52758][0m
+2024-07-07 21:03:37,505 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:52755][0m
+2024-07-07 21:03:37,506 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52757][0m
+2024-07-07 21:03:37,508 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:52758][0m
+2024-07-07 21:03:37,603 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:37,701 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [0.52, 127.0.0.1:52759][0m
+2024-07-07 21:03:38,705 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:38,709 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [0.82, 127.0.0.1:52759][0m
+2024-07-07 21:03:39,732 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:39,735 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [0.98, 127.0.0.1:52759][0m
+2024-07-07 21:03:40,739 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:40,740 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [0.95, 127.0.0.1:52759][0m
+2024-07-07 21:03:41,749 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:41,752 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [1.01, 127.0.0.1:52759][0m
+2024-07-07 21:03:45,055 [mHTTP GET /admin/app/instrument/ 200 [0.28, 127.0.0.1:52761][0m
+2024-07-07 21:03:45,103 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:52761][0m
+2024-07-07 21:03:45,104 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:52762][0m
+2024-07-07 21:03:45,108 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:52763][0m
+2024-07-07 21:03:45,109 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:52764][0m
+2024-07-07 21:03:45,116 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:52762][0m
+2024-07-07 21:03:45,123 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52765][0m
+2024-07-07 21:03:45,218 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:52765][0m
+2024-07-07 21:03:45,232 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:52765][0m
+2024-07-07 21:03:45,232 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52764][0m
+2024-07-07 21:03:45,234 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:52762][0m
+2024-07-07 21:03:45,779 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:45,782 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [0.68, 127.0.0.1:52766][0m
+2024-07-07 21:03:46,788 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:46,792 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [0.99, 127.0.0.1:52766][0m
+2024-07-07 21:03:47,796 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:47,798 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [0.96, 127.0.0.1:52766][0m
+2024-07-07 21:03:48,804 Exception inside application: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 99, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 160, in __call__
+    await self.handle(scope, receive, send)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\asgi.py", line 183, in handle
+    response = await self.get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 104, in get_response_async
+    response = await super().get_response_async(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 60, in get_response_async
+    return await sync_to_async(self.serve, thread_sensitive=False)(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\handlers.py", line 50, in serve
+    return serve(request, self.file_path(request.path), insecure=True)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\views.py", line 33, in serve
+    absolute_path = finders.find(normalized_path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 298, in find
+    result = finder.find(path, all=all)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 124, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\staticfiles\finders.py", line 141, in find_location
+    path = safe_join(root, path)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (S:\smart-algo.in\static\assets\img\title.jpg) is located outside of the base path component (D:\stox\static)
+2024-07-07 21:03:48,807 [35;1mHTTP GET /static/https%3A/smart-algo.in/static/assets/img/title.jpg 500 [1.00, 127.0.0.1:52766][0m
+2024-07-07 21:05:04,748 D:\stox\stock\settings.py changed, reloading.
+2024-07-07 21:05:07,712 Watching for file changes with StatReloader
+2024-07-07 21:05:08,503 [mHTTP GET /admin/app/instrument/ 200 [0.29, 127.0.0.1:53062][0m
+2024-07-07 21:05:08,559 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:53062][0m
+2024-07-07 21:05:08,562 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:53045][0m
+2024-07-07 21:05:08,564 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.02, 127.0.0.1:53046][0m
+2024-07-07 21:05:08,568 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:53083][0m
+2024-07-07 21:05:08,577 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:53045][0m
+2024-07-07 21:05:08,598 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:53084][0m
+2024-07-07 21:05:08,599 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.03, 127.0.0.1:53085][0m
+2024-07-07 21:05:08,723 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:53085][0m
+2024-07-07 21:05:08,754 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:53085][0m
+2024-07-07 21:05:08,765 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:53084][0m
+2024-07-07 21:05:08,766 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:53085][0m
+2024-07-07 21:05:08,810 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53085][0m
+2024-07-07 21:05:08,813 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53084][0m
+2024-07-07 21:05:08,949 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.03, 127.0.0.1:53084][0m
+2024-07-07 21:05:09,033 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.02, 127.0.0.1:53084][0m
+2024-07-07 21:05:09,360 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.01, 127.0.0.1:53084][0m
+2024-07-07 21:05:13,621 [mHTTP GET /admin/ 200 [0.11, 127.0.0.1:53125][0m
+2024-07-07 21:05:15,719 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.03, 127.0.0.1:53134][0m
+2024-07-07 21:05:15,721 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.04, 127.0.0.1:53133][0m
+2024-07-07 21:05:15,725 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.03, 127.0.0.1:53135][0m
+2024-07-07 21:05:15,732 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.04, 127.0.0.1:53137][0m
+2024-07-07 21:05:15,733 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.04, 127.0.0.1:53138][0m
+2024-07-07 21:05:15,753 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.06, 127.0.0.1:53136][0m
+2024-07-07 21:05:15,759 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:53133][0m
+2024-07-07 21:05:15,946 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:53133][0m
+2024-07-07 21:05:15,947 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:53136][0m
+2024-07-07 21:05:15,964 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.01, 127.0.0.1:53133][0m
+2024-07-07 21:05:15,990 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.01, 127.0.0.1:53133][0m
+2024-07-07 21:05:28,382 [mHTTP GET /admin/app/watchlist/ 200 [0.10, 127.0.0.1:53210][0m
+2024-07-07 21:05:28,449 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:53210][0m
+2024-07-07 21:05:28,450 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:53211][0m
+2024-07-07 21:05:28,454 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:53212][0m
+2024-07-07 21:05:28,457 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:53213][0m
+2024-07-07 21:05:28,472 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:53210][0m
+2024-07-07 21:05:28,478 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.03, 127.0.0.1:53215][0m
+2024-07-07 21:05:28,482 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:53214][0m
+2024-07-07 21:05:28,706 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:53214][0m
+2024-07-07 21:05:28,707 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:53215][0m
+2024-07-07 21:05:28,717 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:53215][0m
+2024-07-07 21:05:28,718 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:53214][0m
+2024-07-07 21:05:28,792 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.01, 127.0.0.1:53215][0m
+2024-07-07 21:05:28,819 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.01, 127.0.0.1:53215][0m
+2024-07-07 21:05:32,460 [mHTTP GET /admin/app/symbols/ 200 [0.08, 127.0.0.1:53215][0m
+2024-07-07 21:05:32,501 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:53215][0m
+2024-07-07 21:05:32,506 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:53210][0m
+2024-07-07 21:05:32,509 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:53213][0m
+2024-07-07 21:05:32,511 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.02, 127.0.0.1:53214][0m
+2024-07-07 21:05:32,520 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.02, 127.0.0.1:53211][0m
+2024-07-07 21:05:32,522 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:53215][0m
+2024-07-07 21:05:32,537 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:53212][0m
+2024-07-07 21:05:32,736 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:53212][0m
+2024-07-07 21:05:32,738 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:53215][0m
+2024-07-07 21:05:32,749 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:53215][0m
+2024-07-07 21:05:32,750 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:53212][0m
+2024-07-07 21:05:32,837 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.01, 127.0.0.1:53212][0m
+2024-07-07 21:05:32,872 [33mHTTP GET /static/static/images/marketing/chrome.png 404 [0.02, 127.0.0.1:53212][0m
+2024-07-07 21:07:20,823 D:\stox\stock\settings.py changed, reloading.
+2024-07-07 21:07:23,187 Watching for file changes with StatReloader
+2024-07-07 21:07:24,800 [mHTTP GET /admin/app/symbols/ 200 [0.12, 127.0.0.1:54440][0m
+2024-07-07 21:07:24,849 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54441][0m
+2024-07-07 21:07:24,851 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54440][0m
+2024-07-07 21:07:24,852 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54442][0m
+2024-07-07 21:07:24,856 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54443][0m
+2024-07-07 21:07:24,860 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:54445][0m
+2024-07-07 21:07:24,864 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54443][0m
+2024-07-07 21:07:24,871 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54444][0m
+2024-07-07 21:07:25,335 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54444][0m
+2024-07-07 21:07:25,388 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54444][0m
+2024-07-07 21:07:25,405 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:54443][0m
+2024-07-07 21:07:25,407 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:54444][0m
+2024-07-07 21:07:25,530 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:54444][0m
+2024-07-07 21:07:25,534 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:54443][0m
+2024-07-07 21:07:25,912 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54443][0m
+2024-07-07 21:07:25,949 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:54443][0m
+2024-07-07 21:07:31,244 [mHTTP GET /admin/app/contact/ 200 [0.06, 127.0.0.1:54489][0m
+2024-07-07 21:07:31,293 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54489][0m
+2024-07-07 21:07:31,294 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54490][0m
+2024-07-07 21:07:31,301 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54491][0m
+2024-07-07 21:07:31,303 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54492][0m
+2024-07-07 21:07:31,306 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54494][0m
+2024-07-07 21:07:31,310 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54489][0m
+2024-07-07 21:07:31,321 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54493][0m
+2024-07-07 21:07:31,539 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54493][0m
+2024-07-07 21:07:31,539 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54489][0m
+2024-07-07 21:07:31,550 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54489][0m
+2024-07-07 21:07:31,551 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54493][0m
+2024-07-07 21:07:40,914 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.23, 127.0.0.1:54503][0m
+2024-07-07 21:07:40,957 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54503][0m
+2024-07-07 21:07:40,965 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54504][0m
+2024-07-07 21:07:40,980 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:54506][0m
+2024-07-07 21:07:40,982 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:54507][0m
+2024-07-07 21:07:40,985 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54509][0m
+2024-07-07 21:07:40,998 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54508][0m
+2024-07-07 21:07:41,246 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54508][0m
+2024-07-07 21:07:41,263 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:54509][0m
+2024-07-07 21:07:41,264 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:54508][0m
+2024-07-07 21:07:41,266 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:54506][0m
+2024-07-07 21:07:41,267 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:54507][0m
+2024-07-07 21:07:45,264 [mHTTP GET /static/jazzmin/img/selector-icons.svg 200 [0.05, 127.0.0.1:54507][0m
+2024-07-07 21:07:50,019 [mHTTP GET /admin/ 200 [0.07, 127.0.0.1:54516][0m
+2024-07-07 21:07:50,056 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54516][0m
+2024-07-07 21:07:50,061 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54517][0m
+2024-07-07 21:07:50,063 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54518][0m
+2024-07-07 21:07:50,064 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54519][0m
+2024-07-07 21:07:50,066 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54520][0m
+2024-07-07 21:07:50,282 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54519][0m
+2024-07-07 21:07:50,283 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:54520][0m
+2024-07-07 21:07:51,593 [mHTTP GET /admin/ 200 [0.03, 127.0.0.1:54520][0m
+2024-07-07 21:07:51,642 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54520][0m
+2024-07-07 21:07:51,644 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54519][0m
+2024-07-07 21:07:51,647 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54516][0m
+2024-07-07 21:07:51,648 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54518][0m
+2024-07-07 21:07:51,649 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54517][0m
+2024-07-07 21:07:51,761 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:54517][0m
+2024-07-07 21:07:51,762 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:54519][0m
+2024-07-07 21:08:33,315 D:\stox\stock\settings.py changed, reloading.
+2024-07-07 21:09:14,196 Watching for file changes with StatReloader
+2024-07-07 21:09:14,715 [mHTTP GET /admin/ 200 [0.12, 127.0.0.1:54566][0m
+2024-07-07 21:09:14,768 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54566][0m
+2024-07-07 21:09:14,769 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54565][0m
+2024-07-07 21:09:14,775 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54569][0m
+2024-07-07 21:09:14,778 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:54565][0m
+2024-07-07 21:09:14,812 [mHTTP GET /static/vendor/bootswatch/darkly/bootstrap.min.css 200 [0.05, 127.0.0.1:54568][0m
+2024-07-07 21:09:15,376 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54565][0m
+2024-07-07 21:09:15,378 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:54569][0m
+2024-07-07 21:09:15,380 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54568][0m
+2024-07-07 21:09:15,725 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:54568][0m
+2024-07-07 21:09:15,727 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:54565][0m
+2024-07-07 21:09:16,185 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:54565][0m
+2024-07-07 21:09:16,193 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:54565][0m
+2024-07-07 21:09:45,733 [mHTTP GET /admin/app/watchlist/ 200 [0.13, 127.0.0.1:54584][0m
+2024-07-07 21:09:45,797 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54585][0m
+2024-07-07 21:09:45,807 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.02, 127.0.0.1:54584][0m
+2024-07-07 21:09:45,809 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:54586][0m
+2024-07-07 21:09:45,813 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:54587][0m
+2024-07-07 21:09:45,819 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54585][0m
+2024-07-07 21:09:45,820 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54589][0m
+2024-07-07 21:09:45,831 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:54588][0m
+2024-07-07 21:09:46,098 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54588][0m
+2024-07-07 21:09:46,102 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:54585][0m
+2024-07-07 21:09:46,115 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54585][0m
+2024-07-07 21:09:46,117 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:54588][0m
+2024-07-07 21:09:47,919 [mHTTP GET /admin/ 200 [0.06, 127.0.0.1:54585][0m
+2024-07-07 21:09:53,116 D:\stox\stock\settings.py changed, reloading.
+2024-07-07 21:09:55,530 Watching for file changes with StatReloader
+2024-07-07 21:09:56,151 [mHTTP GET /admin/ 200 [0.10, 127.0.0.1:54603][0m
+2024-07-07 21:09:56,186 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54603][0m
+2024-07-07 21:09:56,189 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54609][0m
+2024-07-07 21:09:56,191 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54610][0m
+2024-07-07 21:09:56,194 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54611][0m
+2024-07-07 21:09:56,196 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54603][0m
+2024-07-07 21:09:56,318 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54603][0m
+2024-07-07 21:09:56,319 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54611][0m
+2024-07-07 21:09:56,512 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:54611][0m
+2024-07-07 21:09:56,521 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:54611][0m
+2024-07-07 21:11:07,578 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:54624][0m
+2024-07-07 21:11:07,710 [mHTTP GET /static/css/theme.min.css 200 [0.10, 127.0.0.1:54625][0m
+2024-07-07 21:11:07,720 [mHTTP GET /static/css/tailwind.css 200 [0.11, 127.0.0.1:54624][0m
+2024-07-07 21:11:07,731 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.css 200 [0.11, 127.0.0.1:54626][0m
+2024-07-07 21:11:07,760 [mHTTP GET /static/js/theme.min.js 200 [0.04, 127.0.0.1:54624][0m
+2024-07-07 21:11:07,775 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.js 200 [0.06, 127.0.0.1:54625][0m
+2024-07-07 21:11:07,797 [mHTTP GET /static/libs/feather-icons/dist/feather.min.js 200 [0.17, 127.0.0.1:54628][0m
+2024-07-07 21:11:07,799 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.min.js 200 [0.18, 127.0.0.1:54627][0m
+2024-07-07 21:11:07,806 [mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js 200 [0.18, 127.0.0.1:54629][0m
+2024-07-07 21:11:08,492 [mHTTP GET /static/images/brand/logo/logo-primary.svg 200 [0.01, 127.0.0.1:54627][0m
+2024-07-07 21:11:24,943 [mHTTP GET /search/?q=BA 200 [0.25, 127.0.0.1:54634][0m
+2024-07-07 21:11:25,077 [mHTTP GET /search/?q=BAN 200 [0.21, 127.0.0.1:54635][0m
+2024-07-07 21:11:25,302 [mHTTP GET /search/?q=BANK 200 [0.23, 127.0.0.1:54634][0m
+2024-07-07 21:11:25,422 [mHTTP GET /search/?q=BANKN 200 [0.13, 127.0.0.1:54635][0m
+2024-07-07 21:11:25,687 [mHTTP GET /search/?q=BANKNI 200 [0.15, 127.0.0.1:54635][0m
+2024-07-07 21:11:26,074 [mHTTP GET /search/?q=BANKNIF 200 [0.22, 127.0.0.1:54635][0m
+2024-07-07 21:11:26,205 [mHTTP GET /search/?q=BANKNIFT 200 [0.13, 127.0.0.1:54634][0m
+2024-07-07 21:11:26,425 [mHTTP GET /search/?q=BANKNIFTY 200 [0.14, 127.0.0.1:54634][0m
+2024-07-07 21:11:45,207 D:\stox\app\symbols\getsymbols.py changed, reloading.
+2024-07-07 21:11:47,563 Watching for file changes with StatReloader
+2024-07-07 21:12:28,237 [mHTTP GET /admin/app/position/ 200 [0.25, 127.0.0.1:54659][0m
+2024-07-07 21:12:28,294 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54659][0m
+2024-07-07 21:12:28,298 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54660][0m
+2024-07-07 21:12:28,300 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54662][0m
+2024-07-07 21:12:28,303 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54663][0m
+2024-07-07 21:12:28,307 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:54665][0m
+2024-07-07 21:12:28,315 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54663][0m
+2024-07-07 21:12:28,322 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54664][0m
+2024-07-07 21:12:28,543 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54664][0m
+2024-07-07 21:12:28,574 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54664][0m
+2024-07-07 21:12:28,579 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54664][0m
+2024-07-07 21:12:28,589 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54664][0m
+2024-07-07 21:12:28,636 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:54664][0m
+2024-07-07 21:12:28,638 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:54663][0m
+2024-07-07 21:12:35,818 [mHTTP GET /admin/app/position/add/ 200 [0.12, 127.0.0.1:54667][0m
+2024-07-07 21:12:35,873 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54667][0m
+2024-07-07 21:12:35,879 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54668][0m
+2024-07-07 21:12:35,883 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54669][0m
+2024-07-07 21:12:35,886 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54670][0m
+2024-07-07 21:12:35,888 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54672][0m
+2024-07-07 21:12:35,900 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54671][0m
+2024-07-07 21:12:36,134 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54671][0m
+2024-07-07 21:12:36,140 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:54672][0m
+2024-07-07 21:12:36,142 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:54670][0m
+2024-07-07 21:12:36,143 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:54669][0m
+2024-07-07 21:12:36,145 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:54668][0m
+2024-07-07 21:12:37,611 [mHTTP GET /admin/app/position/ 200 [0.07, 127.0.0.1:54669][0m
+2024-07-07 21:13:26,249 [mHTTP GET /search/?q=sen 200 [0.18, 127.0.0.1:54690][0m
+2024-07-07 21:13:26,386 [mHTTP GET /search/?q=sens 200 [0.15, 127.0.0.1:54691][0m
+2024-07-07 21:13:26,644 [mHTTP GET /search/?q=sense 200 [0.17, 127.0.0.1:54691][0m
+2024-07-07 21:13:27,702 [mHTTP GET /search/?q=se 200 [1.74, 127.0.0.1:54689][0m
+2024-07-07 21:13:28,255 [mHTTP GET /search/?q=sensex 200 [0.13, 127.0.0.1:54689][0m
+2024-07-07 21:13:41,836 [mHTTP GET /admin/app/symbols/ 200 [0.09, 127.0.0.1:54692][0m
+2024-07-07 21:13:41,889 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54692][0m
+2024-07-07 21:13:41,890 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54693][0m
+2024-07-07 21:13:41,902 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:54694][0m
+2024-07-07 21:13:41,906 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:54695][0m
+2024-07-07 21:13:41,910 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54697][0m
+2024-07-07 21:13:41,913 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54693][0m
+2024-07-07 21:13:41,922 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54696][0m
+2024-07-07 21:13:42,150 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54696][0m
+2024-07-07 21:13:42,178 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54696][0m
+2024-07-07 21:13:42,187 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54696][0m
+2024-07-07 21:13:42,188 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54693][0m
+2024-07-07 21:13:42,223 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:54693][0m
+2024-07-07 21:13:42,226 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:54696][0m
+2024-07-07 21:13:45,672 [mHTTP GET /admin/app/symbols/?q=sensex 200 [0.06, 127.0.0.1:54699][0m
+2024-07-07 21:13:45,717 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54699][0m
+2024-07-07 21:13:45,724 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54700][0m
+2024-07-07 21:13:45,727 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54701][0m
+2024-07-07 21:13:45,728 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54702][0m
+2024-07-07 21:13:45,732 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54704][0m
+2024-07-07 21:13:45,733 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54699][0m
+2024-07-07 21:13:45,743 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54703][0m
+2024-07-07 21:13:45,958 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54699][0m
+2024-07-07 21:13:45,960 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:54703][0m
+2024-07-07 21:13:45,969 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54699][0m
+2024-07-07 21:13:45,970 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54703][0m
+2024-07-07 21:13:48,995 [mHTTP GET /admin/app/instrument/ 200 [0.32, 127.0.0.1:54703][0m
+2024-07-07 21:13:49,050 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.02, 127.0.0.1:54703][0m
+2024-07-07 21:13:49,054 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.02, 127.0.0.1:54699][0m
+2024-07-07 21:13:49,057 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:54704][0m
+2024-07-07 21:13:49,058 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.02, 127.0.0.1:54700][0m
+2024-07-07 21:13:49,059 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:54702][0m
+2024-07-07 21:13:49,065 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54703][0m
+2024-07-07 21:13:49,078 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:54701][0m
+2024-07-07 21:13:49,291 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54701][0m
+2024-07-07 21:13:49,292 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54703][0m
+2024-07-07 21:13:49,301 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54701][0m
+2024-07-07 21:13:49,302 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54703][0m
+2024-07-07 21:13:52,776 [mHTTP GET /admin/app/instrument/?q=sensex 200 [0.28, 127.0.0.1:54703][0m
+2024-07-07 21:13:52,833 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54703][0m
+2024-07-07 21:13:52,836 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54701][0m
+2024-07-07 21:13:52,838 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54702][0m
+2024-07-07 21:13:52,839 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54704][0m
+2024-07-07 21:13:52,840 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54699][0m
+2024-07-07 21:13:52,845 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54703][0m
+2024-07-07 21:13:52,857 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54700][0m
+2024-07-07 21:13:53,054 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54703][0m
+2024-07-07 21:13:53,054 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54700][0m
+2024-07-07 21:13:53,067 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54703][0m
+2024-07-07 21:13:53,068 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54700][0m
+2024-07-07 21:14:07,894 [mHTTP GET /admin/app/instrument/?q= 200 [0.30, 127.0.0.1:54711][0m
+2024-07-07 21:14:07,936 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54711][0m
+2024-07-07 21:14:07,937 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54712][0m
+2024-07-07 21:14:07,942 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54713][0m
+2024-07-07 21:14:07,945 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54714][0m
+2024-07-07 21:14:07,947 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54716][0m
+2024-07-07 21:14:07,952 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54712][0m
+2024-07-07 21:14:07,960 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54715][0m
+2024-07-07 21:14:08,171 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54712][0m
+2024-07-07 21:14:08,172 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:54715][0m
+2024-07-07 21:14:08,184 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54712][0m
+2024-07-07 21:14:08,185 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54715][0m
+2024-07-07 21:14:21,928 [mHTTP GET /admin/app/instrument/?exchange=BCD_FO&q= 200 [0.32, 127.0.0.1:54717][0m
+2024-07-07 21:14:21,977 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54717][0m
+2024-07-07 21:14:21,981 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54718][0m
+2024-07-07 21:14:21,984 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54719][0m
+2024-07-07 21:14:21,985 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54720][0m
+2024-07-07 21:14:21,991 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54722][0m
+2024-07-07 21:14:21,996 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54717][0m
+2024-07-07 21:14:22,004 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54721][0m
+2024-07-07 21:14:22,209 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54721][0m
+2024-07-07 21:14:22,210 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54717][0m
+2024-07-07 21:14:22,221 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54721][0m
+2024-07-07 21:14:22,222 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54717][0m
+2024-07-07 21:14:31,327 [mHTTP GET /admin/app/instrument/?exchange=BCD_FO&p=3&q= 200 [0.32, 127.0.0.1:54723][0m
+2024-07-07 21:14:31,377 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54723][0m
+2024-07-07 21:14:31,379 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54724][0m
+2024-07-07 21:14:31,384 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54725][0m
+2024-07-07 21:14:31,386 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54726][0m
+2024-07-07 21:14:31,390 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54728][0m
+2024-07-07 21:14:31,394 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54724][0m
+2024-07-07 21:14:31,403 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54727][0m
+2024-07-07 21:14:31,601 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54727][0m
+2024-07-07 21:14:31,602 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54724][0m
+2024-07-07 21:14:31,618 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54727][0m
+2024-07-07 21:14:31,619 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54724][0m
+2024-07-07 21:14:38,071 [mHTTP GET /admin/app/instrument/?exchange=BSE_EQ&q= 200 [0.31, 127.0.0.1:54730][0m
+2024-07-07 21:14:38,136 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54731][0m
+2024-07-07 21:14:38,137 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54730][0m
+2024-07-07 21:14:38,143 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54732][0m
+2024-07-07 21:14:38,151 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:54733][0m
+2024-07-07 21:14:38,155 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.02, 127.0.0.1:54735][0m
+2024-07-07 21:14:38,160 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54730][0m
+2024-07-07 21:14:38,168 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54734][0m
+2024-07-07 21:14:38,373 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54734][0m
+2024-07-07 21:14:38,374 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54730][0m
+2024-07-07 21:14:38,382 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54735][0m
+2024-07-07 21:14:38,383 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54730][0m
+2024-07-07 21:14:43,837 [mHTTP GET /admin/app/instrument/?exchange=BSE_EQ&p=3&q= 200 [0.30, 127.0.0.1:54730][0m
+2024-07-07 21:14:43,889 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54730][0m
+2024-07-07 21:14:43,894 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54733][0m
+2024-07-07 21:14:43,895 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54735][0m
+2024-07-07 21:14:43,897 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54734][0m
+2024-07-07 21:14:43,898 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54731][0m
+2024-07-07 21:14:43,906 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54730][0m
+2024-07-07 21:14:43,915 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54732][0m
+2024-07-07 21:14:44,117 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54738][0m
+2024-07-07 21:14:44,118 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54737][0m
+2024-07-07 21:14:44,130 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54738][0m
+2024-07-07 21:14:44,131 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54737][0m
+2024-07-07 21:15:03,834 [mHTTP GET /admin/app/instrument/?exchange=NSE_INDEX&q= 200 [0.28, 127.0.0.1:54743][0m
+2024-07-07 21:15:03,889 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54743][0m
+2024-07-07 21:15:03,898 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54745][0m
+2024-07-07 21:15:03,906 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.02, 127.0.0.1:54744][0m
+2024-07-07 21:15:03,909 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:54746][0m
+2024-07-07 21:15:03,913 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.02, 127.0.0.1:54748][0m
+2024-07-07 21:15:03,917 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54743][0m
+2024-07-07 21:15:03,926 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:54747][0m
+2024-07-07 21:15:04,145 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54749][0m
+2024-07-07 21:15:04,148 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54750][0m
+2024-07-07 21:15:04,159 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54750][0m
+2024-07-07 21:15:04,159 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54749][0m
+2024-07-07 21:15:11,329 [mHTTP GET /admin/app/instrument/379742/change/?_changelist_filters=exchange%3DNSE_INDEX%26q%3D 200 [0.07, 127.0.0.1:54749][0m
+2024-07-07 21:15:11,377 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54750][0m
+2024-07-07 21:15:11,378 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54749][0m
+2024-07-07 21:15:11,383 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54751][0m
+2024-07-07 21:15:11,386 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54752][0m
+2024-07-07 21:15:11,388 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54754][0m
+2024-07-07 21:15:11,401 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54753][0m
+2024-07-07 21:15:11,598 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54753][0m
+2024-07-07 21:15:11,612 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:54751][0m
+2024-07-07 21:15:11,613 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:54753][0m
+2024-07-07 21:15:11,614 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:54752][0m
+2024-07-07 21:15:11,615 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:54754][0m
+2024-07-07 21:15:14,864 [mHTTP GET /admin/app/instrument/?exchange=NSE_INDEX&q= 200 [0.29, 127.0.0.1:54755][0m
+2024-07-07 21:15:18,226 [mHTTP GET /admin/app/instrument/?exchange=NSE_INDEX&o=3&q= 200 [0.31, 127.0.0.1:54755][0m
+2024-07-07 21:15:18,290 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54755][0m
+2024-07-07 21:15:18,294 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54756][0m
+2024-07-07 21:15:18,296 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54757][0m
+2024-07-07 21:15:18,304 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:54758][0m
+2024-07-07 21:15:18,309 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.02, 127.0.0.1:54760][0m
+2024-07-07 21:15:18,312 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:54755][0m
+2024-07-07 21:15:18,322 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54759][0m
+2024-07-07 21:15:18,534 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54759][0m
+2024-07-07 21:15:18,535 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54755][0m
+2024-07-07 21:15:18,546 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54759][0m
+2024-07-07 21:15:18,547 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54755][0m
+2024-07-07 21:15:25,744 [mHTTP GET /admin/app/instrument/? 200 [0.32, 127.0.0.1:54762][0m
+2024-07-07 21:15:25,798 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:54762][0m
+2024-07-07 21:15:25,807 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:54764][0m
+2024-07-07 21:15:25,808 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:54763][0m
+2024-07-07 21:15:25,810 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:54765][0m
+2024-07-07 21:15:25,813 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:54767][0m
+2024-07-07 21:15:25,819 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:54762][0m
+2024-07-07 21:15:25,831 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54766][0m
+2024-07-07 21:15:26,031 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:54762][0m
+2024-07-07 21:15:26,032 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:54766][0m
+2024-07-07 21:15:26,042 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:54762][0m
+2024-07-07 21:15:26,043 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54766][0m
+2024-07-07 21:16:39,814 D:\stox\app\symbols\getsymbols.py changed, reloading.
+2024-07-07 21:16:44,034 Watching for file changes with StatReloader
+2024-07-07 21:18:32,889 D:\stox\app\views.py changed, reloading.
+2024-07-07 21:18:35,111 Watching for file changes with StatReloader
+2024-07-07 21:21:43,226 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:57627][0m
+2024-07-07 21:39:45,438 [mHTTP GET /search/?q=BANKNIFTY 200 [0.19, 127.0.0.1:57852][0m
+2024-07-07 21:41:35,097 D:\stox\app\templatetags\custom_filters.py changed, reloading.
+2024-07-07 21:41:39,412 Watching for file changes with StatReloader
+2024-07-07 21:44:52,048 [mHTTP GET /watchlist 200 [0.23, 127.0.0.1:57911][0m
+2024-07-07 21:44:53,395 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57915]
+2024-07-07 21:44:53,410 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57915]
+2024-07-07 21:45:08,431 [32mHTTP POST /place_order 302 [0.21, 127.0.0.1:57917][0m
+2024-07-07 21:45:08,654 [mHTTP GET /orders 200 [0.21, 127.0.0.1:57917][0m
+2024-07-07 21:45:09,150 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57915]
+2024-07-07 21:45:12,484 Internal Server Error: /portfolio
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 297, in portfolio
+    return render(request,'dashboard/portfolio.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'insert_spaces'
+2024-07-07 21:45:12,500 [35;1mHTTP GET /portfolio 500 [0.36, 127.0.0.1:57917][0m
+2024-07-07 21:45:36,051 Watching for file changes with StatReloader
+2024-07-07 21:45:37,870 Internal Server Error: /portfolio
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 297, in portfolio
+    return render(request,'dashboard/portfolio.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'insert_spaces'
+2024-07-07 21:45:37,883 [35;1mHTTP GET /portfolio 500 [0.16, 127.0.0.1:57935][0m
+2024-07-07 21:45:56,125 [mHTTP GET /portfolio 200 [0.18, 127.0.0.1:57941][0m
+2024-07-07 21:45:56,789 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57943]
+2024-07-07 21:45:56,800 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57943]
+2024-07-07 21:46:11,355 [mHTTP GET /portfolio 200 [0.10, 127.0.0.1:57947][0m
+2024-07-07 21:46:11,367 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57943]
+2024-07-07 21:46:11,678 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57949]
+2024-07-07 21:46:11,690 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57949]
+2024-07-07 21:46:49,590 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:57968][0m
+2024-07-07 21:46:49,599 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57949]
+2024-07-07 21:46:50,246 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57970]
+2024-07-07 21:46:50,258 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57970]
+2024-07-07 21:47:23,944 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:57978][0m
+2024-07-07 21:47:23,953 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57970]
+2024-07-07 21:47:24,494 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57983]
+2024-07-07 21:47:24,508 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57983]
+2024-07-07 21:47:28,366 [32mHTTP POST /place_order 302 [0.13, 127.0.0.1:57978][0m
+2024-07-07 21:47:28,435 [mHTTP GET /orders 200 [0.06, 127.0.0.1:57978][0m
+2024-07-07 21:47:28,709 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57983]
+2024-07-07 21:47:31,920 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:57978][0m
+2024-07-07 21:47:32,255 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57986]
+2024-07-07 21:47:32,262 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57986]
+2024-07-07 21:47:40,994 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:57987][0m
+2024-07-07 21:47:41,515 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:57990]
+2024-07-07 21:47:41,525 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57986]
+2024-07-07 21:47:41,527 WebSocket CONNECT /ws/stocks/ [127.0.0.1:57990]
+2024-07-07 21:52:41,579 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:58032][0m
+2024-07-07 21:52:41,587 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:57990]
+2024-07-07 21:52:42,919 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58036]
+2024-07-07 21:52:42,932 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58036]
+2024-07-07 21:53:01,425 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:58032][0m
+2024-07-07 21:53:01,438 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:58036]
+2024-07-07 21:53:02,077 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:58039]
+2024-07-07 21:53:02,088 WebSocket CONNECT /ws/stocks/ [127.0.0.1:58039]
+2024-07-07 21:53:16,496 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:58032][0m
+2024-07-07 21:53:16,499 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:58033][0m
+2024-07-07 21:54:40,004 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58079][0m
+2024-07-07 21:54:40,006 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:58078][0m
+2024-07-07 22:02:58,512 Watching for file changes with StatReloader
+2024-07-07 22:03:54,660 [mHTTP GET /admin/app/transaction/ 200 [0.14, 127.0.0.1:60071][0m
+2024-07-07 22:03:54,746 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60071][0m
+2024-07-07 22:03:54,747 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:03:54,750 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:03:54,752 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:03:54,759 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:03:54,761 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:60071][0m
+2024-07-07 22:03:54,772 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:60076][0m
+2024-07-07 22:03:55,180 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:60076][0m
+2024-07-07 22:03:55,234 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60076][0m
+2024-07-07 22:03:55,236 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:60071][0m
+2024-07-07 22:03:55,251 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:60071][0m
+2024-07-07 22:03:55,306 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:60071][0m
+2024-07-07 22:03:55,307 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:60076][0m
+2024-07-07 22:03:59,232 [mHTTP GET /admin/app/transaction/add/ 200 [0.08, 127.0.0.1:60071][0m
+2024-07-07 22:03:59,268 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60071][0m
+2024-07-07 22:03:59,274 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:03:59,275 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:03:59,277 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:03:59,280 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:60077][0m
+2024-07-07 22:03:59,288 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60074][0m
+2024-07-07 22:03:59,521 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:03:59,522 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:03:59,525 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:03:59,526 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:03:59,527 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:04:09,126 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.09, 127.0.0.1:60075][0m
+2024-07-07 22:04:09,163 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:04:09,166 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:04:09,169 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:04:09,437 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.00, 127.0.0.1:60072][0m
+2024-07-07 22:04:09,645 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:04:09,787 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60072][0m
+2024-07-07 22:04:09,802 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:04:09,810 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:04:09,811 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:04:09,814 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:04:09,814 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:04:10,006 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:04:10,013 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:04:35,174 [32mHTTP POST /admin/app/transaction/add/ 302 [0.02, 127.0.0.1:60074][0m
+2024-07-07 22:04:35,224 [mHTTP GET /admin/app/transaction/ 200 [0.04, 127.0.0.1:60074][0m
+2024-07-07 22:04:35,271 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:04:35,274 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:04:35,277 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60071][0m
+2024-07-07 22:04:35,278 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:04:35,279 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:04:35,287 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:60074][0m
+2024-07-07 22:04:35,293 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:60072][0m
+2024-07-07 22:04:35,436 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:60072][0m
+2024-07-07 22:04:35,436 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60074][0m
+2024-07-07 22:04:35,446 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:60072][0m
+2024-07-07 22:04:35,449 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:60074][0m
+2024-07-07 22:04:38,217 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.05, 127.0.0.1:60072][0m
+2024-07-07 22:04:38,252 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:04:38,256 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:04:38,257 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:04:38,259 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60071][0m
+2024-07-07 22:04:38,260 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:04:38,267 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:04:38,277 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:60077][0m
+2024-07-07 22:04:38,490 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60072][0m
+2024-07-07 22:04:38,491 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:60077][0m
+2024-07-07 22:04:38,500 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:60077][0m
+2024-07-07 22:04:38,501 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.00, 127.0.0.1:60072][0m
+2024-07-07 22:04:38,630 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60077][0m
+2024-07-07 22:04:38,640 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60077][0m
+2024-07-07 22:05:07,414 [mHTTP GET /admin/app/remarks/ 200 [0.03, 127.0.0.1:60077][0m
+2024-07-07 22:05:07,454 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:05:07,457 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:05:07,459 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60071][0m
+2024-07-07 22:05:07,462 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:05:07,463 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:05:07,467 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:60077][0m
+2024-07-07 22:05:07,476 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:60075][0m
+2024-07-07 22:05:07,680 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:60075][0m
+2024-07-07 22:05:07,681 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60077][0m
+2024-07-07 22:05:07,694 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:60077][0m
+2024-07-07 22:05:07,694 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:60075][0m
+2024-07-07 22:05:09,860 [mHTTP GET /admin/app/transaction/ 200 [0.04, 127.0.0.1:60075][0m
+2024-07-07 22:05:12,349 [mHTTP GET /admin/app/transaction/5/change/ 200 [0.03, 127.0.0.1:60075][0m
+2024-07-07 22:05:12,388 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:05:12,392 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:05:12,397 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.02, 127.0.0.1:60071][0m
+2024-07-07 22:05:12,400 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:60076][0m
+2024-07-07 22:05:12,403 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:60074][0m
+2024-07-07 22:05:12,411 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:60072][0m
+2024-07-07 22:05:12,612 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:60072][0m
+2024-07-07 22:05:12,614 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:60076][0m
+2024-07-07 22:05:12,628 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60076][0m
+2024-07-07 22:05:12,629 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:60072][0m
+2024-07-07 22:05:12,630 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.00, 127.0.0.1:60074][0m
+2024-07-07 22:05:14,978 [mHTTP GET /admin/app/remarks/1/change/?_to_field=id&_popup=1 200 [0.02, 127.0.0.1:60074][0m
+2024-07-07 22:05:15,011 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:05:15,014 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:05:15,018 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:60076][0m
+2024-07-07 22:05:15,025 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.02, 127.0.0.1:60075][0m
+2024-07-07 22:05:15,027 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:60077][0m
+2024-07-07 22:05:15,033 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:60074][0m
+2024-07-07 22:05:15,039 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:05:15,042 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:05:15,046 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:05:15,059 [mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:60071][0m
+2024-07-07 22:05:15,292 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60071][0m
+2024-07-07 22:05:19,416 [mHTTP GET /admin/app/remarks/add/?_to_field=id&_popup=1 200 [0.02, 127.0.0.1:60071][0m
+2024-07-07 22:05:19,446 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60071][0m
+2024-07-07 22:05:19,451 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:05:19,456 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:05:19,457 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60076][0m
+2024-07-07 22:05:19,458 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:05:19,469 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:60071][0m
+2024-07-07 22:05:19,473 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:60077][0m
+2024-07-07 22:05:19,475 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:60075][0m
+2024-07-07 22:05:19,476 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:60072][0m
+2024-07-07 22:05:19,488 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:60074][0m
+2024-07-07 22:05:19,707 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60074][0m
+2024-07-07 22:05:39,706 D:\stox\app\admin.py changed, reloading.
+2024-07-07 22:05:41,709 Watching for file changes with StatReloader
+2024-07-07 22:05:43,447 [mHTTP GET /admin/app/transaction/5/change/ 200 [0.11, 127.0.0.1:60095][0m
+2024-07-07 22:05:43,487 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60095][0m
+2024-07-07 22:05:43,491 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60096][0m
+2024-07-07 22:05:43,493 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60097][0m
+2024-07-07 22:05:43,496 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60098][0m
+2024-07-07 22:05:43,498 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60100][0m
+2024-07-07 22:05:43,502 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:60095][0m
+2024-07-07 22:05:43,512 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60099][0m
+2024-07-07 22:05:43,629 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60095][0m
+2024-07-07 22:05:43,630 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:60099][0m
+2024-07-07 22:05:43,643 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:60099][0m
+2024-07-07 22:05:43,644 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.00, 127.0.0.1:60095][0m
+2024-07-07 22:05:43,803 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60095][0m
+2024-07-07 22:05:43,819 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60095][0m
+2024-07-07 22:06:19,168 D:\stox\app\models.py changed, reloading.
+2024-07-07 22:06:21,103 Watching for file changes with StatReloader
+2024-07-07 22:06:25,468 D:\stox\app\models.py changed, reloading.
+2024-07-07 22:06:27,434 Watching for file changes with StatReloader
+2024-07-07 22:06:28,016 [mHTTP GET /admin/app/transaction/5/change/ 200 [0.11, 127.0.0.1:60124][0m
+2024-07-07 22:06:28,067 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60124][0m
+2024-07-07 22:06:28,069 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60123][0m
+2024-07-07 22:06:28,077 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60128][0m
+2024-07-07 22:06:28,079 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60129][0m
+2024-07-07 22:06:28,082 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60124][0m
+2024-07-07 22:06:28,095 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60130][0m
+2024-07-07 22:06:28,265 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:60130][0m
+2024-07-07 22:06:28,281 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:60130][0m
+2024-07-07 22:06:28,282 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:60129][0m
+2024-07-07 22:06:28,282 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:60124][0m
+2024-07-07 22:06:28,283 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:60128][0m
+2024-07-07 22:06:28,318 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:60128][0m
+2024-07-07 22:06:28,319 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:60129][0m
+2024-07-07 22:06:28,454 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60129][0m
+2024-07-07 22:06:28,478 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:60129][0m
+2024-07-07 22:06:36,243 [mHTTP GET /admin/app/contact/ 200 [0.05, 127.0.0.1:60131][0m
+2024-07-07 22:06:36,280 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.00, 127.0.0.1:60131][0m
+2024-07-07 22:06:36,285 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60132][0m
+2024-07-07 22:06:36,291 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60133][0m
+2024-07-07 22:06:36,292 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60134][0m
+2024-07-07 22:06:36,294 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60136][0m
+2024-07-07 22:06:36,296 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:60131][0m
+2024-07-07 22:06:36,305 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60135][0m
+2024-07-07 22:06:36,507 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60131][0m
+2024-07-07 22:06:36,507 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:60135][0m
+2024-07-07 22:06:36,517 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:60135][0m
+2024-07-07 22:06:36,518 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:60131][0m
+2024-07-07 22:06:40,616 [mHTTP GET /admin/app/instrument/ 200 [0.18, 127.0.0.1:60135][0m
+2024-07-07 22:06:40,652 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60135][0m
+2024-07-07 22:06:40,656 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60131][0m
+2024-07-07 22:06:40,657 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60136][0m
+2024-07-07 22:06:40,658 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60134][0m
+2024-07-07 22:06:40,660 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60132][0m
+2024-07-07 22:06:40,664 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:60135][0m
+2024-07-07 22:06:40,673 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60133][0m
+2024-07-07 22:06:40,863 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:60133][0m
+2024-07-07 22:06:40,865 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60135][0m
+2024-07-07 22:06:40,875 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:60135][0m
+2024-07-07 22:06:40,877 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:60133][0m
+2024-07-07 22:06:42,227 [mHTTP GET /admin/app/order/ 200 [0.06, 127.0.0.1:60133][0m
+2024-07-07 22:06:42,293 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60133][0m
+2024-07-07 22:06:42,294 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60131][0m
+2024-07-07 22:06:42,298 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60135][0m
+2024-07-07 22:06:42,298 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60134][0m
+2024-07-07 22:06:42,299 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60132][0m
+2024-07-07 22:06:42,305 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:60133][0m
+2024-07-07 22:06:42,312 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60136][0m
+2024-07-07 22:06:42,548 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:60133][0m
+2024-07-07 22:06:42,549 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:60136][0m
+2024-07-07 22:06:42,560 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:60133][0m
+2024-07-07 22:06:42,561 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:60136][0m
+2024-07-07 22:06:52,559 [mHTTP GET /admin/app/customuser/ 200 [0.04, 127.0.0.1:60141][0m
+2024-07-07 22:06:52,595 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:60141][0m
+2024-07-07 22:06:52,597 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:60142][0m
+2024-07-07 22:06:52,601 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:60143][0m
+2024-07-07 22:06:52,603 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:60144][0m
+2024-07-07 22:06:52,605 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:60146][0m
+2024-07-07 22:06:52,615 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60145][0m
+2024-07-07 22:06:52,807 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:60146][0m
+2024-07-07 22:06:52,824 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:60146][0m
+2024-07-07 22:06:52,825 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:60144][0m
+2024-07-07 22:06:52,826 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:60141][0m
+2024-07-07 22:06:52,827 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:60143][0m
+2024-07-07 22:06:52,858 [mHTTP GET /static/admin/img/icon-no.svg 200 [0.06, 127.0.0.1:60145][0m
+2024-07-07 22:08:38,839 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:60161][0m
+2024-07-07 22:08:39,561 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60163]
+2024-07-07 22:08:39,571 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60163]
+2024-07-07 22:09:29,685 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:60202][0m
+2024-07-07 22:09:29,695 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:60163]
+2024-07-07 22:09:30,139 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:60205]
+2024-07-07 22:09:30,151 WebSocket CONNECT /ws/stocks/ [127.0.0.1:60205]

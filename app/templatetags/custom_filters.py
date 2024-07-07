@@ -1,12 +1,17 @@
-# myapp/templatetags/custom_filters.py
+import re
 from django import template
-import time
 
 register = template.Library()
 
-@register.filter
-def custom_function(a):
-    return a
-
-def ro(a):
-    return round(a,2)
+@register.filter(name='insert_spaces')
+def insert_spaces(text):
+    if not isinstance(text, str):
+        return text
+    # Insert space before digits
+    text_with_spaces = re.sub(r'(\D)(\d)', r'\1 \2', text)
+    # Insert space after digits
+    text_with_spaces = re.sub(r'(\d)(\D)', r'\1 \2', text_with_spaces)
+    # Insert space between letters if they change from uppercase to lowercase or vice versa
+    text_with_spaces = re.sub(r'([a-z])([A-Z])', r'\1 \2', text_with_spaces)
+    text_with_spaces = re.sub(r'([A-Z])([a-z])', r'\1 \2', text_with_spaces)
+    return text_with_spaces

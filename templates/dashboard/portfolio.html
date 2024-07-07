@@ -1,5 +1,7 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
+{% load custom_filters %}    
+
 <div class="flex w-full rounded shadow mt-4">
     <a href="#" aria-current="false"
         class="w-full flex items-center gap-x-2 justify-center font-medium rounded-lg px-5 py-2 border bg-gray-700 text-white border-gray-200 position_tab"
@@ -26,7 +28,7 @@
                 ondragstart="delete_stock('{{stock.symbol}}','{{stock.instrument_key}}')"
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')" data-lot_size="{{stock.lot_size}}">
                 <div>
-                    <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
+                    <div class="h-2.5 text-gray-950 w-48 mb-2.5 mt-2">{{stock.symbol | insert_spaces}}</div>
                     <button
                         class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
                     <button
@@ -59,8 +61,8 @@
             ondragstart="delete_stock('{{stock.symbol}}','{{stock.instrument_key}}')"
             onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')" data-lot_size="{{stock.lot_size}}">
             <div>
-                    <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
-                    <button
+                <div class="h-2.5 text-gray-950 w-48 mb-2.5 mt-2">{{stock.symbol | insert_spaces}}</div>
+                <button
                     class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
                 <button
                 class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.product|upper}}</button>
@@ -115,7 +117,7 @@
                 ondragstart="delete_stock('{{stock.symbol}}','{{stock.instrument_key}}')"
                 onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')" data-lot_size="{{stock.lot_size}}">
                 <div>
-                    <div class="h-2.5 text-gray-950 w-24 mb-2.5 mt-2">{{stock.symbol}}</div>
+                    <div class="h-2.5 text-gray-950 w-48 mb-2.5 mt-2">{{stock.symbol | insert_spaces}}</div>
                     <button
                     class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{stock.segment}}</button>
                 <button

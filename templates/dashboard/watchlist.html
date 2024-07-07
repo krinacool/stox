@@ -31,7 +31,7 @@
         {% if stock.tag == "@INDEX" %}
         <li class="me-2" role="presentation">        
             <a href="#"
-                class="block w-40 px-3 py-2 text-left bg-white border border-gray-200 rounded-lg hover:bg-gray-100">
+                class="block min-w-32 px-3 py-2 text-left bg-white border border-gray-200 rounded-lg hover:bg-gray-100">
             
                 <h5 class="mb-2 text-1xl font-bold tracking-tight text-gray-900">{{stock.symbol}}</h5>
                 <p class="font-normal text-gray-700" id="{{stock.instrument_key}}"></p>
@@ -411,6 +411,16 @@
         element.addEventListener('click', () => openWatchlist(element.id));
     });
 
+    function insertSpaces(text) {
+    // Insert space before digits
+    let textWithSpaces = text.replace(/(\D)(\d)/g, '$1 $2');
+    // Insert space after digits
+    textWithSpaces = textWithSpaces.replace(/(\d)(\D)/g, '$1 $2');
+    // Insert space between letters if they change from uppercase to lowercase or vice versa
+    textWithSpaces = textWithSpaces.replace(/([a-z])([A-Z])/g, '$1 $2');
+    textWithSpaces = textWithSpaces.replace(/([A-Z])([a-z])/g, '$1 $2');
+    return textWithSpaces;
+}
 
     const socket = new WebSocket('wss://onstock.in/ws/stocks/');
 
@@ -454,7 +464,7 @@
                 else {
                 document.getElementById(i['instrument']).innerHTML = `
                 <div>
-                    <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">${i['data']['symbol']}</div>
+                    <div class="h-2.5 mt-2 text-black rounded-full w-48 mb-3.5">${insertSpaces(i['data']['symbol'])}</div>
                     <div class="h-2 rounded-full">
                         <div class="justify-center my-2 select-none">
                             <button
@@ -537,7 +547,6 @@
         document.getElementById('delete_watchlist_tab').innerHTML = content
         document.getElementById('delete_stock_input').value = JSON.stringify(delete_instruments_list)
     }
-
     const stocks = document.querySelectorAll('.stocks');
     const whiteBoxes = document.querySelectorAll('.whiteBox');
     stocks.forEach(stock => {
