@@ -7,6 +7,7 @@ import uuid
 from wallet.calculation import add_amount, deduct_amount, calc_carrage, add_wallet, deduct_wallet
 from django.db import models, transaction
 from app.symbols.getsymbols import get_instrument_key
+import datetime
 
 def generate_unique_id():
     characters = string.ascii_letters + string.digits
@@ -230,6 +231,7 @@ class Position(models.Model):
     last_traded_datetime = models.DateTimeField(auto_now_add=True)
     def save(self, *args, **kwargs):
         # GETTING TOKEN
+        self.last_traded_datetime = datetime.datetime.now()
         og = Instrument.objects.filter(instrument_key=self.instrument_key).first()
         self.symbol = og.tradingsymbol
         self.token = og.exchange_token
