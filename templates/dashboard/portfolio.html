@@ -323,7 +323,7 @@
         let lot_size = document.getElementById(instrument).getAttribute('data-lot_size');
         let qty = document.getElementById('quantity').value;
         let price = document.getElementById('price').value;
-        document.getElementById('margin_required').innerHTML = (qty * price).toFixed(2);
+        document.getElementById('margin_required').innerHTML = (qty * price).toFixed(2) * lot_size;
     }
 
     document.getElementById('closeModal').addEventListener('click', function () {
