@@ -112,8 +112,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
         else:
             from app.models import Instrument
             instr = Instrument.objects.filter(instrument_key=instrument_key).first()
-            if instr.option_type.upper() == 'CE' or instr.option_type.upper() == 'PE':
-                return 'failed'
+            if instr.option_type:
+                if instr.option_type.upper() == 'CE' or instr.option_type.upper() == 'PE':
+                    return 'failed'
             amount = price * quantity
             if wallet_checked(user,amount/2,product):
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)

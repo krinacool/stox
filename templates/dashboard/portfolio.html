@@ -1,7 +1,11 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
 {% load custom_filters %}    
-
+<a href="#" class="block w-full px-6 py-2 text-left bg-white border border-gray-200 rounded-lg hover:bg-gray-100">
+            
+    <p class="font-normal text-gray-700">Overall P&l</p>
+    <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900" id="ppnl">{{ppnl}}</h1>
+</a>
 <div class="flex w-full rounded shadow mt-4">
     <a href="#" aria-current="false"
         class="w-full flex items-center gap-x-2 justify-center font-medium rounded-lg px-5 py-2 border bg-gray-700 text-white border-gray-200 position_tab"
@@ -365,6 +369,7 @@
     socket.onmessage = function (event) {
         const data = JSON.parse(event.data);
         console.log('Received real-time data:', data);
+        let tpnl = 0;
         for (let i of data) {
             if (i['data']['symbol']) {
                 let buy_price = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-buy_price')
@@ -372,6 +377,7 @@
                 let quantity = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-quantity')
                 let product = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-product')
                 let last_traded_quantity = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-last_traded_quantity')
+                let pnl = 0;
                 if (sell_price == 0.0) {
                     pnl = (i['data']['ltp'] - buy_price).toFixed(2) * quantity;
                 }
@@ -391,6 +397,7 @@
                 else {
                     cls = "text-green-600"
                 }
+                tpnl = tpnl + pnl;
                 document.getElementById(i['instrument'] + 'pnl').innerHTML = `<span class="${cls}">${pnl}</span>`
                 document.getElementById(i['instrument'] + 'ltp').innerHTML = `<span class="text-green-600 ">${i['data']['ltp']}</span>`
 
@@ -403,6 +410,15 @@
                 }
             }
         }
+        console.log('tpnl');
+        tpnl = {{ppnl}} + tpnl;
+        if(tpnl > 0) {
+            document.getElementById('ppnl').innerHTML = `<span class='text-green-600'>${tpnl.toFixed(2)}</span>`
+        }
+        else {
+            document.getElementById('ppnl').innerHTML = `<span class='text-red-600'>${tpnl.toFixed(2)}</span>`
+        }
+        console.log(tpnl.toFixed(2));
         // Handle the real-time data update here
     };
 

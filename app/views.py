@@ -1,4 +1,3 @@
-import json
 from settings.models import *
 from django.shortcuts import render
 from django.shortcuts import render,redirect
@@ -323,45 +322,12 @@ def add_to_watchlist(request):
         form = WatchlistForm()
     return render(request, 'market.html', {'form': form})
 
-
-# TRANSACTIONS
 @login_required
-def async_transact(request):
-    from app.symbols.instruments import get_exchange
-    if request.method == 'POST':
-        instrument_key = request.POST.get("instrument")
-        token = request.POST.get("token")
-        symbol = request.POST.get("symbol")
-        price = float(request.POST.get("price"))
-        quantity = int(request.POST.get("quantity"))
-        order_type = request.POST.get("order_type")
-        product = request.POST.get("product")
-        type = request.POST.get("type")
-        stoploss = request.POST.get("stoploss")
-        target = request.POST.get("target")
-        segment = get_exchange(token)
-        if not market_open(segment):
-            return JsonResponse({'success': False, 'message': 'Market Closed !'})
-        if segment == 'NSE_FO' or segment == 'BFO_FO' or segment == 'MCX_FO':
-            tempsymbol = get_symbol(symbol)
-        status = "failed"
-        if type == 'Market':
-            status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target)
-        else:
-            status = initiate_limit_order(request.user,symbol,instrument_key,token,price, quantity,order_type,product,stoploss,target)
-        if status == "failed":
-            return JsonResponse({'success': False, 'message': 'Order executed but failed !'})
-        else:
-            # messages.success(request,'Order placed successfully.')
-            return JsonResponse({'success': True, 'message': 'Order Placed successfully'})
-    else:
-        return redirect('/orders')
-
-
 def cancel_order(request, order_id):
     try:
         cancelob = Order.objects.filter(user=request.user).get(order_id=order_id)
         cancelob.status = 'cancelled'
+        cancelob.save()
         return JsonResponse({'success': True, 'message': 'Order Cancelled successfully'})
     except:
         return JsonResponse({'success': False, 'message': 'Order Cancellation Failed'})

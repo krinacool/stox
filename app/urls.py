@@ -42,7 +42,7 @@ urlpatterns = [
     path("add_to_watchlist",add_to_watchlist,name='add_to_watchlist'),
     path("upstox_cred/<str:secret>",upstox_cred,name='upstox_cred'),
     # TRANSACTIONS
-    path("async_transact",async_transact,name='async_transact'),
+    path("cancel_order/<str:order_id>",cancel_order,name='cancel_order'),
     path("cancelorder/<str:order_id>",cancelorder,name='cancelorder'),
     # ALL TESTING URLS
     path("upstox_access_tokens",upstox_access_tokens,name='upstox_access_tokens'),

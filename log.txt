@@ -2123,3 +2123,376 @@ django.template.exceptions.TemplateSyntaxError: Invalid filter: 'insert_spaces'
 2024-07-08 00:36:14,324 WebSocket CONNECT /ws/stocks/ [127.0.0.1:55752]
 2024-07-08 00:36:25,026 [mHTTP GET /orders 200 [0.05, 127.0.0.1:55717][0m
 2024-07-08 00:36:25,458 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:55752]
+2024-07-08 11:36:45,430 [mHTTP GET / 200 [0.09, 127.0.0.1:58526][0m
+2024-07-08 11:36:45,841 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.11, 127.0.0.1:58535][0m
+2024-07-08 11:36:45,864 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.14, 127.0.0.1:58526][0m
+2024-07-08 11:36:45,873 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.02, 127.0.0.1:58535][0m
+2024-07-08 11:36:45,875 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.14, 127.0.0.1:58527][0m
+2024-07-08 11:36:45,881 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.15, 127.0.0.1:58537][0m
+2024-07-08 11:36:45,891 [mHTTP GET /static/landingasset/css/style.css 200 [0.15, 127.0.0.1:58538][0m
+2024-07-08 11:36:45,894 [mHTTP GET /static/landingasset/css/animate.css 200 [0.16, 127.0.0.1:58536][0m
+2024-07-08 11:36:45,907 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.03, 127.0.0.1:58526][0m
+2024-07-08 11:36:46,249 [mHTTP GET /static/landingasset/img/process-icons/3.png 200 [0.03, 127.0.0.1:58538][0m
+2024-07-08 11:36:46,270 [mHTTP GET /static/landingasset/img/process-icons/2.png 200 [0.05, 127.0.0.1:58536][0m
+2024-07-08 11:36:46,272 [mHTTP GET /static/landingasset/js/main.js 200 [0.05, 127.0.0.1:58527][0m
+2024-07-08 11:36:46,274 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.06, 127.0.0.1:58526][0m
+2024-07-08 11:36:46,293 [mHTTP GET /static/landingasset/js/owl.carousel.min.js 200 [0.07, 127.0.0.1:58535][0m
+2024-07-08 11:36:46,340 [mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 200 [0.12, 127.0.0.1:58537][0m
+2024-07-08 11:36:46,547 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.02, 127.0.0.1:58537][0m
+2024-07-08 11:36:46,552 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.02, 127.0.0.1:58535][0m
+2024-07-08 11:36:46,658 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.03, 127.0.0.1:58535][0m
+2024-07-08 11:36:46,663 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.02, 127.0.0.1:58526][0m
+2024-07-08 11:36:46,673 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.03, 127.0.0.1:58537][0m
+2024-07-08 11:36:46,798 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.07, 127.0.0.1:58537][0m
+2024-07-08 11:36:47,236 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.01, 127.0.0.1:58537][0m
+2024-07-08 11:38:34,728 [32mHTTP GET /watchlist 302 [0.04, 127.0.0.1:58665][0m
+2024-07-08 11:38:34,772 [mHTTP GET /login/?next=/watchlist 200 [0.04, 127.0.0.1:58665][0m
+2024-07-08 11:38:34,812 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.00, 127.0.0.1:58665][0m
+2024-07-08 11:38:49,403 [32mHTTP POST /login/?next=/watchlist 302 [0.62, 127.0.0.1:58665][0m
+2024-07-08 11:38:49,423 [32mHTTP GET /market 302 [0.01, 127.0.0.1:58665][0m
+2024-07-08 11:38:49,499 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:58665][0m
+2024-07-08 11:38:56,581 [mHTTP GET /portfolio 200 [0.09, 127.0.0.1:58665][0m
+2024-07-08 11:39:11,242 [32mHTTP POST /place_order 302 [0.13, 127.0.0.1:58665][0m
+2024-07-08 11:39:11,367 [mHTTP GET /orders 200 [0.12, 127.0.0.1:58665][0m
+2024-07-08 11:39:15,061 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:58665][0m
+2024-07-08 11:39:21,111 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:58665][0m
+2024-07-08 11:39:33,763 [32mHTTP POST /place_order 302 [0.16, 127.0.0.1:58665][0m
+2024-07-08 11:39:33,866 [mHTTP GET /orders 200 [0.09, 127.0.0.1:58665][0m
+2024-07-08 11:39:37,365 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:58665][0m
+2024-07-08 11:44:03,029 [mHTTP GET /portfolio 200 [0.27, 127.0.0.1:58815][0m
+2024-07-08 11:44:06,835 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:58816][0m
+2024-07-08 11:44:06,837 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:58815][0m
+2024-07-08 11:45:46,970 [mHTTP GET /portfolio 200 [0.12, 127.0.0.1:58879][0m
+2024-07-08 11:45:48,577 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:58879][0m
+2024-07-08 11:45:48,610 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:58879][0m
+2024-07-08 11:46:13,441 [mHTTP GET /portfolio 200 [0.16, 127.0.0.1:58879][0m
+2024-07-08 11:46:14,945 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58879][0m
+2024-07-08 11:46:14,960 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58879][0m
+2024-07-08 11:48:29,518 [mHTTP GET /watchlist 200 [0.41, 127.0.0.1:59001][0m
+2024-07-08 11:48:30,485 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59001][0m
+2024-07-08 11:48:30,500 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59001][0m
+2024-07-08 11:48:55,294 [32mHTTP POST /place_order 302 [0.08, 127.0.0.1:59023][0m
+2024-07-08 11:48:55,395 [mHTTP GET /orders 200 [0.09, 127.0.0.1:59023][0m
+2024-07-08 11:48:56,348 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59023][0m
+2024-07-08 11:48:56,367 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59023][0m
+2024-07-08 11:48:59,359 [mHTTP GET /portfolio 200 [0.09, 127.0.0.1:59023][0m
+2024-07-08 11:49:00,241 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59029][0m
+2024-07-08 11:49:00,243 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59030][0m
+2024-07-08 11:49:03,561 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59029][0m
+2024-07-08 11:49:03,563 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59030][0m
+2024-07-08 11:49:03,587 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59030][0m
+2024-07-08 11:49:03,589 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59029][0m
+2024-07-08 11:49:03,611 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59029][0m
+2024-07-08 11:49:03,612 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59030][0m
+2024-07-08 11:53:27,455 [mHTTP GET /orders 200 [0.12, 127.0.0.1:59125][0m
+2024-07-08 11:53:37,291 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:59128][0m
+2024-07-08 11:53:49,673 [32mHTTP POST /place_order 302 [0.04, 127.0.0.1:59135][0m
+2024-07-08 11:53:49,741 [mHTTP GET /orders 200 [0.06, 127.0.0.1:59135][0m
+2024-07-08 11:53:53,353 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:59138][0m
+2024-07-08 11:53:57,235 [mHTTP GET /orders 200 [0.12, 127.0.0.1:59138][0m
+2024-07-08 11:56:03,268 [mHTTP GET /orders 200 [0.21, 127.0.0.1:59172][0m
+2024-07-08 11:56:41,829 [mHTTP GET /orders 200 [0.09, 127.0.0.1:59185][0m
+2024-07-08 11:57:01,359 [mHTTP GET /orders 200 [0.11, 127.0.0.1:59194][0m
+2024-07-08 11:57:25,099 [mHTTP GET /orders 200 [0.08, 127.0.0.1:59201][0m
+2024-07-08 11:57:35,674 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59207][0m
+2024-07-08 11:57:35,675 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59206][0m
+2024-07-08 11:58:20,920 [mHTTP GET /orders 200 [0.12, 127.0.0.1:59233][0m
+2024-07-08 11:58:23,436 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:59233][0m
+2024-07-08 11:58:23,451 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59234][0m
+2024-07-08 11:58:56,891 [mHTTP GET /orders 200 [0.13, 127.0.0.1:59257][0m
+2024-07-08 11:58:58,169 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59257][0m
+2024-07-08 11:58:58,171 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59258][0m
+2024-07-08 11:59:08,781 [mHTTP GET /orders 200 [0.21, 127.0.0.1:59268][0m
+2024-07-08 11:59:10,045 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59268][0m
+2024-07-08 11:59:10,050 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59269][0m
+2024-07-08 11:59:17,765 [mHTTP GET /orders 200 [0.11, 127.0.0.1:59275][0m
+2024-07-08 11:59:18,687 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59275][0m
+2024-07-08 11:59:18,716 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59275][0m
+2024-07-08 12:00:07,754 [mHTTP GET /orders 200 [0.37, 127.0.0.1:59293][0m
+2024-07-08 12:00:22,163 [mHTTP GET /orders 200 [0.12, 127.0.0.1:59293][0m
+2024-07-08 12:01:24,808 [mHTTP GET /orders 200 [0.08, 127.0.0.1:59300][0m
+2024-07-08 12:02:29,070 D:\stox\app\views.py changed, reloading.
+2024-07-08 12:04:55,630 [mHTTP GET /orders 200 [0.14, 127.0.0.1:59332][0m
+2024-07-08 12:04:57,319 [mHTTP GET /orders 200 [0.07, 127.0.0.1:59332][0m
+2024-07-08 12:04:59,949 [mHTTP GET /orders 200 [0.07, 127.0.0.1:59332][0m
+2024-07-08 12:05:06,686 Not Found: /cancel_order/4CHweXaNBc
+2024-07-08 12:05:06,687 [33mHTTP GET /cancel_order/4CHweXaNBc 404 [0.04, 127.0.0.1:59332][0m
+2024-07-08 12:05:07,087 Not Found: /favicon.ico
+2024-07-08 12:05:07,087 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:59332][0m
+2024-07-08 12:05:33,901 [mHTTP GET /orders 200 [0.14, 127.0.0.1:59348][0m
+2024-07-08 12:05:38,917 [32mHTTP GET /cancelorder/4CHweXaNBc 302 [0.06, 127.0.0.1:59351][0m
+2024-07-08 12:05:39,016 [mHTTP GET /orders 200 [0.09, 127.0.0.1:59351][0m
+2024-07-08 12:07:54,799 D:\stox\app\views.py changed, reloading.
+2024-07-08 12:12:50,503 [mHTTP GET /orders 200 [0.15, 127.0.0.1:59420][0m
+2024-07-08 12:14:10,024 [mHTTP GET /orders 200 [0.20, 127.0.0.1:59425][0m
+2024-07-08 12:14:25,703 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59426][0m
+2024-07-08 12:14:25,704 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59425][0m
+2024-07-08 12:17:47,700 [mHTTP GET /orders 200 [0.18, 127.0.0.1:59552][0m
+2024-07-08 12:17:49,780 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59552][0m
+2024-07-08 12:17:49,814 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59552][0m
+2024-07-08 12:18:14,469 [32mHTTP POST /place_order 302 [0.17, 127.0.0.1:59572][0m
+2024-07-08 12:18:14,542 [mHTTP GET /orders 200 [0.06, 127.0.0.1:59572][0m
+2024-07-08 12:18:15,776 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59572][0m
+2024-07-08 12:18:15,798 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59572][0m
+2024-07-08 12:18:18,661 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:59572][0m
+2024-07-08 12:18:19,601 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:59572][0m
+2024-07-08 12:18:19,613 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:59573][0m
+2024-07-08 12:18:27,007 [mHTTP GET /orders 200 [0.05, 127.0.0.1:59583][0m
+2024-07-08 12:18:28,016 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.07, 127.0.0.1:59583][0m
+2024-07-08 12:18:28,019 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:59585][0m
+2024-07-08 12:18:40,060 [32mHTTP POST /place_order 302 [0.03, 127.0.0.1:59594][0m
+2024-07-08 12:18:40,131 [mHTTP GET /orders 200 [0.05, 127.0.0.1:59594][0m
+2024-07-08 12:18:41,021 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59594][0m
+2024-07-08 12:18:41,037 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59594][0m
+2024-07-08 12:18:43,895 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:59599][0m
+2024-07-08 12:18:44,774 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59599][0m
+2024-07-08 12:18:44,777 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59600][0m
+2024-07-08 12:18:49,039 [mHTTP GET /orders 200 [0.06, 127.0.0.1:59600][0m
+2024-07-08 12:18:50,027 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:59600][0m
+2024-07-08 12:18:50,031 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:59599][0m
+2024-07-08 12:20:49,214 [32mHTTP GET /cancelorder/zGHdTxZduE 302 [0.02, 127.0.0.1:59663][0m
+2024-07-08 12:20:49,254 [mHTTP GET /orders 200 [0.03, 127.0.0.1:59663][0m
+2024-07-08 12:20:50,301 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59663][0m
+2024-07-08 12:20:50,320 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59663][0m
+2024-07-08 12:26:17,848 [mHTTP GET /orders 200 [0.08, 127.0.0.1:59852][0m
+2024-07-08 12:26:19,571 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59852][0m
+2024-07-08 12:26:19,589 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59852][0m
+2024-07-08 12:29:58,741 D:\stox\app\views.py changed, reloading.
+2024-07-08 12:30:11,475 D:\stox\app\views.py changed, reloading.
+2024-07-08 12:30:26,437 D:\stox\app\urls.py changed, reloading.
+2024-07-08 12:31:35,296 [mHTTP GET /orders 200 [0.19, 127.0.0.1:60077][0m
+2024-07-08 12:31:37,451 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:60077][0m
+2024-07-08 12:31:37,472 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60078][0m
+2024-07-08 12:32:35,277 [mHTTP GET /orders 200 [0.14, 127.0.0.1:60114][0m
+2024-07-08 12:32:37,289 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60114][0m
+2024-07-08 12:32:37,306 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60114][0m
+2024-07-08 12:33:04,974 [mHTTP GET /orders 200 [0.15, 127.0.0.1:60136][0m
+2024-07-08 12:33:06,882 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60136][0m
+2024-07-08 12:33:06,940 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60136][0m
+2024-07-08 12:33:31,880 [mHTTP GET /orders 200 [0.13, 127.0.0.1:60161][0m
+2024-07-08 12:33:33,848 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60161][0m
+2024-07-08 12:33:33,881 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60161][0m
+2024-07-08 12:34:27,495 [mHTTP GET /orders 200 [0.12, 127.0.0.1:60209][0m
+2024-07-08 12:34:29,168 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60209][0m
+2024-07-08 12:34:29,183 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60209][0m
+2024-07-08 12:34:38,141 [mHTTP GET /cancel_order/6DeQ1lwZkk 200 [0.04, 127.0.0.1:60220][0m
+2024-07-08 12:34:38,289 [32mHTTP POST /place_order 302 [0.15, 127.0.0.1:60221][0m
+2024-07-08 12:34:38,366 [mHTTP GET /orders 200 [0.07, 127.0.0.1:60221][0m
+2024-07-08 12:34:39,257 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60221][0m
+2024-07-08 12:34:39,272 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60221][0m
+2024-07-08 12:34:42,204 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:60221][0m
+2024-07-08 12:34:43,075 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:60221][0m
+2024-07-08 12:34:43,079 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60220][0m
+2024-07-08 12:34:49,214 [mHTTP GET /orders 200 [0.06, 127.0.0.1:60229][0m
+2024-07-08 12:34:50,187 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60229][0m
+2024-07-08 12:34:50,199 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:60230][0m
+2024-07-08 12:35:11,791 [mHTTP GET /orders 200 [0.05, 127.0.0.1:60250][0m
+2024-07-08 12:35:12,766 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60251][0m
+2024-07-08 12:35:12,767 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60250][0m
+2024-07-08 12:35:19,643 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:60269][0m
+2024-07-08 12:35:20,615 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60269][0m
+2024-07-08 12:35:20,616 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60270][0m
+2024-07-08 12:58:48,518 [mHTTP GET /portfolio 200 [0.22, 127.0.0.1:61534][0m
+2024-07-08 12:58:50,105 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61534][0m
+2024-07-08 12:58:50,108 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61535][0m
+2024-07-08 12:59:34,610 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:61570][0m
+2024-07-08 12:59:36,441 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61570][0m
+2024-07-08 12:59:36,472 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61570][0m
+2024-07-08 12:59:47,978 [mHTTP GET /portfolio 200 [0.09, 127.0.0.1:61585][0m
+2024-07-08 12:59:48,827 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:61585][0m
+2024-07-08 12:59:48,835 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:61586][0m
+2024-07-08 12:59:57,008 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:61593][0m
+2024-07-08 12:59:57,879 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61593][0m
+2024-07-08 12:59:57,880 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61594][0m
+2024-07-08 13:00:18,084 [mHTTP GET /portfolio 200 [0.11, 127.0.0.1:61616][0m
+2024-07-08 13:00:35,501 [32mHTTP POST /place_order 302 [0.16, 127.0.0.1:61616][0m
+2024-07-08 13:00:35,587 [mHTTP GET /orders 200 [0.08, 127.0.0.1:61616][0m
+2024-07-08 13:00:39,603 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:61616][0m
+2024-07-08 13:01:17,819 [32mHTTP GET /admin 301 [0.02, 127.0.0.1:61616][0m
+2024-07-08 13:01:18,143 [mHTTP GET /admin/ 200 [0.32, 127.0.0.1:61616][0m
+2024-07-08 13:01:18,200 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61616][0m
+2024-07-08 13:01:18,204 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:61654][0m
+2024-07-08 13:01:18,206 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:61655][0m
+2024-07-08 13:01:18,208 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61656][0m
+2024-07-08 13:01:18,487 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:61655][0m
+2024-07-08 13:01:18,488 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:61656][0m
+2024-07-08 13:01:18,491 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:61654][0m
+2024-07-08 13:01:18,877 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:61654][0m
+2024-07-08 13:01:18,879 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:61656][0m
+2024-07-08 13:01:22,533 [mHTTP GET /admin/app/symbols/ 200 [0.35, 127.0.0.1:61658][0m
+2024-07-08 13:01:22,590 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61658][0m
+2024-07-08 13:01:22,602 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.02, 127.0.0.1:61660][0m
+2024-07-08 13:01:22,607 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:61662][0m
+2024-07-08 13:01:22,609 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:61663][0m
+2024-07-08 13:01:22,618 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.00, 127.0.0.1:61663][0m
+2024-07-08 13:01:22,622 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:61658][0m
+2024-07-08 13:01:22,629 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:61664][0m
+2024-07-08 13:01:22,848 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:61664][0m
+2024-07-08 13:01:22,850 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:61658][0m
+2024-07-08 13:01:22,860 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:61658][0m
+2024-07-08 13:01:22,862 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:61664][0m
+2024-07-08 13:01:30,442 [mHTTP GET /admin/app/symbols/20/change/ 200 [0.19, 127.0.0.1:61664][0m
+2024-07-08 13:01:30,481 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61664][0m
+2024-07-08 13:01:30,484 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:61658][0m
+2024-07-08 13:01:30,487 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:61663][0m
+2024-07-08 13:01:30,488 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:61662][0m
+2024-07-08 13:01:30,492 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61668][0m
+2024-07-08 13:01:30,501 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:61660][0m
+2024-07-08 13:01:30,722 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:61660][0m
+2024-07-08 13:01:30,738 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:61660][0m
+2024-07-08 13:01:30,738 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:61663][0m
+2024-07-08 13:01:30,740 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:61668][0m
+2024-07-08 13:01:30,741 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:61658][0m
+2024-07-08 13:01:34,160 [32mHTTP POST /admin/app/symbols/20/change/ 302 [0.03, 127.0.0.1:61671][0m
+2024-07-08 13:01:34,257 [mHTTP GET /admin/app/symbols/ 200 [0.09, 127.0.0.1:61671][0m
+2024-07-08 13:01:34,311 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61671][0m
+2024-07-08 13:01:34,313 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:61672][0m
+2024-07-08 13:01:34,318 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:61673][0m
+2024-07-08 13:01:34,320 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:61674][0m
+2024-07-08 13:01:34,325 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61676][0m
+2024-07-08 13:01:34,329 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:61671][0m
+2024-07-08 13:01:34,341 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:61675][0m
+2024-07-08 13:01:34,447 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:61675][0m
+2024-07-08 13:01:34,448 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:61671][0m
+2024-07-08 13:01:34,460 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:61671][0m
+2024-07-08 13:01:34,461 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:61675][0m
+2024-07-08 13:01:38,861 Internal Server Error: /place_order
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 371, in place_order
+    status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,'Market')
+  File "D:\stox\app\orders\market.py", line 115, in market_order
+    if instr.option_type.upper() == 'CE' or instr.option_type.upper() == 'PE':
+AttributeError: 'NoneType' object has no attribute 'upper'
+2024-07-08 13:01:38,871 [35;1mHTTP POST /place_order 500 [0.18, 127.0.0.1:61675][0m
+2024-07-08 13:02:40,878 D:\stox\app\orders\market.py changed, reloading.
+2024-07-08 13:02:48,425 Internal Server Error: /place_order
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 371, in place_order
+    status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,'Market')
+  File "D:\stox\app\orders\market.py", line 116, in market_order
+    if instr.option_type.upper() == 'CE' or instr.option_type.upper() == 'PE':
+AttributeError: 'NoneType' object has no attribute 'upper'
+2024-07-08 13:02:48,431 [35;1mHTTP POST /place_order 500 [0.09, 127.0.0.1:61732][0m
+2024-07-08 13:03:06,106 D:\stox\app\orders\market.py changed, reloading.
+2024-07-08 13:03:09,018 [32mHTTP POST /place_order 302 [0.14, 127.0.0.1:61748][0m
+2024-07-08 13:03:09,088 [mHTTP GET /orders 200 [0.06, 127.0.0.1:61748][0m
+2024-07-08 13:03:12,913 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:61748][0m
+2024-07-08 13:03:21,949 [32mHTTP POST /place_order 302 [0.14, 127.0.0.1:61764][0m
+2024-07-08 13:03:22,035 [mHTTP GET /orders 200 [0.08, 127.0.0.1:61764][0m
+2024-07-08 13:03:25,572 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:61764][0m
+2024-07-08 13:03:36,945 [mHTTP GET /admin/app/position/ 200 [0.20, 127.0.0.1:61776][0m
+2024-07-08 13:03:37,009 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61776][0m
+2024-07-08 13:03:37,009 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:61777][0m
+2024-07-08 13:03:37,014 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:61779][0m
+2024-07-08 13:03:37,018 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:61780][0m
+2024-07-08 13:03:37,023 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61782][0m
+2024-07-08 13:03:37,025 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:61776][0m
+2024-07-08 13:03:37,037 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:61781][0m
+2024-07-08 13:03:37,244 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:61781][0m
+2024-07-08 13:03:37,281 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:61776][0m
+2024-07-08 13:03:37,282 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:61781][0m
+2024-07-08 13:03:37,283 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:61782][0m
+2024-07-08 13:03:37,317 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:61782][0m
+2024-07-08 13:03:37,319 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:61776][0m
+2024-07-08 13:03:53,508 [mHTTP POST /admin/app/position/ 200 [0.12, 127.0.0.1:61791][0m
+2024-07-08 13:03:53,549 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61791][0m
+2024-07-08 13:03:53,550 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:61792][0m
+2024-07-08 13:03:53,552 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:61794][0m
+2024-07-08 13:03:53,555 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61796][0m
+2024-07-08 13:03:53,557 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:61797][0m
+2024-07-08 13:03:53,609 [mHTTP GET /static/admin/js/cancel.js 200 [0.06, 127.0.0.1:61795][0m
+2024-07-08 13:03:53,690 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:61795][0m
+2024-07-08 13:03:53,691 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:61797][0m
+2024-07-08 13:03:57,425 [32mHTTP POST /admin/app/position/ 302 [0.06, 127.0.0.1:61799][0m
+2024-07-08 13:03:57,516 [mHTTP GET /admin/app/position/ 200 [0.08, 127.0.0.1:61799][0m
+2024-07-08 13:03:57,563 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61799][0m
+2024-07-08 13:03:57,564 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:61800][0m
+2024-07-08 13:03:57,568 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:61801][0m
+2024-07-08 13:03:57,571 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:61802][0m
+2024-07-08 13:03:57,573 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61804][0m
+2024-07-08 13:03:57,577 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:61799][0m
+2024-07-08 13:03:57,586 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:61803][0m
+2024-07-08 13:03:57,689 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:61803][0m
+2024-07-08 13:03:57,691 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:61799][0m
+2024-07-08 13:03:57,697 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:61799][0m
+2024-07-08 13:03:57,699 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:61803][0m
+2024-07-08 13:04:00,038 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:61803][0m
+2024-07-08 13:04:03,152 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:61803][0m
+2024-07-08 13:04:11,196 [32mHTTP POST /place_order 302 [0.12, 127.0.0.1:61817][0m
+2024-07-08 13:04:11,271 [mHTTP GET /orders 200 [0.07, 127.0.0.1:61817][0m
+2024-07-08 13:04:15,434 [mHTTP GET /admin/app/symbols/ 200 [0.08, 127.0.0.1:61817][0m
+2024-07-08 13:04:15,475 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:61818][0m
+2024-07-08 13:04:15,476 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61817][0m
+2024-07-08 13:04:15,482 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:61822][0m
+2024-07-08 13:04:15,485 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:61823][0m
+2024-07-08 13:04:15,487 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61825][0m
+2024-07-08 13:04:15,491 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:61818][0m
+2024-07-08 13:04:15,500 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:61824][0m
+2024-07-08 13:04:15,626 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:61824][0m
+2024-07-08 13:04:15,750 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:61824][0m
+2024-07-08 13:04:15,752 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:61818][0m
+2024-07-08 13:04:15,764 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:61818][0m
+2024-07-08 13:04:15,765 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:61824][0m
+2024-07-08 13:04:20,595 [mHTTP GET /admin/app/symbols/7/change/ 200 [0.07, 127.0.0.1:61829][0m
+2024-07-08 13:04:20,645 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61829][0m
+2024-07-08 13:04:20,649 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:61831][0m
+2024-07-08 13:04:20,651 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:61833][0m
+2024-07-08 13:04:20,654 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:61834][0m
+2024-07-08 13:04:20,656 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61836][0m
+2024-07-08 13:04:20,668 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:61835][0m
+2024-07-08 13:04:20,904 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.00, 127.0.0.1:61835][0m
+2024-07-08 13:04:20,919 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:61835][0m
+2024-07-08 13:04:20,920 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:61836][0m
+2024-07-08 13:04:20,921 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:61834][0m
+2024-07-08 13:04:20,922 [36mHTTP GET /static/jazzmin/js/change_form.js 304 [0.01, 127.0.0.1:61833][0m
+2024-07-08 13:04:26,971 [32mHTTP POST /admin/app/symbols/7/change/ 302 [0.03, 127.0.0.1:61839][0m
+2024-07-08 13:04:27,067 [mHTTP GET /admin/app/symbols/ 200 [0.09, 127.0.0.1:61839][0m
+2024-07-08 13:04:27,113 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:61839][0m
+2024-07-08 13:04:27,121 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.02, 127.0.0.1:61840][0m
+2024-07-08 13:04:27,123 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.02, 127.0.0.1:61841][0m
+2024-07-08 13:04:27,127 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:61842][0m
+2024-07-08 13:04:27,130 [36mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 304 [0.01, 127.0.0.1:61844][0m
+2024-07-08 13:04:27,135 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.01, 127.0.0.1:61839][0m
+2024-07-08 13:04:27,145 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:61843][0m
+2024-07-08 13:04:27,253 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.00, 127.0.0.1:61843][0m
+2024-07-08 13:04:27,255 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.00, 127.0.0.1:61839][0m
+2024-07-08 13:04:27,264 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:61839][0m
+2024-07-08 13:04:27,265 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:61843][0m
+2024-07-08 13:04:29,445 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:61839][0m
+2024-07-08 13:04:31,979 [32mHTTP POST /place_order 302 [0.11, 127.0.0.1:61839][0m
+2024-07-08 13:04:32,062 [mHTTP GET /orders 200 [0.07, 127.0.0.1:61839][0m
+2024-07-08 13:04:35,449 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:61839][0m
+2024-07-08 13:08:25,039 [mHTTP GET /portfolio 200 [0.16, 127.0.0.1:61990][0m
+2024-07-08 13:08:44,330 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62005][0m
+2024-07-08 13:08:44,330 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62004][0m
+2024-07-08 13:09:02,645 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:62019][0m
+2024-07-08 13:09:03,873 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:62019][0m
+2024-07-08 13:09:03,875 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:62020][0m

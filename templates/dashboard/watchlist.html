@@ -226,54 +226,6 @@
     </div>
 </div>
 
-<!-- JavaScript to handle modal logic -->
-<script>
-    function place_order(stock, instrument) {
-        document.getElementById('stock_tab').innerText = `(${stock})`
-        let lot_size = document.getElementById(instrument).getAttribute('data-lot_size');
-        if(lot_size != 1){
-            document.getElementById('order_lot_size').innerText = `1 Lot = ${lot_size}`
-        }
-        document.getElementById('instrument_input').value = instrument
-        document.getElementById('modal').classList.remove('hidden');
-        calc();
-    }
-
-    document.getElementById('closeModal').addEventListener('click', function () {
-        document.getElementById('modal').classList.add('hidden');
-    });
-
-    function execute_order(order_type) {
-        document.getElementById("order_type").value = order_type;
-        document.getElementById("order_form").submit();
-    }
-    document.getElementById('type').addEventListener('change', function() {
-        const priceInput = document.getElementById('price');
-        if (this.value === 'Market') {
-            priceInput.readOnly = true;
-            priceInput.value = 0;
-            priceInput.classList.add('bg-gray-200');
-        } else {
-            priceInput.readOnly = false;
-            priceInput.classList.remove('bg-gray-200');
-        }
-    });
-
-    // Trigger change event to set initial state
-    document.getElementById('type').dispatchEvent(new Event('change'));
-
-
-    document.getElementById('product').addEventListener('change', function() {
-        if (this.value === 'Intraday') {
-            document.getElementById('margin_available').innerHTML = {% widthratio request.user.wallet 1 request.user.margin %}
-        } else {
-            document.getElementById('margin_available').innerHTML = {{ request.user.wallet }}
-        }
-    });
-
-    // Trigger change event to set initial state
-    document.getElementById('product').dispatchEvent(new Event('change'));
-</script>
 
 <div class="mt-2" id="skeleton">
     <div role="status"
@@ -377,6 +329,53 @@
 
 
 <script>
+    function place_order(stock, instrument) {
+        document.getElementById('stock_tab').innerText = `(${stock})`
+        let lot_size = document.getElementById(instrument).getAttribute('data-lot_size');
+        if(lot_size != 1){
+            document.getElementById('order_lot_size').innerText = `1 Lot = ${lot_size}`
+        }
+        document.getElementById('instrument_input').value = instrument
+        document.getElementById('modal').classList.remove('hidden');
+        calc();
+    }
+
+    document.getElementById('closeModal').addEventListener('click', function () {
+        document.getElementById('modal').classList.add('hidden');
+    });
+
+    function execute_order(order_type) {
+        document.getElementById("order_type").value = order_type;
+        document.getElementById("order_form").submit();
+    }
+    document.getElementById('type').addEventListener('change', function() {
+        const priceInput = document.getElementById('price');
+        if (this.value === 'Market') {
+            priceInput.readOnly = true;
+            priceInput.value = 0;
+            priceInput.classList.add('bg-gray-200');
+        } else {
+            priceInput.readOnly = false;
+            priceInput.classList.remove('bg-gray-200');
+        }
+    });
+
+    // Trigger change event to set initial state
+    document.getElementById('type').dispatchEvent(new Event('change'));
+
+
+    document.getElementById('product').addEventListener('change', function() {
+        if (this.value === 'Intraday') {
+            document.getElementById('margin_available').innerHTML = {% widthratio request.user.wallet 1 request.user.margin %}
+        } else {
+            document.getElementById('margin_available').innerHTML = {{ request.user.wallet }}
+        }
+    });
+
+    // Trigger change event to set initial state
+    document.getElementById('product').dispatchEvent(new Event('change'));
+
+
     let delete_symbols_list = []
     let delete_instruments_list = []
 
