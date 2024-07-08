@@ -87,7 +87,7 @@ class Order(admin.ModelAdmin):
 @admin.register(Position)
 class Position(admin.ModelAdmin):
     # list_display = ('user','symbol','product','pnl')
-    list_filter = ('created_at','user','symbol','product')
+    list_filter = ('created_at','user','symbol','product','last_traded_datetime')
     list_display = ('user', 'quantity', 'symbol', 'product', 'buy_price', 'sell_price', 'pnl_colored','created_at')
     # Define a custom method to display pnl with color
     def pnl_colored(self, obj):
