@@ -236,7 +236,7 @@
                                     class="block text-sm font-medium text-gray-400 ">Available: 
                                     ₹
                                     <span id="margin_available" class="text-gray-500">
-                                        {% widthratio request.user.wallet 1 request.user.margin %}
+                                        {% widthratio request.user.wallet 1 request.user.margin %} ({{ request.user.wallet }}*{{ request.user.margin }})
                                     </span>
                                 </label>
                             </div>

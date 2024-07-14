@@ -426,7 +426,7 @@ def transactions(request):
     context = {
         'trans':trans
     }
-    return render(request,'transactions.html',context)
+    return render(request,'dashboard/transactions.html',context)
 
 
 
