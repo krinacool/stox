@@ -278,6 +278,7 @@ def portfolio(request):
     tax = settings.tax
     # ---------------CONTEXT-----------
     all_tags = tags.objects.filter(user=request.user)
+    print(ppnl)
     context = {
         "all_tags":all_tags,
         "positions":positions,
@@ -367,6 +368,8 @@ def place_order(request):
         status = "failed"
         print('quantity')
         print(quantity)
+        print(product)
+        print(order_type)
         if type == 'Market':
             status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,'Market')
         else:

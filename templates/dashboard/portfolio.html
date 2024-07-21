@@ -357,7 +357,6 @@
     const socket = new WebSocket('wss://onstock.in/ws/stocks/');
 
     socket.onopen = function () {
-        console.log('WebSocket connection established.');
 
         // Example instruments list
         const instruments = {{portfolio_symbollist|safe}};
@@ -368,7 +367,6 @@
 
     socket.onmessage = function (event) {
         const data = JSON.parse(event.data);
-        console.log('Received real-time data:', data);
         let tpnl = 0;
         for (let i of data) {
             if (i['data']['symbol']) {
@@ -410,15 +408,13 @@
                 }
             }
         }
-        console.log('tpnl');
-        tpnl = {{ppnl}} + tpnl;
+        tpnl = tpnl;
         if(tpnl > 0) {
             document.getElementById('ppnl').innerHTML = `<span class='text-green-600'>${tpnl.toFixed(2)}</span>`
         }
         else {
             document.getElementById('ppnl').innerHTML = `<span class='text-red-600'>${tpnl.toFixed(2)}</span>`
         }
-        console.log(tpnl.toFixed(2));
         // Handle the real-time data update here
     };
 
@@ -427,7 +423,6 @@
         otherTabs.forEach((element) => {
             element.classList.add('hidden')
         });
-        console.log('WebSocket connection closed:', event);
         setTimeout(function () {
             location.reload();
         }, 5000);
@@ -439,7 +434,6 @@
         otherTabs.forEach((element) => {
             element.classList.add('hidden')
         });
-        console.error('WebSocket error:', error);
         setTimeout(function () {
             location.reload();
         }, 5000);
