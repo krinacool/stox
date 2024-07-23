@@ -1,11 +1,13 @@
 import csv
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from app.models import Instrument, Watchlist, symbols  # Corrected model name to 'Symbol'
-import requests
+from app.models import Instrument, Watchlist, symbols, Shoonya_Instrument  # Corrected model name to 'Symbol'
 import requests
 import gzip
 import shutil
+import zipfile
+import os
+import pandas as pd
 
 
 def download_and_decompress(url, output_filename):
@@ -25,8 +27,79 @@ def download_and_decompress(url, output_filename):
     else:
         print("Failed to download the file.")
 
-# Call the function to download and decompress the file
 
+def combine_txt_to_csv(input_folder, output_file):
+    # Define all possible columns
+    all_columns = [
+        "Exchange", "Token", "LotSize", "Symbol", "TradingSymbol", 
+        "Expiry", "Instrument", "OptionType", "StrikePrice", "TickSize", 
+        "Precision", "Multiplier", "GNGD"
+    ]
+    
+    # List to hold DataFrames
+    df_list = []
+
+    # Iterate over all txt files in the input folder
+    for filename in os.listdir(input_folder):
+        if filename.endswith(".txt"):
+            filepath = os.path.join(input_folder, filename)
+            # Read the file into a DataFrame
+            df = pd.read_csv(filepath)
+            # Add missing columns with NaN values
+            for column in all_columns:
+                if column not in df.columns:
+                    df[column] = pd.NA
+            # Reorder columns to match the order of all_columns
+            df = df[all_columns]
+            # Append DataFrame to the list
+            df_list.append(df)
+
+    # Concatenate all DataFrames
+    combined_df = pd.concat(df_list, ignore_index=True)
+    # Save the combined DataFrame to a CSV file
+    combined_df.to_csv(output_file, index=False)
+
+    print(f"Combined CSV saved to {output_file}")
+
+def download_and_extract(urls, target_folder):
+    for url in urls:
+        # Extract filename from URL
+        filename = url.split('/')[-1]
+        
+        # Download the file
+        response = requests.get(url)
+        if response.status_code == 200:
+            # Save the downloaded ZIP file
+            zip_file_path = os.path.join(target_folder, filename)
+            with open(zip_file_path, 'wb') as f:
+                f.write(response.content)
+                
+            # Extract the ZIP file
+            with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+                zip_ref.extractall(target_folder)
+                
+            # Remove the ZIP file after extraction
+            os.remove(zip_file_path)
+            
+            print(f"Downloaded and extracted: {filename}")
+        else:
+            print(f"Failed to download: {filename}")
+
+# Example usage
+urls = [
+    "https://api.shoonya.com/NSE_symbols.txt.zip",
+    "https://api.shoonya.com/NFO_symbols.txt.zip",
+    "https://api.shoonya.com/CDS_symbols.txt.zip",
+    "https://api.shoonya.com/MCX_symbols.txt.zip",
+    "https://api.shoonya.com/BSE_symbols.txt.zip",
+    "https://api.shoonya.com/BFO_symbols.txt.zip",
+    "https://api.shoonya.com/NCX_symbols.txt.zip"
+]
+target_folder = "./ShoonyaFiles"  # Set your target folder path here
+# Create the target folder if it doesn't exist
+os.makedirs(target_folder, exist_ok=True)
+
+# Call the function to download and decompress the file
 class Command(BaseCommand):
     help = 'Load instruments from CSV'
 
@@ -36,8 +109,27 @@ class Command(BaseCommand):
         # Output file name
         output_filename = "complete.csv"
         download_and_decompress(url, output_filename)
+        download_and_extract(urls, target_folder)
+        combine_txt_to_csv(target_folder, 'shoonya.csv')
         file_path = 'complete.csv'
         # Delete all existing instruments
+        Shoonya_Instrument.objects.all().delete()
+        shoonya = []
+        with open('shoonya.csv', 'r') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                # Check if last_price is not 0 before appending
+                shoonya.append(Instrument(
+                    exchange_token=row['Token'] if row['Token'] else None,
+                    tradingsymbol=row['TradingSymbol'] if row['TradingSymbol'] else None,
+                    name=row['Symbol'],
+                    exchange=row['Exchange'],
+                ))
+
+        # Bulk create all shoonya in a single transaction
+        with transaction.atomic():
+            Shoonya_Instrument.objects.bulk_create(shoonya, batch_size=1000)
+
         Instrument.objects.all().delete()
         instruments = []
         with open(file_path, 'r') as file:

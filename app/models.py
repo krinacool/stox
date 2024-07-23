@@ -8,6 +8,7 @@ from wallet.calculation import add_amount, deduct_amount, calc_carrage, add_wall
 from django.db import models, transaction
 from app.symbols.getsymbols import get_instrument_key
 import datetime
+from app.orders.ShoonyaApipy.tests.test_place_order import shoonya_order
 
 def generate_unique_id():
     characters = string.ascii_letters + string.digits
@@ -129,6 +130,21 @@ class Instrument(models.Model):
     def __str__(self):
         return self.name
 
+class Shoonya_Instrument(models.Model):
+    exchange_token = models.CharField(max_length=10,null=True,blank=True)
+    tradingsymbol = models.CharField(max_length=20, null=True,blank=True)
+    name = models.CharField(max_length=100,null=True,blank=True)
+    exchange = models.CharField(max_length=10,null=True,blank=True)
+
+    def __str__(self):
+        return f"{self.tradingsymbol} ({self.exchange})"
+
+class Shoonya_Orders(models.Model):
+    datetime = models.DateTimeField(auto_now_add=True,null=True)
+    response = models.TextField(max_length=5000, null=True,blank=True)
+
+    def __str__(self):
+        return f"{self.datetime} ({self.response})"
 
 class tags(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, blank=True, null=True)
@@ -310,9 +326,11 @@ class Order(models.Model):
         elif self.status == 'failed' or self.status == 'cancelled':
             if self.type == 'Market':
                 add_amount(self.user,self.charges)
+        else:
             if self.user.api_orders:
                 try:
-                    shoonya_order(self.symbol,self.segment,self.quantity,self.order_type,self.product)
+                    print('shoonya order -=-=-=-=')
+                    shoonya_order(self)
                 except:
                     pass
                     # alice_order(self.symbol,self.quantity,self.order_type,self.product)

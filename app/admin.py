@@ -49,6 +49,8 @@ class Instrument(admin.ModelAdmin):
     list_filter = ('exchange',)
     search_fields = ('tradingsymbol',)
 
+# admin.site.register(Shoonya_Instrument)
+admin.site.register(Shoonya_Orders)
 
 @admin.register(Watchlist)
 class Watchlist(admin.ModelAdmin):
