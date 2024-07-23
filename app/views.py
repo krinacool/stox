@@ -430,6 +430,13 @@ def transactions(request):
     }
     return render(request,'dashboard/transactions.html',context)
 
+@login_required
+def performance(request):
+    pfm = Position.objects.filter(user=request.user,is_closed=True)
+    context = {
+        'pfm':pfm
+    }
+    return render(request,'dashboard/performance.html',context)
 
 
 def upstox_cred(request,secret):

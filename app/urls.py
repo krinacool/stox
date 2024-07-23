@@ -31,6 +31,7 @@ urlpatterns = [
     path("trade_charges",trade_charges,name='trade_charges'),
     path("pnl",pnl,name='pnl'),
     path("transactions",transactions,name='transactions'),
+    path("performance",performance,name='performance'),
     # --PAGES--
     path("about",about,name='about'),
     path("disclaimer",disclaimer,name='disclaimer'),

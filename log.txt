@@ -1345,3 +1345,151 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'close_positions' not found. 
 2024-07-23 16:46:32,838 [mHTTP GET /static/admin/js/SelectBox.js 200 [0.08, 127.0.0.1:54363][0m
 2024-07-23 16:46:32,838 [mHTTP GET /static/admin/js/SelectFilter2.js 200 [0.08, 127.0.0.1:54364][0m
 2024-07-23 16:46:33,587 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:54364][0m
+2024-07-23 17:18:45,024 [mHTTP GET /admin/ 200 [0.11, 127.0.0.1:55028][0m
+2024-07-23 17:18:45,172 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:55028][0m
+2024-07-23 17:18:45,172 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:55029][0m
+2024-07-23 17:23:51,387 [mHTTP GET /admin/ 200 [0.02, 127.0.0.1:55186][0m
+2024-07-23 17:23:51,546 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:55186][0m
+2024-07-23 17:23:51,547 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:55187][0m
+2024-07-23 17:24:09,937 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:55187][0m
+2024-07-23 17:24:13,677 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:55187][0m
+2024-07-23 17:24:50,712 [mHTTP GET /profile 200 [0.03, 127.0.0.1:55187][0m
+2024-07-23 17:25:03,638 [mHTTP GET /transactions 200 [0.04, 127.0.0.1:55187][0m
+2024-07-23 17:26:08,838 [mHTTP GET /trade_charges 200 [0.03, 127.0.0.1:55207][0m
+2024-07-23 17:26:14,876 [mHTTP GET /transactions 200 [0.01, 127.0.0.1:55207][0m
+2024-07-23 17:26:57,972 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:55207][0m
+2024-07-23 17:28:41,483 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:55244][0m
+2024-07-23 17:28:45,835 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55245][0m
+2024-07-23 17:28:45,835 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55244][0m
+2024-07-23 17:29:37,273 [mHTTP GET /transactions 200 [0.03, 127.0.0.1:55286][0m
+2024-07-23 17:29:37,831 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:55286][0m
+2024-07-23 17:29:37,831 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:55287][0m
+2024-07-23 17:30:43,929 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:55312][0m
+2024-07-23 17:30:58,487 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:55321][0m
+2024-07-23 17:31:16,867 [mHTTP GET /transactions 200 [0.04, 127.0.0.1:55325][0m
+2024-07-23 17:31:26,289 Not Found: /performance
+2024-07-23 17:31:26,290 [33mHTTP GET /performance 404 [0.01, 127.0.0.1:55325][0m
+2024-07-23 17:31:50,736 D:\stox\app\views.py changed, reloading.
+2024-07-23 17:32:09,494 D:\stox\app\urls.py changed, reloading.
+2024-07-23 17:32:14,073 Internal Server Error: /performance
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 450, in performance
+    return render(request,'dashboard/performance.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dashboard/performance.html
+2024-07-23 17:32:14,077 [35;1mHTTP GET /performance 500 [0.10, 127.0.0.1:55371][0m
+2024-07-23 17:32:44,079 [mHTTP GET /performance 200 [0.04, 127.0.0.1:55377][0m
+2024-07-23 17:32:47,309 [mHTTP GET /performance 200 [0.01, 127.0.0.1:55377][0m
+2024-07-23 17:32:48,584 [mHTTP GET /transactions 200 [0.01, 127.0.0.1:55377][0m
+2024-07-23 17:32:51,255 [mHTTP GET /trade_charges 200 [0.03, 127.0.0.1:55377][0m
+2024-07-23 17:32:53,235 [mHTTP GET /transactions 200 [0.01, 127.0.0.1:55377][0m
+2024-07-23 17:33:53,533 [mHTTP GET /performance 200 [0.01, 127.0.0.1:55382][0m
+2024-07-23 17:34:00,402 [mHTTP GET /orders 200 [0.09, 127.0.0.1:55385][0m
+2024-07-23 17:35:27,802 [mHTTP GET /performance 200 [0.01, 127.0.0.1:55400][0m
+2024-07-23 17:36:40,399 D:\stox\app\views.py changed, reloading.
+2024-07-23 17:38:31,227 Internal Server Error: /performance
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 435, in performance
+    pfm = portfolio.objects.filter(user=request.user,is_closed=True)
+AttributeError: 'function' object has no attribute 'objects'
+2024-07-23 17:38:31,232 [35;1mHTTP GET /performance 500 [0.06, 127.0.0.1:55458][0m
+2024-07-23 17:38:49,070 D:\stox\app\views.py changed, reloading.
+2024-07-23 17:38:51,471 [mHTTP GET /performance 200 [0.04, 127.0.0.1:55476][0m
+2024-07-23 17:39:43,840 [mHTTP GET /performance 200 [0.05, 127.0.0.1:55476][0m
+2024-07-23 17:40:00,867 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55476][0m
+2024-07-23 17:40:38,136 [mHTTP GET /performance 200 [0.04, 127.0.0.1:55484][0m
+2024-07-23 17:40:44,637 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55491][0m
+2024-07-23 17:40:44,637 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55492][0m
+2024-07-23 17:41:52,250 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55537][0m
+2024-07-23 17:41:52,946 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55537][0m
+2024-07-23 17:41:52,949 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55538][0m
+2024-07-23 17:42:12,290 [mHTTP GET /performance 200 [0.05, 127.0.0.1:55560][0m
+2024-07-23 17:42:12,921 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:55560][0m
+2024-07-23 17:42:12,929 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55561][0m
+2024-07-23 17:42:17,176 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55561][0m
+2024-07-23 17:42:17,700 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55560][0m
+2024-07-23 17:42:17,708 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:55561][0m
+2024-07-23 17:42:22,370 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55569][0m
+2024-07-23 17:42:23,240 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55569][0m
+2024-07-23 17:42:23,240 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55570][0m
+2024-07-23 17:42:26,986 [mHTTP GET /performance 200 [0.02, 127.0.0.1:55569][0m
+2024-07-23 17:42:27,876 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55570][0m
+2024-07-23 17:42:27,882 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:55569][0m
+2024-07-23 17:42:42,515 [mHTTP GET /performance 200 [0.04, 127.0.0.1:55609][0m
+2024-07-23 17:42:42,954 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55609][0m
+2024-07-23 17:42:42,954 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55610][0m
+2024-07-23 17:43:13,625 [mHTTP GET /performance 200 [0.02, 127.0.0.1:55648][0m
+2024-07-23 17:43:14,152 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55648][0m
+2024-07-23 17:43:14,152 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55649][0m
+2024-07-23 17:43:28,015 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55663][0m
+2024-07-23 17:43:28,791 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55663][0m
+2024-07-23 17:43:28,792 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55664][0m
+2024-07-23 17:43:34,914 [mHTTP GET /performance 200 [0.02, 127.0.0.1:55672][0m
+2024-07-23 17:43:35,447 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55672][0m
+2024-07-23 17:43:35,453 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55673][0m
+2024-07-23 17:43:39,479 [mHTTP GET /performance 200 [0.04, 127.0.0.1:55673][0m
+2024-07-23 17:43:40,155 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55673][0m
+2024-07-23 17:43:40,155 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:55672][0m
+2024-07-23 17:43:49,923 [mHTTP GET /performance 200 [0.04, 127.0.0.1:55684][0m
+2024-07-23 17:43:50,431 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55684][0m
+2024-07-23 17:43:50,431 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55685][0m
+2024-07-23 17:44:06,177 [mHTTP GET /performance 200 [0.02, 127.0.0.1:55697][0m
+2024-07-23 17:44:06,715 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55698][0m
+2024-07-23 17:44:06,715 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55697][0m
+2024-07-23 17:44:07,562 [mHTTP GET /performance 200 [0.01, 127.0.0.1:55697][0m
+2024-07-23 17:44:08,570 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:55697][0m
+2024-07-23 17:44:08,571 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:55698][0m
+2024-07-23 17:44:15,241 [mHTTP GET /performance 200 [0.04, 127.0.0.1:55717][0m
+2024-07-23 17:44:16,606 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55720][0m
+2024-07-23 17:44:16,607 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:55718][0m
+2024-07-23 17:44:16,614 [mHTTP GET /performance 200 [0.04, 127.0.0.1:55717][0m
+2024-07-23 17:44:17,087 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:55724][0m
+2024-07-23 17:44:17,088 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55723][0m
+2024-07-23 17:44:39,578 [mHTTP GET /performance 200 [0.01, 127.0.0.1:55747][0m
+2024-07-23 17:44:40,124 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:55747][0m
+2024-07-23 17:44:40,124 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:55748][0m
+2024-07-23 17:44:41,499 [mHTTP GET /performance 200 [0.01, 127.0.0.1:55748][0m
+2024-07-23 17:44:44,852 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55748][0m
+2024-07-23 17:44:44,856 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55747][0m
+2024-07-23 17:44:54,399 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55761][0m
+2024-07-23 17:44:55,673 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55762][0m
+2024-07-23 17:44:55,673 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55761][0m
+2024-07-23 17:45:00,455 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55761][0m
+2024-07-23 17:45:01,366 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55762][0m
+2024-07-23 17:45:01,366 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55761][0m
+2024-07-23 17:45:30,991 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55800][0m
+2024-07-23 17:45:31,413 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55801][0m
+2024-07-23 17:45:31,413 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55800][0m

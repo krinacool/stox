@@ -3,6 +3,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from api_helper import ShoonyaApiPy
 import logging
 import yaml
+import pyotp
 
 #enable dbug to see request and responses
 logging.basicConfig(level=logging.DEBUG)
@@ -10,12 +11,15 @@ logging.basicConfig(level=logging.DEBUG)
 #start of our program
 api = ShoonyaApiPy()
 
-#credentials
-with open('..\\cred.yml') as f:
-    cred = yaml.load(f, Loader=yaml.FullLoader)
-    print(cred)
-
-ret = api.login(userid = cred['user'], password = cred['pwd'], twoFA=cred['factor2'], vendor_code=cred['vc'], api_secret=cred['apikey'], imei=cred['imei'])
+user = 'FA195312'
+token = '4Q55354FPP34773T77JJZ472H7YHN3VD'
+totp = pyotp.TOTP(token)
+factor2 = totp.now()
+vc = 'FA195312_U'
+apikey = '48f506c52153195847cb1efc0f63c7c4'
+pwd = 'Smart@8750'
+imei = ''
+ret = api.login(userid = user, password = pwd, twoFA=factor2, vendor_code=vc, api_secret=apikey, imei=imei)
 
 ret = api.place_order(buy_or_sell='B', product_type='C',
                         exchange='NSE', tradingsymbol='CANBK-EQ', 

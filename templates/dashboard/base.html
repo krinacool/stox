@@ -35,11 +35,11 @@
         <!-- app layout -->
         <div id="app-layout" class="overflow-x-hidden flex">
             <!-- start navbar -->
-            <nav class="navbar-vertical navbar">
+            <nav class="navbar-vertical navbar z-20">
                 <div id="myScrollableElement" class="h-screen" data-simplebar>
                     <!-- brand logo -->
                     <a class="navbar-brand" href="/market">
-                        <h4 class="text-white">Onstock</h4>
+                        <h4 class="text-white font-bold">Onstock</h4>
                         <!-- <img src="/static/images/brand/logo/logo.svg" width="50%" alt="" /> -->
                     </a>
 
@@ -71,6 +71,28 @@
                             <a class="nav-link " href="/orders">
                                 <i data-feather="clipboard" class="w-4 h-4 mr-2"></i>
                                 Orders
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="navbar-heading">wallet</div>
+                        </li>
+                        <!-- nav item -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="/performance">
+                                <i data-feather="sunrise" class="w-4 h-4 mr-2"></i>
+                                Performance
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/transactions">
+                                <i data-feather="dollar-sign" class="w-4 h-4 mr-2"></i>
+                                Transactions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/trade_charges">
+                                <i data-feather="percent" class="w-4 h-4 mr-2"></i>
+                                Trades & Charges
                             </a>
                         </li>
                         <!-- nav heading -->
@@ -113,7 +135,7 @@
                         </a>
                         <div class="ml-3 w-full" id="main-logo">
                             <a class="navbar-brand" href="/market">
-                                <h4 class="text-dark">Onstock</h4>
+                                <h4 class="text-dark font-bold">Onstock</h4>
                                 <!-- <img src="/static/images/brand/logo/logo.svg" width="50%" alt="" /> -->
                             </a>
                         </div>
