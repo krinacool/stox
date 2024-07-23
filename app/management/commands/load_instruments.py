@@ -1,22 +1,49 @@
 import csv
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from app.models import Instrument
+from app.models import Instrument, Watchlist, symbols  # Corrected model name to 'Symbol'
+import requests
+import requests
+import gzip
+import shutil
+
+
+def download_and_decompress(url, output_filename):
+    # Download the .gz file
+    response = requests.get(url, stream=True)
+    if response.status_code == 200:
+        # Save the .gz file
+        with open(output_filename + ".gz", 'wb') as f:
+            f.write(response.content)
+        
+        # Decompress the .gz file
+        with gzip.open(output_filename + ".gz", 'rb') as f_in:
+            with open(output_filename, 'wb') as f_out:
+                shutil.copyfileobj(f_in, f_out)
+        
+        print("Download and decompression successful.")
+    else:
+        print("Failed to download the file.")
+
+# Call the function to download and decompress the file
 
 class Command(BaseCommand):
     help = 'Load instruments from CSV'
 
     def handle(self, *args, **kwargs):
+        # URL of the .gz file
+        url = "https://assets.upstox.com/market-quote/instruments/exchange/complete.csv.gz"
+        # Output file name
+        output_filename = "complete.csv"
+        download_and_decompress(url, output_filename)
         file_path = 'complete.csv'
-
         # Delete all existing instruments
         Instrument.objects.all().delete()
-
         instruments = []
         with open(file_path, 'r') as file:
             reader = csv.DictReader(file)
             for row in reader:
-                # Check if last_price is 0 before appending
+                # Check if last_price is not 0 before appending
                 last_price = float(row['last_price']) if row['last_price'] else None
                 if last_price != 0 and last_price is not None:
                     instruments.append(Instrument(
@@ -37,5 +64,17 @@ class Command(BaseCommand):
         # Bulk create all instruments in a single transaction
         with transaction.atomic():
             Instrument.objects.bulk_create(instruments, batch_size=1000)
+        
+        # Update watchlist based on instruments
+        watchlist = Watchlist.objects.all()
+        for x in watchlist:
+            if not Instrument.objects.filter(instrument_key=x.instrument_key).exists():
+                x.delete()
+        
+        # Update symbols based on instruments
+        symbol = symbols.objects.all()
+        for x in symbol:
+            if not Instrument.objects.filter(instrument_key=x.instrument_key).exists():
+                x.delete()
 
         self.stdout.write(self.style.SUCCESS('Successfully loaded instruments'))

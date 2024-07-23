@@ -83,3 +83,1265 @@
 2024-07-21 23:25:00,395 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:54106][0m
 2024-07-21 23:25:01,058 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:54111][0m
 2024-07-21 23:25:01,058 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:54110][0m
+2024-07-23 13:37:39,518 [32mHTTP GET /watchlist 302 [0.03, 127.0.0.1:51019][0m
+2024-07-23 13:37:39,565 [mHTTP GET /login/?next=/watchlist 200 [0.04, 127.0.0.1:51019][0m
+2024-07-23 13:37:39,749 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.15, 127.0.0.1:51019][0m
+2024-07-23 13:37:39,753 [mHTTP GET /static/css/theme.min.css 200 [0.15, 127.0.0.1:51020][0m
+2024-07-23 13:37:39,772 [mHTTP GET /static/js/theme.min.js 200 [0.17, 127.0.0.1:51024][0m
+2024-07-23 13:37:39,782 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.js 200 [0.18, 127.0.0.1:51023][0m
+2024-07-23 13:37:39,798 [mHTTP GET /static/libs/feather-icons/dist/feather.min.js 200 [0.20, 127.0.0.1:51021][0m
+2024-07-23 13:37:39,801 [mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js 200 [0.20, 127.0.0.1:51022][0m
+2024-07-23 13:37:47,740 [32mHTTP POST /login/?next=/watchlist 302 [1.05, 127.0.0.1:51033][0m
+2024-07-23 13:37:47,768 [32mHTTP GET /market 302 [0.02, 127.0.0.1:51033][0m
+2024-07-23 13:37:47,910 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:51033][0m
+2024-07-23 13:37:47,959 [mHTTP GET /static/css/tailwind.css 200 [0.01, 127.0.0.1:51033][0m
+2024-07-23 13:37:47,965 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.css 200 [0.01, 127.0.0.1:51034][0m
+2024-07-23 13:37:48,040 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.min.js 200 [0.09, 127.0.0.1:51035][0m
+2024-07-23 13:38:02,106 [mHTTP GET /search/?q=ba 200 [0.30, 127.0.0.1:51039][0m
+2024-07-23 13:38:02,267 [mHTTP GET /search/?q=ban 200 [0.32, 127.0.0.1:51040][0m
+2024-07-23 13:38:02,500 [mHTTP GET /search/?q=bank 200 [0.34, 127.0.0.1:51039][0m
+2024-07-23 13:38:02,599 [mHTTP GET /search/?q=bankn 200 [0.29, 127.0.0.1:51040][0m
+2024-07-23 13:38:02,667 [mHTTP GET /search/?q=bankni 200 [0.16, 127.0.0.1:51039][0m
+2024-07-23 13:38:03,081 [mHTTP GET /search/?q=banknif 200 [0.16, 127.0.0.1:51039][0m
+2024-07-23 13:38:03,419 [mHTTP GET /search/?q=banknift 200 [0.22, 127.0.0.1:51039][0m
+2024-07-23 13:38:03,553 [mHTTP GET /search/?q=banknifty 200 [0.19, 127.0.0.1:51040][0m
+2024-07-23 13:38:04,109 [mHTTP GET /search/?q=banknifty%20 200 [0.13, 127.0.0.1:51040][0m
+2024-07-23 13:38:05,729 [mHTTP GET /search/?q=banknifty 200 [0.18, 127.0.0.1:51041][0m
+2024-07-23 13:38:16,327 [mHTTP GET /search/?q=ni 200 [0.30, 127.0.0.1:51042][0m
+2024-07-23 13:38:16,837 [mHTTP GET /search/?q=nif 200 [0.36, 127.0.0.1:51042][0m
+2024-07-23 13:38:17,079 [mHTTP GET /search/?q=nift 200 [0.25, 127.0.0.1:51043][0m
+2024-07-23 13:38:17,379 [mHTTP GET /search/?q=nifty 200 [0.41, 127.0.0.1:51042][0m
+2024-07-23 13:38:18,661 [mHTTP GET /search/?q=nifty%20 200 [0.11, 127.0.0.1:51042][0m
+2024-07-23 13:38:21,514 [mHTTP GET /search/?q=nifty 200 [0.28, 127.0.0.1:51042][0m
+2024-07-23 13:38:24,139 [mHTTP GET /search/?q=nifty5 200 [0.10, 127.0.0.1:51042][0m
+2024-07-23 13:38:24,249 [mHTTP GET /search/?q=nifty50 200 [0.09, 127.0.0.1:51042][0m
+2024-07-23 13:38:31,955 [32mHTTP GET /admin 301 [0.06, 127.0.0.1:51046][0m
+2024-07-23 13:38:32,143 [mHTTP GET /admin/ 200 [0.19, 127.0.0.1:51046][0m
+2024-07-23 13:38:32,172 [mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 200 [0.01, 127.0.0.1:51046][0m
+2024-07-23 13:38:32,172 [mHTTP GET /static/jazzmin/css/main.css 200 [0.01, 127.0.0.1:51049][0m
+2024-07-23 13:38:32,177 [mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 200 [0.01, 127.0.0.1:51048][0m
+2024-07-23 13:38:32,198 [mHTTP GET /static/vendor/adminlte/img/AdminLTELogo.png 200 [0.01, 127.0.0.1:51048][0m
+2024-07-23 13:38:32,243 [mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 200 [0.05, 127.0.0.1:51046][0m
+2024-07-23 13:38:32,252 [mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 200 [0.04, 127.0.0.1:51048][0m
+2024-07-23 13:38:32,257 [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.07, 127.0.0.1:51049][0m
+2024-07-23 13:38:32,275 [mHTTP GET /static/jazzmin/js/main.js 200 [0.03, 127.0.0.1:51046][0m
+2024-07-23 13:38:32,309 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51046][0m
+2024-07-23 13:38:32,309 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:51049][0m
+2024-07-23 13:38:36,648 [mHTTP GET /admin/app/instrument/ 200 [0.48, 127.0.0.1:51049][0m
+2024-07-23 13:38:36,684 [mHTTP GET /static/vendor/select2/css/select2.min.css 200 [0.02, 127.0.0.1:51049][0m
+2024-07-23 13:38:36,698 [mHTTP GET /static/admin/js/prepopulate.js 200 [0.02, 127.0.0.1:51058][0m
+2024-07-23 13:38:36,709 [mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.04, 127.0.0.1:51048][0m
+2024-07-23 13:38:36,709 [mHTTP GET /static/admin/js/actions.js 200 [0.04, 127.0.0.1:51057][0m
+2024-07-23 13:38:36,711 [mHTTP GET /static/admin/js/core.js 200 [0.04, 127.0.0.1:51046][0m
+2024-07-23 13:38:36,716 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51058][0m
+2024-07-23 13:38:36,725 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51048][0m
+2024-07-23 13:38:36,727 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51046][0m
+2024-07-23 13:38:36,742 [mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:51049][0m
+2024-07-23 13:38:36,818 [mHTTP GET /static/vendor/select2/js/select2.min.js 200 [0.10, 127.0.0.1:51057][0m
+2024-07-23 13:38:36,864 [mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.19, 127.0.0.1:51059][0m
+2024-07-23 13:38:43,257 [mHTTP GET /admin/app/instrument/?q=NIFTY+50 200 [0.34, 127.0.0.1:51060][0m
+2024-07-23 13:38:43,288 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:51064][0m
+2024-07-23 13:38:43,288 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51061][0m
+2024-07-23 13:38:43,288 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:51065][0m
+2024-07-23 13:38:43,305 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51060][0m
+2024-07-23 13:38:52,797 [mHTTP GET /admin/app/instrument/?exchange=NSE_FO&q=NIFTY+50 200 [0.42, 127.0.0.1:51060][0m
+2024-07-23 13:38:52,834 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51065][0m
+2024-07-23 13:38:52,837 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51064][0m
+2024-07-23 13:38:52,838 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51061][0m
+2024-07-23 13:38:52,856 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51060][0m
+2024-07-23 13:39:08,783 [mHTTP GET /admin/app/instrument/429855/change/?_changelist_filters=exchange%3DNSE_FO%26q%3DNIFTY%2B50 200 [0.15, 127.0.0.1:51060][0m
+2024-07-23 13:39:08,831 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51068][0m
+2024-07-23 13:39:08,837 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:51065][0m
+2024-07-23 13:39:08,847 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:51060][0m
+2024-07-23 13:39:08,853 [mHTTP GET /static/admin/js/change_form.js 200 [0.04, 127.0.0.1:51061][0m
+2024-07-23 13:39:08,856 [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.04, 127.0.0.1:51064][0m
+2024-07-23 13:39:08,885 [mHTTP GET /static/jazzmin/js/change_form.js 200 [0.02, 127.0.0.1:51064][0m
+2024-07-23 13:40:00,045 [mHTTP GET /admin/app/symbols/ 200 [0.06, 127.0.0.1:51064][0m
+2024-07-23 13:40:00,108 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51064][0m
+2024-07-23 13:40:00,122 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51064][0m
+2024-07-23 13:40:00,133 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51064][0m
+2024-07-23 13:40:00,168 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51064][0m
+2024-07-23 13:40:00,273 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:51064][0m
+2024-07-23 13:40:00,277 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:51061][0m
+2024-07-23 13:40:05,569 [mHTTP GET /admin/app/watchlist/ 200 [0.09, 127.0.0.1:51064][0m
+2024-07-23 13:40:05,618 [mHTTP GET /admin/jsi18n/ 200 [0.00, 127.0.0.1:51064][0m
+2024-07-23 13:40:05,641 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51064][0m
+2024-07-23 13:40:05,652 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:51064][0m
+2024-07-23 13:40:05,661 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.00, 127.0.0.1:51064][0m
+2024-07-23 13:40:05,679 [mHTTP GET /static/admin/img/icon-no.svg 200 [0.01, 127.0.0.1:51061][0m
+2024-07-23 13:40:05,689 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:51061][0m
+2024-07-23 13:40:05,788 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51061][0m
+2024-07-23 13:40:05,788 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:51064][0m
+2024-07-23 13:40:20,437 [mHTTP GET /search/?q=NIFTY2470424750CE 200 [0.14, 127.0.0.1:51086][0m
+2024-07-23 13:40:31,191 [32mHTTP POST /add_watchlist 302 [0.52, 127.0.0.1:51087][0m
+2024-07-23 13:40:31,228 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:51087][0m
+2024-07-23 13:40:41,032 [mHTTP GET /admin/app/watchlist/ 200 [0.11, 127.0.0.1:51091][0m
+2024-07-23 13:40:41,074 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51095][0m
+2024-07-23 13:40:41,075 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51098][0m
+2024-07-23 13:40:41,075 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:51096][0m
+2024-07-23 13:40:41,077 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51092][0m
+2024-07-23 13:40:41,082 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51091][0m
+2024-07-23 13:45:24,585 [mHTTP GET /admin/app/symbols/ 200 [0.06, 127.0.0.1:51171][0m
+2024-07-23 13:45:24,611 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51172][0m
+2024-07-23 13:45:24,616 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51175][0m
+2024-07-23 13:45:24,616 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51176][0m
+2024-07-23 13:45:24,629 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51171][0m
+2024-07-23 13:45:24,672 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:51171][0m
+2024-07-23 13:45:24,672 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:51176][0m
+2024-07-23 13:45:26,289 [mHTTP GET /admin/app/watchlist/ 200 [0.12, 127.0.0.1:51177][0m
+2024-07-23 13:45:26,320 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51178][0m
+2024-07-23 13:45:26,320 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51181][0m
+2024-07-23 13:45:26,327 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:51182][0m
+2024-07-23 13:45:26,329 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51177][0m
+2024-07-23 13:45:26,337 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:51177][0m
+2024-07-23 13:45:26,365 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:51181][0m
+2024-07-23 13:45:26,367 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51177][0m
+2024-07-23 13:46:21,505 [mHTTP GET /admin/app/symbols/ 200 [0.11, 127.0.0.1:51191][0m
+2024-07-23 13:46:21,528 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51192][0m
+2024-07-23 13:46:21,528 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51194][0m
+2024-07-23 13:46:21,528 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:51195][0m
+2024-07-23 13:46:21,549 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51191][0m
+2024-07-23 13:46:21,620 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51191][0m
+2024-07-23 13:46:21,622 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:51195][0m
+2024-07-23 13:46:22,579 [mHTTP GET /admin/app/symbols/ 200 [0.10, 127.0.0.1:51191][0m
+2024-07-23 13:46:22,618 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51195][0m
+2024-07-23 13:46:22,618 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51192][0m
+2024-07-23 13:46:22,618 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51194][0m
+2024-07-23 13:46:22,642 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:51191][0m
+2024-07-23 13:46:23,914 [mHTTP GET /admin/app/watchlist/ 200 [0.13, 127.0.0.1:51191][0m
+2024-07-23 13:46:23,949 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51194][0m
+2024-07-23 13:46:23,949 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51195][0m
+2024-07-23 13:46:23,949 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:51192][0m
+2024-07-23 13:46:23,969 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51191][0m
+2024-07-23 13:46:24,001 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:51191][0m
+2024-07-23 13:46:24,080 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51191][0m
+2024-07-23 13:46:24,080 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:51195][0m
+2024-07-23 13:46:29,388 [32mHTTP GET /admin/app/instrument/429855/change/?_changelist_filters=exchange%3DNSE_FO%26q%3DNIFTY%2B50 302 [0.03, 127.0.0.1:51191][0m
+2024-07-23 13:46:29,446 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:51191][0m
+2024-07-23 13:46:29,503 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:51191][0m
+2024-07-23 13:46:29,503 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:51195][0m
+2024-07-23 13:46:33,282 [mHTTP GET /admin/app/instrument/ 200 [0.23, 127.0.0.1:51203][0m
+2024-07-23 13:46:33,318 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51204][0m
+2024-07-23 13:46:33,320 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51208][0m
+2024-07-23 13:46:33,320 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51207][0m
+2024-07-23 13:46:33,329 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51203][0m
+2024-07-23 13:46:36,484 [mHTTP GET /admin/app/instrument/?q=NIFTY2470424750CE%09 200 [0.19, 127.0.0.1:51203][0m
+2024-07-23 13:46:36,528 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51207][0m
+2024-07-23 13:46:36,528 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51208][0m
+2024-07-23 13:46:36,532 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51204][0m
+2024-07-23 13:46:36,549 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51203][0m
+2024-07-23 13:46:43,175 [mHTTP GET /admin/app/instrument/511583/change/?_changelist_filters=q%3DNIFTY2470424750CE%2509 200 [0.05, 127.0.0.1:51209][0m
+2024-07-23 13:46:43,205 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51210][0m
+2024-07-23 13:46:43,205 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51213][0m
+2024-07-23 13:46:43,227 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51209][0m
+2024-07-23 13:53:21,719 [mHTTP GET /admin/app/watchlist/ 200 [0.12, 127.0.0.1:51446][0m
+2024-07-23 13:53:21,757 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51447][0m
+2024-07-23 13:53:21,757 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51450][0m
+2024-07-23 13:53:21,760 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:51451][0m
+2024-07-23 13:53:21,778 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:51446][0m
+2024-07-23 13:53:21,789 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:51446][0m
+2024-07-23 13:53:21,857 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51446][0m
+2024-07-23 13:53:21,861 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:51451][0m
+2024-07-23 13:53:28,639 [mHTTP GET /admin/app/symbols/ 200 [0.09, 127.0.0.1:51452][0m
+2024-07-23 13:53:28,665 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51453][0m
+2024-07-23 13:53:28,666 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51456][0m
+2024-07-23 13:53:28,667 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51457][0m
+2024-07-23 13:53:28,677 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51452][0m
+2024-07-23 13:53:28,706 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51452][0m
+2024-07-23 13:53:28,707 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:51457][0m
+2024-07-23 13:53:31,978 [mHTTP GET /admin/app/instrument/?q=NIFTY2470424750CE%09 200 [0.12, 127.0.0.1:51457][0m
+2024-07-23 13:53:34,607 [mHTTP GET /admin/app/instrument/?q=%09NIFTY2470424750CE 200 [0.12, 127.0.0.1:51457][0m
+2024-07-23 13:53:34,631 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51453][0m
+2024-07-23 13:53:34,631 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51452][0m
+2024-07-23 13:53:34,631 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:51456][0m
+2024-07-23 13:53:34,648 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51457][0m
+2024-07-23 13:53:37,808 [mHTTP GET /admin/app/instrument/?q=%09NIFTY2470424750CE 200 [0.11, 127.0.0.1:51459][0m
+2024-07-23 13:53:37,831 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51462][0m
+2024-07-23 13:53:37,831 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51460][0m
+2024-07-23 13:53:37,831 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:51463][0m
+2024-07-23 13:53:37,855 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51459][0m
+2024-07-23 13:53:43,369 [mHTTP GET /admin/app/ 200 [0.08, 127.0.0.1:51459][0m
+2024-07-23 13:53:46,069 [mHTTP GET /admin/app/instrument/ 200 [0.24, 127.0.0.1:51465][0m
+2024-07-23 13:53:46,107 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51466][0m
+2024-07-23 13:53:46,112 [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:51469][0m
+2024-07-23 13:53:46,114 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.02, 127.0.0.1:51470][0m
+2024-07-23 13:53:46,130 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:51465][0m
+2024-07-23 13:54:24,783 [32mHTTP POST /place_order 302 [0.14, 127.0.0.1:51479][0m
+2024-07-23 13:54:24,930 [mHTTP GET /orders 200 [0.14, 127.0.0.1:51479][0m
+2024-07-23 13:54:28,272 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:51484][0m
+2024-07-23 13:54:42,043 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:51488][0m
+2024-07-23 13:54:52,761 [32mHTTP POST /place_order 302 [0.14, 127.0.0.1:51493][0m
+2024-07-23 13:54:52,843 [mHTTP GET /orders 200 [0.07, 127.0.0.1:51493][0m
+2024-07-23 13:54:56,132 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:51498][0m
+2024-07-23 13:55:09,505 [mHTTP GET /admin/app/symbols/20/change/ 200 [0.05, 127.0.0.1:51504][0m
+2024-07-23 13:55:09,531 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51505][0m
+2024-07-23 13:55:09,531 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:51508][0m
+2024-07-23 13:55:09,543 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51504][0m
+2024-07-23 13:55:09,584 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:51508][0m
+2024-07-23 13:55:09,585 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51504][0m
+2024-07-23 13:55:13,957 [32mHTTP POST /admin/app/symbols/20/change/ 302 [0.04, 127.0.0.1:51504][0m
+2024-07-23 13:55:14,031 [mHTTP GET /admin/app/symbols/ 200 [0.07, 127.0.0.1:51504][0m
+2024-07-23 13:55:14,062 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:51505][0m
+2024-07-23 13:55:14,062 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:51510][0m
+2024-07-23 13:55:14,062 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51508][0m
+2024-07-23 13:55:14,081 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51504][0m
+2024-07-23 13:55:18,923 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:51512][0m
+2024-07-23 13:55:25,744 [32mHTTP POST /place_order 302 [0.09, 127.0.0.1:51512][0m
+2024-07-23 13:55:25,817 [mHTTP GET /orders 200 [0.06, 127.0.0.1:51512][0m
+2024-07-23 13:55:29,110 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:51516][0m
+2024-07-23 13:56:20,607 [mHTTP GET /portfolio 200 [0.11, 127.0.0.1:51538][0m
+2024-07-23 14:02:14,722 [mHTTP GET /portfolio 200 [0.13, 127.0.0.1:51576][0m
+2024-07-23 14:04:05,660 [mHTTP GET /admin/app/position/ 200 [0.13, 127.0.0.1:51600][0m
+2024-07-23 14:04:05,726 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.02, 127.0.0.1:51604][0m
+2024-07-23 14:04:05,726 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:51601][0m
+2024-07-23 14:04:05,726 [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:51603][0m
+2024-07-23 14:04:05,747 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:51600][0m
+2024-07-23 14:04:05,816 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:51600][0m
+2024-07-23 14:04:05,816 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:51601][0m
+2024-07-23 14:04:20,891 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:51606][0m
+2024-07-23 14:04:29,388 [32mHTTP POST /place_order 302 [0.14, 127.0.0.1:51610][0m
+2024-07-23 14:04:29,470 [mHTTP GET /orders 200 [0.08, 127.0.0.1:51610][0m
+2024-07-23 14:04:32,716 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:51610][0m
+2024-07-23 14:04:37,165 [mHTTP GET /admin/app/position/ 200 [0.11, 127.0.0.1:51614][0m
+2024-07-23 14:04:37,186 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:51618][0m
+2024-07-23 14:04:37,186 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:51619][0m
+2024-07-23 14:04:37,186 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:51615][0m
+2024-07-23 14:04:37,202 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:51614][0m
+2024-07-23 14:06:17,658 [mHTTP GET /admin/app/position/37/change/ 200 [0.10, 127.0.0.1:51650][0m
+2024-07-23 14:06:17,691 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:51651][0m
+2024-07-23 14:06:17,691 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:51653][0m
+2024-07-23 14:06:17,709 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51650][0m
+2024-07-23 14:06:17,769 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.02, 127.0.0.1:51650][0m
+2024-07-23 14:06:17,769 [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.02, 127.0.0.1:51653][0m
+2024-07-23 14:06:17,769 [mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.02, 127.0.0.1:51651][0m
+2024-07-23 14:06:17,787 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:51653][0m
+2024-07-23 14:06:17,787 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:51650][0m
+2024-07-23 14:06:21,420 [mHTTP GET /admin/app/position/ 200 [0.08, 127.0.0.1:51653][0m
+2024-07-23 14:06:23,165 [mHTTP GET /admin/app/position/35/change/ 200 [0.07, 127.0.0.1:51653][0m
+2024-07-23 14:06:23,205 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:51650][0m
+2024-07-23 14:06:23,205 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:51651][0m
+2024-07-23 14:06:23,228 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:51653][0m
+2024-07-23 14:06:26,146 [mHTTP GET /admin/app/position/ 200 [0.10, 127.0.0.1:51653][0m
+2024-07-23 14:17:00,715 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:51723][0m
+2024-07-23 14:22:22,702 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:51797][0m
+2024-07-23 14:29:39,765 [mHTTP GET /admin/app/watchlist/ 200 [0.14, 127.0.0.1:52003][0m
+2024-07-23 14:29:39,813 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52004][0m
+2024-07-23 14:29:39,815 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52006][0m
+2024-07-23 14:29:39,828 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.02, 127.0.0.1:52007][0m
+2024-07-23 14:29:39,834 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52003][0m
+2024-07-23 14:29:39,878 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52003][0m
+2024-07-23 14:29:39,929 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52003][0m
+2024-07-23 14:29:39,929 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52007][0m
+2024-07-23 14:29:43,253 [mHTTP GET /admin/app/symbols/ 200 [0.05, 127.0.0.1:52007][0m
+2024-07-23 14:29:43,310 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52003][0m
+2024-07-23 14:29:43,310 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52006][0m
+2024-07-23 14:29:43,322 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52007][0m
+2024-07-23 14:29:43,347 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52007][0m
+2024-07-23 14:29:43,432 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52007][0m
+2024-07-23 14:29:43,435 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52006][0m
+2024-07-23 14:33:34,368 D:\stox\app\views.py changed, reloading.
+2024-07-23 14:38:46,776 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52102][0m
+2024-07-23 14:39:33,489 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52135][0m
+2024-07-23 14:39:39,858 [mHTTP GET /admin/app/position/ 200 [0.21, 127.0.0.1:52135][0m
+2024-07-23 14:39:39,890 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52136][0m
+2024-07-23 14:39:39,890 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52138][0m
+2024-07-23 14:39:39,893 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52139][0m
+2024-07-23 14:39:39,898 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52135][0m
+2024-07-23 14:39:39,963 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52135][0m
+2024-07-23 14:39:39,963 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52139][0m
+2024-07-23 14:41:38,518 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52160][0m
+2024-07-23 14:41:48,672 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:52160][0m
+2024-07-23 14:41:57,593 [32mHTTP POST /place_order 302 [0.11, 127.0.0.1:52160][0m
+2024-07-23 14:41:57,678 [mHTTP GET /orders 200 [0.08, 127.0.0.1:52160][0m
+2024-07-23 14:42:00,922 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52160][0m
+2024-07-23 14:42:02,956 [mHTTP GET /orders 200 [0.05, 127.0.0.1:52160][0m
+2024-07-23 14:43:05,945 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52174][0m
+2024-07-23 14:43:07,258 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52174][0m
+2024-07-23 14:43:11,993 [mHTTP GET /orders 200 [0.09, 127.0.0.1:52174][0m
+2024-07-23 14:45:55,745 [mHTTP GET /orders 200 [0.08, 127.0.0.1:52200][0m
+2024-07-23 14:46:03,264 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52200][0m
+2024-07-23 14:46:15,826 [mHTTP GET /admin/app/position/ 200 [0.10, 127.0.0.1:52200][0m
+2024-07-23 14:46:15,859 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52204][0m
+2024-07-23 14:46:15,859 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52201][0m
+2024-07-23 14:46:15,859 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52205][0m
+2024-07-23 14:46:15,871 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52200][0m
+2024-07-23 14:46:15,907 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52205][0m
+2024-07-23 14:46:15,908 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52200][0m
+2024-07-23 14:46:25,603 [32mHTTP POST /admin/app/position/ 302 [0.04, 127.0.0.1:52200][0m
+2024-07-23 14:46:25,697 [mHTTP GET /admin/app/position/ 200 [0.09, 127.0.0.1:52200][0m
+2024-07-23 14:46:25,725 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52205][0m
+2024-07-23 14:46:25,725 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52201][0m
+2024-07-23 14:46:25,725 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52204][0m
+2024-07-23 14:46:25,740 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52200][0m
+2024-07-23 14:46:31,454 [mHTTP GET /admin/app/position/?created_at__gte=2024-07-23+00%3A00%3A00%2B05%3A30 200 [0.08, 127.0.0.1:52200][0m
+2024-07-23 14:46:31,495 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52201][0m
+2024-07-23 14:46:31,495 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52205][0m
+2024-07-23 14:46:31,499 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:52204][0m
+2024-07-23 14:46:31,507 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52200][0m
+2024-07-23 14:46:37,268 [mHTTP POST /admin/app/position/?created_at__gte=2024-07-23+00%3A00%3A00%2B05%3A30 200 [0.16, 127.0.0.1:52200][0m
+2024-07-23 14:46:37,300 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52200][0m
+2024-07-23 14:46:37,307 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52201][0m
+2024-07-23 14:46:37,385 [mHTTP GET /static/admin/js/cancel.js 200 [0.08, 127.0.0.1:52204][0m
+2024-07-23 14:46:39,551 [32mHTTP POST /admin/app/position/?created_at__gte=2024-07-23+00%3A00%3A00%2B05%3A30 302 [0.09, 127.0.0.1:52204][0m
+2024-07-23 14:46:39,624 [mHTTP GET /admin/app/position/?created_at__gte=2024-07-23+00%3A00%3A00%2B05%3A30 200 [0.07, 127.0.0.1:52204][0m
+2024-07-23 14:46:39,658 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52200][0m
+2024-07-23 14:46:39,658 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52201][0m
+2024-07-23 14:46:39,658 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52205][0m
+2024-07-23 14:46:39,673 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52204][0m
+2024-07-23 14:46:42,509 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52204][0m
+2024-07-23 14:46:43,980 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:52204][0m
+2024-07-23 14:46:49,664 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52204][0m
+2024-07-23 14:47:01,233 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52204][0m
+2024-07-23 14:47:01,236 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52205][0m
+2024-07-23 14:47:16,569 [32mHTTP POST /place_order 302 [0.07, 127.0.0.1:52223][0m
+2024-07-23 14:47:16,691 [mHTTP GET /orders 200 [0.12, 127.0.0.1:52223][0m
+2024-07-23 14:47:17,421 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52223][0m
+2024-07-23 14:47:17,421 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52224][0m
+2024-07-23 14:47:20,688 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52223][0m
+2024-07-23 14:47:21,082 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52223][0m
+2024-07-23 14:47:21,111 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52223][0m
+2024-07-23 14:47:28,315 [mHTTP GET /admin/app/position/?last_traded_datetime__gte=2024-07-23+00%3A00%3A00%2B05%3A30 200 [0.08, 127.0.0.1:52231][0m
+2024-07-23 14:47:28,347 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52235][0m
+2024-07-23 14:47:28,347 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52232][0m
+2024-07-23 14:47:28,347 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52234][0m
+2024-07-23 14:47:28,365 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52231][0m
+2024-07-23 14:47:41,706 [mHTTP POST /admin/app/position/?last_traded_datetime__gte=2024-07-23+00%3A00%3A00%2B05%3A30 200 [0.08, 127.0.0.1:52244][0m
+2024-07-23 14:47:41,738 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52245][0m
+2024-07-23 14:47:41,738 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52244][0m
+2024-07-23 14:47:43,333 [32mHTTP POST /admin/app/position/?last_traded_datetime__gte=2024-07-23+00%3A00%3A00%2B05%3A30 302 [0.06, 127.0.0.1:52245][0m
+2024-07-23 14:47:43,406 [mHTTP GET /admin/app/position/?last_traded_datetime__gte=2024-07-23+00%3A00%3A00%2B05%3A30 200 [0.06, 127.0.0.1:52245][0m
+2024-07-23 14:47:43,431 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52250][0m
+2024-07-23 14:47:43,431 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52244][0m
+2024-07-23 14:47:43,431 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52251][0m
+2024-07-23 14:47:43,455 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52245][0m
+2024-07-23 14:47:46,882 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:52253][0m
+2024-07-23 14:47:47,346 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52255][0m
+2024-07-23 14:47:47,350 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52253][0m
+2024-07-23 14:47:53,339 [32mHTTP POST /place_order 302 [0.08, 127.0.0.1:52253][0m
+2024-07-23 14:47:53,396 [mHTTP GET /orders 200 [0.05, 127.0.0.1:52253][0m
+2024-07-23 14:47:53,971 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52255][0m
+2024-07-23 14:47:53,972 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52253][0m
+2024-07-23 14:47:56,824 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52263][0m
+2024-07-23 14:47:57,280 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52264][0m
+2024-07-23 14:47:57,281 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52263][0m
+2024-07-23 14:48:37,042 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52263][0m
+2024-07-23 14:48:47,151 [mHTTP GET /admin/app/position/ 200 [0.08, 127.0.0.1:52263][0m
+2024-07-23 14:48:47,176 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52264][0m
+2024-07-23 14:48:47,176 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52286][0m
+2024-07-23 14:48:47,176 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52287][0m
+2024-07-23 14:48:47,184 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52263][0m
+2024-07-23 14:48:47,221 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:52263][0m
+2024-07-23 14:48:47,221 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:52287][0m
+2024-07-23 14:48:51,773 [mHTTP GET /admin/app/position/?product__exact=Intraday 200 [0.10, 127.0.0.1:52287][0m
+2024-07-23 14:48:51,804 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52263][0m
+2024-07-23 14:48:51,805 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52286][0m
+2024-07-23 14:48:51,805 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52264][0m
+2024-07-23 14:48:51,813 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52287][0m
+2024-07-23 14:49:03,065 [mHTTP POST /admin/app/position/?product__exact=Intraday 200 [0.08, 127.0.0.1:52287][0m
+2024-07-23 14:49:03,097 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52287][0m
+2024-07-23 14:49:03,098 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:52264][0m
+2024-07-23 14:49:04,961 [32mHTTP POST /admin/app/position/?product__exact=Intraday 302 [0.14, 127.0.0.1:52264][0m
+2024-07-23 14:49:05,018 [mHTTP GET /admin/app/position/?product__exact=Intraday 200 [0.05, 127.0.0.1:52264][0m
+2024-07-23 14:49:05,050 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52287][0m
+2024-07-23 14:49:05,050 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52286][0m
+2024-07-23 14:49:05,052 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52263][0m
+2024-07-23 14:49:05,065 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52264][0m
+2024-07-23 14:49:30,980 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:52264][0m
+2024-07-23 14:49:35,389 [32mHTTP POST /place_order 302 [0.11, 127.0.0.1:52264][0m
+2024-07-23 14:49:35,478 [mHTTP GET /orders 200 [0.08, 127.0.0.1:52264][0m
+2024-07-23 14:49:38,744 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52264][0m
+2024-07-23 14:49:54,410 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52264][0m
+2024-07-23 14:50:02,822 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52264][0m
+2024-07-23 14:50:04,017 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:52264][0m
+2024-07-23 14:50:09,363 [32mHTTP POST /place_order 302 [0.12, 127.0.0.1:52264][0m
+2024-07-23 14:50:09,460 [mHTTP GET /orders 200 [0.09, 127.0.0.1:52264][0m
+2024-07-23 14:50:12,814 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52264][0m
+2024-07-23 14:51:34,390 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:52333][0m
+2024-07-23 14:51:43,273 [32mHTTP POST /place_order 302 [0.11, 127.0.0.1:52333][0m
+2024-07-23 14:51:43,370 [mHTTP GET /orders 200 [0.09, 127.0.0.1:52333][0m
+2024-07-23 14:51:46,619 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52333][0m
+2024-07-23 14:52:00,483 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52333][0m
+2024-07-23 14:52:21,425 [mHTTP GET /orders 200 [0.12, 127.0.0.1:52333][0m
+2024-07-23 14:54:51,487 [mHTTP GET /admin/app/position/?product__exact=Intraday 200 [0.08, 127.0.0.1:52346][0m
+2024-07-23 14:54:51,537 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:52347][0m
+2024-07-23 14:54:51,537 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52350][0m
+2024-07-23 14:54:51,537 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52349][0m
+2024-07-23 14:54:51,551 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52346][0m
+2024-07-23 14:54:51,635 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52346][0m
+2024-07-23 14:54:51,635 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52349][0m
+2024-07-23 14:55:01,702 [mHTTP GET /admin/app/position/43/change/?_changelist_filters=product__exact%3DIntraday 200 [0.15, 127.0.0.1:52349][0m
+2024-07-23 14:55:01,729 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52350][0m
+2024-07-23 14:55:01,730 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52346][0m
+2024-07-23 14:55:01,745 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52349][0m
+2024-07-23 14:55:07,861 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:52349][0m
+2024-07-23 14:55:14,930 [32mHTTP POST /place_order 302 [0.08, 127.0.0.1:52349][0m
+2024-07-23 14:55:15,032 [mHTTP GET /orders 200 [0.10, 127.0.0.1:52349][0m
+2024-07-23 14:55:20,117 [mHTTP GET /profile 200 [0.05, 127.0.0.1:52349][0m
+2024-07-23 14:55:27,317 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.10, 127.0.0.1:52349][0m
+2024-07-23 14:55:27,372 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52349][0m
+2024-07-23 14:55:27,395 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:52349][0m
+2024-07-23 14:55:27,413 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:52350][0m
+2024-07-23 14:55:27,430 [mHTTP GET /static/admin/js/SelectBox.js 200 [0.03, 127.0.0.1:52349][0m
+2024-07-23 14:55:27,436 [mHTTP GET /static/admin/js/SelectFilter2.js 200 [0.03, 127.0.0.1:52346][0m
+2024-07-23 14:55:27,550 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52349][0m
+2024-07-23 14:55:27,550 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52346][0m
+2024-07-23 14:55:38,135 [32mHTTP POST /admin/app/customuser/1/change/ 302 [0.06, 127.0.0.1:52357][0m
+2024-07-23 14:55:38,205 [mHTTP GET /admin/app/customuser/ 200 [0.06, 127.0.0.1:52357][0m
+2024-07-23 14:55:38,238 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52358][0m
+2024-07-23 14:55:38,239 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52360][0m
+2024-07-23 14:55:38,240 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:52361][0m
+2024-07-23 14:55:38,246 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52362][0m
+2024-07-23 14:55:38,254 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52357][0m
+2024-07-23 14:55:42,482 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:52357][0m
+2024-07-23 14:55:47,852 [32mHTTP POST /place_order 302 [0.10, 127.0.0.1:52357][0m
+2024-07-23 14:55:47,947 [mHTTP GET /orders 200 [0.09, 127.0.0.1:52357][0m
+2024-07-23 14:55:51,166 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52357][0m
+2024-07-23 14:56:32,689 [mHTTP GET /admin/app/symbols/ 200 [0.09, 127.0.0.1:52357][0m
+2024-07-23 14:56:32,721 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52362][0m
+2024-07-23 14:56:32,721 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52361][0m
+2024-07-23 14:56:32,721 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52360][0m
+2024-07-23 14:56:32,733 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52357][0m
+2024-07-23 14:56:32,760 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52357][0m
+2024-07-23 14:56:32,761 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:52361][0m
+2024-07-23 14:56:38,072 [mHTTP GET /admin/app/symbols/?q=SBIN24JULFUT 200 [0.06, 127.0.0.1:52361][0m
+2024-07-23 14:56:38,106 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52357][0m
+2024-07-23 14:56:38,106 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52362][0m
+2024-07-23 14:56:38,107 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52360][0m
+2024-07-23 14:56:38,130 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:52361][0m
+2024-07-23 14:56:40,202 [mHTTP GET /admin/app/symbols/18/change/?_changelist_filters=q%3DSBIN24JULFUT 200 [0.07, 127.0.0.1:52361][0m
+2024-07-23 14:56:40,228 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:52360][0m
+2024-07-23 14:56:40,230 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52357][0m
+2024-07-23 14:56:40,247 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52361][0m
+2024-07-23 14:56:44,480 [32mHTTP POST /admin/app/symbols/18/change/?_changelist_filters=q%3DSBIN24JULFUT 302 [0.04, 127.0.0.1:52361][0m
+2024-07-23 14:56:44,544 [mHTTP GET /admin/app/symbols/?q=SBIN24JULFUT 200 [0.06, 127.0.0.1:52361][0m
+2024-07-23 14:56:44,581 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52357][0m
+2024-07-23 14:56:44,581 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52360][0m
+2024-07-23 14:56:44,585 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52362][0m
+2024-07-23 14:56:44,595 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52361][0m
+2024-07-23 14:56:58,750 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52361][0m
+2024-07-23 14:58:09,771 D:\stox\app\admin.py changed, reloading.
+2024-07-23 14:58:17,730 D:\stox\app\admin.py changed, reloading.
+2024-07-23 14:58:21,163 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 74, in resolve_template
+    return get_template(template, using=self.using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /dashboard/home.html
+2024-07-23 14:58:21,173 [35;1mHTTP GET /admin/ 500 [0.25, 127.0.0.1:52404][0m
+2024-07-23 14:58:21,480 Not Found: /favicon.ico
+2024-07-23 14:58:21,480 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:52404][0m
+2024-07-23 14:58:36,321 D:\stox\app\admin.py changed, reloading.
+2024-07-23 14:58:39,064 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 74, in resolve_template
+    return get_template(template, using=self.using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /dashboard/market.html
+2024-07-23 14:58:39,078 [35;1mHTTP GET /admin/ 500 [0.20, 127.0.0.1:52412][0m
+2024-07-23 14:58:58,515 D:\stox\app\admin.py changed, reloading.
+2024-07-23 14:59:01,504 [mHTTP GET /admin/ 200 [0.06, 127.0.0.1:52425][0m
+2024-07-23 14:59:05,536 [mHTTP GET /admin/ 200 [0.02, 127.0.0.1:52425][0m
+2024-07-23 15:08:31,733 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:52494][0m
+2024-07-23 15:08:32,697 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52494][0m
+2024-07-23 15:08:37,696 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52495][0m
+2024-07-23 15:08:38,699 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52496][0m
+2024-07-23 15:08:43,689 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52497][0m
+2024-07-23 15:08:44,698 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52498][0m
+2024-07-23 15:08:49,706 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52498][0m
+2024-07-23 15:08:50,692 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52499][0m
+2024-07-23 15:08:55,697 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52500][0m
+2024-07-23 15:08:56,694 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52501][0m
+2024-07-23 15:09:01,697 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52502][0m
+2024-07-23 15:09:02,695 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52503][0m
+2024-07-23 15:09:07,697 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52504][0m
+2024-07-23 15:09:08,691 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52505][0m
+2024-07-23 15:09:13,686 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52506][0m
+2024-07-23 15:09:14,688 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52507][0m
+2024-07-23 15:09:19,695 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52508][0m
+2024-07-23 15:09:20,696 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52509][0m
+2024-07-23 15:09:25,690 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52510][0m
+2024-07-23 15:09:26,705 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52511][0m
+2024-07-23 15:09:31,686 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52512][0m
+2024-07-23 15:09:32,697 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52513][0m
+2024-07-23 15:09:37,697 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52514][0m
+2024-07-23 15:09:38,692 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52515][0m
+2024-07-23 15:09:43,697 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52516][0m
+2024-07-23 15:09:44,688 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52517][0m
+2024-07-23 15:09:49,717 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52518][0m
+2024-07-23 15:09:50,709 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52519][0m
+2024-07-23 15:09:55,696 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52520][0m
+2024-07-23 15:09:56,688 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52521][0m
+2024-07-23 15:10:02,707 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52523][0m
+2024-07-23 15:10:02,747 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52523][0m
+2024-07-23 15:10:09,720 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52524][0m
+2024-07-23 15:10:09,761 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52524][0m
+2024-07-23 15:10:16,705 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52525][0m
+2024-07-23 15:10:17,696 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52526][0m
+2024-07-23 15:10:23,702 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52527][0m
+2024-07-23 15:10:25,698 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52528][0m
+2024-07-23 15:10:32,706 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52529][0m
+2024-07-23 15:10:33,694 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52530][0m
+2024-07-23 15:10:38,701 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52531][0m
+2024-07-23 15:10:39,709 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52532][0m
+2024-07-23 15:10:44,708 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52533][0m
+2024-07-23 15:10:45,701 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52534][0m
+2024-07-23 15:10:50,697 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52535][0m
+2024-07-23 15:10:51,687 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52536][0m
+2024-07-23 15:10:56,714 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52537][0m
+2024-07-23 15:10:57,694 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52538][0m
+2024-07-23 15:11:02,690 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52539][0m
+2024-07-23 15:11:03,690 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52540][0m
+2024-07-23 15:11:08,692 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52541][0m
+2024-07-23 15:11:09,716 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52542][0m
+2024-07-23 15:11:14,708 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52543][0m
+2024-07-23 15:11:15,689 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52544][0m
+2024-07-23 15:34:42,894 [mHTTP GET /portfolio 200 [0.15, 127.0.0.1:52548][0m
+2024-07-23 15:34:42,999 [mHTTP GET /portfolio 200 [0.08, 127.0.0.1:52549][0m
+2024-07-23 15:34:49,688 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52550][0m
+2024-07-23 15:34:49,733 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52550][0m
+2024-07-23 15:34:55,683 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52552][0m
+2024-07-23 15:34:55,735 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52552][0m
+2024-07-23 15:35:01,687 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52554][0m
+2024-07-23 15:35:01,729 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52554][0m
+2024-07-23 15:35:07,686 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52556][0m
+2024-07-23 15:35:07,740 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52556][0m
+2024-07-23 15:35:13,678 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52558][0m
+2024-07-23 15:35:13,728 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52558][0m
+2024-07-23 15:35:19,682 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:52560][0m
+2024-07-23 15:35:19,734 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52560][0m
+2024-07-23 15:35:25,696 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52562][0m
+2024-07-23 15:35:25,742 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52562][0m
+2024-07-23 15:35:31,709 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52563][0m
+2024-07-23 15:35:31,765 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52563][0m
+2024-07-23 15:35:37,715 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52564][0m
+2024-07-23 15:35:37,763 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:52564][0m
+2024-07-23 15:35:43,700 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:52565][0m
+2024-07-23 15:35:43,740 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52565][0m
+2024-07-23 15:35:50,666 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52574][0m
+2024-07-23 15:35:50,710 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:52575][0m
+2024-07-23 15:43:54,227 D:\stox\app\admin.py changed, reloading.
+2024-07-23 15:44:18,238 [mHTTP GET /admin/app/watchlist/ 200 [0.20, 127.0.0.1:52768][0m
+2024-07-23 15:44:18,285 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52771][0m
+2024-07-23 15:44:18,286 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:52769][0m
+2024-07-23 15:44:18,289 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:52772][0m
+2024-07-23 15:44:18,289 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52773][0m
+2024-07-23 15:44:18,332 [mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:52768][0m
+2024-07-23 15:44:18,418 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52768][0m
+2024-07-23 15:44:18,427 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.02, 127.0.0.1:52773][0m
+2024-07-23 15:44:21,061 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:52773][0m
+2024-07-23 15:44:26,098 [mHTTP GET /admin/settings/mcx_market_time/ 200 [0.08, 127.0.0.1:52773][0m
+2024-07-23 15:44:26,127 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52772][0m
+2024-07-23 15:44:26,127 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52769][0m
+2024-07-23 15:44:26,127 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52768][0m
+2024-07-23 15:44:26,147 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52773][0m
+2024-07-23 15:44:26,972 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:52773][0m
+2024-07-23 15:45:04,330 [mHTTP GET /admin/app/symbols/?q=SBIN24JULFUT 200 [0.12, 127.0.0.1:52788][0m
+2024-07-23 15:45:04,358 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52789][0m
+2024-07-23 15:45:04,364 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52791][0m
+2024-07-23 15:45:04,367 [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:52790][0m
+2024-07-23 15:45:04,376 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52788][0m
+2024-07-23 15:45:04,406 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52788][0m
+2024-07-23 15:45:04,408 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52790][0m
+2024-07-23 15:45:06,398 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:52790][0m
+2024-07-23 15:45:25,339 D:\stox\app\admin.py changed, reloading.
+2024-07-23 15:45:48,508 D:\stox\app\admin.py changed, reloading.
+2024-07-23 15:45:51,547 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:52809][0m
+2024-07-23 15:45:53,539 [mHTTP GET /admin/ 200 [0.04, 127.0.0.1:52820][0m
+2024-07-23 15:46:02,659 D:\stox\app\admin.py changed, reloading.
+2024-07-23 15:46:05,588 [mHTTP GET /admin/ 200 [0.10, 127.0.0.1:52826][0m
+2024-07-23 15:46:05,696 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52826][0m
+2024-07-23 15:46:05,697 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52827][0m
+2024-07-23 15:46:12,471 [mHTTP GET /admin/app/contact/ 200 [0.10, 127.0.0.1:52826][0m
+2024-07-23 15:46:12,497 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52827][0m
+2024-07-23 15:46:12,499 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52829][0m
+2024-07-23 15:46:12,508 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52829][0m
+2024-07-23 15:46:12,518 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52826][0m
+2024-07-23 15:46:13,701 [mHTTP GET /admin/ 200 [0.07, 127.0.0.1:52837][0m
+2024-07-23 15:47:18,917 [mHTTP GET /admin/ 200 [0.09, 127.0.0.1:52854][0m
+2024-07-23 15:47:19,018 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:52854][0m
+2024-07-23 15:47:19,018 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:52855][0m
+2024-07-23 15:58:45,901 D:\stox\stock\settings.py changed, reloading.
+2024-07-23 15:59:12,891 D:\stox\stock\urls.py changed, reloading.
+2024-07-23 15:59:49,630 [mHTTP GET /admin/ 200 [0.32, 127.0.0.1:53268][0m
+2024-07-23 15:59:49,705 [mHTTP GET /admin_tools_stats/admin_charts.js 200 [0.05, 127.0.0.1:53268][0m
+2024-07-23 15:59:52,185 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53268][0m
+2024-07-23 15:59:52,186 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.02, 127.0.0.1:53269][0m
+2024-07-23 16:00:03,275 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:00:07,013 [mHTTP GET /admin/ 200 [0.11, 127.0.0.1:53297][0m
+2024-07-23 16:00:07,052 [mHTTP GET /admin_tools_stats/admin_charts.js 200 [0.01, 127.0.0.1:53297][0m
+2024-07-23 16:00:09,105 Internal Server Error: /admin/admin_tools_stats/cachedvalue/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'close_positions' not found. 'close_positions' is not a valid view function or pattern name.
+2024-07-23 16:00:09,118 [35;1mHTTP GET /admin/admin_tools_stats/cachedvalue/ 500 [0.45, 127.0.0.1:53297][0m
+2024-07-23 16:00:11,729 [mHTTP GET /admin/ 200 [0.07, 127.0.0.1:53303][0m
+2024-07-23 16:00:18,697 Internal Server Error: /admin/admin_tools_stats/cachedvalue/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'close_positions' not found. 'close_positions' is not a valid view function or pattern name.
+2024-07-23 16:00:18,708 [35;1mHTTP GET /admin/admin_tools_stats/cachedvalue/ 500 [0.87, 127.0.0.1:53303][0m
+2024-07-23 16:00:40,684 Internal Server Error: /admin/admin_tools_stats/cachedvalue/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'close_positions' not found. 'close_positions' is not a valid view function or pattern name.
+2024-07-23 16:00:40,700 [35;1mHTTP GET /admin/admin_tools_stats/cachedvalue/ 500 [0.57, 127.0.0.1:53313][0m
+2024-07-23 16:00:42,487 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:53313][0m
+2024-07-23 16:00:43,123 [mHTTP GET /admin/ 200 [0.09, 127.0.0.1:53313][0m
+2024-07-23 16:00:43,168 [mHTTP GET /admin_tools_stats/admin_charts.js 200 [0.02, 127.0.0.1:53313][0m
+2024-07-23 16:00:45,093 Internal Server Error: /admin/admin_tools_stats/cachedvalue/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'close_positions' not found. 'close_positions' is not a valid view function or pattern name.
+2024-07-23 16:00:45,111 [35;1mHTTP GET /admin/admin_tools_stats/cachedvalue/ 500 [0.69, 127.0.0.1:53313][0m
+2024-07-23 16:00:59,914 [mHTTP GET /admin/admin_tools_stats/cachedvalue/ 200 [0.19, 127.0.0.1:53339][0m
+2024-07-23 16:00:59,954 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:53340][0m
+2024-07-23 16:00:59,962 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:53342][0m
+2024-07-23 16:00:59,968 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:53340][0m
+2024-07-23 16:00:59,993 [mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:53339][0m
+2024-07-23 16:02:09,074 [mHTTP GET /admin/admin_tools_stats/dashboardstats/ 200 [0.06, 127.0.0.1:53352][0m
+2024-07-23 16:02:09,107 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:53353][0m
+2024-07-23 16:02:09,107 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:53354][0m
+2024-07-23 16:02:09,114 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:53352][0m
+2024-07-23 16:02:09,142 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:53352][0m
+2024-07-23 16:02:09,168 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53352][0m
+2024-07-23 16:02:09,170 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53354][0m
+2024-07-23 16:02:11,720 [mHTTP GET /admin/admin_tools_stats/dashboardstats/add/ 200 [0.42, 127.0.0.1:53355][0m
+2024-07-23 16:02:11,787 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:53355][0m
+2024-07-23 16:02:11,933 [mHTTP GET /static/admin/css/autocomplete.css 200 [0.17, 127.0.0.1:53357][0m
+2024-07-23 16:02:11,944 [mHTTP GET /static/admin/css/vendor/select2/select2.css 200 [0.19, 127.0.0.1:53356][0m
+2024-07-23 16:02:11,962 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:53357][0m
+2024-07-23 16:02:11,964 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:53356][0m
+2024-07-23 16:02:11,964 [mHTTP GET /static/admin/js/vendor/select2/i18n/en.js 200 [0.20, 127.0.0.1:53359][0m
+2024-07-23 16:02:11,969 [mHTTP GET /static/admin/js/autocomplete.js 200 [0.18, 127.0.0.1:53355][0m
+2024-07-23 16:02:11,970 [mHTTP GET /static/admin/js/inlines.js 200 [0.21, 127.0.0.1:53360][0m
+2024-07-23 16:02:11,984 [mHTTP GET /static/admin/img/icon-unknown.svg 200 [0.01, 127.0.0.1:53360][0m
+2024-07-23 16:02:12,062 [mHTTP GET /static/admin/js/vendor/select2/select2.full.js 200 [0.30, 127.0.0.1:53358][0m
+2024-07-23 16:05:07,038 [mHTTP POST /admin/admin_tools_stats/dashboardstats/add/ 200 [0.12, 127.0.0.1:53409][0m
+2024-07-23 16:05:07,081 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:53410][0m
+2024-07-23 16:05:07,085 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:53412][0m
+2024-07-23 16:05:07,101 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:53409][0m
+2024-07-23 16:05:07,170 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:53409][0m
+2024-07-23 16:05:07,170 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:53412][0m
+2024-07-23 16:05:20,554 [32mHTTP POST /admin/admin_tools_stats/dashboardstats/add/ 302 [0.07, 127.0.0.1:53409][0m
+2024-07-23 16:05:20,644 [mHTTP GET /admin/admin_tools_stats/dashboardstats/ 200 [0.08, 127.0.0.1:53409][0m
+2024-07-23 16:05:20,685 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:53410][0m
+2024-07-23 16:05:20,685 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:53412][0m
+2024-07-23 16:05:20,693 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:53413][0m
+2024-07-23 16:05:20,701 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:53409][0m
+2024-07-23 16:05:20,719 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:53409][0m
+2024-07-23 16:05:20,752 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:53413][0m
+2024-07-23 16:05:20,752 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:53409][0m
+2024-07-23 16:05:24,438 [mHTTP GET /admin/ 200 [0.13, 127.0.0.1:53413][0m
+2024-07-23 16:05:24,537 [mHTTP GET /admin_tools_stats/admin_charts.js 200 [0.04, 127.0.0.1:53413][0m
+2024-07-23 16:05:24,792 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53412][0m
+2024-07-23 16:05:24,794 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53409][0m
+2024-07-23 16:05:24,930 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=9pBKTtpNOSOg2hcbsu76YatA5kc88IZ8U4AEubvvuwZZmM4Xyh1a7aXy6yijMB4C&graph_key=orders&select_box_operation=Avg&select_box_operation_field=amount&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721730924544 200 [0.15, 127.0.0.1:53413][0m
+2024-07-23 16:05:31,481 [mHTTP GET /admin/app/order/ 200 [0.25, 127.0.0.1:53417][0m
+2024-07-23 16:05:31,515 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:53420][0m
+2024-07-23 16:05:31,515 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:53418][0m
+2024-07-23 16:05:31,521 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:53421][0m
+2024-07-23 16:05:31,532 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:53417][0m
+2024-07-23 16:06:00,405 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:53417][0m
+2024-07-23 16:06:00,434 [mHTTP GET /admin_tools_stats/admin_charts.js 200 [0.01, 127.0.0.1:53417][0m
+2024-07-23 16:06:00,561 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=WLzi0kr4hIP9qmv0WQg6PYYoJOvIDhZUHqycB2xMXm0SKRnM2DaaYYsmK2BTha4o&graph_key=orders&select_box_operation=Avg&select_box_operation_field=amount&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721730960444 200 [0.03, 127.0.0.1:53417][0m
+2024-07-23 16:06:04,517 [mHTTP GET /admin/ 200 [0.07, 127.0.0.1:53417][0m
+2024-07-23 16:06:04,544 [mHTTP GET /admin_tools_stats/admin_charts.js 200 [0.01, 127.0.0.1:53417][0m
+2024-07-23 16:06:04,691 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=8UnBY9FTRVsCu8JNvySl6Cmbbv6zodgoTzmvzRLBxzDlODBzBlMpfCQ9cJcK26lS&graph_key=orders&select_box_operation=Avg&select_box_operation_field=amount&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721730964549 200 [0.09, 127.0.0.1:53417][0m
+2024-07-23 16:06:10,717 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=8UnBY9FTRVsCu8JNvySl6Cmbbv6zodgoTzmvzRLBxzDlODBzBlMpfCQ9cJcK26lS&graph_key=orders&select_box_operation=Avg&select_box_operation_field=amount&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&reload=true&_=1721730964550 200 [0.03, 127.0.0.1:53417][0m
+2024-07-23 16:06:19,493 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=8UnBY9FTRVsCu8JNvySl6Cmbbv6zodgoTzmvzRLBxzDlODBzBlMpfCQ9cJcK26lS&graph_key=orders&select_box_operation=Avg&select_box_operation_field=quantity&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721730964551 200 [0.02, 127.0.0.1:53417][0m
+2024-07-23 16:06:24,566 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=8UnBY9FTRVsCu8JNvySl6Cmbbv6zodgoTzmvzRLBxzDlODBzBlMpfCQ9cJcK26lS&graph_key=orders&select_box_operation=Count&select_box_operation_field=quantity&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721730964552 200 [0.03, 127.0.0.1:53417][0m
+2024-07-23 16:06:29,599 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=8UnBY9FTRVsCu8JNvySl6Cmbbv6zodgoTzmvzRLBxzDlODBzBlMpfCQ9cJcK26lS&graph_key=orders&select_box_operation=StdDev&select_box_operation_field=quantity&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721730964553 200 [0.04, 127.0.0.1:53417][0m
+2024-07-23 16:06:33,122 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=8UnBY9FTRVsCu8JNvySl6Cmbbv6zodgoTzmvzRLBxzDlODBzBlMpfCQ9cJcK26lS&graph_key=orders&select_box_operation=Variance&select_box_operation_field=quantity&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721730964554 200 [0.04, 127.0.0.1:53417][0m
+2024-07-23 16:06:38,802 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=8UnBY9FTRVsCu8JNvySl6Cmbbv6zodgoTzmvzRLBxzDlODBzBlMpfCQ9cJcK26lS&graph_key=orders&select_box_operation=AvgCountPerInstance&select_box_operation_field=quantity&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721730964555 200 [0.04, 127.0.0.1:53417][0m
+2024-07-23 16:06:41,693 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=8UnBY9FTRVsCu8JNvySl6Cmbbv6zodgoTzmvzRLBxzDlODBzBlMpfCQ9cJcK26lS&graph_key=orders&select_box_operation=AvgCountPerInstance&select_box_operation_field=quantity&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&reload=true&_=1721730964556 200 [0.04, 127.0.0.1:53417][0m
+2024-07-23 16:06:43,595 [mHTTP GET /admin_tools_stats/analytics/?show=orders 200 [0.05, 127.0.0.1:53417][0m
+2024-07-23 16:06:43,677 [mHTTP GET /admin_tools_stats/admin_charts.js 200 [0.01, 127.0.0.1:53417][0m
+2024-07-23 16:06:43,778 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53417][0m
+2024-07-23 16:06:43,778 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:53427][0m
+2024-07-23 16:06:43,920 [32mHTTP GET /admin_tools_stats/analytics/chart/orders 301 [0.12, 127.0.0.1:53427][0m
+2024-07-23 16:06:43,983 [mHTTP GET /admin_tools_stats/analytics/chart/orders/ 200 [0.06, 127.0.0.1:53427][0m
+2024-07-23 16:06:44,056 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=39Ku80TjDy7SCsRdlW4ynbrU4MH92JqgOOJoJIZ1jciBWXJZrJYCwbVS50NkGCvK&graph_key=orders&select_box_operation=Avg&select_box_operation_field=amount&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721731003711 200 [0.03, 127.0.0.1:53427][0m
+2024-07-23 16:07:03,948 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=39Ku80TjDy7SCsRdlW4ynbrU4MH92JqgOOJoJIZ1jciBWXJZrJYCwbVS50NkGCvK&graph_key=orders&select_box_operation=Min&select_box_operation_field=amount&select_box_interval=days&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721731003712 200 [0.03, 127.0.0.1:53427][0m
+2024-07-23 16:07:09,727 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=39Ku80TjDy7SCsRdlW4ynbrU4MH92JqgOOJoJIZ1jciBWXJZrJYCwbVS50NkGCvK&graph_key=orders&select_box_operation=Min&select_box_operation_field=amount&select_box_interval=years&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721731003713 200 [0.02, 127.0.0.1:53427][0m
+2024-07-23 16:07:12,056 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=39Ku80TjDy7SCsRdlW4ynbrU4MH92JqgOOJoJIZ1jciBWXJZrJYCwbVS50NkGCvK&graph_key=orders&select_box_operation=Min&select_box_operation_field=amount&select_box_interval=hours&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721731003714 200 [0.04, 127.0.0.1:53427][0m
+2024-07-23 16:07:15,754 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=39Ku80TjDy7SCsRdlW4ynbrU4MH92JqgOOJoJIZ1jciBWXJZrJYCwbVS50NkGCvK&graph_key=orders&select_box_operation=Min&select_box_operation_field=amount&select_box_interval=months&select_box_chart_type=discreteBarChart&time_since=2024-06-22&time_until=2024-07-23&_=1721731003715 200 [0.04, 127.0.0.1:53427][0m
+2024-07-23 16:07:24,931 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=39Ku80TjDy7SCsRdlW4ynbrU4MH92JqgOOJoJIZ1jciBWXJZrJYCwbVS50NkGCvK&graph_key=orders&select_box_operation=Min&select_box_operation_field=amount&select_box_interval=days&select_box_chart_type=pieChart&time_since=2024-06-22&time_until=2024-07-23&_=1721731003716 200 [0.02, 127.0.0.1:53427][0m
+2024-07-23 16:07:30,726 [mHTTP GET /admin_tools_stats/chart_data/orders/?csrfmiddlewaretoken=39Ku80TjDy7SCsRdlW4ynbrU4MH92JqgOOJoJIZ1jciBWXJZrJYCwbVS50NkGCvK&graph_key=orders&select_box_operation=Min&select_box_operation_field=amount&select_box_interval=days&select_box_chart_type=lineChart&time_since=2024-06-22&time_until=2024-07-23&_=1721731003717 200 [0.04, 127.0.0.1:53427][0m
+2024-07-23 16:07:48,350 D:\stox\stock\settings.py changed, reloading.
+2024-07-23 16:09:34,465 [mHTTP GET /admin/ 200 [0.12, 127.0.0.1:53491][0m
+2024-07-23 16:09:34,620 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53491][0m
+2024-07-23 16:09:34,622 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53492][0m
+2024-07-23 16:09:36,021 [mHTTP GET /admin/ 200 [0.04, 127.0.0.1:53492][0m
+2024-07-23 16:09:37,061 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:53492][0m
+2024-07-23 16:10:34,353 [mHTTP GET /admin/ 200 [0.09, 127.0.0.1:53492][0m
+2024-07-23 16:10:34,469 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53492][0m
+2024-07-23 16:10:34,469 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53491][0m
+2024-07-23 16:11:16,439 [mHTTP GET /admin/ 200 [0.06, 127.0.0.1:53491][0m
+2024-07-23 16:11:16,550 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53491][0m
+2024-07-23 16:11:16,551 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53492][0m
+2024-07-23 16:11:59,622 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:53491][0m
+2024-07-23 16:11:59,722 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:53491][0m
+2024-07-23 16:11:59,727 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53492][0m
+2024-07-23 16:13:47,481 [mHTTP GET /admin/ 200 [0.09, 127.0.0.1:53516][0m
+2024-07-23 16:13:47,590 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.02, 127.0.0.1:53516][0m
+2024-07-23 16:13:47,590 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.02, 127.0.0.1:53517][0m
+2024-07-23 16:13:58,508 [mHTTP GET /admin/ 200 [0.12, 127.0.0.1:53517][0m
+2024-07-23 16:14:33,142 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:53517][0m
+2024-07-23 16:14:50,148 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:53517][0m
+2024-07-23 16:15:40,408 [mHTTP GET /static/vendor/adminlte/js/adminlte.min.js.map 200 [0.10, 127.0.0.1:53526][0m
+2024-07-23 16:15:40,408 [mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js.map 200 [0.10, 127.0.0.1:53517][0m
+2024-07-23 16:15:40,415 [mHTTP GET /static/vendor/adminlte/css/adminlte.min.css.map 200 [0.10, 127.0.0.1:53530][0m
+2024-07-23 16:15:58,861 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:53530][0m
+2024-07-23 16:15:59,056 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53530][0m
+2024-07-23 16:15:59,061 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53517][0m
+2024-07-23 16:16:17,451 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:53517][0m
+2024-07-23 16:16:17,645 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53517][0m
+2024-07-23 16:16:17,645 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53530][0m
+2024-07-23 16:21:34,938 D:\stox\app\views.py changed, reloading.
+2024-07-23 16:24:11,624 D:\stox\app\urls.py changed, reloading.
+2024-07-23 16:24:14,336 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:53757][0m
+2024-07-23 16:24:14,493 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53757][0m
+2024-07-23 16:24:14,502 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53757][0m
+2024-07-23 16:24:17,469 [mHTTP GET /portfolio 200 [0.12, 127.0.0.1:53759][0m
+2024-07-23 16:24:20,466 [32mHTTP POST /place_order 302 [0.14, 127.0.0.1:53759][0m
+2024-07-23 16:24:20,630 [mHTTP GET /orders 200 [0.16, 127.0.0.1:53759][0m
+2024-07-23 16:24:24,004 [mHTTP GET /portfolio 200 [0.11, 127.0.0.1:53760][0m
+2024-07-23 16:24:32,663 [32mHTTP GET /close_position 302 [0.08, 127.0.0.1:53766][0m
+2024-07-23 16:24:32,704 [mHTTP GET / 200 [0.04, 127.0.0.1:53766][0m
+2024-07-23 16:24:32,977 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.25, 127.0.0.1:53766][0m
+2024-07-23 16:24:32,988 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.25, 127.0.0.1:53770][0m
+2024-07-23 16:24:32,991 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.26, 127.0.0.1:53767][0m
+2024-07-23 16:24:32,992 [mHTTP GET /static/landingasset/css/style.css 200 [0.25, 127.0.0.1:53773][0m
+2024-07-23 16:24:32,997 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.25, 127.0.0.1:53772][0m
+2024-07-23 16:24:32,998 [mHTTP GET /static/landingasset/css/animate.css 200 [0.26, 127.0.0.1:53771][0m
+2024-07-23 16:24:33,025 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.02, 127.0.0.1:53773][0m
+2024-07-23 16:24:33,026 [mHTTP GET /static/landingasset/img/process-icons/2.png 200 [0.02, 127.0.0.1:53772][0m
+2024-07-23 16:24:33,028 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.03, 127.0.0.1:53767][0m
+2024-07-23 16:24:33,028 [mHTTP GET /static/landingasset/img/process-icons/3.png 200 [0.02, 127.0.0.1:53771][0m
+2024-07-23 16:24:33,032 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.04, 127.0.0.1:53770][0m
+2024-07-23 16:24:33,050 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.01, 127.0.0.1:53767][0m
+2024-07-23 16:24:33,050 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.02, 127.0.0.1:53771][0m
+2024-07-23 16:24:33,067 [mHTTP GET /static/landingasset/js/main.js 200 [0.03, 127.0.0.1:53772][0m
+2024-07-23 16:24:33,089 [mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 200 [0.10, 127.0.0.1:53766][0m
+2024-07-23 16:24:33,095 [mHTTP GET /static/landingasset/js/owl.carousel.min.js 200 [0.07, 127.0.0.1:53773][0m
+2024-07-23 16:24:33,111 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.04, 127.0.0.1:53772][0m
+2024-07-23 16:24:33,113 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.03, 127.0.0.1:53767][0m
+2024-07-23 16:24:33,114 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.03, 127.0.0.1:53771][0m
+2024-07-23 16:24:33,197 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.02, 127.0.0.1:53771][0m
+2024-07-23 16:24:36,148 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:53771][0m
+2024-07-23 16:24:52,757 D:\stox\app\urls.py changed, reloading.
+2024-07-23 16:25:02,090 D:\stox\app\views.py changed, reloading.
+2024-07-23 16:25:28,729 D:\stox\app\views.py changed, reloading.
+2024-07-23 16:25:33,262 [mHTTP GET / 200 [0.05, 127.0.0.1:53808][0m
+2024-07-23 16:25:34,987 [mHTTP GET /admin/ 200 [0.10, 127.0.0.1:53808][0m
+2024-07-23 16:25:47,133 [32mHTTP GET /update_symbols 302 [10.85, 127.0.0.1:53808][0m
+2024-07-23 16:25:47,193 [mHTTP GET /admin/ 200 [0.06, 127.0.0.1:53808][0m
+2024-07-23 16:25:59,012 [mHTTP GET /admin/ 200 [0.03, 127.0.0.1:53813][0m
+2024-07-23 16:25:59,225 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53813][0m
+2024-07-23 16:25:59,225 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53814][0m
+2024-07-23 16:27:44,294 D:\stox\app\views.py changed, reloading.
+2024-07-23 16:28:02,780 D:\stox\app\views.py changed, reloading.
+2024-07-23 16:28:11,976 [32mHTTP GET /update_symbols 302 [0.05, 127.0.0.1:53847][0m
+2024-07-23 16:28:12,560 [mHTTP GET /admin/ 200 [0.57, 127.0.0.1:53847][0m
+2024-07-23 16:28:12,736 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.03, 127.0.0.1:53847][0m
+2024-07-23 16:28:12,747 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.04, 127.0.0.1:53848][0m
+2024-07-23 16:30:34,453 D:\stox\app\management\commands\load_instruments.py changed, reloading.
+2024-07-23 16:30:47,800 [32mHTTP GET /update_symbols 302 [0.04, 127.0.0.1:53891][0m
+2024-07-23 16:30:47,946 [mHTTP GET /admin/ 200 [0.14, 127.0.0.1:53891][0m
+2024-07-23 16:30:48,089 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53891][0m
+2024-07-23 16:30:48,098 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53892][0m
+2024-07-23 16:34:53,679 [mHTTP GET /portfolio 200 [0.04, 127.0.0.1:53976][0m
+2024-07-23 16:34:53,701 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:53977][0m
+2024-07-23 16:39:13,495 [mHTTP GET /admin/app/position/ 200 [0.09, 127.0.0.1:54151][0m
+2024-07-23 16:39:13,529 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54152][0m
+2024-07-23 16:39:13,530 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54154][0m
+2024-07-23 16:39:13,540 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54155][0m
+2024-07-23 16:39:13,548 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54151][0m
+2024-07-23 16:39:13,604 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:54151][0m
+2024-07-23 16:39:13,605 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:54155][0m
+2024-07-23 16:39:43,955 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:39:56,895 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:39:59,353 [mHTTP GET /admin/app/position/ 200 [0.11, 127.0.0.1:54189][0m
+2024-07-23 16:39:59,389 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54191][0m
+2024-07-23 16:39:59,395 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:54191][0m
+2024-07-23 16:39:59,409 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54189][0m
+2024-07-23 16:39:59,445 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54189][0m
+2024-07-23 16:39:59,500 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:54189][0m
+2024-07-23 16:39:59,501 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:54191][0m
+2024-07-23 16:41:23,666 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:41:39,549 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:41:48,586 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:41:51,014 [mHTTP GET /admin/app/position/ 200 [0.10, 127.0.0.1:54234][0m
+2024-07-23 16:41:51,048 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54235][0m
+2024-07-23 16:41:51,059 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54235][0m
+2024-07-23 16:41:51,062 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54234][0m
+2024-07-23 16:41:51,080 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54234][0m
+2024-07-23 16:41:51,125 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:54235][0m
+2024-07-23 16:41:51,130 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:54234][0m
+2024-07-23 16:42:10,830 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:42:13,166 [mHTTP GET /admin/app/position/ 200 [0.10, 127.0.0.1:54248][0m
+2024-07-23 16:42:13,189 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54249][0m
+2024-07-23 16:42:13,190 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54255][0m
+2024-07-23 16:42:13,197 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54249][0m
+2024-07-23 16:42:13,227 [mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:54248][0m
+2024-07-23 16:42:13,652 [mHTTP GET /admin/app/position/ 200 [0.05, 127.0.0.1:54256][0m
+2024-07-23 16:42:13,674 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54257][0m
+2024-07-23 16:42:13,674 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54258][0m
+2024-07-23 16:42:13,674 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:54259][0m
+2024-07-23 16:42:13,687 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54256][0m
+2024-07-23 16:42:28,528 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:42:30,801 [mHTTP GET /admin/app/position/ 200 [0.10, 127.0.0.1:54263][0m
+2024-07-23 16:42:30,828 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54262][0m
+2024-07-23 16:42:30,831 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54272][0m
+2024-07-23 16:42:30,838 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54262][0m
+2024-07-23 16:42:30,844 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54263][0m
+2024-07-23 16:43:16,025 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:43:28,758 D:\stox\app\admin.py changed, reloading.
+2024-07-23 16:44:03,893 D:\stox\app\urls.py changed, reloading.
+2024-07-23 16:45:36,030 D:\stox\app\views.py changed, reloading.
+2024-07-23 16:45:47,560 [mHTTP GET /admin/app/position/ 200 [0.15, 127.0.0.1:54336][0m
+2024-07-23 16:45:47,592 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54337][0m
+2024-07-23 16:45:47,596 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54338][0m
+2024-07-23 16:45:47,601 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54339][0m
+2024-07-23 16:45:47,613 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54336][0m
+2024-07-23 16:45:47,663 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:54336][0m
+2024-07-23 16:45:47,664 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:54339][0m
+2024-07-23 16:45:55,366 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:54336][0m
+2024-07-23 16:46:02,197 [32mHTTP POST /place_order 302 [0.11, 127.0.0.1:54336][0m
+2024-07-23 16:46:02,266 [mHTTP GET /orders 200 [0.07, 127.0.0.1:54336][0m
+2024-07-23 16:46:05,551 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:54336][0m
+2024-07-23 16:46:09,868 [mHTTP GET /admin/app/position/ 200 [0.08, 127.0.0.1:54336][0m
+2024-07-23 16:46:09,891 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:54339][0m
+2024-07-23 16:46:09,892 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54338][0m
+2024-07-23 16:46:09,892 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54337][0m
+2024-07-23 16:46:09,904 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54336][0m
+2024-07-23 16:46:19,140 [32mHTTP GET /closepos/41 302 [0.08, 127.0.0.1:54336][0m
+2024-07-23 16:46:19,187 [mHTTP GET /admin/app/position/ 200 [0.04, 127.0.0.1:54336][0m
+2024-07-23 16:46:19,214 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54337][0m
+2024-07-23 16:46:19,214 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54338][0m
+2024-07-23 16:46:19,226 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:54336][0m
+2024-07-23 16:46:19,251 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:54336][0m
+2024-07-23 16:46:19,275 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:54336][0m
+2024-07-23 16:46:19,276 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:54338][0m
+2024-07-23 16:46:24,476 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:54338][0m
+2024-07-23 16:46:32,741 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.14, 127.0.0.1:54362][0m
+2024-07-23 16:46:32,772 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:54365][0m
+2024-07-23 16:46:32,772 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:54366][0m
+2024-07-23 16:46:32,785 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54362][0m
+2024-07-23 16:46:32,838 [mHTTP GET /static/admin/js/SelectBox.js 200 [0.08, 127.0.0.1:54363][0m
+2024-07-23 16:46:32,838 [mHTTP GET /static/admin/js/SelectFilter2.js 200 [0.08, 127.0.0.1:54364][0m
+2024-07-23 16:46:33,587 [mHTTP GET /admin/ 200 [0.05, 127.0.0.1:54364][0m

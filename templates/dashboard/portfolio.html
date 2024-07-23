@@ -368,6 +368,7 @@
     socket.onmessage = function (event) {
         const data = JSON.parse(event.data);
         let tpnl = 0;
+        let dpnl = 0;
         for (let i of data) {
             if (i['data']['symbol']) {
                 let buy_price = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-buy_price')
@@ -384,7 +385,7 @@
                 }
                 else {
                     pnl = (sell_price - buy_price).toFixed(2) * last_traded_quantity;
-                    flag = false
+                    dpnl += pnl
                 }
                 pnl = Math.round(pnl * 100) / 100;
                 let cls = "";
@@ -408,7 +409,7 @@
                 }
             }
         }
-        tpnl = tpnl;
+        tpnl = {{ppnl}} + tpnl - dpnl;
         if(tpnl > 0) {
             document.getElementById('ppnl').innerHTML = `<span class='text-green-600'>${tpnl.toFixed(2)}</span>`
         }

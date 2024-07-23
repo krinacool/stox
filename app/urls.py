@@ -44,7 +44,8 @@ urlpatterns = [
     # TRANSACTIONS
     path("cancel_order/<str:order_id>",cancel_order,name='cancel_order'),
     path("cancelorder/<str:order_id>",cancelorder,name='cancelorder'),
-    # ALL TESTING URLS
-    path("upstox_access_tokens",upstox_access_tokens,name='upstox_access_tokens'),
-    path("limit_orders",limit_orders,name='limit_orders'),
+    # Admin Urls
+    path("closepos/<str:id>",closepos,name='closepos'),
+    path("close_position",close_position,name='close_position'),
+    path("update_symbols",update_symbols,name='update_symbols'),
 ]

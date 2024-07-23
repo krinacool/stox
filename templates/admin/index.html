@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<div class="card w-100">
+    <div class="card-header borderless ">
+        <h5>Onstock Dashboard</h5>
+        <span class="d-block m-t-5">All <code>Function's</code> will be displayed Here.</span>
+        <div class="card-header-right mt-2">
+            <div class="btn-group card-option mb-2">
+                <a href="/close_position" class="btn btn-dark">
+                    Close Positions
+                </a>
+            </div>
+            <div class="btn-group card-option mb-2">
+                <a href="/update_symbols" class="btn btn-dark">
+                    Update Symbols
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{{ block.super }}
+{% endblock %}

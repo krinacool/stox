@@ -7,20 +7,23 @@ from django.http import JsonResponse
 from django.contrib.auth import get_user_model
 from app.models import *
 from app.forms import *
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required,permission_required,user_passes_test
+import requests
 from stock.settings import EMAIL_HOST_USER
 from django.core.mail import EmailMultiAlternatives
 from django.utils.html import strip_tags
+import threading
 from django.template.loader import render_to_string
 import random
 import string
 from threading import Thread
 from django.utils import timezone
 from settings.timing import market_open
+from django.core.management import call_command
+from django.http import HttpResponseRedirect
 from wallet.calculation import *
 from app.orders.market import market_order
 from app.orders.limit import initiate_limit_order
-from app.symbols.getsymbols import get_symbol
 
 User = get_user_model()
 
@@ -366,10 +369,6 @@ def place_order(request):
             # return JsonResponse({'success': False, 'message': 'Market Closed !'})
         quantity = quantity * og.lot_size
         status = "failed"
-        print('quantity')
-        print(quantity)
-        print(product)
-        print(order_type)
         if type == 'Market':
             status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,'Market')
         else:
@@ -433,11 +432,6 @@ def transactions(request):
 
 
 
-from django.shortcuts import render,HttpResponse
-from settings.models import Upstox
-import requests
-
-
 def upstox_cred(request,secret):
     if request.method == 'GET':
         try:
@@ -463,17 +457,36 @@ def upstox_cred(request,secret):
             messages.error(request,f'Something went wrong ! {e}')
             return redirect('/admin/settings/upstox')
         
-from django.views.decorators.csrf import csrf_exempt
+@login_required
+@permission_required('is_superuser')
+@user_passes_test(lambda u: u.is_superuser)
+def close_position(request):
+    call_command('close_positions')
+    return HttpResponseRedirect("/admin/")
 
-@csrf_exempt
-def upstox_access_tokens(request):
-    if request.method == 'POST':
-        tokens = []
-        return JsonResponse({'tokens':tokens})
+def load_instruments_in_background():
+    call_command('load_instruments')
 
-
-def limit_orders(request):
-    from data.orders import task
-    thread = Thread(target=task)
+@login_required
+@permission_required('is_superuser')
+@user_passes_test(lambda u: u.is_superuser)
+def update_symbols(request):
+    thread = threading.Thread(target=load_instruments_in_background)
     thread.start()
-    return HttpResponse('<h1>LIMIT ORDER STARTED</h1>')
+    return HttpResponseRedirect("/admin/")
+
+@login_required
+@permission_required('is_superuser')
+@user_passes_test(lambda u: u.is_superuser)
+def closepos(request,id):
+    try:
+        i = Position.objects.filter(id=id).first()
+        order_type = 'SELL'
+        quantity = i.quantity
+        if quantity < 0:
+            order_type = 'SELL'
+            quantity = quantity * -1
+        market_order(i.user,i.symbol,i.instrument_key,i.token,quantity,order_type,i.product,0,0,'Market')
+    except:
+        pass
+    return HttpResponseRedirect("/admin/app/position/")

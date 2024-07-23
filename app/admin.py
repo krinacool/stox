@@ -88,7 +88,7 @@ class Order(admin.ModelAdmin):
 class Position(admin.ModelAdmin):
     # list_display = ('user','symbol','product','pnl')
     list_filter = ('created_at','user','symbol','product','last_traded_datetime')
-    list_display = ('user', 'quantity','last_traded_quantity', 'symbol', 'product', 'buy_price', 'sell_price', 'pnl_colored','created_at')
+    list_display = ('user', 'quantity','last_traded_quantity', 'symbol', 'product', 'buy_price', 'sell_price', 'pnl_colored','created_at','close_positon')
     # Define a custom method to display pnl with color
     def pnl_colored(self, obj):
         if obj.realised_pnl < 0:
@@ -96,9 +96,16 @@ class Position(admin.ModelAdmin):
         elif obj.realised_pnl > 0:
             return format_html(f'<span style="color: green;">{obj.realised_pnl}</span>', obj.realised_pnl)
         else:
-            return obj.realised_pnl
+            return format_html(f'<span style="color: blue;">{obj.realised_pnl}</span>', obj.realised_pnl)
 
     pnl_colored.short_description = 'P&L'
+    def close_positon(self, obj):
+        return format_html(f'''
+                           <a href='/closepos/{obj.id}'><button type='button' class='btn btn-danger'">Close</button></a>
+                        ''')
+
+    close_positon.short_description = 'Close Position'
+
 
 
 @admin.register(Contact)
