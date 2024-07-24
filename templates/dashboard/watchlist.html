@@ -1,5 +1,6 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
+{% load custom_filters %}    
 <div class="mb-4 bg-white border-b border-gray-200 overflow-x-auto mt-2">
     <ul class="flex flex-nowrap -mb-px font-medium text-center" id="default" data-tabs-toggle="#default-content"
         data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
@@ -421,7 +422,7 @@
     return textWithSpaces;
 }
 
-    const socket = new WebSocket('wss://onstock.in/ws/stocks/');
+    const socket = new WebSocket('ws://127.0.0.1:8000/ws/stocks/');
 
     socket.onopen = function () {
         console.log('WebSocket connection established.');
@@ -463,19 +464,22 @@
                 else {
                 document.getElementById(i['instrument']).innerHTML = `
                 <div>
-                    <div class="h-2.5 mt-2 text-black rounded-full w-48 mb-3.5">${insertSpaces(i['data']['symbol'])}</div>
-                    <div class="h-2 rounded-full">
+                    <div class="h-2.5 mt-2 text-black rounded-full w-48 mb-3.5">
+                        ${insertSpaces(i['data']['symbol'])}
+                        <button
+                            class="no-underline rounded-sm bg-gray-100 text-gray-500 text-xs mr-2">${i['data']['segment']}</button>
+                    </div>
+                    <div class="h-2 rounded-full mb-2 mt-2">
                         <div class="justify-center my-2 select-none">
-                            <button
-                                class="no-underline rounded-sm bg-gray-100 text-gray-500 text-xs mr-2">${i['data']['segment']}</button>
+                            <small class="w-32 h-2 text-xs text-gray-600">${i['data']['name']}</small>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="h-2.5 mt-2 text-black rounded-full w-16 mb-3.5">
+                <div class="mx-2">
+                    <div class="h-2.5 mt-2 text-sm text-black rounded-full mb-2 w-24 mr-2 text-right">
                         ${i['data']['ltp']}
                     </div>
-                    <div class="h-2 rounded-full ${change_cls} text-left text-sm">
+                    <div class="h-2 rounded-full mb-2 ${change_cls} text-left text-xs w-24 mr-2 text-right">
                         ${(i['data']['open'] - i['data']['ltp']).toFixed(1)}
                     </div>
                 </div>

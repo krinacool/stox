@@ -1,6 +1,6 @@
 import re
 from django import template
-
+from app.models import Instrument
 register = template.Library()
 
 @register.filter(name='insert_spaces')
@@ -15,3 +15,11 @@ def insert_spaces(text):
     text_with_spaces = re.sub(r'([a-z])([A-Z])', r'\1 \2', text_with_spaces)
     text_with_spaces = re.sub(r'([A-Z])([a-z])', r'\1 \2', text_with_spaces)
     return text_with_spaces
+
+@register.filter(name='company_name')
+def company_name(symbol):
+    if not isinstance(symbol, str):
+        return symbol
+    print(symbol)
+    name = Instrument.objects.filter(tradingsymbol='SBIN').first().name
+    return name

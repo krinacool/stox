@@ -98,6 +98,7 @@ class CustomUser(AbstractUser):
 
 class symbols(models.Model):
     symbol=models.CharField(max_length=150,default="")
+    name=models.CharField(max_length=150,default="",null=True,blank=True)
     segment=models.CharField(max_length=150,default="")
     instrument_key=models.CharField(max_length=150,default="")
     ltp=models.FloatField(default=0)
@@ -187,6 +188,7 @@ class Watchlist(models.Model):
                 self.instrument_key = instrument_key
                 symbols_entry, created = symbols.objects.get_or_create(
                     symbol=self.symbol,
+                    name=Instrument.objects.filter(instrument_key=instrument_key).first().name,
                     segment=self.segment,
                     defaults={'instrument_key': self.instrument_key}
                 )

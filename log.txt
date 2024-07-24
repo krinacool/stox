@@ -1829,3 +1829,652 @@ AttributeError: 'list' object has no attribute 'length'
 2024-07-24 15:41:02,288 [mHTTP GET /performance 200 [0.04, 127.0.0.1:61162][0m
 2024-07-24 15:41:18,177 [mHTTP GET /performance 200 [0.08, 127.0.0.1:61171][0m
 2024-07-24 15:41:34,555 [mHTTP GET /performance 200 [0.04, 127.0.0.1:61180][0m
+2024-07-24 18:15:29,838 [mHTTP GET /watchlist 200 [0.28, 127.0.0.1:64362][0m
+2024-07-24 18:16:03,849 [mHTTP GET /admin/ 200 [0.12, 127.0.0.1:64396][0m
+2024-07-24 18:16:03,962 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:64396][0m
+2024-07-24 18:16:03,962 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:64397][0m
+2024-07-24 18:16:08,627 [32mHTTP GET /update_symbols 302 [0.03, 127.0.0.1:64397][0m
+2024-07-24 18:16:08,683 [mHTTP GET /admin/ 200 [0.04, 127.0.0.1:64397][0m
+2024-07-24 18:16:18,897 [mHTTP GET /admin/app/watchlist/ 200 [2.00, 127.0.0.1:64413][0m
+2024-07-24 18:16:19,122 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.18, 127.0.0.1:64415][0m
+2024-07-24 18:16:19,127 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.13, 127.0.0.1:64421][0m
+2024-07-24 18:16:19,136 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.12, 127.0.0.1:64422][0m
+2024-07-24 18:16:19,140 [36mHTTP GET /static/admin/js/urlify.js 304 [0.18, 127.0.0.1:64420][0m
+2024-07-24 18:16:19,548 [mHTTP GET /admin/jsi18n/ 200 [0.60, 127.0.0.1:64413][0m
+2024-07-24 18:16:34,886 Internal Server Error: /admin/app/watchlist/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 228, in inner
+    if not self.has_permission(request):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 201, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\middleware.py", line 33, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\middleware.py", line 13, in get_user
+    request._cached_user = auth.get_user(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
+2024-07-24 18:16:35,254 [35;1mHTTP POST /admin/app/watchlist/ 500 [9.62, 127.0.0.1:64424][0m
+2024-07-24 18:16:35,811 Not Found: /favicon.ico
+2024-07-24 18:16:35,820 [33mHTTP GET /favicon.ico 404 [0.16, 127.0.0.1:64424][0m
+2024-07-24 18:16:45,388 [mHTTP POST /admin/app/watchlist/ 200 [3.75, 127.0.0.1:64424][0m
+2024-07-24 18:16:45,468 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:64424][0m
+2024-07-24 18:16:45,468 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:64447][0m
+2024-07-24 18:16:48,287 [32mHTTP POST /admin/app/watchlist/ 302 [0.12, 127.0.0.1:64447][0m
+2024-07-24 18:16:48,344 [mHTTP GET /admin/app/watchlist/ 200 [0.05, 127.0.0.1:64447][0m
+2024-07-24 18:16:48,377 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:64424][0m
+2024-07-24 18:16:48,377 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:64450][0m
+2024-07-24 18:16:48,377 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:64451][0m
+2024-07-24 18:16:48,392 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:64447][0m
+2024-07-24 18:16:51,868 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:64453][0m
+2024-07-24 18:17:06,184 [mHTTP GET /search/?q=sb 200 [0.04, 127.0.0.1:64459][0m
+2024-07-24 18:17:06,334 [mHTTP GET /search/?q=sbi 200 [0.03, 127.0.0.1:64459][0m
+2024-07-24 18:17:06,509 [mHTTP GET /search/?q=sbin 200 [0.05, 127.0.0.1:64459][0m
+2024-07-24 18:17:11,645 [mHTTP GET /search/?q=re 200 [0.04, 127.0.0.1:64459][0m
+2024-07-24 18:17:11,799 [mHTTP GET /search/?q=rel 200 [0.04, 127.0.0.1:64459][0m
+2024-07-24 18:17:11,990 [mHTTP GET /search/?q=relo 200 [0.03, 127.0.0.1:64461][0m
+2024-07-24 18:17:12,376 [mHTTP GET /search/?q=rel 200 [0.04, 127.0.0.1:64461][0m
+2024-07-24 18:17:12,882 [mHTTP GET /search/?q=reli 200 [0.04, 127.0.0.1:64461][0m
+2024-07-24 18:17:13,019 [mHTTP GET /search/?q=relia 200 [0.03, 127.0.0.1:64461][0m
+2024-07-24 18:17:13,297 [mHTTP GET /search/?q=relian 200 [0.05, 127.0.0.1:64461][0m
+2024-07-24 18:17:18,980 [mHTTP GET /search/?q=ap 200 [0.03, 127.0.0.1:64461][0m
+2024-07-24 18:17:19,188 [mHTTP GET /search/?q=apo 200 [0.02, 127.0.0.1:64461][0m
+2024-07-24 18:17:22,670 [mHTTP GET /search/?q=apollo%20micro 200 [0.04, 127.0.0.1:64466][0m
+2024-07-24 18:17:30,536 [32mHTTP POST /add_watchlist 302 [0.24, 127.0.0.1:64466][0m
+2024-07-24 18:17:30,571 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:64466][0m
+2024-07-24 18:19:18,980 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64488][0m
+2024-07-24 18:19:18,982 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64489][0m
+2024-07-24 18:19:48,553 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:64525][0m
+2024-07-24 18:19:49,338 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:64525][0m
+2024-07-24 18:19:49,338 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:64526][0m
+2024-07-24 18:20:08,826 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:64545][0m
+2024-07-24 18:20:09,761 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64545][0m
+2024-07-24 18:20:09,761 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64546][0m
+2024-07-24 18:20:24,849 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:64565][0m
+2024-07-24 18:20:25,449 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64565][0m
+2024-07-24 18:20:25,484 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64565][0m
+2024-07-24 18:20:52,892 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:64619][0m
+2024-07-24 18:20:53,765 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:64619][0m
+2024-07-24 18:20:53,765 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64618][0m
+2024-07-24 18:21:33,313 [mHTTP GET /performance 200 [0.02, 127.0.0.1:64646][0m
+2024-07-24 18:21:35,053 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64646][0m
+2024-07-24 18:21:35,060 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64647][0m
+2024-07-24 18:21:40,718 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64655][0m
+2024-07-24 18:21:40,718 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64654][0m
+2024-07-24 18:23:07,923 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:64738][0m
+2024-07-24 18:23:08,481 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64738][0m
+2024-07-24 18:23:08,559 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64738][0m
+2024-07-24 18:24:04,647 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:64800][0m
+2024-07-24 18:24:05,149 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:64801][0m
+2024-07-24 18:24:05,149 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:64800][0m
+2024-07-24 18:25:01,952 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:64837][0m
+2024-07-24 18:25:02,542 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64837][0m
+2024-07-24 18:25:02,567 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64837][0m
+2024-07-24 18:26:16,351 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:64883][0m
+2024-07-24 18:26:17,047 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64883][0m
+2024-07-24 18:26:17,068 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64884][0m
+2024-07-24 18:26:37,897 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:64901][0m
+2024-07-24 18:26:38,542 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64901][0m
+2024-07-24 18:26:38,621 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.00, 127.0.0.1:64901][0m
+2024-07-24 18:26:52,247 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:64915][0m
+2024-07-24 18:26:53,525 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.00, 127.0.0.1:64922][0m
+2024-07-24 18:26:53,525 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:64921][0m
+2024-07-24 18:27:16,210 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:64935][0m
+2024-07-24 18:27:16,950 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64935][0m
+2024-07-24 18:27:16,955 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64936][0m
+2024-07-24 18:29:25,325 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:65022][0m
+2024-07-24 18:29:26,456 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:65022][0m
+2024-07-24 18:29:26,468 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:65023][0m
+2024-07-24 18:30:24,936 [mHTTP GET /watchlist 200 [0.17, 127.0.0.1:65068][0m
+2024-07-24 18:30:25,419 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:65068][0m
+2024-07-24 18:30:25,419 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:65069][0m
+2024-07-24 18:30:41,029 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:65094][0m
+2024-07-24 18:30:41,631 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:65095][0m
+2024-07-24 18:30:41,631 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:65094][0m
+2024-07-24 18:32:58,100 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:65194][0m
+2024-07-24 18:32:58,745 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:65199][0m
+2024-07-24 18:32:58,761 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:65200][0m
+2024-07-24 18:33:29,100 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:65219][0m
+2024-07-24 18:33:29,812 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:65219][0m
+2024-07-24 18:33:29,828 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:65219][0m
+2024-07-24 18:33:55,121 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:65239][0m
+2024-07-24 18:33:55,717 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:65240][0m
+2024-07-24 18:33:55,717 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:65239][0m
+2024-07-24 18:34:13,921 [32mHTTP GET /market 302 [0.03, 127.0.0.1:65256][0m
+2024-07-24 18:34:13,957 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:65256][0m
+2024-07-24 18:34:14,371 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:65256][0m
+2024-07-24 18:34:14,371 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:65257][0m
+2024-07-24 18:34:17,604 [mHTTP GET /performance 200 [0.02, 127.0.0.1:65257][0m
+2024-07-24 18:34:18,371 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:65257][0m
+2024-07-24 18:34:18,377 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:65256][0m
+2024-07-24 18:34:25,722 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:65267][0m
+2024-07-24 18:34:25,727 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:65266][0m
+2024-07-24 18:34:47,431 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:65287][0m
+2024-07-24 18:34:48,110 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:65289][0m
+2024-07-24 18:34:48,110 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:65287][0m
+2024-07-24 18:35:05,848 [mHTTP GET /watchlist 200 [0.16, 127.0.0.1:65305][0m
+2024-07-24 18:35:06,438 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:65305][0m
+2024-07-24 18:35:06,438 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:65306][0m
+2024-07-24 18:35:24,430 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:65346][0m
+2024-07-24 18:35:24,961 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:65346][0m
+2024-07-24 18:35:25,733 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:65346][0m
+2024-07-24 18:35:25,743 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:65349][0m
+2024-07-24 18:38:37,523 [mHTTP GET /admin/app/watchlist/ 200 [0.16, 127.0.0.1:65385][0m
+2024-07-24 18:38:37,597 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:65386][0m
+2024-07-24 18:38:37,597 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:65389][0m
+2024-07-24 18:38:37,620 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:65385][0m
+2024-07-24 18:38:37,699 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:65385][0m
+2024-07-24 18:38:37,907 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.02, 127.0.0.1:65389][0m
+2024-07-24 18:38:37,907 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.02, 127.0.0.1:65385][0m
+2024-07-24 18:38:39,672 [mHTTP GET /admin/app/instrument/ 200 [0.33, 127.0.0.1:65389][0m
+2024-07-24 18:38:39,719 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:65385][0m
+2024-07-24 18:38:39,719 [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:65386][0m
+2024-07-24 18:38:39,719 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.02, 127.0.0.1:65391][0m
+2024-07-24 18:38:39,735 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:65389][0m
+2024-07-24 18:38:45,567 [mHTTP GET /admin/app/instrument/?q=reliance 200 [0.30, 127.0.0.1:65389][0m
+2024-07-24 18:38:45,613 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:65386][0m
+2024-07-24 18:38:45,621 [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:65391][0m
+2024-07-24 18:38:45,623 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.02, 127.0.0.1:65385][0m
+2024-07-24 18:38:45,637 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:65389][0m
+2024-07-24 18:39:19,703 D:\stox\app\templatetags\custom_filters.py changed, reloading.
+2024-07-24 18:40:56,459 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 240, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 670, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: i|['data']['symbol']||company_name
+2024-07-24 18:40:56,474 [35;1mHTTP GET /watchlist 500 [0.42, 127.0.0.1:65408][0m
+2024-07-24 18:41:32,088 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 240, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 670, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: |${i['data']['symbol']}||company_name
+2024-07-24 18:41:32,099 [35;1mHTTP GET /watchlist 500 [0.16, 127.0.0.1:65408][0m
+2024-07-24 18:42:23,988 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 240, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 737, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\stox\app\templatetags\custom_filters.py", line 23, in company_name
+    name = Instrument.objects.filter(tradingsymbol=symbol).first().name
+AttributeError: 'NoneType' object has no attribute 'name'
+2024-07-24 18:42:23,988 [35;1mHTTP GET /watchlist 500 [0.20, 127.0.0.1:65408][0m
+2024-07-24 18:42:54,423 D:\stox\app\templatetags\custom_filters.py changed, reloading.
+2024-07-24 18:42:57,214 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 240, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 737, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\stox\app\templatetags\custom_filters.py", line 24, in company_name
+    name = Instrument.objects.filter(tradingsymbol=symbol).first().name
+AttributeError: 'NoneType' object has no attribute 'name'
+2024-07-24 18:42:57,222 [35;1mHTTP GET /watchlist 500 [0.12, 127.0.0.1:65426][0m
+2024-07-24 18:44:54,731 D:\stox\app\templatetags\custom_filters.py changed, reloading.
+2024-07-24 18:44:57,610 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:65462][0m
+2024-07-24 18:46:25,882 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:65473][0m
+2024-07-24 18:46:25,882 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:65472][0m
+2024-07-24 18:46:49,397 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:65472][0m
+2024-07-24 18:46:50,766 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.06, 127.0.0.1:65493][0m
+2024-07-24 18:46:50,790 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.09, 127.0.0.1:65473][0m
+2024-07-24 18:46:50,807 [mHTTP GET /watchlist 200 [0.13, 127.0.0.1:65472][0m
+2024-07-24 18:46:51,284 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:65473][0m
+2024-07-24 18:46:51,285 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:65472][0m
+2024-07-24 18:47:51,918 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:65526][0m
+2024-07-24 18:47:52,345 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:65531]
+2024-07-24 18:47:52,361 WebSocket CONNECT /ws/stocks/ [127.0.0.1:65531]
+2024-07-24 18:47:52,908 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:65527][0m
+2024-07-24 18:47:52,913 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:65526][0m
+2024-07-24 18:49:42,265 [mHTTP GET /admin/app/symbols/ 200 [0.20, 127.0.0.1:49201][0m
+2024-07-24 18:49:42,304 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:49202][0m
+2024-07-24 18:49:42,304 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:49205][0m
+2024-07-24 18:49:42,304 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:49206][0m
+2024-07-24 18:49:42,331 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49201][0m
+2024-07-24 18:49:42,371 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:49205][0m
+2024-07-24 18:49:42,371 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:49201][0m
+2024-07-24 18:49:50,911 [mHTTP GET /admin/app/symbols/26/change/ 200 [0.22, 127.0.0.1:49205][0m
+2024-07-24 18:49:50,944 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:49201][0m
+2024-07-24 18:49:50,948 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49206][0m
+2024-07-24 18:49:50,956 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:49205][0m
+2024-07-24 18:50:10,560 D:\stox\app\consumers.py changed, reloading.
+2024-07-24 18:50:16,036 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:49235][0m
+2024-07-24 18:50:16,521 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49237]
+2024-07-24 18:50:16,535 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49237]
+2024-07-24 18:50:16,699 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49236][0m
+2024-07-24 18:50:16,699 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49235][0m
+2024-07-24 18:50:36,164 D:\stox\app\models.py changed, reloading.
+2024-07-24 18:50:42,073 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:49256][0m
+2024-07-24 18:50:42,557 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49259]
+2024-07-24 18:50:42,572 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49259]
+2024-07-24 18:50:42,845 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49256][0m
+2024-07-24 18:50:42,848 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49257][0m
+2024-07-24 18:50:52,042 D:\stox\app\models.py changed, reloading.
+2024-07-24 18:50:58,086 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:49273][0m
+2024-07-24 18:50:58,484 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49275]
+2024-07-24 18:50:58,500 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49275]
+2024-07-24 18:50:58,769 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49274][0m
+2024-07-24 18:50:58,769 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49273][0m
+2024-07-24 18:52:27,818 D:\stox\app\models.py changed, reloading.
+2024-07-24 18:52:34,138 [mHTTP GET /watchlist 200 [0.15, 127.0.0.1:49334][0m
+2024-07-24 18:52:34,662 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49339]
+2024-07-24 18:52:34,669 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49339]
+2024-07-24 18:52:34,817 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:49334][0m
+2024-07-24 18:52:34,820 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:49335][0m
+2024-07-24 18:52:47,873 D:\stox\app\models.py changed, reloading.
+2024-07-24 18:52:54,104 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:49372][0m
+2024-07-24 18:52:54,516 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49375]
+2024-07-24 18:52:54,532 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49375]
+2024-07-24 18:53:23,991 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:49415][0m
+2024-07-24 18:53:24,430 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49417]
+2024-07-24 18:53:24,441 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49417]
+2024-07-24 18:53:24,968 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.06, 127.0.0.1:49415][0m
+2024-07-24 18:53:24,973 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.07, 127.0.0.1:49416][0m
+2024-07-24 18:54:02,698 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:49445][0m
+2024-07-24 18:54:02,714 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49417]
+2024-07-24 18:54:03,258 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49449]
+2024-07-24 18:54:03,266 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49449]
+2024-07-24 18:54:03,375 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:49445][0m
+2024-07-24 18:54:03,381 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49446][0m
+2024-07-24 18:54:22,369 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:49462][0m
+2024-07-24 18:54:22,391 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49449]
+2024-07-24 18:54:22,846 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49466]
+2024-07-24 18:54:22,847 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49466]
+2024-07-24 18:54:23,262 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49462][0m
+2024-07-24 18:54:23,268 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49463][0m
+2024-07-24 18:54:34,813 [mHTTP GET /admin/app/symbols/ 200 [0.21, 127.0.0.1:49472][0m
+2024-07-24 18:54:40,533 [mHTTP POST /admin/app/symbols/ 200 [0.07, 127.0.0.1:49472][0m
+2024-07-24 18:54:40,562 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:49472][0m
+2024-07-24 18:54:40,562 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:49473][0m
+2024-07-24 18:54:42,539 [32mHTTP POST /admin/app/symbols/ 302 [0.12, 127.0.0.1:49480][0m
+2024-07-24 18:54:42,589 [mHTTP GET /admin/app/symbols/ 200 [0.04, 127.0.0.1:49480][0m
+2024-07-24 18:54:42,622 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:49481][0m
+2024-07-24 18:54:42,622 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:49483][0m
+2024-07-24 18:54:42,628 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49482][0m
+2024-07-24 18:54:42,646 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:49480][0m
+2024-07-24 18:54:45,675 [mHTTP GET /admin/app/watchlist/ 200 [0.08, 127.0.0.1:49480][0m
+2024-07-24 18:54:45,713 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:49482][0m
+2024-07-24 18:54:45,716 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49483][0m
+2024-07-24 18:54:45,717 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:49481][0m
+2024-07-24 18:54:45,720 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:49480][0m
+2024-07-24 18:54:48,306 [mHTTP GET /admin/app/watchlist/85/change/ 200 [0.13, 127.0.0.1:49480][0m
+2024-07-24 18:54:48,331 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49481][0m
+2024-07-24 18:54:48,331 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:49483][0m
+2024-07-24 18:54:48,359 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49480][0m
+2024-07-24 18:54:48,378 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:49481][0m
+2024-07-24 18:54:48,479 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.13, 127.0.0.1:49483][0m
+2024-07-24 18:54:48,483 [mHTTP GET /static/admin/img/icon-viewlink.svg 200 [0.11, 127.0.0.1:49480][0m
+2024-07-24 18:54:49,873 [32mHTTP POST /admin/app/watchlist/85/change/ 302 [0.17, 127.0.0.1:49480][0m
+2024-07-24 18:54:49,939 [mHTTP GET /admin/app/watchlist/ 200 [0.06, 127.0.0.1:49480][0m
+2024-07-24 18:54:49,960 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:49483][0m
+2024-07-24 18:54:49,960 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:49482][0m
+2024-07-24 18:54:49,960 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49481][0m
+2024-07-24 18:54:49,984 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49480][0m
+2024-07-24 18:54:51,390 [mHTTP GET /admin/app/watchlist/84/change/ 200 [0.04, 127.0.0.1:49480][0m
+2024-07-24 18:54:51,414 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:49490][0m
+2024-07-24 18:54:51,414 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49491][0m
+2024-07-24 18:54:51,422 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:49490][0m
+2024-07-24 18:54:51,427 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:49480][0m
+2024-07-24 18:54:52,916 [32mHTTP POST /admin/app/watchlist/84/change/ 302 [0.11, 127.0.0.1:49480][0m
+2024-07-24 18:54:52,987 [mHTTP GET /admin/app/watchlist/ 200 [0.06, 127.0.0.1:49480][0m
+2024-07-24 18:54:53,023 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:49490][0m
+2024-07-24 18:54:53,023 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:49493][0m
+2024-07-24 18:54:53,023 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49491][0m
+2024-07-24 18:54:53,043 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49480][0m
+2024-07-24 18:54:54,495 [mHTTP GET /admin/app/watchlist/83/change/ 200 [0.05, 127.0.0.1:49480][0m
+2024-07-24 18:54:54,524 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:49490][0m
+2024-07-24 18:54:54,524 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49491][0m
+2024-07-24 18:54:54,536 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:49491][0m
+2024-07-24 18:54:54,541 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49480][0m
+2024-07-24 18:54:55,738 [32mHTTP POST /admin/app/watchlist/83/change/ 302 [0.09, 127.0.0.1:49480][0m
+2024-07-24 18:54:55,805 [mHTTP GET /admin/app/watchlist/ 200 [0.06, 127.0.0.1:49480][0m
+2024-07-24 18:54:55,842 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:49491][0m
+2024-07-24 18:54:55,842 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:49490][0m
+2024-07-24 18:54:55,842 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:49493][0m
+2024-07-24 18:54:55,853 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:49480][0m
+2024-07-24 18:54:57,820 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:49480][0m
+2024-07-24 18:54:57,828 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49466]
+2024-07-24 18:54:58,022 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49497]
+2024-07-24 18:54:58,029 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49497]
+2024-07-24 18:54:58,380 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49493][0m
+2024-07-24 18:54:58,381 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49480][0m
+2024-07-24 18:55:14,963 [mHTTP GET /watchlist 200 [0.17, 127.0.0.1:49511][0m
+2024-07-24 18:55:14,979 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49497]
+2024-07-24 18:55:15,559 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49514]
+2024-07-24 18:55:15,565 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49514]
+2024-07-24 18:55:16,623 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:49511][0m
+2024-07-24 18:55:16,623 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:49510][0m
+2024-07-24 18:55:31,201 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:49525][0m
+2024-07-24 18:55:31,210 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49514]
+2024-07-24 18:55:31,996 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49530]
+2024-07-24 18:55:32,002 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49530]
+2024-07-24 18:55:32,268 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49531][0m
+2024-07-24 18:55:32,268 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49532][0m
+2024-07-24 18:55:43,968 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:49541][0m
+2024-07-24 18:55:43,979 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49530]
+2024-07-24 18:55:44,757 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49542]
+2024-07-24 18:55:44,761 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49542]
+2024-07-24 18:55:45,050 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49541][0m
+2024-07-24 18:55:45,050 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49543][0m
+2024-07-24 18:57:38,034 D:\stox\app\consumers.py changed, reloading.
+2024-07-24 18:57:44,038 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:49637][0m
+2024-07-24 18:57:44,306 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49640]
+2024-07-24 18:57:44,319 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49640]
+2024-07-24 18:57:44,664 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:49637][0m
+2024-07-24 18:57:44,673 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:49638][0m
+2024-07-24 18:57:50,024 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:49638][0m
+2024-07-24 18:57:50,031 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49640]
+2024-07-24 18:57:50,260 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49645]
+2024-07-24 18:57:50,268 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49645]
+2024-07-24 18:57:50,478 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:49638][0m
+2024-07-24 18:57:50,478 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:49637][0m
+2024-07-24 18:58:23,462 D:\stox\app\consumers.py changed, reloading.
+2024-07-24 18:58:29,177 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:49739][0m
+2024-07-24 18:58:29,595 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49743]
+2024-07-24 18:58:29,611 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49743]
+2024-07-24 18:58:31,308 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:49739][0m
+2024-07-24 18:58:31,312 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:49740][0m
+2024-07-24 18:58:31,336 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49739][0m
+2024-07-24 18:58:31,339 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49740][0m
+2024-07-24 18:58:32,337 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:49739][0m
+2024-07-24 18:58:32,337 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49740][0m
+2024-07-24 18:58:32,363 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:49740][0m
+2024-07-24 18:58:32,365 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:49739][0m
+2024-07-24 18:58:43,551 [mHTTP GET /search/?q=ba 200 [0.14, 127.0.0.1:49763][0m
+2024-07-24 18:58:43,686 [mHTTP GET /search/?q=ban 200 [0.04, 127.0.0.1:49763][0m
+2024-07-24 18:58:43,854 [mHTTP GET /search/?q=bank 200 [0.05, 127.0.0.1:49763][0m
+2024-07-24 18:58:43,999 [mHTTP GET /search/?q=bankn 200 [0.03, 127.0.0.1:49763][0m
+2024-07-24 18:58:44,197 [mHTTP GET /search/?q=bankni 200 [0.03, 127.0.0.1:49763][0m
+2024-07-24 18:58:44,758 [mHTTP GET /search/?q=banknif 200 [0.06, 127.0.0.1:49763][0m
+2024-07-24 18:58:44,993 [mHTTP GET /search/?q=banknift 200 [0.08, 127.0.0.1:49763][0m
+2024-07-24 18:58:45,150 [mHTTP GET /search/?q=banknifty 200 [0.05, 127.0.0.1:49763][0m
+2024-07-24 18:58:53,423 [32mHTTP POST /add_watchlist 302 [0.09, 127.0.0.1:49769][0m
+2024-07-24 18:58:53,457 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:49769][0m
+2024-07-24 18:58:53,473 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:49743]
+2024-07-24 18:58:53,696 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:49773]
+2024-07-24 18:58:53,705 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49773]
+2024-07-24 18:58:54,081 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:49770][0m
+2024-07-24 18:58:54,081 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:49769][0m
