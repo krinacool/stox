@@ -92,6 +92,14 @@ def handlelogin(request):
         form = LoginForm()
     return render(request, 'login.html', {'form': form})
 
+def reset_password_done(request):
+    content = "An Reset Password link has been sent to your email. Please reset to continue."
+    return render(request,'message.html',{'content':content})
+
+def password_reset_complete(request):
+    messages.success(request,'Congratulations ! Your password updated successfully.')
+    return redirect('/login')
+
 def handlesignup(request):
     if request.user.is_authenticated:
         return redirect('/market')
@@ -331,6 +339,17 @@ def profile(request):
         else:
             messages.error(request, 'Invalid Details')
     return render(request,'dashboard/profile.html')
+
+@login_required
+def kyc(request):
+    if request.method == 'POST':
+        form = BankInfoForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'KYC completed !')
+        else:
+            messages.error(request, 'Invalid Details')
+    return redirect('/watchlist')
 
 # WATCHLIST
 @login_required

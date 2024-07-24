@@ -1,6 +1,9 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import get_user_model
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import PasswordResetForm
+from django.contrib.auth.forms import SetPasswordForm
 from .models import *
 User = get_user_model()
 
@@ -55,4 +58,20 @@ class LoginForm(forms.Form):
 class BankInfoForm(forms.ModelForm):
     class Meta:
         model = CustomUser
-        fields = ['bank_account_name', 'bank_account_number', 'ifsc_code', 'upi_id']
+        fields = ['pan_number','bank_account_name', 'bank_account_number', 'ifsc_code', 'upi_id']
+
+
+class CustomPasswordResetForm(PasswordResetForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['email'].widget.attrs.update({'class': 'border border-gray-300 text-gray-900 rounded focus:ring-gray-600 focus:border-gray-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none'})
+
+
+
+class CustomSetPasswordForm(SetPasswordForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            field.widget.attrs.update({'class': 'border border-gray-300 text-gray-900 rounded focus:ring-gray-600 focus:border-gray-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none'})
+
+

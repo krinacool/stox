@@ -2513,3 +2513,1008 @@ AttributeError: 'NoneType' object has no attribute 'name'
 2024-07-24 19:11:54,400 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50076]
 2024-07-24 19:11:54,679 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50085]
 2024-07-24 19:11:54,695 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50085]
+2024-07-24 20:55:26,119 [mHTTP GET / 200 [0.07, 127.0.0.1:50367][0m
+2024-07-24 20:55:26,371 [mHTTP GET /static/landingasset/css/animate.css 200 [0.20, 127.0.0.1:50370][0m
+2024-07-24 20:55:26,380 [mHTTP GET /static/landingasset/css/style.css 200 [0.20, 127.0.0.1:50372][0m
+2024-07-24 20:55:26,380 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.21, 127.0.0.1:50369][0m
+2024-07-24 20:55:26,386 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.21, 127.0.0.1:50371][0m
+2024-07-24 20:55:26,387 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.22, 127.0.0.1:50367][0m
+2024-07-24 20:55:26,388 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.22, 127.0.0.1:50368][0m
+2024-07-24 20:55:26,413 [mHTTP GET /static/landingasset/img/process-icons/3.png 200 [0.02, 127.0.0.1:50367][0m
+2024-07-24 20:55:26,413 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.02, 127.0.0.1:50368][0m
+2024-07-24 20:55:26,417 [mHTTP GET /static/landingasset/img/process-icons/2.png 200 [0.02, 127.0.0.1:50371][0m
+2024-07-24 20:55:26,421 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.03, 127.0.0.1:50369][0m
+2024-07-24 20:55:26,421 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.03, 127.0.0.1:50372][0m
+2024-07-24 20:55:26,437 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.02, 127.0.0.1:50371][0m
+2024-07-24 20:55:26,443 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.01, 127.0.0.1:50369][0m
+2024-07-24 20:55:26,454 [mHTTP GET /static/landingasset/js/main.js 200 [0.03, 127.0.0.1:50368][0m
+2024-07-24 20:55:26,477 [mHTTP GET /static/landingasset/js/owl.carousel.min.js 200 [0.06, 127.0.0.1:50367][0m
+2024-07-24 20:55:26,486 [mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 200 [0.11, 127.0.0.1:50370][0m
+2024-07-24 20:55:26,490 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.02, 127.0.0.1:50368][0m
+2024-07-24 20:55:26,504 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.03, 127.0.0.1:50371][0m
+2024-07-24 20:55:26,507 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.03, 127.0.0.1:50369][0m
+2024-07-24 20:55:26,578 [33mHTTP GET /static/assets/images/logo-thumb.png 404 [0.03, 127.0.0.1:50369][0m
+2024-07-24 20:56:20,561 [32mHTTP GET /login/ 302 [0.07, 127.0.0.1:50381][0m
+2024-07-24 20:56:20,581 [32mHTTP GET /market 302 [0.01, 127.0.0.1:50381][0m
+2024-07-24 20:56:20,623 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:50381][0m
+2024-07-24 21:01:29,138 [mHTTP GET /admin/ 200 [0.07, 127.0.0.1:50478][0m
+2024-07-24 21:01:29,227 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:50479][0m
+2024-07-24 21:01:29,227 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:50478][0m
+2024-07-24 21:01:33,987 [mHTTP GET /admin/app/customuser/ 200 [0.13, 127.0.0.1:50478][0m
+2024-07-24 21:01:34,014 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:50483][0m
+2024-07-24 21:01:34,014 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:50479][0m
+2024-07-24 21:01:34,014 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.00, 127.0.0.1:50484][0m
+2024-07-24 21:01:34,030 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:50484][0m
+2024-07-24 21:01:34,032 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:50478][0m
+2024-07-24 21:01:36,803 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.17, 127.0.0.1:50478][0m
+2024-07-24 21:01:36,836 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:50484][0m
+2024-07-24 21:01:36,837 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:50479][0m
+2024-07-24 21:01:36,843 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:50479][0m
+2024-07-24 21:01:36,851 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:50478][0m
+2024-07-24 21:06:27,921 D:\stox\app\models.py changed, reloading.
+2024-07-24 21:07:09,330 D:\stox\app\admin.py changed, reloading.
+2024-07-24 21:07:12,409 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.15, 127.0.0.1:50579][0m
+2024-07-24 21:07:12,430 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:50580][0m
+2024-07-24 21:07:12,430 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:50580][0m
+2024-07-24 21:07:12,451 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:50579][0m
+2024-07-24 21:07:12,451 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:50580][0m
+2024-07-24 21:07:12,497 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:50579][0m
+2024-07-24 21:07:12,497 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:50580][0m
+2024-07-24 21:13:19,536 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:50687][0m
+2024-07-24 21:14:11,567 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:50699][0m
+2024-07-24 21:14:11,567 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:50700][0m
+2024-07-24 21:14:16,049 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:50703][0m
+2024-07-24 21:14:16,539 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50703][0m
+2024-07-24 21:14:16,547 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50704][0m
+2024-07-24 21:16:17,670 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:50779][0m
+2024-07-24 21:16:18,426 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50779][0m
+2024-07-24 21:16:18,439 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50780][0m
+2024-07-24 21:17:04,709 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:50809][0m
+2024-07-24 21:17:05,419 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50809][0m
+2024-07-24 21:17:05,437 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:50810][0m
+2024-07-24 21:18:10,543 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:50849][0m
+2024-07-24 21:18:11,222 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:50849][0m
+2024-07-24 21:18:11,223 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:50850][0m
+2024-07-24 21:18:14,594 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:50857][0m
+2024-07-24 21:18:15,510 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50857][0m
+2024-07-24 21:18:15,514 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50860][0m
+2024-07-24 21:19:51,793 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:50913][0m
+2024-07-24 21:19:52,385 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50913][0m
+2024-07-24 21:19:52,526 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50913][0m
+2024-07-24 21:20:26,817 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:50939][0m
+2024-07-24 21:20:27,530 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:50939][0m
+2024-07-24 21:20:27,543 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:50940][0m
+2024-07-24 21:21:57,582 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:51007][0m
+2024-07-24 21:21:58,430 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51007][0m
+2024-07-24 21:21:58,433 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51008][0m
+2024-07-24 21:22:09,149 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:51020][0m
+2024-07-24 21:22:10,042 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51020][0m
+2024-07-24 21:22:10,050 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:51021][0m
+2024-07-24 21:22:20,516 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51034][0m
+2024-07-24 21:22:20,929 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51034][0m
+2024-07-24 21:22:20,931 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51035][0m
+2024-07-24 21:22:31,610 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51046][0m
+2024-07-24 21:22:32,444 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:51047][0m
+2024-07-24 21:22:32,449 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:51046][0m
+2024-07-24 21:22:40,407 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51070][0m
+2024-07-24 21:22:41,184 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51071][0m
+2024-07-24 21:22:41,185 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51070][0m
+2024-07-24 21:22:48,857 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51079][0m
+2024-07-24 21:22:49,635 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51079][0m
+2024-07-24 21:22:49,646 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51080][0m
+2024-07-24 21:23:47,754 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:51146][0m
+2024-07-24 21:23:48,684 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:51146][0m
+2024-07-24 21:23:48,684 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51147][0m
+2024-07-24 21:24:38,673 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51229][0m
+2024-07-24 21:24:39,367 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51230][0m
+2024-07-24 21:24:39,383 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:51229][0m
+2024-07-24 21:28:00,342 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51365][0m
+2024-07-24 21:28:01,024 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51368][0m
+2024-07-24 21:28:01,024 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51369][0m
+2024-07-24 21:29:39,666 D:\stox\app\forms.py changed, reloading.
+2024-07-24 21:32:14,631 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51518][0m
+2024-07-24 21:32:15,357 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:51518][0m
+2024-07-24 21:32:15,436 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51518][0m
+2024-07-24 21:35:33,998 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.23, 127.0.0.1:51632][0m
+2024-07-24 21:35:34,045 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:51633][0m
+2024-07-24 21:35:34,045 [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:51636][0m
+2024-07-24 21:35:34,069 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:51632][0m
+2024-07-24 21:35:34,112 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:51632][0m
+2024-07-24 21:35:34,221 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:51632][0m
+2024-07-24 21:35:34,222 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:51636][0m
+2024-07-24 21:35:35,876 [mHTTP GET /watchlist 200 [0.18, 127.0.0.1:51636][0m
+2024-07-24 21:35:36,643 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51639][0m
+2024-07-24 21:35:36,643 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51640][0m
+2024-07-24 21:37:34,673 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51705][0m
+2024-07-24 21:37:35,191 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51705][0m
+2024-07-24 21:37:35,191 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51706][0m
+2024-07-24 21:40:07,187 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:51809][0m
+2024-07-24 21:40:07,749 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51809][0m
+2024-07-24 21:40:07,750 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51810][0m
+2024-07-24 21:44:43,779 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:51946][0m
+2024-07-24 21:44:44,812 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:51946][0m
+2024-07-24 21:44:44,812 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51947][0m
+2024-07-24 21:44:50,264 [mHTTP GET /watchlist 200 [0.16, 127.0.0.1:51957][0m
+2024-07-24 21:44:51,940 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:51957][0m
+2024-07-24 21:44:51,940 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:51956][0m
+2024-07-24 21:45:04,851 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:51970][0m
+2024-07-24 21:45:05,334 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51971][0m
+2024-07-24 21:45:05,338 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:51970][0m
+2024-07-24 21:47:08,947 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:52041][0m
+2024-07-24 21:47:09,628 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:52041][0m
+2024-07-24 21:47:09,642 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.05, 127.0.0.1:52042][0m
+2024-07-24 21:47:12,129 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:52042][0m
+2024-07-24 21:47:13,724 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52042][0m
+2024-07-24 21:47:13,724 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52041][0m
+2024-07-24 21:48:54,613 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:52109][0m
+2024-07-24 21:48:55,256 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:52109][0m
+2024-07-24 21:48:55,358 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52109][0m
+2024-07-24 21:50:25,680 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:52181][0m
+2024-07-24 21:50:26,559 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:52181][0m
+2024-07-24 21:50:26,575 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52182][0m
+2024-07-24 21:51:14,981 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:52217][0m
+2024-07-24 21:51:15,743 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52217][0m
+2024-07-24 21:51:15,756 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52218][0m
+2024-07-24 21:54:34,831 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:52427][0m
+2024-07-24 21:54:35,527 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:52427][0m
+2024-07-24 21:54:35,545 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52428][0m
+2024-07-24 21:54:54,509 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.28, 127.0.0.1:52446][0m
+2024-07-24 21:54:54,569 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:52447][0m
+2024-07-24 21:54:54,648 [36mHTTP GET /static/admin/js/urlify.js 304 [0.08, 127.0.0.1:52447][0m
+2024-07-24 21:54:54,663 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:52447][0m
+2024-07-24 21:54:54,674 [mHTTP GET /admin/jsi18n/ 200 [0.11, 127.0.0.1:52446][0m
+2024-07-24 21:54:54,872 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:52446][0m
+2024-07-24 21:54:54,872 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:52447][0m
+2024-07-24 21:55:03,960 [32mHTTP POST /admin/app/customuser/1/change/ 302 [0.06, 127.0.0.1:52455][0m
+2024-07-24 21:55:04,021 [mHTTP GET /admin/app/customuser/ 200 [0.05, 127.0.0.1:52455][0m
+2024-07-24 21:55:04,065 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52456][0m
+2024-07-24 21:55:04,065 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52460][0m
+2024-07-24 21:55:04,069 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:52461][0m
+2024-07-24 21:55:04,073 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:52460][0m
+2024-07-24 21:55:04,088 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:52455][0m
+2024-07-24 21:55:06,865 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:52455][0m
+2024-07-24 21:55:07,406 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52455][0m
+2024-07-24 21:55:07,418 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52455][0m
+2024-07-24 21:55:56,344 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: '='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 240, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=' from '='
+2024-07-24 21:55:56,356 [35;1mHTTP GET /watchlist 500 [0.34, 127.0.0.1:52513][0m
+2024-07-24 21:55:57,061 Not Found: /favicon.ico
+2024-07-24 21:55:57,061 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:52513][0m
+2024-07-24 21:56:20,386 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:52532][0m
+2024-07-24 21:56:21,572 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52532][0m
+2024-07-24 21:56:21,585 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52533][0m
+2024-07-24 21:56:36,171 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.18, 127.0.0.1:52544][0m
+2024-07-24 21:56:36,207 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:52545][0m
+2024-07-24 21:56:36,207 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:52548][0m
+2024-07-24 21:56:36,213 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52544][0m
+2024-07-24 21:56:36,223 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:52544][0m
+2024-07-24 21:56:36,248 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:52544][0m
+2024-07-24 21:56:36,248 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:52548][0m
+2024-07-24 21:56:41,176 [mHTTP POST /admin/app/customuser/1/change/ 200 [0.07, 127.0.0.1:52552][0m
+2024-07-24 21:56:41,210 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52553][0m
+2024-07-24 21:56:41,211 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52556][0m
+2024-07-24 21:56:41,219 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:52556][0m
+2024-07-24 21:56:41,228 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52552][0m
+2024-07-24 21:56:47,039 [mHTTP POST /admin/app/customuser/1/change/ 200 [0.08, 127.0.0.1:52560][0m
+2024-07-24 21:56:47,069 [36mHTTP GET /static/admin/js/urlify.js 304 [0.00, 127.0.0.1:52564][0m
+2024-07-24 21:56:47,069 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52561][0m
+2024-07-24 21:56:47,081 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:52561][0m
+2024-07-24 21:56:47,085 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52560][0m
+2024-07-24 21:57:15,096 D:\stox\app\models.py changed, reloading.
+2024-07-24 21:57:46,203 [32mHTTP POST /admin/app/customuser/1/change/ 302 [0.11, 127.0.0.1:52691][0m
+2024-07-24 21:57:46,296 [mHTTP GET /admin/app/customuser/ 200 [0.09, 127.0.0.1:52691][0m
+2024-07-24 21:57:46,327 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52692][0m
+2024-07-24 21:57:46,327 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52693][0m
+2024-07-24 21:57:46,329 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.01, 127.0.0.1:52694][0m
+2024-07-24 21:57:46,329 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:52695][0m
+2024-07-24 21:57:46,342 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52691][0m
+2024-07-24 21:57:48,950 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:52698][0m
+2024-07-24 21:57:49,446 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52699][0m
+2024-07-24 21:57:49,451 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:52698][0m
+2024-07-24 21:58:02,244 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.12, 127.0.0.1:52721][0m
+2024-07-24 21:58:02,275 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:52722][0m
+2024-07-24 21:58:02,276 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:52725][0m
+2024-07-24 21:58:02,282 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.01, 127.0.0.1:52725][0m
+2024-07-24 21:58:02,290 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52721][0m
+2024-07-24 21:58:10,316 [32mHTTP POST /admin/app/customuser/1/change/ 302 [0.03, 127.0.0.1:52731][0m
+2024-07-24 21:58:10,402 [mHTTP GET /admin/app/customuser/ 200 [0.08, 127.0.0.1:52731][0m
+2024-07-24 21:58:10,461 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:52732][0m
+2024-07-24 21:58:10,461 [36mHTTP GET /static/admin/js/urlify.js 304 [0.02, 127.0.0.1:52733][0m
+2024-07-24 21:58:10,465 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.02, 127.0.0.1:52734][0m
+2024-07-24 21:58:10,466 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.02, 127.0.0.1:52735][0m
+2024-07-24 21:58:10,472 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:52731][0m
+2024-07-24 21:58:15,887 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:52731][0m
+2024-07-24 21:58:16,346 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52731][0m
+2024-07-24 21:58:16,346 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52734][0m
+2024-07-24 22:02:41,430 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:52914][0m
+2024-07-24 22:02:42,164 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52914][0m
+2024-07-24 22:02:42,230 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52915][0m
+2024-07-24 22:05:14,449 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:53004][0m
+2024-07-24 22:05:15,272 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:53004][0m
+2024-07-24 22:05:15,289 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:53005][0m
+2024-07-24 22:06:26,252 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:53021][0m
+2024-07-24 22:07:11,989 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 240, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 380: 'endif'. Did you forget to register or load this tag?
+2024-07-24 22:07:12,003 [35;1mHTTP GET /watchlist 500 [0.25, 127.0.0.1:53021][0m
+2024-07-24 22:09:27,166 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:53029][0m
+2024-07-24 22:09:28,946 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:53029][0m
+2024-07-24 22:10:24,524 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:53029][0m
+2024-07-24 22:10:52,461 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:53029][0m
+2024-07-24 22:12:14,934 D:\stox\app\views.py changed, reloading.
+2024-07-24 22:12:53,270 D:\stox\app\views.py changed, reloading.
+2024-07-24 22:13:23,258 [32mHTTP POST /kyc 302 [0.06, 127.0.0.1:53074][0m
+2024-07-24 22:13:23,329 [mHTTP GET /profile 200 [0.06, 127.0.0.1:53074][0m
+2024-07-24 22:13:26,640 [mHTTP GET /profile 200 [0.02, 127.0.0.1:53074][0m
+2024-07-24 22:13:33,684 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.25, 127.0.0.1:53074][0m
+2024-07-24 22:13:33,717 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:53075][0m
+2024-07-24 22:13:33,717 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:53081][0m
+2024-07-24 22:13:33,729 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:53074][0m
+2024-07-24 22:13:33,747 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:53074][0m
+2024-07-24 22:13:33,796 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:53074][0m
+2024-07-24 22:13:33,796 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:53081][0m
+2024-07-24 22:13:38,927 [mHTTP GET /profile 200 [0.04, 127.0.0.1:53074][0m
+2024-07-24 22:14:20,577 [mHTTP GET /profile 200 [0.07, 127.0.0.1:53074][0m
+2024-07-24 22:14:25,237 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:53074][0m
+2024-07-24 22:14:41,057 D:\stox\app\views.py changed, reloading.
+2024-07-24 22:19:41,304 D:\stox\app\forms.py changed, reloading.
+2024-07-24 22:43:51,451 [mHTTP GET /watchlist 200 [0.20, 127.0.0.1:53301][0m
+2024-07-24 22:44:37,247 D:\stox\app\urls.py changed, reloading.
+2024-07-24 22:45:45,524 D:\stox\app\views.py changed, reloading.
+2024-07-24 22:46:04,719 [32mHTTP GET /reset_password 301 [0.05, 127.0.0.1:53396][0m
+2024-07-24 22:46:04,829 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: forgot_password.html
+2024-07-24 22:46:04,854 [35;1mHTTP GET /reset_password/ 500 [0.13, 127.0.0.1:53396][0m
+2024-07-24 22:49:07,382 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: forgot_password.html
+2024-07-24 22:49:07,391 [35;1mHTTP GET /reset_password/ 500 [0.15, 127.0.0.1:53463][0m
+2024-07-24 22:49:08,268 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: forgot_password.html
+2024-07-24 22:49:08,277 [35;1mHTTP GET /reset_password/ 500 [0.08, 127.0.0.1:53463][0m
+2024-07-24 22:49:34,651 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: forgot_password.html
+2024-07-24 22:49:34,659 [35;1mHTTP GET /reset_password/ 500 [0.08, 127.0.0.1:53472][0m
+2024-07-24 22:49:59,842 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: forgot_password.html
+2024-07-24 22:49:59,858 [35;1mHTTP GET /reset_password/ 500 [0.10, 127.0.0.1:53484][0m
+2024-07-24 22:50:15,408 [mHTTP GET /reset_password/ 200 [0.11, 127.0.0.1:53496][0m
+2024-07-24 22:50:15,474 [33mHTTP GET /static/assets/vendor/fonts/boxicons.css 404 [0.04, 127.0.0.1:53496][0m
+2024-07-24 22:50:15,477 [33mHTTP GET /static/assets/vendor/css/pages/page-auth.css 404 [0.04, 127.0.0.1:53501][0m
+2024-07-24 22:50:15,477 [33mHTTP GET /static/assets/css/demo.css 404 [0.04, 127.0.0.1:53499][0m
+2024-07-24 22:50:15,477 [33mHTTP GET /static/assets/vendor/css/core.css 404 [0.04, 127.0.0.1:53497][0m
+2024-07-24 22:50:15,480 [33mHTTP GET /static/assets/vendor/css/theme-default.css 404 [0.04, 127.0.0.1:53498][0m
+2024-07-24 22:50:15,480 [33mHTTP GET /static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css 404 [0.05, 127.0.0.1:53500][0m
+2024-07-24 22:50:15,511 [33mHTTP GET /static/assets/vendor/libs/popper/popper.js 404 [0.03, 127.0.0.1:53499][0m
+2024-07-24 22:50:15,517 [33mHTTP GET /static/assets/js/config.js 404 [0.04, 127.0.0.1:53496][0m
+2024-07-24 22:50:15,518 [33mHTTP GET /static/assets/vendor/js/helpers.js 404 [0.04, 127.0.0.1:53501][0m
+2024-07-24 22:50:15,519 [33mHTTP GET /static/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js 404 [0.03, 127.0.0.1:53500][0m
+2024-07-24 22:50:15,522 [33mHTTP GET /static/assets/vendor/libs/jquery/jquery.js 404 [0.04, 127.0.0.1:53497][0m
+2024-07-24 22:50:15,523 [33mHTTP GET /static/assets/vendor/js/bootstrap.js 404 [0.04, 127.0.0.1:53498][0m
+2024-07-24 22:50:15,539 [33mHTTP GET /static/assets/js/main.js 404 [0.02, 127.0.0.1:53500][0m
+2024-07-24 22:50:15,542 [33mHTTP GET /static/assets/vendor/js/menu.js 404 [0.02, 127.0.0.1:53499][0m
+2024-07-24 22:52:04,957 [mHTTP GET /reset_password/ 200 [0.08, 127.0.0.1:53521][0m
+2024-07-24 22:52:05,099 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.11, 127.0.0.1:53521][0m
+2024-07-24 22:54:09,331 [mHTTP GET /reset_password/ 200 [0.05, 127.0.0.1:53532][0m
+2024-07-24 22:57:59,069 [mHTTP GET /reset_password/ 200 [0.03, 127.0.0.1:53547][0m
+2024-07-24 22:59:40,593 D:\stox\app\forms.py changed, reloading.
+2024-07-24 22:59:43,612 [mHTTP GET /reset_password/ 200 [0.03, 127.0.0.1:53579][0m
+2024-07-24 23:00:46,163 D:\stox\app\forms.py changed, reloading.
+2024-07-24 23:00:48,901 [mHTTP GET /reset_password/ 200 [0.03, 127.0.0.1:53586][0m
+2024-07-24 23:01:22,465 [mHTTP GET /reset_password/ 200 [0.05, 127.0.0.1:53586][0m
+2024-07-24 23:01:37,932 [mHTTP GET /reset_password/ 200 [0.05, 127.0.0.1:53586][0m
+2024-07-24 23:01:42,572 [32mHTTP GET /login 301 [0.03, 127.0.0.1:53586][0m
+2024-07-24 23:01:42,621 [32mHTTP GET /login/ 302 [0.04, 127.0.0.1:53586][0m
+2024-07-24 23:01:42,645 [32mHTTP GET /market 302 [0.02, 127.0.0.1:53586][0m
+2024-07-24 23:01:42,693 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:53586][0m
+2024-07-24 23:01:47,000 [mHTTP GET /profile 200 [0.02, 127.0.0.1:53586][0m
+2024-07-24 23:01:49,605 [32mHTTP GET /logout 301 [0.03, 127.0.0.1:53586][0m
+2024-07-24 23:01:49,656 [32mHTTP GET /logout/ 302 [0.04, 127.0.0.1:53586][0m
+2024-07-24 23:01:49,690 [mHTTP GET /login/ 200 [0.03, 127.0.0.1:53586][0m
+2024-07-24 23:02:35,737 [mHTTP GET /login/ 200 [0.04, 127.0.0.1:53586][0m
+2024-07-24 23:02:49,281 [mHTTP GET /login/ 200 [0.05, 127.0.0.1:53586][0m
+2024-07-24 23:03:49,863 [mHTTP GET /login/ 200 [0.07, 127.0.0.1:53614][0m
+2024-07-24 23:03:52,263 [mHTTP GET /reset_password/ 200 [0.03, 127.0.0.1:53614][0m
+2024-07-24 23:04:03,246 [mHTTP GET /login/ 200 [0.03, 127.0.0.1:53614][0m
+2024-07-24 23:04:04,209 [mHTTP GET /login/ 200 [0.02, 127.0.0.1:53614][0m
+2024-07-24 23:04:05,219 [mHTTP GET /login/ 200 [0.03, 127.0.0.1:53614][0m
+2024-07-24 23:04:08,038 [mHTTP GET /reset_password/ 200 [0.02, 127.0.0.1:53614][0m
+2024-07-24 23:04:13,310 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:53614][0m
+2024-07-24 23:04:14,838 [mHTTP GET /reset_password/ 200 [0.02, 127.0.0.1:53614][0m
+2024-07-24 23:04:17,952 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 240, in form_valid
+    form.save(**opts)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\forms.py", line 376, in save
+    self.send_mail(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\forms.py", line 307, in send_mail
+    subject = loader.render_to_string(subject_template_name, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: password_reset_subject.txt
+2024-07-24 23:04:17,957 [35;1mHTTP POST /reset_password/ 500 [0.17, 127.0.0.1:53614][0m
+2024-07-24 23:05:46,807 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 240, in form_valid
+    form.save(**opts)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\forms.py", line 376, in save
+    self.send_mail(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\forms.py", line 310, in send_mail
+    body = loader.render_to_string(email_template_name, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: password_reset_email.html
+2024-07-24 23:05:46,820 [35;1mHTTP POST /reset_password/ 500 [0.11, 127.0.0.1:53630][0m
+2024-07-24 23:07:03,410 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 241, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 63, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 57, in get_success_url
+    if not self.success_url:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 187, in __wrapper__
+    result = func(*self._args, **self._kw)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_done' not found. 'password_reset_done' is not a valid view function or pattern name.
+2024-07-24 23:07:03,416 [35;1mHTTP POST /reset_password/ 500 [4.61, 127.0.0.1:53634][0m
+2024-07-24 23:10:33,058 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 241, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 63, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 57, in get_success_url
+    if not self.success_url:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 187, in __wrapper__
+    result = func(*self._args, **self._kw)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_done' not found. 'password_reset_done' is not a valid view function or pattern name.
+2024-07-24 23:10:33,068 [35;1mHTTP POST /reset_password/ 500 [3.93, 127.0.0.1:53663][0m
+2024-07-24 23:11:28,999 [32mHTTP GET /reset/Ng/caoz1h-c092bca2e17e08d3768a930af39a1c78/ 302 [0.02, 127.0.0.1:53707][0m
+2024-07-24 23:11:29,087 [mHTTP GET /reset/Ng/set-password/ 200 [0.08, 127.0.0.1:53707][0m
+2024-07-24 23:11:51,783 [32mHTTP POST /reset/Ng/set-password/ 302 [1.10, 127.0.0.1:53707][0m
+2024-07-24 23:11:51,801 [32mHTTP GET /reset_password_complete/ 302 [0.01, 127.0.0.1:53707][0m
+2024-07-24 23:11:51,831 [32mHTTP GET /login 301 [0.03, 127.0.0.1:53707][0m
+2024-07-24 23:11:51,850 [mHTTP GET /login/ 200 [0.02, 127.0.0.1:53707][0m
+2024-07-24 23:12:02,960 [32mHTTP POST /login/ 302 [0.90, 127.0.0.1:53707][0m
+2024-07-24 23:12:02,983 [32mHTTP GET /market 302 [0.02, 127.0.0.1:53707][0m
+2024-07-24 23:12:03,042 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:53707][0m
+2024-07-24 23:12:12,731 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:53735][0m
+2024-07-24 23:12:12,731 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:53734][0m
+2024-07-24 23:12:33,156 [mHTTP GET /portfolio 200 [0.05, 127.0.0.1:53743][0m
+2024-07-24 23:13:32,970 [mHTTP GET /reset_password/ 200 [0.01, 127.0.0.1:53743][0m
+2024-07-24 23:13:41,804 D:\stox\app\urls.py changed, reloading.
+2024-07-24 23:13:49,331 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 241, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 63, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 57, in get_success_url
+    if not self.success_url:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 187, in __wrapper__
+    result = func(*self._args, **self._kw)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_done' not found. 'password_reset_done' is not a valid view function or pattern name.
+2024-07-24 23:13:49,341 [35;1mHTTP POST /reset_password/ 500 [3.71, 127.0.0.1:53769][0m
+2024-07-24 23:14:04,390 D:\stox\app\urls.py changed, reloading.
+2024-07-24 23:16:40,810 D:\stox\app\urls.py changed, reloading.
+2024-07-24 23:16:55,016 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 241, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 63, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 57, in get_success_url
+    if not self.success_url:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 187, in __wrapper__
+    result = func(*self._args, **self._kw)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_done' not found. 'password_reset_done' is not a valid view function or pattern name.
+2024-07-24 23:16:55,032 [35;1mHTTP POST /reset_password/ 500 [3.79, 127.0.0.1:53851][0m
+2024-07-24 23:17:19,486 D:\stox\app\urls.py changed, reloading.
+2024-07-24 23:27:42,835 D:\stox\app\urls.py changed, reloading.
+2024-07-24 23:27:52,537 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 241, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 63, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 57, in get_success_url
+    if not self.success_url:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 187, in __wrapper__
+    result = func(*self._args, **self._kw)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_done' not found. 'password_reset_done' is not a valid view function or pattern name.
+2024-07-24 23:27:52,547 [35;1mHTTP POST /reset_password/ 500 [3.88, 127.0.0.1:53930][0m
+2024-07-24 23:28:14,583 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 241, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 63, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 57, in get_success_url
+    if not self.success_url:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 187, in __wrapper__
+    result = func(*self._args, **self._kw)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_done' not found. 'password_reset_done' is not a valid view function or pattern name.
+2024-07-24 23:28:14,600 [35;1mHTTP POST /reset_password/ 500 [3.78, 127.0.0.1:53944][0m
+2024-07-24 23:28:19,656 [mHTTP GET /reset_password/ 200 [0.06, 127.0.0.1:53944][0m
+2024-07-24 23:28:21,197 [mHTTP GET /reset_password/ 200 [0.01, 127.0.0.1:53944][0m
+2024-07-24 23:28:21,419 [mHTTP GET /reset_password/ 200 [0.01, 127.0.0.1:53944][0m
+2024-07-24 23:28:29,370 Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 227, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\views.py", line 241, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 63, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\generic\edit.py", line 57, in get_success_url
+    if not self.success_url:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 187, in __wrapper__
+    result = func(*self._args, **self._kw)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_done' not found. 'password_reset_done' is not a valid view function or pattern name.
+2024-07-24 23:28:29,386 [35;1mHTTP POST /reset_password/ 500 [4.50, 127.0.0.1:53944][0m
+2024-07-24 23:31:55,701 D:\stox\stock\urls.py changed, reloading.
+2024-07-24 23:32:05,074 [32mHTTP POST /reset_password/ 302 [3.80, 127.0.0.1:54018][0m
+2024-07-24 23:32:05,170 [mHTTP GET /password_reset/done/ 200 [0.09, 127.0.0.1:54018][0m
+2024-07-24 23:33:03,689 [32mHTTP GET /reset/Ng/cap01d-f6c9b0ef47d17c524f3ad0e7f1519e35/ 302 [0.02, 127.0.0.1:54018][0m
+2024-07-24 23:33:03,739 [mHTTP GET /reset/Ng/set-password/ 200 [0.04, 127.0.0.1:54018][0m
+2024-07-24 23:33:19,412 [32mHTTP POST /reset/Ng/set-password/ 302 [1.06, 127.0.0.1:54018][0m
+2024-07-24 23:33:19,458 [mHTTP GET /reset/done/ 200 [0.04, 127.0.0.1:54018][0m
+2024-07-24 23:33:22,483 [mHTTP GET /login/ 200 [0.03, 127.0.0.1:54018][0m
+2024-07-24 23:33:28,862 [mHTTP GET /login/ 200 [0.02, 127.0.0.1:54018][0m
+2024-07-24 23:33:37,494 [32mHTTP POST /login/ 302 [1.08, 127.0.0.1:54018][0m
+2024-07-24 23:33:37,515 [32mHTTP GET /market 302 [0.02, 127.0.0.1:54018][0m
+2024-07-24 23:33:37,558 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:54018][0m
+2024-07-24 23:38:29,693 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:38:50,456 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:39:06,352 [32mHTTP GET /admin/ 302 [0.05, 127.0.0.1:54198][0m
+2024-07-24 23:39:06,407 [mHTTP GET /admin/login/?next=/admin/ 200 [0.05, 127.0.0.1:54198][0m
+2024-07-24 23:39:06,448 [33mHTTP GET /static/None 404 [0.01, 127.0.0.1:54198][0m
+2024-07-24 23:39:06,509 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:54198][0m
+2024-07-24 23:39:06,676 [33mHTTP GET /static/static/images/brand/logo/brand-logo.png 404 [0.01, 127.0.0.1:54198][0m
+2024-07-24 23:39:16,905 [mHTTP GET /static/vendor/adminlte/css/adminlte.min.css.map 200 [0.10, 127.0.0.1:54202][0m
+2024-07-24 23:39:16,915 [mHTTP GET /static/vendor/adminlte/js/adminlte.min.js.map 200 [0.12, 127.0.0.1:54201][0m
+2024-07-24 23:39:16,916 [mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js.map 200 [0.12, 127.0.0.1:54198][0m
+2024-07-24 23:39:34,980 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:39:37,861 [mHTTP GET /admin/login/?next=/admin/ 200 [0.03, 127.0.0.1:54225][0m
+2024-07-24 23:39:37,887 [33mHTTP GET /static/static/images/brand/logo/brand-logo.png 404 [0.01, 127.0.0.1:54225][0m
+2024-07-24 23:39:49,252 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:39:51,643 [mHTTP GET /admin/login/?next=/admin/ 200 [0.04, 127.0.0.1:54244][0m
+2024-07-24 23:39:51,690 [mHTTP GET /static/images/brand/logo/brand-logo.png 200 [0.03, 127.0.0.1:54244][0m
+2024-07-24 23:41:35,438 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:41:38,477 [mHTTP GET /admin/login/?next=/admin/ 200 [0.06, 127.0.0.1:54379][0m
+2024-07-24 23:41:38,527 [mHTTP GET /static/images/brand/logo/brand.jpg 200 [0.05, 127.0.0.1:54379][0m
+2024-07-24 23:42:53,037 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:42:57,507 [mHTTP GET /password_reset/done/ 200 [0.03, 127.0.0.1:54431][0m
+2024-07-24 23:42:57,520 [36mHTTP GET /static/images/brand/logo/brand.jpg 304 [0.00, 127.0.0.1:54431][0m
+2024-07-24 23:43:07,108 [mHTTP GET /admin/login/?next=/admin/ 200 [0.08, 127.0.0.1:54433][0m
+2024-07-24 23:43:07,176 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:54433][0m
+2024-07-24 23:43:07,683 [mHTTP GET /admin/login/?next=/admin/ 200 [0.02, 127.0.0.1:54433][0m
+2024-07-24 23:43:08,026 [mHTTP GET /admin/login/?next=/admin/ 200 [0.03, 127.0.0.1:54433][0m
+2024-07-24 23:43:08,050 [36mHTTP GET /static/images/brand/logo/brand.jpg 304 [0.00, 127.0.0.1:54433][0m
+2024-07-24 23:43:50,798 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:43:53,341 [mHTTP GET /admin/login/?next=/admin/ 200 [0.05, 127.0.0.1:54467][0m
+2024-07-24 23:43:53,362 [36mHTTP GET /static/images/brand/logo/brand.jpg 304 [0.00, 127.0.0.1:54467][0m
+2024-07-24 23:43:53,851 [mHTTP GET /admin/login/?next=/admin/ 200 [0.02, 127.0.0.1:54467][0m
+2024-07-24 23:43:54,215 [mHTTP GET /admin/login/?next=/admin/ 200 [0.02, 127.0.0.1:54467][0m
+2024-07-24 23:43:54,503 [mHTTP GET /admin/login/?next=/admin/ 200 [0.01, 127.0.0.1:54467][0m
+2024-07-24 23:43:55,163 [mHTTP GET /admin/login/?next=/admin/ 200 [0.01, 127.0.0.1:54467][0m
+2024-07-24 23:46:53,866 [mHTTP GET /password_reset/done/ 200 [0.01, 127.0.0.1:55026][0m
+2024-07-24 23:46:53,934 [mHTTP GET /static/images/brand/logo/brand.jpg 200 [0.05, 127.0.0.1:55026][0m
+2024-07-24 23:46:54,955 [mHTTP GET /password_reset/done/ 200 [0.02, 127.0.0.1:55026][0m
+2024-07-24 23:47:24,696 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:47:28,065 [mHTTP GET /password_reset/done/ 200 [0.03, 127.0.0.1:55098][0m
+2024-07-24 23:47:28,081 [36mHTTP GET /static/images/brand/logo/brand.jpg 304 [0.01, 127.0.0.1:55098][0m
+2024-07-24 23:47:28,488 [mHTTP GET /password_reset/done/ 200 [0.01, 127.0.0.1:55098][0m
+2024-07-24 23:47:29,715 [mHTTP GET /password_reset/done/ 200 [0.01, 127.0.0.1:55098][0m
+2024-07-24 23:47:30,063 [mHTTP GET /password_reset/done/ 200 [0.01, 127.0.0.1:55098][0m
+2024-07-24 23:47:59,653 [mHTTP GET /admin/login/?next=/admin/ 200 [0.04, 127.0.0.1:55118][0m
+2024-07-24 23:47:59,671 [36mHTTP GET /static/images/brand/logo/brand.jpg 304 [0.00, 127.0.0.1:55118][0m
+2024-07-24 23:47:59,714 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:55118][0m
+2024-07-24 23:48:06,000 [32mHTTP POST /admin/login/?next=/admin/ 302 [0.53, 127.0.0.1:55122][0m
+2024-07-24 23:48:06,061 [mHTTP GET /admin/ 200 [0.06, 127.0.0.1:55122][0m
+2024-07-24 23:48:06,122 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:55122][0m
+2024-07-24 23:50:16,725 D:\stox\stock\settings.py changed, reloading.
+2024-07-24 23:50:19,990 [mHTTP GET /password_reset/done/ 200 [0.02, 127.0.0.1:55316][0m
+2024-07-24 23:50:20,035 [mHTTP GET /static/images/brand/logo/brand.png 200 [0.03, 127.0.0.1:55316][0m
+2024-07-24 23:50:50,172 D:\stox\stock\settings.py changed, reloading.

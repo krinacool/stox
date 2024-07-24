@@ -149,3 +149,9 @@ EMAIL_USE_TLS = True
 SYMBOLS_FILE = 'C:\\Users\\atulg\\Desktop\\stock\\data\\symbols.csv'
 DATA_FILE = 'C:\\Users\\atulg\\Desktop\\stock\\data\\data.csv'
 LIMIT_ORDERS_FILE = 'C:\\Users\\atulg\\Desktop\\stock\\data\\limit_orders.csv'
+
+JAZZMIN_SETTINGS = {
+    "site_logo": 'images/brand/logo/brand.png',
+    "login_logo": 'images/brand/logo/brand.png',
+    "site_logo_classes":'img-circle',
+}
