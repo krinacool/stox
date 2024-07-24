@@ -24,7 +24,7 @@ class StockConsumer(AsyncWebsocketConsumer):
                         symbol_data = await self.get_symbol_data(instrument)
                         syb = symbol_data.symbol
                         if syb.strip() == "":
-                            syb = symbols.instrument_key
+                            syb = symbol_data.instrument_key
                         response_data.append({
                             'instrument': instrument,
                             'data': {
