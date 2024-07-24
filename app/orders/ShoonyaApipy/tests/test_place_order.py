@@ -30,9 +30,27 @@ def shoonya_order(obj):
     try:
         from app.models import Shoonya_Instrument, Instrument
         token = Instrument.objects.filter(instrument_key=obj.instrument_key).first().exchange_token
-        syb = Shoonya_Instrument.objects.filter(exchange_token=token).filter(exchange=obj.segment).first()
+        segment = 'NSE'
+        if obj.segment == 'BSE_EQ':
+            segment = 'BSE'
+        elif obj.segment == 'BSE_FO':
+            segment = 'BFO'
+        elif obj.segment == 'NCD_FO':
+            segment = 'CDS'
+        elif obj.segment == 'MCX_FO':
+            segment = 'MCX'
+        elif obj.segment == 'NSE_FO':
+            segment = 'NFO'
+        elif obj.segment == 'NSE_EQ':
+            segment = 'NSE'
+        print('=-=-=-')
+        print(token)
+        print(obj.segment)
+        print(segment)
+        syb = Shoonya_Instrument.objects.all().filter(exchange=segment).filter(exchange_token=str(token)).first()
+        print(syb.tradingsymbol)
         ret = api.place_order(buy_or_sell=buy_or_sell, product_type=product_type,
-                                exchange=obj.segment, tradingsymbol=syb.tradingsymbol, 
+                                exchange=segment, tradingsymbol=syb.tradingsymbol, 
                                 quantity=1, discloseqty=0,price_type='MKT', price=0, trigger_price=0,
                                 retention='DAY', remarks='my_order_001')
         print('ret')
