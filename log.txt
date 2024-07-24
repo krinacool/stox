@@ -1584,3 +1584,137 @@ django.db.utils.IntegrityError: NOT NULL constraint failed: app_order.price
 2024-07-24 14:42:07,388 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:59857][0m
 2024-07-24 14:42:14,113 [mHTTP GET /orders 200 [0.05, 127.0.0.1:59857][0m
 2024-07-24 14:43:49,516 D:\stox\app\models.py changed, reloading.
+2024-07-24 14:52:30,953 [32mHTTP GET /search?q=nifty 301 [0.05, 127.0.0.1:60020][0m
+2024-07-24 14:52:31,132 [mHTTP GET /search/?q=nifty 200 [0.17, 127.0.0.1:60020][0m
+2024-07-24 14:54:06,446 D:\stox\app\views.py changed, reloading.
+2024-07-24 14:54:09,268 [mHTTP GET /search/?q=nifty 200 [0.02, 127.0.0.1:60037][0m
+2024-07-24 14:54:33,700 D:\stox\app\views.py changed, reloading.
+2024-07-24 14:54:37,421 [mHTTP GET /search/?q=nifty 200 [0.11, 127.0.0.1:60051][0m
+2024-07-24 14:58:00,373 [mHTTP GET /search/?q=nifty%2050 200 [0.05, 127.0.0.1:60301][0m
+2024-07-24 14:58:17,447 D:\stox\app\views.py changed, reloading.
+2024-07-24 14:58:20,315 [mHTTP GET /search/?q=nifty%2050 200 [0.04, 127.0.0.1:60314][0m
+2024-07-24 14:59:30,971 D:\stox\app\views.py changed, reloading.
+2024-07-24 14:59:34,770 [mHTTP GET /search/?q=nifty%2050 200 [0.09, 127.0.0.1:60326][0m
+2024-07-24 14:59:35,993 [mHTTP GET /search/?q=nifty%2050 200 [0.03, 127.0.0.1:60326][0m
+2024-07-24 14:59:36,529 [mHTTP GET /search/?q=nifty%2050 200 [0.04, 127.0.0.1:60326][0m
+2024-07-24 14:59:40,128 [mHTTP GET /search/?q=nifty 200 [0.10, 127.0.0.1:60326][0m
+2024-07-24 15:01:39,139 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:01:44,082 [mHTTP GET /search/?q=nifty 200 [0.15, 127.0.0.1:60420][0m
+2024-07-24 15:01:45,669 [mHTTP GET /search/?q=nifty 200 [0.07, 127.0.0.1:60420][0m
+2024-07-24 15:01:46,199 [mHTTP GET /search/?q=nifty 200 [0.07, 127.0.0.1:60420][0m
+2024-07-24 15:02:57,725 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:03:01,356 [mHTTP GET /search/?q=nifty 200 [0.11, 127.0.0.1:60449][0m
+2024-07-24 15:03:08,296 [mHTTP GET /search/?q=nifty%2050 200 [0.05, 127.0.0.1:60450][0m
+2024-07-24 15:04:25,087 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:04:33,116 Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\stox\app\views.py", line 142, in search_instruments
+    if qarr.length() == 1:
+AttributeError: 'list' object has no attribute 'length'
+2024-07-24 15:04:33,127 [35;1mHTTP GET /search/?q=nifty%2050 500 [0.11, 127.0.0.1:60496][0m
+2024-07-24 15:04:34,197 Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\stox\app\views.py", line 142, in search_instruments
+    if qarr.length() == 1:
+AttributeError: 'list' object has no attribute 'length'
+2024-07-24 15:04:34,203 [35;1mHTTP GET /search/?q=nifty%2050 500 [0.08, 127.0.0.1:60496][0m
+2024-07-24 15:04:42,719 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:04:45,777 Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\stox\app\views.py", line 160, in search_instruments
+    for s in suggestions if s.tradingsymbol
+UnboundLocalError: local variable 'suggestions' referenced before assignment
+2024-07-24 15:04:45,782 [35;1mHTTP GET /search/?q=nifty%2050 500 [0.06, 127.0.0.1:60506][0m
+2024-07-24 15:05:34,558 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:05:43,166 [mHTTP GET /search/?q=nifty 200 [0.02, 127.0.0.1:60524][0m
+2024-07-24 15:05:57,384 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:06:00,938 [mHTTP GET /search/?q=nifty 200 [0.02, 127.0.0.1:60536][0m
+2024-07-24 15:06:09,873 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:06:14,854 [mHTTP GET /search/?q=nifty 200 [0.04, 127.0.0.1:60542][0m
+2024-07-24 15:06:31,257 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:06:34,147 Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\stox\app\views.py", line 143, in search_instruments
+    if qarr.length == 1:
+AttributeError: 'list' object has no attribute 'length'
+2024-07-24 15:06:34,155 [35;1mHTTP GET /search/?q=nifty 500 [0.06, 127.0.0.1:60560][0m
+2024-07-24 15:06:42,773 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:06:56,566 [mHTTP GET /search/?q=nifty 200 [0.11, 127.0.0.1:60579][0m
+2024-07-24 15:19:23,920 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:20:08,983 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:20:12,277 [mHTTP GET /search/?q=nifty 200 [0.09, 127.0.0.1:60721][0m
+2024-07-24 15:21:32,579 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:22:24,636 [mHTTP GET /search/?q=banknifty%2060000 200 [0.07, 127.0.0.1:60756][0m
+2024-07-24 15:22:46,783 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:22:49,575 [mHTTP GET /search/?q=banknifty%2060000 200 [0.04, 127.0.0.1:60769][0m
+2024-07-24 15:23:44,698 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:24:24,837 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:24:28,136 [mHTTP GET /search/?q=banknifty%2060000 200 [0.05, 127.0.0.1:60796][0m
+2024-07-24 15:24:45,786 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:24:48,714 [mHTTP GET /search/?q=banknifty%2060000 200 [0.04, 127.0.0.1:60809][0m
+2024-07-24 15:25:26,010 [mHTTP GET /search/?q=banknifty%2060000 200 [0.04, 127.0.0.1:60809][0m
+2024-07-24 15:25:47,175 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:25:50,005 [mHTTP GET /search/?q=banknifty%2060000 200 [0.04, 127.0.0.1:60827][0m
+2024-07-24 15:26:07,056 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:26:10,984 [mHTTP GET /search/?q=banknifty%2060000 200 [0.08, 127.0.0.1:60836][0m
+2024-07-24 15:26:29,277 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:26:43,138 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:26:45,837 [mHTTP GET /search/?q=banknifty%2060000 200 [0.04, 127.0.0.1:60854][0m
+2024-07-24 15:27:02,927 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:27:05,635 [mHTTP GET /search/?q=banknifty%2060000 200 [0.04, 127.0.0.1:60859][0m
+2024-07-24 15:27:48,725 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:27:51,768 [mHTTP GET /search/?q=banknifty%2060000 200 [0.04, 127.0.0.1:60880][0m
+2024-07-24 15:29:33,470 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:29:37,424 [mHTTP GET /search/?q=banknifty%2060000 200 [0.04, 127.0.0.1:60900][0m
+2024-07-24 15:31:47,057 [mHTTP GET /search/?q=KOTAK%20MAHINDRA%20MUTUAL%20FUND%20P 200 [0.04, 127.0.0.1:60922][0m
+2024-07-24 15:32:03,169 [mHTTP GET /search/?q=STATE%20BANK%20OF%20INDIA 200 [0.04, 127.0.0.1:60922][0m
+2024-07-24 15:32:30,539 D:\stox\app\views.py changed, reloading.
+2024-07-24 15:32:57,169 D:\stox\app\views.py changed, reloading.

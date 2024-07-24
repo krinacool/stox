@@ -135,14 +135,27 @@ def market(request):
 
 def search_instruments(request):
     query = request.GET.get('q', '')
+    print(query)
+    suggestions = Instrument.objects.none()
     if query:
-        suggestions = Instrument.objects.filter(
-            models.Q(tradingsymbol__icontains=query) |
-            models.Q(name__icontains=query) |
-            models.Q(expiry__icontains=query) |
-            models.Q(strike__icontains=query) |
-            models.Q(exchange__icontains=query)
-        ) # Limit the results to 20
+        qarr = query.split(' ')
+        print(qarr)
+        if qarr.__len__() == 2:
+            suggestions = Instrument.objects.filter(strike=qarr[1]).filter(tradingsymbol__startswith=qarr[0])
+        else:
+            suggestions = Instrument.objects.filter(
+                models.Q(tradingsymbol__icontains=qarr[0]) |
+                models.Q(name__startswith=qarr[0])
+            ).reverse()
+
+
+            # suggestions = Instrument.objects.filter(
+            #     models.Q(tradingsymbol__icontains=query) |
+            #     models.Q(name__startswith=query) |
+            #     models.Q(expiry__startswith=query) |
+            #     models.Q(strike__startswith=query) |
+            #     models.Q(exchange__startswith=query)
+            # ).reverse()
     else:
         suggestions = Instrument.objects.none()
     results = [
