@@ -2478,3 +2478,38 @@ AttributeError: 'NoneType' object has no attribute 'name'
 2024-07-24 18:58:53,705 WebSocket CONNECT /ws/stocks/ [127.0.0.1:49773]
 2024-07-24 18:58:54,081 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:49770][0m
 2024-07-24 18:58:54,081 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:49769][0m
+2024-07-24 19:07:23,491 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:50000][0m
+2024-07-24 19:07:24,000 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50001]
+2024-07-24 19:07:24,010 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50001]
+2024-07-24 19:07:26,234 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:50000][0m
+2024-07-24 19:07:26,242 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50001]
+2024-07-24 19:07:26,352 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50005]
+2024-07-24 19:07:26,360 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50005]
+2024-07-24 19:07:46,998 D:\stox\app\consumers.py changed, reloading.
+2024-07-24 19:07:52,446 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:50018][0m
+2024-07-24 19:07:52,571 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50020]
+2024-07-24 19:07:52,581 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50020]
+2024-07-24 19:08:02,904 D:\stox\app\consumers.py changed, reloading.
+2024-07-24 19:08:05,884 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:50030][0m
+2024-07-24 19:08:06,024 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50031]
+2024-07-24 19:08:06,035 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50031]
+2024-07-24 19:08:41,835 D:\stox\app\consumers.py changed, reloading.
+2024-07-24 19:08:45,003 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:50035][0m
+2024-07-24 19:08:45,160 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50046]
+2024-07-24 19:08:45,169 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50046]
+2024-07-24 19:09:06,570 D:\stox\app\consumers.py changed, reloading.
+2024-07-24 19:09:12,054 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:50053][0m
+2024-07-24 19:09:12,205 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50055]
+2024-07-24 19:09:12,214 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50055]
+2024-07-24 19:09:51,418 D:\stox\app\consumers.py changed, reloading.
+2024-07-24 19:09:56,816 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:50066][0m
+2024-07-24 19:09:56,955 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50070]
+2024-07-24 19:09:56,962 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50070]
+2024-07-24 19:10:58,445 [mHTTP GET /watchlist 200 [0.06, 127.0.0.1:50071][0m
+2024-07-24 19:10:58,453 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50070]
+2024-07-24 19:10:58,714 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50076]
+2024-07-24 19:10:58,721 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50076]
+2024-07-24 19:11:54,394 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:50071][0m
+2024-07-24 19:11:54,400 WebSocket DISCONNECT /ws/stocks/ [127.0.0.1:50076]
+2024-07-24 19:11:54,679 WebSocket HANDSHAKING /ws/stocks/ [127.0.0.1:50085]
+2024-07-24 19:11:54,695 WebSocket CONNECT /ws/stocks/ [127.0.0.1:50085]
