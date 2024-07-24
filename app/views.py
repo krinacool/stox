@@ -140,12 +140,20 @@ def search_instruments(request):
     if query:
         qarr = query.split(' ')
         print(qarr)
-        if qarr.__len__() == 2:
-            suggestions = Instrument.objects.filter(strike=qarr[1]).filter(tradingsymbol__startswith=qarr[0])
+        if qarr[1].isdigit():
+            if qarr.__len__() == 2:
+                suggestions = Instrument.objects.filter(
+                    strike__startswith=qarr[1]
+                    ).filter(tradingsymbol__startswith=qarr[0])
+            else:
+                suggestions = Instrument.objects.filter(
+                    models.Q(tradingsymbol__icontains=qarr[0]) |
+                    models.Q(name__startswith=qarr[0])
+                ).reverse()
         else:
             suggestions = Instrument.objects.filter(
-                models.Q(tradingsymbol__icontains=qarr[0]) |
-                models.Q(name__startswith=qarr[0])
+                models.Q(tradingsymbol__icontains=query) |
+                models.Q(name__startswith=query)
             ).reverse()
 
 
