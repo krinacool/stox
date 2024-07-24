@@ -5,8 +5,9 @@ import logging
 import yaml
 import pyotp
 from settings.models import ShoonyaApi
-#enable dbug to see request and responses
-logging.basicConfig(level=logging.DEBUG)
+import time
+# #enable dbug to see request and responses
+# logging.basicConfig(level=logging.DEBUG)
 
 #start of our program
 def shoonya_order(obj):
@@ -56,12 +57,11 @@ def shoonya_order(obj):
         print('ret')
         print(ret)
         orderno = ret['norenordno']
+        time.sleep(4)
         ret = api.single_order_history(orderno=orderno)
         from app.models import Shoonya_Orders
         Shoonya_Orders.objects.create(response=ret)
-        for ord in ret:
-            print('-=-=-=')
-            print(f"{ord['qty']} prc: {ord['prc']} trgprc: {ord['trgprc']} {ord['rpt']}")
+        return ret[0]['avgprc']
     except Exception as e:
         print('Error is')
         print(e)

@@ -1493,3 +1493,94 @@ AttributeError: 'function' object has no attribute 'objects'
 2024-07-23 17:45:30,991 [mHTTP GET /performance 200 [0.03, 127.0.0.1:55800][0m
 2024-07-23 17:45:31,413 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55801][0m
 2024-07-23 17:45:31,413 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55800][0m
+2024-07-24 14:33:45,885 [mHTTP GET /portfolio 200 [0.07, 127.0.0.1:59747][0m
+2024-07-24 14:33:54,632 [32mHTTP POST /place_order 302 [4.59, 127.0.0.1:59747][0m
+2024-07-24 14:33:54,699 [mHTTP GET /orders 200 [0.06, 127.0.0.1:59747][0m
+2024-07-24 14:33:58,193 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:59747][0m
+2024-07-24 14:33:59,192 [mHTTP GET /admin/app/shoonya_orders/ 200 [0.08, 127.0.0.1:59747][0m
+2024-07-24 14:35:16,753 [mHTTP GET /admin/app/shoonya_orders/2/change/ 200 [0.05, 127.0.0.1:59763][0m
+2024-07-24 14:35:16,774 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.00, 127.0.0.1:59764][0m
+2024-07-24 14:35:16,775 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:59765][0m
+2024-07-24 14:35:16,784 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:59763][0m
+2024-07-24 14:36:02,922 D:\stox\app\orders\ShoonyaApipy\tests\test_place_order.py changed, reloading.
+2024-07-24 14:36:23,653 D:\stox\app\models.py changed, reloading.
+2024-07-24 14:39:55,298 D:\stox\app\models.py changed, reloading.
+2024-07-24 14:40:09,969 Internal Server Error: /place_order
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: app_order.price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 373, in place_order
+    status = market_order(request.user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,'Market')
+  File "D:\stox\app\orders\market.py", line 59, in market_order
+    order.save()
+  File "D:\stox\app\models.py", line 341, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\base.py", line 1036, in _save_table
+    updated = self._do_update(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\base.py", line 1101, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: app_order.price
+2024-07-24 14:40:09,976 [35;1mHTTP POST /place_order 500 [4.69, 127.0.0.1:59828][0m
+2024-07-24 14:40:10,196 Not Found: /favicon.ico
+2024-07-24 14:40:10,197 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:59828][0m
+2024-07-24 14:40:41,542 [mHTTP GET /admin/app/shoonya_orders/ 200 [0.12, 127.0.0.1:59828][0m
+2024-07-24 14:41:04,672 [32mHTTP GET /market 302 [0.01, 127.0.0.1:59828][0m
+2024-07-24 14:41:04,698 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:59828][0m
+2024-07-24 14:41:40,979 D:\stox\app\models.py changed, reloading.
+2024-07-24 14:41:59,451 [32mHTTP POST /place_order 302 [9.14, 127.0.0.1:59857][0m
+2024-07-24 14:41:59,543 [mHTTP GET /orders 200 [0.09, 127.0.0.1:59857][0m
+2024-07-24 14:42:02,840 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:59857][0m
+2024-07-24 14:42:07,318 [mHTTP GET /admin/app/shoonya_orders/ 200 [0.09, 127.0.0.1:59857][0m
+2024-07-24 14:42:07,343 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:59858][0m
+2024-07-24 14:42:07,344 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:59869][0m
+2024-07-24 14:42:07,344 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:59868][0m
+2024-07-24 14:42:07,357 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:59857][0m
+2024-07-24 14:42:07,388 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:59868][0m
+2024-07-24 14:42:07,388 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.00, 127.0.0.1:59857][0m
+2024-07-24 14:42:14,113 [mHTTP GET /orders 200 [0.05, 127.0.0.1:59857][0m
+2024-07-24 14:43:49,516 D:\stox\app\models.py changed, reloading.

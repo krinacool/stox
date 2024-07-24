@@ -136,12 +136,20 @@ class Shoonya_Instrument(models.Model):
     name = models.CharField(max_length=100,null=True,blank=True)
     exchange = models.CharField(max_length=10,null=True,blank=True)
 
+    class Meta:
+        verbose_name = "Shoonya Instrument"
+        verbose_name_plural = "Shoonya Instruments"
+
     def __str__(self):
         return f"{self.tradingsymbol} ({self.exchange})"
 
 class Shoonya_Orders(models.Model):
     datetime = models.DateTimeField(auto_now_add=True,null=True)
     response = models.TextField(max_length=5000, null=True,blank=True)
+
+    class Meta:
+        verbose_name = "Shoonya Order"
+        verbose_name_plural = "Shoonya Orders"
 
     def __str__(self):
         return f"{self.datetime} ({self.response})"
@@ -330,7 +338,15 @@ class Order(models.Model):
             if self.user.api_orders:
                 try:
                     print('shoonya order -=-=-=-=')
-                    shoonya_order(self)
+                    price = shoonya_order(self)
+                    print(price)
+                    if self.type == 'Market':
+                        try:
+                            if price:
+                                self.price = price
+                                super().save(*args, **kwargs)
+                        except:
+                            pass
                 except:
                     pass
                     # alice_order(self.symbol,self.quantity,self.order_type,self.product)
