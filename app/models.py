@@ -5,7 +5,7 @@ import random
 import string
 import uuid
 from wallet.calculation import add_amount, deduct_amount, calc_carrage, add_wallet, deduct_wallet
-from django.db import models, transaction
+from django.db import models, transaction, IntegrityError
 from app.symbols.getsymbols import get_instrument_key
 import datetime
 from app.orders.ShoonyaApipy.tests.test_place_order import shoonya_order
@@ -183,27 +183,33 @@ class Watchlist(models.Model):
     
     def save(self, *args, **kwargs):
         with transaction.atomic():
-            # Ensure the symbol exists in the Symbols table
-            instrument_key = get_instrument_key(self.symbol, self.segment)
-            if instrument_key:
-                self.instrument_key = instrument_key
-                symbols_entry, created = symbols.objects.get_or_create(
-                    symbol=self.symbol,
-                    name=Instrument.objects.filter(instrument_key=instrument_key).first().name,
-                    segment=self.segment,
-                    defaults={'instrument_key': self.instrument_key}
-                )
-                # If the entry was not created, ensure the instrument_key is updated (if needed)
-                if not created and symbols_entry.instrument_key != self.instrument_key:
-                    symbols_entry.instrument_key = self.instrument_key
-                    symbols_entry.save()
-    
-                # Now save the Watchlist entry
-                self.lot_size = Instrument.objects.get(instrument_key=self.instrument_key).lot_size
-                super().save(*args, **kwargs)
+            try:
+                instrument_key = get_instrument_key(self.symbol, self.segment)
+                if instrument_key:
+                    self.instrument_key = instrument_key
+                    symbols_entry, created = symbols.objects.get_or_create(
+                        symbol=self.symbol,
+                        segment=self.segment,
+                        defaults={'instrument_key': self.instrument_key}
+                    )
+                    if not created and symbols_entry.instrument_key != self.instrument_key:
+                        symbols_entry.instrument_key = self.instrument_key
+                        symbols_entry.save()
+                    
+                    self.lot_size = Instrument.objects.get(instrument_key=self.instrument_key).lot_size
+                    super().save(*args, **kwargs)
+            
+            except IntegrityError:
+                # Handle unique constraint violation
+                # Example: update existing entry or notify user
+                # For example:
+                existing_watchlist = Watchlist.objects.get(symbol=self.symbol, segment=self.segment)
+                # Update existing_watchlist or handle the error as per your application's logic
 
-    def __str__(self):
-        return str(self.symbol)
+            except Exception as e:
+                # Handle other exceptions
+                print(f"Error saving Watchlist: {e}")
+
 
 
 class Transaction(models.Model):
