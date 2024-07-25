@@ -64,7 +64,6 @@ class CustomUser(AbstractUser):
     wallet = models.FloatField(default=0.0)
     margin = models.PositiveIntegerField(default=100)
     margin_used = models.FloatField(default=0.0)
-    access_token = models.UUIDField(unique=True, default=uuid.uuid4().hex, max_length=366)
     pan_number = models.CharField(max_length=50,default="", null=True,blank=True)
     bank_account_name = models.CharField(max_length=150,default="")
     bank_account_number = models.CharField(max_length=150,default="")
