@@ -1,7 +1,24 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
 {% load custom_filters %}    
-<div class="mb-4 bg-white border-b border-gray-200 overflow-x-auto mt-2">
+<div class="overflow-x-auto mt-2">
+    <ul class="flex flex-nowrap font-medium text-center py-2">
+        {% for stock in watch_list %}
+        {% if stock.tag == "@INDEX" %}
+        <li class="" role="presentation">        
+            <a href="#"
+                class="block min-w-32 px-3 py-2 text-left bg-white border border-gray-200 rounded-lg hover:bg-gray-100">
+            
+                <h5 class="mb-2 text-1xl font-bold tracking-tight text-gray-900">{{stock.symbol}}</h5>
+                <p class="font-normal text-gray-700" id="{{stock.instrument_key}}"></p>
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="bg-white border-b border-gray-200 overflow-x-auto mt-1">
     <ul class="flex flex-nowrap -mb-px font-medium text-center" id="default" data-tabs-toggle="#default-content"
         data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
         data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300 dark:hover:text-gray-300"
@@ -24,22 +41,6 @@
                 <i data-feather="plus-square" class="text-gray-400"></i>
             </button>
         </li>
-    </ul>
-</div>
-<div class="overflow-x-auto bg-white">
-    <ul class="flex flex-nowrap -mb-px font-medium text-center">
-        {% for stock in watch_list %}
-        {% if stock.tag == "@INDEX" %}
-        <li class="me-2" role="presentation">        
-            <a href="#"
-                class="block min-w-32 px-3 py-2 text-left bg-white border border-gray-200 rounded-lg hover:bg-gray-100">
-            
-                <h5 class="mb-2 text-1xl font-bold tracking-tight text-gray-900">{{stock.symbol}}</h5>
-                <p class="font-normal text-gray-700" id="{{stock.instrument_key}}"></p>
-            </a>
-        </li>
-        {% endif %}
-        {% endfor %}
     </ul>
 </div>
 
