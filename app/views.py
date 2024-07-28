@@ -473,11 +473,36 @@ def transactions(request):
 
 @login_required
 def performance(request):
-    pfm = Position.objects.filter(user=request.user,is_closed=True)
+    start_date_str = ''
+    end_date_str = ''
+    if request.method == 'POST':
+        start_date_str = request.POST.get('start_date')
+        end_date_str = request.POST.get('end_date')
+
+        if start_date_str and end_date_str:
+            # Convert date strings to datetime objects
+            start_date = datetime.datetime.strptime(start_date_str, '%Y-%m-%d').date()
+            end_date = datetime.datetime.strptime(end_date_str, '%Y-%m-%d').date()
+
+            # Filter positions based on user and date range
+            pfm = Position.objects.filter(
+                user=request.user,
+                is_closed=True,
+                last_traded_datetime__date__range=[start_date, end_date]
+            )
+        else:
+            pfm = Position.objects.filter(user=request.user, is_closed=True)
+    else:
+        # Default behavior (no date filter applied initially)
+        pfm = Position.objects.filter(user=request.user, is_closed=True)
+
     context = {
-        'pfm':pfm
+        'start_date_str':start_date_str,
+        'end_date_str':end_date_str,
+        'pfm': pfm
     }
-    return render(request,'dashboard/performance.html',context)
+    return render(request, 'dashboard/performance.html', context)
+
 
 
 def upstox_cred(request,secret):

@@ -68,6 +68,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                 # END POSITION SETTLEMENT
             else:
+                print('Wallet failed')
                 order = Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target)
                 order.status = 'failed'
                 order.save()
