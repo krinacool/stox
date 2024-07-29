@@ -168,5 +168,7 @@ class Command(BaseCommand):
         for x in symbol:
             if not Instrument.objects.filter(instrument_key=x.instrument_key).exists():
                 x.delete()
+            else:
+                x.last_day_close = x.close
 
         self.stdout.write(self.style.SUCCESS('Successfully loaded instruments'))

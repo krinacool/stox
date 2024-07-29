@@ -38,7 +38,7 @@ admin.site.register(Remarks)
 
 @admin.register(symbols)
 class Symbols(admin.ModelAdmin):
-    list_display = ('symbol','segment','ltp','high','low','open','close')
+    list_display = ('symbol','segment','ltp','high','low','open','close','last_day_close')
     list_filter = ('symbol','segment')
     search_fields = ['symbol','segment']
 

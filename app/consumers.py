@@ -35,6 +35,7 @@ class StockConsumer(AsyncWebsocketConsumer):
                                 'close': symbol_data.close,
                                 'high': symbol_data.high,
                                 'low': symbol_data.low,
+                                'last_day_close': symbol_data.last_day_close,
                             }
                         })
                     except symbols.DoesNotExist:

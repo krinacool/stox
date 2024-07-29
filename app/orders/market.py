@@ -61,10 +61,13 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 # POSITION SETTLEMENT
                 if get_position(user,instrument_key,product) is not None:
                     if position_open(user,instrument_key,product):
+                        print('this 3')
                         add_more_position(user,instrument_key,quantity,product,price,stoploss,target)
                     else:
+                        print('this 2')
                         createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                 else:
+                    print('this 1')
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                 # END POSITION SETTLEMENT
             else:

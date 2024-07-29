@@ -106,6 +106,7 @@ class symbols(models.Model):
     close=models.FloatField(default=0)
     high=models.FloatField(default=0)
     low=models.FloatField(default=0)
+    last_day_close=models.FloatField(default=0)
     class Meta:
         verbose_name = "Stock"
         verbose_name_plural = "Stocks"

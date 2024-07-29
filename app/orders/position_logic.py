@@ -39,10 +39,10 @@ def get_position(user,instrument_key,product,new=False):
     today = timezone.now().date()
     pos = ''
     if product == 'Carryforward':
-        if new:
-            pos = None
-        else:
-            pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product,is_closed=False).first()
+        # if new:
+        #     pos = None
+        # else:
+        pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product).first()
     else:
         pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product,created_at__date=today).first()
     return pos
