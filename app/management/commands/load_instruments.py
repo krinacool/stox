@@ -170,5 +170,6 @@ class Command(BaseCommand):
                 x.delete()
             else:
                 x.last_day_close = x.close
+                x.save()
 
         self.stdout.write(self.style.SUCCESS('Successfully loaded instruments'))
