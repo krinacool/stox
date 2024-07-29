@@ -52,7 +52,7 @@ def shoonya_order(obj):
         print(syb.tradingsymbol)
         ret = api.place_order(buy_or_sell=buy_or_sell, product_type=product_type,
                                 exchange=segment, tradingsymbol=syb.tradingsymbol, 
-                                quantity=1, discloseqty=0,price_type='MKT', price=0, trigger_price=0,
+                                quantity=obj.quantity, discloseqty=0,price_type='MKT', price=0, trigger_price=0,
                                 retention='DAY', remarks='my_order_001')
         print('ret')
         print(ret)
