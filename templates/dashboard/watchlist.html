@@ -458,7 +458,7 @@
                     document.getElementById(i['instrument']).innerHTML = `
                         ${i['data']['ltp']}<br>
                     <span class="h-2 rounded-full ${change_cls} text-left text-sm">
-                        ${(i['data']['last_day_close'] - i['data']['ltp']).toFixed(1)}
+                        ${i['data']['ltp']-i['data']['last_day_close']).toFixed(1)}
                     </span>
                     `
                 }
@@ -481,7 +481,7 @@
                         ${i['data']['ltp']}
                     </div>
                     <div class="h-2 rounded-full mb-2 ${change_cls} text-left text-xs w-24 mr-2 text-right">
-                        ${(i['data']['last_day_close'] - i['data']['ltp']).toFixed(1)}
+                        ${i['data']['ltp']-i['data']['last_day_close']).toFixed(1)}
                     </div>
                 </div>
             `
