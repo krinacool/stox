@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/static/images/brand/logo/brand.png" type="image/png">
+    <link rel="icon" href="/static/images/brand/logo/brand.png" sizes="32x32" type="image/png">
+
+    <!-- Libs CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="/static/libs/simplebar/dist/simplebar.min.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/static/css/theme.min.css">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Sign In - Onstock" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>API Documentation - Onstock</title>
+</head>
+
+<body>
+    <div class="bg-gray-800 px-8 pt-4 lg:pt-2 pb-4 flex justify-between items-center mb-1">
+        <!-- title -->
+        <a class="navbar-brand" href="/">
+            <h2 class="text-white text-2xl font-bold">API Documentation - Onstock</h2>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="w-full px-2 lg:px-6 py-2">
+        <!-- Authentication Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Authentication</h2>
+            <h3 class="text-xl font-semibold mb-2">Obtain JWT Token</h3>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-4"><strong>Endpoint:</strong> <code
+                        class="bg-gray-200 px-2 py-1 rounded">POST /token/</code></p>
+                <p class="mb-4"><strong>Description:</strong> Obtain a JWT token using email and password.</p>
+                <p class="mb-4"><strong>Request:</strong></p>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>Headers:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Content-Type: application/json</li>
+                    </ul>
+                </div>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>Body:</strong></p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+{
+    "email": "user@example.com",
+    "password": "yourpassword"
+}
+                    </pre>
+                </div>
+                <p class="mb-4"><strong>Response:</strong></p>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>200 OK:</strong></p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+{
+    "access": "your_access_token",
+    "refresh": "your_refresh_token"
+}
+                    </pre>
+                </div>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>401 Unauthorized:</strong> Invalid credentials</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Placement Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Order Placement API</h2>
+            <h3 class="text-xl font-semibold mb-2">Place an Order</h3>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-4"><strong>Endpoint:</strong> <code
+                        class="bg-gray-200 px-2 py-1 rounded">POST /place_order/</code></p>
+                <p class="mb-4"><strong>Description:</strong> Place an order for a specific instrument.</p>
+                <p class="mb-4"><strong>Request:</strong></p>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>Headers:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Authorization: Bearer &lt;access_token&gt;</li>
+                        <li>Content-Type: application/json</li>
+                    </ul>
+                </div>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>Body:</strong></p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+{
+    "instrument": "instrument_key",
+    "price": 100.5,
+    "quantity": 10,
+    "order_type": "BUY",
+    "product_type": "Intraday",
+    "type": "Market",
+    "stoploss": 0,        // Optional, default is 0
+    "target": 0           // Optional, default is 0
+}
+                    </pre>
+                    <p class="mb-2 mt-2"><strong>Instrument Keys: <a href="https://assets.upstox.com/market-quote/instruments/exchange/complete.csv.gz" class="text-blue-800 underline">Download</a></strong></p>
+                </div>
+                <p class="mb-4"><strong>Response:</strong></p>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>200 OK:</strong></p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+{
+    "message": "Order placed successfully"
+}
+                    </pre>
+                </div>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>400 Bad Request:</strong> Market closed, invalid parameters, or order
+                        rejected</p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+{
+    "error": "Order Rejected"
+}
+                    </pre>
+                </div>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>404 Not Found:</strong> Instrument not found</p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+{
+    "error": "Instrument not found"
+}
+                    </pre>
+                </div>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>405 Method Not Allowed:</strong> Invalid request method</p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+{
+    "error": "Method not allowed"
+}
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Position API Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Position API</h2>
+            <h3 class="text-xl font-semibold mb-2">Get Positions</h3>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-4"><strong>Endpoint:</strong> <code
+                        class="bg-gray-200 px-2 py-1 rounded">GET /positions/</code></p>
+                <p class="mb-4"><strong>Description:</strong> Retrieve the Intraday positions for the logged-in user</p>
+                <p class="mb-4"><strong>Request:</strong></p>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>Headers:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Authorization: Bearer &lt;access_token&gt;</li>
+                        <li>Content-Type: application/json</li>
+                    </ul>
+                </div>
+                <p class="mb-4"><strong>Response:</strong></p>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>200 OK:</strong></p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+[
+    {
+        "quantity": 10,
+        "last_traded_quantity": 5,
+        "symbol": "ABC123",
+        "instrument_key": "XYZ789",
+        "lot_size": 1,
+        "segment": "NSE",
+        "token": 123456,
+        "product": "Intraday",
+        "buy_price": 100.0,
+        "sell_price": 105.0,
+        "created_at": "2024-07-31T12:34:56Z",
+        "realised_pnl": 50.0,
+        "unrealised_pnl": 10.0,
+        "is_holding": true,
+        "is_closed": false,
+        "last_traded_datetime": "2024-07-31T12:34:56Z"
+    }
+]
+                    </pre>
+                </div>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>401 Unauthorized:</strong> Invalid or missing token</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Holdings API</h2>
+            <h3 class="text-xl font-semibold mb-2">Get Holdings</h3>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="mb-4"><strong>Endpoint:</strong> <code
+                        class="bg-gray-200 px-2 py-1 rounded">GET /holdings/</code></p>
+                <p class="mb-4"><strong>Description:</strong> Retrieve the holdings for the logged-in user</p>
+                <p class="mb-4"><strong>Request:</strong></p>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>Headers:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Authorization: Bearer &lt;access_token&gt;</li>
+                        <li>Content-Type: application/json</li>
+                    </ul>
+                </div>
+                <p class="mb-4"><strong>Response:</strong></p>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>200 OK:</strong></p>
+                    <pre class="overflow-auto bg-gray-100 p-4 rounded">
+[
+    {
+        "quantity": 10,
+        "last_traded_quantity": 5,
+        "symbol": "ABC123",
+        "instrument_key": "XYZ789",
+        "lot_size": 1,
+        "segment": "NSE",
+        "token": 123456,
+        "product": "Intraday",
+        "buy_price": 100.0,
+        "sell_price": 105.0,
+        "created_at": "2024-07-31T12:34:56Z",
+        "realised_pnl": 50.0,
+        "unrealised_pnl": 10.0,
+        "is_holding": true,
+        "is_closed": false,
+        "last_traded_datetime": "2024-07-31T12:34:56Z"
+    }
+]
+                    </pre>
+                </div>
+                <div class="ml-6 mb-4">
+                    <p class="mb-2"><strong>401 Unauthorized:</strong> Invalid or missing token</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
