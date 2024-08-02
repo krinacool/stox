@@ -10,7 +10,7 @@ import time
 # logging.basicConfig(level=logging.DEBUG)
 
 #start of our program
-def shoonya_order(obj):
+def shoonya_order(order_type,product,segment,instrument_key,quantity):
     api = ShoonyaApiPy()
     app = ShoonyaApi.objects.all().first()
     user = app.user
@@ -24,35 +24,35 @@ def shoonya_order(obj):
     ret = api.login(userid = user, password = pwd, twoFA=factor2, vendor_code=vc, api_secret=apikey, imei=imei)
     buy_or_sell = 'S'
     product_type = 'C'
-    if obj.order_type == 'BUY':
+    if order_type == 'BUY':
         buy_or_sell = 'B'
-    if obj.product == 'Intraday':
+    if product == 'Intraday':
         product_type = 'I'
     try:
         from app.models import Shoonya_Instrument, Instrument
-        token = Instrument.objects.filter(instrument_key=obj.instrument_key).first().exchange_token
+        token = Instrument.objects.filter(instrument_key=instrument_key).first().exchange_token
         segment = 'NSE'
-        if obj.segment == 'BSE_EQ':
+        if segment == 'BSE_EQ':
             segment = 'BSE'
-        elif obj.segment == 'BSE_FO':
+        elif segment == 'BSE_FO':
             segment = 'BFO'
-        elif obj.segment == 'NCD_FO':
+        elif segment == 'NCD_FO':
             segment = 'CDS'
-        elif obj.segment == 'MCX_FO':
+        elif segment == 'MCX_FO':
             segment = 'MCX'
-        elif obj.segment == 'NSE_FO':
+        elif segment == 'NSE_FO':
             segment = 'NFO'
-        elif obj.segment == 'NSE_EQ':
+        elif segment == 'NSE_EQ':
             segment = 'NSE'
         print('=-=-=-')
         print(token)
-        print(obj.segment)
+        print(segment)
         print(segment)
         syb = Shoonya_Instrument.objects.all().filter(exchange=segment).filter(exchange_token=str(token)).first()
         print(syb.tradingsymbol)
         ret = api.place_order(buy_or_sell=buy_or_sell, product_type=product_type,
                                 exchange=segment, tradingsymbol=syb.tradingsymbol, 
-                                quantity=obj.quantity, discloseqty=0,price_type='MKT', price=0, trigger_price=0,
+                                quantity=quantity, discloseqty=0,price_type='MKT', price=0, trigger_price=0,
                                 retention='DAY', remarks='my_order_001')
         print('ret')
         print(ret)

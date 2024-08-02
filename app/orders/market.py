@@ -3,6 +3,7 @@ from app.symbols.instruments import get_exchange
 from wallet.calculation import wallet_checked ,deduct_amount, add_amount
 from app.orders.position_logic import *
 import time
+from app.orders.ShoonyaApipy.tests.test_place_order import shoonya_order
 
 
 # Market ORDER FUNCTION
@@ -21,6 +22,30 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
             pos_quantity = pos_quantity * -1
             if quantity > pos_quantity:
                 # FIRST CLOSING POSITION
+                # API USER
+                if user.api_orders:
+                    try:
+                        print('shoonya order -=-=-=-=')
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        print(shoonyaPrice)
+                        if type == 'Market':
+                            try:
+                                if shoonyaPrice:
+                                    try:
+                                        if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                            shoonyaPrice = shoonyaPrice + 1
+                                        elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                            shoonyaPrice = shoonyaPrice + 2
+                                        elif int(shoonyaPrice) > 400:
+                                            shoonyaPrice = shoonyaPrice + 3
+                                    except:
+                                        pass
+                                    price = shoonyaPrice
+                            except:
+                                pass
+                    except:
+                        pass
+                # END API USER
                 amount = pos_quantity * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
                 order.status = 'completed'
@@ -30,6 +55,31 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 quantity = quantity-pos_quantity
                 amount = price * quantity
                 if wallet_checked(user,amount,product):
+                        # API USER
+                    if user.api_orders:
+                        try:
+                            print('shoonya order -=-=-=-=')
+                            shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                            print(shoonyaPrice)
+                            if type == 'Market':
+                                try:
+                                    if shoonyaPrice:
+                                        try:
+                                            if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                                shoonyaPrice = shoonyaPrice + 1
+                                            elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                                shoonyaPrice = shoonyaPrice + 2
+                                            elif int(shoonyaPrice) > 400:
+                                                shoonyaPrice = shoonyaPrice + 3
+                                        except:
+                                            pass
+                                        price = shoonyaPrice
+                                        amount = price * quantity
+                                except:
+                                    pass
+                        except:
+                            pass
+                    # END API USER
                     order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="completed",type=type,stoploss=stoploss,target=target)
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                     deduct_amount(user,amount)
@@ -39,12 +89,60 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                     order.save()
                     return 'failed'
             elif quantity < pos_quantity:
+                # API USER
+                if user.api_orders:
+                    try:
+                        print('shoonya order -=-=-=-=')
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        print(shoonyaPrice)
+                        if type == 'Market':
+                            try:
+                                if shoonyaPrice:
+                                    try:
+                                        if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                            shoonyaPrice = shoonyaPrice + 1
+                                        elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                            shoonyaPrice = shoonyaPrice + 2
+                                        elif int(shoonyaPrice) > 400:
+                                            shoonyaPrice = shoonyaPrice + 3
+                                    except:
+                                        pass
+                                    price = shoonyaPrice
+                            except:
+                                pass
+                    except:
+                        pass
+                # END API USER
                 amount = quantity * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
                 order.status = 'completed'
                 order.save()
                 close_some_position(user,instrument_key,quantity,product,price)
             else:
+                                # API USER
+                if user.api_orders:
+                    try:
+                        print('shoonya order -=-=-=-=')
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        print(shoonyaPrice)
+                        if type == 'Market':
+                            try:
+                                if shoonyaPrice:
+                                    try:
+                                        if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                            shoonyaPrice = shoonyaPrice + 1
+                                        elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                            shoonyaPrice = shoonyaPrice + 2
+                                        elif int(shoonyaPrice) > 400:
+                                            shoonyaPrice = shoonyaPrice + 3
+                                    except:
+                                        pass
+                                    price = shoonyaPrice
+                            except:
+                                pass
+                    except:
+                        pass
+                # END API USER
                 amount = quantity * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
                 order.status = 'completed'
@@ -54,6 +152,31 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
         else:
             amount = float(quantity) * price
             if wallet_checked(user,amount,product):
+                                # API USER
+                if user.api_orders:
+                    try:
+                        print('shoonya order -=-=-=-=')
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        print(shoonyaPrice)
+                        if type == 'Market':
+                            try:
+                                if shoonyaPrice:
+                                    try:
+                                        if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                            shoonyaPrice = shoonyaPrice + 1
+                                        elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                            shoonyaPrice = shoonyaPrice + 2
+                                        elif int(shoonyaPrice) > 400:
+                                            shoonyaPrice = shoonyaPrice + 3
+                                    except:
+                                        pass
+                                    price = shoonyaPrice
+                                    amount = float(quantity) * price
+                            except:
+                                pass
+                    except:
+                        pass
+                # END API USER
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                 order.status = 'completed'
                 order.save()
@@ -88,6 +211,31 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 add_amount(user,amount)
                 if wallet_checked(user,amount/2,product):
                     quantity = quantity - pos_quantity
+                                                    # API USER
+                    if user.api_orders:
+                        try:
+                            print('shoonya order -=-=-=-=')
+                            shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                            print(shoonyaPrice)
+                            if type == 'Market':
+                                try:
+                                    if shoonyaPrice:
+                                        try:
+                                            if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                                shoonyaPrice = shoonyaPrice + 1
+                                            elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                                shoonyaPrice = shoonyaPrice + 2
+                                            elif int(shoonyaPrice) > 400:
+                                                shoonyaPrice = shoonyaPrice + 3
+                                        except:
+                                            pass
+                                        price = shoonyaPrice
+                                except:
+                                    pass
+                        except:
+                            pass
+                    # END API USER
+
                     amount = quantity * price
                     order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                     order.status = 'completed'
@@ -99,6 +247,32 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                     order.status = 'failed'
                     return 'failed'
             if quantity < pos_quantity:
+                                                # API USER
+                if user.api_orders:
+                    try:
+                        print('shoonya order -=-=-=-=')
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        print(shoonyaPrice)
+                        if type == 'Market':
+                            try:
+                                if shoonyaPrice:
+                                    try:
+                                        if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                            shoonyaPrice = shoonyaPrice + 1
+                                        elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                            shoonyaPrice = shoonyaPrice + 2
+                                        elif int(shoonyaPrice) > 400:
+                                            shoonyaPrice = shoonyaPrice + 3
+                                    except:
+                                        pass
+                                    price = shoonyaPrice
+                                    amount = float(quantity) * price
+                            except:
+                                pass
+                    except:
+                        pass
+                # END API USER
+
                 amount = quantity * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                 order.save()
@@ -107,6 +281,31 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 close_some_position(user,instrument_key,quantity,product,price)
                 add_amount(user,amount)
             else:
+                                                # API USER
+                if user.api_orders:
+                    try:
+                        print('shoonya order -=-=-=-=')
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        print(shoonyaPrice)
+                        if type == 'Market':
+                            try:
+                                if shoonyaPrice:
+                                    try:
+                                        if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                            shoonyaPrice = shoonyaPrice + 1
+                                        elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                            shoonyaPrice = shoonyaPrice + 2
+                                        elif int(shoonyaPrice) > 400:
+                                            shoonyaPrice = shoonyaPrice + 3
+                                    except:
+                                        pass
+                                    price = shoonyaPrice
+                            except:
+                                pass
+                    except:
+                        pass
+                # END API USER
+
                 amount = quantity * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
                 order.status = 'completed'
@@ -121,6 +320,31 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                     return 'failed'
             amount = price * quantity
             if wallet_checked(user,amount/2,product):
+                # API USER
+                if user.api_orders:
+                    try:
+                        print('shoonya order -=-=-=-=')
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        print(shoonyaPrice)
+                        if type == 'Market':
+                            try:
+                                if shoonyaPrice:
+                                    try:
+                                        if int(shoonyaPrice) < 200 and int(shoonyaPrice) > 50:
+                                            shoonyaPrice = shoonyaPrice + 1
+                                        elif int(shoonyaPrice) < 400 and int(shoonyaPrice) > 200:
+                                            shoonyaPrice = shoonyaPrice + 2
+                                        elif int(shoonyaPrice) > 400:
+                                            shoonyaPrice = shoonyaPrice + 3
+                                    except:
+                                        pass
+                                    price = shoonyaPrice
+                                    amount = float(quantity) * price
+                            except:
+                                pass
+                    except:
+                        pass
+                # END API USER
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                 order.status = 'completed'
                 order.save()
