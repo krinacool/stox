@@ -343,21 +343,21 @@ class Order(models.Model):
         elif self.status == 'failed' or self.status == 'cancelled':
             if self.type == 'Market':
                 add_amount(self.user,self.charges)
-        else:
-            if self.user.api_orders:
-                try:
-                    print('shoonya order -=-=-=-=')
-                    price = shoonya_order(self)
-                    print(price)
-                    if self.type == 'Market':
-                        try:
-                            if price:
-                                self.price = price
-                                super().save(*args, **kwargs)
-                        except:
-                            pass
-                except:
-                    pass
+        # else:
+            # if self.user.api_orders:
+            #     try:
+            #         print('shoonya order -=-=-=-=')
+            #         price = shoonya_order(self)
+            #         print(price)
+            #         if self.type == 'Market':
+            #             try:
+            #                 if price:
+            #                     self.price = price
+            #                     super().save(*args, **kwargs)
+            #             except:
+            #                 pass
+            #     except:
+            #         pass
                     # alice_order(self.symbol,self.quantity,self.order_type,self.product)
         super().save(*args, **kwargs)
     def __str__(self):
