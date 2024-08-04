@@ -21,6 +21,7 @@ AUTH_USER_MODEL = 'app.CustomUser'
 
 # Application definition
 INSTALLED_APPS = [
+    'admincharts',
     'jazzmin',
     'channels',
     'app',
@@ -82,6 +83,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'app.context_processors.custom_admin_context',
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
@@ -131,7 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 # STATICFILES_DIRS =[
-#     os.path.join(BASE_DIR, "static"),
+    # os.path.join(BASE_DIR, "static"),
 # ]
 
 
@@ -171,3 +173,7 @@ JAZZMIN_SETTINGS = {
     "login_logo": 'images/brand/logo/brand.png',
     "site_logo_classes":'img-circle',
 }
+
+ADMIN_CHARTS_NVD3_JS_PATH = 'bow/nvd3/build/nv.d3.js'
+ADMIN_CHARTS_NVD3_CSS_PATH = 'bow/nvd3/build/nv.d3.css'
+ADMIN_CHARTS_D3_JS_PATH = 'bow/d3/d3.js'

@@ -1,7 +1,7 @@
 import csv
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from app.models import Instrument, Watchlist, symbols, Shoonya_Instrument  # Corrected model name to 'Symbol'
+from app.models import Instrument, Watchlist, symbols, Shoonya_Instrument, OnstockBalanceHistory
 import requests
 import gzip
 import shutil
@@ -105,6 +105,10 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         # URL of the .gz file
+        try:
+            OnstockBalanceHistory.objects.create(balance=0)
+        except:
+            pass
         url = "https://assets.upstox.com/market-quote/instruments/exchange/complete.csv.gz"
         # Output file name
         output_filename = "complete.csv"

@@ -360,6 +360,7 @@ class Order(models.Model):
             #         pass
                     # alice_order(self.symbol,self.quantity,self.order_type,self.product)
         super().save(*args, **kwargs)
+
     def __str__(self):
       return self.symbol
 
@@ -376,3 +377,23 @@ class Contact(models.Model):
     class Meta:
         verbose_name = "Contact Us Request"
         verbose_name_plural = "Contact Requests"
+
+class OnstockBalanceHistory(models.Model):
+    datefield = models.DateField(auto_now_add=True)
+    balance = models.FloatField(default=0.0)
+    def __str__(self):
+        return f"{self.datefield} --> {self.balance}"
+    
+    def save(self, *args, **kwargs):
+        total_balance = 0
+        for x in CustomUser.objects.all():
+            total_balance = total_balance + x.wallet
+        
+        total_balance = "{:.2f}".format(total_balance)
+        self.balance = total_balance
+        super().save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = "Onstock Balance"
+        verbose_name_plural = "Onstock Balance History"
+        unique_together = ['datefield']

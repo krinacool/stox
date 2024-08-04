@@ -2,6 +2,12 @@ from django.contrib import admin
 from .models import *
 from django.contrib.auth.admin import UserAdmin
 from django.utils.html import format_html
+from django.db.models.functions import TruncDay
+from django.db.models import Count
+from django.core.serializers.json import DjangoJSONEncoder
+import json
+from django.db.models import Sum
+
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
@@ -21,6 +27,24 @@ class CustomUserAdmin(UserAdmin):
     )
     search_fields = ('email', 'first_name', 'last_name', 'phone_number')
     ordering = ('email',)
+
+
+    def changelist_view(self, request, extra_context=None):
+        # Aggregate new authors per day
+        chart_data = (
+            CustomUser.objects.annotate(date=TruncDay("date_joined"))
+            .values("date")
+            .annotate(y=Count("id"))
+            .order_by("-date")
+        )
+        # Serialize and attach the chart data to the template context
+        as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
+        print("Json %s"%as_json)
+        extra_context = extra_context or {"chart_data": as_json}
+        # Call the superclass changelist_view to render the page
+
+        return super().changelist_view(request, extra_context=extra_context)
+
 
     def formfield_for_dbfield(self, db_field, **kwargs):
         formfield = super().formfield_for_dbfield(db_field, **kwargs)
@@ -55,24 +79,95 @@ class Shoonya_Instrument(admin.ModelAdmin):
     list_filter = ('exchange',)
     search_fields = ('exchange_token','tradingsymbol','name','exchange')
     
-admin.site.register(Shoonya_Orders)
+@admin.register(Shoonya_Orders)
+class ShoonyaOrderAdmin(admin.ModelAdmin):
+    def changelist_view(self, request, extra_context=None):
+        # Aggregate new authors per day
+        chart_data = (
+            Transaction.objects.annotate(date=TruncDay("datetime"))
+            .values("date")
+            .annotate(y=Count("id"))
+            .order_by("-date")
+        )
+        # Serialize and attach the chart data to the template context
+        as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
+        print("Json %s"%as_json)
+        extra_context = extra_context or {"chart_data": as_json}
+        # Call the superclass changelist_view to render the page
+
+        return super().changelist_view(request, extra_context=extra_context)
+
+
+@admin.register(OnstockBalanceHistory)
+class OnstockBalanceAdmin(admin.ModelAdmin):
+    def changelist_view(self, request, extra_context=None):
+        # Aggregate new authors per day
+        chart_data = (
+            OnstockBalanceHistory.objects.annotate(date=TruncDay("datefield"))
+            .values("date")
+            .annotate(y=Sum("balance"))  # Change 'Sum' based on your aggregation needs
+            .order_by("-date")
+        )
+        # Serialize and attach the chart data to the template context
+        as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
+        print("Json %s"%as_json)
+        extra_context = extra_context or {"chart_data": as_json}
+        # Call the superclass changelist_view to render the page
+
+        return super().changelist_view(request, extra_context=extra_context)
+
+
 
 @admin.register(Watchlist)
-class Watchlist(admin.ModelAdmin):
+class WatchlistAdmin(admin.ModelAdmin):
     list_display = ('user', 'symbol','segment','tag','is_default')
     list_filter = ('user', 'symbol','segment','is_default')
 
-
 @admin.register(Transaction)
-class Transaction(admin.ModelAdmin):
+class TransactionAdmin(admin.ModelAdmin):
     list_display = ('user', 'amount','status','transaction_type','datetime', 'transaction_id', 'remark')
     list_filter = ('datetime', 'status', 'transaction_type','remark','user')
+    
+    def changelist_view(self, request, extra_context=None):
+        # Aggregate new authors per day
+        chart_data = (
+            Transaction.objects.annotate(date=TruncDay("datetime"))
+            .values("date")
+            .annotate(y=Count("id"))
+            .order_by("-date")
+        )
+        # Serialize and attach the chart data to the template context
+        as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
+        print("Json %s"%as_json)
+        extra_context = extra_context or {"chart_data": as_json}
+        # Call the superclass changelist_view to render the page
+
+        return super().changelist_view(request, extra_context=extra_context)
+
 
 
 @admin.register(Order)
-class Order(admin.ModelAdmin):
+class OrderAdmin(admin.ModelAdmin):
     list_display = ('user', 'symbol','order_type_color','price','charges','type', 'quantity','product','status_color','datetime','order_id')
     list_filter = ('datetime','status','user', 'symbol','order_type','type','product')
+
+    def changelist_view(self, request, extra_context=None):
+        # Aggregate new authors per day
+        chart_data = (
+            Order.objects.annotate(date=TruncDay("datetime"))
+            .values("date")
+            .annotate(y=Count("id"))
+            .order_by("-date")
+        )
+        # Serialize and attach the chart data to the template context
+        as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
+        print("Json %s"%as_json)
+        extra_context = extra_context or {"chart_data": as_json}
+        # Call the superclass changelist_view to render the page
+
+        return super().changelist_view(request, extra_context=extra_context)
+
+
     def status_color(self, obj):
         if obj.status == 'completed':
             return format_html(f'<span style="color: green;">{obj.status}</span>', obj.status)
@@ -92,10 +187,27 @@ class Order(admin.ModelAdmin):
     order_type_color.short_description = 'Order Type'
 
 @admin.register(Position)
-class Position(admin.ModelAdmin):
+class PositionAdmin(admin.ModelAdmin):
     # list_display = ('user','symbol','product','pnl')
     list_filter = ('created_at','user','symbol','product','last_traded_datetime')
     list_display = ('user', 'quantity','last_traded_quantity', 'symbol', 'product', 'buy_price', 'sell_price', 'pnl_colored','created_at','close_positon')
+
+    def changelist_view(self, request, extra_context=None):
+        # Aggregate new authors per day
+        chart_data = (
+            Position.objects.annotate(date=TruncDay("last_traded_datetime"))
+            .values("date")
+            .annotate(y=Count("id"))
+            .order_by("-date")
+        )
+        # Serialize and attach the chart data to the template context
+        as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
+        print("Json %s"%as_json)
+        extra_context = extra_context or {"chart_data": as_json}
+        # Call the superclass changelist_view to render the page
+
+        return super().changelist_view(request, extra_context=extra_context)
+
     # Define a custom method to display pnl with color
     def pnl_colored(self, obj):
         if obj.realised_pnl < 0:

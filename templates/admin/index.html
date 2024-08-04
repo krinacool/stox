@@ -1,9 +1,100 @@
 {% extends "admin/base_site.html" %}
 
 {% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"/>
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"> </script>
+
 <div class="card w-100">
     <div class="card-header borderless ">
         <h5>Onstock Dashboard</h5>
+    </div>
+    <div class="card-body borderless ">
+        <div class="row">
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-2 col-md-5">
+                <div class="card border-left-primary shadow h-100">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Total Balance</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">₹ {{total_balance}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-2 col-md-5">
+                <div class="card border-left-success shadow h-100">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Today's Total Deposit</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">₹ {{total_deposit}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-2 col-md-5">
+                <div class="card border-left-success shadow h-100">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Today's Total Withdrawl</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">₹ {{total_withdraw}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-2 col-md-5">
+                <div class="card border-left-warning shadow h-100">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                    Total Users</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{total_users}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-5">
+                <div class="card border-left-success shadow h-100">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    API Users</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{api_users}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-5">
+                <div class="card border-left-success shadow h-100">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Today's Brokerage Collected</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">₹ {{brokerage_collected}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <h5 class="mt-5">Onstock Dashboard</h5>
         <span class="d-block m-t-5">All <code>Function's</code> will be displayed Here.</span>
         <div class="card-header-right mt-2">
             <div class="btn-group card-option mb-2">
@@ -17,6 +108,146 @@
                 </a>
             </div>
         </div>
+
+
+        <div class="row">
+            <div class="col-xl-6 mb-4">
+                <div class="card card-header-actions h-100">
+                    <div class="card-header">
+                        Users
+                    </div>
+                    <div class="card-body">
+                        <canvas id="chart1"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 mb-4">
+                <div class="card card-header-actions h-100">
+                    <div class="card-header">
+                        Transactions
+                    </div>
+                    <div class="card-body">
+                        <canvas id="chart3"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <canvas id="chart2" width="400" height="200"></canvas>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Chart 1
+                const ctx1 = document.getElementById('chart1').getContext('2d');
+                const chartData1 = {{ chart_data | safe }};
+                chartData1.forEach((d) => { d.x = new Date(d.date); });
+    
+                new Chart(ctx1, {
+                    type: 'bar',
+                    data: {
+                        datasets: [{
+                            label: 'Number of Users',
+                            data: chartData1,
+                            backgroundColor: 'black',
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            xAxes: [{
+                                type: 'time',
+                                time: {
+                                    unit: 'day',
+                                    round: 'day',
+                                    displayFormats: {
+                                        day: 'MMM D',
+                                    },
+                                },
+                            }],
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true,
+                                },
+                            }],
+                        }
+                    }
+                });
+    
+                // Chart 2
+                const ctx2 = document.getElementById('chart2').getContext('2d');
+                const chartData2 = {{ chart_data2 | safe }};
+                chartData2.forEach((d) => { d.x = new Date(d.date); });
+    
+                new Chart(ctx2, {
+                    type: 'bar',
+                    data: {
+                        datasets: [{
+                            label: 'Number of Orders',
+                            data: chartData2,
+                            backgroundColor: 'black',
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            xAxes: [{
+                                type: 'time',
+                                time: {
+                                    unit: 'day',
+                                    round: 'day',
+                                    displayFormats: {
+                                        day: 'MMM D',
+                                    },
+                                },
+                            }],
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true,
+                                },
+                            }],
+                        }
+                    }
+                });
+    
+                // Chart 3
+                const ctx3 = document.getElementById('chart3').getContext('2d');
+                const chartData3 = {{ chart_data3 | safe }};
+                chartData3.forEach((d) => { d.x = new Date(d.date); });
+    
+                new Chart(ctx3, {
+                    type: 'bar',
+                    data: {
+                        datasets: [{
+                            label: 'Number of Transactions',
+                            data: chartData3,
+                            backgroundColor: 'black',
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            xAxes: [{
+                                type: 'time',
+                                time: {
+                                    unit: 'day',
+                                    round: 'day',
+                                    displayFormats: {
+                                        day: 'MMM D',
+                                    },
+                                },
+                            }],
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true,
+                                },
+                            }],
+                        }
+                    }
+                });
+            });
+        </script>
+    
     </div>
 </div>
 {{ block.super }}
