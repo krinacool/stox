@@ -12,7 +12,7 @@
         <div class="row">
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-2 col-md-5">
-                <div class="card border-left-primary shadow h-100">
+                <div class="card border-left-primary shadow h-80">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col">
@@ -26,7 +26,7 @@
             </div>
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-2 col-md-5">
-                <div class="card border-left-success shadow h-100">
+                <div class="card border-left-success shadow h-80">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col">
@@ -40,11 +40,11 @@
             </div>
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-2 col-md-5">
-                <div class="card border-left-success shadow h-100">
+                <div class="card border-left-success shadow h-80">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col">
-                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                     Today's Total Withdrawl</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">₹ {{total_withdraw}}</div>
                             </div>
@@ -52,9 +52,22 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xl-2 col-md-5">
+                <div class="card border-left-success shadow h-80">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                    Withdrawl Requests</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{withdrawl_requests}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Pending Requests Card Example -->
             <div class="col-xl-2 col-md-5">
-                <div class="card border-left-warning shadow h-100">
+                <div class="card border-left-warning shadow h-80">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col">
@@ -67,11 +80,11 @@
                 </div>
             </div>
             <div class="col-xl-2 col-md-5">
-                <div class="card border-left-success shadow h-100">
+                <div class="card border-left-success shadow h-80">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col">
-                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                     API Users</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{api_users}}</div>
                             </div>
@@ -80,13 +93,39 @@
                 </div>
             </div>
             <div class="col-xl-2 col-md-5">
-                <div class="card border-left-success shadow h-100">
+                <div class="card border-left-success shadow h-80">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Today's Brokerage Collected</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">₹ {{brokerage_collected}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-5">
+                <div class="card border-left-success shadow h-80">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col">
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                    Today's Brokerage Collected</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">₹ {{brokerage_collected}}</div>
+                                    Open Positions</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{open_positions}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-5 m-2">
+                <div class="card border-left-success shadow h-80">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-failed text-uppercase mb-1">
+                                    Close Positions</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{close_positions}}</div>
                             </div>
                         </div>
                     </div>
@@ -112,7 +151,7 @@
 
         <div class="row">
             <div class="col-xl-6 mb-4">
-                <div class="card card-header-actions h-100">
+                <div class="card card-header-actions h-80">
                     <div class="card-header">
                         Users
                     </div>
@@ -122,7 +161,7 @@
                 </div>
             </div>
             <div class="col-xl-6 mb-4">
-                <div class="card card-header-actions h-100">
+                <div class="card card-header-actions h-80">
                     <div class="card-header">
                         Transactions
                     </div>
@@ -131,10 +170,19 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xl-6 mb-4">
+                <div class="card card-header-actions h-80">
+                    <div class="card-header">
+                        Orders
+                    </div>
+                    <div class="card-body">
+                        <canvas id="chart2"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
-        <canvas id="chart2" width="400" height="200"></canvas>
     
         <script>
             document.addEventListener('DOMContentLoaded', () => {

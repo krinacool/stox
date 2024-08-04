@@ -6,19 +6,25 @@ from django.db.models import Count
 import json
 from django.core.serializers.json import DjangoJSONEncoder
 from django.utils.timezone import now, timedelta
-from .models import CustomUser, Transaction, Order
+from .models import CustomUser, Transaction, Order, Position
 
 def custom_admin_context(request):
     context = {}
 
     if request.path.startswith('/admin/'):
+        if 'login' in request.path:
+            return context
         total_balance = 0
         all_users = CustomUser.objects.all()
         today = timezone.now().date()
         transactions = Transaction.objects.filter(status='COMPLETED', datetime__date=today)
         brokerage_collected = 0
         orders = Order.objects.filter(user=request.user, datetime__date=today, status='completed').order_by('-datetime')
+        open_positions = Position.objects.filter(is_closed=False).__len__()
+        close_positions = Position.objects.filter(is_closed=True).__len__()
 
+        withdrawl_requests = Transaction.objects.filter(status='REQUESTED').__len__()
+           
         for x in orders:
             brokerage_collected += x.charges
 
@@ -69,12 +75,15 @@ def custom_admin_context(request):
             "total_balance": total_balance,
             "total_deposit": total_deposit,
             "total_withdraw": total_withdraw,
+            "withdrawl_requests": withdrawl_requests,
             "brokerage_collected": brokerage_collected,
             "total_users": all_users.count(),
             "api_users": all_users.filter(api_orders=True).count(),
             "chart_data": as_json,
             "chart_data2": as_json2,
             "chart_data3": as_json3,
+            "open_positions": open_positions,
+            "close_positions": close_positions,
         }
 
     return context
