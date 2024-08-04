@@ -27,7 +27,7 @@ def custom_admin_context(request):
            
         for x in orders:
             brokerage_collected += x.charges
-
+        brokerage_collected = "{:.2f}".format(brokerage_collected)
         total_deposit = 0
         total_withdraw = 0
 
