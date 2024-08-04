@@ -23,11 +23,14 @@ def shoonya_order(order_type,product,segment,instrument_key,quantity):
     imei = ''
     ret = api.login(userid = user, password = pwd, twoFA=factor2, vendor_code=vc, api_secret=apikey, imei=imei)
     buy_or_sell = 'S'
-    product_type = 'C'
+    product_type = 'I'
     if order_type == 'BUY':
         buy_or_sell = 'B'
-    if product == 'Intraday':
-        product_type = 'I'
+    if product == 'Carryforward':
+        if segment == 'BSE_FO' or segment == 'NSE_FO':
+            product_type = 'M'
+        else:
+            product_type = 'C'
     try:
         from app.models import Shoonya_Instrument, Instrument
         token = Instrument.objects.filter(instrument_key=instrument_key).first().exchange_token
