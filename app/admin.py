@@ -228,7 +228,7 @@ class PositionAdmin(admin.ModelAdmin):
         as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
         print("Json %s"%as_json)
         extra_context = extra_context or {"chart_data": as_json}
-        extra_context["total_pnl"] = total_pnl 
+        extra_context["total_pnl"] = "{:.2f}".format(total_pnl) 
         # Call the superclass changelist_view to render the page
 
         return super().changelist_view(request, extra_context=extra_context)
