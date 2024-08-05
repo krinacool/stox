@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 from app.manager import *
 import random
 import string
-import uuid
+from django.utils import timezone
 from wallet.calculation import add_amount, deduct_amount, calc_carrage, add_wallet, deduct_wallet
 from django.db import models, transaction, IntegrityError
 from app.symbols.getsymbols import get_instrument_key
@@ -381,16 +381,35 @@ class Contact(models.Model):
 class OnstockBalanceHistory(models.Model):
     datefield = models.DateField(auto_now_add=True)
     balance = models.FloatField(default=0.0)
+    pnl = models.FloatField(default=0.0)
+    brokerage = models.FloatField(default=0.0)
     def __str__(self):
         return f"{self.datefield} --> {self.balance}"
     
     def save(self, *args, **kwargs):
+        # TOTAL BALANCE
         total_balance = 0
         for x in CustomUser.objects.all():
             total_balance = total_balance + x.wallet
-        
         total_balance = "{:.2f}".format(total_balance)
         self.balance = total_balance
+        # END TOTAL BALANCE
+        # TOTAL PNL
+        today = timezone.now().date()
+        close_positions = Position.objects.filter(last_traded_datetime__date=today,is_closed=True)
+        total_pnl = 0
+        for x in close_positions:
+            total_pnl = total_pnl + x.realised_pnl
+        self.pnl = "{:.2f}".format(total_pnl)
+        # TOTAL END PNL
+        # TOTAL BROKERAGE
+        brokerage_collected = 0
+        orders = Order.objects.filter(datetime__date=today, status='completed').order_by('-datetime')
+        for x in orders:
+            brokerage_collected += x.charges
+        brokerage_collected = "{:.2f}".format(brokerage_collected)
+        self.brokerage = brokerage_collected
+        # TOTAL END BROKERAGE
         super().save(*args, **kwargs)
 
     class Meta:

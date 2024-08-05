@@ -75,7 +75,7 @@ def custom_admin_context(request):
         as_json3 = json.dumps(list(chart_data3), cls=DjangoJSONEncoder)
 
         context = {
-            "total_pnl": total_pnl,
+            "total_pnl": "{:.2f}".format(total_pnl),
             "total_balance": total_balance,
             "total_deposit": total_deposit,
             "total_withdraw": total_withdraw,
