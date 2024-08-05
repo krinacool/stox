@@ -154,18 +154,27 @@ class OrderAdmin(admin.ModelAdmin):
     list_filter = ('datetime','status','user', 'symbol','order_type','type','product')
 
     def changelist_view(self, request, extra_context=None):
-        # Aggregate new authors per day
+        response = super().changelist_view(request, extra_context)
+        try:
+            cl = self.get_changelist_instance(request)
+            queryset = cl.get_queryset(request)
+        except Exception as e:
+            queryset = self.get_queryset(request)
+        if hasattr(response, 'context_data'):
+            response.context_data['filtered_queryset'] = queryset
+        total_brokerage = 0
+        for x in queryset:
+            total_brokerage = total_brokerage + x.charges
+        total_brokerage = "{:.2f}".format(total_brokerage)
         chart_data = (
             Order.objects.annotate(date=TruncDay("datetime"))
             .values("date")
             .annotate(y=Count("id"))
             .order_by("-date")
         )
-        # Serialize and attach the chart data to the template context
         as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
-        print("Json %s"%as_json)
         extra_context = extra_context or {"chart_data": as_json}
-        # Call the superclass changelist_view to render the page
+        extra_context["total_brokerage"] = total_brokerage 
 
         return super().changelist_view(request, extra_context=extra_context)
 
@@ -190,11 +199,24 @@ class OrderAdmin(admin.ModelAdmin):
 
 @admin.register(Position)
 class PositionAdmin(admin.ModelAdmin):
-    # list_display = ('user','symbol','product','pnl')
     list_filter = ('created_at','user','symbol','product','last_traded_datetime')
     list_display = ('user', 'quantity','last_traded_quantity', 'symbol', 'product', 'buy_price', 'sell_price', 'pnl_colored','created_at','close_positon')
 
     def changelist_view(self, request, extra_context=None):
+        response = super().changelist_view(request, extra_context)
+        try:
+            cl = self.get_changelist_instance(request)
+            queryset = cl.get_queryset(request)
+        except Exception as e:
+            queryset = self.get_queryset(request)
+
+        total_pnl = 0
+        for x in queryset:
+            total_pnl = total_pnl + x.realised_pnl
+        
+        if hasattr(response, 'context_data'):
+            response.context_data['filtered_queryset'] = queryset
+
         # Aggregate new authors per day
         chart_data = (
             Position.objects.annotate(date=TruncDay("last_traded_datetime"))
@@ -206,6 +228,7 @@ class PositionAdmin(admin.ModelAdmin):
         as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
         print("Json %s"%as_json)
         extra_context = extra_context or {"chart_data": as_json}
+        extra_context["total_pnl"] = total_pnl 
         # Call the superclass changelist_view to render the page
 
         return super().changelist_view(request, extra_context=extra_context)

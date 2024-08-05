@@ -61,6 +61,19 @@
         <div>
             <form id="changelist-form" method="post"{% if cl.formset and cl.formset.is_multipart %}enctype="multipart/form-data"{% endif %} novalidate>{% csrf_token %}
                 <div id="content-main">
+                    {% if cl.opts.verbose_name_plural|capfirst == 'Orders' %}
+                    <div>
+                        <h1>Total Brokerage: {{ total_brokerage }}</h1>
+                    </div>
+                    {% endif %}
+                    {% if cl.opts.verbose_name_plural|capfirst == 'Positions' %}
+                    <div>
+                        <h1>PnL:
+                            <span class="{% if total_pnl > 0 %}text-success{% else %}text-danger{% endif %}">{{ total_pnl }}</span>
+                        </h1>
+                    </div>
+                    {% endif %}
+                
                     <canvas id="myChart" width="400" height="50"></canvas>
 
                     {% if cl.formset and cl.formset.errors %}
