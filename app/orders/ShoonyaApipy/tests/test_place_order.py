@@ -10,7 +10,7 @@ import time
 # logging.basicConfig(level=logging.DEBUG)
 
 #start of our program
-def shoonya_order(order_type,product,segment,instrument_key,quantity):
+def shoonya_order(order_type,product,getsegment,instrument_key,quantity):
     api = ShoonyaApiPy()
     app = ShoonyaApi.objects.all().first()
     user = app.user
@@ -27,7 +27,7 @@ def shoonya_order(order_type,product,segment,instrument_key,quantity):
     if order_type == 'BUY':
         buy_or_sell = 'B'
     if product == 'Carryforward':
-        if segment == 'BSE_FO' or segment == 'NSE_FO':
+        if getsegment == 'BSE_FO' or getsegment == 'NSE_FO':
             product_type = 'M'
         else:
             product_type = 'C'
@@ -35,17 +35,17 @@ def shoonya_order(order_type,product,segment,instrument_key,quantity):
         from app.models import Shoonya_Instrument, Instrument
         token = Instrument.objects.filter(instrument_key=instrument_key).first().exchange_token
         segment = 'NSE'
-        if segment == 'BSE_EQ':
+        if getsegment == 'BSE_EQ':
             segment = 'BSE'
-        elif segment == 'BSE_FO':
+        elif getsegment == 'BSE_FO':
             segment = 'BFO'
-        elif segment == 'NCD_FO':
+        elif getsegment == 'NCD_FO':
             segment = 'CDS'
-        elif segment == 'MCX_FO':
+        elif getsegment == 'MCX_FO':
             segment = 'MCX'
-        elif segment == 'NSE_FO':
+        elif getsegment == 'NSE_FO':
             segment = 'NFO'
-        elif segment == 'NSE_EQ':
+        elif getsegment == 'NSE_EQ':
             segment = 'NSE'
         print('=-=-=-')
         print(token)

@@ -19,7 +19,7 @@ def custom_admin_context(request):
         today = timezone.now().date()
         transactions = Transaction.objects.filter(status='COMPLETED', datetime__date=today)
         brokerage_collected = 0
-        orders = Order.objects.filter(user=request.user, datetime__date=today, status='completed').order_by('-datetime')
+        orders = Order.objects.filter(datetime__date=today, status='completed').order_by('-datetime')
         open_positions = Position.objects.filter(is_closed=False).__len__()
         close_positions = Position.objects.filter(is_closed=True).__len__()
 
