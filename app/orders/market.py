@@ -40,7 +40,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                             shoonyaPrice = shoonyaPrice + 3
                                     except:
                                         pass
-                                    price = shoonyaPrice
+                                    price = float(shoonyaPrice)
                             except:
                                 pass
                     except:
@@ -73,13 +73,13 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                                 shoonyaPrice = shoonyaPrice + 3
                                         except:
                                             pass
-                                        price = shoonyaPrice
-                                        amount = price * quantity
+                                        price = float(shoonyaPrice)
                                 except:
                                     pass
                         except:
                             pass
                     # END API USER
+                    amount = price * quantity
                     order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="completed",type=type,stoploss=stoploss,target=target)
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                     deduct_amount(user,amount)
@@ -107,7 +107,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                             shoonyaPrice = shoonyaPrice + 3
                                     except:
                                         pass
-                                    price = shoonyaPrice
+                                    price = float(shoonyaPrice)
                             except:
                                 pass
                     except:
@@ -137,7 +137,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                             shoonyaPrice = shoonyaPrice + 3
                                     except:
                                         pass
-                                    price = shoonyaPrice
+                                    price = float(shoonyaPrice)
                             except:
                                 pass
                     except:
@@ -170,13 +170,13 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                             shoonyaPrice = shoonyaPrice + 3
                                     except:
                                         pass
-                                    price = shoonyaPrice
-                                    amount = float(quantity) * price
+                                    price = float(shoonyaPrice)
                             except:
                                 pass
                     except:
                         pass
                 # END API USER
+                amount = float(quantity) * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                 order.status = 'completed'
                 order.save()
@@ -229,13 +229,12 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                                 shoonyaPrice = shoonyaPrice + 3
                                         except:
                                             pass
-                                        price = shoonyaPrice
+                                        price = float(shoonyaPrice)
                                 except:
                                     pass
                         except:
                             pass
                     # END API USER
-
                     amount = quantity * price
                     order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                     order.status = 'completed'
@@ -265,15 +264,13 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                             shoonyaPrice = shoonyaPrice + 3
                                     except:
                                         pass
-                                    price = shoonyaPrice
-                                    amount = float(quantity) * price
+                                    price = float(shoonyaPrice)
                             except:
                                 pass
                     except:
                         pass
                 # END API USER
-
-                amount = quantity * price
+                amount = float(quantity) * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                 order.save()
                 order.status = 'completed'
@@ -299,13 +296,12 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                             shoonyaPrice = shoonyaPrice + 3
                                     except:
                                         pass
-                                    price = shoonyaPrice
+                                    price = float(shoonyaPrice)
                             except:
                                 pass
                     except:
                         pass
                 # END API USER
-
                 amount = quantity * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
                 order.status = 'completed'
@@ -338,13 +334,13 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                             shoonyaPrice = shoonyaPrice + 3
                                     except:
                                         pass
-                                    price = shoonyaPrice
-                                    amount = float(quantity) * price
+                                    price = float(shoonyaPrice)
                             except:
                                 pass
                     except:
                         pass
                 # END API USER
+                amount = float(quantity) * price
                 order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
                 order.status = 'completed'
                 order.save()

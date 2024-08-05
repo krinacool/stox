@@ -66,8 +66,7 @@ def shoonya_order(order_type,product,getsegment,instrument_key,quantity):
         Shoonya_Orders.objects.create(response=ret)
         return ret[0]['avgprc']
     except Exception as e:
-        print('Error is')
-        print(e)
+        return None
 
 
 # ret = api.modify_order(exchange='NSE', tradingsymbol='CANBK-EQ', orderno=orderno,
