@@ -21,7 +21,10 @@ def custom_admin_context(request):
         brokerage_collected = 0
         orders = Order.objects.filter(datetime__date=today, status='completed').order_by('-datetime')
         open_positions = Position.objects.filter(is_closed=False).__len__()
-        close_positions = Position.objects.filter(is_closed=True).__len__()
+        close_positions = Position.objects.filter(last_traded_datetime__date=today,is_closed=True)
+        total_pnl = 0
+        for x in close_positions:
+            total_pnl = total_pnl + x.realised_pnl
 
         withdrawl_requests = Transaction.objects.filter(status='REQUESTED').__len__()
            
@@ -72,6 +75,7 @@ def custom_admin_context(request):
         as_json3 = json.dumps(list(chart_data3), cls=DjangoJSONEncoder)
 
         context = {
+            "total_pnl": total_pnl,
             "total_balance": total_balance,
             "total_deposit": total_deposit,
             "total_withdraw": total_withdraw,
@@ -83,7 +87,7 @@ def custom_admin_context(request):
             "chart_data2": as_json2,
             "chart_data3": as_json3,
             "open_positions": open_positions,
-            "close_positions": close_positions,
+            "close_positions": close_positions.__len__(),
         }
 
     return context

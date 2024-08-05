@@ -131,7 +131,20 @@
                     </div>
                 </div>
             </div>
+        <div class="col-xl-2 col-md-5">
+            <div class="card border-left-success shadow h-80">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                Total P&L</div>
+                            <div class="h5 mb-0 font-weight-bold {% if total_pnl > 0 %} text-success{% else %}text-danger {% endif %}">{{total_pnl}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
   
         <h5 class="mt-5">Onstock Dashboard</h5>
         <span class="d-block m-t-5">All <code>Function's</code> will be displayed Here.</span>
