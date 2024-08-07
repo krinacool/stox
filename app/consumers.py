@@ -48,7 +48,7 @@ class StockConsumer(AsyncWebsocketConsumer):
                 await self.send(text_data=json.dumps(response_data))
                 
                 # Use a small delay to avoid high CPU usage in tight loops
-                await asyncio.sleep(2)
+                await asyncio.sleep(0.5)
         
         except Exception as e:
             # Log the exception for debugging

@@ -49,4 +49,4 @@ class Command(BaseCommand):
                 else:
                     logging.error("Failed to fetch market data.")
                     
-            time.sleep(1)
+            time.sleep(0.5)
