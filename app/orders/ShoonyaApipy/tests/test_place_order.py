@@ -10,7 +10,7 @@ import time
 # logging.basicConfig(level=logging.DEBUG)
 
 #start of our program
-def shoonya_order(order_type,product,getsegment,instrument_key,quantity):
+def shoonya_order(order_type,product,getsegment,instrument_key,quantity,price):
     api = ShoonyaApiPy()
     app = ShoonyaApi.objects.all().first()
     user = app.user
@@ -35,15 +35,18 @@ def shoonya_order(order_type,product,getsegment,instrument_key,quantity):
         from app.models import Shoonya_Instrument, Instrument
         token = Instrument.objects.filter(instrument_key=instrument_key).first().exchange_token
         segment = 'NSE'
+        prctyp = 'MKT'
         if getsegment == 'BSE_EQ':
             segment = 'BSE'
         elif getsegment == 'BSE_FO':
             segment = 'BFO'
+            prctyp = 'LMT'
         elif getsegment == 'NCD_FO':
             segment = 'CDS'
         elif getsegment == 'MCX_FO':
             segment = 'MCX'
         elif getsegment == 'NSE_FO':
+            prctyp = 'LMT'
             segment = 'NFO'
         elif getsegment == 'NSE_EQ':
             segment = 'NSE'
@@ -55,14 +58,17 @@ def shoonya_order(order_type,product,getsegment,instrument_key,quantity):
         print(syb.tradingsymbol)
         ret = api.place_order(buy_or_sell=buy_or_sell, product_type=product_type,
                                 exchange=segment, tradingsymbol=syb.tradingsymbol, 
-                                quantity=quantity, discloseqty=0,price_type='MKT', price=0, trigger_price=0,
-                                retention='DAY', remarks='my_order_001')
+                                quantity=quantity, discloseqty=0,price_type=prctyp, price=price, trigger_price=0,
+                                retention='DAY', remarks='Onstock')
         print('ret')
         print(ret)
+        from app.models import Shoonya_Orders
         orderno = ret['norenordno']
+        if prctyp == 'LMT':
+            Shoonya_Orders.objects.create(response=ret)
+            return price
         time.sleep(4)
         ret = api.single_order_history(orderno=orderno)
-        from app.models import Shoonya_Orders
         Shoonya_Orders.objects.create(response=ret)
         return ret[0]['avgprc']
     except Exception as e:

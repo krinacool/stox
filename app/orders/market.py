@@ -26,9 +26,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 if user.api_orders:
                     try:
                         print('shoonya order -=-=-=-=')
-                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
-                        if type == 'Market':
+                        if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                             try:
                                 if shoonyaPrice:
                                     try:
@@ -65,9 +65,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                     if user.api_orders:
                         try:
                             print('shoonya order -=-=-=-=')
-                            shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                            shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                             
-                            if type == 'Market':
+                            if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                                 try:
                                     if shoonyaPrice:
                                         try:
@@ -105,9 +105,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 if user.api_orders:
                     try:
                         print('shoonya order -=-=-=-=')
-                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
-                        if type == 'Market':
+                        if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                             try:
                                 if shoonyaPrice:
                                     try:
@@ -141,9 +141,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 if user.api_orders:
                     try:
                         print('shoonya order -=-=-=-=')
-                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
-                        if type == 'Market':
+                        if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                             try:
                                 if shoonyaPrice:
                                     try:
@@ -180,9 +180,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 if user.api_orders:
                     try:
                         print('shoonya order -=-=-=-=')
-                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
-                        if type == 'Market':
+                        if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                             try:
                                 if shoonyaPrice:
                                     try:
@@ -245,9 +245,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                     if user.api_orders:
                         try:
                             print('shoonya order -=-=-=-=')
-                            shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                            shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                             
-                            if type == 'Market':
+                            if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                                 try:
                                     if shoonyaPrice:
                                         try:
@@ -286,9 +286,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 if user.api_orders:
                     try:
                         print('shoonya order -=-=-=-=')
-                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
-                        if type == 'Market':
+                        if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                             try:
                                 if shoonyaPrice:
                                     try:
@@ -324,9 +324,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 if user.api_orders:
                     try:
                         print('shoonya order -=-=-=-=')
-                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
-                        if type == 'Market':
+                        if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                             try:
                                 if shoonyaPrice:
                                     try:
@@ -368,9 +368,9 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 if user.api_orders:
                     try:
                         print('shoonya order -=-=-=-=')
-                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity)
+                        shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
-                        if type == 'Market':
+                        if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
                             try:
                                 if shoonyaPrice:
                                     try:
