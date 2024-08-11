@@ -391,6 +391,8 @@ class OnstockBalanceHistory(models.Model):
     balance = models.FloatField(default=0.0)
     pnl = models.FloatField(default=0.0)
     brokerage = models.FloatField(default=0.0)
+    withdrawn = models.FloatField(default=0.0)
+    deposit = models.FloatField(default=0.0)
     def __str__(self):
         return f"{self.datefield} --> {self.balance}"
     
@@ -418,6 +420,17 @@ class OnstockBalanceHistory(models.Model):
         brokerage_collected = "{:.2f}".format(brokerage_collected)
         self.brokerage = brokerage_collected
         # TOTAL END BROKERAGE
+        total_deposit = 0
+        total_withdraw = 0
+        transactions = Transaction.objects.filter(status='COMPLETED', datetime__date=today)
+        for x in transactions:
+            if x.transaction_type == 'DEPOSIT':
+                total_deposit += x.amount
+            else:
+                total_withdraw += x.amount
+        
+        self.withdrawn = total_withdraw
+        self.deposit = total_deposit
         super().save(*args, **kwargs)
 
     class Meta:

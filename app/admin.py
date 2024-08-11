@@ -100,7 +100,7 @@ class ShoonyaOrderAdmin(admin.ModelAdmin):
 
 @admin.register(OnstockBalanceHistory)
 class OnstockBalanceAdmin(admin.ModelAdmin):
-    list_display = ('datefield','balance','pnl','brokerage')
+    list_display = ('datefield','balance','pnl','brokerage','withdrawn','deposit')
     list_filter = ('datefield',)
     def changelist_view(self, request, extra_context=None):
         # Aggregate new authors per day
