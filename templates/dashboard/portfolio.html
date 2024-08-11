@@ -41,9 +41,9 @@
                     <small class="w-32 h-2 text-xs text-gray-600">{{stock.quantity}} X AVG ₹{% if stock.sell_price == 0 %}{{stock.buy_price}}{% else %}{{stock.sell_price}}{% endif %}</small>
                 </div>
                 <div>
-                    <div class="h-2.5  max-w-12" id="{{stock.instrument_key}}pnl"></div>
-                    <div class="h-2.5 text-xs mt-2 ">
-                        Ltp: <span class="text-xs"
+                    <div class="h-2.5  max-w-12" id="{{stock.instrument_key}}pnl{{stock.product}}"></div>
+                    <div class="w-32 h-2 text-xs mt-2 ">
+                        Ltp: <span class="text-xs {{stock.instrument_key}}ltp"
                         id="{{stock.instrument_key}}ltp" data-buy_price="{{stock.buy_price}}"
                         data-last_traded_quantity="{{stock.last_traded_quantity}}"
                         data-sell_price="{{stock.sell_price}}" data-unrealised_pnl="{{stock.unrealised_pnl}}"
@@ -76,9 +76,9 @@
                     <small class="w-32 h-2 text-xs text-gray-600">Buy Price ₹{{stock.buy_price}}</small>
                 </div>
                 <div>
-                    <div class="h-2.5 w-24 mb-2.5 mt-2" id="{{stock.instrument_key}}pnl"></div>
+                    <div class="h-2.5 w-24 mb-2.5 mt-2 {% if stock.realised_pnl > 0 %}text-green-500{% else %}text-red-500{% endif %}">{{stock.realised_pnl}}</div>
                     <small class="w-32 h-2 text-xs text-gray-600">
-                        Ltp: <span class="text-xs"
+                        Ltp: <span class="text-xs {{stock.instrument_key}}ltp"
                         id="{{stock.instrument_key}}ltp" data-buy_price="{{stock.buy_price}}"
                         data-last_traded_quantity="{{stock.last_traded_quantity}}"
                         data-sell_price="{{stock.sell_price}}" data-unrealised_pnl="{{stock.unrealised_pnl}}"
@@ -130,9 +130,9 @@
                     <small class="w-32 h-2 text-xs text-gray-600">{{stock.quantity}} X AVG ₹{% if stock.sell_price == 0 %}{{stock.buy_price}}{% else %}{{stock.sell_price}}{% endif %}</small>
                 </div>
                 <div>
-                    <div class="h-2.5 w-24 mb-2.5 mt-2" id="{{stock.instrument_key}}pnl"></div>
+                    <div class="h-2.5 w-24 mb-2.5 mt-2" id="{{stock.instrument_key}}pnl{{stock.product}}"></div>
                     <small class="w-32 h-2 text-xs text-gray-600">
-                        Ltp: <span class="text-xs"
+                        Ltp: <span class="text-xs {{stock.instrument_key}}ltp"
                         id="{{stock.instrument_key}}ltp" data-buy_price="{{stock.buy_price}}"
                         data-last_traded_quantity="{{stock.last_traded_quantity}}"
                         data-sell_price="{{stock.sell_price}}" data-unrealised_pnl="{{stock.unrealised_pnl}}"
@@ -371,40 +371,46 @@
         let dpnl = 0;
         for (let i of data) {
             if (i['data']['symbol']) {
-                let buy_price = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-buy_price')
-                let sell_price = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-sell_price')
-                let quantity = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-quantity')
-                let product = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-product')
-                let last_traded_quantity = document.getElementById(i['instrument'] + 'ltp').getAttribute('data-last_traded_quantity')
-                let pnl = 0;
-                if (sell_price == 0.0) {
-                    pnl = (i['data']['ltp'] - buy_price).toFixed(2) * quantity;
-                }
-                else if (buy_price == 0.0) {
-                    pnl = (i['data']['ltp'] - sell_price).toFixed(2) * quantity;
-                }
-                else {
-                    pnl = (sell_price - buy_price).toFixed(2) * last_traded_quantity;
-                    dpnl += pnl
-                }
-                pnl = Math.round(pnl * 100) / 100;
-                let cls = "";
-                let ltpcls = "";
-                if (pnl < 0) {
-                    cls = "text-red-600"
-                }
-                else {
-                    cls = "text-green-600"
-                }
-                tpnl = tpnl + pnl;
-                document.getElementById(i['instrument'] + 'pnl').innerHTML = `<span class="${cls}">${pnl}</span>`
-                document.getElementById(i['instrument'] + 'ltp').innerHTML = `<span class="text-green-600 ">${i['data']['ltp']}</span>`
+                let ltpelements = document.getElementsByClassName(`${i['instrument']}ltp`);
+                for (let ltpelement of ltpelements) {
+                    let buy_price = ltpelement.getAttribute('data-buy_price')
+                    let sell_price = ltpelement.getAttribute('data-sell_price')
+                    let quantity = ltpelement.getAttribute('data-quantity')
+                    let product = ltpelement.getAttribute('data-product')
+                    let last_traded_quantity = ltpelement.getAttribute('data-last_traded_quantity')
+                    let pnl = 0;
+                    if (sell_price == 0.0) {
+                        pnl = (i['data']['ltp'] - buy_price).toFixed(2) * quantity;
+                    }
+                    else if (buy_price == 0.0) {
+                        pnl = (i['data']['ltp'] - sell_price).toFixed(2) * quantity;
+                    }
+                    else {
+                        pnl = (sell_price - buy_price).toFixed(2) * last_traded_quantity;
+                        dpnl += pnl
+                    }
+                    pnl = Math.round(pnl * 100) / 100;
+                    let cls = "";
+                    let ltpcls = "";
+                    if (pnl < 0) {
+                        cls = "text-red-600"
+                    }
+                    else {
+                        cls = "text-green-600"
+                    }
+                    tpnl = tpnl + pnl;
+                    try {
+                        document.getElementById(i['instrument'] + 'pnl' + product).innerHTML = `<span class="${cls}">${pnl}</span>`
+                    }
+                    catch(e) {}
+                    ltpelement.innerHTML = `<span class="text-green-600">${i['data']['ltp']}</span>`;
 
-                let instrument_input = document.getElementById('instrument_input').value;
-                if(instrument_input == i['instrument']) {
-                    if(document.getElementById('type').value == 'Market') {
-                        document.getElementById('price').value = i['data']['ltp'];
-                        calc()
+                    let instrument_input = document.getElementById('instrument_input').value;
+                    if(instrument_input == i['instrument']) {
+                        if(document.getElementById('type').value == 'Market') {
+                            document.getElementById('price').value = i['data']['ltp'];
+                            calc()
+                        }
                     }
                 }
             }
@@ -420,13 +426,13 @@
     };
 
     socket.onclose = function (event) {
-        const otherTabs = document.querySelectorAll('.watchlist-tab-main');
-        otherTabs.forEach((element) => {
-            element.classList.add('hidden')
-        });
-        setTimeout(function () {
-            location.reload();
-        }, 5000);
+        // const otherTabs = document.querySelectorAll('.watchlist-tab-main');
+        // otherTabs.forEach((element) => {
+        //     element.classList.add('hidden')
+        // });
+        // setTimeout(function () {
+        //     location.reload();
+        // }, 5000);
 
     };
 

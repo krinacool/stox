@@ -111,8 +111,16 @@ class symbols(models.Model):
         verbose_name = "Stock"
         verbose_name_plural = "Stocks"
         unique_together = ['symbol','segment']
+
+    def save(self, *args, **kwargs):
+        # Ensure ltp is rounded to two decimal places
+        self.ltp = round(self.ltp, 2)
+        # Forcefully add two decimal digits if missing
+        self.ltp = float(f"{self.ltp:.2f}")
+        super().save(*args, **kwargs)
+
     def __str__(self):
-        return str(self.symbol)
+        return str(self.symbol)    
 
 
 class Instrument(models.Model):
@@ -146,7 +154,7 @@ class Shoonya_Instrument(models.Model):
         return f"{self.tradingsymbol} ({self.exchange})"
 
 class Shoonya_Orders(models.Model):
-    datetime = models.DateTimeField(auto_now_add=True,null=True)
+    datetime = models.DateTimeField(default=timezone.now,null=True)
     response = models.TextField(max_length=5000, null=True,blank=True)
 
     class Meta:
@@ -215,7 +223,7 @@ class Watchlist(models.Model):
 class Transaction(models.Model):
     transaction_id = models.CharField(max_length=10, unique=True, default=generate_unique_id, editable=False)
     user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
-    datetime = models.DateTimeField(auto_now_add=True,null=True)
+    datetime = models.DateTimeField(default=timezone.now,null=True)
     status = models.CharField(choices=transaction_status,max_length=15,default = "REQUESTED")
     transaction_type = models.CharField(choices=t_type,max_length=15,default = "WITHDRAW")
     amount = models.PositiveIntegerField(default=0.0)
@@ -255,13 +263,13 @@ class Position(models.Model):
     sell_price = models.FloatField(default=0.0)
     stoploss = models.FloatField(default=0.0)
     target = models.FloatField(default=0.0)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(default=timezone.now)
     realised_pnl = models.FloatField(default=0.0)
     unrealised_pnl = models.FloatField(default=0.0)
     is_holding = models.BooleanField(default=False)
     is_closed = models.BooleanField(default=False)
     security_amount = models.FloatField(default=0.0)
-    last_traded_datetime = models.DateTimeField(auto_now_add=True)
+    last_traded_datetime = models.DateTimeField(default=timezone.now)
     def save(self, *args, **kwargs):
         # GETTING TOKEN
         self.last_traded_datetime = datetime.datetime.now()
@@ -312,7 +320,7 @@ class Position(models.Model):
 class Order(models.Model):
     order_id = models.CharField(max_length=10, unique=True, default=generate_unique_id, editable=False)
     user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
-    datetime = models.DateTimeField(auto_now_add=True,null=True)
+    datetime = models.DateTimeField(default=timezone.now,null=True)
     symbol = models.CharField(max_length=150,default="")
     instrument_key = models.CharField(max_length=150,default="",blank=True)
     segment = models.CharField(max_length=150,default="")
@@ -371,7 +379,7 @@ class Contact(models.Model):
     email = models.EmailField()
     phone_number = models.CharField(max_length=15)  # Assuming a maximum of 15 characters for a phone number
     query = models.TextField()
-    date_time = models.DateTimeField(auto_now_add=True)
+    date_time = models.DateTimeField(default=timezone.now)
     def __str__(self):
         return f"{self.first_name} {self.last_name}" if self.last_name else self.first_name
     class Meta:
@@ -379,7 +387,7 @@ class Contact(models.Model):
         verbose_name_plural = "Contact Requests"
 
 class OnstockBalanceHistory(models.Model):
-    datefield = models.DateField(auto_now_add=True)
+    datefield = models.DateField(default=timezone.now)
     balance = models.FloatField(default=0.0)
     pnl = models.FloatField(default=0.0)
     brokerage = models.FloatField(default=0.0)

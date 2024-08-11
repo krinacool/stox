@@ -1,5 +1,6 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
+{% load custom_filters %}    
 <div class="mt-2 tabs" id="tradebook">
     <div class="bg-white p-4">
         <div class="flex items-center justify-between">
@@ -39,9 +40,9 @@
         {% for x in pfm reversed %}
         <div class="flex items-center justify-between">
             <div>
-                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{x.symbol}}</div>
+                <div class="h-2.5 mt-2 text-black rounded-full mb-3.5">{{x.symbol | insert_spaces}}</div>
                 <div class="h-2 rounded-full mb-2">
-                    <div class="justify-center my-2 select-none flex">
+                    <div class="my-2 select-none flex">
                         <button
                             class="no-underline rounded-sm px-1 bg-gray-100 text-gray-500 text-xs mr-2">{{x.last_traded_datetime}}</button>
                     </div>

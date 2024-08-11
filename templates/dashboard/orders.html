@@ -1,5 +1,6 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
+{% load custom_filters %}    
 <div class="flex w-full rounded shadow mt-4 overflow-x-auto">
     <a href="#" aria-current="false"
         class="tab_buttons w-full flex items-center gap-x-2 justify-center font-medium rounded-lg px-5 py-2 border bg-white text-black border-gray-200"
@@ -29,9 +30,9 @@
         {% for stock in pending %}
         <div class="flex items-center justify-between" id="{{stock.instrument_key}}" data-price="{{stock.price}}" data-quantity="{{stock.quantity}}" data-order_id="{{stock.order_id}}" onclick="document.getElementById('{{stock.instrument_key}}tab').classList.toggle('hidden')">
             <div>
-                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
+                <div class="h-2.5 mt-2 text-black rounded-full mb-3.5">{{stock.symbol | insert_spaces}}</div>
                 <div class="h-2 rounded-full">
-                    <div class="justify-center my-2 select-none flex">
+                    <div class="my-2 select-none flex">
                         {% if stock.order_type == "BUY" %}
                         <button
                             class="no-underline rounded-sm px-1 bg-green-100 text-green-500 text-xs mr-2">BUY</button>
@@ -69,7 +70,7 @@
                 <a href="/cancelorder/{{stock.order_id}}" class="bg-red-600 text-white px-4 py-2 rounded mt-2">Cancel</a>
             </div>
             <div>
-                <button class="bg-blue-600 text-white px-4 py-2 rounded mt-2 mr-6" type="button" onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">Modify</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded mt-2 mr-6" type="button" onclick="place_order('{{stock.symbol | insert_spaces}}','{{stock.instrument_key}}')">Modify</button>
             </div>
         </div>
         {% endfor %}
@@ -99,9 +100,9 @@
         {% for stock in failed %}
         <div class="flex items-center justify-between">
             <div>
-                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
+                <div class="h-2.5 mt-2 text-black rounded-full mb-3.5">{{stock.symbol | insert_spaces}}</div>
                 <div class="h-2 rounded-full">
-                    <div class="justify-center my-2 select-none flex">
+                    <div class="my-2 select-none flex">
                         {% if stock.order_type == "BUY" %}
                         <button
                             class="no-underline rounded-sm px-1 bg-green-100 text-green-500 text-xs mr-2">BUY</button>
@@ -165,9 +166,9 @@
         {% for stock in completed %}
         <div class="flex items-center justify-between">
             <div>
-                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
+                <div class="h-2.5 mt-2 text-black rounded-full mb-3.5">{{stock.symbol | insert_spaces}}</div>
                 <div class="h-2 rounded-full">
-                    <div class="justify-center my-2 select-none flex">
+                    <div class="my-2 select-none flex">
                         {% if stock.order_type == "BUY" %}
                         <button
                             class="no-underline rounded-sm px-1 bg-green-100 text-green-500 text-xs mr-2">BUY</button>
@@ -226,9 +227,9 @@
         {% for stock in tradebook reversed %}
         <div class="flex items-center justify-between">
             <div>
-                <div class="h-2.5 mt-2 text-black rounded-full w-24 mb-3.5">{{stock.symbol}}</div>
+                <div class="h-2.5 mt-2 text-black rounded-full mb-3.5">{{stock.symbol | insert_spaces}}</div>
                 <div class="h-2 rounded-full">
-                    <div class="justify-center my-2 select-none flex">
+                    <div class="my-2 select-none flex">
                         {% if stock.order_type == "BUY" %}
                         <button
                             class="no-underline rounded-sm px-1 bg-green-100 text-green-500 text-xs mr-2">BUY</button>

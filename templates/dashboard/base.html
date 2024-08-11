@@ -30,6 +30,18 @@
 </style>
 
 <body>
+    <script>
+        function insertSpaces(text) {
+            // Insert space before digits
+            let textWithSpaces = text.replace(/(\D)(\d)/g, '$1 $2');
+            // Insert space after digits
+            textWithSpaces = textWithSpaces.replace(/(\d)(\D)/g, '$1 $2');
+            // Insert space between letters if they change from uppercase to lowercase or vice versa
+            textWithSpaces = textWithSpaces.replace(/([a-z])([A-Z])/g, '$1 $2');
+            textWithSpaces = textWithSpaces.replace(/([A-Z])([a-z])/g, '$1 $2');
+            return textWithSpaces;
+        }
+    </script>
     <main>
         <!-- start the project -->
         <!-- app layout -->
@@ -39,7 +51,7 @@
                 <div id="myScrollableElement" class="h-screen" data-simplebar>
                     <!-- brand logo -->
                     <a class="navbar-brand" href="/market">
-                        <h4 class="text-white font-bold">Onstock</h4>
+                        <h4 class="text-white font-bold text-2xl">Onstock</h4>
                         <!-- <img src="/static/images/brand/logo/logo.svg" width="50%" alt="" /> -->
                     </a>
 
@@ -125,7 +137,7 @@
                 <!-- start navbar -->
                 <div class="header">
                     <!-- navbar -->
-                    <nav class="bg-white px-6 py-[10px] flex items-center shadow-sm">
+                    <nav class="bg-white px-6 py-[10px] flex items-center shadow-sm" id="main-nav">
                         <a id="nav-toggle" href="#" class="text-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
@@ -135,18 +147,21 @@
                         </a>
                         <div class="ml-3 w-full" id="main-logo">
                             <a class="navbar-brand" href="/market">
-                                <h4 class="text-dark font-bold">Onstock</h4>
+                                <h4 class="text-dark font-bold text-2xl">Onstock</h4>
                                 <!-- <img src="/static/images/brand/logo/logo.svg" width="50%" alt="" /> -->
                             </a>
                         </div>
                         <div class="ml-3 w-full">
                             <!-- form -->
-                            <i data-feather="search" class="text-indigo-600 font-bold w-4 h-4 mr-2"
-                                style="float: inline-end;font-weight: 700;" onclick="search()" id="search-icon"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style="float: inline-end;" onclick="search()" id="search-icon">
+                                <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                                </svg>                            
+                                <!-- <i data-feather="search" class="text-black font-bold text-2xl w-4 h-4 mr-2"
+                                style="float: inline-end;" onclick="search()" id="search-icon"></i> -->
 
                             <form class="flex items-center hidden" id="search-form">
                                 <input type="search"
-                                    class="border w-full border-gray-300 text-gray-900 rounded focus:ring-indigo-600 focus:border-indigo-600 block p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+                                    class="border w-full border-gray-300 text-gray-900 rounded focus:ring-gray-400 focus:border-gray-400 hover:border-gray-400 block py-1 px-2 disabled:opacity-50 disabled:pointer-events-none"
                                     id="search-input" id="search-input" placeholder="SBIN-EQ" />
                                 <i data-feather="x" class="text-gray-800 font-bold w-4 h-4 ml-4"
                                     style="float: inline-end;font-weight: 700;font-size: larger;"
@@ -537,6 +552,8 @@
             const searchIcon = document.getElementById('search-icon');
             const mainLogo = document.getElementById('main-logo');
 
+            document.getElementById('main-nav').classList.toggle('px-6')
+            document.getElementById('main-nav').classList.toggle('px-2')
             // Check if the elements exist
             if (searchIcon && mainLogo) {
                 // Add a click event listener to the search icon
@@ -565,7 +582,7 @@
                         success: function (data) {
                             $('#suggestions').empty();
                             data.forEach(function (item) {
-                                $('#suggestions').append('<li class="flex justify-between rounded-lg w-full px-8 py-2 border border-gray-100"><span><span class="text-dark">' + item.tradingsymbol + '</span><br><span class="text-sm">' + item.exchange + '</span></span><span onclick="add(\'' + item.tradingsymbol + '\', \'' + item.exchange + '\')"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 32 32"><path d="M19 3A1 1 0 1019 5 1 1 0 1019 3zM16 3A1 1 0 1016 5 1 1 0 1016 3zM13 3A1 1 0 1013 5 1 1 0 1013 3zM25 6A1 1 0 1025 8 1 1 0 1025 6zM22 3A1 1 0 1022 5 1 1 0 1022 3zM7 6A1 1 0 107 8 1 1 0 107 6zM10 3A1 1 0 1010 5 1 1 0 1010 3zM28 9A1 1 0 1028 11 1 1 0 1028 9zM4 9A1 1 0 104 11 1 1 0 104 9zM4 12A1 1 0 104 14 1 1 0 104 12zM4 15A1 1 0 104 17 1 1 0 104 15zM4 18A1 1 0 104 20 1 1 0 104 18zM7 24A1 1 0 107 26 1 1 0 107 24zM4 21A1 1 0 104 23 1 1 0 104 21zM25 24A1 1 0 1025 26 1 1 0 1025 24zM28 12A1 1 0 1028 14 1 1 0 1028 12zM28 15A1 1 0 1028 17 1 1 0 1028 15zM28 18A1 1 0 1028 20 1 1 0 1028 18zM28 21A1 1 0 1028 23 1 1 0 1028 21zM22 27A1 1 0 1022 29 1 1 0 1022 27zM10 27A1 1 0 1010 29 1 1 0 1010 27zM19 27A1 1 0 1019 29 1 1 0 1019 27zM16 27A1 1 0 1016 29 1 1 0 1016 27zM16 12A1 1 0 1016 14 1 1 0 1016 12zM16 15A1 1 0 1016 17 1 1 0 1016 15zM16 18A1 1 0 1016 20 1 1 0 1016 18zM16 21A1 1 0 1016 23 1 1 0 1016 21zM16 9A1 1 0 1016 11 1 1 0 1016 9zM19 15A1 1 0 1019 17 1 1 0 1019 15zM13 15A1 1 0 1013 17 1 1 0 1013 15zM10 15A1 1 0 1010 17 1 1 0 1010 15zM22 15A1 1 0 1022 17 1 1 0 1022 15zM13 27A1 1 0 1013 29 1 1 0 1013 27z"></path></svg></span></li>');
+                                $('#suggestions').append('<li class="flex justify-between rounded-lg w-full px-8 py-2 border border-gray-100"><span><span class="text-dark">' + insertSpaces(item.tradingsymbol) + '</span><br><span class="text-sm">' + item.exchange + '</span></span><span onclick="add(\'' + item.tradingsymbol + '\', \'' + item.exchange + '\')"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 32 32"><path d="M19 3A1 1 0 1019 5 1 1 0 1019 3zM16 3A1 1 0 1016 5 1 1 0 1016 3zM13 3A1 1 0 1013 5 1 1 0 1013 3zM25 6A1 1 0 1025 8 1 1 0 1025 6zM22 3A1 1 0 1022 5 1 1 0 1022 3zM7 6A1 1 0 107 8 1 1 0 107 6zM10 3A1 1 0 1010 5 1 1 0 1010 3zM28 9A1 1 0 1028 11 1 1 0 1028 9zM4 9A1 1 0 104 11 1 1 0 104 9zM4 12A1 1 0 104 14 1 1 0 104 12zM4 15A1 1 0 104 17 1 1 0 104 15zM4 18A1 1 0 104 20 1 1 0 104 18zM7 24A1 1 0 107 26 1 1 0 107 24zM4 21A1 1 0 104 23 1 1 0 104 21zM25 24A1 1 0 1025 26 1 1 0 1025 24zM28 12A1 1 0 1028 14 1 1 0 1028 12zM28 15A1 1 0 1028 17 1 1 0 1028 15zM28 18A1 1 0 1028 20 1 1 0 1028 18zM28 21A1 1 0 1028 23 1 1 0 1028 21zM22 27A1 1 0 1022 29 1 1 0 1022 27zM10 27A1 1 0 1010 29 1 1 0 1010 27zM19 27A1 1 0 1019 29 1 1 0 1019 27zM16 27A1 1 0 1016 29 1 1 0 1016 27zM16 12A1 1 0 1016 14 1 1 0 1016 12zM16 15A1 1 0 1016 17 1 1 0 1016 15zM16 18A1 1 0 1016 20 1 1 0 1016 18zM16 21A1 1 0 1016 23 1 1 0 1016 21zM16 9A1 1 0 1016 11 1 1 0 1016 9zM19 15A1 1 0 1019 17 1 1 0 1019 15zM13 15A1 1 0 1013 17 1 1 0 1013 15zM10 15A1 1 0 1010 17 1 1 0 1010 15zM22 15A1 1 0 1022 17 1 1 0 1022 15zM13 27A1 1 0 1013 29 1 1 0 1013 27z"></path></svg></span></li>');
                             });
                         }
                     });

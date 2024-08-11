@@ -8,6 +8,7 @@ from app.orders.ShoonyaApipy.tests.test_place_order import shoonya_order
 
 # Market ORDER FUNCTION
 def market_order(user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,type='MARKET'):
+    print('market order')
     from app.models import Order,symbols
     og = symbols.objects.filter(instrument_key=instrument_key).first()
     segment = og.segment
@@ -25,7 +26,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 # API USER
                 if user.api_orders:
                     try:
-                        print('shoonya order -=-=-=-=')
                         shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
                         if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
@@ -64,7 +64,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                         # API USER
                     if user.api_orders:
                         try:
-                            print('shoonya order -=-=-=-=')
                             shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                             
                             if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
@@ -104,7 +103,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 # API USER
                 if user.api_orders:
                     try:
-                        print('shoonya order -=-=-=-=')
                         shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
                         if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
@@ -140,7 +138,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 # API USER
                 if user.api_orders:
                     try:
-                        print('shoonya order -=-=-=-=')
                         shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
                         if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
@@ -179,7 +176,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 # API USER
                 if user.api_orders:
                     try:
-                        print('shoonya order -=-=-=-=')
                         shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
                         if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
@@ -214,17 +210,13 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 # POSITION SETTLEMENT
                 if get_position(user,instrument_key,product) is not None:
                     if position_open(user,instrument_key,product):
-                        print('this 3')
                         add_more_position(user,instrument_key,quantity,product,price,stoploss,target)
                     else:
-                        print('this 2')
                         createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                 else:
-                    print('this 1')
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                 # END POSITION SETTLEMENT
             else:
-                print('Wallet failed')
                 order = Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target)
                 order.status = 'failed'
                 order.save()
@@ -244,7 +236,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                                     # API USER
                     if user.api_orders:
                         try:
-                            print('shoonya order -=-=-=-=')
                             shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                             
                             if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
@@ -285,7 +276,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                                 # API USER
                 if user.api_orders:
                     try:
-                        print('shoonya order -=-=-=-=')
                         shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
                         if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
@@ -323,7 +313,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                                 # API USER
                 if user.api_orders:
                     try:
-                        print('shoonya order -=-=-=-=')
                         shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
                         if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):
@@ -367,7 +356,6 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                 # API USER
                 if user.api_orders:
                     try:
-                        print('shoonya order -=-=-=-=')
                         shoonyaPrice = shoonya_order(order_type,product,segment,instrument_key,quantity,price)
                         
                         if type == 'Market' and (segment == 'BSE_FO' or segment == 'NCD_FO' or segment == 'NSE_FO'):

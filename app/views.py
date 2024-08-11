@@ -142,11 +142,9 @@ def market(request):
 
 def search_instruments(request):
     query = request.GET.get('q', '')
-    print(query)
     suggestions = Instrument.objects.none()
     if query:
         qarr = query.split(' ')
-        print(qarr)
         if qarr.__len__() == 2:
             if qarr[1].isdigit():
                 suggestions = Instrument.objects.filter(
@@ -310,7 +308,6 @@ def portfolio(request):
     tax = settings.tax
     # ---------------CONTEXT-----------
     all_tags = tags.objects.filter(user=request.user)
-    print(ppnl)
     context = {
         "all_tags":all_tags,
         "positions":positions,
@@ -507,7 +504,6 @@ def performance(request):
 def upstox_cred(request,secret):
     if request.method == 'GET':
         try:
-            print(secret)
             code = request.GET.get('code')
             obj = Upstox.objects.filter(secret_key=secret).first()
             obj.code = code

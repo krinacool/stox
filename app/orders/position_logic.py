@@ -10,7 +10,7 @@ def scalp_position_open(user,instrument_key,product):
     else:
         pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product)
     if pos.exists():
-        pos = pos.first()
+        pos = pos.last()
         if pos.quantity < 0:
             return True
         else:
@@ -26,7 +26,7 @@ def position_open(user,instrument_key,product):
     else:
         pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product)
     if pos.exists():
-        pos = pos.first()
+        pos = pos.last()
         if pos.quantity > 0:
             return True
         else:
@@ -42,13 +42,12 @@ def get_position(user,instrument_key,product,new=False):
         # if new:
         #     pos = None
         # else:
-        pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product).first()
+        pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product,is_closed=False).last()
     else:
-        pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product,created_at__date=today).first()
+        pos = Position.objects.filter(user=user,instrument_key=instrument_key,product=product,created_at__date=today).last()
     return pos
 
 def createPosition(user,instrument_key,quantity,ordertype,product,price,stoploss,target):
-    print('create positions')
     from app.models import Position
     pos = get_position(user,instrument_key,product,new=True)
     if pos is None:
