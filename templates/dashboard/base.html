@@ -151,29 +151,27 @@
                                 <!-- <img src="/static/images/brand/logo/logo.svg" width="50%" alt="" /> -->
                             </a>
                         </div>
-                        <div class="ml-3 w-full">
-                            <!-- form -->
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style="float: inline-end;" onclick="search()" id="search-icon">
-                                <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
-                                </svg>                            
-                                <!-- <i data-feather="search" class="text-black font-bold text-2xl w-4 h-4 mr-2"
-                                style="float: inline-end;" onclick="search()" id="search-icon"></i> -->
-
-                            <form class="flex items-center hidden" id="search-form">
-                                <input type="search"
-                                    class="border w-full border-gray-300 text-gray-900 rounded focus:ring-gray-400 focus:border-gray-400 hover:border-gray-400 block py-1 px-2 disabled:opacity-50 disabled:pointer-events-none"
-                                    id="search-input" id="search-input" placeholder="SBIN-EQ" />
-                                <i data-feather="x" class="text-gray-800 font-bold w-4 h-4 ml-4"
-                                    style="float: inline-end;font-weight: 700;font-size: larger;"
-                                    onclick="search()"></i>
-                            </form>
-                        </div>
+                        <ul class="flex ml-auto items-center">
+                            <!-- list -->
+                            <li class="dropdown ml-2">
+                                  <a href="/profile" class="relative">
+                                    <i data-feather="user" class=""></i>
+                                </a>
+                            </li>
+                         </ul>
                         <!-- navbar nav -->
 
                     </nav>
-                    <div class="z-10 bg-white divide-y divide-gray-900 rounded-lg">
-                        <ul class="py-2 text-black hidden" id="suggestions">
-                        </ul>
+                    <form class="flex items-center bg-white" id="search-form">
+                        <input type="search"
+                            class="border w-full border-gray-400 text-gray-900 rounded focus:ring-gray-700 focus:border-gray-400 hover:border-gray-400 block py-1 px-2 disabled:opacity-50 disabled:pointer-events-none mx-5 mb-2 mt-1"
+                            id="search-input" id="search-input" placeholder="SBIN-EQ" />
+                    </form>
+                    <div class="w-full">
+                        <div class="z-10 bg-white divide-y divide-gray-900 rounded-lg">
+                            <ul class="py-2 text-black hidden" id="suggestions">
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

@@ -8,7 +8,6 @@ from app.orders.ShoonyaApipy.tests.test_place_order import shoonya_order
 
 # Market ORDER FUNCTION
 def market_order(user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,type='MARKET'):
-    print('market order')
     from app.models import Order,symbols
     og = symbols.objects.filter(instrument_key=instrument_key).first()
     segment = og.segment
@@ -33,17 +32,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 if shoonyaPrice:
                                     try:
                                         if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                            shoonyaPrice = float(shoonyaPrice) + 0.5
+                                            shoonyaPrice = float(shoonyaPrice) + 0.25
                                         elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                            shoonyaPrice = float(shoonyaPrice) + 0.75
+                                            shoonyaPrice = float(shoonyaPrice) + 0.45
                                         elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                            shoonyaPrice = float(shoonyaPrice) + 1
+                                            shoonyaPrice = float(shoonyaPrice) + 0.65
                                         elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                            shoonyaPrice = float(shoonyaPrice) + 1.5
+                                            shoonyaPrice = float(shoonyaPrice) + 1.25
                                         elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                            shoonyaPrice = float(shoonyaPrice) + 2
+                                            shoonyaPrice = float(shoonyaPrice) + 1.45
                                         elif float(shoonyaPrice) > 400:
-                                            shoonyaPrice = float(shoonyaPrice) + 3
+                                            shoonyaPrice = float(shoonyaPrice) + 2.25
                                     except:
                                         pass
                                     price = float(shoonyaPrice)
@@ -71,17 +70,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                     if shoonyaPrice:
                                         try:
                                             if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                                shoonyaPrice = float(shoonyaPrice) + 0.5
+                                                shoonyaPrice = float(shoonyaPrice) + 0.25
                                             elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                                shoonyaPrice = float(shoonyaPrice) + 0.75
+                                                shoonyaPrice = float(shoonyaPrice) + 0.45
                                             elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                                shoonyaPrice = float(shoonyaPrice) + 1
+                                                shoonyaPrice = float(shoonyaPrice) + 0.65
                                             elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                                shoonyaPrice = float(shoonyaPrice) + 1.5
+                                                shoonyaPrice = float(shoonyaPrice) + 1.25
                                             elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                                shoonyaPrice = float(shoonyaPrice) + 2
+                                                shoonyaPrice = float(shoonyaPrice) + 1.45
                                             elif float(shoonyaPrice) > 400:
-                                                shoonyaPrice = float(shoonyaPrice) + 3
+                                                shoonyaPrice = float(shoonyaPrice) + 2.25
                                         except:
                                             pass
                                         price = float(shoonyaPrice)
@@ -110,17 +109,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 if shoonyaPrice:
                                     try:
                                         if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                            shoonyaPrice = float(shoonyaPrice) + 0.5
+                                            shoonyaPrice = float(shoonyaPrice) + 0.25
                                         elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                            shoonyaPrice = float(shoonyaPrice) + 0.75
+                                            shoonyaPrice = float(shoonyaPrice) + 0.45
                                         elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                            shoonyaPrice = float(shoonyaPrice) + 1
+                                            shoonyaPrice = float(shoonyaPrice) + 0.65
                                         elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                            shoonyaPrice = float(shoonyaPrice) + 1.5
+                                            shoonyaPrice = float(shoonyaPrice) + 1.25
                                         elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                            shoonyaPrice = float(shoonyaPrice) + 2
+                                            shoonyaPrice = float(shoonyaPrice) + 1.45
                                         elif float(shoonyaPrice) > 400:
-                                            shoonyaPrice = float(shoonyaPrice) + 3
+                                            shoonyaPrice = float(shoonyaPrice) + 2.25
                                     except:
                                         pass
                                     price = float(shoonyaPrice)
@@ -145,17 +144,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 if shoonyaPrice:
                                     try:
                                         if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                            shoonyaPrice = float(shoonyaPrice) + 0.5
+                                            shoonyaPrice = float(shoonyaPrice) + 0.25
                                         elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                            shoonyaPrice = float(shoonyaPrice) + 0.75
+                                            shoonyaPrice = float(shoonyaPrice) + 0.45
                                         elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                            shoonyaPrice = float(shoonyaPrice) + 1
+                                            shoonyaPrice = float(shoonyaPrice) + 0.65
                                         elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                            shoonyaPrice = float(shoonyaPrice) + 1.5
+                                            shoonyaPrice = float(shoonyaPrice) + 1.25
                                         elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                            shoonyaPrice = float(shoonyaPrice) + 2
+                                            shoonyaPrice = float(shoonyaPrice) + 1.45
                                         elif float(shoonyaPrice) > 400:
-                                            shoonyaPrice = float(shoonyaPrice) + 3
+                                            shoonyaPrice = float(shoonyaPrice) + 2.25
                                     except:
                                         pass
                                     price = float(shoonyaPrice)
@@ -183,17 +182,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 if shoonyaPrice:
                                     try:
                                         if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                            shoonyaPrice = float(shoonyaPrice) + 0.5
+                                            shoonyaPrice = float(shoonyaPrice) + 0.25
                                         elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                            shoonyaPrice = float(shoonyaPrice) + 0.75
+                                            shoonyaPrice = float(shoonyaPrice) + 0.45
                                         elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                            shoonyaPrice = float(shoonyaPrice) + 1
+                                            shoonyaPrice = float(shoonyaPrice) + 0.65
                                         elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                            shoonyaPrice = float(shoonyaPrice) + 1.5
+                                            shoonyaPrice = float(shoonyaPrice) + 1.25
                                         elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                            shoonyaPrice = float(shoonyaPrice) + 2
+                                            shoonyaPrice = float(shoonyaPrice) + 1.45
                                         elif float(shoonyaPrice) > 400:
-                                            shoonyaPrice = float(shoonyaPrice) + 3
+                                            shoonyaPrice = float(shoonyaPrice) + 2.25
                                     except:
                                         pass
                                     price = float(shoonyaPrice)
@@ -243,17 +242,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                     if shoonyaPrice:
                                         try:
                                             if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                                shoonyaPrice = float(shoonyaPrice) - 0.5
+                                                shoonyaPrice = float(shoonyaPrice) - 0.25
                                             elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                                shoonyaPrice = float(shoonyaPrice) - 0.75
+                                                shoonyaPrice = float(shoonyaPrice) - 0.45
                                             elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                                shoonyaPrice = float(shoonyaPrice) - 1
+                                                shoonyaPrice = float(shoonyaPrice) - 0.65
                                             elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                                shoonyaPrice = float(shoonyaPrice) - 1.5
+                                                shoonyaPrice = float(shoonyaPrice) - 1.25
                                             elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                                shoonyaPrice = float(shoonyaPrice) - 2
+                                                shoonyaPrice = float(shoonyaPrice) - 1.45
                                             elif float(shoonyaPrice) > 400:
-                                                shoonyaPrice = float(shoonyaPrice) - 3
+                                                shoonyaPrice = float(shoonyaPrice) - 2.25
                                         except:
                                             pass
                                         price = float(shoonyaPrice)
@@ -283,17 +282,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 if shoonyaPrice:
                                     try:
                                         if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                            shoonyaPrice = float(shoonyaPrice) - 0.5
+                                            shoonyaPrice = float(shoonyaPrice) - 0.25
                                         elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                            shoonyaPrice = float(shoonyaPrice) - 0.75
+                                            shoonyaPrice = float(shoonyaPrice) - 0.45
                                         elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                            shoonyaPrice = float(shoonyaPrice) - 1
+                                            shoonyaPrice = float(shoonyaPrice) - 0.65
                                         elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                            shoonyaPrice = float(shoonyaPrice) - 1.5
+                                            shoonyaPrice = float(shoonyaPrice) - 1.25
                                         elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                            shoonyaPrice = float(shoonyaPrice) - 2
+                                            shoonyaPrice = float(shoonyaPrice) - 1.45
                                         elif float(shoonyaPrice) > 400:
-                                            shoonyaPrice = float(shoonyaPrice) - 3
+                                            shoonyaPrice = float(shoonyaPrice) - 2.25
                                     except:
                                         pass
                                     price = float(shoonyaPrice)
@@ -320,17 +319,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 if shoonyaPrice:
                                     try:
                                         if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                            shoonyaPrice = float(shoonyaPrice) - 0.5
+                                            shoonyaPrice = float(shoonyaPrice) - 0.25
                                         elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                            shoonyaPrice = float(shoonyaPrice) - 0.75
+                                            shoonyaPrice = float(shoonyaPrice) - 0.45
                                         elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                            shoonyaPrice = float(shoonyaPrice) - 1
+                                            shoonyaPrice = float(shoonyaPrice) - 0.65
                                         elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                            shoonyaPrice = float(shoonyaPrice) - 1.5
+                                            shoonyaPrice = float(shoonyaPrice) - 1.25
                                         elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                            shoonyaPrice = float(shoonyaPrice) - 2
+                                            shoonyaPrice = float(shoonyaPrice) - 1.45
                                         elif float(shoonyaPrice) > 400:
-                                            shoonyaPrice = float(shoonyaPrice) - 3
+                                            shoonyaPrice = float(shoonyaPrice) - 2.25
                                     except:
                                         pass
                                     price = float(shoonyaPrice)
@@ -363,17 +362,17 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                                 if shoonyaPrice:
                                     try:
                                         if float(shoonyaPrice) < 25 and float(shoonyaPrice) > 5:
-                                            shoonyaPrice = float(shoonyaPrice) - 0.5
+                                            shoonyaPrice = float(shoonyaPrice) - 0.25
                                         elif float(shoonyaPrice) < 50 and float(shoonyaPrice) > 25:
-                                            shoonyaPrice = float(shoonyaPrice) - 0.75
+                                            shoonyaPrice = float(shoonyaPrice) - 0.45
                                         elif float(shoonyaPrice) < 100 and float(shoonyaPrice) > 50:
-                                            shoonyaPrice = float(shoonyaPrice) - 1
+                                            shoonyaPrice = float(shoonyaPrice) - 0.65
                                         elif float(shoonyaPrice) < 200 and float(shoonyaPrice) > 100:
-                                            shoonyaPrice = float(shoonyaPrice) - 1.5
+                                            shoonyaPrice = float(shoonyaPrice) - 1.25
                                         elif float(shoonyaPrice) < 400 and float(shoonyaPrice) > 200:
-                                            shoonyaPrice = float(shoonyaPrice) - 2
+                                            shoonyaPrice = float(shoonyaPrice) - 1.45
                                         elif float(shoonyaPrice) > 400:
-                                            shoonyaPrice = float(shoonyaPrice) - 3
+                                            shoonyaPrice = float(shoonyaPrice) - 2.25
                                     except:
                                         pass
                                     price = float(shoonyaPrice)
