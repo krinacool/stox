@@ -84,7 +84,8 @@ def handlelogin(request):
             user = authenticate(request, username=email, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('/market')
+                messages.success(request,'Logged In Successfully')
+                return redirect('/watchlist?greeting=True')
             else:
                 messages.error(request, 'Invalid login credentials.')
     else:
@@ -228,6 +229,9 @@ def create_watchlist(request):
 
 @login_required
 def watchlist(request):
+    greeting = False
+    if 'greeting' in request.GET:
+        greeting = True
     watch_list = Watchlist.objects.filter(user=request.user)
     watchlist_list = []
     watchlist_symbollist = []
@@ -237,6 +241,7 @@ def watchlist(request):
         if i.tag not in watchlist_list:
             watchlist_list.append(i.tag)
     context = {
+        'greeting':greeting,
         'watch_list':watch_list,
         'all_tags':all_tags,
         'watchlist_list':watchlist_list,

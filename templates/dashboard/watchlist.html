@@ -1,6 +1,37 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
 {% load custom_filters %}    
+{% if greeting %}
+<div class="grid lg:grid-cols-9 gap-4" style="z-index: 1000;">
+    <div id="loginPopup" class="fixed z-50 rounded-lg inset-0 flex items-center justify-center"
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px;">
+        <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
+            <div class="flex justify-between items-center border-b">
+                <div>
+                    <label class="text-lg text-black font-semibold mb-2">Important Notice:</label><span
+                        id=""></span>
+                </div>
+                <button class="text-gray-400 hover:text-gray-600"
+                    onclick="document.getElementById('loginPopup').classList.add('hidden')">&times;</button>
+            </div>
+            <div class="text-gray-900 m-4">
+                <ul class="list-disc list-inside mt-2">
+                    <li class="mb-1"><strong>Risk Disclosure:</strong> Stock trading involves significant risk and can result in substantial financial loss. Please be aware that past performance is not indicative of future results. Ensure you understand the risks involved and consult with a financial advisor if needed.</li>
+                    <li class="mb-1"><strong>Regulatory Compliance:</strong> All trading activities on this platform are regulated by the Securities and Exchange Board of India (SEBI) and other relevant regulatory authorities. Ensure you comply with all legal and regulatory requirements.</li>
+                    <li class="mb-1"><strong>Personal Responsibility:</strong> By using this app, you acknowledge and accept full responsibility for your trading decisions. This platform does not provide financial advice or recommendations. Please conduct your own research before making any trading decisions.</li>
+                  </ul>            
+            </div>
+            <div class="grid grid-cols-1 gap-2 mt-2">
+                    <div class="flex flex-col">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded" type="button"
+                            onclick="document.getElementById('loginPopup').classList.add('hidden')">
+                            I Accept</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 <div class="bg-white border-b border-gray-200 overflow-x-auto">
     <ul class="flex flex-nowrap -mb-px font-medium text-center" id="default" data-tabs-toggle="#default-content"
         data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
