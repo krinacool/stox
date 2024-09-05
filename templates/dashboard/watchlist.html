@@ -47,7 +47,7 @@
 {% endif %}
 <form action="/add_watchlist" method="post" id="watchlist_form">
     {% csrf_token %}
-    <input type="hidden" name="name" id="name_input">
+    <input type="hidden" name="tag_input" id="name_input">
     <input type="hidden" name="data" id="data_input">
 </form>
 
@@ -448,7 +448,9 @@
         });
 
         console.log(document.getElementById(elementId).innerText)
+        console.log(typeof document.getElementById(elementId).innerText)
         document.getElementById('name_input').value = document.getElementById(elementId).innerText;
+        console.log(document.getElementById('name_input').value)
         
         document.getElementById(elementId).classList.add('text-blue-600')
 

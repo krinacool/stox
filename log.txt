@@ -341,3 +341,56 @@ django.db.utils.OperationalError: no such column: settings_charges.manipulate_5_
 2024-09-05 08:36:50,132 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63505][0m
 2024-09-05 08:36:50,182 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
 2024-09-05 08:36:50,182 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63505][0m
+2024-09-05 08:44:37,907 D:\stox\app\views.py changed, reloading.
+2024-09-05 08:44:41,833 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:63853][0m
+2024-09-05 08:44:42,562 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:44:42,562 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63853][0m
+2024-09-05 08:44:42,628 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:44:42,630 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63853][0m
+2024-09-05 08:44:45,868 [mHTTP GET /search/?q=ba 200 [0.06, 127.0.0.1:63853][0m
+2024-09-05 08:44:46,045 [mHTTP GET /search/?q=ban 200 [0.03, 127.0.0.1:63853][0m
+2024-09-05 08:44:46,271 [mHTTP GET /search/?q=bank 200 [0.06, 127.0.0.1:63853][0m
+2024-09-05 08:44:46,446 [mHTTP GET /search/?q=bankn 200 [0.06, 127.0.0.1:63853][0m
+2024-09-05 08:44:46,777 [mHTTP GET /search/?q=bankni 200 [0.13, 127.0.0.1:63853][0m
+2024-09-05 08:44:54,148 [mHTTP GET /search/?q=BANKNIFTY24 200 [0.03, 127.0.0.1:63864][0m
+2024-09-05 08:44:56,567 [32mHTTP POST /add_watchlist 302 [0.09, 127.0.0.1:63864][0m
+2024-09-05 08:44:56,601 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:63864][0m
+2024-09-05 08:44:57,071 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:44:57,071 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63864][0m
+2024-09-05 08:44:57,085 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:44:57,085 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63864][0m
+2024-09-05 08:46:40,919 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:63947][0m
+2024-09-05 08:46:41,430 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:46:41,431 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:46:41,432 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.09, 127.0.0.1:63948][0m
+2024-09-05 08:46:41,433 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.10, 127.0.0.1:63947][0m
+2024-09-05 08:49:04,535 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:64040][0m
+2024-09-05 08:49:05,201 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:49:05,201 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:49:05,201 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:64041][0m
+2024-09-05 08:49:05,208 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:64040][0m
+2024-09-05 08:49:09,310 [mHTTP GET /search/?q=sbin 200 [0.02, 127.0.0.1:64040][0m
+2024-09-05 08:49:49,573 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:64084][0m
+2024-09-05 08:49:49,983 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:49:49,983 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:49:49,983 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:64084][0m
+2024-09-05 08:49:49,983 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:64085][0m
+2024-09-05 08:49:52,839 [mHTTP GET /search/?q=silver 200 [0.06, 127.0.0.1:64085][0m
+2024-09-05 08:49:54,035 [32mHTTP POST /add_watchlist 302 [0.05, 127.0.0.1:64091][0m
+2024-09-05 08:49:54,078 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:64091][0m
+2024-09-05 08:49:54,457 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:49:54,457 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:64091][0m
+2024-09-05 08:49:54,493 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:49:54,493 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:64091][0m
+2024-09-05 08:50:00,687 [mHTTP GET /admin/app/watchlist/ 200 [0.29, 127.0.0.1:64091][0m
+2024-09-05 08:50:00,763 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-05 08:50:00,763 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:64092][0m
+2024-09-05 08:50:00,770 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-05 08:50:00,770 Not Found: /static/admin/img/icon-no.svg
+2024-09-05 08:50:00,770 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.03, 127.0.0.1:64099][0m
+2024-09-05 08:50:00,770 [33mHTTP GET /static/admin/img/icon-no.svg 404 [0.02, 127.0.0.1:64100][0m
+2024-09-05 08:50:00,775 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:64091][0m
+2024-09-05 08:50:00,799 Not Found: /static/admin/img/icon-yes.svg
+2024-09-05 08:50:00,799 Not Found: /static/admin/img/icon-no.svg
+2024-09-05 08:50:00,799 [33mHTTP GET /static/admin/img/icon-yes.svg 404 [0.01, 127.0.0.1:64091][0m
+2024-09-05 08:50:00,799 [33mHTTP GET /static/admin/img/icon-no.svg 404 [0.01, 127.0.0.1:64100][0m
