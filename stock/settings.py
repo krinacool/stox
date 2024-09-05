@@ -161,7 +161,12 @@ EMAIL_HOST_USER = 'onstocktrader@gmail.com'
 EMAIL_HOST_PASSWORD = 'nurd mkis qbje aqsa'
 EMAIL_USE_TLS = True
 
-# Custom settings for ASH
+# Custom settings for Login Session
+
+SESSION_COOKIE_AGE = 24 * 60 * 60  # 24 hours in seconds
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+
 
 # File paths
 SYMBOLS_FILE = 'C:\\Users\\atulg\\Desktop\\stock\\data\\symbols.csv'
