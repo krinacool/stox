@@ -6,11 +6,11 @@ import time
 from app.orders.ShoonyaApipy.tests.test_place_order import shoonya_order
 from settings.models import charges
 
-charge = charges.objects.all().first()
 
 # Market ORDER FUNCTION
 def market_order(user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,type='MARKET'):
     from app.models import Order,symbols
+    charge = charges.objects.all().first()
     og = symbols.objects.filter(instrument_key=instrument_key).first()
     segment = og.segment
     amount = 0
