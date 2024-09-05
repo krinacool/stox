@@ -335,13 +335,19 @@ class Order(models.Model):
     type = models.CharField(choices=types,max_length=7,default = "Market")
     charges = models.FloatField(default=0.0)
     message = models.CharField(max_length=200,default = "",blank=True)
+    automatic_close = models.BooleanField(default=False)
     position = models.ForeignKey(Position, on_delete=models.CASCADE,null = True,blank=True)
     class Meta:
         verbose_name = "Order"
         verbose_name_plural = "Orders"
     def save(self, *args, **kwargs):
         print('-==-=Debuging-==-=-')
-        self.charges = round(calc_carrage(self.amount,self.order_type,self.product), 2)
+        from settings.models import charges
+        charge = charges.objects.all().first()
+        if self.automatic_close:
+            self.charges = round(calc_carrage(self.amount,self.order_type,self.product), 2) + charge
+        else:
+            self.charges = round(calc_carrage(self.amount,self.order_type,self.product), 2)
         self.amount = round(self.amount, 2)
         self.price = round(float(self.price), 2)
 

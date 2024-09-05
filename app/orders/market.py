@@ -8,7 +8,7 @@ from settings.models import charges
 
 
 # Market ORDER FUNCTION
-def market_order(user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,type='MARKET'):
+def market_order(user,symbol,instrument_key,token,quantity,order_type,product,stoploss,target,type='MARKET',automatic_close=False):
     from app.models import Order,symbols
     charge = charges.objects.all().first()
     og = symbols.objects.filter(instrument_key=instrument_key).first()
@@ -54,7 +54,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                         pass
                 # END API USER
                 amount = pos_quantity * price
-                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
+                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0,automatic_close=automatic_close)
                 order.status = 'completed'
                 order.save()
                 close_full_position(user,instrument_key,product,price)
@@ -92,11 +92,11 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                             pass
                     # END API USER
                     amount = price * quantity
-                    order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="completed",type=type,stoploss=stoploss,target=target)
+                    order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="completed",type=type,stoploss=stoploss,target=target,automatic_close=automatic_close)
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                     deduct_amount(user,amount)
                 else:
-                    order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target)
+                    order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target,automatic_close=automatic_close)
                     order.status = 'failed'
                     order.save()
                     return 'failed'
@@ -131,7 +131,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                         pass
                 # END API USER
                 amount = quantity * price
-                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
+                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0,automatic_close=automatic_close)
                 order.status = 'completed'
                 order.save()
                 close_some_position(user,instrument_key,quantity,product,price)
@@ -166,7 +166,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                         pass
                 # END API USER
                 amount = quantity * price
-                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
+                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0,automatic_close=automatic_close)
                 order.status = 'completed'
                 order.save()
                 close_full_position(user,instrument_key,product,price)
@@ -204,7 +204,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                         pass
                 # END API USER
                 amount = float(quantity) * price
-                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
+                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target,automatic_close=automatic_close)
                 order.status = 'completed'
                 order.save()
                 deduct_amount(user,amount)
@@ -218,7 +218,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                 # END POSITION SETTLEMENT
             else:
-                order = Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target)
+                order = Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target,automatic_close=automatic_close)
                 order.status = 'failed'
                 order.save()
                 return 'failed'
@@ -227,7 +227,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
         if position_open(user,instrument_key,product):
             if quantity > pos_quantity:
                 amount = price * pos_quantity
-                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
+                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target,automatic_close=automatic_close)
                 order.status = 'completed'
                 order.save()
                 close_full_position(user,instrument_key,product,price)
@@ -264,13 +264,13 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                             pass
                     # END API USER
                     amount = quantity * price
-                    order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
+                    order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=pos_quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target,automatic_close=automatic_close)
                     order.status = 'completed'
                     order.save()
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                     add_amount(user,(amount))
                 else:
-                    order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=(quantity-pos_quantity),order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target)
+                    order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=(quantity-pos_quantity),order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target,automatic_close=automatic_close)
                     order.status = 'failed'
                     return 'failed'
             if quantity < pos_quantity:
@@ -304,7 +304,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                         pass
                 # END API USER
                 amount = float(quantity) * price
-                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
+                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target,automatic_close=automatic_close)
                 order.save()
                 order.status = 'completed'
                 order.save()
@@ -341,7 +341,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                         pass
                 # END API USER
                 amount = quantity * price
-                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0)
+                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=0,target=0,automatic_close=automatic_close)
                 order.status = 'completed'
                 order.save()
                 close_full_position(user,instrument_key,product,price)
@@ -384,7 +384,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                         pass
                 # END API USER
                 amount = float(quantity) * price
-                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target)
+                order = Order.objects.create(user=user,symbol=symbol,instrument_key=instrument_key,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,stoploss=stoploss,target=target,automatic_close=automatic_close)
                 order.status = 'completed'
                 order.save()
                 deduct_amount(user,amount)
@@ -395,7 +395,7 @@ def market_order(user,symbol,instrument_key,token,quantity,order_type,product,st
                     createPosition(user,instrument_key,quantity,order_type,product,price,stoploss,target)
                     add_amount(user,amount)
             else:
-                order = Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target)
+                order = Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="initiated",type=type,message='Insufficient Funds',stoploss=stoploss,target=target,automatic_close=automatic_close)
                 order.status = 'failed'
                 order.save()
                 return 'failed'
@@ -435,7 +435,7 @@ def stoploss_target(order_id):
 
 
 
-    #         Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="completed",type='Market',message='Order excuted successfully.')
+    #         Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="completed",type='Market',message='Order excuted successfully.',automatic_close=automatic_close)
     #         deduct_amount(user,amount)
     #         createPosition(user,symbol,quantity,order_type,product,price,stoploss,target,stoploss,target)
     #         if user.api_orders:
@@ -446,11 +446,11 @@ def stoploss_target(order_id):
     #                 pass
     #         return "success"
     #     else:
-    #         Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="failed",type='Market',message='Insufficient Funds')
+    #         Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="failed",type='Market',message='Insufficient Funds',automatic_close=automatic_close)
     #         return "failed"
     # else:
     #     amount = calc_carrage(total_amount,order_type)
-    #     Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="completed",type='Market',message='Order excuted successfully')
+    #     Order.objects.create(user=user,symbol=symbol,segment=segment,price=price,amount=amount,quantity=quantity,order_type=order_type,product=product,status="completed",type='Market',message='Order excuted successfully',automatic_close=automatic_close)
     #     createPosition(user,symbol,quantity,order_type,product,price,stoploss,target,stoploss,target)
     #     add_amount(user,amount)
     #     if user.api_orders:

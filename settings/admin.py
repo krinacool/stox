@@ -48,12 +48,12 @@ admin.site.register(Upstox, UpstoxAdmin)
 
 @admin.register(nse_market_time)
 class nse_market(admin.ModelAdmin):
-    list_display = ('open_time', 'close_time')
+    list_display = ('open_time', 'close_time','position_close_time')
 
 
 @admin.register(mcx_market_time)
 class mcx_market(admin.ModelAdmin):
-    list_display = ('open_time', 'close_time')
+    list_display = ('open_time', 'close_time','position_close_time')
 
 @admin.register(ShoonyaApi)
 class ShoonyaApi(admin.ModelAdmin):

@@ -1,5 +1,6 @@
 from django.db import models
 import pyotp
+import datetime
 from django.core.cache import cache
 from app.symbols.api_sessions import sessions
 
@@ -32,6 +33,7 @@ class dates(models.Model):
 class nse_market_time(models.Model):
     open_time = models.TimeField()
     close_time = models.TimeField()
+    position_close_time = models.TimeField(default=datetime.time(15, 20))  # 3:20 PM
     market_dates = models.ManyToManyField(dates,blank=True)
     class Meta:
         verbose_name = "NSE Market Setting"
@@ -43,6 +45,7 @@ class nse_market_time(models.Model):
 class mcx_market_time(models.Model):
     open_time = models.TimeField()
     close_time = models.TimeField()
+    position_close_time = models.TimeField(default=datetime.time(23, 20))  # 3:20 PM
     market_dates = models.ManyToManyField(dates,blank=True)
     class Meta:
         verbose_name = "MCX Market Setting"
