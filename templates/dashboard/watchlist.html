@@ -1,4 +1,17 @@
 {% extends 'dashboard/base.html' %}
+{% block search %}
+<form class="flex items-center bg-white" id="search-form">
+    <input type="search"
+        class="border w-full border-gray-400 text-gray-900 rounded focus:ring-gray-700 focus:border-gray-400 hover:border-gray-400 block py-1 px-2 disabled:opacity-50 disabled:pointer-events-none mx-5 mb-2 mt-1"
+        id="search-input" id="search-input" placeholder="SBIN-EQ" />
+</form>
+<div class="w-full">
+    <div class="z-10 bg-white divide-y divide-gray-900 rounded-lg">
+        <ul class="py-2 text-black hidden" id="suggestions">
+        </ul>
+    </div>
+</div>
+{% endblock search %}
 {% block body %}
 {% load custom_filters %}    
 {% if greeting %}
@@ -24,7 +37,7 @@
             <div class="grid grid-cols-1 gap-2 mt-2">
                     <div class="flex flex-col">
                         <button class="bg-blue-600 text-white px-4 py-2 rounded" type="button"
-                            onclick="document.getElementById('loginPopup').classList.add('hidden')">
+                            onclick="document.getElementById('loginPopup').classList.add('hidden');location.href='/watchlist'">
                             I Accept</button>
                     </div>
             </div>
@@ -32,6 +45,13 @@
     </div>
 </div>
 {% endif %}
+<form action="/add_watchlist" method="post" id="watchlist_form">
+    {% csrf_token %}
+    <input type="hidden" name="name" id="name_input">
+    <input type="hidden" name="data" id="data_input">
+</form>
+
+
 <div class="bg-white border-b border-gray-200 overflow-x-auto">
     <ul class="flex flex-nowrap -mb-px font-medium text-center" id="default" data-tabs-toggle="#default-content"
         data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
@@ -92,7 +112,7 @@
                             <div class="flex flex-col">
                                 <label for=""
                                     class="block text-sm font-medium text-gray-900  mb-1">Watchlist name</label>
-                                <input type="text" name="name"
+                                <input type="text" name=""
                                     class="mb-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="favourite" value="" required />
                             </div>
@@ -427,6 +447,9 @@
             element.classList.remove('text-blue-600')
         });
 
+        console.log(document.getElementById(elementId).innerText)
+        document.getElementById('name_input').value = document.getElementById(elementId).innerText;
+        
         document.getElementById(elementId).classList.add('text-blue-600')
 
         const otherTabs = document.querySelectorAll('.watchlist-tab-main');
@@ -447,7 +470,6 @@
     const socket = new WebSocket('wss://onstock.in/ws/stocks/');
 
     socket.onopen = function () {
-        console.log('WebSocket connection established.');
 
         // Example instruments list
         const instruments = {{watchlist_symbollist|safe}};
@@ -459,7 +481,6 @@
         // Click the first element
         tabClickElements[0].click();
     } else {
-        console.error('No elements found with the class name .watchlist-tab');
     }
     };
 
@@ -475,7 +496,6 @@
                     change_cls = "text-green-600"
                 }
                 if(i['data']['segment'] == 'NSE_INDEX' || i['data']['segment'] == 'BSE_INDEX' || i['data']['segment'] == 'MCX_INDEX') {
-                    console.log(i['data']['segment'])
                     document.getElementById(i['instrument']).innerHTML = `
                         ${i['data']['ltp']}<br>
                     <span class="h-2 rounded-full ${change_cls} text-left text-sm">
@@ -514,7 +534,6 @@
                         calc()
                     }
                 }
-                // console.log(i['data']['symbol'])
             }
         }
         // Handle the real-time data update here
@@ -526,7 +545,6 @@
             element.classList.add('hidden')
         });
         document.getElementById('skeleton').classList.remove('hidden')
-        console.log('WebSocket connection closed:', event);
         setTimeout(function () {
             location.reload();
         }, 5000);
@@ -539,7 +557,6 @@
             element.classList.add('hidden')
         });
         document.getElementById('skeleton').classList.remove('hidden')
-        console.error('WebSocket error:', error);
         setTimeout(function () {
             location.reload();
         }, 5000);
@@ -566,9 +583,7 @@
                         ${i}
                 </li>
                 `
-            console.log(i);
         }
-        console.log(content)
         document.getElementById('delete_watchlist_tab').innerHTML = content
         document.getElementById('delete_stock_input').value = JSON.stringify(delete_instruments_list)
     }
@@ -576,7 +591,6 @@
     const whiteBoxes = document.querySelectorAll('.whiteBox');
     stocks.forEach(stock => {
         stock.addEventListener('dragstart', (e) => {
-            console.log('DragStart has been triggered');
             e.target.classList.add('hold');
             e.dataTransfer.setData('text/plain', e.target.id);
             document.getElementById('deleteTab').classList.remove('hidden');
@@ -585,7 +599,6 @@
             }, 0);
         });
         stock.addEventListener('dragend', (e) => {
-            console.log('DragEnd has been triggered');
             document.getElementById('deleteTab').classList.add('hidden');
             e.target.classList.remove('hold', 'hide');
         });
@@ -593,16 +606,12 @@
     whiteBoxes.forEach(whiteBox => {
         whiteBox.addEventListener('dragover', (e) => {
             e.preventDefault();
-            console.log('DragOver has been triggered');
         });
         whiteBox.addEventListener('dragenter', (e) => {
-            console.log('DragEnter has been triggered');
         });
         whiteBox.addEventListener('dragleave', (e) => {
-            console.log('DragLeave has been triggered');
         });
         whiteBox.addEventListener('drop', (e) => {
-            console.log('Drop has been triggered');
             e.preventDefault();
             const draggedId = e.dataTransfer.getData('text/plain');
             const draggedElement = document.getElementById(draggedId);
@@ -619,14 +628,12 @@
 
     deleteTab.addEventListener('dragover', (e) => {
             e.preventDefault();
-            console.log('DragOver on deleteTab');
         });
 
         deleteTab.addEventListener('drop', (e) => {
             e.preventDefault();
             const draggedId = e.dataTransfer.getData('text/plain');
             const draggedElement = document.getElementById(draggedId);
-            console.log('Dragged Element:', draggedElement.id);
             if (draggedElement) {
                 draggedElement.remove();
             }
@@ -635,10 +642,8 @@
             fetch(`/delete_symbol/${draggedId}`)
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Delete response:', data);
                 })
                 .catch(error => {
-                    console.error('Error deleting symbol:', error);
                 });
         });
 </script>

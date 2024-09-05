@@ -162,17 +162,8 @@
                         <!-- navbar nav -->
 
                     </nav>
-                    <form class="flex items-center bg-white" id="search-form">
-                        <input type="search"
-                            class="border w-full border-gray-400 text-gray-900 rounded focus:ring-gray-700 focus:border-gray-400 hover:border-gray-400 block py-1 px-2 disabled:opacity-50 disabled:pointer-events-none mx-5 mb-2 mt-1"
-                            id="search-input" id="search-input" placeholder="SBIN-EQ" />
-                    </form>
-                    <div class="w-full">
-                        <div class="z-10 bg-white divide-y divide-gray-900 rounded-lg">
-                            <ul class="py-2 text-black hidden" id="suggestions">
-                            </ul>
-                        </div>
-                    </div>
+                    {% block search %}
+                    {% endblock search %}
                 </div>
 
                 {% if request.user.pan_card or request.user.bank_account_name or request.user.bank_account_number or request.user.ifsc_code or request.user.upi_id %}
@@ -409,6 +400,7 @@
                     {% endfor %}
                 </div>
                 {% endif %}
+                
 
 
                 {% block body %}
@@ -542,7 +534,6 @@
     </div>
 
 
-
     <script>
         let symbols_list = []
         function search() {
@@ -591,19 +582,22 @@
         });
 
         function add(tradingsymbol, exchange) {
-            symbols_list.push({ "symbol": tradingsymbol, "exchange": exchange })
-            let content = '<span class="fixed right-0"><a class="inline-block px-8 py-3 text-white bg-indigo-600 rounded-lg active"onclick="initiate_add()">Add</a></span>'
-            for (let i of symbols_list.reverse()) {
-                content = content +
-                    `
-                <li class="me-2 inline-block px-4 py-3 h-10 min-w-32 text-white bg-blue-600 rounded-lg active">
-                        ${i.symbol}
-                </li>
-                `
-                console.log(i);
-            }
-            document.getElementById('select_watchlist_tab').innerHTML = content
+            symbols_list.push({ "symbol": tradingsymbol, "exchange": exchange });
+            document.getElementById('data_input').value = JSON.stringify(symbols_list);
+            document.getElementById('watchlist_form').submit();
         }
+
+            // let content = '<span class="fixed right-0"><a class="inline-block px-8 py-3 text-white bg-indigo-600 rounded-lg active"onclick="initiate_add()">Add</a></span>'
+            // for (let i of symbols_list.reverse()) {
+            //     content = content +
+            //         `
+            //     <li class="me-2 inline-block px-4 py-3 h-10 min-w-32 text-white bg-blue-600 rounded-lg active">
+            //             ${i.symbol}
+            //     </li>
+            //     `
+            //     console.log(i);
+            // }
+            // document.getElementById('select_watchlist_tab').innerHTML = content
 
         function initiate_add() {
             document.getElementById('wth_final').classList.remove('hidden');

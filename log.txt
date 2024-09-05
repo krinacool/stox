@@ -50,3 +50,294 @@
 2024-09-05 06:54:38,443 [mHTTP GET /admin/login/?next=/admin/ 200 [0.00, 127.0.0.1:61606][0m
 2024-09-05 06:54:40,814 [32mHTTP GET /watchlist 302 [0.01, 127.0.0.1:61606][0m
 2024-09-05 06:54:40,827 [mHTTP GET /login/?next=/watchlist 200 [0.01, 127.0.0.1:61606][0m
+2024-09-05 07:38:16,893 D:\stox\settings\admin.py changed, reloading.
+2024-09-05 07:38:21,634 [32mHTTP GET /admin/ 302 [0.05, 127.0.0.1:61874][0m
+2024-09-05 07:38:21,667 [mHTTP GET /admin/login/?next=/admin/ 200 [0.03, 127.0.0.1:61874][0m
+2024-09-05 07:38:32,570 [32mHTTP POST /admin/login/?next=/admin/ 302 [1.06, 127.0.0.1:61874][0m
+2024-09-05 07:38:32,742 [mHTTP GET /admin/ 200 [0.17, 127.0.0.1:61874][0m
+2024-09-05 07:38:42,356 Internal Server Error: /admin/settings/charges/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: settings_charges.manipulate_5_to_25
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: settings_charges.manipulate_5_to_25
+2024-09-05 07:38:42,770 [35;1mHTTP GET /admin/settings/charges/ 500 [0.45, 127.0.0.1:61874][0m
+2024-09-05 07:38:57,261 D:\stox\stock\settings.py changed, reloading.
+2024-09-05 07:39:00,513 Internal Server Error: /admin/settings/charges/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: settings_charges.manipulate_5_to_25
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: settings_charges.manipulate_5_to_25
+2024-09-05 07:39:00,528 [35;1mHTTP GET /admin/settings/charges/ 500 [0.15, 127.0.0.1:61884][0m
+2024-09-05 07:39:25,090 [mHTTP GET /admin/settings/charges/ 200 [0.17, 127.0.0.1:61906][0m
+2024-09-05 07:39:25,144 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61906][0m
+2024-09-05 07:40:09,637 [mHTTP GET /admin/settings/charges/1/change/ 200 [0.14, 127.0.0.1:61906][0m
+2024-09-05 07:40:09,691 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:61906][0m
+2024-09-05 07:40:20,216 D:\stox\stock\settings.py changed, reloading.
+2024-09-05 07:40:27,998 D:\stox\settings\admin.py changed, reloading.
+2024-09-05 07:40:31,436 [mHTTP GET /admin/settings/charges/1/change/ 200 [0.14, 127.0.0.1:61925][0m
+2024-09-05 07:40:31,479 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-05 07:40:31,479 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:61925][0m
+2024-09-05 07:40:31,485 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:61927][0m
+2024-09-05 07:40:31,491 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-05 07:40:31,491 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:61925][0m
+2024-09-05 07:43:25,531 D:\stox\settings\admin.py changed, reloading.
+2024-09-05 07:44:32,666 [mHTTP GET /admin/settings/charges/1/change/ 200 [0.35, 127.0.0.1:61984][0m
+2024-09-05 07:44:32,731 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-05 07:44:32,731 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:61985][0m
+2024-09-05 07:44:32,745 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-05 07:44:32,747 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.04, 127.0.0.1:61986][0m
+2024-09-05 07:44:32,747 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:61984][0m
+2024-09-05 07:44:43,732 [mHTTP GET /admin/settings/charges/ 200 [0.12, 127.0.0.1:61984][0m
+2024-09-05 07:44:43,781 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-05 07:44:43,781 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:61985][0m
+2024-09-05 07:44:43,781 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-05 07:44:43,790 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.03, 127.0.0.1:61986][0m
+2024-09-05 07:44:43,795 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:61984][0m
+2024-09-05 07:46:31,071 [mHTTP GET /admin/ 200 [0.04, 127.0.0.1:62003][0m
+2024-09-05 07:47:11,642 [mHTTP GET /admin/app/onstockbalancehistory/ 200 [0.11, 127.0.0.1:62003][0m
+2024-09-05 07:47:11,723 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-05 07:47:11,723 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-05 07:47:11,726 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.04, 127.0.0.1:62004][0m
+2024-09-05 07:47:11,727 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.03, 127.0.0.1:62009][0m
+2024-09-05 07:47:11,733 [mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:62003][0m
+2024-09-05 07:48:06,076 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:62003][0m
+2024-09-05 07:49:09,606 [mHTTP GET /admin/app/watchlist/ 200 [0.11, 127.0.0.1:62017][0m
+2024-09-05 07:49:09,735 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-05 07:49:09,741 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:62018][0m
+2024-09-05 07:49:09,745 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:62017][0m
+2024-09-05 07:49:09,799 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-05 07:49:09,799 Not Found: /static/admin/img/icon-no.svg
+2024-09-05 07:49:09,799 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:62017][0m
+2024-09-05 07:49:09,799 [33mHTTP GET /static/admin/img/icon-no.svg 404 [0.02, 127.0.0.1:62018][0m
+2024-09-05 07:49:09,810 Not Found: /static/admin/img/icon-yes.svg
+2024-09-05 07:49:09,812 [33mHTTP GET /static/admin/img/icon-yes.svg 404 [0.03, 127.0.0.1:62019][0m
+2024-09-05 07:56:40,692 D:\stox\app\orders\market.py changed, reloading.
+2024-09-05 08:01:57,433 [mHTTP GET /watchlist 200 [0.16, 127.0.0.1:62140][0m
+2024-09-05 08:03:17,838 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:62147][0m
+2024-09-05 08:03:20,934 [mHTTP GET /profile 200 [0.03, 127.0.0.1:62147][0m
+2024-09-05 08:03:24,199 [32mHTTP GET /logout/ 302 [0.04, 127.0.0.1:62147][0m
+2024-09-05 08:03:24,215 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:62147][0m
+2024-09-05 08:03:31,561 [32mHTTP POST /login/ 302 [1.14, 127.0.0.1:62147][0m
+2024-09-05 08:03:31,602 [mHTTP GET /watchlist?greeting=True 200 [0.03, 127.0.0.1:62147][0m
+2024-09-05 08:03:35,755 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:62147][0m
+2024-09-05 08:09:04,396 [mHTTP GET /watchlist 200 [0.15, 127.0.0.1:62173][0m
+2024-09-05 08:09:08,072 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:09:08,077 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62173][0m
+2024-09-05 08:09:08,080 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:09:08,080 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:62174][0m
+2024-09-05 08:09:29,365 [mHTTP GET /watchlist 200 [0.12, 127.0.0.1:62195][0m
+2024-09-05 08:09:30,207 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:09:30,207 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62195][0m
+2024-09-05 08:09:30,223 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:09:30,223 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:62195][0m
+2024-09-05 08:10:24,688 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:62339][0m
+2024-09-05 08:10:25,489 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:10:25,496 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:10:25,496 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:62339][0m
+2024-09-05 08:10:25,498 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:62340][0m
+2024-09-05 08:10:30,581 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:62361][0m
+2024-09-05 08:10:30,968 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:10:30,968 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:10:30,968 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62361][0m
+2024-09-05 08:10:30,968 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62362][0m
+2024-09-05 08:15:07,004 [mHTTP GET /watchlist 200 [0.15, 127.0.0.1:62555][0m
+2024-09-05 08:15:07,665 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:15:07,665 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:15:07,666 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:62555][0m
+2024-09-05 08:15:07,667 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62556][0m
+2024-09-05 08:15:12,233 [mHTTP GET /orders 200 [0.15, 127.0.0.1:62566][0m
+2024-09-05 08:15:12,779 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:15:12,779 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:62566][0m
+2024-09-05 08:15:12,794 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:15:12,794 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.00, 127.0.0.1:62566][0m
+2024-09-05 08:16:11,313 [mHTTP GET /orders 200 [0.30, 127.0.0.1:62609][0m
+2024-09-05 08:16:12,294 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:16:12,294 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:16:12,308 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62609][0m
+2024-09-05 08:16:12,308 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62610][0m
+2024-09-05 08:16:12,909 [mHTTP GET /orders 200 [0.15, 127.0.0.1:62610][0m
+2024-09-05 08:16:13,686 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:16:13,686 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:16:13,686 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62610][0m
+2024-09-05 08:16:13,686 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62609][0m
+2024-09-05 08:16:14,962 [32mHTTP GET /market 302 [0.03, 127.0.0.1:62609][0m
+2024-09-05 08:16:15,034 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:62609][0m
+2024-09-05 08:16:15,738 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:16:15,738 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:16:15,738 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:62609][0m
+2024-09-05 08:16:15,738 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:62610][0m
+2024-09-05 08:16:18,688 [mHTTP GET /search/?q=sbin 200 [0.09, 127.0.0.1:62610][0m
+2024-09-05 08:29:26,615 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:63123][0m
+2024-09-05 08:29:27,356 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:29:27,356 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63123][0m
+2024-09-05 08:29:27,382 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:29:27,388 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63124][0m
+2024-09-05 08:29:31,528 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:63130][0m
+2024-09-05 08:29:31,883 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:29:31,883 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63130][0m
+2024-09-05 08:29:31,900 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:29:31,900 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.00, 127.0.0.1:63130][0m
+2024-09-05 08:31:13,229 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:63198][0m
+2024-09-05 08:31:13,874 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:31:13,874 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:31:13,877 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63198][0m
+2024-09-05 08:31:13,878 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:63199][0m
+2024-09-05 08:32:17,620 [mHTTP GET /watchlist 200 [0.10, 127.0.0.1:63289][0m
+2024-09-05 08:32:18,291 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:32:18,295 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:32:18,295 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63289][0m
+2024-09-05 08:32:18,296 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63290][0m
+2024-09-05 08:33:26,733 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:63357][0m
+2024-09-05 08:33:27,220 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:33:27,221 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63357][0m
+2024-09-05 08:33:27,269 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:33:27,270 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63357][0m
+2024-09-05 08:34:56,542 [mHTTP GET /watchlist 200 [0.09, 127.0.0.1:63421][0m
+2024-09-05 08:34:57,036 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:34:57,036 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:34:57,036 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:63422][0m
+2024-09-05 08:34:57,036 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:63421][0m
+2024-09-05 08:35:54,405 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:63464][0m
+2024-09-05 08:35:55,000 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:35:55,000 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:35:55,003 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63464][0m
+2024-09-05 08:35:55,004 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63465][0m
+2024-09-05 08:36:00,838 [mHTTP GET /search/?q=silver 200 [0.14, 127.0.0.1:63465][0m
+2024-09-05 08:36:02,582 [32mHTTP POST /add_watchlist 302 [0.01, 127.0.0.1:63474][0m
+2024-09-05 08:36:02,607 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:63474][0m
+2024-09-05 08:36:03,025 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:36:03,025 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:36:03,025 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63475][0m
+2024-09-05 08:36:03,028 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63474][0m
+2024-09-05 08:36:44,140 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:63504][0m
+2024-09-05 08:36:44,957 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:36:44,957 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:36:44,960 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63504][0m
+2024-09-05 08:36:44,962 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:63505][0m
+2024-09-05 08:36:46,397 [mHTTP GET /search/?q=si 200 [0.11, 127.0.0.1:63505][0m
+2024-09-05 08:36:46,633 [mHTTP GET /search/?q=sil 200 [0.12, 127.0.0.1:63505][0m
+2024-09-05 08:36:47,089 [mHTTP GET /search/?q=silv 200 [0.17, 127.0.0.1:63505][0m
+2024-09-05 08:36:47,296 [mHTTP GET /search/?q=silve 200 [0.10, 127.0.0.1:63505][0m
+2024-09-05 08:36:47,531 [mHTTP GET /search/?q=silver 200 [0.12, 127.0.0.1:63505][0m
+2024-09-05 08:36:49,359 [32mHTTP POST /add_watchlist 302 [0.12, 127.0.0.1:63505][0m
+2024-09-05 08:36:49,402 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:63505][0m
+2024-09-05 08:36:50,124 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-05 08:36:50,132 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63505][0m
+2024-09-05 08:36:50,182 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-05 08:36:50,182 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63505][0m

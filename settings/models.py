@@ -10,6 +10,14 @@ class charges(models.Model):
     carryforward_buy_charge=models.PositiveIntegerField(default=0)
     carryforward_sell_charge=models.PositiveIntegerField(default=0)
     order_closing_charge=models.PositiveIntegerField(default=0)
+
+    manipulate_5_to_25 = models.FloatField(default=0.25)
+    manipulate_25_to_50 = models.FloatField(default=0.45)
+    manipulate_50_to_100 = models.FloatField(default=0.65)
+    manipulate_100_to_200 = models.FloatField(default=1.25)
+    manipulate_200_to_400 = models.FloatField(default=1.45)
+    manipulate_400_or_above = models.FloatField(default=2.25)
+    
     class Meta:
         verbose_name = "Charges"
         verbose_name_plural = "Charges"
