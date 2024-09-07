@@ -530,9 +530,6 @@ def upstox_cred(request,secret):
             messages.error(request,f'Something went wrong ! {e}')
             return redirect('/admin/settings/upstox')
         
-@login_required
-@permission_required('is_superuser')
-@user_passes_test(lambda u: u.is_superuser)
 def close_position(request):
     call_command('close_positions')
     return HttpResponseRedirect("/admin/")
@@ -540,9 +537,6 @@ def close_position(request):
 def load_instruments_in_background():
     call_command('load_instruments')
 
-@login_required
-@permission_required('is_superuser')
-@user_passes_test(lambda u: u.is_superuser)
 def update_symbols(request):
     thread = threading.Thread(target=load_instruments_in_background)
     thread.start()
