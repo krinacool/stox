@@ -489,3 +489,153 @@ django.db.utils.OperationalError: no such column: settings_mcx_market_time.posit
 2024-09-05 18:00:08,150 D:\stox\app\orders\market.py changed, reloading.
 2024-09-05 18:01:40,114 D:\stox\app\orders\market.py changed, reloading.
 2024-09-05 18:04:31,491 D:\stox\app\models.py changed, reloading.
+2024-09-06 16:01:57,586 [mHTTP GET / 200 [0.06, 127.0.0.1:58193][0m
+2024-09-06 16:02:00,732 [mHTTP GET /login/ 200 [0.05, 127.0.0.1:58193][0m
+2024-09-06 16:02:15,324 [32mHTTP GET /reset_password 301 [0.01, 127.0.0.1:58193][0m
+2024-09-06 16:02:15,490 [mHTTP GET /reset_password/ 200 [0.16, 127.0.0.1:58193][0m
+2024-09-06 16:02:23,386 [32mHTTP POST /reset_password/ 302 [4.96, 127.0.0.1:58193][0m
+2024-09-06 16:02:23,450 [mHTTP GET /password_reset/done/ 200 [0.05, 127.0.0.1:58193][0m
+2024-09-06 16:58:13,772 [mHTTP GET /login/?next=/ 200 [0.02, 127.0.0.1:59207][0m
+2024-09-06 16:58:14,333 Not Found: /static/libs/simplebar/dist/simplebar.min.css
+2024-09-06 16:58:14,334 [33mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 404 [0.02, 127.0.0.1:59207][0m
+2024-09-06 16:58:14,334 Not Found: /static/css/theme.min.css
+2024-09-06 16:58:14,336 [33mHTTP GET /static/css/theme.min.css 404 [0.02, 127.0.0.1:59220][0m
+2024-09-06 16:58:14,388 Not Found: /static/libs/feather-icons/dist/feather.min.js
+2024-09-06 16:58:14,388 Not Found: /static/libs/simplebar/dist/simplebar.min.js
+2024-09-06 16:58:14,388 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js
+2024-09-06 16:58:14,389 Not Found: /static/js/theme.min.js
+2024-09-06 16:58:14,390 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js 404 [0.03, 127.0.0.1:59220][0m
+2024-09-06 16:58:14,390 [33mHTTP GET /static/libs/simplebar/dist/simplebar.min.js 404 [0.02, 127.0.0.1:59222][0m
+2024-09-06 16:58:14,390 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js 404 [0.03, 127.0.0.1:59207][0m
+2024-09-06 16:58:14,391 [33mHTTP GET /static/js/theme.min.js 404 [0.02, 127.0.0.1:59223][0m
+2024-09-06 16:58:15,172 Not Found: /static/images/brand/logo/brand.png
+2024-09-06 16:58:15,172 [33mHTTP GET /static/images/brand/logo/brand.png 404 [0.01, 127.0.0.1:59223][0m
+2024-09-07 05:36:30,828 D:\stox\app\models.py changed, reloading.
+2024-09-07 05:37:47,794 D:\stox\app\models.py changed, reloading.
+2024-09-07 05:38:00,862 D:\stox\app\models.py changed, reloading.
+2024-09-07 05:38:06,370 [mHTTP GET / 200 [0.05, 127.0.0.1:54125][0m
+2024-09-07 05:38:09,829 [32mHTTP GET /admin/ 302 [0.04, 127.0.0.1:54131][0m
+2024-09-07 05:38:09,856 [mHTTP GET /admin/login/?next=/admin/ 200 [0.02, 127.0.0.1:54131][0m
+2024-09-07 05:38:16,986 [32mHTTP POST /admin/login/?next=/admin/ 302 [0.53, 127.0.0.1:54131][0m
+2024-09-07 05:38:17,087 [mHTTP GET /admin/ 200 [0.10, 127.0.0.1:54131][0m
+2024-09-07 05:38:38,325 [mHTTP GET /admin/app/onstockbalancehistory/ 200 [0.10, 127.0.0.1:54142][0m
+2024-09-07 05:38:38,374 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-07 05:38:38,375 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:54143][0m
+2024-09-07 05:38:38,376 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-07 05:38:38,377 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:54148][0m
+2024-09-07 05:38:38,382 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54142][0m
+2024-09-07 05:38:40,254 [mHTTP GET /admin/app/onstockbalancehistory/add/ 200 [0.08, 127.0.0.1:54142][0m
+2024-09-07 05:38:40,297 Not Found: /static/admin/js/admin/DateTimeShortcuts.js
+2024-09-07 05:38:40,297 Not Found: /static/admin/js/calendar.js
+2024-09-07 05:38:40,298 [33mHTTP GET /static/admin/js/admin/DateTimeShortcuts.js 404 [0.02, 127.0.0.1:54143][0m
+2024-09-07 05:38:40,298 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-07 05:38:40,299 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-07 05:38:40,300 [33mHTTP GET /static/admin/js/calendar.js 404 [0.02, 127.0.0.1:54142][0m
+2024-09-07 05:38:40,302 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.03, 127.0.0.1:54149][0m
+2024-09-07 05:38:40,302 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:54150][0m
+2024-09-07 05:38:40,305 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:54148][0m
+2024-09-07 05:38:41,858 Internal Server Error: /admin/app/onstockbalancehistory/add/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1855, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1259, in save_model
+    obj.save()
+  File "D:\stox\app\models.py", line 414, in save
+    today = timezone.now().date() - 1
+TypeError: unsupported operand type(s) for -: 'datetime.date' and 'int'
+2024-09-07 05:38:42,072 [35;1mHTTP POST /admin/app/onstockbalancehistory/add/ 500 [0.24, 127.0.0.1:54148][0m
+2024-09-07 05:38:42,210 Not Found: /favicon.ico
+2024-09-07 05:38:42,210 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:54148][0m
+2024-09-07 05:38:51,952 D:\stox\app\models.py changed, reloading.
+2024-09-07 05:39:12,654 D:\stox\stock\settings.py changed, reloading.
+2024-09-07 05:39:18,770 [32mHTTP POST /admin/app/onstockbalancehistory/add/ 302 [0.09, 127.0.0.1:54169][0m
+2024-09-07 05:39:18,855 [mHTTP GET /admin/app/onstockbalancehistory/ 200 [0.08, 127.0.0.1:54169][0m
+2024-09-07 05:39:18,879 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54169][0m
+2024-09-07 05:39:32,614 D:\stox\app\models.py changed, reloading.
+2024-09-07 05:39:40,129 [mHTTP POST /admin/app/onstockbalancehistory/ 200 [0.12, 127.0.0.1:54184][0m
+2024-09-07 05:39:41,604 [32mHTTP POST /admin/app/onstockbalancehistory/ 302 [0.03, 127.0.0.1:54184][0m
+2024-09-07 05:39:41,724 [mHTTP GET /admin/app/onstockbalancehistory/ 200 [0.11, 127.0.0.1:54184][0m
+2024-09-07 05:39:41,763 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54184][0m
+2024-09-07 05:39:45,411 [mHTTP GET /admin/app/onstockbalancehistory/add/ 200 [0.06, 127.0.0.1:54184][0m
+2024-09-07 05:39:45,447 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54184][0m
+2024-09-07 05:39:45,506 [mHTTP GET /static/admin/js/calendar.js 200 [0.07, 127.0.0.1:54185][0m
+2024-09-07 05:39:45,507 [mHTTP GET /static/admin/js/admin/DateTimeShortcuts.js 200 [0.07, 127.0.0.1:54189][0m
+2024-09-07 05:39:47,107 Internal Server Error: /admin/app/onstockbalancehistory/add/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1855, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1259, in save_model
+    obj.save()
+  File "D:\stox\app\models.py", line 414, in save
+    today = timezone.now().date() - 1
+TypeError: unsupported operand type(s) for -: 'datetime.date' and 'int'
+2024-09-07 05:39:47,120 [35;1mHTTP POST /admin/app/onstockbalancehistory/add/ 500 [0.20, 127.0.0.1:54189][0m
+2024-09-07 05:40:14,096 D:\stox\app\models.py changed, reloading.
+2024-09-07 05:40:34,793 D:\stox\app\models.py changed, reloading.
+2024-09-07 05:40:45,813 [32mHTTP POST /admin/app/onstockbalancehistory/add/ 302 [0.10, 127.0.0.1:54237][0m
+2024-09-07 05:40:45,914 [mHTTP GET /admin/app/onstockbalancehistory/ 200 [0.10, 127.0.0.1:54237][0m
+2024-09-07 05:40:45,956 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54237][0m

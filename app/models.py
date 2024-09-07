@@ -9,6 +9,7 @@ from django.db import models, transaction, IntegrityError
 from app.symbols.getsymbols import get_instrument_key
 import datetime
 from app.orders.ShoonyaApipy.tests.test_place_order import shoonya_order
+from datetime import timedelta
 
 def generate_unique_id():
     characters = string.ascii_letters + string.digits
@@ -411,7 +412,8 @@ class OnstockBalanceHistory(models.Model):
         self.balance = total_balance
         # END TOTAL BALANCE
         # TOTAL PNL
-        today = timezone.now().date()
+        today = timezone.now().date() - timedelta(days=1)
+        print(today)
         close_positions = Position.objects.filter(last_traded_datetime__date=today,is_closed=True)
         total_pnl = 0
         for x in close_positions:
