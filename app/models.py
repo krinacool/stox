@@ -228,6 +228,7 @@ class Transaction(models.Model):
     status = models.CharField(choices=transaction_status,max_length=15,default = "REQUESTED")
     transaction_type = models.CharField(choices=t_type,max_length=15,default = "WITHDRAW")
     amount = models.PositiveIntegerField(default=0.0)
+    wallet = models.FloatField(default=0.0)
     remark = models.ForeignKey(Remarks,on_delete=models.CASCADE,blank=True,null=True)
     class Meta:
         verbose_name = "Transaction"
@@ -243,6 +244,7 @@ class Transaction(models.Model):
                 add_wallet(self.user,self.amount)
             if self.transaction_type == 'WITHDRAW':
                 deduct_wallet(self.user,self.amount)
+            self.wallet = self.user.wallet
         super().save(*args, **kwargs)
     def __str__(self):
       return self.transaction_id

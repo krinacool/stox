@@ -684,3 +684,213 @@ TypeError: unsupported operand type(s) for -: 'datetime.date' and 'int'
 2024-09-07 05:51:15,356 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54480][0m
 2024-09-07 05:51:19,607 [32mHTTP GET /close_position 302 [0.04, 127.0.0.1:54483][0m
 2024-09-07 05:51:19,652 [mHTTP GET /admin/ 200 [0.04, 127.0.0.1:54483][0m
+2024-09-07 06:10:20,105 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_transaction.wallet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "C:\Program Files\Python310\lib\contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\context.py", line 254, in bind_template
+    context = processor(self.request)
+  File "D:\stox\app\context_processors.py", line 29, in custom_admin_context
+    withdrawl_requests = Transaction.objects.filter(status='REQUESTED').__len__()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_transaction.wallet
+2024-09-07 06:10:20,346 [35;1mHTTP GET /admin/ 500 [0.32, 127.0.0.1:54773][0m
+2024-09-07 06:10:20,473 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_transaction.wallet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "C:\Program Files\Python310\lib\contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\context.py", line 254, in bind_template
+    context = processor(self.request)
+  File "D:\stox\app\context_processors.py", line 29, in custom_admin_context
+    withdrawl_requests = Transaction.objects.filter(status='REQUESTED').__len__()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_transaction.wallet
+2024-09-07 06:10:20,544 [35;1mHTTP GET /admin/ 500 [0.09, 127.0.0.1:54773][0m
+2024-09-07 06:10:27,799 D:\stox\stock\settings.py changed, reloading.
+2024-09-07 06:10:30,358 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_transaction.wallet
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+  File "C:\Program Files\Python310\lib\contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\context.py", line 254, in bind_template
+    context = processor(self.request)
+  File "D:\stox\app\context_processors.py", line 29, in custom_admin_context
+    withdrawl_requests = Transaction.objects.filter(status='REQUESTED').__len__()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_transaction.wallet
+2024-09-07 06:10:30,377 [35;1mHTTP GET /admin/ 500 [0.15, 127.0.0.1:54784][0m
+2024-09-07 06:10:59,532 [mHTTP GET /admin/ 200 [0.10, 127.0.0.1:54824][0m
+2024-09-07 06:11:07,016 [mHTTP GET /admin/app/transaction/ 200 [0.09, 127.0.0.1:54828][0m
+2024-09-07 06:11:07,054 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54828][0m
+2024-09-07 06:11:12,286 [mHTTP GET /admin/app/transaction/add/ 200 [0.10, 127.0.0.1:54834][0m
+2024-09-07 06:11:12,323 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54834][0m
+2024-09-07 06:11:16,228 [mHTTP GET /admin/app/customuser/1/change/?_to_field=id 200 [0.13, 127.0.0.1:54837][0m
+2024-09-07 06:11:16,262 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54837][0m
+2024-09-07 06:11:16,327 [mHTTP GET /static/admin/js/SelectBox.js 200 [0.07, 127.0.0.1:54838][0m
+2024-09-07 06:11:16,328 [mHTTP GET /static/admin/js/SelectFilter2.js 200 [0.07, 127.0.0.1:54840][0m
+2024-09-07 06:11:29,027 [mHTTP GET /admin/app/transaction/add/ 200 [0.07, 127.0.0.1:54842][0m
+2024-09-07 06:11:55,392 [32mHTTP POST /admin/app/transaction/add/ 302 [0.03, 127.0.0.1:54847][0m
+2024-09-07 06:11:55,460 [mHTTP GET /admin/app/transaction/ 200 [0.06, 127.0.0.1:54847][0m
+2024-09-07 06:11:55,499 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54847][0m
+2024-09-07 06:11:57,564 [mHTTP GET /admin/app/transaction/9/change/ 200 [0.05, 127.0.0.1:54847][0m
+2024-09-07 06:11:57,593 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54847][0m
+2024-09-07 06:12:14,154 [mHTTP GET /admin/app/transaction/ 200 [0.06, 127.0.0.1:54851][0m
+2024-09-07 06:12:16,279 [mHTTP GET /admin/app/transaction/add/ 200 [0.06, 127.0.0.1:54851][0m
+2024-09-07 06:12:16,310 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54851][0m
+2024-09-07 06:12:18,820 [mHTTP GET /static/jazzmin/img/calendar-icons.svg 200 [0.02, 127.0.0.1:54851][0m
+2024-09-07 06:12:31,972 [32mHTTP POST /admin/app/transaction/add/ 302 [0.03, 127.0.0.1:54854][0m
+2024-09-07 06:12:32,034 [mHTTP GET /admin/app/transaction/ 200 [0.06, 127.0.0.1:54854][0m
+2024-09-07 06:12:32,062 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54854][0m
+2024-09-07 06:12:33,774 [mHTTP GET /admin/app/transaction/10/change/ 200 [0.05, 127.0.0.1:54854][0m
+2024-09-07 06:12:33,810 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54854][0m
+2024-09-07 06:14:05,593 D:\stox\app\admin.py changed, reloading.
+2024-09-07 06:14:09,063 [mHTTP GET /admin/app/transaction/10/change/ 200 [0.13, 127.0.0.1:54885][0m
+2024-09-07 06:14:09,092 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54885][0m
+2024-09-07 06:14:10,606 [mHTTP GET /admin/app/transaction/10/change/ 200 [0.05, 127.0.0.1:54885][0m
+2024-09-07 06:14:10,639 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54885][0m
+2024-09-07 06:14:25,189 D:\stox\stock\settings.py changed, reloading.

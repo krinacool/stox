@@ -128,8 +128,9 @@ class WatchlistAdmin(admin.ModelAdmin):
 
 @admin.register(Transaction)
 class TransactionAdmin(admin.ModelAdmin):
-    list_display = ('user', 'amount','status','transaction_type','datetime', 'transaction_id', 'remark')
+    list_display = ('user', 'amount','status','transaction_type', 'wallet','datetime', 'transaction_id', 'remark')
     list_filter = ('datetime', 'status', 'transaction_type','remark','user')
+    readonly_fields = ('wallet',)
     
     def changelist_view(self, request, extra_context=None):
         # Aggregate new authors per day
