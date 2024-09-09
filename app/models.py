@@ -10,6 +10,10 @@ from app.symbols.getsymbols import get_instrument_key
 import datetime
 from app.orders.ShoonyaApipy.tests.test_place_order import shoonya_order
 from datetime import timedelta
+from django.dispatch import receiver
+import uuid
+from django.db.models.signals import pre_save
+
 
 def generate_unique_id():
     characters = string.ascii_letters + string.digits
@@ -46,6 +50,7 @@ order_status = [
     ]
 
 transaction_status = [
+        ('PENDING', 'PENDING'),
         ('REQUESTED', 'REQUESTED'),
         ('CANCELLED', 'CANCELLED'),
         ('COMPLETED', 'COMPLETED'),
@@ -58,7 +63,7 @@ t_type = [
 
 
 class CustomUser(AbstractUser):
-    username = None
+    username = models.CharField(max_length=150, unique=True, null=True, blank=True)
     email = models.EmailField(unique=True)
     phone_number = models.CharField(max_length=12)
     verification_code = models.CharField(max_length=420,null=True,blank=True,default="")
@@ -94,8 +99,10 @@ class CustomUser(AbstractUser):
                     is_default=False
                 )
 
-
-
+@receiver(pre_save, sender=CustomUser)
+def generate_username(sender, instance, **kwargs):
+    if not instance.username:
+        instance.username = str(uuid.uuid4())[:8]  # Generate a random 8-character username
 
 class symbols(models.Model):
     symbol=models.CharField(max_length=150,default="")
@@ -223,6 +230,7 @@ class Watchlist(models.Model):
 
 class Transaction(models.Model):
     transaction_id = models.CharField(max_length=10, unique=True, default=generate_unique_id, editable=False)
+    checksum = models.CharField(max_length=550, default='', editable=False,null=True,blank=True)
     user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
     datetime = models.DateTimeField(default=timezone.now,null=True)
     status = models.CharField(choices=transaction_status,max_length=15,default = "REQUESTED")

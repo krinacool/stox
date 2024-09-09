@@ -11,11 +11,11 @@ from django.db.models import Sum
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
-    list_display = ('email', 'first_name', 'wallet', 'margin','margin_used' ,'phone_number', 'api_orders', 'is_active','is_staff')
+    list_display = ('username','email', 'first_name', 'wallet', 'margin','margin_used' ,'phone_number', 'api_orders', 'is_active','is_staff')
     list_filter = ('api_orders','is_staff', 'is_active')
     readonly_fields = ('wallet','margin_used')
     fieldsets = (
-        (None, {'fields': ('email', 'password')}),
+        (None, {'fields': ('username','email', 'password')}),
         ('Personal Info', {'fields': ('first_name', 'last_name', 'phone_number','pan_number')}),
         ('Payment Info', {'fields': ('wallet' ,'margin', 'margin_used', 'bank_account_name','bank_account_number' ,'ifsc_code','upi_id')}),
         ('Permissions', {'fields': ('api_orders', 'is_staff', 'is_active', 'is_superuser', 'groups', 'user_permissions', 'verification_code')}),
@@ -60,6 +60,7 @@ class CustomUserAdmin(UserAdmin):
 admin.site.register(CustomUser, CustomUserAdmin)
 
 admin.site.register(Remarks)
+admin.site.register(tags)
 
 @admin.register(symbols)
 class Symbols(admin.ModelAdmin):
@@ -130,7 +131,7 @@ class WatchlistAdmin(admin.ModelAdmin):
 class TransactionAdmin(admin.ModelAdmin):
     list_display = ('user', 'amount','status','transaction_type', 'wallet','datetime', 'transaction_id', 'remark')
     list_filter = ('datetime', 'status', 'transaction_type','remark','user')
-    readonly_fields = ('wallet',)
+    readonly_fields = ('wallet','transaction_id','checksum')
     
     def changelist_view(self, request, extra_context=None):
         # Aggregate new authors per day

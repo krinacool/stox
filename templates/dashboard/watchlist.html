@@ -57,7 +57,7 @@
         data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
         data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300 dark:hover:text-gray-300"
         role="tablist">
-        {% for x in watchlist_list %}
+        {% for x in all_tags %}
         {% if x == "@INDEX" %}
         {% else %}
         <li class="me-2" role="presentation">
@@ -81,7 +81,7 @@
     <ul class="flex flex-nowrap font-medium text-center py-2">
         {% for stock in watch_list %}
         {% if stock.tag == "@INDEX" %}
-        <li class="" role="presentation">        
+        <li class="" role="presentation">
             <a href="#"
                 class="block min-w-32 px-3 py-2 text-left bg-white border border-gray-200 rounded-lg hover:bg-gray-100">
             
@@ -112,7 +112,7 @@
                             <div class="flex flex-col">
                                 <label for=""
                                     class="block text-sm font-medium text-gray-900  mb-1">Watchlist name</label>
-                                <input type="text" name=""
+                                <input type="text" name="name"
                                     class="mb-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="favourite" value="" required />
                             </div>

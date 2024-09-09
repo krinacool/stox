@@ -1,5 +1,41 @@
 {% extends 'dashboard/base.html' %}
 {% block body %}
+<div class="grid lg:grid-cols-9 gap-4" style="z-index: 1000;">
+    <div id="addFundsPopup" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px;">
+        <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
+            <form action="/add-funds" method="post">
+                {% csrf_token %}
+                <div class="flex justify-between items-center border-b">
+                    <div>
+                        <label class="text-lg text-black font-semibold mb-2">Add Funds</label><span
+                        id=""></span>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600" type="button"
+                    onclick="document.getElementById('addFundsPopup').classList.add('hidden')">&times;</button>
+                </div>
+                <div class="text-gray-900 my-4">
+                    <div class="mb-3 mt-2">
+                        <label for="amount" class="inline-block mb-1 text-gray-900">Enter Amount
+                            </label>
+                        <input type="number" id="amount"
+                            class="border border-gray-600 text-gray-900 rounded focus:ring-gray-600 focus:border-gray-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+                            name="amount" placeholder="0.0"
+                            value="1000"
+                            required="" />
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-2 mt-2">
+                    <div class="flex flex-col">
+                        <button class="bg-gray-800 text-white px-4 py-2 rounded" type="submit">Proceed To Pay</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 <div class="mt-2 tabs" id="tradebook">
     <div role="status"
         class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow md:p-6 ">
@@ -10,6 +46,11 @@
                     <br>
                     ₹ <span class="text-black text-3xl font-bold">{{request.user.wallet}}</span>
                 </span>
+            </div>
+
+            <div>
+                <button onclick="document.getElementById('addFundsPopup').classList.remove('hidden');"
+                 type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-4 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Add Funds</button>
             </div>
         </div>
         {% if trans %}

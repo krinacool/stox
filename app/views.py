@@ -1,9 +1,11 @@
 from settings.models import *
+from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate, login,logout
 from django.contrib import messages
 from django.http import JsonResponse
 from django.contrib.auth import get_user_model
+from app.checksm import RechPayChecksum
 from app.models import *
 from app.forms import *
 from django.contrib.auth.decorators import login_required,permission_required,user_passes_test
@@ -79,9 +81,9 @@ def handlelogin(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
-            email = form.cleaned_data.get('email')
+            username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-            user = authenticate(request, username=email, password=password)
+            user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
                 messages.success(request,'Logged In Successfully')
@@ -220,10 +222,11 @@ def create_watchlist(request):
     if request.method == 'POST':
         try:
             name = request.POST.get("name")
+            print(name)
             tags.objects.create(user=request.user,tag=name)
             messages.success(request,"Watchlist Updated Successfully")
         except Exception as e:
-            messages.error(request,f"Some Error Occured")
+            messages.error(request,f"Error Occured, {e}")
     return redirect('/watchlist')
 
 
@@ -471,6 +474,56 @@ def transactions(request):
         'trans':trans
     }
     return render(request,'dashboard/transactions.html',context)
+
+def orderid(length=15):
+    characters = string.ascii_letters + string.digits
+    attempts = 0
+    while True:
+        orderid = ''.join(random.choice(characters) for _ in range(length))
+        if not Transaction.objects.filter(transaction_id=orderid).exists():
+            return orderid
+        attempts += 1
+
+@login_required
+def addFunds(request):
+    if request.method == 'POST':
+        amount = request.POST.get('amount')
+        url = "https://apiqr.upibuz.in/order/paytm"
+        order_id = orderid()
+        data = {
+            "upiuid": "paytmqr28100505010110sggy9gsszk@paytm",
+            "token": "82e16b-54fd81-687682-f76ade-14d412",
+            "orderId": order_id,
+            "txnAmount": str(amount),
+            "txnNote": "Onstock",
+            "callback_url": f"https://onstock.in/payment-status/{order_id}",
+            "cust_Mobile":"0000000000",
+            "cust_Email":"onstock@gmail.com",
+        }
+        original_key = '4xGhRSabz1'
+        original_key_bytes = original_key.encode('utf-8')
+        key = (original_key_bytes + b'\0' * (16 - len(original_key_bytes)))[:16].decode()
+        checksum = RechPayChecksum.generateSignature(data,key)
+        data["checksum"] = checksum
+        Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum=checksum,status='PENDING')
+        return render(request,"pay.html",{"data":data})
+    return redirect('/transactions')
+
+@csrf_exempt
+def paymentStatus(request,order_id):
+    try:
+        person = Transaction.objects.filter(transaction_id=order_id).first()
+        if request.POST.get("status") == 'SUCCESS':
+            person.status = 'COMPLETED'
+            person.save()
+            messages.success(request,"Congratulations! Funds added successfully.")
+            return redirect("/transactions")
+        else:
+            messages.error(request,"Payment Cancelled. Please contact us for further details.")
+            return redirect("/transactions")
+    except:
+        messages.error(request,"Payment Cancelled. Invalid request")
+        return redirect("/transactions")
 
 @login_required
 def performance(request):

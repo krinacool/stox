@@ -50,7 +50,7 @@ class RegistrationForm(UserCreationForm):
         return user
 
 class LoginForm(forms.Form):
-    email = forms.CharField(max_length=255, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    username = forms.CharField(label="Username or Email",max_length=255, widget=forms.TextInput(attrs={'class': 'form-control'}))
     password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}))
 
 

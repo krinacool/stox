@@ -894,3 +894,485 @@ django.db.utils.OperationalError: no such column: app_transaction.wallet
 2024-09-07 06:14:10,606 [mHTTP GET /admin/app/transaction/10/change/ 200 [0.05, 127.0.0.1:54885][0m
 2024-09-07 06:14:10,639 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:54885][0m
 2024-09-07 06:14:25,189 D:\stox\stock\settings.py changed, reloading.
+2024-09-09 05:28:56,419 [mHTTP GET / 200 [0.07, 127.0.0.1:57363][0m
+2024-09-09 05:28:56,759 Not Found: /static/images/brand/logo/brand.png
+2024-09-09 05:28:56,759 [33mHTTP GET /static/images/brand/logo/brand.png 404 [0.01, 127.0.0.1:57363][0m
+2024-09-09 05:29:14,117 D:\stox\stock\settings.py changed, reloading.
+2024-09-09 05:29:18,639 [32mHTTP GET /admin/ 302 [0.06, 127.0.0.1:57376][0m
+2024-09-09 05:29:18,689 [mHTTP GET /admin/login/?next=/admin/ 200 [0.05, 127.0.0.1:57376][0m
+2024-09-09 05:29:18,826 [mHTTP GET /static/images/brand/logo/brand.png 200 [0.08, 127.0.0.1:57376][0m
+2024-09-09 05:29:27,212 [32mHTTP POST /admin/login/?next=/admin/ 302 [1.15, 127.0.0.1:57376][0m
+2024-09-09 05:29:27,436 [mHTTP GET /admin/ 200 [0.22, 127.0.0.1:57376][0m
+2024-09-09 05:29:32,749 [32mHTTP GET /login/ 302 [0.02, 127.0.0.1:57376][0m
+2024-09-09 05:29:32,772 [32mHTTP GET /market 302 [0.02, 127.0.0.1:57376][0m
+2024-09-09 05:29:32,861 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:57376][0m
+2024-09-09 05:29:37,452 [mHTTP GET /transactions 200 [0.03, 127.0.0.1:57376][0m
+2024-09-09 05:29:48,402 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.11, 127.0.0.1:57378][0m
+2024-09-09 05:29:48,402 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.11, 127.0.0.1:57376][0m
+2024-09-09 05:33:02,794 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:57439][0m
+2024-09-09 05:35:01,544 [mHTTP GET /transactions 200 [0.06, 127.0.0.1:58373][0m
+2024-09-09 05:35:05,963 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58373][0m
+2024-09-09 05:35:05,968 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:58374][0m
+2024-09-09 05:35:28,088 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:58390][0m
+2024-09-09 05:35:29,005 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:58390][0m
+2024-09-09 05:35:29,005 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:58391][0m
+2024-09-09 05:35:36,568 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:58414][0m
+2024-09-09 05:35:37,538 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:58418][0m
+2024-09-09 05:35:37,752 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:58418][0m
+2024-09-09 05:47:32,256 D:\stox\app\models.py changed, reloading.
+2024-09-09 05:47:54,924 D:\stox\app\views.py changed, reloading.
+2024-09-09 05:48:22,230 D:\stox\app\views.py changed, reloading.
+2024-09-09 05:49:45,712 D:\stox\app\views.py changed, reloading.
+2024-09-09 05:50:21,021 D:\stox\app\urls.py changed, reloading.
+2024-09-09 05:53:26,487 Internal Server Error: /transactions
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_transaction.checksum
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 474, in transactions
+    return render(request,'dashboard/transactions.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 325, in render
+    if match:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 414, in __bool__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_transaction.checksum
+2024-09-09 05:53:26,506 [35;1mHTTP GET /transactions 500 [0.59, 127.0.0.1:59363][0m
+2024-09-09 05:53:26,964 Not Found: /favicon.ico
+2024-09-09 05:53:26,964 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:59363][0m
+2024-09-09 05:55:24,995 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:59437][0m
+2024-09-09 05:57:00,341 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:59471][0m
+2024-09-09 05:57:12,085 [mHTTP GET /transactions 200 [0.06, 127.0.0.1:59477][0m
+2024-09-09 05:57:22,465 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:59480][0m
+2024-09-09 05:58:01,635 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:59511][0m
+2024-09-09 05:58:27,965 [mHTTP GET /transactions 200 [0.04, 127.0.0.1:59518][0m
+2024-09-09 06:00:20,555 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:59533][0m
+2024-09-09 06:00:31,202 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:59534][0m
+2024-09-09 06:00:31,205 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:59533][0m
+2024-09-09 06:04:45,457 [mHTTP GET /transactions 200 [0.04, 127.0.0.1:59808][0m
+2024-09-09 06:04:47,064 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59808][0m
+2024-09-09 06:04:47,067 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59809][0m
+2024-09-09 06:08:00,724 [mHTTP GET /transactions 200 [0.11, 127.0.0.1:60145][0m
+2024-09-09 06:08:01,254 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60146][0m
+2024-09-09 06:08:01,257 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60145][0m
+2024-09-09 06:08:16,645 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:60145][0m
+2024-09-09 06:08:17,124 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60145][0m
+2024-09-09 06:08:17,131 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:60146][0m
+2024-09-09 06:08:36,529 Forbidden (CSRF token missing.): /add-funds
+2024-09-09 06:08:36,534 [31;1mHTTP POST /add-funds 403 [0.05, 127.0.0.1:60146][0m
+2024-09-09 06:08:54,592 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:60146][0m
+2024-09-09 06:08:54,592 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:60145][0m
+2024-09-09 06:08:54,632 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60145][0m
+2024-09-09 06:08:54,634 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:60146][0m
+2024-09-09 06:08:54,654 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60146][0m
+2024-09-09 06:08:54,654 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60145][0m
+2024-09-09 06:08:55,056 [mHTTP GET /transactions 200 [0.03, 127.0.0.1:60146][0m
+2024-09-09 06:08:56,031 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:60146][0m
+2024-09-09 06:08:56,033 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:60145][0m
+2024-09-09 06:08:57,008 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 507, in addFunds
+    return render(request,"pay.html",{"data":data})
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pay.html
+2024-09-09 06:08:57,024 [35;1mHTTP POST /add-funds 500 [0.28, 127.0.0.1:60145][0m
+2024-09-09 06:11:44,220 [mHTTP POST /add-funds 200 [0.07, 127.0.0.1:60239][0m
+2024-09-09 06:11:52,153 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:60239][0m
+2024-09-09 06:12:06,398 [mHTTP GET /transactions 200 [0.03, 127.0.0.1:60239][0m
+2024-09-09 06:12:07,796 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:60239][0m
+2024-09-09 06:12:32,303 [mHTTP GET /transactions 200 [0.04, 127.0.0.1:60239][0m
+2024-09-09 06:12:33,907 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:60239][0m
+2024-09-09 06:13:27,635 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:60239][0m
+2024-09-09 06:13:32,344 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:60239][0m
+2024-09-09 06:13:40,007 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60239][0m
+2024-09-09 06:13:40,008 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60274][0m
+2024-09-09 06:13:43,565 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:60274][0m
+2024-09-09 06:13:52,895 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60288][0m
+2024-09-09 06:13:52,898 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60287][0m
+2024-09-09 06:13:52,913 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60288][0m
+2024-09-09 06:13:52,918 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60287][0m
+2024-09-09 06:13:52,937 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60288][0m
+2024-09-09 06:13:52,939 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60287][0m
+2024-09-09 06:13:54,952 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:60287][0m
+2024-09-09 06:13:57,316 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60288][0m
+2024-09-09 06:13:57,316 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60287][0m
+2024-09-09 06:13:57,333 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:60287][0m
+2024-09-09 06:13:57,333 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:60288][0m
+2024-09-09 06:13:57,551 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:60288][0m
+2024-09-09 06:13:57,551 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:60287][0m
+2024-09-09 06:14:00,415 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:60288][0m
+2024-09-09 06:14:02,329 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60288][0m
+2024-09-09 06:14:02,331 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60287][0m
+2024-09-09 06:14:02,355 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60287][0m
+2024-09-09 06:14:02,356 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60288][0m
+2024-09-09 06:14:02,377 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:60287][0m
+2024-09-09 06:14:02,378 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:60288][0m
+2024-09-09 06:14:32,366 [mHTTP GET /transactions 200 [0.04, 127.0.0.1:60288][0m
+2024-09-09 06:14:47,657 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:60288][0m
+2024-09-09 06:17:42,385 D:\stox\app\urls.py changed, reloading.
+2024-09-09 06:18:39,822 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:19:30,643 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:19:56,702 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:20:10,778 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:20:35,317 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:21:19,012 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:22:00,072 D:\stox\app\models.py changed, reloading.
+2024-09-09 06:22:35,392 [mHTTP GET /transactions 200 [0.25, 127.0.0.1:60564][0m
+2024-09-09 06:22:51,957 [mHTTP POST /add-funds 200 [0.46, 127.0.0.1:60572][0m
+2024-09-09 06:30:23,612 Not Found: /payment-status/r2pc9HDdKX1DRR9
+2024-09-09 06:30:23,615 [33mHTTP GET /payment-status/r2pc9HDdKX1DRR9?results=time%20out 404 [0.14, 127.0.0.1:60755][0m
+2024-09-09 06:30:55,692 D:\stox\app\urls.py changed, reloading.
+2024-09-09 06:31:00,156 [32mHTTP GET /payment-status/r2pc9HDdKX1DRR9?results=time%20out 302 [0.03, 127.0.0.1:60781][0m
+2024-09-09 06:31:00,192 [mHTTP GET /transactions 200 [0.03, 127.0.0.1:60781][0m
+2024-09-09 06:31:33,514 D:\stox\app\models.py changed, reloading.
+2024-09-09 06:31:44,446 D:\stox\app\models.py changed, reloading.
+2024-09-09 06:35:24,528 D:\stox\stock\settings.py changed, reloading.
+2024-09-09 06:36:47,728 D:\stox\app\forms.py changed, reloading.
+2024-09-09 06:38:05,601 Internal Server Error: /transactions
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: app_customuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 22, in _wrapper_view
+    if test_func(request.user):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 51, in <lambda>
+    lambda u: u.is_authenticated,
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\middleware.py", line 33, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\middleware.py", line 13, in get_user
+    request._cached_user = auth.get_user(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\__init__.py", line 216, in get_user
+    user = backend.get_user(user_id)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\backends.py", line 157, in get_user
+    user = UserModel._default_manager.get(pk=user_id)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: app_customuser.username
+2024-09-09 06:38:05,611 [35;1mHTTP GET /transactions 500 [0.29, 127.0.0.1:60905][0m
+2024-09-09 06:38:28,835 [mHTTP GET /transactions 200 [0.05, 127.0.0.1:60928][0m
+2024-09-09 06:38:30,819 [mHTTP GET /profile 200 [0.02, 127.0.0.1:60928][0m
+2024-09-09 06:38:33,289 [mHTTP GET /profile 200 [0.02, 127.0.0.1:60928][0m
+2024-09-09 06:38:34,618 [mHTTP GET /profile 200 [0.02, 127.0.0.1:60928][0m
+2024-09-09 06:38:36,755 [32mHTTP GET /logout 301 [0.02, 127.0.0.1:60928][0m
+2024-09-09 06:38:36,774 [32mHTTP GET /logout/ 302 [0.01, 127.0.0.1:60928][0m
+2024-09-09 06:38:36,801 [mHTTP GET /login/ 200 [0.02, 127.0.0.1:60928][0m
+2024-09-09 06:38:37,080 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.22, 127.0.0.1:60928][0m
+2024-09-09 06:38:47,872 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\stox\app\views.py", line 86, in handlelogin
+    user = authenticate(request, username=email, password=password)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "D:\stox\app\backends.py", line 9, in authenticate
+    if '@' in username:
+TypeError: argument of type 'NoneType' is not iterable
+2024-09-09 06:38:47,880 [35;1mHTTP POST /login/ 500 [0.07, 127.0.0.1:60928][0m
+2024-09-09 06:38:52,994 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:60928][0m
+2024-09-09 06:38:57,668 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\stox\app\views.py", line 86, in handlelogin
+    user = authenticate(request, username=email, password=password)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "D:\stox\app\backends.py", line 9, in authenticate
+    if '@' in username:
+TypeError: argument of type 'NoneType' is not iterable
+2024-09-09 06:38:57,675 [35;1mHTTP POST /login/ 500 [0.04, 127.0.0.1:60928][0m
+2024-09-09 06:39:54,994 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:39:58,138 [32mHTTP POST /login/ 302 [0.47, 127.0.0.1:60951][0m
+2024-09-09 06:39:58,197 [mHTTP GET /watchlist?greeting=True 200 [0.06, 127.0.0.1:60951][0m
+2024-09-09 06:40:00,674 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:60951][0m
+2024-09-09 06:40:02,174 [mHTTP GET /admin/ 200 [0.13, 127.0.0.1:60951][0m
+2024-09-09 06:40:06,739 [mHTTP GET /admin/app/customuser/ 200 [0.20, 127.0.0.1:60951][0m
+2024-09-09 06:40:06,805 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:60951][0m
+2024-09-09 06:40:06,824 [mHTTP GET /static/admin/img/icon-no.svg 200 [0.06, 127.0.0.1:60947][0m
+2024-09-09 06:40:06,825 [mHTTP GET /static/admin/img/icon-yes.svg 200 [0.06, 127.0.0.1:60948][0m
+2024-09-09 06:40:08,857 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.21, 127.0.0.1:60948][0m
+2024-09-09 06:40:08,897 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:60951][0m
+2024-09-09 06:40:08,905 [mHTTP GET /static/admin/js/SelectBox.js 200 [0.02, 127.0.0.1:60948][0m
+2024-09-09 06:40:08,906 [mHTTP GET /static/admin/js/SelectFilter2.js 200 [0.02, 127.0.0.1:60947][0m
+2024-09-09 06:40:11,140 [mHTTP GET /admin/app/customuser/ 200 [0.05, 127.0.0.1:60948][0m
+2024-09-09 06:40:42,820 D:\stox\app\admin.py changed, reloading.
+2024-09-09 06:40:45,860 [mHTTP GET /admin/app/customuser/ 200 [0.12, 127.0.0.1:60971][0m
+2024-09-09 06:40:45,897 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:60971][0m
+2024-09-09 06:40:48,283 [mHTTP GET /admin/app/transaction/ 200 [0.08, 127.0.0.1:60971][0m
+2024-09-09 06:40:48,313 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:60971][0m
+2024-09-09 06:40:49,927 [mHTTP GET /admin/app/transaction/21/change/ 200 [0.09, 127.0.0.1:60971][0m
+2024-09-09 06:40:49,961 [36mHTTP GET /static/admin/js/admin/DateTimeShortcuts.js 304 [0.00, 127.0.0.1:60965][0m
+2024-09-09 06:40:49,961 [36mHTTP GET /static/admin/js/calendar.js 304 [0.01, 127.0.0.1:60966][0m
+2024-09-09 06:40:49,973 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:60971][0m
+2024-09-09 06:40:55,249 [mHTTP GET /admin/app/transaction/ 200 [0.17, 127.0.0.1:60971][0m
+2024-09-09 06:42:02,388 D:\stox\app\admin.py changed, reloading.
+2024-09-09 06:42:05,194 [mHTTP GET /admin/app/transaction/ 200 [0.14, 127.0.0.1:61010][0m
+2024-09-09 06:42:05,230 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:11,178 [mHTTP GET /admin/app/customuser/ 200 [0.05, 127.0.0.1:61010][0m
+2024-09-09 06:42:11,234 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:13,840 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.10, 127.0.0.1:61010][0m
+2024-09-09 06:42:13,976 [mHTTP GET /admin/jsi18n/ 200 [0.09, 127.0.0.1:61010][0m
+2024-09-09 06:42:17,168 [32mHTTP POST /admin/app/customuser/1/change/ 302 [0.03, 127.0.0.1:61010][0m
+2024-09-09 06:42:17,234 [mHTTP GET /admin/app/customuser/ 200 [0.06, 127.0.0.1:61010][0m
+2024-09-09 06:42:17,270 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:22,079 [mHTTP GET /admin/app/customuser/6/change/ 200 [0.10, 127.0.0.1:61010][0m
+2024-09-09 06:42:22,113 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:25,205 [32mHTTP POST /admin/app/customuser/6/change/ 302 [0.03, 127.0.0.1:61010][0m
+2024-09-09 06:42:25,263 [mHTTP GET /admin/app/customuser/ 200 [0.05, 127.0.0.1:61010][0m
+2024-09-09 06:42:25,306 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:27,252 [mHTTP GET /admin/app/customuser/7/change/ 200 [0.08, 127.0.0.1:61010][0m
+2024-09-09 06:42:27,284 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:29,501 [32mHTTP POST /admin/app/customuser/7/change/ 302 [0.03, 127.0.0.1:61010][0m
+2024-09-09 06:42:29,557 [mHTTP GET /admin/app/customuser/ 200 [0.05, 127.0.0.1:61010][0m
+2024-09-09 06:42:29,593 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:32,836 [mHTTP GET /profile 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:34,858 [32mHTTP GET /logout/ 302 [0.02, 127.0.0.1:61010][0m
+2024-09-09 06:42:34,873 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:41,823 [32mHTTP POST /login/ 302 [0.51, 127.0.0.1:61010][0m
+2024-09-09 06:42:41,842 [mHTTP GET /watchlist?greeting=True 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:49,959 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:51,333 [mHTTP GET /profile 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:53,955 [32mHTTP GET /logout/ 302 [0.02, 127.0.0.1:61010][0m
+2024-09-09 06:42:53,968 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:42:56,256 [32mHTTP GET /signup 301 [0.02, 127.0.0.1:61010][0m
+2024-09-09 06:42:56,312 [mHTTP GET /signup/ 200 [0.05, 127.0.0.1:61010][0m
+2024-09-09 06:43:08,502 Forbidden (CSRF token from POST incorrect.): /admin/app/customuser/
+2024-09-09 06:43:08,507 [31;1mHTTP POST /admin/app/customuser/ 403 [0.03, 127.0.0.1:61010][0m
+2024-09-09 06:43:10,020 [32mHTTP GET /admin/app/customuser/ 302 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:43:10,064 [mHTTP GET /admin/login/?next=/admin/app/customuser/ 200 [0.04, 127.0.0.1:61010][0m
+2024-09-09 06:43:17,203 [32mHTTP POST /admin/login/?next=/admin/app/customuser/ 302 [0.54, 127.0.0.1:61010][0m
+2024-09-09 06:43:17,258 [mHTTP GET /admin/app/customuser/ 200 [0.05, 127.0.0.1:61010][0m
+2024-09-09 06:43:17,451 [mHTTP GET /admin/jsi18n/ 200 [0.11, 127.0.0.1:61010][0m
+2024-09-09 06:43:24,678 [mHTTP POST /admin/app/customuser/ 200 [0.11, 127.0.0.1:61010][0m
+2024-09-09 06:43:26,088 [32mHTTP POST /admin/app/customuser/ 302 [0.04, 127.0.0.1:61010][0m
+2024-09-09 06:43:26,159 [mHTTP GET /admin/app/customuser/ 200 [0.07, 127.0.0.1:61010][0m
+2024-09-09 06:43:26,192 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61010][0m
+2024-09-09 06:43:38,017 Forbidden (CSRF token from POST incorrect.): /signup/
+2024-09-09 06:43:38,022 [31;1mHTTP POST /signup/ 403 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:43:39,774 [32mHTTP GET /signup/ 302 [0.02, 127.0.0.1:61027][0m
+2024-09-09 06:43:39,789 [32mHTTP GET /market 302 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:43:39,810 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:43:40,113 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:43:42,685 [mHTTP GET /profile 200 [0.02, 127.0.0.1:61027][0m
+2024-09-09 06:43:45,099 [32mHTTP GET /logout/ 302 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:43:45,111 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:43:49,488 [mHTTP GET /signup/ 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:44:08,599 [mHTTP POST /signup/ 200 [4.83, 127.0.0.1:61027][0m
+2024-09-09 06:44:58,689 [32mHTTP GET /verify_user/E663TJGGlQGWTsrArX7cxh0v76K3heoBsPWR9gBMzggoZyj4se4rYH6AvM0l/ 302 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:44:58,706 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:45:02,082 [32mHTTP GET /login 301 [0.03, 127.0.0.1:61027][0m
+2024-09-09 06:45:02,098 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:45:14,922 [mHTTP POST /login/ 200 [0.49, 127.0.0.1:61027][0m
+2024-09-09 06:45:21,793 [32mHTTP POST /login/ 302 [0.50, 127.0.0.1:61027][0m
+2024-09-09 06:45:21,808 [mHTTP GET /watchlist?greeting=True 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:45:24,832 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:45:40,299 [32mHTTP GET /admin/app/customuser/ 302 [0.02, 127.0.0.1:61027][0m
+2024-09-09 06:45:40,322 [mHTTP GET /admin/login/?next=/admin/app/customuser/ 200 [0.02, 127.0.0.1:61027][0m
+2024-09-09 06:45:46,756 [32mHTTP POST /admin/login/?next=/admin/app/customuser/ 302 [0.51, 127.0.0.1:61027][0m
+2024-09-09 06:45:46,806 [mHTTP GET /admin/app/customuser/ 200 [0.04, 127.0.0.1:61027][0m
+2024-09-09 06:45:46,836 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61027][0m
+2024-09-09 06:46:25,345 [mHTTP GET /profile 200 [0.01, 127.0.0.1:61084][0m
+2024-09-09 06:46:47,364 [mHTTP GET /profile 200 [0.03, 127.0.0.1:61084][0m
+2024-09-09 06:46:57,119 [mHTTP GET /profile 200 [0.02, 127.0.0.1:61084][0m
+2024-09-09 06:47:19,620 [mHTTP GET /profile 200 [0.03, 127.0.0.1:61084][0m
+2024-09-09 06:47:44,912 [mHTTP GET /profile 200 [0.02, 127.0.0.1:61084][0m
+2024-09-09 06:48:07,945 [mHTTP GET /profile 200 [0.02, 127.0.0.1:61084][0m
+2024-09-09 06:48:18,167 [32mHTTP GET /market 302 [0.02, 127.0.0.1:61084][0m
+2024-09-09 06:48:18,189 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61084][0m
+2024-09-09 06:48:21,391 [mHTTP GET /contact 200 [0.03, 127.0.0.1:61084][0m
+2024-09-09 06:48:21,630 [mHTTP GET /static/landingasset/img/blog/4.jpg 200 [0.20, 127.0.0.1:61084][0m
+2024-09-09 06:48:21,642 [mHTTP GET /static/landingasset/img/page-info-bg.png 200 [0.16, 127.0.0.1:61097][0m
+2024-09-09 06:48:24,222 [mHTTP GET /profile 200 [0.01, 127.0.0.1:61097][0m
+2024-09-09 06:49:05,385 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:49:20,120 D:\stox\stock\settings.py changed, reloading.
+2024-09-09 06:49:22,940 [32mHTTP GET /market 302 [0.03, 127.0.0.1:61124][0m
+2024-09-09 06:49:22,969 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61124][0m
+2024-09-09 06:49:28,854 [32mHTTP POST /create_watchlist 302 [0.01, 127.0.0.1:61124][0m
+2024-09-09 06:49:28,874 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61124][0m
+2024-09-09 06:50:19,514 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:50:22,099 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61153][0m
+2024-09-09 06:50:26,189 [32mHTTP POST /create_watchlist 302 [0.01, 127.0.0.1:61161][0m
+2024-09-09 06:50:26,208 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61161][0m
+2024-09-09 06:51:07,000 D:\stox\app\views.py changed, reloading.
+2024-09-09 06:51:09,539 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61175][0m
+2024-09-09 06:51:13,674 [32mHTTP POST /create_watchlist 302 [0.01, 127.0.0.1:61175][0m
+2024-09-09 06:51:13,692 [mHTTP GET /watchlist 200 [0.01, 127.0.0.1:61175][0m
+2024-09-09 06:53:11,511 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:61194][0m
+2024-09-09 06:53:15,287 [32mHTTP POST /create_watchlist 302 [0.02, 127.0.0.1:61194][0m
+2024-09-09 06:53:15,306 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61194][0m
+2024-09-09 06:54:32,549 [mHTTP GET /search/?q=sbin 200 [0.09, 127.0.0.1:61207][0m
+2024-09-09 06:55:31,269 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:61207][0m
+2024-09-09 06:55:45,437 D:\stox\app\admin.py changed, reloading.
+2024-09-09 06:56:16,089 [mHTTP GET /admin/app/customuser/ 200 [0.13, 127.0.0.1:61262][0m
+2024-09-09 06:56:16,162 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:61262][0m
+2024-09-09 06:56:19,616 [mHTTP GET /admin/app/tags/ 200 [0.04, 127.0.0.1:61262][0m
+2024-09-09 06:56:19,645 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61262][0m
+2024-09-09 06:56:24,695 [mHTTP POST /admin/app/tags/ 200 [0.07, 127.0.0.1:61262][0m
+2024-09-09 06:56:26,731 [32mHTTP POST /admin/app/tags/ 302 [0.04, 127.0.0.1:61262][0m
+2024-09-09 06:56:26,805 [mHTTP GET /admin/app/tags/ 200 [0.06, 127.0.0.1:61262][0m
+2024-09-09 06:56:26,843 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61262][0m
+2024-09-09 06:56:29,278 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:61262][0m
+2024-09-09 06:57:53,574 D:\stox\stock\settings.py changed, reloading.

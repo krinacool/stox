@@ -41,6 +41,8 @@ urlpatterns = [
     path("trade_charges",trade_charges,name='trade_charges'),
     path("pnl",pnl,name='pnl'),
     path("transactions",transactions,name='transactions'),
+    path("add-funds",addFunds,name='addFunds'),
+    path("payment-status/<str:order_id>",paymentStatus,name='paymentStatus'),
     path("performance",performance,name='performance'),
     path("kyc",kyc,name='kyc'),
     # --PAGES--
