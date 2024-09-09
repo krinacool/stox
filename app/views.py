@@ -505,7 +505,7 @@ def addFunds(request):
         key = (original_key_bytes + b'\0' * (16 - len(original_key_bytes)))[:16].decode()
         checksum = RechPayChecksum.generateSignature(data,key)
         data["checksum"] = checksum
-        Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum=checksum,status='PENDING')
+        Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum=checksum,status='PENDING',transaction_type='DEPOSIT')
         return render(request,"pay.html",{"data":data})
     return redirect('/transactions')
 
