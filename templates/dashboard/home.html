@@ -487,6 +487,9 @@
                     `
                 }
                 else {
+                    console.log("i")
+                    console.log(i['instrument'])
+                    try {
                 document.getElementById(i['instrument']).innerHTML = `
                 <div>
                     <div class="h-2.5 mt-2 text-black rounded-full w-48 mb-3.5">
@@ -508,7 +511,8 @@
                         ${(i['data']['ltp']-i['data']['last_day_close']).toFixed(1)}
                     </div>
                 </div>
-            `
+            `}
+            catch(e) {}
                 }
             let instrument_input = document.getElementById('instrument_input').value;
             if(instrument_input == i['instrument']) {

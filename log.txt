@@ -4520,3 +4520,9 @@ django.template.exceptions.TemplateDoesNotExist: trends.html
 2024-09-17 06:24:42,282 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:57775][0m
 2024-09-17 06:30:03,226 D:\stox\app\models.py changed, reloading.
 2024-09-17 06:33:35,115 D:\stox\app\models.py changed, reloading.
+2024-09-17 06:35:04,933 [mHTTP GET /admin/app/watchlist/ 200 [0.18, 127.0.0.1:58234][0m
+2024-09-17 06:35:05,036 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-17 06:35:05,036 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-17 06:35:05,036 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:58234][0m
+2024-09-17 06:35:05,036 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:58238][0m
+2024-09-17 06:35:05,045 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:58235][0m
