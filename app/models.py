@@ -217,7 +217,8 @@ class Watchlist(models.Model):
                 # Handle unique constraint violation
                 # Example: update existing entry or notify user
                 # For example:
-                existing_watchlist = Watchlist.objects.get(symbol=self.symbol, segment=self.segment)
+                # existing_watchlist = Watchlist.objects.get(symbol=self.symbol, segment=self.segment)
+                pass
                 # Update existing_watchlist or handle the error as per your application's logic
 
             except Exception as e:
