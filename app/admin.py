@@ -13,7 +13,7 @@ class CustomUserAdmin(UserAdmin):
     model = CustomUser
     list_display = ('username','email', 'first_name', 'wallet', 'margin','margin_used' ,'phone_number', 'api_orders', 'is_active','is_staff')
     list_filter = ('api_orders','is_staff', 'is_active')
-    readonly_fields = ('wallet','margin_used')
+    readonly_fields = ('wallet',)
     fieldsets = (
         (None, {'fields': ('username','email', 'password')}),
         ('Personal Info', {'fields': ('first_name', 'last_name', 'phone_number','pan_number')}),
