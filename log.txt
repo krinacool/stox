@@ -4459,3 +4459,60 @@ django.template.exceptions.TemplateDoesNotExist: trends.html
 2024-09-17 06:02:58,015 D:\stox\stock\settings.py changed, reloading.
 2024-09-17 06:03:08,859 D:\stox\stock\settings.py changed, reloading.
 2024-09-17 06:03:15,821 D:\stox\stock\settings.py changed, reloading.
+2024-09-17 06:15:18,951 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:57306][0m
+2024-09-17 06:15:25,154 [mHTTP GET /admin/ 200 [0.31, 127.0.0.1:57306][0m
+2024-09-17 06:15:25,378 Not Found: /static/vendor/adminlte/css/adminlte.min.css.map
+2024-09-17 06:15:25,378 [33mHTTP GET /static/vendor/adminlte/css/adminlte.min.css.map 404 [0.01, 127.0.0.1:57306][0m
+2024-09-17 06:15:25,520 Not Found: /static/vendor/bootstrap/js/bootstrap.min.js.map
+2024-09-17 06:15:25,520 Not Found: /static/vendor/adminlte/js/adminlte.min.js.map
+2024-09-17 06:15:25,522 [33mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js.map 404 [0.02, 127.0.0.1:57306][0m
+2024-09-17 06:15:25,522 [33mHTTP GET /static/vendor/adminlte/js/adminlte.min.js.map 404 [0.02, 127.0.0.1:57305][0m
+2024-09-17 06:16:53,427 [mHTTP GET /admin/app/watchlist/ 200 [0.10, 127.0.0.1:57422][0m
+2024-09-17 06:16:53,501 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-17 06:16:53,502 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.03, 127.0.0.1:57423][0m
+2024-09-17 06:16:53,503 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-17 06:16:53,504 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.03, 127.0.0.1:57426][0m
+2024-09-17 06:16:53,508 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:57422][0m
+2024-09-17 06:16:53,581 Not Found: /static/vendor/adminlte/css/adminlte.min.css.map
+2024-09-17 06:16:53,582 [33mHTTP GET /static/vendor/adminlte/css/adminlte.min.css.map 404 [0.01, 127.0.0.1:57422][0m
+2024-09-17 06:16:53,714 Not Found: /static/vendor/bootstrap/js/bootstrap.min.js.map
+2024-09-17 06:16:53,715 [33mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js.map 404 [0.01, 127.0.0.1:57422][0m
+2024-09-17 06:16:53,783 Not Found: /static/vendor/adminlte/js/adminlte.min.js.map
+2024-09-17 06:16:53,784 [33mHTTP GET /static/vendor/adminlte/js/adminlte.min.js.map 404 [0.01, 127.0.0.1:57422][0m
+2024-09-17 06:16:59,832 [mHTTP GET /admin/app/watchlist/7/change/ 200 [0.20, 127.0.0.1:57430][0m
+2024-09-17 06:16:59,895 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-17 06:16:59,895 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:57431][0m
+2024-09-17 06:16:59,897 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:57430][0m
+2024-09-17 06:16:59,919 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-17 06:16:59,920 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:57430][0m
+2024-09-17 06:17:02,407 [mHTTP GET /admin/app/watchlist/5/change/ 200 [0.06, 127.0.0.1:57430][0m
+2024-09-17 06:17:02,467 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:57430][0m
+2024-09-17 06:17:02,484 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-17 06:17:02,485 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:57430][0m
+2024-09-17 06:17:02,500 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-17 06:17:02,501 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:57430][0m
+2024-09-17 06:17:04,372 [mHTTP GET /admin/app/watchlist/4/change/ 200 [0.06, 127.0.0.1:57430][0m
+2024-09-17 06:17:04,437 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:57430][0m
+2024-09-17 06:17:04,448 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-17 06:17:04,448 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:57430][0m
+2024-09-17 06:17:04,470 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-17 06:17:04,473 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:57430][0m
+2024-09-17 06:17:06,519 [mHTTP GET /admin/app/watchlist/3/change/ 200 [0.06, 127.0.0.1:57439][0m
+2024-09-17 06:17:06,581 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:57439][0m
+2024-09-17 06:17:06,606 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-17 06:17:06,607 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:57439][0m
+2024-09-17 06:17:06,620 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-17 06:17:06,620 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:57439][0m
+2024-09-17 06:17:08,747 [mHTTP GET /admin/app/watchlist/2/change/ 200 [0.06, 127.0.0.1:57439][0m
+2024-09-17 06:17:08,878 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-17 06:17:08,878 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:57440][0m
+2024-09-17 06:17:08,882 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:57439][0m
+2024-09-17 06:17:08,904 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-17 06:17:08,905 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:57439][0m
+2024-09-17 06:17:10,982 [mHTTP GET /admin/app/watchlist/1/change/ 200 [0.06, 127.0.0.1:57439][0m
+2024-09-17 06:17:11,077 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:57439][0m
+2024-09-17 06:17:11,095 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-17 06:17:11,095 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:57439][0m
+2024-09-17 06:17:11,113 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-17 06:17:11,114 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:57439][0m
+2024-09-17 06:22:37,704 D:\stox\app\models.py changed, reloading.
