@@ -1,0 +1,68 @@
+{% extends 'dashboard/base.html' %}
+{% block body %}
+{% load custom_filters %}
+
+<div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+    <div class="px-2">
+        <ul
+            class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+            <li class="me-2">
+                <a href="#" aria-current="page" onclick="switchTab()"
+                    class="inline-block px-4 py-2 text-gray-800 bg-gray-100 rounded-t-lg active" id="newsa">News</a>
+            </li>
+            <li class="me-2">
+                <a href="#" onclick="switchTab()"
+                    class="inline-block px-4 py-2 rounded-t-lg hover:text-gray-600 hover:bg-gray-50" id="caa">CA</a>
+            </li>
+        </ul>
+        <div id="news">
+            {% for x in news %}
+            <a href="#">
+                <div class="relative flex flex-col my-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+                    <div class="flex items-center justify-between w-full mb-2">
+                        <div class="flex">
+                            <div>
+                                <h3 class="capitalize font-semibold text-blue-600 flex text-1xl">
+                                    {{x.title}} <i data-feather="chevron-right"
+                                        class="w-4 h-3 text-blue-600 mx-3 font-semibold relative top-1"></i>
+                                </h3>
+                                <p class="">{{x.content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <div id="ca" class="hidden">
+            {% for x in ca %}
+            <a href="#">
+                <div class="relative flex flex-col my-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+                    <div class="flex items-center justify-between w-full mb-2">
+                        <div class="flex">
+                            <div>
+                                <h3 class="capitalize font-semibold text-blue-600 flex text-1xl">
+                                    {{x.title}} <i data-feather="chevron-right"
+                                        class="w-4 h-3 text-blue-600 mx-3 font-semibold relative top-1"></i>
+                                </h3>
+                                <p class="">{{x.content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<script>
+    function switchTab() {
+        document.getElementById('news').classList.toggle('hidden');
+        document.getElementById('ca').classList.toggle('hidden');
+        document.getElementById('newsa').classList.toggle('text-gray-800');
+        document.getElementById('newsa').classList.toggle('bg-gray-100');
+        document.getElementById('caa').classList.toggle('text-gray-800');
+        document.getElementById('caa').classList.toggle('bg-gray-100');
+    }
+</script>
+{% endblock body %}

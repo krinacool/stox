@@ -49,13 +49,6 @@ order_status = [
         ('failed', 'failed'),
     ]
 
-transaction_status = [
-        ('PENDING', 'PENDING'),
-        ('REQUESTED', 'REQUESTED'),
-        ('CANCELLED', 'CANCELLED'),
-        ('COMPLETED', 'COMPLETED'),
-    ]
-
 t_type = [
         ('WITHDRAW', 'WITHDRAW'),
         ('DEPOSIT', 'DEPOSIT'),
@@ -175,6 +168,7 @@ class Shoonya_Orders(models.Model):
 class tags(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, blank=True, null=True)
     tag=models.CharField(max_length=50,default="")
+    on_homepage = models.BooleanField(default=False)
     class Meta:
         verbose_name = "Watchlist tag"
         verbose_name_plural = "Watchlist tags"
@@ -189,8 +183,9 @@ class Watchlist(models.Model):
     segment = models.CharField(max_length=150, default="")
     instrument_key = models.CharField(max_length=150, default="")
     lot_size = models.PositiveIntegerField(default=1,null=True,blank=True)
-    tag = models.CharField(max_length=20, default="Favourites")
+    tag = models.ForeignKey(tags,on_delete=models.CASCADE)
     is_default = models.BooleanField(default=False)
+    on_homepage = models.BooleanField(default=False)
     
     class Meta:
         verbose_name = "Watchlist"
@@ -227,6 +222,13 @@ class Watchlist(models.Model):
                 print(f"Error saving Watchlist: {e}")
 
 
+transaction_status = [
+        ('PENDING', 'PENDING'),
+        ('REQUESTED', 'REQUESTED'),
+        ('CANCELLED', 'CANCELLED'),
+        ('COMPLETED', 'COMPLETED'),
+        ('FAILED', 'FAILED'),
+    ]
 
 class Transaction(models.Model):
     transaction_id = models.CharField(max_length=10, unique=True, default=generate_unique_id, editable=False)
@@ -243,15 +245,13 @@ class Transaction(models.Model):
         verbose_name_plural = "Transactions"
     def save(self, *args, **kwargs):
         if self.status == 'REQUESTED':
-            pass
+            deduct_wallet(self.user,self.amount)
         if self.status == 'CANCELLED':
             if self.transaction_type == 'WITHDRAW':
                 add_wallet(self.user,self.amount)
         if self.status == 'COMPLETED':
             if self.transaction_type == 'DEPOSIT':
                 add_wallet(self.user,self.amount)
-            if self.transaction_type == 'WITHDRAW':
-                deduct_wallet(self.user,self.amount)
             self.wallet = self.user.wallet
         super().save(*args, **kwargs)
     def __str__(self):

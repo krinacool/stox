@@ -18,6 +18,7 @@ from django.template.loader import render_to_string
 import random
 import string
 from threading import Thread
+import payu_websdk
 from django.utils import timezone
 from settings.timing import market_open
 from django.core.management import call_command
@@ -25,8 +26,18 @@ from django.http import HttpResponseRedirect
 from wallet.calculation import *
 from app.orders.market import market_order
 from app.orders.limit import initiate_limit_order
+import hashlib
+from django.conf import settings
+from django.http import HttpResponse
+from home.models import *
 
 User = get_user_model()
+
+def generate_payu_hash(data):
+    hash_sequence = "|".join([str(data.get(key, '')) for key in [
+        'key', 'txnid', 'amount', 'productinfo', 'firstname', 'email', 'udf1', 'udf2', 'udf3', 'udf4', 'udf5', 'udf6', 'udf7', 'udf8', 'udf9', 'udf10']])
+    hash_string = f"{hash_sequence}|{settings.PAYU_INFO['merchant_salt']}"
+    return hashlib.sha512(hash_string.encode('utf-8')).hexdigest().lower()
 
 # -=--------=---=----------=--=------PAGES--=---=------=---
 # CONTACT US
@@ -77,7 +88,7 @@ def index(request):
 
 def handlelogin(request):
     if request.user.is_authenticated:
-        return redirect('/market')
+        return redirect('/home')
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -87,7 +98,7 @@ def handlelogin(request):
             if user is not None:
                 login(request, user)
                 messages.success(request,'Logged In Successfully')
-                return redirect('/watchlist?greeting=True')
+                return redirect('/home?greeting=True')
             else:
                 messages.error(request, 'Invalid login credentials.')
     else:
@@ -104,7 +115,7 @@ def password_reset_complete(request):
 
 def handlesignup(request):
     if request.user.is_authenticated:
-        return redirect('/market')
+        return redirect('/home')
 
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
@@ -138,10 +149,6 @@ def handlelogout(request):
     return redirect('/login/')
 
 
-# ---------------DASHBOARD
-@login_required
-def market(request):
-    return redirect('/watchlist')
 
 def search_instruments(request):
     query = request.GET.get('q', '')
@@ -191,7 +198,8 @@ def add_watchlist(request):
             data = eval(data)
             for x in data:
                 try:
-                    Watchlist.objects.create(user=request.user,symbol=x['symbol'],segment=x['exchange'],tag=tag)
+                    tagob = tags.objects.filter(tag=tag).first()
+                    Watchlist.objects.create(user=request.user,symbol=x['symbol'],segment=x['exchange'],tag=tagob)
                 except:
                     pass
             messages.success(request,"Watchlist Updated Successfully")
@@ -230,11 +238,16 @@ def create_watchlist(request):
     return redirect('/watchlist')
 
 
+# ---------------DASHBOARD
 @login_required
-def watchlist(request):
+def home(request):
     greeting = False
     if 'greeting' in request.GET:
         greeting = True
+    tag = tags.objects.filter(tag='@INDEX').first()
+    news = News.objects.all().reverse()[:2]
+    explore_videos = ExploreVideos.objects.all().reverse()
+    Index = Watchlist.objects.filter(tag=tag)
     watch_list = Watchlist.objects.filter(user=request.user)
     watchlist_list = []
     watchlist_symbollist = []
@@ -243,10 +256,40 @@ def watchlist(request):
         watchlist_symbollist.append(i.instrument_key)
         if i.tag not in watchlist_list:
             watchlist_list.append(i.tag)
+    for i in Index:
+        watchlist_symbollist.append(i.instrument_key)
+    print(news)
     context = {
         'greeting':greeting,
+        'news':news,
+        'explore_videos':explore_videos,
+        'Index':Index,
         'watch_list':watch_list,
         'all_tags':all_tags,
+        'watchlist_list':watchlist_list,
+        'watchlist_symbollist':watchlist_symbollist,
+    }
+    return render(request,'dashboard/home.html',context)
+
+
+@login_required
+def watchlist(request):
+    watch_list = Watchlist.objects.filter(user=request.user).filter(on_homepage=False)
+    tag = tags.objects.filter(tag='@INDEX').first()
+    Index = Watchlist.objects.filter(tag=tag)
+    watchlist_list = []
+    watchlist_symbollist = []
+    all_tags = tags.objects.filter(user=request.user).filter(on_homepage=False).reverse()
+    for i in watch_list:
+        watchlist_symbollist.append(i.instrument_key)
+        if i.tag not in watchlist_list:
+            watchlist_list.append(i.tag)
+    for i in Index:
+        watchlist_symbollist.append(i.instrument_key)
+    context = {
+        'watch_list':watch_list,
+        'all_tags':all_tags,
+        'Index':Index,
         'watchlist_list':watchlist_list,
         'watchlist_symbollist':watchlist_symbollist,
     }
@@ -475,6 +518,18 @@ def transactions(request):
     }
     return render(request,'dashboard/transactions.html',context)
 
+@login_required
+def withdraw(request):
+    try:
+        amount = request.POST.get('amount')
+        ob = Transaction.objects.create(user=request.user,status='REQUESTED',transaction_type='WITHDRAW',amount=int(amount))
+    except Exception as e:
+        print(e)
+    messages.success(request,'Withdraw initiated. It may take upto 24 hr to reflect to your account')
+    return redirect('/transactions')
+
+
+
 def orderid(length=15):
     characters = string.ascii_letters + string.digits
     attempts = 0
@@ -487,27 +542,85 @@ def orderid(length=15):
 @login_required
 def addFunds(request):
     if request.method == 'POST':
-        amount = request.POST.get('amount')
-        url = "https://apiqr.upibuz.in/order/paytm"
-        order_id = orderid()
-        data = {
-            "upiuid": "paytmqr28100505010110sggy9gsszk@paytm",
-            "token": "82e16b-54fd81-687682-f76ade-14d412",
-            "orderId": order_id,
-            "txnAmount": str(amount),
-            "txnNote": "Onstock",
-            "callback_url": f"https://onstock.in/payment-status/{order_id}",
-            "cust_Mobile":"0000000000",
-            "cust_Email":"onstock@gmail.com",
-        }
-        original_key = '4xGhRSabz1'
-        original_key_bytes = original_key.encode('utf-8')
-        key = (original_key_bytes + b'\0' * (16 - len(original_key_bytes)))[:16].decode()
-        checksum = RechPayChecksum.generateSignature(data,key)
-        data["checksum"] = checksum
-        Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum=checksum,status='PENDING',transaction_type='DEPOSIT')
-        return render(request,"pay.html",{"data":data})
+        mode = request.POST.get('mode')
+        print('mode')
+        print(mode)
+        if mode == 'upi':
+            amount = request.POST.get('amount')
+            url = "https://apiqr.upibuz.in/order/paytm"
+            order_id = orderid()
+            data = {
+                "upiuid": "paytmqr28100505010110sggy9gsszk@paytm",
+                "token": "82e16b-54fd81-687682-f76ade-14d412",
+                "orderId": order_id,
+                "txnAmount": str(amount),
+                "txnNote": "Onstock",
+                "callback_url": f"https://onstock.in/payment-status/{order_id}",
+                "cust_Mobile":"0000000000",
+                "cust_Email":"onstock@gmail.com",
+            }
+            original_key = '4xGhRSabz1'
+            original_key_bytes = original_key.encode('utf-8')
+            key = (original_key_bytes + b'\0' * (16 - len(original_key_bytes)))[:16].decode()
+            checksum = RechPayChecksum.generateSignature(data,key)
+            data["checksum"] = checksum
+            remark = Remarks.objects.filter(remark = 'UPI PAYMENT GATEWAY').first()
+            Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum=checksum,status='PENDING',transaction_type='DEPOSIT',remark=remark)
+            return render(request,"pay.html",{"data":data})
+        elif mode == 'payu':
+            # PayU client setup
+            amount = request.POST.get('amount')
+            client = payu_websdk.Client(
+                settings.PAYU_MERCHANT_KEY,
+                settings.PAYU_MERCHANT_SALT,
+                settings.PAYU_ENVIRONMENT,
+            )    
+            # Payment data
+            order_id = orderid()
+            payment_data = {
+                'key': settings.PAYU_MERCHANT_KEY,  # Replace with dynamic amount
+                'amount': amount,  # Replace with dynamic amount
+                'productinfo': 'Onstock Deposit',
+                'firstname': request.user.first_name,
+                'email': request.user.email,
+                'phone': request.user.phone_number,
+                'txnid': order_id,  # Unique transaction ID
+                'surl': 'http://127.0.0.1:8000/payment/success/',  # Success URL
+                'furl': 'http://127.0.0.1:8000/payment/failure/',  # Failure URL
+            }
+            # Generate hash for checkout
+            form = client.generatePaymentForm(payment_data)
+            remark = Remarks.objects.filter(remark = 'PAYU PAYMENT GATEWAY').first()
+            Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum='PAYU',status='PENDING',transaction_type='DEPOSIT',remark=remark)
+            return render(request, 'payment_form.html', {'form': form})
     return redirect('/transactions')
+
+@csrf_exempt
+def payment_success(request):
+    try:
+        order_id = request.POST.get('txnid')
+        person = Transaction.objects.filter(transaction_id=order_id).first()
+        person.status = 'COMPLETED'
+        person.save()
+        messages.success(request,"Congratulations! Funds added successfully.")
+    except:
+        messages.error(request,"Payment Cancelled. Please contact us for further details.")
+    return redirect("/transactions")
+
+
+@csrf_exempt
+def payment_failure(request):
+    print(request.POST)
+    try:
+        order_id = request.POST.get('txnid')
+        person = Transaction.objects.filter(transaction_id=order_id).first()
+        person.status = 'FAILED'
+        person.save()
+    except:
+        pass
+    messages.error(request,"Payment Failed. Please contact us for further details.")
+    return redirect("/transactions")
+
 
 @csrf_exempt
 def paymentStatus(request,order_id):

@@ -7,7 +7,7 @@ from .forms import CustomPasswordResetForm,CustomSetPasswordForm
 
 # urls.py
 urlpatterns = [
-    path("",index,name='home'),
+    path("",index,name='index'),
     # --SINGUP AND LOGIN--
     path("login/",handlelogin,name='login'),
     path("signup/",handlesignup,name='signup'),
@@ -26,7 +26,7 @@ urlpatterns = [
     path('reset_password_done/', reset_password_done, name='reset_password_done'),
     path('reset_password_complete/', password_reset_complete, name='password_reset_complete'),
     # --USER DASHBOARD AND PROFILE--
-    path("market",market,name='market'),
+    path("home",home,name='home'),
     path("watchlist",watchlist,name='watchlist'),
     path('search/', search_instruments, name='search_instruments'),
     path("add_watchlist",add_watchlist,name='add_watchlist'),
@@ -41,10 +41,15 @@ urlpatterns = [
     path("trade_charges",trade_charges,name='trade_charges'),
     path("pnl",pnl,name='pnl'),
     path("transactions",transactions,name='transactions'),
+    path("withdraw",withdraw,name='withdraw'),
     path("add-funds",addFunds,name='addFunds'),
-    path("payment-status/<str:order_id>",paymentStatus,name='paymentStatus'),
     path("performance",performance,name='performance'),
     path("kyc",kyc,name='kyc'),
+    # Payment Gateway
+    path("payment-status/<str:order_id>",paymentStatus,name='paymentStatus'),
+    # PAY U
+    path('payment/success/', payment_success, name='payment_success'),
+    path('payment/failure/', payment_failure, name='payment_failure'),
     # --PAGES--
     path("about",about,name='about'),
     path("disclaimer",disclaimer,name='disclaimer'),

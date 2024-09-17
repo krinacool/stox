@@ -60,7 +60,14 @@ class CustomUserAdmin(UserAdmin):
 admin.site.register(CustomUser, CustomUserAdmin)
 
 admin.site.register(Remarks)
-admin.site.register(tags)
+
+@admin.register(tags)
+class Tags(admin.ModelAdmin):
+    list_display = ('user','tag','on_homepage')
+    list_filter = ('user','tag','on_homepage')
+    search_fields = ['user','tag']
+
+
 
 @admin.register(symbols)
 class Symbols(admin.ModelAdmin):
@@ -124,8 +131,8 @@ class OnstockBalanceAdmin(admin.ModelAdmin):
 
 @admin.register(Watchlist)
 class WatchlistAdmin(admin.ModelAdmin):
-    list_display = ('user', 'symbol','segment','tag','is_default')
-    list_filter = ('user', 'symbol','segment','is_default')
+    list_display = ('symbol','segment', 'lot_size','tag','is_default', 'on_homepage', 'user')
+    list_filter = ('user', 'symbol','segment','is_default','tag')
 
 @admin.register(Transaction)
 class TransactionAdmin(admin.ModelAdmin):

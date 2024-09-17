@@ -2,32 +2,35 @@
 {% block body %}
 <div class="grid lg:grid-cols-9 gap-4" style="z-index: 1000;">
     <div id="addFundsPopup" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
-        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px;">
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px; max-width: 500px; min-height: 700px;">
         <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
-            <form action="/add-funds" method="post">
+            <form id="paymentForm" action="/add-funds" method="post">
                 {% csrf_token %}
+                <input type="hidden" name="mode" id="paymentMode">
                 <div class="flex justify-between items-center border-b">
                     <div>
-                        <label class="text-lg text-black font-semibold mb-2">Add Funds</label><span
-                        id=""></span>
+                        <label class="text-lg text-black font-semibold mb-2">Add Funds</label><span id=""></span>
                     </div>
                     <button class="text-gray-400 hover:text-gray-600" type="button"
-                    onclick="document.getElementById('addFundsPopup').classList.add('hidden')">&times;</button>
+                        onclick="document.getElementById('addFundsPopup').classList.add('hidden')">&times;</button>
                 </div>
                 <div class="text-gray-900 my-4">
                     <div class="mb-3 mt-2">
                         <label for="amount" class="inline-block mb-1 text-gray-900">Enter Amount
-                            </label>
+                        </label>
                         <input type="number" id="amount"
                             class="border border-gray-600 text-gray-900 rounded focus:ring-gray-600 focus:border-gray-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
-                            name="amount" placeholder="0.0"
-                            value="1000"
-                            required="" />
+                            name="amount" placeholder="0.0" value="1000" required="" />
                     </div>
                 </div>
-                <div class="grid grid-cols-1 gap-2 mt-2">
+                <div class="grid grid-cols-1 gap-2 mt-2 md:grid-cols-2">
                     <div class="flex flex-col">
-                        <button class="bg-gray-800 text-white px-4 py-2 rounded" type="submit">Proceed To Pay</button>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded" type="button"
+                            onclick="submitForm('upi')">PROCEED TO PAY WITH UPI</button>
+                    </div>
+                    <div class="flex flex-col">
+                        <button class="bg-green-600 text-white px-4 py-2 rounded" type="button"
+                            onclick="submitForm('payu')">PROCEED TO PAY WITH PAYU</button>
                     </div>
                 </div>
             </form>
@@ -36,23 +39,66 @@
 </div>
 
 
+<div class="grid lg:grid-cols-9 gap-4" style="z-index: 1000;">
+    <div id="withdrawlFundsPopup" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px; max-width: 500px; min-height: 700px;">
+        <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
+            <form id="paymentForm" action="/withdraw" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="mode" id="paymentMode">
+                <div class="flex justify-between items-center border-b">
+                    <div>
+                        <label class="text-lg text-black font-semibold mb-2">Withdraw Funds</label><span id=""></span>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600" type="button"
+                        onclick="document.getElementById('withdrawlFundsPopup').classList.add('hidden')">&times;</button>
+                </div>
+                <div class="text-gray-900 my-4">
+                    <div class="mb-3 mt-2">
+                        <label for="amount" class="inline-block mb-1 text-gray-900">Enter Amount
+                        </label>
+                        <input type="number" id="amount"
+                            class="border border-gray-600 text-gray-900 rounded focus:ring-gray-600 focus:border-gray-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+                            name="amount" placeholder="0.0" value="1000" required="" />
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-2 mt-2 md:grid-cols-2">
+                    <div class="flex flex-col">
+                        <button class="bg-gray-900 text-white py-2 rounded" type="submit"
+                            >Withdraw</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="relative flex flex-col mx-2 my-2 bg-white shadow-sm border border-slate-200 rounded-lg p-4">
+    <div class="px-2">
+        <p class="text-gray-400 text-sm">Trading Balance</p>
+        <h3><span class="text-sm relative -top-2">₹ </span><span
+                class="text-2xl font-semibold">{{request.user.wallet}}</span></h3>
+        <span class="">
+            <a class="flex" href="/transactions"><span class="bg-gray-200 rounded flex"
+                    style="font-size: x-small; padding: 2px 5px;"><i data-feather="clock" class="mr-1 w-3 h-3"
+                        style="margin-top: 1px;"></i>Check Transactions</span></a>
+        </span>
+    </div>
+    <div class="mt-2 flex items-center justify-between w-full md:w-1/2">
+        <button onclick="document.getElementById('withdrawlFundsPopup').classList.remove('hidden');" type="button"
+            class="bg-white w-full mx-2 py-2 rounded border border-gray-900">
+            <span class="text-gray-900">WITHDRAWL</span>
+        </button>
+        <button onclick="document.getElementById('addFundsPopup').classList.remove('hidden');" type="button"
+            class="bg-gray-800 text-white w-full mx-2 py-2 rounded">
+            <span class="">ADD FUNDS</span>
+        </button>
+    </div>
+</div>
 <div class="mt-2 tabs" id="tradebook">
     <div role="status"
         class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow md:p-6 ">
-        <div class="flex items-center justify-between">
-            <div>
-                <span class="">
-                    <span class="text-gray-500 ml-3">Wallet</span>
-                    <br>
-                    ₹ <span class="text-black text-3xl font-bold">{{request.user.wallet}}</span>
-                </span>
-            </div>
-
-            <div>
-                <button onclick="document.getElementById('addFundsPopup').classList.remove('hidden');"
-                 type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-4 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Add Funds</button>
-            </div>
-        </div>
+        
         {% if trans %}
         {% for transaction in trans reversed %}
         <div class="flex items-center justify-between">
@@ -94,4 +140,12 @@
         {% endif %}
     </div>
 </div>
+<script>
+    function submitForm(mode) {
+        const form = document.getElementById('paymentForm');
+        document.getElementById('paymentMode').value = mode;
+        form.submit();  // Submit the form
+    }
+</script>
+
 {% endblock body %}

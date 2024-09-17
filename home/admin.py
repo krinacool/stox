@@ -9,3 +9,5 @@ class News(admin.ModelAdmin):
 @admin.register(CA)
 class CA(admin.ModelAdmin):
     list_display = ('title', 'datetime')
+
+admin.site.register(ExploreVideos)

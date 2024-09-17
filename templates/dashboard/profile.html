@@ -2,32 +2,35 @@
 {% block body %}
 <div class="grid lg:grid-cols-9 gap-4" style="z-index: 1000;">
     <div id="addFundsPopup" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
-        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px;">
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px; max-width: 500px; min-height: 700px;">
         <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
-            <form action="/add-funds" method="post">
+            <form id="paymentForm" action="/add-funds" method="post">
                 {% csrf_token %}
+                <input type="hidden" name="mode" id="paymentMode">
                 <div class="flex justify-between items-center border-b">
                     <div>
-                        <label class="text-lg text-black font-semibold mb-2">Add Funds</label><span
-                        id=""></span>
+                        <label class="text-lg text-black font-semibold mb-2">Add Funds</label><span id=""></span>
                     </div>
                     <button class="text-gray-400 hover:text-gray-600" type="button"
-                    onclick="document.getElementById('addFundsPopup').classList.add('hidden')">&times;</button>
+                        onclick="document.getElementById('addFundsPopup').classList.add('hidden')">&times;</button>
                 </div>
                 <div class="text-gray-900 my-4">
                     <div class="mb-3 mt-2">
                         <label for="amount" class="inline-block mb-1 text-gray-900">Enter Amount
-                            </label>
+                        </label>
                         <input type="number" id="amount"
                             class="border border-gray-600 text-gray-900 rounded focus:ring-gray-600 focus:border-gray-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
-                            name="amount" placeholder="0.0"
-                            value="1000"
-                            required="" />
+                            name="amount" placeholder="0.0" value="1000" required="" />
                     </div>
                 </div>
-                <div class="grid grid-cols-1 gap-2 mt-2">
+                <div class="grid grid-cols-1 gap-2 mt-2 md:grid-cols-2">
                     <div class="flex flex-col">
-                        <button class="bg-gray-800 text-white px-4 py-2 rounded" type="submit">Proceed To Pay</button>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded" type="button"
+                            onclick="submitForm('upi')">PROCEED TO PAY WITH UPI</button>
+                    </div>
+                    <div class="flex flex-col">
+                        <button class="bg-green-600 text-white px-4 py-2 rounded" type="button"
+                            onclick="submitForm('payu')">PROCEED TO PAY WITH PAYU</button>
                     </div>
                 </div>
             </form>
@@ -36,125 +39,228 @@
 </div>
 
 
-<div class="mt-2" id="skeleton">
-    <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow dark:divide-gray-700 md:p-6 dark:border-gray-700">
-        <div class="flex items-center justify-between">
-            <div>
-                <span class="">
-                    <span class="text-gray-500 ml-3">Wallet</span>
-                    <br>
-                    ₹ <span class="text-black text-3xl font-bold">{{request.user.wallet}}</span>
-                </span>
-            </div>
+<div class="grid lg:grid-cols-9 gap-4" style="z-index: 1000;">
+    <div id="withdrawlFundsPopup" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
+        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px; max-width: 500px; min-height: 700px;">
+        <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
+            <form id="paymentForm" action="/withdraw" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="mode" id="paymentMode">
+                <div class="flex justify-between items-center border-b">
+                    <div>
+                        <label class="text-lg text-black font-semibold mb-2">Withdraw Funds</label><span id=""></span>
+                    </div>
+                    <button class="text-gray-400 hover:text-gray-600" type="button"
+                        onclick="document.getElementById('withdrawlFundsPopup').classList.add('hidden')">&times;</button>
+                </div>
+                <div class="text-gray-900 my-4">
+                    <div class="mb-3 mt-2">
+                        <label for="amount" class="inline-block mb-1 text-gray-900">Enter Amount
+                        </label>
+                        <input type="number" id="amount"
+                            class="border border-gray-600 text-gray-900 rounded focus:ring-gray-600 focus:border-gray-600 block w-full p-2 px-3 disabled:opacity-50 disabled:pointer-events-none"
+                            name="amount" placeholder="0.0" value="1000" required="" />
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-2 mt-2 md:grid-cols-2">
+                    <div class="flex flex-col">
+                        <button class="bg-gray-900 text-white py-2 rounded" type="submit"
+                            >Withdraw</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
-            <div>
-                <button onclick="document.getElementById('addFundsPopup').classList.remove('hidden');"
-                 type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-4 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Add Funds</button>
-            </div>
+
+
+<div class="mt-2" id="skeleton">
+    <div class="relative flex flex-col mx-2 my-2 bg-white shadow-sm border border-slate-200 rounded-lg p-4">
+        <div class="px-2">
+            <p class="text-gray-400 text-sm">Trading Balance</p>
+            <h3><span class="text-sm relative -top-2">₹ </span><span
+                    class="text-2xl font-semibold">{{request.user.wallet}}</span></h3>
+            <span class="">
+                <a class="flex" href="/transactions"><span class="bg-gray-200 rounded flex"
+                        style="font-size: x-small; padding: 2px 5px;"><i data-feather="clock" class="mr-1 w-3 h-3"
+                            style="margin-top: 1px;"></i>Check Transactions</span></a>
+            </span>
         </div>
-        <div class="justify-between pt-4">
-            <div>
-                <div class="text-black font-bold h-2.5 mb-2.5">UserId</div>
-                <div class="h-4 text-gray-500 rounded-full"><span
-                        class="text-gray-800">{{request.user.username}}</span></div>
-            </div>
+        <div class="mt-2 flex items-center justify-between w-full md:w-1/2">
+            <button onclick="document.getElementById('withdrawlFundsPopup').classList.remove('hidden');" type="button"
+                class="bg-white w-full mx-2 py-2 rounded border border-gray-900">
+                <span class="text-gray-900">WITHDRAWL</span>
+            </button>
+            <button onclick="document.getElementById('addFundsPopup').classList.remove('hidden');" type="button"
+                class="bg-gray-800 text-white w-full mx-2 py-2 rounded">
+                <span class="">ADD FUNDS</span>
+            </button>
         </div>
-        <div class="justify-between pt-4">
-            <div>
-                <div class="text-black font-bold h-2.5 mb-2.5">E-mail</div>
-                <div class="h-4 text-gray-500 rounded-full"><span
-                        class="text-gray-800">{{request.user.email}}</span></div>
-            </div>
-        </div>
-        <div class="justify-between pt-4">
-            <div>
-                <div class="text-black font-bold h-2.5 mb-2.5">Phone Number</div>
-                <div class="h-4 text-gray-500 rounded-full"><span
-                        class="text-gray-800">{{request.user.phone_number}}</span></div>
-            </div>
-        </div>
-        <div class="justify-between pt-4">
-            <div>
-                <div class="text-black font-bold h-2.5 mb-2.5">Bank account name</div>
-                <div class="h-4 text-gray-500 rounded-full"><span
-                        class="text-gray-800">{{request.user.bank_account_name}}</span></div>
-            </div>
-        </div>
-        <div class="justify-between pt-4">
-            <div>
-                <div class="text-black font-bold h-2.5 mb-2.5">Account Number</div>
-                <div class="h-4 text-gray-500 rounded-full"><span
-                        class="text-gray-800">{{request.user.bank_account_number}}</span></div>
-            </div>
-        </div>
-        <div class="justify-between pt-4">
-            <div>
-                <div class="text-black font-bold h-2.5 mb-2.5">Ifsc code</div>
-                <div class="h-4 text-gray-500 rounded-full"><span
-                        class="text-gray-800">{{request.user.ifsc_code}}</span></div>
-            </div>
-        </div>
-        <div class="justify-between pt-4">
-            <div>
-                <div class="text-black font-bold h-2.5 mb-2.5">UPI Id</div>
-                <div class="h-4 text-gray-500 rounded-full"><span class="text-gray-800">{{request.user.upi_id}}</span>
+    </div>
+
+    <div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+        <div class="px-2">
+            <div class="flex items-center justify-between w-full">
+                <div class="flex">
+                    <div class="mr-5 border rounded-full px-2 py-2 border-blue-700 border-2">
+                        <i data-feather="user" class="text-blue-700 w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <p class="capitalize font-semibold text-gray-900">{{request.user.first_name}}
+                            {{request.user.last_name}}</p>
+                        <p class=""><span class="font-semibold">Client ID: </span>{{request.user.username}}</p>
+                    </div>
+                </div>
+                <div>
+                    <i data-feather="chevron-right" class="w-4 h-4 mr-2"></i>
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <a href="/transactions">
-                    <p class="text-black font-bold h-2.5 mb-2.5">Transactions</p>
-                    <div class="text-xs h-2">All your trades and charges in one place</div>
-                </a>
-            </div>
-            <div class="h-2.5 w-12">
-                <a href="/transactions">
-                    <i data-feather="chevron-right" class="w-4 h-4 font-bold text-4xl mr-2 text-right float-end"></i>
-                </a>
+    </div>
+
+    <div class="relative flex flex-col my-2 rounded-lg p-2">
+        <div class="">
+            <div class="flex items-center justify-between w-full">
+                <div class="border rounded-2xl border-2 p-2 w-1/2 bg-white border-slate-100 mx-1">
+                    <div>
+                        <div class="mx-3 border rounded-full px-2 py-2 border-orange-500 border-2 w-12">
+                            <i data-feather="database" class="text-orange-500 w-7 h-7"></i>
+                        </div>
+                    </div>
+                    <div class="m-2">
+                        <p class="font-semibold test-gray-800 mb-2">Positions</p>
+                        <span class="mb-4">
+                            See your Positions & Holdings.
+                        </span>
+                        <p class="mt-10 mb-3">
+                            <a href="/portfolio" class="uppercase text-blue-700 font-semibold flex">
+                                PORTFOLIO
+                                <i data-feather="chevron-right" class="w-4 h-5 ml-2"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="border rounded-2xl border-2 p-2 w-1/2 bg-white border-slate-100 mx-2">
+                    <div>
+                        <div class="mx-3 border rounded-full px-2 py-2 border-lime-500 border-2 w-12">
+                            <i data-feather="clipboard" class="text-lime-500 w-7 h-7"></i>
+                        </div>
+                    </div>
+                    <div class="m-2">
+                        <p class="font-semibold test-gray-800 mb-2">Orders</p>
+                        <span class="mb-4">
+                            See all your Buying and Selling history.
+                        </span>
+                        <p class="mt-10 mb-3">
+                            <a href="/orders" class="uppercase text-blue-700 font-semibold flex">
+                                ORDERS
+                                <i data-feather="chevron-right" class="w-4 h-5 ml-2"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
+    </div>
+
+    <div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+        <div class="px-2 py-4">
+            <div class="flex items-center justify-between w-full">
                 <a href="/trade_charges">
-                    <p class="text-black font-bold h-2.5 mb-2.5">Trades and Charges</p>
-                    <div class="text-xs h-2">All your Wallet in one place</div>
+                    <div class="flex">
+                        <div class="mr-5 border bg-blue-100 rounded-full px-2 py-2 border-1">
+                            <i data-feather="percent" class="text-blue-700 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">
+                                Trades and Charges
+                            </p>
+                            <p class="">All your charges in one place</p>
+                        </div>
+                    </div>
                 </a>
-            </div>
-            <div class="h-2.5 w-12">
                 <a href="/trade_charges">
-                    <i data-feather="chevron-right" class="w-4 h-4 font-bold text-4xl mr-2 text-right float-end"></i>
+                    <div>
+                        <i data-feather="chevron-right" class="w-4 h-4 mr-2"></i>
+                    </div>
                 </a>
             </div>
         </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <a href="/contact">
-                    <p class="text-black font-bold h-2.5 mb-2.5">Support</p>
-                    <div class="text-xs h-2"></div>
+        <div class="px-2 py-4">
+            <div class="flex items-center justify-between w-full">
+                <a href="/performance">
+                    <div class="flex">
+                        <div class="mr-5 border bg-blue-100 rounded-full px-2 py-2 border-1">
+                            <i data-feather="bar-chart-2" class="text-blue-700 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">
+                                Profit and Loss
+                            </p>
+                            <p class="">Analyse profit and loss for your trades</p>
+                        </div>
+                    </div>
                 </a>
-            </div>
-            <div class="h-2.5 w-12">
-                <a href="/contact">
-                    <i data-feather="chevron-right" class="w-4 h-4 font-bold text-4xl mr-2 text-right float-end"></i>
+                <a href="/performance">
+                    <div>
+                        <i data-feather="chevron-right" class="w-4 h-4 mr-2"></i>
+                    </div>
                 </a>
             </div>
         </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <a href="/logout">
-                    <p class="text-red-600 font-bold h-2.5 mb-2.5">Logout</p>
-                    <div class="text-xs h-2"></div>
+        <div class="px-2 py-4">
+            <div class="flex items-center justify-between w-full">
+                <a href="/transactions">
+                    <div class="flex">
+                        <div class="mr-5 border bg-blue-100 rounded-full px-2 py-2 border-1">
+                            <i data-feather="file-text" class="text-blue-700 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">
+                                Fund Transactions
+                            </p>
+                            <p class="">Add Funds and Withdrawl History</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/transactions">
+                    <div>
+                        <i data-feather="chevron-right" class="w-4 h-4 mr-2"></i>
+                    </div>
                 </a>
             </div>
-            <div class="h-2.5 w-12">
-                <a href="/logout">
-                    <i data-feather="chevron-right" class="w-4 h-4 font-bold text-4xl mr-2 text-red-600 text-right float-end"></i>
+        </div>
+        <div class="px-2 py-4">
+            <div class="flex items-center justify-between w-full">
+                <a href="/contact">
+                    <div class="flex">
+                        <div class="mr-5 border bg-blue-100 rounded-full px-2 py-2 border-1">
+                            <i data-feather="message-circle" class="text-blue-700 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">
+                                Support
+                            </p>
+                            <p class="">How can we help you?</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/contact">
+                    <div>
+                        <i data-feather="chevron-right" class="w-4 h-4 mr-2"></i>
+                    </div>
                 </a>
             </div>
         </div>
     </div>
 </div>
+<script>
+    function submitForm(mode) {
+        const form = document.getElementById('paymentForm');
+        document.getElementById('paymentMode').value = mode;
+        form.submit();  // Submit the form
+    }
+</script>
 <br><br><br><br>
 {% endblock body %}

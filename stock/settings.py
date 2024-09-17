@@ -154,7 +154,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Security settings
-CSRF_TRUSTED_ORIGINS = ['https://onstock.in']
+# CSRF_TRUSTED_ORIGINS = ['https://onstock.in']
 
 # Login URL
 LOGIN_URL = '/login/'
@@ -172,6 +172,10 @@ EMAIL_USE_TLS = True
 SESSION_COOKIE_AGE = 24 * 60 * 60  # 24 hours in seconds
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
+
+PAYU_MERCHANT_KEY = 'zORtyX'
+PAYU_MERCHANT_SALT = 'vPabOd5AEhemkhZOv2FoifOmOvZtp1UH'
+PAYU_ENVIRONMENT = 'TEST'  # Use 'Production' in live
 
 
 # File paths

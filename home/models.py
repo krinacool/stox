@@ -24,3 +24,11 @@ class CA(models.Model):
         verbose_name_plural = "CA"
    def __str__(self):
       return self.title
+   
+class ExploreVideos(models.Model):
+   video_url = models.URLField(blank=True)
+   class Meta:
+        verbose_name = "Explore Video"
+        verbose_name_plural = "Explore Videos"
+   def __str__(self):
+      return self.video_url

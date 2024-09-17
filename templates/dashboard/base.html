@@ -27,6 +27,13 @@
     ::-webkit-scrollbar {
         display: none;
     }
+    .line-clamp-custom {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 </style>
 
 <body>
@@ -50,7 +57,7 @@
             <nav class="navbar-vertical navbar z-20">
                 <div id="myScrollableElement" class="h-screen" data-simplebar>
                     <!-- brand logo -->
-                    <a class="navbar-brand" href="/market">
+                    <a class="navbar-brand" href="/home">
                         <h4 class="text-white font-bold text-2xl">Onstock</h4>
                         <!-- <img src="/static/images/brand/logo/logo.svg" width="50%" alt="" /> -->
                     </a>
@@ -58,7 +65,7 @@
                     <!-- navbar nav -->
                     <ul class="navbar-nav flex-col" id="sideNavbar">
                         <li class="nav-item">
-                            <a class="nav-link  active " href="/market">
+                            <a class="nav-link  active " href="/home">
                                 <i data-feather="home" class="w-4 h-4 mr-2"></i>
                                 Home
                             </a>
@@ -146,7 +153,7 @@
                             </svg>
                         </a>
                         <div class="ml-3 w-full" id="main-logo">
-                            <a class="navbar-brand" href="/market">
+                            <a class="navbar-brand" href="/home">
                                 <h4 class="text-dark font-bold text-2xl">Onstock</h4>
                                 <!-- <img src="/static/images/brand/logo/logo.svg" width="50%" alt="" /> -->
                             </a>
@@ -458,7 +465,7 @@
         <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile-->
         <section id="bottom-navigation" class="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
             <div id="tabs" class="flex justify-between">
-                <a href="/market"
+                <a href="/home"
                     class="w-full focus:text-gray-500 hover:text-gray-500 justify-center inline-block text-center pt-2 pb-1">
                     <i data-feather="home" class="inline-block mb-1"></i>
                     <span class="tab tab-home block text-xs">Home</span>

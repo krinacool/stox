@@ -9,4 +9,4 @@ def trends(request):
         "news":news,
         "ca":ca,
     }
-    return render(request,'trends.html',context)
+    return render(request,'dashboard/trends.html',context)

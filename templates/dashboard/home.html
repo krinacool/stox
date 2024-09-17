@@ -78,99 +78,65 @@
     </div>
 </div>
 
+
 <div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
     <div class="px-2">
-
-<div class="bg-white border-b border-gray-200 overflow-x-auto">
-    <ul class="flex flex-nowrap -mb-px font-medium text-center" id="default" data-tabs-toggle="#default-content"
-        data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
-        data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300 dark:hover:text-gray-300"
-        role="tablist">
-        {% for x in all_tags %}
-        {% if x == "@INDEX" %}
-        {% else %}
-        <li class="me-2" role="presentation">
-            <button class="watchlist-tab inline-block p-4 border-b-2 rounded-t-lg text-gray-600" id="{{x}}-tab"
-                data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
-                aria-selected="false">{{x}}
-                </button>
-        </li>
-        {% endif %}
-        {% endfor %}
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-gray-600" id="{{x}}-tab"
-                data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
-                aria-selected="false" onclick="document.getElementById('addTab').classList.remove('hidden')">
-                <i data-feather="plus-square" class="text-gray-400"></i>
-            </button>
-        </li>
-    </ul>
-</div>
-
-
-<div class="grid lg:grid-cols-9 gap-4">
-    <div id="addTab" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
-        style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px; max-width: 350px;">
-        <div class="bg-white rounded-lg shadow-lg w-full p-6 border">
-            <div class="flex justify-between items-center border-b mb-2">
+        <div class="flex items-center justify-between w-full mb-2">
+            <div class="flex">
                 <div>
-                    <label class="text-lg text-black font-semibold">Create Watchlist </label></span>
+                    <h3 class="capitalize font-semibold text-gray-900 flex text-1xl">
+                        Explore Market <i data-feather="chevron-right" class="w-4 h-3 mx-3 font-semibold relative top-1"></i>
+                    </h3>
                 </div>
             </div>
-            <form action="/create_watchlist" method="POST">
-                {% csrf_token %}
-                <div style="overflow-y: auto;max-height: 500px;">
-                    <div class="grid grid-cols-1 gap-2">
-                            <div class="flex flex-col">
-                                <label for=""
-                                    class="block text-sm font-medium text-gray-900  mb-1">Watchlist name</label>
-                                <input type="text" name="name"
-                                    class="mb-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="favourite" value="" required />
-                            </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 gap-2 mt-2">
-                    <div class="grid grid-cols-2 gap-2 mb-2">
-                        <div class="flex flex-col">
-                            <button class="bg-gray-100 text-black px-4 py-2 rounded" onclick="document.getElementById('addTab').classList.add('hidden')"
-                                type="button">Cancel</button>
-                        </div>
-                        <div class="flex flex-col">
-                            <button class="bg-gray-700 text-white px-4 py-2 rounded" onclick=""
-                                type="submit">Create</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+        </div>
+        <div class="overflow-x-auto">
+            <ul class="flex flex-nowrap font-medium text-center py-2">
+                {% for x in explore_videos reversed %}
+                <iframe width="250" height="150" src="{{x.video_url}}"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" class="mr-2 rounded-xl" allowfullscreen></iframe>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
-<div id="">
-    {% for x in watchlist_list %}
-    <div class="hidden watchlist-tab-main p-2 rounded-lg bg-white" id="{{x}}-tab-main" role="tabpanel"
-        aria-labelledby="profile-tab">
-        <div role="status" class="w-full py-4 space-y-4 divide-y divide-gray-200 rounded">
-            {% for stock in watch_list reversed %}
-            {% if stock.tag == "@INDEX" %}
-            {% else %}
-            {% if stock.tag == x %}
-            <div class="whiteBox">
-                <div class="stocks flex items-center justify-between" id="{{stock.instrument_key}}"
-                    data-lot_size="{{stock.lot_size}}" draggable="true"
-                    onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">
+
+
+<div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+    <div class="px-2">
+        <ul
+            class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+            <li class="me-2">
+                <a href="#" aria-current="page"
+                    class="inline-block px-4 py-2 text-gray-800 bg-gray-100 rounded-t-lg active dark:bg-gray-800 dark:text-gray-800">News</a>
+            </li>
+            <li class="me-2">
+                <a href="/trends"
+                    class="inline-block px-4 py-2 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300">CA</a>
+            </li>
+        </ul>
+        {% for x in news %}
+        <a href="/trends">
+            <div class="relative flex flex-col my-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+                <div class="flex items-center justify-between w-full mb-2">
+                    <div class="flex">
+                        <div>
+                            <h3 class="capitalize font-semibold text-blue-600 flex text-1xl">
+                                {{x.title}} <i data-feather="chevron-right"
+                                    class="w-4 h-3 text-blue-600 mx-3 font-semibold relative top-1"></i>
+                            </h3>
+                            <p class="line-clamp-custom">{{x.content}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            {% endif %}
-            {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-    {% endfor %}
-</div>
+        </a>
+        {% endfor %}
     </div>
 </div>
-<!-- Modal Structure -->
+
 <div class="grid lg:grid-cols-9 gap-4">
     <div id="modal" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
         style="left: 50%;top: 50%;transform: translate(-50%, -50%);min-width: 350px;">
@@ -486,6 +452,7 @@
     const socket = new WebSocket('wss://onstock.in/ws/stocks/');
 
     socket.onopen = function () {
+        console.log('Websocket Open');
 
         // Example instruments list
         const instruments = {{watchlist_symbollist|safe}};
