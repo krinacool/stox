@@ -83,14 +83,17 @@ class CustomUser(AbstractUser):
         # Create default watchlist entries for the new user
         default_watchlists = Watchlist.objects.filter(is_default=True)
         for watchlist in default_watchlists:
-            Watchlist.objects.create(
-                user=self,
-                symbol=watchlist.symbol,
-                segment=watchlist.segment,
-                instrument_key=watchlist.instrument_key,
-                tag=watchlist.tag,
-                is_default=False
-            )
+            try:
+                Watchlist.objects.create(
+                    user=self,
+                    symbol=watchlist.symbol,
+                    segment=watchlist.segment,
+                    instrument_key=watchlist.instrument_key,
+                    tag=watchlist.tag,
+                    is_default=False
+                )
+            except:
+                pass
 
 @receiver(pre_save, sender=CustomUser)
 def generate_username(sender, instance, **kwargs):
