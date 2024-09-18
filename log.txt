@@ -4526,3 +4526,47 @@ django.template.exceptions.TemplateDoesNotExist: trends.html
 2024-09-17 06:35:05,036 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:58234][0m
 2024-09-17 06:35:05,036 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:58238][0m
 2024-09-17 06:35:05,045 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:58235][0m
+2024-09-17 06:44:18,057 [mHTTP GET / 200 [0.36, 127.0.0.1:58799][0m
+2024-09-17 06:44:19,951 [mHTTP GET /login/ 200 [0.08, 127.0.0.1:58799][0m
+2024-09-17 06:44:26,616 [32mHTTP POST /login/ 302 [2.37, 127.0.0.1:58803][0m
+2024-09-17 06:44:26,689 [mHTTP GET /home?greeting=True 200 [0.07, 127.0.0.1:58803][0m
+2024-09-17 06:44:28,513 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:58803][0m
+2024-09-17 06:44:42,247 [mHTTP GET /home 200 [0.05, 127.0.0.1:58803][0m
+2024-09-17 06:45:19,995 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-17 06:45:19,995 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-17 06:45:19,997 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:58854][0m
+2024-09-17 06:45:19,999 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:58855][0m
+2024-09-17 06:46:24,209 [mHTTP GET /home 200 [0.20, 127.0.0.1:58932][0m
+2024-09-17 06:46:25,114 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-17 06:46:25,121 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:58933][0m
+2024-09-17 06:46:25,130 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-17 06:46:25,130 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.05, 127.0.0.1:58932][0m
+2024-09-17 06:47:49,642 [mHTTP GET /home 200 [0.07, 127.0.0.1:58996][0m
+2024-09-17 06:47:50,338 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-17 06:47:50,338 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58996][0m
+2024-09-17 06:47:50,393 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-17 06:47:50,395 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58996][0m
+2024-09-17 06:49:49,879 [mHTTP GET /home 200 [0.08, 127.0.0.1:59072][0m
+2024-09-17 06:49:50,826 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-17 06:49:50,826 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59072][0m
+2024-09-17 06:49:50,842 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-17 06:49:50,842 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59072][0m
+2024-09-17 06:50:56,107 [mHTTP GET /home 200 [0.06, 127.0.0.1:59111][0m
+2024-09-17 06:50:56,942 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-17 06:50:56,944 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59118][0m
+2024-09-17 06:50:56,961 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-17 06:50:56,962 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59118][0m
+2024-09-17 06:51:03,564 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-17 06:51:03,564 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59118][0m
+2024-09-17 06:51:03,580 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-17 06:51:03,581 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59118][0m
+2024-09-17 06:52:16,005 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:59165][0m
+2024-09-17 06:52:16,894 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-17 06:52:16,894 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:59165][0m
+2024-09-17 06:52:16,918 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-17 06:52:16,918 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:59165][0m
+2024-09-17 06:52:30,880 [mHTTP GET /watchlist 200 [0.04, 127.0.0.1:59165][0m
+2024-09-17 06:52:31,274 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-17 06:52:31,274 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59165][0m
+2024-09-17 06:52:31,283 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-17 06:52:31,283 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59166][0m
