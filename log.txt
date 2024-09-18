@@ -4570,3 +4570,116 @@ django.template.exceptions.TemplateDoesNotExist: trends.html
 2024-09-17 06:52:31,274 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:59165][0m
 2024-09-17 06:52:31,283 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
 2024-09-17 06:52:31,283 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:59166][0m
+2024-09-18 19:09:36,862 [mHTTP GET / 200 [0.06, 127.0.0.1:51679][0m
+2024-09-18 19:09:36,929 Not Found: /static/landingasset/css/bootstrap.min.css
+2024-09-18 19:09:36,930 [33mHTTP GET /static/landingasset/css/bootstrap.min.css 404 [0.03, 127.0.0.1:51679][0m
+2024-09-18 19:09:36,930 Not Found: /static/landingasset/css/animate.css
+2024-09-18 19:09:36,931 Not Found: /static/landingasset/css/themify-icons.css
+2024-09-18 19:09:36,934 [33mHTTP GET /static/landingasset/css/animate.css 404 [0.03, 127.0.0.1:51683][0m
+2024-09-18 19:09:36,934 Not Found: /static/landingasset/css/owl.carousel.css
+2024-09-18 19:09:36,935 [33mHTTP GET /static/landingasset/css/themify-icons.css 404 [0.03, 127.0.0.1:51682][0m
+2024-09-18 19:09:36,936 Not Found: /static/landingasset/css/font-awesome.min.css
+2024-09-18 19:09:36,936 Not Found: /static/landingasset/css/style.css
+2024-09-18 19:09:36,939 [33mHTTP GET /static/landingasset/css/owl.carousel.css 404 [0.03, 127.0.0.1:51684][0m
+2024-09-18 19:09:36,940 [33mHTTP GET /static/landingasset/css/font-awesome.min.css 404 [0.03, 127.0.0.1:51680][0m
+2024-09-18 19:09:36,940 [33mHTTP GET /static/landingasset/css/style.css 404 [0.03, 127.0.0.1:51685][0m
+2024-09-18 19:09:36,959 Not Found: /static/landingasset/img/laptop.png
+2024-09-18 19:09:36,959 Not Found: /static/landingasset/img/about-img.png
+2024-09-18 19:09:36,959 Not Found: /static/landingasset/img/process-icons/1.png
+2024-09-18 19:09:36,963 [33mHTTP GET /static/landingasset/img/laptop.png 404 [0.03, 127.0.0.1:51679][0m
+2024-09-18 19:09:36,963 [33mHTTP GET /static/landingasset/img/about-img.png 404 [0.03, 127.0.0.1:51683][0m
+2024-09-18 19:09:36,963 [33mHTTP GET /static/landingasset/img/process-icons/1.png 404 [0.02, 127.0.0.1:51682][0m
+2024-09-18 19:09:36,963 Not Found: /static/landingasset/img/process-icons/3.png
+2024-09-18 19:09:36,965 Not Found: /static/landingasset/img/process-icons/2.png
+2024-09-18 19:09:36,969 [33mHTTP GET /static/landingasset/img/process-icons/3.png 404 [0.02, 127.0.0.1:51684][0m
+2024-09-18 19:09:36,969 [33mHTTP GET /static/landingasset/img/process-icons/2.png 404 [0.02, 127.0.0.1:51680][0m
+2024-09-18 19:09:36,975 Not Found: /static/landingasset/js/jquery-3.2.1.min.js
+2024-09-18 19:09:36,978 [33mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 404 [0.03, 127.0.0.1:51685][0m
+2024-09-18 19:09:36,983 Not Found: /static/landingasset/js/owl.carousel.min.js
+2024-09-18 19:09:36,983 Not Found: /static/landingasset/js/main.js
+2024-09-18 19:09:36,983 [33mHTTP GET /static/landingasset/js/owl.carousel.min.js 404 [0.02, 127.0.0.1:51679][0m
+2024-09-18 19:09:36,983 [33mHTTP GET /static/landingasset/js/main.js 404 [0.02, 127.0.0.1:51683][0m
+2024-09-18 19:09:55,321 D:\stox\stock\settings.py changed, reloading.
+2024-09-18 19:09:59,183 [mHTTP GET / 200 [0.01, 127.0.0.1:51705][0m
+2024-09-18 19:09:59,360 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.16, 127.0.0.1:51708][0m
+2024-09-18 19:09:59,367 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.17, 127.0.0.1:51707][0m
+2024-09-18 19:09:59,370 [mHTTP GET /static/landingasset/css/animate.css 200 [0.17, 127.0.0.1:51709][0m
+2024-09-18 19:09:59,370 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.17, 127.0.0.1:51705][0m
+2024-09-18 19:09:59,382 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.02, 127.0.0.1:51708][0m
+2024-09-18 19:09:59,392 [mHTTP GET /static/landingasset/css/style.css 200 [0.02, 127.0.0.1:51707][0m
+2024-09-18 19:09:59,411 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.03, 127.0.0.1:51705][0m
+2024-09-18 19:09:59,411 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.03, 127.0.0.1:51709][0m
+2024-09-18 19:09:59,411 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.03, 127.0.0.1:51708][0m
+2024-09-18 19:09:59,424 [mHTTP GET /static/landingasset/img/process-icons/2.png 200 [0.03, 127.0.0.1:51707][0m
+2024-09-18 19:09:59,442 [mHTTP GET /static/landingasset/img/process-icons/3.png 200 [0.03, 127.0.0.1:51703][0m
+2024-09-18 19:09:59,457 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.03, 127.0.0.1:51709][0m
+2024-09-18 19:09:59,462 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.03, 127.0.0.1:51707][0m
+2024-09-18 19:09:59,475 [mHTTP GET /static/landingasset/js/main.js 200 [0.05, 127.0.0.1:51705][0m
+2024-09-18 19:09:59,501 [mHTTP GET /static/landingasset/js/owl.carousel.min.js 200 [0.07, 127.0.0.1:51708][0m
+2024-09-18 19:09:59,542 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.03, 127.0.0.1:51707][0m
+2024-09-18 19:09:59,542 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.03, 127.0.0.1:51708][0m
+2024-09-18 19:09:59,548 [mHTTP GET /static/landingasset/js/jquery-3.2.1.min.js 200 [0.14, 127.0.0.1:51704][0m
+2024-09-18 19:09:59,548 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.03, 127.0.0.1:51705][0m
+2024-09-18 19:09:59,660 [mHTTP GET /static/images/brand/logo/brand.png 200 [0.01, 127.0.0.1:51705][0m
+2024-09-18 19:10:05,020 [mHTTP GET /login/ 200 [0.04, 127.0.0.1:51705][0m
+2024-09-18 19:10:05,054 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.01, 127.0.0.1:51705][0m
+2024-09-18 19:10:05,054 [mHTTP GET /static/css/theme.min.css 200 [0.00, 127.0.0.1:51704][0m
+2024-09-18 19:10:05,072 [mHTTP GET /static/js/theme.min.js 200 [0.02, 127.0.0.1:51703][0m
+2024-09-18 19:10:05,083 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.js 200 [0.03, 127.0.0.1:51709][0m
+2024-09-18 19:10:05,099 [mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js 200 [0.05, 127.0.0.1:51707][0m
+2024-09-18 19:10:05,099 [mHTTP GET /static/libs/feather-icons/dist/feather.min.js 200 [0.05, 127.0.0.1:51708][0m
+2024-09-18 19:10:13,875 [32mHTTP POST /login/ 302 [1.37, 127.0.0.1:51713][0m
+2024-09-18 19:10:13,962 [mHTTP GET /home?greeting=True 200 [0.08, 127.0.0.1:51713][0m
+2024-09-18 19:10:13,996 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.css 200 [0.00, 127.0.0.1:51714][0m
+2024-09-18 19:10:13,998 [mHTTP GET /static/css/tailwind.css 200 [0.01, 127.0.0.1:51713][0m
+2024-09-18 19:10:14,043 [mHTTP GET /static/libs/apexcharts/dist/apexcharts.min.js 200 [0.05, 127.0.0.1:51716][0m
+2024-09-18 19:10:38,266 [mHTTP GET /home?greeting=True 200 [0.06, 127.0.0.1:51738][0m
+2024-09-18 19:10:40,404 [mHTTP GET /home 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:10:43,231 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:51738][0m
+2024-09-18 19:10:53,557 [mHTTP GET /search/?q=sbin 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:10:56,545 [mHTTP GET /search/?q=ad 200 [0.04, 127.0.0.1:51738][0m
+2024-09-18 19:10:56,710 [mHTTP GET /search/?q=adm 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:10:56,835 [mHTTP GET /search/?q=adma 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:10:57,418 [mHTTP GET /search/?q=adm 200 [0.01, 127.0.0.1:51738][0m
+2024-09-18 19:10:57,583 [mHTTP GET /search/?q=ad 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:10:59,079 [mHTTP GET /search/?q=ad 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:10:59,295 [mHTTP GET /search/?q=ada 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:10:59,505 [mHTTP GET /search/?q=adan 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:10:59,744 [mHTTP GET /search/?q=adani 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:02,678 [32mHTTP POST /add_watchlist 302 [0.04, 127.0.0.1:51738][0m
+2024-09-18 19:11:02,707 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:14,654 [32mHTTP POST /create_watchlist 302 [0.01, 127.0.0.1:51738][0m
+2024-09-18 19:11:14,682 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:24,606 [mHTTP GET /search/?q=re 200 [0.03, 127.0.0.1:51738][0m
+2024-09-18 19:11:25,654 [mHTTP GET /search/?q=rel 200 [0.03, 127.0.0.1:51738][0m
+2024-09-18 19:11:25,951 [mHTTP GET /search/?q=reli 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:26,087 [mHTTP GET /search/?q=relia 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:26,338 [mHTTP GET /search/?q=relian 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:27,446 [mHTTP GET /search/?q=relianc 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:27,675 [mHTTP GET /search/?q=reliance 200 [0.01, 127.0.0.1:51738][0m
+2024-09-18 19:11:30,882 [32mHTTP POST /add_watchlist 302 [0.05, 127.0.0.1:51738][0m
+2024-09-18 19:11:30,910 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:37,939 [mHTTP GET /delete_symbol/NSE_EQ%7CINE002A01018 200 [0.01, 127.0.0.1:51738][0m
+2024-09-18 19:11:40,864 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:46,909 [mHTTP GET / 200 [0.01, 127.0.0.1:51738][0m
+2024-09-18 19:11:47,831 [32mHTTP GET /admin 301 [0.11, 127.0.0.1:51738][0m
+2024-09-18 19:11:48,006 [mHTTP GET /admin/ 200 [0.17, 127.0.0.1:51738][0m
+2024-09-18 19:11:48,054 [mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 200 [0.01, 127.0.0.1:51738][0m
+2024-09-18 19:11:48,055 [mHTTP GET /static/jazzmin/css/main.css 200 [0.01, 127.0.0.1:51762][0m
+2024-09-18 19:11:48,060 [mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 200 [0.01, 127.0.0.1:51758][0m
+2024-09-18 19:11:48,210 [mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 200 [0.05, 127.0.0.1:51762][0m
+2024-09-18 19:11:48,219 [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.08, 127.0.0.1:51758][0m
+2024-09-18 19:11:48,269 [mHTTP GET /static/jazzmin/js/main.js 200 [0.04, 127.0.0.1:51762][0m
+2024-09-18 19:11:48,293 [mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 200 [0.07, 127.0.0.1:51758][0m
+2024-09-18 19:11:48,303 [mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 200 [0.02, 127.0.0.1:51738][0m
+2024-09-18 19:11:48,308 [mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 200 [0.03, 127.0.0.1:51762][0m
+2024-09-18 19:11:50,167 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:51762][0m
+2024-09-18 19:11:55,632 [mHTTP GET /search/?q=re 200 [0.03, 127.0.0.1:51762][0m
+2024-09-18 19:11:55,752 [mHTTP GET /search/?q=rel 200 [0.02, 127.0.0.1:51762][0m
+2024-09-18 19:11:55,969 [mHTTP GET /search/?q=reli 200 [0.01, 127.0.0.1:51762][0m
+2024-09-18 19:11:56,169 [mHTTP GET /search/?q=relia 200 [0.02, 127.0.0.1:51762][0m
+2024-09-18 19:11:59,364 [32mHTTP POST /add_watchlist 302 [0.05, 127.0.0.1:51762][0m
+2024-09-18 19:11:59,393 [mHTTP GET /watchlist 200 [0.02, 127.0.0.1:51762][0m
+2024-09-18 19:12:24,724 D:\stox\stock\settings.py changed, reloading.
+2024-09-18 19:12:44,514 D:\stox\app\views.py changed, reloading.
+2024-09-18 19:12:59,091 D:\stox\app\views.py changed, reloading.

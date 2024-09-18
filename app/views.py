@@ -200,9 +200,9 @@ def add_watchlist(request):
                 try:
                     tagob = tags.objects.filter(tag=tag).first()
                     Watchlist.objects.create(user=request.user,symbol=x['symbol'],segment=x['exchange'],tag=tagob)
+                    messages.success(request,"Watchlist Updated ! ")
                 except Exception as e:
-                    messages.success(request,f"Error {e}, Stock cannot be added.")
-            messages.success(request,"Watchlist Updated Successfully")
+                    messages.error(request,f"Error {e}, Stock cannot be added.")
         except Exception as e:
             messages.error(request,f"Some Error Occured {e}")
     return redirect('/watchlist')
