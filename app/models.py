@@ -176,6 +176,9 @@ class tags(models.Model):
         verbose_name = "Watchlist tag"
         verbose_name_plural = "Watchlist tags"
         unique_together = ['user','tag']
+    def save(self, *args, **kwargs):
+        self.tag = self.tag.strip()
+        super().save(*args, **kwargs)
     def __str__(self):
         return str(self.tag)
 

@@ -80,3 +80,17 @@ class Upstox(models.Model):
         verbose_name_plural = "Upstox API"
     def __str__(self):
         return self.client_id
+
+
+class PaymentGateway(models.Model):
+    upi_id = models.CharField(max_length=500,default="")
+    upi_token = models.CharField(max_length=500,default="")
+    key = models.CharField(max_length=500,default="")
+    
+    payu_marchent_key = models.CharField(max_length=500,default="")
+    payu_marchent_salt = models.CharField(max_length=500,default="")
+    class Meta:
+        verbose_name = "Payment Gateway Setting"
+        verbose_name_plural = "Payment Gateway"
+    def __str__(self):
+      return "Payment Gateway"

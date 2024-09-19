@@ -1,17 +1,5 @@
 {% extends 'dashboard/base.html' %}
-{% block search %}
-<form class="flex items-center bg-white" id="search-form">
-    <input type="search"
-        class="border w-full border-gray-400 text-gray-900 rounded focus:ring-gray-700 focus:border-gray-400 hover:border-gray-400 block py-1 px-2 disabled:opacity-50 disabled:pointer-events-none mx-5 mb-2 mt-1"
-        id="search-input" id="search-input" placeholder="SBIN-EQ" />
-</form>
-<div class="w-full">
-    <div class="z-10 bg-white divide-y divide-gray-900 rounded-lg">
-        <ul class="py-2 text-black hidden" id="suggestions">
-        </ul>
-    </div>
-</div>
-{% endblock search %}
+
 {% block body %}
 {% load custom_filters %}    
 {% if greeting %}
@@ -66,11 +54,11 @@
             <ul class="flex flex-nowrap font-medium text-center py-2">
                 {% for stock in Index reversed %}
                 <li class="mr-2" role="presentation">
-                    <a href=""
+                    <span
                         class="block min-w-36 px-3 py-1 text-left bg-white border border-gray-200 rounded-lg">   
                         <h5 class="mb-2 text-1xl font-bold tracking-tight text-gray-900 h-5 overflow-auto">{{stock.symbol}}</h5>
                         <p class="font-normal text-gray-700" id="{{stock.instrument_key}}"></p>
-                    </a>
+                    </span>
                 </li>
                 {% endfor %}
             </ul>
@@ -102,6 +90,34 @@
         </div>
     </div>
 </div>
+
+<div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+    <div class="px-2">
+        <div class="flex items-center justify-between w-full mb-2">
+            <div class="flex">
+                <div>
+                    <h3 class="capitalize font-semibold text-gray-900 flex text-1xl">
+                        Recommendations <i data-feather="chevron-right" class="w-4 h-3 mx-3 font-semibold relative top-1"></i>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-x-auto">
+            <ul class="flex flex-nowrap font-medium text-center py-2">
+                {% for stock in recommended reversed %}
+                <li class="mr-2" role="presentation">
+                    <span
+                        class="block min-w-32 px-3 py-1 text-left bg-white border border-gray-200 rounded-lg" id="{{stock.instrument_key}}"
+                        data-lot_size="{{stock.lot_size}}" onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">   
+                        
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
 
 
 <div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
@@ -136,6 +152,128 @@
         {% endfor %}
     </div>
 </div>
+
+<div class="relative flex flex-col my-2 rounded-lg p-2">
+    <div class="">
+        <div class="flex items-center justify-between w-full">
+            <div class="border rounded-2xl border-2 p-2 w-1/2 bg-white border-slate-100 mx-1">
+                <div>
+                    <div class="mx-3 border rounded-full px-2 py-2 border-orange-500 border-2 w-12">
+                        <i data-feather="database" class="text-orange-500 w-7 h-7"></i>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <p class="font-semibold test-gray-800 mb-2">Positions</p>
+                    <span class="mb-4">
+                        See your Positions & Holdings.
+                    </span>
+                    <p class="mt-10 mb-3">
+                        <a href="/portfolio" class="uppercase text-blue-700 font-semibold flex">
+                            PORTFOLIO
+                            <i data-feather="chevron-right" class="w-4 h-5 ml-2"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="border rounded-2xl border-2 p-2 w-1/2 bg-white border-slate-100 mx-2">
+                <div>
+                    <div class="mx-3 border rounded-full px-2 py-2 border-lime-500 border-2 w-12">
+                        <i data-feather="clipboard" class="text-lime-500 w-7 h-7"></i>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <p class="font-semibold test-gray-800 mb-2">Orders</p>
+                    <span class="mb-4">
+                        See all your Buying and Selling history.
+                    </span>
+                    <p class="mt-10 mb-3">
+                        <a href="/orders" class="uppercase text-blue-700 font-semibold flex">
+                            ORDERS
+                            <i data-feather="chevron-right" class="w-4 h-5 ml-2"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+    <div class="px-2 py-4">
+        <div class="flex items-center justify-between w-full">
+            <a href="/trade_charges">
+                <div class="flex">
+                    <div class="mr-5 border bg-blue-100 rounded-full px-2 py-2 border-1">
+                        <i data-feather="percent" class="text-blue-700 w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-900">
+                            Trades and Charges
+                        </p>
+                        <p class="">All your charges in one place</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/trade_charges">
+                <div>
+                    <i data-feather="chevron-right" class="w-4 h-4 mr-2"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+    <div class="px-2 py-4">
+        <div class="flex items-center justify-between w-full">
+            <a href="/transactions">
+                <div class="flex">
+                    <div class="mr-5 border bg-blue-100 rounded-full px-2 py-2 border-1">
+                        <i data-feather="file-text" class="text-blue-700 w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-900">
+                            Fund Transactions
+                        </p>
+                        <p class="">Add Funds and Withdrawl History</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/transactions">
+                <div>
+                    <i data-feather="chevron-right" class="w-4 h-4 mr-2"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="relative flex flex-col my-2 mx-2 bg-white shadow-sm border border-slate-200 rounded-lg p-2">
+    <div class="px-2">
+        <div class="flex items-center justify-between w-full mb-2">
+            <div class="flex">
+                <div>
+                    <h3 class="capitalize font-semibold text-gray-900 flex text-1xl">
+                        Explore Market <i data-feather="chevron-right" class="w-4 h-3 mx-3 font-semibold relative top-1"></i>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-x-auto">
+            <ul class="flex flex-nowrap font-medium text-center py-2">
+                {% for stock in explore reversed %}
+                <li class="mr-2" role="presentation">
+                    <span
+                        class="block min-w-32 px-3 py-1 text-left bg-white border border-gray-200 rounded-lg" id="{{stock.instrument_key}}"
+                        data-lot_size="{{stock.lot_size}}" onclick="place_order('{{stock.symbol}}','{{stock.instrument_key}}')">   
+                        
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
 
 <div class="grid lg:grid-cols-9 gap-4">
     <div id="modal" class="fixed hidden z-50 rounded-lg inset-0 flex items-center justify-center"
@@ -260,78 +398,6 @@
     </div>
 </div>
 
-
-<div class="mt-2" id="skeleton">
-    <div role="status"
-        class="w-full p-4 space-y-4 bg-white border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse md:p-6">
-        <div class="flex items-center justify-between">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <div class="flex items-center justify-between pt-4">
-            <div>
-                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-        </div>
-        <span class="sr-only">Loading...</span>
-    </div>
-</div>
-
-
 <div class="hidden fixed z-50 w-full h-16 -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-1 left-1/2 dark:bg-gray-700 dark:border-gray-600" id="deleteTab">
     <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
         <button data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
@@ -361,7 +427,7 @@
     </div>
 </div>
 
-
+<br><br><br>
 <script>
     function place_order(stock, instrument) {
         document.getElementById('stock_tab').innerText = `(${stock})`
@@ -491,23 +557,12 @@
                     console.log(i['instrument'])
                     try {
                 document.getElementById(i['instrument']).innerHTML = `
-                <div>
-                    <div class="h-2.5 mt-2 text-black rounded-full w-48 mb-3.5">
-                        ${insertSpaces(i['data']['symbol'])}
-                    </div>
-                    <div class="h-2 rounded-full mb-2 mt-2">
-                        <div class="justify-center my-2 select-none">
-                            <small class="w-32 h-2 text-xs text-gray-600">${i['data']['name']}</small>                        <button
-                            class="no-underline rounded-sm bg-gray-100 text-gray-500 text-xs mr-2">${i['data']['segment']}</button>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="mx-2">
-                    <div class="h-2.5 mt-2 text-sm text-black rounded-full mb-2 w-24 mr-2 text-right">
+                <h5 class="mb-1 text-1xl font-bold tracking-tight text-gray-900 h-5 overflow-auto">${insertSpaces(i['data']['symbol'])}</h5>
+                <div class="mx-1">
+                    <div class="h-2 mt-1 text-sm text-gray-900 rounded-full mb-2 w-24 mr-2">
                         ${i['data']['ltp']}
                     </div>
-                    <div class="h-2 rounded-full mb-2 ${change_cls} text-left text-xs w-24 mr-2 text-right">
+                    <div class="h-4 rounded-full mt-4 mb-2 ${change_cls} text-left text-xs w-24 mr-2">
                         ${(i['data']['ltp']-i['data']['last_day_close']).toFixed(1)}
                     </div>
                 </div>
@@ -634,5 +689,4 @@
                 });
         });
 </script>
-<br><br><br><br>
 {% endblock body %}

@@ -58,3 +58,14 @@ class mcx_market(admin.ModelAdmin):
 @admin.register(ShoonyaApi)
 class ShoonyaApi(admin.ModelAdmin):
     list_display = ('user', 'password', 'token', 'vendor_code', 'api_key')
+
+
+class PaymentGatewayAdmin(admin.ModelAdmin):
+    model = PaymentGateway
+    # list_display = ('tax', 'intraday_buy_charge', 'intraday_sell_charge', 'carryforward_buy_charge', 'carryforward_sell_charge')
+    fieldsets = (
+        ('UPI', {'fields': ('upi_id', 'upi_token','key')}),
+        ('PAYU', {'fields': ('payu_marchent_key' ,'payu_marchent_salt')}),
+    )
+# Register the basicAdmin
+admin.site.register(PaymentGateway, PaymentGatewayAdmin)

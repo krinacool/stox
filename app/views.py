@@ -245,9 +245,13 @@ def home(request):
     if 'greeting' in request.GET:
         greeting = True
     tag = tags.objects.filter(tag='@INDEX').first()
+    Index = Watchlist.objects.filter(tag=tag)
+    tag = tags.objects.filter(tag='@RECOMMENDED').first()
+    recommended = Watchlist.objects.filter(tag=tag)
+    tag = tags.objects.filter(tag='@EXPLORE').first()
+    explore = Watchlist.objects.filter(tag=tag)
     news = News.objects.all().reverse()[:2]
     explore_videos = ExploreVideos.objects.all().reverse()
-    Index = Watchlist.objects.filter(tag=tag)
     watch_list = Watchlist.objects.filter(user=request.user)
     watchlist_list = []
     watchlist_symbollist = []
@@ -258,11 +262,17 @@ def home(request):
             watchlist_list.append(i.tag)
     for i in Index:
         watchlist_symbollist.append(i.instrument_key)
+    for i in recommended:
+        watchlist_symbollist.append(i.instrument_key)
+    for i in explore:
+        watchlist_symbollist.append(i.instrument_key)
     print(news)
     context = {
         'greeting':greeting,
         'news':news,
         'explore_videos':explore_videos,
+        'explore':explore,
+        'recommended':recommended,
         'Index':Index,
         'watch_list':watch_list,
         'all_tags':all_tags,
@@ -501,6 +511,19 @@ def pnl(request):
 
 @login_required
 def transactions(request):
+    Transaction.objects.filter(
+    user=request.user,
+    status='PENDING',
+    transaction_type='DEPOSIT'
+    ).update(status='FAILED')
+    trans = Transaction.objects.filter(user=request.user)
+    context = {
+        'trans':trans
+    }
+    return render(request,'dashboard/transactions.html',context)
+
+@login_required
+def withdraw(request):
     if request.method == 'POST':
         amount = request.POST.get("amount")
         ob = Transaction.objects.filter(user=request.user,status='REQUESTED')
@@ -512,20 +535,6 @@ def transactions(request):
             messages.success(request,'Request added, your amount will be transferred to your account within 24 hours.')
         else:
             messages.error(request,'Invalid amount ! Please enter correct amount and try again.')
-    trans = Transaction.objects.filter(user=request.user)
-    context = {
-        'trans':trans
-    }
-    return render(request,'dashboard/transactions.html',context)
-
-@login_required
-def withdraw(request):
-    try:
-        amount = request.POST.get('amount')
-        ob = Transaction.objects.create(user=request.user,status='REQUESTED',transaction_type='WITHDRAW',amount=int(amount))
-    except Exception as e:
-        print(e)
-    messages.success(request,'Withdraw initiated. It may take upto 24 hr to reflect to your account')
     return redirect('/transactions')
 
 
@@ -543,15 +552,14 @@ def orderid(length=15):
 def addFunds(request):
     if request.method == 'POST':
         mode = request.POST.get('mode')
-        print('mode')
-        print(mode)
+        gateway = PaymentGateway.objects.all().first()
         if mode == 'upi':
             amount = request.POST.get('amount')
             url = "https://apiqr.upibuz.in/order/paytm"
             order_id = orderid()
             data = {
-                "upiuid": "paytmqr28100505010110sggy9gsszk@paytm",
-                "token": "82e16b-54fd81-687682-f76ade-14d412",
+                "upiuid": gateway.upi_id,
+                "token": gateway.upi_token,
                 "orderId": order_id,
                 "txnAmount": str(amount),
                 "txnNote": "Onstock",
@@ -559,7 +567,7 @@ def addFunds(request):
                 "cust_Mobile":"0000000000",
                 "cust_Email":"onstock@gmail.com",
             }
-            original_key = '4xGhRSabz1'
+            original_key = gateway.key
             original_key_bytes = original_key.encode('utf-8')
             key = (original_key_bytes + b'\0' * (16 - len(original_key_bytes)))[:16].decode()
             checksum = RechPayChecksum.generateSignature(data,key)
@@ -571,22 +579,22 @@ def addFunds(request):
             # PayU client setup
             amount = request.POST.get('amount')
             client = payu_websdk.Client(
-                settings.PAYU_MERCHANT_KEY,
-                settings.PAYU_MERCHANT_SALT,
+                gateway.payu_marchent_key,
+                gateway.payu_marchent_salt,
                 settings.PAYU_ENVIRONMENT,
             )    
             # Payment data
             order_id = orderid()
             payment_data = {
-                'key': settings.PAYU_MERCHANT_KEY,  # Replace with dynamic amount
+                'key': gateway.payu_marchent_key,  # Replace with dynamic amount
                 'amount': amount,  # Replace with dynamic amount
                 'productinfo': 'Onstock Deposit',
                 'firstname': request.user.first_name,
                 'email': request.user.email,
                 'phone': request.user.phone_number,
                 'txnid': order_id,  # Unique transaction ID
-                'surl': 'http://127.0.0.1:8000/payment/success/',  # Success URL
-                'furl': 'http://127.0.0.1:8000/payment/failure/',  # Failure URL
+                'surl': 'https://onstock.in/payment/success/',  # Success URL
+                'furl': 'https://onstock.in/payment/failure/',  # Failure URL
             }
             # Generate hash for checkout
             form = client.generatePaymentForm(payment_data)
