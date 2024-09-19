@@ -5189,3 +5189,4 @@ django.template.exceptions.TemplateDoesNotExist: trends.html
 2024-09-19 15:46:37,648 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:59286][0m
 2024-09-19 15:57:33,870 D:\stox\app\models.py changed, reloading.
 2024-09-19 15:58:03,814 D:\stox\app\views.py changed, reloading.
+2024-09-19 16:01:29,151 D:\stox\stock\settings.py changed, reloading.
