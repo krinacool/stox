@@ -5258,3 +5258,18 @@ django.template.exceptions.TemplateDoesNotExist: trends.html
 2024-09-19 19:33:42,362 D:\stox\app\models.py changed, reloading.
 2024-09-19 19:37:35,660 D:\stox\app\models.py changed, reloading.
 2024-09-19 19:41:09,542 D:\stox\stock\settings.py changed, reloading.
+2024-09-19 20:19:06,126 [mHTTP GET / 200 [0.21, 127.0.0.1:61762][0m
+2024-09-19 20:19:07,603 [mHTTP GET /admin/ 200 [0.58, 127.0.0.1:61762][0m
+2024-09-19 20:19:11,564 [mHTTP GET /admin/settings/paymentgateway/ 200 [0.32, 127.0.0.1:61766][0m
+2024-09-19 20:19:11,634 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-19 20:19:11,635 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-19 20:19:11,635 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:61768][0m
+2024-09-19 20:19:11,635 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.03, 127.0.0.1:61767][0m
+2024-09-19 20:19:11,643 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:61766][0m
+2024-09-19 20:19:13,400 [mHTTP GET /admin/settings/paymentgateway/1/change/ 200 [0.21, 127.0.0.1:61766][0m
+2024-09-19 20:19:13,453 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:61766][0m
+2024-09-19 20:19:13,458 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-19 20:19:13,458 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-19 20:19:13,458 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:61767][0m
+2024-09-19 20:19:13,463 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:61768][0m
+2024-09-19 20:19:47,764 D:\stox\stock\settings.py changed, reloading.
