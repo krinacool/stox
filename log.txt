@@ -5273,3 +5273,4 @@ django.template.exceptions.TemplateDoesNotExist: trends.html
 2024-09-19 20:19:13,458 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:61767][0m
 2024-09-19 20:19:13,463 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:61768][0m
 2024-09-19 20:19:47,764 D:\stox\stock\settings.py changed, reloading.
+2024-09-19 20:22:55,399 D:\stox\stock\settings.py changed, reloading.

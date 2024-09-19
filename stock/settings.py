@@ -173,7 +173,7 @@ SESSION_COOKIE_AGE = 24 * 60 * 60  # 24 hours in seconds
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
-PAYU_ENVIRONMENT = 'TEST'  # Use 'Production' in live
+PAYU_ENVIRONMENT = 'LIVE'  # Use 'Production' in live
 
 
 # File paths
