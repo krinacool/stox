@@ -5153,3 +5153,39 @@ django.template.exceptions.TemplateDoesNotExist: trends.html
 2024-09-19 15:22:18,843 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:57860][0m
 2024-09-19 15:22:59,531 D:\stox\stock\settings.py changed, reloading.
 2024-09-19 15:23:07,083 D:\stox\stock\settings.py changed, reloading.
+2024-09-19 15:28:09,702 [mHTTP GET /admin/settings/paymentgateway/1/change/ 200 [0.28, 127.0.0.1:58109][0m
+2024-09-19 15:28:09,748 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:58109][0m
+2024-09-19 15:28:09,752 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-19 15:28:09,752 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-19 15:28:09,754 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:58112][0m
+2024-09-19 15:28:09,754 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:58110][0m
+2024-09-19 15:44:37,512 D:\stox\app\models.py changed, reloading.
+2024-09-19 15:46:06,493 [mHTTP GET / 200 [0.17, 127.0.0.1:59236][0m
+2024-09-19 15:46:09,525 [32mHTTP GET /login/ 302 [0.07, 127.0.0.1:59236][0m
+2024-09-19 15:46:09,604 [mHTTP GET /home 200 [0.07, 127.0.0.1:59236][0m
+2024-09-19 15:46:13,316 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:59252][0m
+2024-09-19 15:46:17,465 [mHTTP GET /search/?q=ani 200 [0.21, 127.0.0.1:59261][0m
+2024-09-19 15:46:17,477 [mHTTP GET /search/?q=an 200 [0.40, 127.0.0.1:59259][0m
+2024-09-19 15:46:17,704 [mHTTP GET /search/?q=anin 200 [0.03, 127.0.0.1:59259][0m
+2024-09-19 15:46:18,188 [mHTTP GET /search/?q=anine 200 [0.04, 127.0.0.1:59259][0m
+2024-09-19 15:46:18,421 [mHTTP GET /search/?q=aninet 200 [0.04, 127.0.0.1:59259][0m
+2024-09-19 15:46:19,942 [mHTTP GET /search/?q=anine 200 [0.05, 127.0.0.1:59259][0m
+2024-09-19 15:46:20,191 [mHTTP GET /search/?q=anin 200 [0.05, 127.0.0.1:59259][0m
+2024-09-19 15:46:23,748 [32mHTTP POST /add_watchlist 302 [0.09, 127.0.0.1:59259][0m
+2024-09-19 15:46:23,793 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:59259][0m
+2024-09-19 15:46:28,623 [mHTTP GET /admin/ 200 [0.17, 127.0.0.1:59274][0m
+2024-09-19 15:46:33,416 [mHTTP GET /admin/app/transaction/ 200 [0.34, 127.0.0.1:59274][0m
+2024-09-19 15:46:33,475 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-19 15:46:33,475 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-19 15:46:33,477 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:59283][0m
+2024-09-19 15:46:33,478 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:59280][0m
+2024-09-19 15:46:33,483 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:59274][0m
+2024-09-19 15:46:34,658 [mHTTP GET /admin/ 200 [0.06, 127.0.0.1:59274][0m
+2024-09-19 15:46:37,584 [mHTTP GET /admin/app/watchlist/ 200 [0.13, 127.0.0.1:59286][0m
+2024-09-19 15:46:37,636 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-19 15:46:37,636 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:59289][0m
+2024-09-19 15:46:37,636 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-19 15:46:37,642 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.03, 127.0.0.1:59290][0m
+2024-09-19 15:46:37,648 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:59286][0m
+2024-09-19 15:57:33,870 D:\stox\app\models.py changed, reloading.
+2024-09-19 15:58:03,814 D:\stox\app\views.py changed, reloading.

@@ -84,6 +84,10 @@ class CustomUser(AbstractUser):
         default_watchlists = Watchlist.objects.filter(is_default=True)
         for watchlist in default_watchlists:
             try:
+                tags.objects.create(user=self,tag=watchlist.tag.tag)
+            except:
+                pass
+            try:
                 Watchlist.objects.create(
                     user=self,
                     symbol=watchlist.symbol,
