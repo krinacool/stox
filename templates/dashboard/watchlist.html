@@ -86,7 +86,7 @@
         data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
         data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300 dark:hover:text-gray-300"
         role="tablist">
-        {% for x in all_tags %}
+        {% for x in all_tags reversed %}
         {% if x == "@INDEX" %}
         {% else %}
         <li class="me-2" role="presentation">
