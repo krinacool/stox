@@ -83,12 +83,9 @@ class CustomUser(AbstractUser):
         # Create default watchlist entries for the new user
         default_watchlists = Watchlist.objects.filter(is_default=True)
         for watchlist in default_watchlists:
-            try:
-                ob = tags.objects.get(user=self,tag=watchlist.tag.tag)
-                if not ob:
-                    ob = tags.objects.create(user=self,tag=watchlist.tag.tag)
-            except:
-                pass
+            ob = tags.objects.get(user=self,tag=watchlist.tag.tag)
+            if not ob:
+                tags.objects.create(user=self,tag=watchlist.tag.tag)
             try:
                 Watchlist.objects.create(
                     user=self,
