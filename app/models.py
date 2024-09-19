@@ -85,7 +85,7 @@ class CustomUser(AbstractUser):
         for watchlist in default_watchlists:
             try:
                 ob = tags.objects.get(user=self,tag=watchlist.tag.tag)
-                if ob:
+                if not ob:
                     ob = tags.objects.create(user=self,tag=watchlist.tag.tag)
             except:
                 pass
