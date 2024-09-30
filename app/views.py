@@ -624,7 +624,7 @@ def addFunds(request):
             </body>
             """
             remark = Remarks.objects.filter(remark = 'PAYU PAYMENT GATEWAY').first()
-            Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum='PAYU',status='PENDING',transaction_type='DEPOSIT',remark=remark)
+            Transaction.objects.create(user=request.user,amount=amount,transaction_id=txnid,checksum='PAYU',status='PENDING',transaction_type='DEPOSIT',remark=remark)
             return HttpResponse(html_form)
             # hash_string = f"{gateway.payu_marchent_key}|{order_id}|{amount}|{'Onstock Deposit'}|{request.user.first_name}|{request.user.email}|{request.user.username}||||||||||{gateway.payu_marchent_salt}"
             # payment_data = {

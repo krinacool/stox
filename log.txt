@@ -1327,3 +1327,52 @@ django.core.exceptions.FieldError: Unknown field(s) (upi_id, ifsc_code, bank_acc
 2024-09-30 10:12:08,412 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:53006][0m
 2024-09-30 10:12:13,799 [mHTTP GET /transactions 200 [0.02, 127.0.0.1:53006][0m
 2024-09-30 10:13:02,604 D:\stox\stock\settings.py changed, reloading.
+2024-09-30 10:16:54,258 [mHTTP GET / 200 [0.02, 127.0.0.1:53097][0m
+2024-09-30 10:16:56,250 [32mHTTP GET /login/ 302 [0.02, 127.0.0.1:53097][0m
+2024-09-30 10:16:56,290 [mHTTP GET /home 200 [0.03, 127.0.0.1:53097][0m
+2024-09-30 10:16:59,224 [mHTTP GET /home 200 [0.03, 127.0.0.1:53097][0m
+2024-09-30 10:17:01,265 [mHTTP GET /profile 200 [0.01, 127.0.0.1:53097][0m
+2024-09-30 10:17:08,362 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 627, in addFunds
+    Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum='PAYU',status='PENDING',transaction_type='DEPOSIT',remark=remark)
+UnboundLocalError: local variable 'order_id' referenced before assignment
+2024-09-30 10:17:08,481 [35;1mHTTP POST /add-funds 500 [0.15, 127.0.0.1:53104][0m
+2024-09-30 10:17:18,358 D:\stox\stock\settings.py changed, reloading.
+2024-09-30 10:17:21,433 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 627, in addFunds
+    Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum='PAYU',status='PENDING',transaction_type='DEPOSIT',remark=remark)
+UnboundLocalError: local variable 'order_id' referenced before assignment
+2024-09-30 10:17:21,433 [35;1mHTTP POST /add-funds 500 [0.11, 127.0.0.1:53118][0m
+2024-09-30 10:17:55,836 D:\stox\app\views.py changed, reloading.
+2024-09-30 10:17:58,485 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:53133][0m
+2024-09-30 10:18:07,474 D:\stox\stock\settings.py changed, reloading.
