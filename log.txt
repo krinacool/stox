@@ -1376,3 +1376,75 @@ UnboundLocalError: local variable 'order_id' referenced before assignment
 2024-09-30 10:17:55,836 D:\stox\app\views.py changed, reloading.
 2024-09-30 10:17:58,485 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:53133][0m
 2024-09-30 10:18:07,474 D:\stox\stock\settings.py changed, reloading.
+2024-09-30 10:19:32,523 [mHTTP GET / 200 [0.02, 127.0.0.1:53183][0m
+2024-09-30 10:19:33,345 [mHTTP GET /admin/ 200 [0.10, 127.0.0.1:53183][0m
+2024-09-30 10:19:41,024 [mHTTP GET /admin/settings/paymentgateway/ 200 [0.07, 127.0.0.1:53184][0m
+2024-09-30 10:19:41,067 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-30 10:19:41,067 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-30 10:19:41,068 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.02, 127.0.0.1:53186][0m
+2024-09-30 10:19:41,068 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.02, 127.0.0.1:53184][0m
+2024-09-30 10:19:41,071 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:53185][0m
+2024-09-30 10:19:42,670 [mHTTP GET /admin/settings/paymentgateway/1/change/ 200 [0.07, 127.0.0.1:53185][0m
+2024-09-30 10:19:42,709 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:53185][0m
+2024-09-30 10:19:42,714 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-09-30 10:19:42,715 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.01, 127.0.0.1:53184][0m
+2024-09-30 10:19:42,716 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-09-30 10:19:42,717 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.01, 127.0.0.1:53186][0m
+2024-09-30 10:23:04,112 [mHTTP GET / 200 [0.01, 127.0.0.1:53313][0m
+2024-09-30 10:24:22,327 [mHTTP GET / 200 [0.06, 127.0.0.1:53337][0m
+2024-09-30 10:24:24,143 [mHTTP GET /api/documentation/ 200 [0.03, 127.0.0.1:53337][0m
+2024-09-30 10:24:34,818 [mHTTP GET / 200 [0.02, 127.0.0.1:53342][0m
+2024-09-30 10:24:36,273 [mHTTP GET /api/documentation/ 200 [0.00, 127.0.0.1:53342][0m
+2024-09-30 10:24:40,201 [mHTTP GET /refundpolicy 200 [0.02, 127.0.0.1:53345][0m
+2024-09-30 10:24:40,242 Not Found: /static/landingasset/img/page-info-bg.png
+2024-09-30 10:24:40,243 [33mHTTP GET /static/landingasset/img/page-info-bg.png 404 [0.01, 127.0.0.1:53345][0m
+2024-09-30 10:24:45,277 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:24:45,279 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.01, 127.0.0.1:53345][0m
+2024-09-30 10:25:59,603 [mHTTP GET / 200 [0.04, 127.0.0.1:53393][0m
+2024-09-30 10:26:00,017 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:26:00,017 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.01, 127.0.0.1:53393][0m
+2024-09-30 10:26:03,205 [32mHTTP GET /signup 301 [0.01, 127.0.0.1:53393][0m
+2024-09-30 10:26:03,216 [32mHTTP GET /signup/ 302 [0.00, 127.0.0.1:53393][0m
+2024-09-30 10:26:03,259 [mHTTP GET /home 200 [0.03, 127.0.0.1:53393][0m
+2024-09-30 10:26:03,295 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:26:03,298 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.01, 127.0.0.1:53393][0m
+2024-09-30 10:26:04,000 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-30 10:26:04,000 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:53393][0m
+2024-09-30 10:26:04,007 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-30 10:26:04,007 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:53394][0m
+2024-09-30 10:26:06,687 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:26:06,688 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.01, 127.0.0.1:53394][0m
+2024-09-30 10:26:06,694 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:26:06,694 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.00, 127.0.0.1:53394][0m
+2024-09-30 10:26:07,116 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:26:07,116 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.00, 127.0.0.1:53394][0m
+2024-09-30 10:26:11,070 [32mHTTP GET /signup/ 302 [0.01, 127.0.0.1:53406][0m
+2024-09-30 10:26:11,100 [mHTTP GET /home 200 [0.03, 127.0.0.1:53406][0m
+2024-09-30 10:26:11,158 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:26:11,158 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.02, 127.0.0.1:53406][0m
+2024-09-30 10:26:11,672 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-30 10:26:11,672 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-30 10:26:11,673 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:53406][0m
+2024-09-30 10:26:11,674 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:53407][0m
+2024-09-30 10:26:13,424 [mHTTP GET /profile 200 [0.02, 127.0.0.1:53407][0m
+2024-09-30 10:26:14,680 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-30 10:26:14,682 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:53407][0m
+2024-09-30 10:26:14,682 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-30 10:26:14,683 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:53406][0m
+2024-09-30 10:26:16,320 [32mHTTP GET /logout 301 [0.01, 127.0.0.1:53406][0m
+2024-09-30 10:26:16,348 [32mHTTP GET /logout/ 302 [0.02, 127.0.0.1:53406][0m
+2024-09-30 10:26:16,366 [mHTTP GET /login/ 200 [0.01, 127.0.0.1:53406][0m
+2024-09-30 10:26:16,605 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-30 10:26:16,606 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:53406][0m
+2024-09-30 10:26:16,636 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-30 10:26:16,637 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:53406][0m
+2024-09-30 10:26:21,540 [mHTTP GET / 200 [0.01, 127.0.0.1:53416][0m
+2024-09-30 10:26:21,846 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:26:21,847 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.01, 127.0.0.1:53416][0m
+2024-09-30 10:26:24,798 [mHTTP GET /signup/ 200 [0.08, 127.0.0.1:53416][0m
+2024-09-30 10:26:24,833 Not Found: /static/landingasset/css/bootstrap.min.css.map
+2024-09-30 10:26:24,834 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.01, 127.0.0.1:53416][0m
+2024-09-30 10:26:25,035 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-09-30 10:26:25,036 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:53416][0m
+2024-09-30 10:26:25,039 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-09-30 10:26:25,040 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:53417][0m
