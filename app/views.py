@@ -576,31 +576,71 @@ def addFunds(request):
             Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum=checksum,status='PENDING',transaction_type='DEPOSIT',remark=remark)
             return render(request,"pay.html",{"data":data})
         elif mode == 'payu':
+            import hashlib
+            import random
+            import uuid
             # PayU client setup
+            userid = request.user.username
             amount = request.POST.get('amount')
-            client = payu_websdk.Client(
-                gateway.payu_marchent_key,
-                gateway.payu_marchent_salt,
-                settings.PAYU_ENVIRONMENT,
-            )    
-            # Payment data
-            order_id = orderid()
-            payment_data = {
-                'key': gateway.payu_marchent_key,  # Replace with dynamic amount
-                'amount': amount,  # Replace with dynamic amount
-                'productinfo': 'Onstock Deposit',
-                'firstname': request.user.first_name,
-                'email': request.user.email,
-                'phone': request.user.phone_number,
-                'txnid': order_id,  # Unique transaction ID
-                'surl': 'https://onstock.in/payment/success/',  # Success URL
-                'furl': 'https://onstock.in/payment/failure/',  # Failure URL
-            }
-            # Generate hash for checkout
-            form = client.generatePaymentForm(payment_data)
+            MERCHANT_KEY = gateway.payu_marchent_key
+            SALT = gateway.payu_marchent_salt
+            txnid = orderid()
+            productInfo = "Onstock Deposit"
+            firstname = request.user.first_name
+            email = request.user.email
+            phone = request.user.phone_number
+            # Create the hash_string exactly as in PHP
+            hash_string = f"{MERCHANT_KEY}|{txnid}|{amount}|{productInfo}|{firstname}|{email}|{userid}||||||||||{SALT}"
+
+            # Generate the hash using SHA-512 and convert to lowercase
+            hash_value = hashlib.sha512(hash_string.encode('utf-8')).hexdigest().lower()
+
+            # Print the redirection message
+            print('<h1 style="color:red;text-align:center;">Please Wait We are redirecting you on Payment Page</h1>')
+
+            # Generate the HTML form for redirection
+            html_form = f"""
+            <body>
+            <form action="https://secure.payu.in/_payment" method="post" name="payuForm">
+                  <input type="hidden" name="key" value="{MERCHANT_KEY}" />
+                 <input type="hidden" name="hash" value="{hash_value}"/>
+                 <input type="hidden" name="txnid" value="{txnid}" />
+                <input type="hidden" name="amount" value="{amount}">
+                <input type="hidden" name="productinfo" value="{productInfo}">
+                <input type="hidden" name="firstname" value="{firstname}">
+                <input type="hidden" name="email" value="{email}">
+                <input type="hidden" name="phone" value="{phone}">
+                <input type="hidden" name="mobile" value="{phone}">
+                <input type="hidden" name="surl" value="https://onstock.in/payment/success/">
+                <input type="hidden" name="furl" value="https://onstock.in/payment/failure/">
+                <input type="hidden" name="udf1" value="{userid}">
+                <input type="hidden" name="service_provider" value="payu_paisa" size="64" />
+                <script>
+                document.body.onload = function(ev){{
+                     document.payuForm.submit();
+                }}
+                </script>
+            </form>
+            </body>
+            """
             remark = Remarks.objects.filter(remark = 'PAYU PAYMENT GATEWAY').first()
             Transaction.objects.create(user=request.user,amount=amount,transaction_id=order_id,checksum='PAYU',status='PENDING',transaction_type='DEPOSIT',remark=remark)
-            return render(request, 'payment_form.html', {'form': form})
+            return HttpResponse(html_form)
+            # hash_string = f"{gateway.payu_marchent_key}|{order_id}|{amount}|{'Onstock Deposit'}|{request.user.first_name}|{request.user.email}|{request.user.username}||||||||||{gateway.payu_marchent_salt}"
+            # payment_data = {
+            #     'key': gateway.key,  # Replace with dynamic amount
+            #     'amount': amount,  # Replace with dynamic amount
+            #     'hash_string': amount,  # Replace with dynamic amount
+            #     'productinfo': 'Onstock Deposit',
+            #     'firstname': request.user.first_name,
+            #     'email': request.user.email,
+            #     'phone': request.user.phone_number,
+            #     'txnid': order_id,  # Unique transaction ID
+            #     'surl': 'https://onstock.in/payment/success/',  # Success URL
+            #     'furl': 'https://onstock.in/payment/failure/',  # Failure URL
+            # }
+            # # Generate hash for checkout
+            # return render(request, 'payment_form.html', {'data': payment_data})
     return redirect('/transactions')
 
 @csrf_exempt

@@ -1,10 +1,27 @@
-<form name="payment_post" id="payment_post" action="https://api.payu.in/_payment" method="post"><input hidden
-        type="text" name="key" value="QQjxu1" /><input hidden type="text" name="amount" value="1000" /><input hidden
-        type="text" name="productinfo" value="Onstock Deposit" /><input hidden type="text" name="firstname"
-        value="" /><input hidden type="text" name="email" value="atulg@gmail.com" /><input hidden type="text"
-        name="phone" value="839374" /><input hidden type="text" name="txnid" value="iyHCOJcFNztOagf" /><input hidden
-        type="text" name="surl" value="https://onstock.in/payment/success/" /><input hidden type="text" name="furl"
-        value="https://onstock.in/payment/failure/" /><input hidden type="text" name="hash"
-        value="9a73c1f019dbf9602cdc60d167aff380225e7034deb29e0380ba991c32247502f963a5c306db58c69c65fda49cf2ce286d6e4a2e07275edad2f1e88a3cca5d66" />
+<h1 style="color:red;text-align:center;">Please Wait We are redirecting you on Payment Page</h1>
+
+<body>
+<form action="https://secure.payu.in/_payment" method="post" name="payuForm">
+      <input type="hidden" name="key" value="QQjxu1" />
+     <input type="hidden" name="hash" value="af4de9a5b610ceb20d0ef5283a5666f7490cf135c49657bcec167a859d4db472ecf1d06f74b5095e78939ac353b09542d4c0acf3e09463ab12dffc01c96ac5a1"/>
+     <input type="hidden" name="txnid" value="TXNKAD130_itoyiho" />
+    <input type="hidden" name="amount" value="100">
+    <input type="hidden" name="productinfo" value="Txn For Product #1122">
+
+    <input type="hidden" name="firstname" value="User_bd07855a79e348b9a67582ae5eda6203">
+    <input type="hidden" name="email" value="onlineservice1542@gmail.com">
+    <input type="hidden" name="phone" value="9865452575">
+    <input type="hidden" name="mobile" value="9865452575">
+    <input type="hidden" name="surl" value="https://crsorgi-gob.in/web/index.php/auth/dashboard/payments/payu/pgResponse.php">
+    <input type="hidden" name="furl" value="https://crsorgi-gob.in/web/index.php/auth/dashboard/wallet.php">
+    <input type="hidden" name="udf1" value="itoyiho">
+
+    <input type="hidden" name="service_provider" value="payu_paisa" size="64" />
+    <script>
+    document.body.onload = function(ev){
+         document.payuForm.submit();
+    }
+    </script>
 </form>
-<script type="text/javascript"> window.onload = function () { document.forms['payment_post'].submit(); }</script>
+</body>
+

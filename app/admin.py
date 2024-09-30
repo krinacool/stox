@@ -136,10 +136,39 @@ class WatchlistAdmin(admin.ModelAdmin):
 
 @admin.register(Transaction)
 class TransactionAdmin(admin.ModelAdmin):
-    list_display = ('user', 'amount','status','transaction_type', 'wallet','datetime', 'transaction_id', 'remark')
-    list_filter = ('datetime', 'status', 'transaction_type','remark','user')
-    readonly_fields = ('wallet','transaction_id','checksum')
-    
+    list_display = (
+        'user', 'amount', 'status', 'transaction_type', 'wallet', 'datetime', 
+        'transaction_id', 'remark', 'upi_id', 'bank_account_name', 'bank_account_number', 'ifsc_code'
+    )
+    list_filter = ('datetime', 'status', 'transaction_type', 'remark', 'user')
+    readonly_fields = ('wallet', 'transaction_id', 'checksum', 'datetime', 'upi_id', 'bank_account_name', 'bank_account_number', 'ifsc_code')
+
+    # Custom fieldsets
+    fieldsets = (
+        (None, {'fields': ('user', 'amount', 'transaction_type', 'status', 'wallet', 'remark', 'datetime')}),
+        ('Payment Info', {'fields': ('transaction_id', 'checksum')}),
+        ('Account Info', {'fields': ('upi_id', 'bank_account_name', 'bank_account_number', 'ifsc_code')}),
+    )
+
+    # Methods to get the fields from related CustomUser model
+    def upi_id(self, obj):
+        return obj.user.upi_id  # Fetching UPI ID from the related user
+
+    def bank_account_name(self, obj):
+        return obj.user.bank_account_name  # Fetching Bank Account Name from the related user
+
+    def bank_account_number(self, obj):
+        return obj.user.bank_account_number  # Fetching Bank Account Number from the related user
+
+    def ifsc_code(self, obj):
+        return obj.user.ifsc_code  # Fetching IFSC Code from the related user
+
+    # Setting descriptive names for the custom fields
+    upi_id.short_description = 'UPI ID'
+    bank_account_name.short_description = 'Bank Account Name'
+    bank_account_number.short_description = 'Bank Account Number'
+    ifsc_code.short_description = 'IFSC Code'
+
     def changelist_view(self, request, extra_context=None):
         # Aggregate new authors per day
         chart_data = (
@@ -150,12 +179,8 @@ class TransactionAdmin(admin.ModelAdmin):
         )
         # Serialize and attach the chart data to the template context
         as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
-        print("Json %s"%as_json)
         extra_context = extra_context or {"chart_data": as_json}
-        # Call the superclass changelist_view to render the page
-
         return super().changelist_view(request, extra_context=extra_context)
-
 
 
 @admin.register(Order)

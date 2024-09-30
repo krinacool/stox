@@ -1,0 +1,1329 @@
+2024-09-28 12:43:47,054 D:\stox\stock\settings.py changed, reloading.
+2024-09-28 12:43:57,484 [mHTTP GET / 200 [0.05, 127.0.0.1:58060][0m
+2024-09-28 12:43:57,878 [mHTTP GET /static/landingasset/img/process-line.png 200 [0.15, 127.0.0.1:58062][0m
+2024-09-28 12:43:57,881 [mHTTP GET /static/landingasset/img/hero-bg.png 200 [0.15, 127.0.0.1:58060][0m
+2024-09-28 12:43:57,909 [mHTTP GET /static/landingasset/fonts/Futura.woff 200 [0.13, 127.0.0.1:58063][0m
+2024-09-28 12:43:57,911 [mHTTP GET /static/landingasset/icon-fonts/fontawesome-webfont.woff2?v=4.7.0 200 [0.13, 127.0.0.1:58065][0m
+2024-09-28 12:43:57,914 [mHTTP GET /static/landingasset/icon-fonts/themify.woff?-fvbane 200 [0.14, 127.0.0.1:58064][0m
+2024-09-28 12:43:57,991 [36mHTTP GET /static/images/brand/logo/brand.png 304 [0.00, 127.0.0.1:58064][0m
+2024-09-28 12:43:59,820 [mHTTP GET /login/ 200 [0.03, 127.0.0.1:58066][0m
+2024-09-28 12:43:59,851 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.00, 127.0.0.1:58066][0m
+2024-09-28 12:44:07,703 [32mHTTP POST /login/ 302 [1.94, 127.0.0.1:58070][0m
+2024-09-28 12:44:07,809 [mHTTP GET /home?greeting=True 200 [0.10, 127.0.0.1:58070][0m
+2024-09-28 12:44:10,428 [mHTTP GET /home 200 [0.03, 127.0.0.1:58084][0m
+2024-09-28 12:47:45,776 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.13, 127.0.0.1:58249][0m
+2024-09-28 12:47:45,777 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.13, 127.0.0.1:58250][0m
+2024-09-28 12:47:47,830 [mHTTP GET /profile 200 [0.06, 127.0.0.1:58249][0m
+2024-09-28 12:47:48,562 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:58249][0m
+2024-09-28 12:47:48,563 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:58250][0m
+2024-09-28 12:47:52,043 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:58249][0m
+2024-09-28 12:47:52,118 Not Found: /favicon.ico
+2024-09-28 12:47:52,119 [33mHTTP GET /favicon.ico 404 [0.01, 127.0.0.1:58249][0m
+2024-09-28 12:47:58,999 [mHTTP GET / 200 [0.01, 127.0.0.1:58249][0m
+2024-09-28 12:48:00,303 [32mHTTP GET /admin 301 [0.02, 127.0.0.1:58249][0m
+2024-09-28 12:48:00,523 [mHTTP GET /admin/ 200 [0.22, 127.0.0.1:58249][0m
+2024-09-28 12:48:00,561 [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:58250][0m
+2024-09-28 12:48:00,561 [36mHTTP GET /static/admin/js/theme.js 304 [0.00, 127.0.0.1:58269][0m
+2024-09-28 12:48:00,562 [36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:58249][0m
+2024-09-28 12:48:00,577 [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.00, 127.0.0.1:58249][0m
+2024-09-28 12:48:00,577 [36mHTTP GET /static/admin/css/responsive.css 304 [0.00, 127.0.0.1:58269][0m
+2024-09-28 12:48:00,585 [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.00, 127.0.0.1:58269][0m
+2024-09-28 12:48:00,616 [36mHTTP GET /static/admin/img/icon-addlink.svg 304 [0.00, 127.0.0.1:58269][0m
+2024-09-28 12:48:10,863 Internal Server Error: /admin/settings/paymentgateway/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 1035, in find_library
+    return parser.libraries[name]
+KeyError: 'jazzmin'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 1097, in load
+    lib = find_library(parser, name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 1037, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'jazzmin' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+custom_filters
+i18n
+l10n
+log
+mathfilters
+rest_framework
+static
+tz
+2024-09-28 12:48:10,888 [35;1mHTTP GET /admin/settings/paymentgateway/ 500 [0.30, 127.0.0.1:58269][0m
+2024-09-28 12:48:30,773 D:\stox\stock\settings.py changed, reloading.
+2024-09-28 12:48:34,926 [mHTTP GET /admin/settings/paymentgateway/ 200 [0.21, 127.0.0.1:58296][0m
+2024-09-28 12:48:34,964 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:58301][0m
+2024-09-28 12:48:34,970 [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.00, 127.0.0.1:58301][0m
+2024-09-28 12:48:34,977 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:58301][0m
+2024-09-28 12:48:34,984 [36mHTTP GET /static/admin/js/core.js 304 [0.00, 127.0.0.1:58301][0m
+2024-09-28 12:48:34,992 [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:58297][0m
+2024-09-28 12:48:34,992 [36mHTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:58301][0m
+2024-09-28 12:48:35,002 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:58301][0m
+2024-09-28 12:48:35,004 [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:58297][0m
+2024-09-28 12:48:35,014 [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:58301][0m
+2024-09-28 12:48:35,021 [mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:58302][0m
+2024-09-28 12:48:35,036 [mHTTP GET /static/jazzmin/css/main.css 200 [0.08, 127.0.0.1:58300][0m
+2024-09-28 12:48:35,041 [mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 200 [0.09, 127.0.0.1:58296][0m
+2024-09-28 12:48:35,043 [mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 200 [0.09, 127.0.0.1:58295][0m
+2024-09-28 12:48:35,114 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:58296][0m
+2024-09-28 12:48:35,114 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:58300][0m
+2024-09-28 12:48:35,117 [mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 200 [0.10, 127.0.0.1:58301][0m
+2024-09-28 12:48:35,128 [mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 200 [0.11, 127.0.0.1:58297][0m
+2024-09-28 12:48:35,136 [mHTTP GET /static/jazzmin/js/main.js 200 [0.03, 127.0.0.1:58295][0m
+2024-09-28 12:48:35,214 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:58295][0m
+2024-09-28 12:48:35,215 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:58297][0m
+2024-09-28 12:48:41,663 Internal Server Error: /admin/settings/paymentgateway/1/change/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: "line.fields|length_is:'1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 701, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 611, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+2024-09-28 12:48:41,673 [35;1mHTTP GET /admin/settings/paymentgateway/1/change/ 500 [0.52, 127.0.0.1:58297][0m
+2024-09-28 12:50:52,612 Internal Server Error: /admin/settings/paymentgateway/1/change/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: "line.fields|length_is:'1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 701, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 611, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+2024-09-28 12:50:52,620 [35;1mHTTP GET /admin/settings/paymentgateway/1/change/ 500 [0.36, 127.0.0.1:58440][0m
+2024-09-28 12:51:09,196 D:\stox\stock\settings.py changed, reloading.
+2024-09-28 12:51:21,301 [mHTTP GET /admin/settings/paymentgateway/1/change/ 200 [0.25, 127.0.0.1:58463][0m
+2024-09-28 12:51:21,348 [36mHTTP GET /static/admin/css/base.css 304 [0.01, 127.0.0.1:58463][0m
+2024-09-28 12:51:21,352 [36mHTTP GET /static/admin/css/dark_mode.css 304 [0.01, 127.0.0.1:58464][0m
+2024-09-28 12:51:21,353 [36mHTTP GET /static/admin/css/forms.css 304 [0.01, 127.0.0.1:58467][0m
+2024-09-28 12:51:21,353 [36mHTTP GET /static/admin/js/theme.js 304 [0.01, 127.0.0.1:58468][0m
+2024-09-28 12:51:21,355 [36mHTTP GET /static/admin/css/nav_sidebar.css 304 [0.01, 127.0.0.1:58466][0m
+2024-09-28 12:51:21,365 [36mHTTP GET /static/admin/css/responsive.css 304 [0.01, 127.0.0.1:58463][0m
+2024-09-28 12:51:21,367 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:58467][0m
+2024-09-28 12:51:21,367 [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.01, 127.0.0.1:58464][0m
+2024-09-28 12:51:21,368 [36mHTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:58468][0m
+2024-09-28 12:51:21,368 [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:58466][0m
+2024-09-28 12:51:21,382 [36mHTTP GET /static/admin/css/widgets.css 304 [0.01, 127.0.0.1:58463][0m
+2024-09-28 12:51:21,383 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:58464][0m
+2024-09-28 12:51:21,384 [36mHTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:58467][0m
+2024-09-28 12:51:21,385 [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:58468][0m
+2024-09-28 12:51:21,387 [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:58466][0m
+2024-09-28 12:51:21,393 [36mHTTP GET /static/admin/js/prepopulate_init.js 304 [0.00, 127.0.0.1:58463][0m
+2024-09-28 12:51:21,395 [mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:58469][0m
+2024-09-28 12:51:21,402 [36mHTTP GET /static/admin/js/nav_sidebar.js 304 [0.01, 127.0.0.1:58469][0m
+2024-09-28 12:51:21,404 [36mHTTP GET /static/admin/js/change_form.js 304 [0.00, 127.0.0.1:58463][0m
+2024-09-28 13:00:00,770 C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\typing_extensions.py changed, reloading.
+2024-09-28 13:54:59,533 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.07, 127.0.0.1:61397][0m
+2024-09-28 13:54:59,543 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.08, 127.0.0.1:61396][0m
+2024-09-28 13:55:00,454 [mHTTP GET /admin/settings/paymentgateway/1/change/ 200 [0.31, 127.0.0.1:61396][0m
+2024-09-28 13:55:00,502 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.01, 127.0.0.1:61396][0m
+2024-09-28 13:55:00,507 [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:61400][0m
+2024-09-28 13:55:00,508 [36mHTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:61401][0m
+2024-09-28 13:55:00,511 [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.01, 127.0.0.1:61402][0m
+2024-09-28 13:55:00,512 [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:61403][0m
+2024-09-28 13:55:00,518 [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:61396][0m
+2024-09-28 13:55:00,524 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:61401][0m
+2024-09-28 13:55:00,525 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:61400][0m
+2024-09-28 13:55:00,529 [36mHTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:61402][0m
+2024-09-28 13:55:00,530 [36mHTTP GET /static/admin/js/change_form.js 304 [0.01, 127.0.0.1:61403][0m
+2024-09-28 13:55:00,539 [36mHTTP GET /static/admin/js/prepopulate_init.js 304 [0.00, 127.0.0.1:61403][0m
+2024-09-28 13:55:00,554 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:61403][0m
+2024-09-28 13:55:00,557 [mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:61397][0m
+2024-09-28 13:55:00,621 [mHTTP GET /static/jazzmin/js/change_form.js 200 [0.07, 127.0.0.1:61402][0m
+2024-09-28 13:55:00,650 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.00, 127.0.0.1:61404][0m
+2024-09-28 13:55:00,651 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:61402][0m
+2024-09-28 13:55:45,421 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 586, in addFunds
+    gateway.payu_merchant_key,  # Corrected spelling
+AttributeError: 'PaymentGateway' object has no attribute 'payu_merchant_key'
+2024-09-28 13:55:45,429 [35;1mHTTP POST /add-funds 500 [0.13, 127.0.0.1:61428][0m
+2024-09-28 13:56:40,970 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 586, in addFunds
+    gateway.payu_merchant_key,  # Corrected spelling
+AttributeError: 'PaymentGateway' object has no attribute 'payu_merchant_key'
+2024-09-28 13:56:40,979 [35;1mHTTP POST /add-funds 500 [0.07, 127.0.0.1:61459][0m
+2024-09-28 13:57:20,456 D:\stox\app\views.py changed, reloading.
+2024-09-28 13:57:30,800 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 594, in addFunds
+    'key': gateway.payu_merchant_key,  # Use the correct merchant key
+AttributeError: 'PaymentGateway' object has no attribute 'payu_merchant_key'
+2024-09-28 13:57:30,809 [35;1mHTTP POST /add-funds 500 [0.12, 127.0.0.1:61494][0m
+2024-09-28 13:57:50,047 D:\stox\app\views.py changed, reloading.
+2024-09-28 13:57:53,883 [mHTTP POST /add-funds 200 [0.07, 127.0.0.1:61520][0m
+2024-09-28 13:57:59,320 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61520][0m
+2024-09-28 13:57:59,324 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:61521][0m
+2024-09-28 13:57:59,343 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:61521][0m
+2024-09-28 13:57:59,344 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61520][0m
+2024-09-28 13:57:59,363 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61521][0m
+2024-09-28 13:57:59,365 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61520][0m
+2024-09-28 13:58:01,012 [mHTTP GET /profile 200 [0.05, 127.0.0.1:61520][0m
+2024-09-28 13:58:01,688 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61520][0m
+2024-09-28 13:58:01,690 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61521][0m
+2024-09-28 13:58:04,335 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:61521][0m
+2024-09-28 14:00:32,782 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:00:44,328 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:61655][0m
+2024-09-28 14:00:44,330 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:61656][0m
+2024-09-28 14:00:44,351 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61655][0m
+2024-09-28 14:00:44,353 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61656][0m
+2024-09-28 14:00:44,370 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:61655][0m
+2024-09-28 14:00:44,373 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61656][0m
+2024-09-28 14:00:45,796 [mHTTP GET /profile 200 [0.05, 127.0.0.1:61656][0m
+2024-09-28 14:00:46,490 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:61655][0m
+2024-09-28 14:00:46,492 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:61656][0m
+2024-09-28 14:00:48,744 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:61656][0m
+2024-09-28 14:04:45,146 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:07:09,140 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:07:57,982 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:08:06,324 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:62071][0m
+2024-09-28 14:08:06,326 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:62070][0m
+2024-09-28 14:08:06,343 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:62070][0m
+2024-09-28 14:08:06,343 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62071][0m
+2024-09-28 14:08:06,501 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62070][0m
+2024-09-28 14:08:06,503 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62071][0m
+2024-09-28 14:08:07,887 [mHTTP GET /profile 200 [0.06, 127.0.0.1:62070][0m
+2024-09-28 14:08:09,149 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62071][0m
+2024-09-28 14:08:09,152 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62070][0m
+2024-09-28 14:08:09,165 [mHTTP GET /profile 200 [0.03, 127.0.0.1:62074][0m
+2024-09-28 14:08:09,627 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62070][0m
+2024-09-28 14:08:09,629 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62074][0m
+2024-09-28 14:08:12,133 [mHTTP POST /add-funds 200 [0.07, 127.0.0.1:62074][0m
+2024-09-28 14:09:00,183 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:09:03,818 [mHTTP GET /profile 200 [0.07, 127.0.0.1:62120][0m
+2024-09-28 14:09:03,850 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:62120][0m
+2024-09-28 14:09:03,901 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62123][0m
+2024-09-28 14:09:03,912 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:62120][0m
+2024-09-28 14:09:03,927 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62123][0m
+2024-09-28 14:09:03,935 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:62120][0m
+2024-09-28 14:09:03,947 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:62120][0m
+2024-09-28 14:09:05,041 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:62120][0m
+2024-09-28 14:09:05,042 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:62123][0m
+2024-09-28 14:09:06,511 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 584, in addFunds
+    client = payu_websdk.Client(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\payu_websdk\payuClient.py", line 21, in __init__
+    raise ValueError("Invalid input. Pleas enter the correct environment, possible values can be 'TEST' or 'LIVE'")
+ValueError: Invalid input. Pleas enter the correct environment, possible values can be 'TEST' or 'LIVE'
+2024-09-28 14:09:06,517 [35;1mHTTP POST /add-funds 500 [0.05, 127.0.0.1:62120][0m
+2024-09-28 14:09:14,968 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:09:22,400 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:62153][0m
+2024-09-28 14:09:22,401 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:62152][0m
+2024-09-28 14:09:22,417 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:62153][0m
+2024-09-28 14:09:22,418 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:62152][0m
+2024-09-28 14:09:22,438 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62153][0m
+2024-09-28 14:09:22,439 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62152][0m
+2024-09-28 14:09:23,927 [mHTTP GET /profile 200 [0.04, 127.0.0.1:62154][0m
+2024-09-28 14:09:24,598 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:62155][0m
+2024-09-28 14:09:24,599 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:62154][0m
+2024-09-28 14:09:27,887 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:62154][0m
+2024-09-28 14:19:36,918 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:21:02,619 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:21:09,341 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:62781][0m
+2024-09-28 14:21:09,342 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:62782][0m
+2024-09-28 14:21:12,536 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 638, in addFunds
+    transaction_id=order_id,
+UnboundLocalError: local variable 'order_id' referenced before assignment
+2024-09-28 14:21:12,545 [35;1mHTTP POST /add-funds 500 [0.58, 127.0.0.1:62782][0m
+2024-09-28 14:21:39,544 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:21:43,188 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 646, in addFunds
+    return render(request, 'payment_form.html', {'form': form})
+NameError: name 'form' is not defined
+2024-09-28 14:21:43,193 [35;1mHTTP POST /add-funds 500 [0.26, 127.0.0.1:62816][0m
+2024-09-28 14:24:37,076 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:24:40,812 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Program Files\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 631, in addFunds
+    print(response.json())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-09-28 14:24:40,821 [35;1mHTTP POST /add-funds 500 [0.35, 127.0.0.1:62924][0m
+2024-09-28 14:24:54,736 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:24:58,239 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 646, in addFunds
+    return render(request, 'payment_form.html', {'form': form})
+NameError: name 'form' is not defined
+2024-09-28 14:24:58,244 [35;1mHTTP POST /add-funds 500 [0.28, 127.0.0.1:62946][0m
+2024-09-28 14:27:29,213 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:27:35,027 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 631, in addFunds
+    print(response.body)
+AttributeError: 'Response' object has no attribute 'body'
+2024-09-28 14:27:35,033 [35;1mHTTP POST /add-funds 500 [0.39, 127.0.0.1:63048][0m
+2024-09-28 14:27:43,469 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:28:23,732 [32mHTTP GET /add-funds 302 [0.06, 127.0.0.1:63095][0m
+2024-09-28 14:28:23,938 [mHTTP GET /transactions 200 [0.20, 127.0.0.1:63095][0m
+2024-09-28 14:28:24,807 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:63098][0m
+2024-09-28 14:28:24,860 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63098][0m
+2024-09-28 14:28:28,330 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 646, in addFunds
+    return render(request, 'payment_form.html', {'form': form})
+NameError: name 'form' is not defined
+2024-09-28 14:28:28,341 [35;1mHTTP POST /add-funds 500 [0.31, 127.0.0.1:63098][0m
+2024-09-28 14:28:54,138 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:28:57,820 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 646, in addFunds
+    return render(request, 'payment_form.html', {'form': form})
+NameError: name 'form' is not defined
+2024-09-28 14:28:57,825 [35;1mHTTP POST /add-funds 500 [0.30, 127.0.0.1:63130][0m
+2024-09-28 14:31:57,812 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:32:01,486 [mHTTP POST /add-funds 200 [0.47, 127.0.0.1:63244][0m
+2024-09-28 14:32:01,553 Not Found: /js/libs/jquery-custom.min.js
+2024-09-28 14:32:01,554 [33mHTTP GET /js/libs/jquery-custom.min.js 404 [0.02, 127.0.0.1:63244][0m
+2024-09-28 14:34:21,644 D:\stox\app\views.py changed, reloading.
+2024-09-28 14:34:26,166 [mHTTP POST /add-funds 200 [0.30, 127.0.0.1:63332][0m
+2024-09-28 14:34:26,226 Not Found: /js/libs/jquery-custom.min.js
+2024-09-28 14:34:26,227 [33mHTTP GET /js/libs/jquery-custom.min.js 404 [0.02, 127.0.0.1:63332][0m
+2024-09-28 14:34:28,838 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63333][0m
+2024-09-28 14:34:28,841 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63332][0m
+2024-09-28 14:34:28,863 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63332][0m
+2024-09-28 14:34:28,864 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63333][0m
+2024-09-28 14:34:28,887 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63332][0m
+2024-09-28 14:34:28,890 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63333][0m
+2024-09-28 14:34:31,355 [mHTTP POST /add-funds 200 [0.24, 127.0.0.1:63333][0m
+2024-09-28 14:34:31,422 Not Found: /js/libs/jquery-custom.min.js
+2024-09-28 14:34:31,423 [33mHTTP GET /js/libs/jquery-custom.min.js 404 [0.02, 127.0.0.1:63333][0m
+2024-09-28 14:38:14,383 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 14:38:44,196 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 14:40:53,940 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 14:40:59,949 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 14:43:29,302 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 14:45:02,982 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 14:56:11,538 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 14:58:31,976 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 14:58:46,557 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:02:52,405 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:04:26,863 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:06:07,354 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:11:32,700 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:15:37,173 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:20:34,523 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:20:55,323 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:27:58,022 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:28:06,447 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:30:19,214 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:35:51,803 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:36:10,077 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:38:15,377 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:39:39,677 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 600, in addFunds
+    payment_data['hash'] = RechPayChecksum.generateSignature(payment_data,key)
+UnboundLocalError: local variable 'key' referenced before assignment
+2024-09-28 15:39:39,687 [35;1mHTTP POST /add-funds 500 [0.15, 127.0.0.1:64341][0m
+2024-09-28 15:40:08,961 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:40:12,187 [mHTTP GET /transactions 200 [0.07, 127.0.0.1:64362][0m
+2024-09-28 15:40:15,723 Internal Server Error: /add-funds
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 600, in addFunds
+    payment_data['hash'] = RechPayChecksum.generateSignature(payment_data,gateway.payu_marchent_key)
+  File "D:\stox\app\checksm.py", line 70, in generateSignature
+    return RechPayChecksum.generateSignatureByString(params, key)
+  File "D:\stox\app\checksm.py", line 88, in generateSignatureByString
+    return RechPayChecksum.calculate_checksum(params, key, salt)
+  File "D:\stox\app\checksm.py", line 18, in calculate_checksum
+    return RechPayChecksum.encrypt(hash_string, key)
+  File "D:\stox\app\checksm.py", line 26, in encrypt
+    cipher = Cipher(algorithms.AES(key), modes.CBC(RechPayChecksum.iv), backend=default_backend())
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\cryptography\hazmat\primitives\ciphers\algorithms.py", line 35, in __init__
+    self.key = _verify_key_size(self, key)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\cryptography\hazmat\primitives\ciphers\algorithms.py", line 20, in _verify_key_size
+    raise ValueError(
+ValueError: Invalid key size (48) for AES.
+2024-09-28 15:40:15,731 [35;1mHTTP POST /add-funds 500 [0.05, 127.0.0.1:64365][0m
+2024-09-28 15:41:49,858 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:41:54,539 [mHTTP POST /add-funds 200 [0.42, 127.0.0.1:64384][0m
+2024-09-28 15:42:18,203 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:42:45,555 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:43:04,968 [mHTTP GET /transactions 200 [0.14, 127.0.0.1:64416][0m
+2024-09-28 15:43:10,002 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:64416][0m
+2024-09-28 15:45:57,200 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:46:00,781 [mHTTP GET /transactions 200 [0.07, 127.0.0.1:64460][0m
+2024-09-28 15:46:03,599 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:64461][0m
+2024-09-28 15:58:58,336 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-28 15:59:38,243 D:\stox\app\views.py changed, reloading.
+2024-09-28 15:59:45,517 [mHTTP GET /transactions 200 [0.07, 127.0.0.1:64631][0m
+2024-09-28 15:59:49,812 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:64631][0m
+2024-09-29 19:35:13,937 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-29 19:36:01,697 [mHTTP GET / 200 [0.25, 127.0.0.1:49413][0m
+2024-09-29 19:38:11,604 D:\stox\templates\dashboard\test.py changed, reloading.
+2024-09-29 19:45:07,207 D:\stox\app\views.py changed, reloading.
+2024-09-29 19:45:28,193 D:\stox\app\views.py changed, reloading.
+2024-09-29 19:47:59,005 D:\stox\app\views.py changed, reloading.
+2024-09-29 19:51:10,585 D:\stox\app\views.py changed, reloading.
+2024-09-29 19:51:55,354 [mHTTP GET / 200 [0.02, 127.0.0.1:49689][0m
+2024-09-29 19:51:57,911 [mHTTP GET /login/ 200 [0.09, 127.0.0.1:49689][0m
+2024-09-29 19:51:58,086 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.13, 127.0.0.1:49689][0m
+2024-09-29 19:52:06,350 [32mHTTP POST /login/ 302 [3.12, 127.0.0.1:49689][0m
+2024-09-29 19:52:06,589 [mHTTP GET /home?greeting=True 200 [0.22, 127.0.0.1:49689][0m
+2024-09-29 19:52:06,637 [36mHTTP GET /static/css/tailwind.css 304 [0.00, 127.0.0.1:49689][0m
+2024-09-29 19:52:09,102 [mHTTP GET /home 200 [0.05, 127.0.0.1:49701][0m
+2024-09-29 19:52:12,328 [mHTTP GET /profile 200 [0.06, 127.0.0.1:49701][0m
+2024-09-29 19:52:22,917 [mHTTP GET /profile 200 [0.02, 127.0.0.1:49705][0m
+2024-09-29 19:52:27,956 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:49705][0m
+2024-09-29 19:53:03,463 D:\stox\app\views.py changed, reloading.
+2024-09-29 19:53:06,839 [mHTTP GET /profile 200 [0.05, 127.0.0.1:49727][0m
+2024-09-29 19:53:09,304 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:49729][0m
+2024-09-29 19:54:30,392 D:\stox\app\views.py changed, reloading.
+2024-09-29 19:54:37,695 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:49755][0m
+2024-09-29 19:55:31,435 D:\stox\app\views.py changed, reloading.
+2024-09-29 19:55:34,709 [mHTTP GET /profile 200 [0.03, 127.0.0.1:49786][0m
+2024-09-29 19:55:36,917 [mHTTP POST /add-funds 200 [0.05, 127.0.0.1:49786][0m
+2024-09-29 19:59:14,791 D:\stox\app\views.py changed, reloading.
+2024-09-29 19:59:22,418 [mHTTP GET /profile 200 [0.16, 127.0.0.1:49820][0m
+2024-09-29 19:59:25,460 [mHTTP POST /add-funds 200 [0.07, 127.0.0.1:49820][0m
+2024-09-29 20:00:32,780 [mHTTP GET /profile 200 [0.02, 127.0.0.1:49831][0m
+2024-09-29 20:00:35,432 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:49835][0m
+2024-09-29 20:00:39,606 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.07, 127.0.0.1:49836][0m
+2024-09-29 20:00:39,611 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.08, 127.0.0.1:49835][0m
+2024-09-29 20:10:37,980 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:10:46,091 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:50221][0m
+2024-09-29 20:10:46,091 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50222][0m
+2024-09-29 20:10:48,449 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:50222][0m
+2024-09-29 20:10:49,817 [33mHTTP OPTIONS /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50230][0m
+2024-09-29 20:10:49,823 [33mHTTP OPTIONS /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50231][0m
+2024-09-29 20:10:49,840 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50229][0m
+2024-09-29 20:10:49,848 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50228][0m
+2024-09-29 20:10:59,697 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:15:14,343 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:15:20,286 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:50387][0m
+2024-09-29 20:15:20,288 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:50388][0m
+2024-09-29 20:15:20,306 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50387][0m
+2024-09-29 20:15:20,309 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50388][0m
+2024-09-29 20:15:20,329 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50388][0m
+2024-09-29 20:15:20,329 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50387][0m
+2024-09-29 20:15:21,750 [mHTTP GET /profile 200 [0.06, 127.0.0.1:50388][0m
+2024-09-29 20:15:23,103 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50387][0m
+2024-09-29 20:15:23,103 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50388][0m
+2024-09-29 20:15:25,089 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:50388][0m
+2024-09-29 20:15:25,458 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50388][0m
+2024-09-29 20:15:26,246 [33mHTTP OPTIONS /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50395][0m
+2024-09-29 20:15:26,255 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50394][0m
+2024-09-29 20:20:08,427 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:20:14,471 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:50563][0m
+2024-09-29 20:20:14,480 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:50564][0m
+2024-09-29 20:20:14,489 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50563][0m
+2024-09-29 20:20:14,498 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50564][0m
+2024-09-29 20:20:14,764 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50564][0m
+2024-09-29 20:20:14,764 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50563][0m
+2024-09-29 20:20:16,465 [mHTTP POST /add-funds 200 [0.11, 127.0.0.1:50565][0m
+2024-09-29 20:20:19,160 [33mHTTP OPTIONS /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50573][0m
+2024-09-29 20:20:19,160 [33mHTTP OPTIONS /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50572][0m
+2024-09-29 20:20:19,186 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50570][0m
+2024-09-29 20:20:19,187 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50571][0m
+2024-09-29 20:20:19,814 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50565][0m
+2024-09-29 20:20:19,828 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50566][0m
+2024-09-29 20:20:19,852 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50565][0m
+2024-09-29 20:20:19,854 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50566][0m
+2024-09-29 20:20:20,007 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50566][0m
+2024-09-29 20:20:20,009 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50565][0m
+2024-09-29 20:20:21,049 [mHTTP GET /profile 200 [0.02, 127.0.0.1:50566][0m
+2024-09-29 20:20:22,373 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50566][0m
+2024-09-29 20:20:22,373 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50565][0m
+2024-09-29 20:20:26,469 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:50579][0m
+2024-09-29 20:20:26,869 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50579][0m
+2024-09-29 20:20:26,869 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50580][0m
+2024-09-29 20:20:31,194 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50579][0m
+2024-09-29 20:20:31,194 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50580][0m
+2024-09-29 20:20:31,208 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50579][0m
+2024-09-29 20:20:31,215 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50580][0m
+2024-09-29 20:20:31,230 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50579][0m
+2024-09-29 20:20:31,233 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50580][0m
+2024-09-29 20:21:20,872 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:24:25,186 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:24:42,333 [mHTTP POST /add-funds 200 [0.12, 127.0.0.1:50763][0m
+2024-09-29 20:24:43,399 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:50763][0m
+2024-09-29 20:24:43,405 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:50764][0m
+2024-09-29 20:24:45,245 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50763][0m
+2024-09-29 20:24:45,248 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50764][0m
+2024-09-29 20:24:45,264 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50764][0m
+2024-09-29 20:24:45,264 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50763][0m
+2024-09-29 20:24:45,291 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50763][0m
+2024-09-29 20:24:45,297 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:50764][0m
+2024-09-29 20:25:49,099 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:50805][0m
+2024-09-29 20:25:49,773 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50806][0m
+2024-09-29 20:25:49,773 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50805][0m
+2024-09-29 20:26:28,566 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:26:32,202 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:50839][0m
+2024-09-29 20:26:32,206 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:50840][0m
+2024-09-29 20:26:32,222 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50839][0m
+2024-09-29 20:26:32,222 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50840][0m
+2024-09-29 20:26:32,240 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50839][0m
+2024-09-29 20:26:32,241 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50840][0m
+2024-09-29 20:26:32,570 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:50840][0m
+2024-09-29 20:26:33,432 [33mHTTP OPTIONS /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50849][0m
+2024-09-29 20:26:33,432 [33mHTTP OPTIONS /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50848][0m
+2024-09-29 20:26:33,449 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50846][0m
+2024-09-29 20:26:33,449 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50847][0m
+2024-09-29 20:26:35,603 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50839][0m
+2024-09-29 20:26:35,603 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50840][0m
+2024-09-29 20:26:35,622 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50839][0m
+2024-09-29 20:26:35,624 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50840][0m
+2024-09-29 20:26:35,810 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50840][0m
+2024-09-29 20:26:35,814 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50839][0m
+2024-09-29 20:26:36,466 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:50840][0m
+2024-09-29 20:26:37,005 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50840][0m
+2024-09-29 20:26:37,007 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50839][0m
+2024-09-29 20:26:38,192 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50839][0m
+2024-09-29 20:26:38,192 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50840][0m
+2024-09-29 20:26:38,212 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50840][0m
+2024-09-29 20:26:38,214 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50839][0m
+2024-09-29 20:26:38,386 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:50839][0m
+2024-09-29 20:26:38,386 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50840][0m
+2024-09-29 20:26:38,908 [mHTTP GET /profile 200 [0.02, 127.0.0.1:50840][0m
+2024-09-29 20:26:39,494 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:50840][0m
+2024-09-29 20:26:39,727 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:50840][0m
+2024-09-29 20:26:42,595 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:50854][0m
+2024-09-29 20:26:42,859 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:50855][0m
+2024-09-29 20:26:42,862 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:50854][0m
+2024-09-29 20:37:45,699 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:54:03,585 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:54:47,067 [mHTTP GET / 200 [0.03, 127.0.0.1:51918][0m
+2024-09-29 20:54:47,276 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.02, 127.0.0.1:51918][0m
+2024-09-29 20:54:53,028 [mHTTP GET /profile 200 [0.10, 127.0.0.1:51924][0m
+2024-09-29 20:54:53,065 [33mHTTP GET /static/landingasset/css/bootstrap.min.css.map 404 [0.01, 127.0.0.1:51924][0m
+2024-09-29 20:54:53,543 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:51924][0m
+2024-09-29 20:54:53,548 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:51925][0m
+2024-09-29 20:54:58,015 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:51925][0m
+2024-09-29 20:55:42,183 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:51954][0m
+2024-09-29 20:55:42,183 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:51953][0m
+2024-09-29 20:55:42,200 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51954][0m
+2024-09-29 20:55:42,200 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51953][0m
+2024-09-29 20:55:42,342 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:51954][0m
+2024-09-29 20:55:42,342 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:51953][0m
+2024-09-29 20:55:44,128 [mHTTP POST /add-funds 200 [0.01, 127.0.0.1:51953][0m
+2024-09-29 20:58:29,688 D:\stox\app\views.py changed, reloading.
+2024-09-29 20:58:33,324 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52063][0m
+2024-09-29 20:58:33,329 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:52062][0m
+2024-09-29 20:58:33,345 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52062][0m
+2024-09-29 20:58:33,347 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52063][0m
+2024-09-29 20:58:33,365 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52063][0m
+2024-09-29 20:58:33,367 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52062][0m
+2024-09-29 20:58:34,596 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:52062][0m
+2024-09-29 21:03:16,691 D:\stox\app\views.py changed, reloading.
+2024-09-29 21:03:25,791 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:52244][0m
+2024-09-29 21:03:25,791 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52245][0m
+2024-09-29 21:03:25,818 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52244][0m
+2024-09-29 21:03:25,818 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:52245][0m
+2024-09-29 21:03:25,842 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52244][0m
+2024-09-29 21:03:25,842 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52245][0m
+2024-09-29 21:03:27,845 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:52247][0m
+2024-09-29 21:03:30,346 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52248][0m
+2024-09-29 21:03:30,346 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:52247][0m
+2024-09-29 21:03:30,375 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52248][0m
+2024-09-29 21:03:30,375 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52247][0m
+2024-09-29 21:03:30,408 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52248][0m
+2024-09-29 21:03:30,411 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:52247][0m
+2024-09-29 21:03:30,868 [mHTTP GET /profile 200 [0.05, 127.0.0.1:52247][0m
+2024-09-29 21:03:31,575 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52248][0m
+2024-09-29 21:03:31,577 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52247][0m
+2024-09-29 21:03:34,303 [mHTTP POST /add-funds 200 [0.01, 127.0.0.1:52247][0m
+2024-09-29 21:04:18,499 D:\stox\app\views.py changed, reloading.
+2024-09-29 21:04:23,154 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:52307][0m
+2024-09-29 21:04:23,176 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52307][0m
+2024-09-29 21:04:23,209 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:52307][0m
+2024-09-29 21:04:23,209 [mHTTP GET /profile 200 [0.07, 127.0.0.1:52306][0m
+2024-09-29 21:04:24,280 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52307][0m
+2024-09-29 21:04:24,280 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:52306][0m
+2024-09-29 21:04:26,270 [mHTTP POST /add-funds 200 [0.01, 127.0.0.1:52313][0m
+2024-09-29 21:15:54,246 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:52723][0m
+2024-09-29 21:15:54,246 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:52722][0m
+2024-09-29 22:31:51,664 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:53561][0m
+2024-09-29 22:31:56,419 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:53569][0m
+2024-09-29 22:31:56,422 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:53568][0m
+2024-09-29 22:31:56,461 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:53568][0m
+2024-09-29 22:31:56,461 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:53569][0m
+2024-09-29 22:31:56,493 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:53568][0m
+2024-09-29 22:31:56,496 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:53569][0m
+2024-09-29 22:49:21,064 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:54175][0m
+2024-09-29 22:49:23,520 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:54187][0m
+2024-09-29 22:49:23,521 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:54188][0m
+2024-09-29 22:49:23,551 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:54187][0m
+2024-09-29 22:49:23,552 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:54188][0m
+2024-09-29 22:49:23,649 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:54188][0m
+2024-09-29 22:49:23,653 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:54187][0m
+2024-09-29 22:51:01,950 D:\stox\app\views.py changed, reloading.
+2024-09-29 22:52:52,267 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:54335][0m
+2024-09-29 22:52:57,458 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:54342][0m
+2024-09-29 22:52:57,460 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:54343][0m
+2024-09-29 22:52:57,476 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:54342][0m
+2024-09-29 22:52:57,479 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:54343][0m
+2024-09-29 22:52:57,499 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:54342][0m
+2024-09-29 22:52:57,501 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:54343][0m
+2024-09-29 22:52:59,718 [mHTTP POST /add-funds 200 [0.01, 127.0.0.1:54343][0m
+2024-09-29 23:29:15,135 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:55768][0m
+2024-09-29 23:29:15,141 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:55769][0m
+2024-09-29 23:29:17,357 [mHTTP POST /add-funds 200 [0.10, 127.0.0.1:55771][0m
+2024-09-29 23:29:19,228 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55772][0m
+2024-09-29 23:29:19,244 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:55771][0m
+2024-09-29 23:29:19,285 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55772][0m
+2024-09-29 23:29:19,285 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55771][0m
+2024-09-29 23:29:19,472 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:55771][0m
+2024-09-29 23:29:19,472 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:55772][0m
+2024-09-29 23:29:27,293 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:55781][0m
+2024-09-29 23:29:29,099 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55781][0m
+2024-09-29 23:29:29,102 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55782][0m
+2024-09-29 23:29:29,108 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:55781][0m
+2024-09-29 23:29:29,108 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.00, 127.0.0.1:55782][0m
+2024-09-29 23:29:29,277 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55781][0m
+2024-09-29 23:29:29,277 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55782][0m
+2024-09-29 23:33:13,353 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:55964][0m
+2024-09-29 23:33:16,274 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55964][0m
+2024-09-29 23:33:16,274 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55965][0m
+2024-09-29 23:33:16,673 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.37, 127.0.0.1:55965][0m
+2024-09-29 23:33:16,675 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.37, 127.0.0.1:55964][0m
+2024-09-29 23:33:16,680 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.00, 127.0.0.1:55965][0m
+2024-09-29 23:33:16,697 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55964][0m
+2024-09-29 23:33:43,584 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:55984][0m
+2024-09-29 23:33:45,481 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55984][0m
+2024-09-29 23:33:45,481 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55983][0m
+2024-09-29 23:33:45,497 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:55983][0m
+2024-09-29 23:33:45,497 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:55984][0m
+2024-09-29 23:33:45,813 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:55983][0m
+2024-09-29 23:33:45,813 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:55984][0m
+2024-09-29 23:38:07,609 D:\stox\app\views.py changed, reloading.
+2024-09-29 23:49:03,543 Not Found: /api/getcampaigns/139.5.255.162
+2024-09-29 23:49:03,553 [33mHTTP GET /api/getcampaigns/139.5.255.162 404 [0.15, 127.0.0.1:56679][0m
+2024-09-29 23:49:13,184 Not Found: /api/getcampaigns/139.5.255.162
+2024-09-29 23:49:13,184 [33mHTTP GET /api/getcampaigns/139.5.255.162 404 [0.02, 127.0.0.1:56695][0m
+2024-09-29 23:49:23,188 Not Found: /api/getcampaigns/139.5.255.162
+2024-09-29 23:49:23,188 [33mHTTP GET /api/getcampaigns/139.5.255.162 404 [0.05, 127.0.0.1:56760][0m
+2024-09-30 07:30:29,087 [mHTTP GET / 200 [0.19, 127.0.0.1:62053][0m
+2024-09-30 09:13:25,123 [32mHTTP GET /profile 302 [0.03, 127.0.0.1:51758][0m
+2024-09-30 09:13:25,159 [mHTTP GET /login/?next=/profile 200 [0.03, 127.0.0.1:51758][0m
+2024-09-30 09:13:25,297 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.12, 127.0.0.1:51758][0m
+2024-09-30 09:13:31,417 [32mHTTP POST /login/?next=/profile 302 [0.54, 127.0.0.1:51758][0m
+2024-09-30 09:13:31,554 [mHTTP GET /home?greeting=True 200 [0.13, 127.0.0.1:51758][0m
+2024-09-30 09:13:33,710 [mHTTP GET /home 200 [0.04, 127.0.0.1:51758][0m
+2024-09-30 09:13:35,079 [mHTTP GET /profile 200 [0.04, 127.0.0.1:51758][0m
+2024-09-30 09:13:38,041 [mHTTP POST /add-funds 200 [0.01, 127.0.0.1:51758][0m
+2024-09-30 09:14:05,631 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:14:49,276 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:51804][0m
+2024-09-30 09:15:07,923 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:25:27,561 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:27:35,376 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:51980][0m
+2024-09-30 09:27:56,831 [mHTTP POST /add-funds 200 [0.01, 127.0.0.1:51980][0m
+2024-09-30 09:35:16,186 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:35:32,462 [mHTTP GET / 200 [0.02, 127.0.0.1:52109][0m
+2024-09-30 09:35:34,532 [mHTTP GET /profile 200 [0.05, 127.0.0.1:52109][0m
+2024-09-30 09:35:37,917 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:52111][0m
+2024-09-30 09:36:36,275 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:36:48,608 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:36:53,023 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:52140][0m
+2024-09-30 09:38:53,824 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:39:05,939 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:52196][0m
+2024-09-30 09:40:09,769 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:40:14,956 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:40:29,215 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:52234][0m
+2024-09-30 09:41:26,701 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:41:47,473 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:52265][0m
+2024-09-30 09:42:05,002 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:42:10,360 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:42:21,194 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:52295][0m
+2024-09-30 09:42:24,295 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:52295][0m
+2024-09-30 09:42:31,607 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:42:34,897 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:52307][0m
+2024-09-30 09:42:50,671 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:43:01,634 [mHTTP POST /add-funds 200 [0.06, 127.0.0.1:52334][0m
+2024-09-30 09:43:56,326 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:44:03,159 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:52373][0m
+2024-09-30 09:44:15,853 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:44:19,124 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:52384][0m
+2024-09-30 09:44:33,449 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:44:36,459 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:52398][0m
+2024-09-30 09:45:17,798 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:45:24,911 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:52434][0m
+2024-09-30 09:45:45,675 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:45:49,520 [mHTTP POST /add-funds 200 [0.04, 127.0.0.1:52456][0m
+2024-09-30 09:46:09,227 [mHTTP GET / 200 [0.04, 127.0.0.1:52470][0m
+2024-09-30 09:46:10,285 [mHTTP GET /admin/ 200 [0.32, 127.0.0.1:52470][0m
+2024-09-30 09:46:14,634 [mHTTP GET /admin/settings/paymentgateway/ 200 [0.19, 127.0.0.1:52470][0m
+2024-09-30 09:46:14,683 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52470][0m
+2024-09-30 09:46:16,662 [mHTTP GET /admin/settings/paymentgateway/1/change/ 200 [0.12, 127.0.0.1:52472][0m
+2024-09-30 09:46:16,699 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52472][0m
+2024-09-30 09:46:21,688 [32mHTTP POST /admin/settings/paymentgateway/1/change/ 302 [0.04, 127.0.0.1:52472][0m
+2024-09-30 09:46:21,786 [mHTTP GET /admin/settings/paymentgateway/ 200 [0.09, 127.0.0.1:52472][0m
+2024-09-30 09:46:21,829 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52472][0m
+2024-09-30 09:46:31,618 [mHTTP POST /add-funds 200 [0.02, 127.0.0.1:52476][0m
+2024-09-30 09:46:55,961 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:47:07,337 [mHTTP POST /add-funds 200 [0.03, 127.0.0.1:52498][0m
+2024-09-30 09:50:59,474 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:52:42,555 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:53:25,443 D:\stox\app\views.py changed, reloading.
+2024-09-30 09:55:53,883 [mHTTP GET / 200 [0.04, 127.0.0.1:52628][0m
+2024-09-30 09:55:54,939 [mHTTP GET /admin/ 200 [0.16, 127.0.0.1:52628][0m
+2024-09-30 09:55:58,363 [mHTTP GET /admin/app/transaction/ 200 [0.34, 127.0.0.1:52628][0m
+2024-09-30 09:55:58,412 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:52628][0m
+2024-09-30 09:56:06,737 [mHTTP GET /admin/app/transaction/90/change/ 200 [0.09, 127.0.0.1:52630][0m
+2024-09-30 09:56:06,782 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52630][0m
+2024-09-30 09:56:34,897 D:\stox\app\admin.py changed, reloading.
+2024-09-30 09:56:58,703 D:\stox\app\admin.py changed, reloading.
+2024-09-30 10:03:36,479 D:\stox\app\admin.py changed, reloading.
+2024-09-30 10:04:01,629 D:\stox\app\admin.py changed, reloading.
+2024-09-30 10:07:53,414 D:\stox\app\admin.py changed, reloading.
+2024-09-30 10:07:59,485 Internal Server Error: /admin/app/transaction/90/change/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 809, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\models.py", line 642, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\models.py", line 321, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (bank_account_name, bank_account_number, upi_id, ifsc_code) specified for Transaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1782, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 811, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (bank_account_name, bank_account_number, upi_id, ifsc_code) specified for Transaction. Check fields/fieldsets/exclude attributes of class TransactionAdmin.
+2024-09-30 10:07:59,495 [35;1mHTTP GET /admin/app/transaction/90/change/ 500 [0.35, 127.0.0.1:52914][0m
+2024-09-30 10:09:34,173 D:\stox\app\admin.py changed, reloading.
+2024-09-30 10:09:37,630 Internal Server Error: /admin/app/transaction/90/change/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 809, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\models.py", line 642, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\forms\models.py", line 321, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (upi_id, ifsc_code, bank_account_number, bank_account_name) specified for Transaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 1782, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\options.py", line 811, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (upi_id, ifsc_code, bank_account_number, bank_account_name) specified for Transaction. Check fields/fieldsets/exclude attributes of class TransactionAdmin.
+2024-09-30 10:09:37,643 [35;1mHTTP GET /admin/app/transaction/90/change/ 500 [0.07, 127.0.0.1:52957][0m
+2024-09-30 10:09:57,318 D:\stox\app\admin.py changed, reloading.
+2024-09-30 10:10:00,309 [mHTTP GET /admin/app/transaction/90/change/ 200 [0.17, 127.0.0.1:52970][0m
+2024-09-30 10:10:00,371 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:52970][0m
+2024-09-30 10:10:14,154 [32mHTTP POST /admin/app/transaction/90/change/ 302 [0.02, 127.0.0.1:52971][0m
+2024-09-30 10:10:14,375 [mHTTP GET /admin/app/transaction/ 200 [0.21, 127.0.0.1:52971][0m
+2024-09-30 10:10:14,413 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52971][0m
+2024-09-30 10:10:22,669 [mHTTP GET / 200 [0.01, 127.0.0.1:52975][0m
+2024-09-30 10:10:23,853 [mHTTP GET /profile 200 [0.01, 127.0.0.1:52975][0m
+2024-09-30 10:10:30,358 [32mHTTP POST /withdraw 302 [0.01, 127.0.0.1:52977][0m
+2024-09-30 10:10:30,506 [mHTTP GET /transactions 200 [0.14, 127.0.0.1:52977][0m
+2024-09-30 10:10:36,265 [mHTTP GET /transactions 200 [0.03, 127.0.0.1:52977][0m
+2024-09-30 10:10:40,942 [32mHTTP POST /withdraw 302 [0.01, 127.0.0.1:52979][0m
+2024-09-30 10:10:40,981 [mHTTP GET /transactions 200 [0.03, 127.0.0.1:52979][0m
+2024-09-30 10:10:47,085 [32mHTTP POST /withdraw 302 [0.01, 127.0.0.1:52979][0m
+2024-09-30 10:10:47,125 [mHTTP GET /transactions 200 [0.03, 127.0.0.1:52979][0m
+2024-09-30 10:10:53,612 [mHTTP GET /profile 200 [0.01, 127.0.0.1:52983][0m
+2024-09-30 10:10:55,706 [mHTTP GET /profile 200 [0.01, 127.0.0.1:52983][0m
+2024-09-30 10:11:04,288 [mHTTP GET /admin/app/customuser/ 200 [0.06, 127.0.0.1:52987][0m
+2024-09-30 10:11:04,331 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52987][0m
+2024-09-30 10:11:11,080 [mHTTP GET /admin/app/transaction/ 200 [0.15, 127.0.0.1:52991][0m
+2024-09-30 10:11:11,114 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52991][0m
+2024-09-30 10:11:25,174 [mHTTP POST /admin/app/transaction/ 200 [0.08, 127.0.0.1:52995][0m
+2024-09-30 10:11:26,923 [32mHTTP POST /admin/app/transaction/ 302 [0.33, 127.0.0.1:52995][0m
+2024-09-30 10:11:26,981 [mHTTP GET /admin/app/transaction/ 200 [0.05, 127.0.0.1:52995][0m
+2024-09-30 10:11:27,017 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52995][0m
+2024-09-30 10:11:33,715 [32mHTTP POST /withdraw 302 [0.52, 127.0.0.1:52997][0m
+2024-09-30 10:11:33,733 [mHTTP GET /transactions 200 [0.01, 127.0.0.1:52997][0m
+2024-09-30 10:11:37,751 [mHTTP GET /admin/app/transaction/ 200 [0.05, 127.0.0.1:52997][0m
+2024-09-30 10:11:37,787 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:52997][0m
+2024-09-30 10:11:46,408 [mHTTP GET /admin/app/transaction/91/change/ 200 [0.05, 127.0.0.1:53001][0m
+2024-09-30 10:11:46,447 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:53001][0m
+2024-09-30 10:12:08,295 [32mHTTP POST /admin/app/transaction/91/change/ 302 [0.02, 127.0.0.1:53006][0m
+2024-09-30 10:12:08,355 [mHTTP GET /admin/app/transaction/ 200 [0.05, 127.0.0.1:53006][0m
+2024-09-30 10:12:08,412 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:53006][0m
+2024-09-30 10:12:13,799 [mHTTP GET /transactions 200 [0.02, 127.0.0.1:53006][0m
+2024-09-30 10:13:02,604 D:\stox\stock\settings.py changed, reloading.
