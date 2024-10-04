@@ -1635,3 +1635,100 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 252: '
 2024-10-04 12:00:31,513 [mHTTP GET /orders 200 [0.18, 127.0.0.1:63472][0m
 2024-10-04 12:00:35,568 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:63472][0m
 2024-10-04 12:01:19,402 D:\stox\stock\settings.py changed, reloading.
+2024-10-04 12:04:02,578 [32mHTTP POST /place_order 302 [1.21, 127.0.0.1:63531][0m
+2024-10-04 12:04:02,781 [mHTTP GET /orders 200 [0.19, 127.0.0.1:63531][0m
+2024-10-04 12:04:04,446 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:04,446 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:04,447 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63531][0m
+2024-10-04 12:04:04,449 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63536][0m
+2024-10-04 12:04:06,111 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:63536][0m
+2024-10-04 12:04:07,848 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:07,848 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:07,849 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63536][0m
+2024-10-04 12:04:07,849 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63531][0m
+2024-10-04 12:04:09,342 [32mHTTP POST /place_order 302 [0.21, 127.0.0.1:63531][0m
+2024-10-04 12:04:09,438 [mHTTP GET /orders 200 [0.09, 127.0.0.1:63531][0m
+2024-10-04 12:04:09,997 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:09,998 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63531][0m
+2024-10-04 12:04:09,998 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:09,999 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63536][0m
+2024-10-04 12:04:13,500 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:63544][0m
+2024-10-04 12:04:18,257 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:18,257 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:18,258 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63544][0m
+2024-10-04 12:04:18,259 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63545][0m
+2024-10-04 12:04:21,624 [32mHTTP POST /place_order 302 [0.19, 127.0.0.1:63545][0m
+2024-10-04 12:04:21,806 [mHTTP GET /orders 200 [0.18, 127.0.0.1:63545][0m
+2024-10-04 12:04:22,394 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:22,395 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63545][0m
+2024-10-04 12:04:22,496 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:22,496 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63545][0m
+2024-10-04 12:04:25,600 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:63555][0m
+2024-10-04 12:04:26,026 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:26,026 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:26,026 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63555][0m
+2024-10-04 12:04:26,027 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63556][0m
+2024-10-04 12:04:32,896 [32mHTTP POST /place_order 302 [0.30, 127.0.0.1:63556][0m
+2024-10-04 12:04:32,993 [mHTTP GET /orders 200 [0.09, 127.0.0.1:63556][0m
+2024-10-04 12:04:34,343 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:34,344 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:34,344 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63556][0m
+2024-10-04 12:04:34,345 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63563][0m
+2024-10-04 12:04:36,624 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:63563][0m
+2024-10-04 12:04:37,760 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:37,760 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:37,761 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63563][0m
+2024-10-04 12:04:37,762 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63556][0m
+2024-10-04 12:04:42,317 [32mHTTP POST /place_order 302 [0.21, 127.0.0.1:63556][0m
+2024-10-04 12:04:42,441 [mHTTP GET /orders 200 [0.12, 127.0.0.1:63556][0m
+2024-10-04 12:04:43,109 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:43,109 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:43,110 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63571][0m
+2024-10-04 12:04:43,111 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63572][0m
+2024-10-04 12:04:46,552 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:63572][0m
+2024-10-04 12:04:47,007 Not Found: /static/libs/feather-icons/dist/feather.min.js.map
+2024-10-04 12:04:47,008 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-10-04 12:04:47,008 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.01, 127.0.0.1:63572][0m
+2024-10-04 12:04:47,009 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.01, 127.0.0.1:63571][0m
+2024-10-04 12:06:30,510 [mHTTP GET /admin/app/customuser/ 200 [0.21, 127.0.0.1:63688][0m
+2024-10-04 12:06:30,609 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-10-04 12:06:30,610 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-10-04 12:06:30,612 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.min.js 404 [0.04, 127.0.0.1:63688][0m
+2024-10-04 12:06:30,614 Not Found: /static/vendor/select2/css/select2.min.css
+2024-10-04 12:06:30,615 [33mHTTP GET /static/admin/js/vendor/xregexp/xregexp.min.js 404 [0.04, 127.0.0.1:63689][0m
+2024-10-04 12:06:30,615 Not Found: /static/admin/js/jquery.init.js
+2024-10-04 12:06:30,617 [33mHTTP GET /static/vendor/select2/css/select2.min.css 404 [0.04, 127.0.0.1:63693][0m
+2024-10-04 12:06:30,621 [33mHTTP GET /static/admin/js/jquery.init.js 404 [0.04, 127.0.0.1:63694][0m
+2024-10-04 12:06:30,621 Not Found: /static/admin/js/actions.js
+2024-10-04 12:06:30,625 [33mHTTP GET /static/admin/js/actions.js 404 [0.04, 127.0.0.1:63696][0m
+2024-10-04 12:06:30,641 [mHTTP GET /admin/jsi18n/ 200 [0.06, 127.0.0.1:63695][0m
+2024-10-04 12:06:30,660 Not Found: /static/admin/js/core.js
+2024-10-04 12:06:30,661 Not Found: /static/admin/js/prepopulate.js
+2024-10-04 12:06:30,662 [33mHTTP GET /static/admin/js/core.js 404 [0.04, 127.0.0.1:63688][0m
+2024-10-04 12:06:30,663 Not Found: /static/admin/js/urlify.js
+2024-10-04 12:06:30,663 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+2024-10-04 12:06:30,665 [33mHTTP GET /static/admin/js/prepopulate.js 404 [0.04, 127.0.0.1:63689][0m
+2024-10-04 12:06:30,666 [33mHTTP GET /static/admin/js/urlify.js 404 [0.04, 127.0.0.1:63693][0m
+2024-10-04 12:06:30,666 Not Found: /static/admin/img/icon-no.svg
+2024-10-04 12:06:30,667 [33mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 404 [0.04, 127.0.0.1:63694][0m
+2024-10-04 12:06:30,670 [33mHTTP GET /static/admin/img/icon-no.svg 404 [0.04, 127.0.0.1:63696][0m
+2024-10-04 12:06:30,678 Not Found: /static/admin/img/icon-yes.svg
+2024-10-04 12:06:30,679 [33mHTTP GET /static/admin/img/icon-yes.svg 404 [0.03, 127.0.0.1:63695][0m
+2024-10-04 12:06:30,699 Not Found: /static/admin/js/vendor/jquery/jquery.js
+2024-10-04 12:06:30,700 Not Found: /static/vendor/select2/js/select2.min.js
+2024-10-04 12:06:30,701 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.js 404 [0.02, 127.0.0.1:63696][0m
+2024-10-04 12:06:30,701 [33mHTTP GET /static/vendor/select2/js/select2.min.js 404 [0.02, 127.0.0.1:63694][0m
+2024-10-04 12:06:30,702 Not Found: /static/jazzmin/js/change_list.js
+2024-10-04 12:06:30,704 [33mHTTP GET /static/jazzmin/js/change_list.js 404 [0.02, 127.0.0.1:63695][0m
+2024-10-04 12:06:30,840 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2
+2024-10-04 12:06:30,840 Not Found: /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2
+2024-10-04 12:06:30,841 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 404 [0.02, 127.0.0.1:63695][0m
+2024-10-04 12:06:30,842 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 404 [0.02, 127.0.0.1:63694][0m
+2024-10-04 12:06:30,911 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff
+2024-10-04 12:06:30,912 Not Found: /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff
+2024-10-04 12:06:30,913 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff 404 [0.02, 127.0.0.1:63694][0m
+2024-10-04 12:06:30,913 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff 404 [0.01, 127.0.0.1:63695][0m
+2024-10-04 12:06:30,945 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf
+2024-10-04 12:06:30,945 Not Found: /static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf
+2024-10-04 12:06:30,946 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf 404 [0.02, 127.0.0.1:63695][0m
+2024-10-04 12:06:30,949 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf 404 [0.02, 127.0.0.1:63694][0m
