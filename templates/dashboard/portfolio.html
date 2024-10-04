@@ -332,6 +332,8 @@
 
 
     function execute_order(order_type) {
+        document.getElementById('loader-preloader').classList.remove('hidden');
+        document.getElementById('modal').classList.add('hidden');
         let instrument = document.getElementById(`instrument_input`).value;
         let quantity = document.getElementById(`${instrument}ltp`).getAttribute('data-quantity');
         let lot_size = document.getElementById(instrument).getAttribute('data-lot_size');

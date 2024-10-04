@@ -1448,3 +1448,190 @@ UnboundLocalError: local variable 'order_id' referenced before assignment
 2024-09-30 10:26:25,036 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:53416][0m
 2024-09-30 10:26:25,039 Not Found: /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map
 2024-09-30 10:26:25,040 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.03, 127.0.0.1:53417][0m
+2024-10-04 11:08:47,576 D:\stox\stock\settings.py changed, reloading.
+2024-10-04 11:09:20,119 D:\stox\stock\settings.py changed, reloading.
+2024-10-04 11:09:39,208 [mHTTP GET / 200 [0.04, 127.0.0.1:62637][0m
+2024-10-04 11:09:45,184 [mHTTP GET /login/ 200 [0.08, 127.0.0.1:62641][0m
+2024-10-04 11:09:45,375 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.16, 127.0.0.1:62641][0m
+2024-10-04 11:09:53,050 [32mHTTP POST /login/ 302 [1.71, 127.0.0.1:62641][0m
+2024-10-04 11:09:53,238 [mHTTP GET /home?greeting=True 200 [0.18, 127.0.0.1:62641][0m
+2024-10-04 11:09:56,567 [mHTTP GET /home 200 [0.04, 127.0.0.1:62658][0m
+2024-10-04 11:10:29,087 [mHTTP GET /watchlist 200 [0.07, 127.0.0.1:62667][0m
+2024-10-04 11:14:23,473 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:62689][0m
+2024-10-04 11:36:33,491 D:\stox\stock\settings.py changed, reloading.
+2024-10-04 11:36:40,443 [mHTTP GET / 200 [0.03, 127.0.0.1:62841][0m
+2024-10-04 11:36:44,199 [mHTTP GET /login/ 200 [0.02, 127.0.0.1:62841][0m
+2024-10-04 11:36:51,390 [32mHTTP POST /login/ 302 [1.43, 127.0.0.1:62841][0m
+2024-10-04 11:36:51,478 [mHTTP GET /home?greeting=True 200 [0.08, 127.0.0.1:62841][0m
+2024-10-04 11:36:53,738 [mHTTP GET /home 200 [0.06, 127.0.0.1:62841][0m
+2024-10-04 11:36:56,259 [32mHTTP GET /admin 301 [0.38, 127.0.0.1:62841][0m
+2024-10-04 11:36:56,637 [mHTTP GET /admin/ 200 [0.37, 127.0.0.1:62841][0m
+2024-10-04 11:36:56,715 [36mHTTP GET /static/vendor/fontawesome-free/css/all.min.css 304 [0.01, 127.0.0.1:62841][0m
+2024-10-04 11:36:56,719 [36mHTTP GET /static/vendor/adminlte/css/adminlte.min.css 304 [0.01, 127.0.0.1:62840][0m
+2024-10-04 11:36:56,722 [36mHTTP GET /static/jazzmin/css/main.css 304 [0.01, 127.0.0.1:62850][0m
+2024-10-04 11:36:56,758 [36mHTTP GET /static/vendor/adminlte/js/adminlte.min.js 304 [0.01, 127.0.0.1:62841][0m
+2024-10-04 11:36:56,760 [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:62850][0m
+2024-10-04 11:36:56,762 [36mHTTP GET /static/vendor/bootstrap/js/bootstrap.min.js 304 [0.02, 127.0.0.1:62840][0m
+2024-10-04 11:36:56,766 [36mHTTP GET /static/jazzmin/js/main.js 304 [0.01, 127.0.0.1:62851][0m
+2024-10-04 11:36:57,023 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 304 [0.01, 127.0.0.1:62851][0m
+2024-10-04 11:36:57,028 [36mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 304 [0.01, 127.0.0.1:62840][0m
+2024-10-04 11:37:17,690 [mHTTP GET /admin/app/customuser/ 200 [0.34, 127.0.0.1:62840][0m
+2024-10-04 11:37:17,761 [36mHTTP GET /static/admin/js/vendor/jquery/jquery.js 304 [0.02, 127.0.0.1:62850][0m
+2024-10-04 11:37:17,763 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.02, 127.0.0.1:62851][0m
+2024-10-04 11:37:17,769 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.02, 127.0.0.1:62841][0m
+2024-10-04 11:37:17,773 [36mHTTP GET /static/admin/js/actions.js 304 [0.02, 127.0.0.1:62857][0m
+2024-10-04 11:37:17,783 [36mHTTP GET /static/admin/js/urlify.js 304 [0.03, 127.0.0.1:62858][0m
+2024-10-04 11:37:17,799 [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.02, 127.0.0.1:62850][0m
+2024-10-04 11:37:17,802 [36mHTTP GET /static/admin/js/core.js 304 [0.02, 127.0.0.1:62851][0m
+2024-10-04 11:37:17,807 [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.02, 127.0.0.1:62841][0m
+2024-10-04 11:37:17,813 [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.02, 127.0.0.1:62857][0m
+2024-10-04 11:37:17,825 [36mHTTP GET /static/admin/img/icon-no.svg 304 [0.02, 127.0.0.1:62858][0m
+2024-10-04 11:37:17,834 [36mHTTP GET /static/admin/img/icon-yes.svg 304 [0.02, 127.0.0.1:62851][0m
+2024-10-04 11:37:17,850 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:62858][0m
+2024-10-04 11:37:17,853 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:62851][0m
+2024-10-04 11:37:17,858 [mHTTP GET /admin/jsi18n/ 200 [0.12, 127.0.0.1:62840][0m
+2024-10-04 11:37:26,625 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:62840][0m
+2024-10-04 11:38:04,686 Not Found: /build/assets/usePage.1a14a895.js
+2024-10-04 11:38:04,686 Not Found: /build/assets/EditorTabsAceEditor.f70daeb6.js
+2024-10-04 11:38:04,687 [33mHTTP OPTIONS /build/assets/usePage.1a14a895.js 404 [0.06, 127.0.0.1:62941][0m
+2024-10-04 11:38:04,687 Not Found: /build/assets/_commonjsHelpers.f037b798.js
+2024-10-04 11:38:04,690 [33mHTTP OPTIONS /build/assets/EditorTabsAceEditor.f70daeb6.js 404 [0.07, 127.0.0.1:62939][0m
+2024-10-04 11:38:04,692 Not Found: /build/assets/index.9b9e2241.js
+2024-10-04 11:38:04,693 [33mHTTP OPTIONS /build/assets/_commonjsHelpers.f037b798.js 404 [0.07, 127.0.0.1:62937][0m
+2024-10-04 11:38:04,696 [33mHTTP OPTIONS /build/assets/index.9b9e2241.js 404 [0.07, 127.0.0.1:62938][0m
+2024-10-04 11:38:04,750 Not Found: /build/assets/usePage.1a14a895.js
+2024-10-04 11:38:04,751 Not Found: /build/assets/index.9b9e2241.js
+2024-10-04 11:38:04,751 Not Found: /build/assets/EditorTabsAceEditor.f70daeb6.js
+2024-10-04 11:38:04,752 Not Found: /build/assets/_commonjsHelpers.f037b798.js
+2024-10-04 11:38:04,754 [33mHTTP GET /build/assets/usePage.1a14a895.js 404 [0.06, 127.0.0.1:62941][0m
+2024-10-04 11:38:04,756 [33mHTTP GET /build/assets/index.9b9e2241.js 404 [0.05, 127.0.0.1:62938][0m
+2024-10-04 11:38:04,757 [33mHTTP GET /build/assets/EditorTabsAceEditor.f70daeb6.js 404 [0.06, 127.0.0.1:62939][0m
+2024-10-04 11:38:04,758 [33mHTTP GET /build/assets/_commonjsHelpers.f037b798.js 404 [0.06, 127.0.0.1:62937][0m
+2024-10-04 11:39:13,446 Not Found: /build/assets/index.9b9e2241.js
+2024-10-04 11:39:13,446 Not Found: /build/assets/EditorTabsAceEditor.f70daeb6.js
+2024-10-04 11:39:13,446 Not Found: /build/assets/_commonjsHelpers.f037b798.js
+2024-10-04 11:39:13,447 Not Found: /build/assets/usePage.1a14a895.js
+2024-10-04 11:39:13,447 [33mHTTP OPTIONS /build/assets/index.9b9e2241.js 404 [0.05, 127.0.0.1:62967][0m
+2024-10-04 11:39:13,451 [33mHTTP OPTIONS /build/assets/EditorTabsAceEditor.f70daeb6.js 404 [0.06, 127.0.0.1:62963][0m
+2024-10-04 11:39:13,452 [33mHTTP OPTIONS /build/assets/_commonjsHelpers.f037b798.js 404 [0.06, 127.0.0.1:62965][0m
+2024-10-04 11:39:13,452 [33mHTTP OPTIONS /build/assets/usePage.1a14a895.js 404 [0.06, 127.0.0.1:62964][0m
+2024-10-04 11:39:13,509 Not Found: /build/assets/index.9b9e2241.js
+2024-10-04 11:39:13,511 [33mHTTP GET /build/assets/index.9b9e2241.js 404 [0.06, 127.0.0.1:62967][0m
+2024-10-04 11:39:13,513 Not Found: /build/assets/usePage.1a14a895.js
+2024-10-04 11:39:13,514 Not Found: /build/assets/_commonjsHelpers.f037b798.js
+2024-10-04 11:39:13,516 [33mHTTP GET /build/assets/usePage.1a14a895.js 404 [0.06, 127.0.0.1:62965][0m
+2024-10-04 11:39:13,516 Not Found: /build/assets/EditorTabsAceEditor.f70daeb6.js
+2024-10-04 11:39:13,516 [33mHTTP GET /build/assets/_commonjsHelpers.f037b798.js 404 [0.06, 127.0.0.1:62964][0m
+2024-10-04 11:39:13,518 [33mHTTP GET /build/assets/EditorTabsAceEditor.f70daeb6.js 404 [0.06, 127.0.0.1:62963][0m
+2024-10-04 11:41:48,652 Internal Server Error: /watchlist
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "D:\stox\app\views.py", line 306, in watchlist
+    return render(request,'dashboard/watchlist.html',context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 252: 'else'. Did you forget to register or load this tag?
+2024-10-04 11:41:48,667 [35;1mHTTP GET /watchlist 500 [0.48, 127.0.0.1:63002][0m
+2024-10-04 11:41:48,892 Not Found: /favicon.ico
+2024-10-04 11:41:48,893 [33mHTTP GET /favicon.ico 404 [0.02, 127.0.0.1:63002][0m
+2024-10-04 11:41:58,579 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:63006][0m
+2024-10-04 11:42:20,157 [mHTTP GET /watchlist 200 [0.13, 127.0.0.1:63020][0m
+2024-10-04 11:42:39,724 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:63029][0m
+2024-10-04 11:44:41,416 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:63069][0m
+2024-10-04 11:44:50,481 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63074][0m
+2024-10-04 11:44:50,482 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63075][0m
+2024-10-04 11:45:06,657 [mHTTP GET /watchlist 200 [0.08, 127.0.0.1:63085][0m
+2024-10-04 11:45:07,297 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63086][0m
+2024-10-04 11:45:07,301 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63085][0m
+2024-10-04 11:47:27,363 [mHTTP GET /watchlist 200 [0.13, 127.0.0.1:63190][0m
+2024-10-04 11:47:28,416 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63191][0m
+2024-10-04 11:47:28,423 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63190][0m
+2024-10-04 11:48:50,922 [mHTTP GET /watchlist 200 [0.24, 127.0.0.1:63243][0m
+2024-10-04 11:48:51,780 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.04, 127.0.0.1:63243][0m
+2024-10-04 11:48:51,781 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:63244][0m
+2024-10-04 11:50:13,275 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:63308][0m
+2024-10-04 11:50:14,124 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63308][0m
+2024-10-04 11:50:14,147 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63309][0m
+2024-10-04 11:51:01,293 [mHTTP GET /watchlist 200 [0.18, 127.0.0.1:63309][0m
+2024-10-04 11:51:02,075 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.03, 127.0.0.1:63309][0m
+2024-10-04 11:51:02,081 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.04, 127.0.0.1:63308][0m
+2024-10-04 11:52:14,799 [mHTTP GET /watchlist 200 [0.14, 127.0.0.1:63391][0m
+2024-10-04 11:52:15,542 [33mHTTP GET /static/libs/feather-icons/dist/feather.min.js.map 404 [0.02, 127.0.0.1:63391][0m
+2024-10-04 11:52:15,607 [33mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js.map 404 [0.02, 127.0.0.1:63391][0m
+2024-10-04 11:52:41,530 [mHTTP GET /watchlist 200 [0.16, 127.0.0.1:63391][0m
+2024-10-04 11:56:13,633 [mHTTP GET /watchlist 200 [0.18, 127.0.0.1:63427][0m
+2024-10-04 11:56:18,837 [32mHTTP POST /place_order 302 [0.95, 127.0.0.1:63427][0m
+2024-10-04 11:56:19,141 [mHTTP GET /orders 200 [0.29, 127.0.0.1:63427][0m
+2024-10-04 11:56:22,579 [mHTTP GET /portfolio 200 [0.09, 127.0.0.1:63427][0m
+2024-10-04 11:56:55,226 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:63427][0m
+2024-10-04 11:56:58,974 [32mHTTP POST /place_order 302 [0.46, 127.0.0.1:63427][0m
+2024-10-04 11:56:59,219 [mHTTP GET /orders 200 [0.23, 127.0.0.1:63427][0m
+2024-10-04 11:57:02,546 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:63427][0m
+2024-10-04 11:57:04,238 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:63427][0m
+2024-10-04 11:57:07,834 [32mHTTP POST /place_order 302 [0.41, 127.0.0.1:63427][0m
+2024-10-04 11:57:08,054 [mHTTP GET /orders 200 [0.21, 127.0.0.1:63427][0m
+2024-10-04 11:57:11,382 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:63427][0m
+2024-10-04 11:57:40,983 [mHTTP GET /watchlist 200 [0.05, 127.0.0.1:63427][0m
+2024-10-04 11:58:29,744 [mHTTP GET /watchlist 200 [0.11, 127.0.0.1:63427][0m
+2024-10-04 11:58:36,437 [32mHTTP POST /place_order 302 [0.77, 127.0.0.1:63427][0m
+2024-10-04 11:58:36,684 [mHTTP GET /orders 200 [0.24, 127.0.0.1:63427][0m
+2024-10-04 11:58:40,000 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:63427][0m
+2024-10-04 12:00:27,502 [mHTTP GET /portfolio 200 [0.07, 127.0.0.1:63472][0m
+2024-10-04 12:00:31,325 [32mHTTP POST /place_order 302 [0.41, 127.0.0.1:63472][0m
+2024-10-04 12:00:31,513 [mHTTP GET /orders 200 [0.18, 127.0.0.1:63472][0m
+2024-10-04 12:00:35,568 [mHTTP GET /portfolio 200 [0.03, 127.0.0.1:63472][0m
+2024-10-04 12:01:19,402 D:\stox\stock\settings.py changed, reloading.
