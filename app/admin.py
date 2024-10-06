@@ -1,4 +1,5 @@
 from django.contrib import admin
+from rangefilter.filters import DateRangeFilter
 from .models import *
 from django.contrib.auth.admin import UserAdmin
 from django.utils.html import format_html
@@ -234,7 +235,7 @@ class OrderAdmin(admin.ModelAdmin):
 
 @admin.register(Position)
 class PositionAdmin(admin.ModelAdmin):
-    list_filter = ('created_at','user','symbol','product','last_traded_datetime')
+    list_filter = (('created_at', DateRangeFilter), ('last_traded_datetime', DateRangeFilter), 'user', 'symbol', 'product')
     list_display = ('user', 'quantity','last_traded_quantity', 'symbol', 'product', 'buy_price', 'sell_price', 'pnl_colored','created_at','last_traded_datetime' ,'close_positon')
 
     def changelist_view(self, request, extra_context=None):

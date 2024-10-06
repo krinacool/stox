@@ -1732,3 +1732,465 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 252: '
 2024-10-04 12:06:30,945 Not Found: /static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf
 2024-10-04 12:06:30,946 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf 404 [0.02, 127.0.0.1:63695][0m
 2024-10-04 12:06:30,949 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf 404 [0.02, 127.0.0.1:63694][0m
+2024-10-06 15:27:56,509 Listen failure: Couldn't listen on 127.0.0.1:8000: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2024-10-06 15:28:17,548 D:\stox\app\admin.py changed, reloading.
+2024-10-06 15:28:20,294 Listen failure: Couldn't listen on 127.0.0.1:8000: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2024-10-06 15:29:13,525 [32mHTTP GET /admin/ 302 [0.06, 127.0.0.1:64099][0m
+2024-10-06 15:29:13,635 [mHTTP GET /admin/login/?next=/admin/ 200 [0.11, 127.0.0.1:64099][0m
+2024-10-06 15:29:13,685 Not Found: /static/images/brand/logo/brand.png
+2024-10-06 15:29:13,685 [33mHTTP GET /static/images/brand/logo/brand.png 404 [0.02, 127.0.0.1:64099][0m
+2024-10-06 15:29:13,686 Not Found: /static/admin/js/vendor/jquery/jquery.js
+2024-10-06 15:29:13,686 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.js 404 [0.01, 127.0.0.1:64100][0m
+2024-10-06 15:29:13,844 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2
+2024-10-06 15:29:13,844 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 404 [0.01, 127.0.0.1:64100][0m
+2024-10-06 15:29:13,857 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff
+2024-10-06 15:29:13,857 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff 404 [0.00, 127.0.0.1:64100][0m
+2024-10-06 15:29:13,868 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf
+2024-10-06 15:29:13,868 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf 404 [0.00, 127.0.0.1:64100][0m
+2024-10-06 15:29:13,887 Not Found: /static/images/brand/logo/brand.png
+2024-10-06 15:29:13,887 [33mHTTP GET /static/images/brand/logo/brand.png 404 [0.00, 127.0.0.1:64100][0m
+2024-10-06 15:29:20,338 [32mHTTP POST /admin/login/?next=/admin/ 302 [1.10, 127.0.0.1:64100][0m
+2024-10-06 15:29:20,488 [mHTTP GET /admin/ 200 [0.14, 127.0.0.1:64100][0m
+2024-10-06 15:29:20,521 Not Found: /static/images/brand/logo/brand.png
+2024-10-06 15:29:20,521 [33mHTTP GET /static/images/brand/logo/brand.png 404 [0.01, 127.0.0.1:64100][0m
+2024-10-06 15:29:20,525 Not Found: /static/admin/js/vendor/jquery/jquery.js
+2024-10-06 15:29:20,525 [33mHTTP GET /static/admin/js/vendor/jquery/jquery.js 404 [0.01, 127.0.0.1:64099][0m
+2024-10-06 15:29:20,545 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2
+2024-10-06 15:29:20,546 Not Found: /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2
+2024-10-06 15:29:20,547 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 404 [0.01, 127.0.0.1:64099][0m
+2024-10-06 15:29:20,547 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 404 [0.01, 127.0.0.1:64100][0m
+2024-10-06 15:29:20,595 Not Found: /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff
+2024-10-06 15:29:20,595 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff
+2024-10-06 15:29:20,596 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff 404 [0.01, 127.0.0.1:64100][0m
+2024-10-06 15:29:20,597 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff 404 [0.01, 127.0.0.1:64099][0m
+2024-10-06 15:29:20,664 Not Found: /static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf
+2024-10-06 15:29:20,664 Not Found: /static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf
+2024-10-06 15:29:20,665 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf 404 [0.01, 127.0.0.1:64100][0m
+2024-10-06 15:29:20,665 [33mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf 404 [0.01, 127.0.0.1:64099][0m
+2024-10-06 15:29:28,567 Internal Server Error: /admin/app/position/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\jazzmin\templatetags\jazzmin.py", line 276, in jazzmin_list_filter
+    tpl = get_template(spec.template)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rangefilter/date_filter.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: rangefilter/date_filter.html
+2024-10-06 15:29:28,794 [35;1mHTTP GET /admin/app/position/ 500 [0.36, 127.0.0.1:64109][0m
+2024-10-06 15:29:58,810 D:\stox\stock\settings.py changed, reloading.
+2024-10-06 15:30:15,141 Internal Server Error: /admin/app/position/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\jazzmin\templatetags\jazzmin.py", line 276, in jazzmin_list_filter
+    tpl = get_template(spec.template)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rangefilter/date_filter.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: rangefilter/date_filter.html
+2024-10-06 15:30:15,156 [35;1mHTTP GET /admin/app/position/ 500 [0.29, 127.0.0.1:64156][0m
+2024-10-06 15:30:27,306 [mHTTP GET / 200 [0.03, 127.0.0.1:64165][0m
+2024-10-06 15:31:00,714 D:\stox\app\admin.py changed, reloading.
+2024-10-06 15:31:03,971 Internal Server Error: /admin/app/position/
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\library.py", line 278, in render
+    return t.render(new_context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\jazzmin\templatetags\jazzmin.py", line 276, in jazzmin_list_filter
+    tpl = get_template(spec.template)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rangefilter/date_filter.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 534, in thread_handler
+    raise exc_info[1]
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\base.py", line 284, in _get_response_async
+    response = await sync_to_async(
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 479, in __call__
+    ret: _R = await loop.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\asgiref\sync.py", line 538, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\atulg\AppData\Roaming\Python\Python310\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: rangefilter/date_filter.html
+2024-10-06 15:31:03,973 [35;1mHTTP GET /admin/app/position/ 500 [0.22, 127.0.0.1:64196][0m
+2024-10-06 15:31:10,176 D:\stox\app\admin.py changed, reloading.
+2024-10-06 15:31:57,619 D:\stox\stock\settings.py changed, reloading.
+2024-10-06 15:32:01,638 [mHTTP GET /admin/app/position/ 200 [0.32, 127.0.0.1:64258][0m
+2024-10-06 15:32:01,680 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.00, 127.0.0.1:64258][0m
+2024-10-06 15:32:01,693 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:64261][0m
+2024-10-06 15:32:01,694 [36mHTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:64262][0m
+2024-10-06 15:32:01,696 [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:64258][0m
+2024-10-06 15:32:01,698 [36mHTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:64263][0m
+2024-10-06 15:32:01,704 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:64261][0m
+2024-10-06 15:32:01,706 [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:64262][0m
+2024-10-06 15:32:01,709 [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:64258][0m
+2024-10-06 15:32:01,714 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:64260][0m
+2024-10-06 15:32:01,749 [mHTTP GET /static/admin/css/widgets.css 200 [0.04, 127.0.0.1:64261][0m
+2024-10-06 15:32:01,759 [mHTTP GET /static/images/brand/logo/brand.png 200 [0.06, 127.0.0.1:64263][0m
+2024-10-06 15:32:01,759 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.00, 127.0.0.1:64261][0m
+2024-10-06 15:32:01,773 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.00, 127.0.0.1:64263][0m
+2024-10-06 15:32:01,811 [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [0.13, 127.0.0.1:64259][0m
+2024-10-06 15:32:01,863 [mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2 200 [0.01, 127.0.0.1:64263][0m
+2024-10-06 15:32:01,873 [mHTTP GET /static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 200 [0.02, 127.0.0.1:64259][0m
+2024-10-06 15:32:02,014 [mHTTP GET /static/admin/js/calendar.js 200 [0.02, 127.0.0.1:64259][0m
+2024-10-06 15:32:02,014 [mHTTP GET /static/admin/js/admin/DateTimeShortcuts.js 200 [0.02, 127.0.0.1:64263][0m
+2024-10-06 15:32:02,079 [mHTTP GET /static/admin/img/icon-calendar.svg 200 [0.02, 127.0.0.1:64263][0m
+2024-10-06 15:32:09,278 [mHTTP GET /static/admin/img/calendar-icons.svg 200 [0.02, 127.0.0.1:64267][0m
+2024-10-06 15:33:24,886 [mHTTP GET /admin/app/position/?created_at__range__gte=2024-11-01&created_at__range__lte=2024-11-15 200 [0.07, 127.0.0.1:64304][0m
+2024-10-06 15:33:24,921 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.00, 127.0.0.1:64304][0m
+2024-10-06 15:33:24,934 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:64307][0m
+2024-10-06 15:33:24,934 [36mHTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:64309][0m
+2024-10-06 15:33:24,935 [36mHTTP GET /static/admin/js/core.js 304 [0.01, 127.0.0.1:64308][0m
+2024-10-06 15:33:24,935 [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.01, 127.0.0.1:64304][0m
+2024-10-06 15:33:24,936 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:64310][0m
+2024-10-06 15:33:24,949 [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:64310][0m
+2024-10-06 15:33:24,949 [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:64307][0m
+2024-10-06 15:33:24,951 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:64308][0m
+2024-10-06 15:33:24,952 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:64309][0m
+2024-10-06 15:33:24,954 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:64305][0m
+2024-10-06 15:33:37,149 [mHTTP GET /admin/app/position/?created_at__range__gte=2024-09-03&created_at__range__lte=2024-11-15 200 [0.08, 127.0.0.1:64318][0m
+2024-10-06 15:33:37,184 [36mHTTP GET /static/vendor/select2/css/select2.min.css 304 [0.00, 127.0.0.1:64318][0m
+2024-10-06 15:33:37,195 [36mHTTP GET /static/admin/js/jquery.init.js 304 [0.01, 127.0.0.1:64320][0m
+2024-10-06 15:33:37,196 [36mHTTP GET /static/admin/js/core.js 304 [0.00, 127.0.0.1:64321][0m
+2024-10-06 15:33:37,197 [36mHTTP GET /static/admin/js/urlify.js 304 [0.01, 127.0.0.1:64318][0m
+2024-10-06 15:33:37,198 [36mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 304 [0.00, 127.0.0.1:64322][0m
+2024-10-06 15:33:37,199 [36mHTTP GET /static/admin/js/actions.js 304 [0.01, 127.0.0.1:64323][0m
+2024-10-06 15:33:37,208 [36mHTTP GET /static/admin/js/prepopulate.js 304 [0.01, 127.0.0.1:64320][0m
+2024-10-06 15:33:37,209 [36mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 304 [0.01, 127.0.0.1:64321][0m
+2024-10-06 15:33:37,210 [36mHTTP GET /static/vendor/select2/js/select2.min.js 304 [0.01, 127.0.0.1:64318][0m
+2024-10-06 15:33:37,212 [36mHTTP GET /static/jazzmin/js/change_list.js 304 [0.01, 127.0.0.1:64322][0m
+2024-10-06 15:33:37,217 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:64319][0m
+2024-10-06 15:34:06,799 D:\stox\stock\settings.py changed, reloading.
+2024-10-06 15:34:13,363 D:\stox\stock\settings.py changed, reloading.
