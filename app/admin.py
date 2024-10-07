@@ -235,7 +235,7 @@ class OrderAdmin(admin.ModelAdmin):
 
 @admin.register(Position)
 class PositionAdmin(admin.ModelAdmin):
-    list_filter = ('created_at', 'last_traded_datetime', 'user', 'symbol', 'product')
+    list_filter = ('created_at', 'last_traded_datetime', 'user', 'symbol', 'product','is_closed')
     list_display = ('user', 'quantity','last_traded_quantity', 'symbol', 'product', 'buy_price', 'sell_price', 'pnl_colored','created_at','last_traded_datetime' ,'close_positon')
 
     def changelist_view(self, request, extra_context=None):
