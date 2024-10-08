@@ -746,7 +746,7 @@ def upstox_cred(request,secret):
         
 def close_position(request):
     call_command('close_positions')
-    return HttpResponseRedirect("/admin/")
+    return HttpResponse('success')
 
 def load_instruments_in_background():
     call_command('load_instruments')
