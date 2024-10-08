@@ -371,7 +371,7 @@ class Order(models.Model):
         from settings.models import charges
         charge = charges.objects.all().first()
         if self.automatic_close:
-            self.charges = round(calc_carrage(self.amount,self.order_type,self.product,self.user), 2) + charge
+            self.charges = round(calc_carrage(self.amount,self.order_type,self.product,self.user), 2) + charge.order_closing_charge
         else:
             self.charges = round(calc_carrage(self.amount,self.order_type,self.product,self.user), 2)
         self.amount = round(self.amount, 2)
