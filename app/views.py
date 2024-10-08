@@ -746,7 +746,7 @@ def upstox_cred(request,secret):
         
 def close_position(request):
     call_command('close_positions')
-    return HttpResponse('success')
+    return HttpResponseRedirect("/admin/")
 
 def load_instruments_in_background():
     call_command('load_instruments')
@@ -756,9 +756,9 @@ def update_symbols(request):
     thread.start()
     return HttpResponseRedirect("/admin/")
 
-# @login_required
-# @permission_required('is_superuser')
-# @user_passes_test(lambda u: u.is_superuser)
+@login_required
+@permission_required('is_superuser')
+@user_passes_test(lambda u: u.is_superuser)
 def closepos(request,id):
     try:
         i = Position.objects.filter(id=id).first()
@@ -768,6 +768,6 @@ def closepos(request,id):
             order_type = 'SELL'
             quantity = quantity * -1
         market_order(i.user,i.symbol,i.instrument_key,i.token,quantity,order_type,i.product,0,0,'Market')
-    except Exception as e:
-        return HttpResponse(e)
-    return HttpResponse("success")
+    except:
+        pass
+    return HttpResponseRedirect("/admin/app/position/")
