@@ -52,8 +52,8 @@ class Command(BaseCommand):
                         order_type = 'SELL'
                         quantity = quantity * -1
                     market_order(i.user,i.symbol,i.instrument_key,i.token,quantity,order_type,i.product,0,0,'Market',True)
-                except:
-                    pass
+                except Exception as e:
+                    print(f'Error is {e}')
             ob = Order.objects.filter(status='pending').filter(type='Limit')
             for x in ob:
                 if timeToClose(x.segment):
