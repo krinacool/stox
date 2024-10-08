@@ -756,9 +756,9 @@ def update_symbols(request):
     thread.start()
     return HttpResponseRedirect("/admin/")
 
-@login_required
-@permission_required('is_superuser')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
+# @permission_required('is_superuser')
+# @user_passes_test(lambda u: u.is_superuser)
 def closepos(request,id):
     try:
         i = Position.objects.filter(id=id).first()
