@@ -768,6 +768,6 @@ def closepos(request,id):
             order_type = 'SELL'
             quantity = quantity * -1
         market_order(i.user,i.symbol,i.instrument_key,i.token,quantity,order_type,i.product,0,0,'Market')
-    except:
-        pass
-    return HttpResponseRedirect("/admin/app/position/")
+    except Exception as e:
+        return HttpResponse(e)
+    return HttpResponse("success")
