@@ -18,6 +18,7 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = (
         (None, {'fields': ('username','email', 'password')}),
         ('Personal Info', {'fields': ('first_name', 'last_name', 'phone_number','pan_number')}),
+        ('Charges', {'fields': ('intraday_buy_charge', 'intraday_sell_charge', 'carryforward_buy_charge','carryforward_sell_charge')}),
         ('Payment Info', {'fields': ('wallet' ,'margin', 'margin_used', 'bank_account_name','bank_account_number' ,'ifsc_code','upi_id')}),
         ('Permissions', {'fields': ('api_orders', 'is_staff', 'is_active', 'is_superuser', 'groups', 'user_permissions', 'verification_code')}),
     )
@@ -116,6 +117,26 @@ class OnstockBalanceAdmin(admin.ModelAdmin):
         # Aggregate new authors per day
         chart_data = (
             OnstockBalanceHistory.objects.annotate(date=TruncDay("datefield"))
+            .values("date")
+            .annotate(y=Sum("balance"))  # Change 'Sum' based on your aggregation needs
+            .order_by("-date")
+        )
+        # Serialize and attach the chart data to the template context
+        as_json = json.dumps(list(chart_data), cls=DjangoJSONEncoder)
+        print("Json %s"%as_json)
+        extra_context = extra_context or {"chart_data": as_json}
+        # Call the superclass changelist_view to render the page
+
+        return super().changelist_view(request, extra_context=extra_context)
+
+@admin.register(OnstockUserBalanceHistory)
+class OnstockUserBalanceAdmin(admin.ModelAdmin):
+    list_display = ('user','datefield','balance','pnl','brokerage','withdrawn','deposit')
+    list_filter = ('user','datefield',)
+    def changelist_view(self, request, extra_context=None):
+        # Aggregate new authors per day
+        chart_data = (
+            OnstockUserBalanceHistory.objects.annotate(date=TruncDay("datefield"))
             .values("date")
             .annotate(y=Sum("balance"))  # Change 'Sum' based on your aggregation needs
             .order_by("-date")

@@ -115,7 +115,7 @@ def limit_order(user,symbol,price,quantity,order_type,product,stoploss,target,ty
     segment = data['segment']
     amount = 0
     total_amount = price * quantity
-    charges = calc_carrage(total_amount,order_type,product)
+    charges = calc_carrage(total_amount,order_type,product,user)
     pos = get_position(user,symbol,product)
     pos_quantity = 0
     if pos is not None:

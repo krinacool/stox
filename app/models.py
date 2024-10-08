@@ -61,7 +61,7 @@ class CustomUser(AbstractUser):
     phone_number = models.CharField(max_length=12)
     verification_code = models.CharField(max_length=420,null=True,blank=True,default="")
     wallet = models.FloatField(default=0.0)
-    margin = models.PositiveIntegerField(default=100)
+    margin = models.PositiveIntegerField(default=10)
     margin_used = models.FloatField(default=0.0)
     pan_number = models.CharField(max_length=50,default="", null=True,blank=True)
     bank_account_name = models.CharField(max_length=150,default="")
@@ -69,6 +69,11 @@ class CustomUser(AbstractUser):
     upi_id = models.CharField(max_length=150,default="")
     ifsc_code = models.CharField(max_length=12,default="")
     api_orders = models.BooleanField(default=False)
+    intraday_buy_charge=models.PositiveIntegerField(default=24)
+    intraday_sell_charge=models.PositiveIntegerField(default=24)
+    carryforward_buy_charge=models.PositiveIntegerField(default=25)
+    carryforward_sell_charge=models.PositiveIntegerField(default=25)
+
     objects = UserManager()
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['phone_number']
@@ -366,9 +371,9 @@ class Order(models.Model):
         from settings.models import charges
         charge = charges.objects.all().first()
         if self.automatic_close:
-            self.charges = round(calc_carrage(self.amount,self.order_type,self.product), 2) + charge
+            self.charges = round(calc_carrage(self.amount,self.order_type,self.product,self.user), 2) + charge
         else:
-            self.charges = round(calc_carrage(self.amount,self.order_type,self.product), 2)
+            self.charges = round(calc_carrage(self.amount,self.order_type,self.product,self.user), 2)
         self.amount = round(self.amount, 2)
         self.price = round(float(self.price), 2)
 
@@ -465,3 +470,59 @@ class OnstockBalanceHistory(models.Model):
         verbose_name = "Onstock Balance"
         verbose_name_plural = "Onstock Balance History"
         unique_together = ['datefield']
+
+
+class OnstockUserBalanceHistory(models.Model):
+    user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
+    datefield = models.DateField(default=timezone.now)
+    balance = models.FloatField(default=0.0)
+    pnl = models.FloatField(default=0.0)
+    brokerage = models.FloatField(default=0.0)
+    withdrawn = models.FloatField(default=0.0)
+    deposit = models.FloatField(default=0.0)
+    def __str__(self):
+        return f"{self.datefield} --> {self.balance}"
+    
+    def save(self, *args, **kwargs):
+        # TOTAL BALANCE
+        total_balance = self.user.wallet
+        total_balance = "{:.2f}".format(total_balance)
+        self.balance = total_balance
+        # END TOTAL BALANCE
+        # TOTAL PNL
+        today = timezone.now().date() - timedelta(days=1)
+        print(today)
+        close_positions = Position.objects.filter(last_traded_datetime__date=today,is_closed=True).filter(user=self.user)
+        total_pnl = 0
+        for x in close_positions:
+            total_pnl = total_pnl + x.realised_pnl
+        self.pnl = "{:.2f}".format(total_pnl)
+        # TOTAL END PNL
+        # TOTAL BROKERAGE
+        brokerage_collected = 0
+        orders = Order.objects.filter(datetime__date=today, status='completed').order_by('-datetime').filter(user=self.user)
+        for x in orders:
+            print(x.charges)
+            brokerage_collected += x.charges
+        brokerage_collected = "{:.2f}".format(brokerage_collected)
+        self.brokerage = brokerage_collected
+        # TOTAL END BROKERAGE
+        total_deposit = 0
+        total_withdraw = 0
+        transactions = Transaction.objects.filter(status='COMPLETED', datetime__date=today).filter(user=self.user)
+        for x in transactions:
+            if x.transaction_type == 'DEPOSIT':
+                total_deposit += x.amount
+            else:
+                total_withdraw += x.amount
+        
+        self.withdrawn = total_withdraw
+        self.deposit = total_deposit
+        super().save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = "Onstock Users Balance"
+        verbose_name_plural = "User Balance History"
+        unique_together = ['datefield','user']
+
+        

@@ -325,7 +325,7 @@ def orders(request):
     wallet = ((request.user.margin/100)*request.user.wallet)
     settings = charges.objects.first()
     tax = settings.tax
-    charge = settings.intraday_buy_charge
+    charge = request.user.intraday_buy_charge
     all_tags = tags.objects.filter(user=request.user)
 
     # ---------------CONTEXT-----------
@@ -365,7 +365,7 @@ def portfolio(request):
     wallet = request.user.wallet
     margin = request.user.margin
     settings = charges.objects.first()
-    charge = settings.intraday_buy_charge
+    charge = request.user.intraday_buy_charge
     tax = settings.tax
     # ---------------CONTEXT-----------
     all_tags = tags.objects.filter(user=request.user)

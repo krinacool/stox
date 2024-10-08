@@ -6,10 +6,6 @@ from app.symbols.api_sessions import sessions
 
 class charges(models.Model):
     tax=models.FloatField(default=0.5)
-    intraday_buy_charge=models.PositiveIntegerField(default=0)
-    intraday_sell_charge=models.PositiveIntegerField(default=0)
-    carryforward_buy_charge=models.PositiveIntegerField(default=0)
-    carryforward_sell_charge=models.PositiveIntegerField(default=0)
     order_closing_charge=models.PositiveIntegerField(default=0)
 
     manipulate_5_to_25 = models.FloatField(default=0.25)

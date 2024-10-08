@@ -2194,3 +2194,118 @@ django.template.exceptions.TemplateDoesNotExist: rangefilter/date_filter.html
 2024-10-06 15:33:37,217 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:64319][0m
 2024-10-06 15:34:06,799 D:\stox\stock\settings.py changed, reloading.
 2024-10-06 15:34:13,363 D:\stox\stock\settings.py changed, reloading.
+2024-10-08 12:46:32,589 [mHTTP GET / 200 [0.10, 127.0.0.1:60974][0m
+2024-10-08 12:46:32,664 Not Found: /static/landingasset/css/themify-icons.css
+2024-10-08 12:46:32,664 Not Found: /static/landingasset/css/bootstrap.min.css
+2024-10-08 12:46:32,665 [33mHTTP GET /static/landingasset/css/themify-icons.css 404 [0.03, 127.0.0.1:60976][0m
+2024-10-08 12:46:32,666 Not Found: /static/landingasset/css/font-awesome.min.css
+2024-10-08 12:46:32,666 Not Found: /static/landingasset/css/animate.css
+2024-10-08 12:46:32,666 Not Found: /static/landingasset/css/style.css
+2024-10-08 12:46:32,667 [33mHTTP GET /static/landingasset/css/bootstrap.min.css 404 [0.04, 127.0.0.1:60974][0m
+2024-10-08 12:46:32,667 Not Found: /static/landingasset/css/owl.carousel.css
+2024-10-08 12:46:32,668 [33mHTTP GET /static/landingasset/css/font-awesome.min.css 404 [0.04, 127.0.0.1:60975][0m
+2024-10-08 12:46:32,670 [33mHTTP GET /static/landingasset/css/animate.css 404 [0.04, 127.0.0.1:60977][0m
+2024-10-08 12:46:32,670 [33mHTTP GET /static/landingasset/css/style.css 404 [0.03, 127.0.0.1:60979][0m
+2024-10-08 12:46:32,672 [33mHTTP GET /static/landingasset/css/owl.carousel.css 404 [0.04, 127.0.0.1:60978][0m
+2024-10-08 12:46:32,687 Not Found: /static/landingasset/img/laptop.png
+2024-10-08 12:46:32,688 [33mHTTP GET /static/landingasset/img/laptop.png 404 [0.02, 127.0.0.1:60976][0m
+2024-10-08 12:46:32,689 Not Found: /static/landingasset/img/about-img.png
+2024-10-08 12:46:32,689 Not Found: /static/landingasset/img/process-icons/1.png
+2024-10-08 12:46:32,689 [33mHTTP GET /static/landingasset/img/about-img.png 404 [0.02, 127.0.0.1:60974][0m
+2024-10-08 12:46:32,690 [33mHTTP GET /static/landingasset/img/process-icons/1.png 404 [0.02, 127.0.0.1:60975][0m
+2024-10-08 12:46:43,170 D:\stox\stock\settings.py changed, reloading.
+2024-10-08 12:46:57,073 D:\stox\stock\settings.py changed, reloading.
+2024-10-08 12:46:59,823 [mHTTP GET / 200 [0.01, 127.0.0.1:61002][0m
+2024-10-08 12:47:00,010 [mHTTP GET /static/landingasset/css/bootstrap.min.css 200 [0.16, 127.0.0.1:61002][0m
+2024-10-08 12:47:00,019 [mHTTP GET /static/landingasset/css/themify-icons.css 200 [0.17, 127.0.0.1:61007][0m
+2024-10-08 12:47:00,020 [mHTTP GET /static/landingasset/css/font-awesome.min.css 200 [0.17, 127.0.0.1:61003][0m
+2024-10-08 12:47:00,023 [mHTTP GET /static/landingasset/css/owl.carousel.css 200 [0.17, 127.0.0.1:61009][0m
+2024-10-08 12:47:00,023 [mHTTP GET /static/landingasset/css/animate.css 200 [0.17, 127.0.0.1:61008][0m
+2024-10-08 12:47:00,033 [mHTTP GET /static/landingasset/css/style.css 200 [0.02, 127.0.0.1:61002][0m
+2024-10-08 12:47:00,050 [mHTTP GET /static/landingasset/img/process-icons/1.png 200 [0.02, 127.0.0.1:61009][0m
+2024-10-08 12:47:00,052 [mHTTP GET /static/landingasset/img/about-img.png 200 [0.02, 127.0.0.1:61007][0m
+2024-10-08 12:47:00,058 [mHTTP GET /static/landingasset/img/laptop.png 200 [0.03, 127.0.0.1:61003][0m
+2024-10-08 12:47:01,902 [mHTTP GET /login/ 200 [0.04, 127.0.0.1:61003][0m
+2024-10-08 12:47:01,933 [36mHTTP GET /static/css/theme.min.css 304 [0.00, 127.0.0.1:61007][0m
+2024-10-08 12:47:01,934 [mHTTP GET /static/libs/simplebar/dist/simplebar.min.css 200 [0.01, 127.0.0.1:61003][0m
+2024-10-08 12:47:01,937 [36mHTTP GET /static/libs/feather-icons/dist/feather.min.js 304 [0.01, 127.0.0.1:61009][0m
+2024-10-08 12:47:01,938 [36mHTTP GET /static/js/theme.min.js 304 [0.01, 127.0.0.1:61008][0m
+2024-10-08 12:47:01,939 [36mHTTP GET /static/libs/simplebar/dist/simplebar.min.js 304 [0.01, 127.0.0.1:61002][0m
+2024-10-08 12:47:01,940 [36mHTTP GET /static/libs/bootstrap/dist/js/bootstrap.bundle.min.js 304 [0.01, 127.0.0.1:61006][0m
+2024-10-08 12:47:09,386 [32mHTTP POST /login/ 302 [1.18, 127.0.0.1:61011][0m
+2024-10-08 12:47:09,553 [mHTTP GET /home?greeting=True 200 [0.16, 127.0.0.1:61011][0m
+2024-10-08 12:47:09,586 [36mHTTP GET /static/libs/apexcharts/dist/apexcharts.css 304 [0.00, 127.0.0.1:61011][0m
+2024-10-08 12:47:09,587 [36mHTTP GET /static/libs/apexcharts/dist/apexcharts.min.js 304 [0.00, 127.0.0.1:61012][0m
+2024-10-08 12:47:13,224 [mHTTP GET /home 200 [0.03, 127.0.0.1:61011][0m
+2024-10-08 12:47:36,183 [mHTTP GET /portfolio 200 [0.06, 127.0.0.1:61026][0m
+2024-10-08 12:51:27,974 D:\stox\settings\models.py changed, reloading.
+2024-10-08 13:03:45,240 D:\stox\app\models.py changed, reloading.
+2024-10-08 13:04:12,304 D:\stox\app\models.py changed, reloading.
+2024-10-08 13:05:10,767 D:\stox\app\admin.py changed, reloading.
+2024-10-08 13:06:43,978 D:\stox\settings\admin.py changed, reloading.
+2024-10-08 13:07:04,134 [32mHTTP GET /admin 301 [0.25, 127.0.0.1:61350][0m
+2024-10-08 13:07:04,673 [mHTTP GET /admin/ 200 [0.54, 127.0.0.1:61350][0m
+2024-10-08 13:07:10,185 [mHTTP GET /admin/settings/charges/ 200 [0.18, 127.0.0.1:61351][0m
+2024-10-08 13:07:10,222 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61351][0m
+2024-10-08 13:07:12,298 [mHTTP GET /admin/settings/charges/1/change/ 200 [0.12, 127.0.0.1:61351][0m
+2024-10-08 13:07:12,329 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61351][0m
+2024-10-08 13:07:22,327 [mHTTP GET /admin/app/customuser/ 200 [0.12, 127.0.0.1:61355][0m
+2024-10-08 13:07:22,373 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61355][0m
+2024-10-08 13:07:24,447 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.13, 127.0.0.1:61355][0m
+2024-10-08 13:07:24,504 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:61355][0m
+2024-10-08 13:07:24,565 [mHTTP GET /static/admin/js/SelectBox.js 200 [0.07, 127.0.0.1:61356][0m
+2024-10-08 13:07:24,565 [mHTTP GET /static/admin/js/SelectFilter2.js 200 [0.07, 127.0.0.1:61358][0m
+2024-10-08 13:07:47,456 [mHTTP GET /admin/ 200 [0.08, 127.0.0.1:61359][0m
+2024-10-08 13:08:54,764 D:\stox\app\views.py changed, reloading.
+2024-10-08 13:09:16,726 D:\stox\app\views.py changed, reloading.
+2024-10-08 13:13:07,618 D:\stox\wallet\calculation.py changed, reloading.
+2024-10-08 13:13:44,746 D:\stox\app\models.py changed, reloading.
+2024-10-08 13:14:48,097 [mHTTP GET /admin/app/customuser/ 200 [0.25, 127.0.0.1:61442][0m
+2024-10-08 13:14:48,128 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61442][0m
+2024-10-08 13:14:50,318 [mHTTP GET /admin/app/customuser/1/change/ 200 [0.12, 127.0.0.1:61442][0m
+2024-10-08 13:14:50,355 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61442][0m
+2024-10-08 13:15:00,298 [mHTTP GET / 200 [0.01, 127.0.0.1:61444][0m
+2024-10-08 13:15:01,317 [mHTTP GET /watchlist 200 [0.03, 127.0.0.1:61444][0m
+2024-10-08 13:15:08,426 [32mHTTP POST /place_order 302 [0.89, 127.0.0.1:61444][0m
+2024-10-08 13:15:08,530 [mHTTP GET /orders 200 [0.10, 127.0.0.1:61444][0m
+2024-10-08 13:15:11,873 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:61450][0m
+2024-10-08 13:15:17,502 [32mHTTP POST /place_order 302 [0.18, 127.0.0.1:61450][0m
+2024-10-08 13:15:17,585 [mHTTP GET /orders 200 [0.08, 127.0.0.1:61450][0m
+2024-10-08 13:15:20,833 [mHTTP GET /portfolio 200 [0.02, 127.0.0.1:61450][0m
+2024-10-08 13:15:23,478 [mHTTP GET /transactions 200 [0.02, 127.0.0.1:61450][0m
+2024-10-08 13:15:24,932 [mHTTP GET /trade_charges 200 [0.07, 127.0.0.1:61450][0m
+2024-10-08 13:26:52,336 D:\stox\app\models.py changed, reloading.
+2024-10-08 13:28:16,796 D:\stox\app\admin.py changed, reloading.
+2024-10-08 13:30:41,170 [mHTTP GET /admin/ 200 [0.12, 127.0.0.1:61605][0m
+2024-10-08 13:30:43,724 [32mHTTP GET /update_symbols 302 [0.01, 127.0.0.1:61605][0m
+2024-10-08 13:30:43,798 [mHTTP GET /admin/ 200 [0.06, 127.0.0.1:61605][0m
+2024-10-08 13:30:57,314 [mHTTP GET /admin/app/onstockuserbalancehistory/ 200 [3.11, 127.0.0.1:61605][0m
+2024-10-08 13:30:57,712 [mHTTP GET /admin/jsi18n/ 200 [0.36, 127.0.0.1:61605][0m
+2024-10-08 13:31:12,821 [mHTTP GET /admin/app/order/ 200 [0.18, 127.0.0.1:61621][0m
+2024-10-08 13:31:12,941 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:61621][0m
+2024-10-08 13:32:27,754 [mHTTP POST /admin/app/onstockuserbalancehistory/ 200 [0.09, 127.0.0.1:61631][0m
+2024-10-08 13:32:27,809 [mHTTP GET /static/admin/js/cancel.js 200 [0.03, 127.0.0.1:61631][0m
+2024-10-08 13:32:29,536 [32mHTTP POST /admin/app/onstockuserbalancehistory/ 302 [0.04, 127.0.0.1:61631][0m
+2024-10-08 13:32:29,594 [mHTTP GET /admin/app/onstockuserbalancehistory/ 200 [0.05, 127.0.0.1:61631][0m
+2024-10-08 13:32:29,625 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61631][0m
+2024-10-08 13:33:14,713 D:\stox\app\models.py changed, reloading.
+2024-10-08 13:33:23,627 [mHTTP GET /admin/app/onstockuserbalancehistory/add/ 200 [0.18, 127.0.0.1:61654][0m
+2024-10-08 13:33:23,674 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61656][0m
+2024-10-08 13:33:23,714 [mHTTP GET /static/admin/js/calendar.js 200 [0.06, 127.0.0.1:61654][0m
+2024-10-08 13:33:23,717 [mHTTP GET /static/admin/js/admin/DateTimeShortcuts.js 200 [0.06, 127.0.0.1:61655][0m
+2024-10-08 13:33:30,356 [32mHTTP POST /admin/app/onstockuserbalancehistory/add/ 302 [0.04, 127.0.0.1:61655][0m
+2024-10-08 13:33:30,443 [mHTTP GET /admin/app/onstockuserbalancehistory/ 200 [0.08, 127.0.0.1:61655][0m
+2024-10-08 13:33:30,479 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61655][0m
+2024-10-08 13:35:19,554 D:\stox\app\models.py changed, reloading.
+2024-10-08 13:35:29,294 [mHTTP POST /admin/app/onstockuserbalancehistory/ 200 [0.16, 127.0.0.1:61743][0m
+2024-10-08 13:35:30,976 [32mHTTP POST /admin/app/onstockuserbalancehistory/ 302 [0.04, 127.0.0.1:61743][0m
+2024-10-08 13:35:31,063 [mHTTP GET /admin/app/onstockuserbalancehistory/ 200 [0.08, 127.0.0.1:61743][0m
+2024-10-08 13:35:31,097 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61743][0m
+2024-10-08 13:35:32,969 [mHTTP GET /admin/app/onstockuserbalancehistory/add/ 200 [0.08, 127.0.0.1:61743][0m
+2024-10-08 13:35:33,002 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61743][0m
+2024-10-08 13:35:36,917 [32mHTTP POST /admin/app/onstockuserbalancehistory/add/ 302 [0.03, 127.0.0.1:61745][0m
+2024-10-08 13:35:37,006 [mHTTP GET /admin/app/onstockuserbalancehistory/ 200 [0.08, 127.0.0.1:61745][0m
+2024-10-08 13:35:37,041 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61745][0m
+2024-10-08 13:35:40,794 [mHTTP GET /admin/app/onstockuserbalancehistory/ 200 [0.05, 127.0.0.1:61745][0m
+2024-10-08 13:35:40,823 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:61745][0m
+2024-10-08 13:36:29,875 D:\stox\app\models.py changed, reloading.

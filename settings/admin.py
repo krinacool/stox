@@ -7,11 +7,9 @@ from django import forms
 # Register your models here.
 class BasicSettingAdmin(admin.ModelAdmin):
     model = charges
-    list_display = ('tax', 'intraday_buy_charge', 'intraday_sell_charge', 'carryforward_buy_charge', 'carryforward_sell_charge')
+    list_display = ('tax',)
     fieldsets = (
         (None, {'fields': ('tax','order_closing_charge')}),
-        ('Intraday', {'fields': ('intraday_buy_charge', 'intraday_sell_charge')}),
-        ('Carryforward', {'fields': ('carryforward_buy_charge' ,'carryforward_sell_charge')}),
         ('Manipulation', {'fields': ('manipulate_5_to_25', 'manipulate_25_to_50', 'manipulate_50_to_100', 'manipulate_100_to_200', 'manipulate_200_to_400', 'manipulate_400_or_above')}),
     )
 

@@ -109,6 +109,15 @@ class Command(BaseCommand):
             OnstockBalanceHistory.objects.create(balance=0)
         except:
             pass
+        try:
+            from app.models import CustomUser,OnstockUserBalanceHistory
+            for x in CustomUser.objects.all():
+                try:
+                    OnstockUserBalanceHistory.objects.create(user=x,balance=0)
+                except:
+                    pass
+        except:
+            pass
         url = "https://assets.upstox.com/market-quote/instruments/exchange/complete.csv.gz"
         # Output file name
         output_filename = "complete.csv"

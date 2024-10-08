@@ -1,7 +1,7 @@
 from settings.models import charges
 
 
-def calc_carrage(amount,order_type,product):
+def calc_carrage(amount,order_type,product,user):
     settings = charges.objects.first()
     carrage = 0
     tax = (settings.tax/100)*amount
@@ -9,14 +9,14 @@ def calc_carrage(amount,order_type,product):
     carrage = carrage+tax
     if order_type == 'BUY':
         if product == 'Intraday':
-            carrage = carrage + settings.intraday_buy_charge
+            carrage = carrage + user.intraday_buy_charge
         else:
-            carrage = carrage + settings.carryforward_buy_charge
+            carrage = carrage + user.carryforward_buy_charge
     else:
         if product == 'Intraday':
-            carrage = carrage + settings.intraday_sell_charge
+            carrage = carrage + user.intraday_sell_charge
         else:
-            carrage = carrage + settings.carryforward_sell_charge
+            carrage = carrage + user.carryforward_sell_charge
     print(carrage)
     return carrage
 
