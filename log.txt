@@ -2319,3 +2319,124 @@ django.template.exceptions.TemplateDoesNotExist: rangefilter/date_filter.html
 2024-10-08 13:54:43,165 [mHTTP GET /admin/ 200 [0.07, 127.0.0.1:62086][0m
 2024-10-08 13:54:56,027 [mHTTP GET /admin/app/remarks/ 200 [0.12, 127.0.0.1:62093][0m
 2024-10-08 13:54:56,069 [mHTTP GET /admin/jsi18n/ 200 [0.01, 127.0.0.1:62093][0m
+2024-10-08 16:00:36,131 Internal Server Error: /admin/app/position/
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 230, in inner
+    if not self.has_permission(request):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/root/onstock/env/lib/python3.10/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/root/onstock/env/lib/python3.10/site-packages/django/utils/functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 53, in __getitem__
+    return self._session[key]
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/root/onstock/env/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/query.py", line 633, in get
+    num = len(clone)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
+2024-10-08 16:05:06,918 Internal Server Error: /close_position
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/onstock/app/views.py", line 748, in close_position
+    call_command('close_positions')
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/management/__init__.py", line 194, in call_command
+    return command.execute(*args, **defaults)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/core/management/base.py", line 458, in execute
+    output = self.handle(*args, **options)
+  File "/root/onstock/app/management/commands/close_positions.py", line 44, in handle
+    for i in obj:
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/root/onstock/env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
