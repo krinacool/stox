@@ -12,7 +12,7 @@ def market_time(segment):
         market_setting = nse_market_time.objects.first()
         print(datetime.datetime.now().time())
         print(market_setting.close_time)
-    if datetime.datetime.now().time() < market_setting.close_time:
+    if datetime.datetime.now().time() < market_setting.close_time and datetime.datetime.now().time() > market_setting.open_time:
         print('2')
         return True
     else:
